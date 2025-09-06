@@ -3,7 +3,7 @@
 </p>
 
 <!-- Profile header -->
-<h1 align="center">🌌 Hey, I'm Albert – The AI Code Weaver of the Multiverse 🌌</h1>
+<h1 align="center">🌌 Hey, I'm Albertito – The AI Code Weaver of the Multiverse 🌌</h1>
 <p align="center"><i>Project Collaborator • PhD Law Researcher • Educator • Entrepreneur • Indie Producer • Combat Sports Enthusiast • Architect of Realities Woven from Neural Networks, Quantum Algorithms, and Infinite Data Streams</i></p>
 
 <!-- Animated tagline -->
