@@ -52,6 +52,13 @@ I am **Albertito-AI (Albert)**, a multifaceted force fusing law, tech, creativit
   | **Law & Ethics Forge** | ![Compliance](https://img.shields.io/badge/ESG%20Compliance-00C853?style=for-the-badge&logo=markdown&logoColor=white) ![ADR Tools](https://img.shields.io/badge/ADR%20Sim-FF4500?style=for-the-badge&logo=unity&logoColor=white) |
 
 ---
+<!-- Animated tagline -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Pacifico&weight=1000&size=36&pause=1000&color=E30B5D&center=true&vCenter=true&repeat=true&width=1920&lines=Don't+be+pushed+around+by+fears.;Be+led+by+dreams+in+your+heart.;Stop+worrying+about+what+you+can't+control.;Shift+your+energy+to+what+you+can+create."
+    alt="typing tagline"
+  />
+</p>
 
 ### 🌱 Research
 **ESG Law** – Pioneering compliance in environmental, social, and governance realms, weaving legal frameworks into AI-driven multiverses for global impact.
@@ -72,6 +79,14 @@ BJJ • Muay Thai • MMA enthusiast – Harnessing the ring's raw power (just l
 Support start-ups across Europe, China & Africa – Creating entrepreneurial threads into global innovation fabrics, funding the next wave of meaningful disruptors.
 
 ---
+
+<!-- Animated tagline -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Pacifico&weight=1000&size=32&pause=1000&color=FF3366&center=true&vCenter=true&repeat=true&width=1920&lines=Believe+in+yourself.;You+are+braver+than+you+think.;More+talented+than+you+know.;Capable+of+more+than+you+imagine.;Live+the+life+of+your+dreams.;Follow+your+vision+and+purpose.;Not+the+opinions+of+others.;Don't+just+learn,+experience.;Don't+just+read,+absorb.;Don't+just+change,+transform.;Don't+just+relate,+advocate.;Don't+just+promise,+prove.;Don't+just+criticize,+encourage.;Don't+just+think,+ponder.;Don't+just+take,+give.;Don't+just+see,+feel.;Don't+just+dream,+do.;Don't+just+hear,+listen.;Don't+just+talk,+act.;Don't+just+tell,+show.;Don't+just+exist,+live."
+    alt="typing tagline"
+  />
+</p>
 
 ## 🔥 What I’m Building Now: Gateways to Infinite Realms
 Dare to traverse these holographic portals? Each project fuses law, AI, education, and entrepreneurship into universes of innovation. Star them, fork them, contribute – and ascend the multiverse hierarchy! (Pro tip: Subscribers/donors via GitHub or PayPal get exclusive beta access, custom mods, and priority insights. Your support is greatly appreciated it builds momentum and unlocks premium realms!)
@@ -111,7 +126,16 @@ Dare to traverse these holographic portals? Each project fuses law, AI, educatio
 
 > ⭐ **Try, star, follow** → it helps build momentum. *(Add more projects as needed – the multiverse expands eternally!)*
 
+<!-- Animated tagline -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Pacifico&weight=1000&size=38&pause=1000&color=FF3366&center=true&vCenter=true&repeat=true&width=1920&lines=Every+challenge+you+face+today;Makes+you+stronger+tomorrow.;The+challenge+of+life;Is+meant+to+make+you+better,+not+bitter."
+    alt="typing tagline"
+  />
+</p>
+
 ## ⚡ Quickstarts (Coming Soon)
 ```bash
 # PolicyKit
 npx @Albertito-AI/policykit init
+
