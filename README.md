@@ -9,7 +9,7 @@
 <!-- Animated tagline -->
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=2F81F7&center=true&vCenter=true&repeat=true&width=720&lines=Be+human+first.;Then+be+whatever+you+want.;%E8%80%B3%E5%90%AC%E4%B8%BA%E8%99%9A%EF%BC%8C%E7%9C%BC%E8%A7%81%E4%B8%BA%E5%AE%9E."
+    src="https://readme-typing-svg.demolab.com?font=Dancing+Script&weight=1000&size=45&pause=1000&color=E30B5D&center=true&vCenter=true&repeat=true&width=1920&lines=Be+human+first.;Then+be+whatever+you+want.;%E8%80%B3%E5%90%AC%E4%B8%BA%E8%99%9A%EF%BC%8C%E7%9C%BC%E8%A7%81%E4%B8%BA%E5%AE%9E."
     alt="typing tagline"
   />
 </p>
