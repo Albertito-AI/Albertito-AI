@@ -69,12 +69,12 @@ BJJ • Muay Thai • MMA enthusiast – Harnessing the ring's raw power (just l
 *Beyond Michelin* – Exploring interstellar flavors, from street eats in Africa to fusion delights in China and Europe.
 
 ### 🚀 Ventures
-Support start-ups across Europe, China & Africa – Weaving entrepreneurial threads into global innovation fabrics, funding the next wave of cosmic disruptors.
+Support start-ups across Europe, China & Africa – Creating entrepreneurial threads into global innovation fabrics, funding the next wave of meaningful disruptors.
 
 ---
 
 ## 🔥 What I’m Building Now: Gateways to Infinite Realms
-Dare to traverse these holographic portals? Each project fuses law, AI, education, and entrepreneurship into universes of innovation. Star them, fork them, contribute – and ascend the multiverse hierarchy! (Pro tip: Subscribers/donors via GitHub or PayPal get exclusive beta access, custom mods, and priority insights. Your support builds momentum and unlocks premium realms!)
+Dare to traverse these holographic portals? Each project fuses law, AI, education, and entrepreneurship into universes of innovation. Star them, fork them, contribute – and ascend the multiverse hierarchy! (Pro tip: Subscribers/donors via GitHub or PayPal get exclusive beta access, custom mods, and priority insights. Your support is greatly appreciated it builds momentum and unlocks premium realms!)
 
 <details>
   <summary>🛸 PolicyKit – Open Templates & Automations for Compliance-by-Design</summary>
