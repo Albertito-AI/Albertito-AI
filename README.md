@@ -133,9 +133,3 @@ Dare to traverse these holographic portals? Each project fuses law, AI, educatio
     alt="typing tagline"
   />
 </p>
-
-## ⚡ Quickstarts (Coming Soon)
-```bash
-# PolicyKit
-npx @Albertito-AI/policykit init
-
