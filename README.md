@@ -32,7 +32,9 @@ matrix. It does not verify legal truth or replace the reading of an authority.
 
 The repository includes runnable examples, tests, a documented schema and a
 public development record. The first example is explicitly fictional training
-material. Source-grounded legal examples and evaluation are the next stages.
+material. A complete teaching exercise and an external usability protocol are
+now available. Source-grounded legal examples and external evaluation are the
+next stages.
 
 ## Selected scholarship
 
@@ -56,8 +58,17 @@ presence here does not imply university or journal endorsement.
 ## Teaching and further exploration
 
 I am interested in how legal reasoning can be taught and assessed in the
-presence of generative AI. Practical assessment materials are a planned second
-programme, alongside the research tools.
+presence of generative AI. The
+[55-minute source-checking exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching)
+asks learners to trace claims to fictional sources, examine disagreements and
+repair an overconfident draft. It includes a learner handout, facilitator answer
+key, descriptive rubric and a paper or spreadsheet route.
+
+The materials are original, AI-assisted and unevaluated. A
+[three-volunteer usability protocol](https://github.com/Albertito-AI/policykit/blob/main/docs/evaluation_protocol.md)
+sets out how to observe actual difficulties before making claims about the
+prototype's usefulness. No educational benefit or external adoption is claimed.
+The repository's rights statement applies to reuse.
 
 My wider interests include music, philosophy and combat sport. Earlier
 exploratory project notes are available in
