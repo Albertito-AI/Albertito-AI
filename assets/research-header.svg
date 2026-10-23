@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title description">
+  <title id="title">Albert Tan</title>
+  <desc id="description">Law, evidence and technology. A restrained constellation on a dark blue background.</desc>
+  <rect width="1200" height="260" rx="12" fill="#101827"/>
+  <g fill="#d6dce7" opacity="0.55">
+    <circle cx="720" cy="58" r="2"/><circle cx="809" cy="100" r="2"/>
+    <circle cx="955" cy="51" r="1.8"/><circle cx="1090" cy="90" r="2"/>
+    <circle cx="1140" cy="193" r="1.7"/><circle cx="1020" cy="215" r="2"/>
+    <circle cx="775" cy="215" r="1.8"/><circle cx="680" cy="178" r="1.4"/>
+  </g>
+  <g stroke="#bfaa7d" stroke-width="1.2" fill="none" opacity="0.65">
+    <path d="M752 145 L869 77 L1001 145 L1093 179 L869 205 Z"/>
+    <path d="M869 77 L869 205 M752 145 L1001 145"/>
+  </g>
+  <g fill="#e8d4a8">
+    <circle cx="752" cy="145" r="4"/><circle cx="869" cy="77" r="4"/>
+    <circle cx="1001" cy="145" r="4"/><circle cx="1093" cy="179" r="3"/>
+    <circle cx="869" cy="205" r="4"/>
+  </g>
+  <text x="58" y="116" fill="#ffffff" font-family="Georgia, serif" font-size="58">Albert Tan</text>
+  <text x="60" y="167" fill="#d6dce7" font-family="Arial, sans-serif" font-size="25" letter-spacing="1">Law, evidence and technology</text>
+</svg>
