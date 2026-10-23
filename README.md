@@ -33,8 +33,13 @@ matrix. It does not verify legal truth or replace the reading of an authority.
 The repository includes runnable examples, tests, a documented schema and a
 public development record. The first example is explicitly fictional training
 material. A complete teaching exercise and an external usability protocol are
-now available. Source-grounded legal examples and external evaluation are the
-next stages.
+now available. External evaluation remains outstanding.
+
+- [Ten-minute quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md):
+  a CLI or paper route through the fictional example.
+- [Singapore worked case](https://github.com/Albertito-AI/policykit/tree/main/cases/singapore-sustainability-reporting):
+  an AI-prepared example with two propositions that remain `unreviewed`.
+  Independent human review is outstanding.
 
 ## Selected scholarship
 
