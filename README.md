@@ -1,13 +1,15 @@
 ![Albert Tan: Law, evidence and technology](assets/research-header.svg)
 
-# Albert Tan
+# Albert Tan Sin Hon
 
 I am a PhD researcher at the University of Groningen. My research examines
 sustainability reporting, legal accountability and regulatory coordination in
 Asia. I am developing research tools that make legal sources, interpretive
 choices and the limits of an argument easier to inspect.
 
-[Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
+[Website](https://albert-tan-law-evidence.exactring129.chatgpt.site/)
+ · [Listen & Learn](https://albert-tan-law-evidence.exactring129.chatgpt.site/listen-and-learn/)
+ · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [RegNav](https://github.com/Albertito-AI/policykit)
 
@@ -60,6 +62,29 @@ now available. External evaluation remains outstanding.
 Publication details follow the linked institutional records. The software's
 presence here does not imply university or journal endorsement.
 
+## Forthcoming books
+
+### Insurance-Backed Offshore Liquidity
+
+*Financial Law, Trust Governance and Regulatory Visibility at the PRC–Hong Kong
+Interface* · Albert Tan Sin Hon · University of Groningen Press · **Forthcoming**
+
+A doctrinal and comparative study of policy rights, trust governance and
+regulatory visibility at the PRC–Hong Kong interface. It examines how legal
+rights, movements of value and institutional information interact without
+assuming that economic connection determines ownership or legal consequence.
+[Book overview](https://albert-tan-law-evidence.exactring129.chatgpt.site/#book)
+
+### ANSWERABLE: Teaching Law When the Machine Can Write
+
+Albert Tan and Panupong Chalermsin · PSU Press · **Forthcoming**
+
+An examination of legal knowledge, judgement, source verification, assessment
+and professional responsibility when AI can write. The book distinguishes
+reported research from its authors' conceptual arguments and teaching proposals;
+those proposals require evaluation in the settings where they are used.
+[Book overview](https://albert-tan-law-evidence.exactring129.chatgpt.site/#answerable)
+
 ## Teaching and further exploration
 
 I am interested in how legal reasoning can be taught and assessed in the
@@ -81,6 +106,28 @@ exploratory project notes are available in
 [AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind).
 They remain exploratory; the descriptions should not be taken as evidence of
 validated scientific findings or evaluated software.
+
+## Music and Learning with Bert
+
+I make music as **Bert Chan (陳信宏)**. Alongside my scholarship, I share notes,
+ideas and learning collections through **Learning with Bert** on the same
+[YouTube channel](https://www.youtube.com/@chanxinghong).
+
+The [Listen & Learn hub](https://albert-tan-law-evidence.exactring129.chatgpt.site/listen-and-learn/)
+brings these collections together. Choose a collection below to listen or
+explore directly on YouTube.
+
+| Music | Public learning collections |
+| --- | --- |
+| [Original Music](https://www.youtube.com/playlist?list=PLdsnhCowPv70vfiqHsSoWSvy9P-aY5d8G) | [Learning with Bert.](https://www.youtube.com/playlist?list=PLdsnhCowPv70UrlnX9XF_n-DGttj-jaHZ) |
+| [New Single - Chinese](https://www.youtube.com/playlist?list=PLdsnhCowPv71UXgknLxhS_wmA9_0w4SdA) | [Learning with Bert 1](https://www.youtube.com/playlist?list=PLdsnhCowPv73fLhiFvaI0zuahwuMd01Bg) |
+| | [Learning with Bert 2.](https://www.youtube.com/playlist?list=PLdsnhCowPv72vn9sSdwgFkeJqyhdOgSvG) |
+| | [Learning with Bert 3](https://www.youtube.com/playlist?list=PLdsnhCowPv72C9gmbwaBCFMCAMBXBphse) |
+
+The playlist numbers are collection labels, not difficulty levels. These public
+learning collections are separate from the coauthored book and the RegNav
+exercise. Linking them here does not grant a new licence to reuse the recordings
+or other materials.
 
 ## Collaboration
 
