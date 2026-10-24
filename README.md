@@ -7,8 +7,8 @@ sustainability reporting, legal accountability and regulatory coordination in
 Asia. I am developing research tools that make legal sources, interpretive
 choices and the limits of an argument easier to inspect.
 
-[Website](https://albertito.exactring129.chatgpt.site/)
- · [Listen & Learn](https://albertito.exactring129.chatgpt.site/listen-and-learn/)
+[Website](https://www.alberttansinhon.com/)
+ · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
  · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [RegNav](https://github.com/Albertito-AI/policykit)
@@ -73,7 +73,7 @@ A doctrinal and comparative study of policy rights, trust governance and
 regulatory visibility at the PRC–Hong Kong interface. It examines how legal
 rights, movements of value and institutional information interact without
 assuming that economic connection determines ownership or legal consequence.
-[Book overview](https://albertito.exactring129.chatgpt.site/#book)
+[Book overview](https://www.alberttansinhon.com/#book)
 
 ### ANSWERABLE: Teaching Law When the Machine Can Write
 
@@ -83,7 +83,7 @@ An examination of legal knowledge, judgement, source verification, assessment
 and professional responsibility when AI can write. The book distinguishes
 reported research from its authors' conceptual arguments and teaching proposals;
 those proposals require evaluation in the settings where they are used.
-[Book overview](https://albertito.exactring129.chatgpt.site/#answerable)
+[Book overview](https://www.alberttansinhon.com/#answerable)
 
 ## Teaching and further exploration
 
@@ -113,7 +113,7 @@ I make music as **Bert Chan (陳信宏)**. Alongside my scholarship, I share not
 ideas and learning collections through **Learning with Bert** on the same
 [YouTube channel](https://www.youtube.com/@chanxinghong).
 
-The [Listen & Learn hub](https://albertito.exactring129.chatgpt.site/listen-and-learn/)
+The [Listen & Learn hub](https://www.alberttansinhon.com/listen-and-learn/)
 brings these collections together. Choose a collection below to listen or
 explore directly on YouTube.
 
