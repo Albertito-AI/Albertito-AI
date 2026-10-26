@@ -18,8 +18,8 @@ research tools and teaching materials.
 ## Current focus
 
 I am opening the development process to people who want to test, improve and
-apply these ideas. Symbolon, Piepowder and Tallystick became public on
-**26 October 2026**, alongside RegNav. The next useful work is to reproduce the
+apply these ideas. On **26 October 2026**, Symbolon, Piepowder and Tallystick
+joined the already public RegNav repository. The next useful work is to reproduce the
 demonstrations, improve the explanations and understand a specific user's
 problem well enough to design a worthwhile pilot.
 
