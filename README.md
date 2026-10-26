@@ -2,46 +2,86 @@
 
 # Albert Tan Sin Hon
 
-I am a PhD researcher at the University of Groningen. My research examines
-sustainability reporting, legal accountability and regulatory coordination in
-Asia. I am developing research tools that make legal sources, interpretive
-choices and the limits of an argument easier to inspect.
+I study how institutions turn evidence into decisions, and how those decisions
+become answerable to the people affected by them. I am a PhD researcher at the
+University of Groningen, working on sustainability reporting, legal accountability
+and regulatory coordination in Asia. Alongside my scholarship, I develop practical
+research tools and teaching materials.
 
 [Website](https://www.alberttansinhon.com/)
- · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
  · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
- · [RegNav](https://github.com/Albertito-AI/policykit)
+ · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-## Research questions
+**[Explore the projects](#projects-you-can-explore) · [Build with us](#build-with-us) · [Work with me](#work-with-me) · [Read the research](#selected-scholarship)**
 
-How does a sustainability statement become legally answerable? What changes
-when a reporting standard enters a different legal system? How can legal
-education establish what a student understands when software can produce a
-convincing written answer?
+## Current focus
 
-These questions connect my work on law, governance and technology. My current
-software work begins with the evidence needed to examine a legal proposition.
+I am opening the development process to people who want to test, improve and
+apply these ideas. Symbolon, Piepowder and Tallystick became public on
+**26 October 2026**, alongside RegNav. The next useful work is to reproduce the
+demonstrations, improve the explanations and understand a specific user's
+problem well enough to design a worthwhile pilot.
 
-## Active project
+## Projects you can explore
 
-### RegNav Evidence Ledger
+| Project | What you can examine | Start here |
+| --- | --- | --- |
+| **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
+| **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
+| **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
+| **[Tallystick](https://github.com/Albertito-AI/tallystick)** | Replay sports-fact corrections, inspect count-market settlement rules and verify exported evidence from a fictional match. | [Run the research workbench](https://github.com/Albertito-AI/tallystick#run-it) |
 
-[RegNav](https://github.com/Albertito-AI/policykit) is an offline Python research
-prototype for linking propositions to sources and precise locations. It records
-human-review declarations, identifies structural gaps and exports an evidence
-matrix. It does not verify legal truth or replace the reading of an authority.
+These are experimental tools. Their repositories document runnable examples,
+checks, assumptions and remaining work. Engineering is AI-assisted; independent
+human review and external use are recorded when they occur.
 
-The repository includes runnable examples, tests, a documented schema and a
-public development record. The first example is explicitly fictional training
-material. A complete teaching exercise and an external usability protocol are
-now available. External evaluation remains outstanding.
+**Reuse terms:** Symbolon and Tallystick's original code use Apache-2.0;
+Tallystick's original schemas use CC BY 4.0. RegNav and Piepowder retain their
+existing reserved-rights terms. Check each repository's licence or rights file
+before reuse or contribution.
 
-- [Ten-minute quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md):
-  a CLI or paper route through the fictional example.
-- [Singapore worked case](https://github.com/Albertito-AI/policykit/tree/main/cases/singapore-sustainability-reporting):
-  an AI-prepared example with two propositions that remain `unreviewed`.
-  Independent human review is outstanding.
+## Build with us
+
+A useful first contribution can be small: reproduce a documented run, explain a
+confusing step, or propose a carefully specified example that exposes a problem.
+
+- **Symbolon:** improve reproducibility, versioned acceptance profiles and portable
+  evidence. [Contribution guide](https://github.com/Albertito-AI/symbolon/blob/main/CONTRIBUTING.md).
+- **Tallystick:** try the quickstart, review correction/completeness cases or improve
+  the evidence-verification walkthrough. [Starter tasks](https://github.com/Albertito-AI/tallystick/blob/main/CONTRIBUTING.md).
+- **Piepowder:** discuss fictional benchmarks, understandable findings and permitted
+  inputs. Agree the contribution scope under its existing rights first.
+  [Contribution guide](https://github.com/Albertito-AI/piepowder/blob/main/CONTRIBUTING.md).
+- **RegNav:** report a reproducible difficulty or propose a research or teaching
+  workflow through [the project issues](https://github.com/Albertito-AI/policykit/issues).
+
+Open an issue in the relevant project before a substantial change. Accepted work
+receives accurate attribution. When a funded assignment is available, contributors
+can agree roles, deliverables, IP and payment terms before starting. Voluntary
+participation carries no automatic payment entitlement or revenue share.
+
+## Work with me
+
+I welcome scoped enquiries about **comparative legal research, evidence-workflow
+design, research and AI-literacy workshops, and commissioned prototype work**.
+The first conversation should establish the problem, the intended user and the
+evidence needed to judge whether the work helps.
+
+For an academic collaboration or paid-work enquiry, use the contact route on my
+[institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/).
+Include a short non-confidential brief: the problem, desired deliverable,
+relevant jurisdiction, available data or materials, timeline and budget range.
+Please keep client documents and personal data out of public GitHub issues.
+
+For commissioned work, scope, permissions, fees, acceptance and support are agreed
+in writing. Project sponsorship can support maintenance, documentation and
+independent testing. The current prototypes' limits and applicable rights remain
+part of that discussion.
+
+**Optional support for independent work:** [PayPal](https://paypal.me/august14).
+Support preserves research and editorial independence; it purchases no authorship,
+citation or predetermined conclusion.
 
 ## Selected scholarship
 
@@ -62,50 +102,36 @@ now available. External evaluation remains outstanding.
 Publication details follow the linked institutional records. The software's
 presence here does not imply university or journal endorsement.
 
-## Forthcoming books
+## Books in progress
 
-### Insurance-Backed Offshore Liquidity
-
-*Financial Law, Trust Governance and Regulatory Visibility at the PRC–Hong Kong
-Interface* · Albert Tan Sin Hon · University of Groningen Press · **Forthcoming**
-
-A doctrinal and comparative study of policy rights, trust governance and
-regulatory visibility at the PRC–Hong Kong interface. It examines how legal
-rights, movements of value and institutional information interact without
-assuming that economic connection determines ownership or legal consequence.
-[Book overview](https://www.alberttansinhon.com/#book)
-
-### ANSWERABLE: Teaching Law When the Machine Can Write
-
-Albert Tan and Panupong Chalermsin · PSU Press · **Forthcoming**
-
-An examination of legal knowledge, judgement, source verification, assessment
-and professional responsibility when AI can write. The book distinguishes
-reported research from its authors' conceptual arguments and teaching proposals;
-those proposals require evaluation in the settings where they are used.
-[Book overview](https://www.alberttansinhon.com/#answerable)
+- **Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and
+  Regulatory Visibility at the PRC–Hong Kong Interface.** Albert Tan Sin Hon,
+  University of Groningen Press. **Forthcoming.** A study of policy rights,
+  trust governance and regulatory visibility. [Book overview](https://www.alberttansinhon.com/#book).
+- **ANSWERABLE: Teaching Law When the Machine Can Write.** Albert Tan and Panupong
+  Chalermsin, PSU Press. **Forthcoming.** Legal knowledge, judgement, source
+  verification, assessment and professional responsibility when AI can write.
+  [Book overview](https://www.alberttansinhon.com/#answerable).
 
 ## Teaching and further exploration
 
-I am interested in how legal reasoning can be taught and assessed in the
-presence of generative AI. The
-[55-minute source-checking exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching)
+The [55-minute source-checking exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching)
 asks learners to trace claims to fictional sources, examine disagreements and
 repair an overconfident draft. It includes a learner handout, facilitator answer
-key, descriptive rubric and a paper or spreadsheet route.
-
-The materials are original, AI-assisted and unevaluated. A
+key, descriptive rubric and a paper or spreadsheet route. The original,
+AI-assisted materials await external evaluation; a
 [three-volunteer usability protocol](https://github.com/Albertito-AI/policykit/blob/main/docs/evaluation_protocol.md)
-sets out how to observe actual difficulties before making claims about the
-prototype's usefulness. No educational benefit or external adoption is claimed.
-The repository's rights statement applies to reuse.
+sets out how to record actual difficulties.
 
-My wider interests include music, philosophy and combat sport. Earlier
-exploratory project notes are available in
-[EVT-Albert](https://github.com/Albertito-AI/evtalbert) and
-[AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind).
-They remain exploratory; the descriptions should not be taken as evidence of
-validated scientific findings or evaluated software.
+A [Singapore sustainability-reporting worked case](https://github.com/Albertito-AI/policykit/tree/main/cases/singapore-sustainability-reporting)
+shows the evidence-ledger approach with two AI-prepared propositions still marked
+`unreviewed`. Independent human review is outstanding. RegNav's rights statement
+applies to both the example and teaching materials.
+
+My wider interests include philosophy, music and combat sport. Earlier exploratory
+notes remain available in [EVT-Albert](https://github.com/Albertito-AI/evtalbert) and
+[AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind), with their
+unvalidated research status retained.
 
 ## Music and Learning with Bert
 
@@ -129,14 +155,10 @@ learning collections are separate from the coauthored book and the RegNav
 exercise. Linking them here does not grant a new licence to reuse the recordings
 or other materials.
 
-## Collaboration
+---
 
-I welcome research conversations about sustainability disclosure, comparative
-legal accountability and careful use of technology in legal education.
-For academic contact, use my
-[institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/).
-For RegNav, a reproducible issue or a clearly stated research use case is useful.
-
-Optional support for this independent work:
-[PayPal](https://paypal.me/august14). Support does not purchase authorship,
-citations, editorial influence or a predetermined research conclusion.
+**Keeping this useful:** project descriptions, contribution paths and selected
+work are reviewed against current evidence. Read the
+[profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
+[change record](docs/PROFILE_PROGRESS.md).
+Last substantive profile update: **26 October 2026**.
