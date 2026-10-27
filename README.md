@@ -41,6 +41,21 @@ Tallystick's original schemas use CC BY 4.0. RegNav and Piepowder retain their
 existing reserved-rights terms. Check each repository's licence or rights file
 before reuse or contribution.
 
+## Repository architecture
+
+This account separates **inspectable public reference work** from **non-public
+operations and confidential records**. Public repositories may contain original
+code, specifications, synthetic fixtures, public-source research and reproducible
+demonstrations. Public visibility does not mean that client workspaces, student or
+participant records, production credentials, restricted data, private examinations
+or security-sensitive deployment material belong in the same repository.
+
+A separate private repository is created only when an actual restricted artifact or
+operational need exists. Empty private clones are not used as a substitute for clear
+boundaries. Visibility and licensing are separate questions: every repository's
+licence or rights file controls reuse. The complete decision rule is recorded in the
+[portfolio visibility policy](docs/PORTFOLIO_VISIBILITY_POLICY.md).
+
 ## Build with us
 
 A useful first contribution can be small: reproduce a documented run, explain a
@@ -161,4 +176,4 @@ or other materials.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **26 October 2026**.
+Last substantive profile update: **27 October 2026**.
