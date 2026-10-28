@@ -31,7 +31,33 @@ unacknowledged receipts and a fail-closed storage cap.
 The companion uses explicit game rules, without a language model. This change
 does not modify Albert's scholarly profile text, project rights or other
 automation. The [Sparks guide](SPARKS.md) explains public participation, needs,
-limits and maintenance. Deployment verification is recorded after activation.
+limits and maintenance.
+
+### Activation and observed results
+
+- [Pull request #9](https://github.com/Albertito-AI/Albertito-AI/pull/9) passed
+  [hosted validation](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40648725801)
+  and was merged as `54e4224b99e4882a20176041b7dbd60e69bf35e8`.
+- All 46 tests passed, together with image/state, receipt/diary and profile
+  integrity checks. The first [Sparks companion run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40648803169)
+  completed successfully on the merged code.
+- Public request [#10](https://github.com/Albertito-AI/Albertito-AI/issues/10)
+  was accepted at **15:15:17 Singapore time** and closed with the
+  `sparks: accepted` label. It added exactly one care point and one experience
+  point in the [first issue-triggered run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40648862441).
+- Public request [#11](https://github.com/Albertito-AI/Albertito-AI/issues/11)
+  was declined at **15:15:46 Singapore time** with the response, “Thanks, I have
+  enough ideas for now.” The [second issue-triggered run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40648919052)
+  closed it with `sparks: enough for now`. Total experience and successful care
+  remained at one, and the successful-care timestamp remained 15:15:17.
+- Both live checks used Albert's account through the public issue route.
+  Non-owner participation was verified in automated tests, not by claiming a
+  separate live visitor account. The public form and all four live profile
+  controls were inspected. No bot comments were posted.
+
+The original birth timestamp, **28 October 2026 at 14:34:57 Singapore time**,
+was preserved. GitHub may briefly display a cached image after a saved-state
+update; the committed diary records the decisions independently of that cache.
 
 AI assistance: implementation and review were performed with ChatGPT. No
 independent human engineering audit is claimed.
