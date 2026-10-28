@@ -42,8 +42,8 @@ human review and external use are recorded when they occur.
 use Apache-2.0 for their original code. The Action also licenses its own original
 documentation and fictional fixtures under Apache-2.0; Tallystick's original
 schemas use CC BY 4.0. The `policykit` RegNav ledger and Piepowder retain their
-reserved rights. The Action's licence does not extend to those repositories. Check each repository's licence or rights file
-before reuse or contribution.
+reserved rights. The Action's licence does not extend to those repositories.
+Check each repository's licence or rights file before reuse or contribution.
 
 ## Repository architecture
 
