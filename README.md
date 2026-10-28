@@ -21,13 +21,15 @@ I am opening the development process to people who want to test, improve and
 apply these ideas. On **26 October 2026**, Symbolon, Piepowder and Tallystick
 joined the already public RegNav repository. The next useful work is to reproduce the
 demonstrations, improve the explanations and understand a specific user's
-problem well enough to design a worthwhile pilot.
+problem well enough to design a worthwhile pilot. On **27 October 2026**,
+RegNav Source Watch received its first standalone GitHub Action release.
 
 ## Projects you can explore
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
 | **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
+| **[RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch)** | Compare committed sources and claim links with a separate GitHub Action, identifying changes needing review rather than determining factual or legal correctness. | [Action installation](https://github.com/Albertito-AI/regnav-source-watch#add-it-to-a-repository) · [v0.1.0 release](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) |
 | **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
 | **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
 | **[Tallystick](https://github.com/Albertito-AI/tallystick)** | Replay sports-fact corrections, inspect count-market settlement rules and verify exported evidence from a fictional match. | [Run the research workbench](https://github.com/Albertito-AI/tallystick#run-it) |
@@ -36,9 +38,11 @@ These are experimental tools. Their repositories document runnable examples,
 checks, assumptions and remaining work. Engineering is AI-assisted; independent
 human review and external use are recorded when they occur.
 
-**Reuse terms:** Symbolon and Tallystick's original code use Apache-2.0;
-Tallystick's original schemas use CC BY 4.0. RegNav and Piepowder retain their
-existing reserved-rights terms. Check each repository's licence or rights file
+**Reuse terms:** Symbolon, Tallystick and the separate RegNav Source Watch Action
+use Apache-2.0 for their original code. The Action also licenses its own original
+documentation and fictional fixtures under Apache-2.0; Tallystick's original
+schemas use CC BY 4.0. The `policykit` RegNav ledger and Piepowder retain their
+reserved rights. The Action's licence does not extend to those repositories. Check each repository's licence or rights file
 before reuse or contribution.
 
 ## Repository architecture
@@ -70,6 +74,9 @@ confusing step, or propose a carefully specified example that exposes a problem.
   [Contribution guide](https://github.com/Albertito-AI/piepowder/blob/main/CONTRIBUTING.md).
 - **RegNav:** report a reproducible difficulty or propose a research or teaching
   workflow through [the project issues](https://github.com/Albertito-AI/policykit/issues).
+- **RegNav Source Watch:** reproduce the fictional two-commit demonstration,
+  test the manifest setup or improve diagnostic explanations through the
+  [contribution guide](https://github.com/Albertito-AI/regnav-source-watch/blob/main/CONTRIBUTING.md).
 
 Open an issue in the relevant project before a substantial change. Accepted work
 receives accurate attribution. When a funded assignment is available, contributors
@@ -176,4 +183,4 @@ or other materials.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **27 October 2026**.
+Last substantive profile update: **28 October 2026**.
