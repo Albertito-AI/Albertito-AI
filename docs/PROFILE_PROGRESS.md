@@ -1,12 +1,13 @@
 # Profile change record
 
-## 28 October 2026: Albertito companion candidate
+## 28 October 2026: Albertito companion activated
 
 ### Request and design
 
-Albert requested a Tamagotchi-like living persona in the existing profile header.
-This candidate retains the navy-and-gold research identity and introduces an
-original fictional scholar with glasses, an open book and a constellation.
+Albert requested a Tamagotchi-like living persona in the existing profile header
+and explicitly approved activation after reviewing the candidate. The design
+retains the navy-and-gold research identity and introduces an original fictional
+scholar with glasses, an open book and a constellation.
 
 ### Implemented behaviour
 
@@ -18,19 +19,31 @@ original fictional scholar with glasses, an open book and a constellation.
 - Reduced-motion support, a still-image variant and a documented state engine.
 
 The character does not measure Albert's actual state or scholarly performance.
-Visitors do not get an in-image JavaScript game or public care controls.
-The proposed schedule becomes active when the workflow is on main. This entry
-records the implementation candidate, not an observed hosted schedule run.
+Visitors see the saved companion; care controls require repository write access.
 
-### Verification boundaries
+### Activation and verification
 
-The change adds automated state-transition and generated-asset checks to the
-existing profile integrity workflow. The draft pull request records the checks
-actually performed and their results. Animation and saved-state updates are
-separate: browser movement does not prove that a scheduled run occurred.
+- [Pull request #8](https://github.com/Albertito-AI/Albertito-AI/pull/8) was merged
+  as commit `c213f9cf2e520e244494649d010a2b40a7e1cfa5`.
+- The [first automatic companion update](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40646152858)
+  succeeded, including tests, image validation and the state-save step.
+- Its [bot commit](https://github.com/Albertito-AI/Albertito-AI/commit/c449b9a52ae3e1fa1d207168d8d28ed53d142f5d)
+  changed only `data/persona.json`, `assets/research-header.svg` and
+  `assets/research-header-static.svg`.
+- The saved state advanced to **28 October 2026, 14:49:02 Singapore time**,
+  preserving the original birth timestamp and zero care experience.
+- All 17 state/rendering tests and profile integrity checks passed in hosted
+  validation. The live public profile was inspected with the new header loaded;
+  the displayed snapshot time was **14:49 SGT**.
 
-AI assistance: the design and implementation were prepared with ChatGPT.
-No independent human review is recorded for this candidate.
+The first verified update was triggered by the merge. The scheduled times are
+07:17, 13:17, 19:17 and 22:17 Asia/Singapore; future scheduled executions are
+not asserted as already observed. Browser animation and saved-state updates are
+separate, and image caching may delay the snapshot a visitor sees.
+
+AI assistance: the design, implementation and code review were performed with
+ChatGPT. User approval of activation is recorded; no independent human
+engineering audit is claimed.
 
 ## 28 October 2026: separate Source Watch Action discovery
 
