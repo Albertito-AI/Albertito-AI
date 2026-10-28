@@ -1,0 +1,33 @@
+name: Sparks browser checks
+
+on:
+  pull_request:
+    paths:
+      - 'assets/**'
+      - 'README.md'
+      - 'site/**'
+      - '.github/workflows/sparks-browser-checks.yml'
+      - 'scripts/check_sparks_browser.py'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - name: Install browser review dependencies
+        run: |
+          python -m pip install playwright==1.64.1 Pillow==13.0.0
+          python -m playwright install --with-deps chromium
+      - name: Check header rendering and Dance Floor behaviour
+        run: python -u scripts/check_sparks_browser.py

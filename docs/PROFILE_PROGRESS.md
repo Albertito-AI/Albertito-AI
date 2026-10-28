@@ -1,5 +1,21 @@
 # Profile change record
 
+## 28 October 2026: approved retro Sparks artwork
+
+The profile header now uses the approved charcoal and aged-bronze research robot
+with warm amber lights. The original PNG is preserved in
+[assets/sparks-retro.png](../assets/sparks-retro.png) and embedded in the source
+template and both generated headers. Gentle movement and separate mode indicators
+cover curious, studying, playful and resting states. Reduced-motion support and
+the still image remain available.
+
+The SVG validator permits the embedded PNG only when its decoded bytes match
+the committed artwork. The README image links carry a version marker for this
+appearance change. The companion's saved history, public care controls and
+workbench continue to use their existing logic.
+
+AI assistance: the integration and code review were performed with ChatGPT.
+
 ## 28 October 2026: demonstrations at each project entry point
 
 Albert requested that every repository README demonstrate its own capabilities
@@ -244,3 +260,11 @@ availability was not revalidated through that tool.
 
 AI assistance: the update was drafted and checked with ChatGPT. No independent
 human review is recorded for this edit.
+
+## 28 October 2026: Dance Floor integration
+
+Integrated the owner-supplied HTML dance demonstration with the retro Sparks
+launch. The page retains six routines, robot sprites, stage and synthesized beat,
+with profile navigation, responsive layout and reduced-motion handling. The dated
+source references were checked. GitHub Pages deployment and browser checks are
+recorded with the launch pull request; integration was AI-assisted.

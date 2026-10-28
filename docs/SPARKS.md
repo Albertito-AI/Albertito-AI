@@ -1,9 +1,10 @@
 # Sparks: a little life of inquiry
 
 Sparks is a fictional scholarly companion in Albert Tan's profile header.
-He keeps the original navy sky and gold constellation, carries a book, blinks,
-breathes and changes his expression. His energy, curiosity, joy and growth are
-game values. They do not describe Albert's actual mood, availability, health,
+His approved retro robot design combines charcoal armour, aged bronze and warm
+amber lights against the navy sky and gold constellation. Gentle movement and
+mode indicators accompany his saved state. His energy, curiosity, joy and growth
+are game values. They do not describe Albert's actual mood, availability, health,
 research output or academic standing. Renaming him from Albertito preserves his
 birth time and care history.
 
@@ -109,7 +110,7 @@ A request pending for more than **24 hours** expires and needs a new submission.
 Requests created before public care was activated are ignored.
 
 At night, from **22:00 to 06:59 Singapore time**, he rests. By day, a recent study,
-play or rest action can determine his expression for up to six hours. Otherwise
+play or rest action can determine his visible mode for up to six hours. Otherwise
 he is curious, with a resting appearance when his energy is low. Time gradually
 changes his game values, and automatic recovery keeps neglect from killing him.
 You can return after a break without losing his growth.
@@ -129,9 +130,13 @@ interactive game inside a web page would require a separate web application.
 
 ## Motion and access
 
+Sparks gently floats in his curious mode. Studying adds amber indicators; playing
+adds a small bob and sparks; resting dims the robot, slows his movement and shows
+sleep marks. The original PNG supplies the robot's face and body throughout.
+
 The image includes alternative text, an SVG title and a description. It respects
 the browser's `prefers-reduced-motion` setting. A separate
-[still image](../assets/research-header-static.svg) disables animation regardless
+[still image](../assets/research-header-static.svg?version=sparks-retro-20261028) disables animation regardless
 of that preference. All controls and explanatory text also appear as ordinary
 links outside the image.
 
@@ -155,7 +160,8 @@ resume, enable the workflow and run `tick`.
 
 | File | Purpose |
 | --- | --- |
-| [persona-template.svg](../assets/persona-template.svg) | Editable original vector design and motion. |
+| [persona-template.svg](../assets/persona-template.svg) | Editable header layout, embedded robot artwork and motion. |
+| [sparks-retro.png](../assets/sparks-retro.png) | Approved original retro robot artwork. |
 | [persona.json](../data/persona.json) | Saved game values, birth time, care history and update time. |
 | [update_persona.py](../scripts/update_persona.py) | State transitions and escaped SVG rendering. |
 | [public_care.py](../scripts/public_care.py) | Public request processing, receipts and GitHub acknowledgements. |
@@ -169,6 +175,11 @@ resume, enable the workflow and run `tick`.
 | [test_persona.py](../tests/test_persona.py) | Tests for the clock, state, replay and rendering rules. |
 | [test_public_care.py](../tests/test_public_care.py) | Tests for public requests, limits, receipts and acknowledgements. |
 | [test_sparks_agent.py](../tests/test_sparks_agent.py) | Tests for source evidence, failure handling, memory and workbench output. |
+
+The source template embeds the PNG so each generated header is self-contained.
+The profile validator requires its decoded image bytes to match
+`assets/sparks-retro.png`. An appearance change must update the source template
+and regenerate both header outputs from the saved state.
 
 Run the repository checks with Python 3.12 or later:
 
@@ -213,3 +224,12 @@ again.
 AI assistance: the original character, implementation and checks were prepared
 with ChatGPT. Public care requests and responses are game events, not research
 findings or academic judgements.
+
+## Dance Floor
+
+[Sparks' Dance Floor](SPARKS_DANCE_FLOOR.md) contains the six-routine browser demo
+and its current publication status. It uses the supplied robot sprites and offers setlist,
+pause and optional synthesized-beat controls. [Integration notes](SPARKS_DANCE_FLOOR.md).
+
+The profile selects the still header image when reduced motion is requested.
+The Dance Floor starts paused for the same preference.

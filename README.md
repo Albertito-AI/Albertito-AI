@@ -1,4 +1,7 @@
-![Albert Tan: Law, evidence and technology. Sparks, a fictional scholarly companion with animated breathing, blinking and persistent game state.](assets/research-header.svg)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-header-static.svg?version=sparks-retro-20261028">
+  <img src="assets/research-header.svg?version=sparks-retro-20261028" alt="Albert Tan: Law, evidence and technology. Sparks, a fictional retro research robot with subtle movement and persistent game state." width="1200">
+</picture>
 
 **Meet Sparks**, my little digital research companion, cared for by the community.
 
@@ -7,13 +10,19 @@
 Anyone signed into GitHub can submit a public care request. Choose an action,
 then click **Create**. Sparks may accept or decline according to his needs.
 
-[About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
-· [Still image](assets/research-header-static.svg)
+[Dance Floor](docs/SPARKS_DANCE_FLOOR.md) · [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
+· [Still image](assets/research-header-static.svg?version=sparks-retro-20261028)
 
 **[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
 checked starting points, and notes on observed README and release changes.
 
 ## See it in action
+
+**[Sparks' Dance Floor](docs/SPARKS_DANCE_FLOOR.md)** adds six routines, a looping
+setlist, pause controls and an optional synthesized beat. The interactive stage
+adapts to phones and starts paused when reduced motion is preferred.
+Web publication awaits GitHub Pages activation; the source and launch status
+are in the [dance demo notes](docs/SPARKS_DANCE_FLOOR.md).
 
 **The animated header above is Sparks' running demonstration.** Choose a care
 action, submit the prefilled GitHub issue, and read his decision in the

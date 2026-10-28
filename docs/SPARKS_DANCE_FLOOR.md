@@ -1,0 +1,65 @@
+# Sparks' Dance Floor
+
+[Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
+
+**Publication status:** integrated and prepared for GitHub Pages. The repository
+owner must first enable **Settings → Pages → Build and deployment → Source →
+GitHub Actions**. The prepared workflow can then be rerun to publish the page.
+The intended URL is https://albertito-ai.github.io/Albertito-AI/; it is not a
+confirmed live page until that deployment succeeds.
+
+The self-contained [HTML source](../site/index.html) can also be downloaded and
+opened in a browser.
+
+The Dance Floor integrates the supplied Spark's Dance Floor HTML demonstration
+with the retro Sparks research companion. It preserves the supplied robot
+sprites, six routines, choreography, stage and synthesized beat, and adds links
+back to the GitHub profile and care diary.
+
+## Using the stage
+
+Choose a routine to loop it, or choose **Play whole set** to cycle through all six.
+**Pause** stops the dance; **Beat off / Beat on** toggles a synthesized drum loop.
+Sound starts off. The named songs are inspirations and are not included as audio.
+
+| Routine | Robot interpretation |
+| --- | --- |
+| Runway hip pop | A hip pop, turn and pose |
+| Be OK | A cheerful bounce with robot captions |
+| Pumpkinhead illusion | A pumpkin-headed dance |
+| Pray For Me slow-mo | A dramatic slow-motion entrance |
+| Two Fishes | Deadpan gestures and animated expressions |
+| Ramalama costume walk | An approaching walk and costume reveal |
+
+The stage starts paused when the browser requests reduced motion. Visitors can
+choose to play it. Turning on reduced motion while the page is open pauses the
+dance. The layout adapts to narrow screens, controls work with a keyboard, and
+audio pauses when the dance is paused or the tab is hidden.
+
+Dancing is a browser demonstration. GitHub care requests and saved companion
+state continue through the profile's Feed, Study, Play and Rest links.
+
+## Inspiration and attribution
+
+The supplied demonstration interprets written descriptions from
+[NewEngen's TikTok trend roundup](https://newengen.com/insights/tiktok-trends/),
+read on 28 October 2026 and then dated 26 October 2026. The runway routine also
+references [NYLON's reporting on JADE's song and the runway appearance](https://www.nylon.com/entertainment/jade-angel-of-my-dreams-victorias-secret-fashion-show-2026).
+This is a dated collection, not a continuously updated trend ranking.
+The choreography is an original robot interpretation of those descriptions.
+
+The HTML and accompanying notes were supplied by the profile owner. Integration
+and verification were AI-assisted. The original sources remain linked from the
+page. Google Fonts supplies optional display fonts; system fallbacks remain
+available if the fonts cannot load.
+
+## Source and deployment
+
+The complete app is [site/index.html](../site/index.html), with its original PNG
+body-part sprites embedded. It runs as a static page with no build step or backend.
+GitHub Pages publishes only the `site/` directory through
+[the Pages workflow](../.github/workflows/sparks-pages.yml).
+
+Browser checks exercise all six routines, setlist cycling, pause, sound controls,
+reduced motion, desktop and mobile layouts. Existing profile integrity checks
+continue to cover the companion's generated artwork and saved state.
