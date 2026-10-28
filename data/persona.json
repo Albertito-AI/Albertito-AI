@@ -2,15 +2,15 @@
   "schema_version": 2,
   "name": "Sparks",
   "born_at": "2026-10-28T06:34:57Z",
-  "updated_at": "2026-10-28T11:57:30Z",
+  "updated_at": "2026-10-28T17:11:19Z",
   "stats": {
-    "energy": 98.73834750279596,
-    "curiosity": 91.3120833333333,
-    "joy": 90.84966666666665
+    "energy": 92.6525545831515,
+    "curiosity": 88.69694444444441,
+    "joy": 88.75755555555554
   },
   "xp": 2,
   "care_count": 2,
   "last_action": "rest",
   "last_action_at": "2026-10-28T11:31:04Z",
-  "last_workflow_run_id": 40683557914
+  "last_workflow_run_id": 40733265949
 }
