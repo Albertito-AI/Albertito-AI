@@ -260,3 +260,11 @@ availability was not revalidated through that tool.
 
 AI assistance: the update was drafted and checked with ChatGPT. No independent
 human review is recorded for this edit.
+
+## 28 October 2026: Dance Floor integration
+
+Integrated the owner-supplied HTML dance demonstration with the retro Sparks
+launch. The page retains six routines, robot sprites, stage and synthesized beat,
+with profile navigation, responsive layout and reduced-motion handling. The dated
+source references were checked. GitHub Pages deployment and browser checks are
+recorded with the launch pull request; integration was AI-assisted.

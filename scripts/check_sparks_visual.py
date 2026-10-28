@@ -7,7 +7,7 @@ import os
 import sys
 import tempfile
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 from playwright.sync_api import sync_playwright
 
 ROOT = Path.cwd()
@@ -39,7 +39,8 @@ with tempfile.TemporaryDirectory() as temporary, sync_playwright() as pw:
     def capture(name, file_name, reduced=False, stable=False):
         page.emulate_media(reduced_motion="reduce" if reduced else "no-preference")
         wrapper = directory / (file_name + ".html")
-        wrapper.write_text('<!doctype html><html><head><style>html,body{margin:0;background:#101827}img{display:block;width:1200px;height:380px}</style></head><body><img id="header" alt="Sparks test" src="' + file_name + '.svg"></body></html>')
+        source = '<source media="(prefers-reduced-motion: reduce)" srcset="static.svg">' if reduced else ""
+        wrapper.write_text('<!doctype html><html><head><style>html,body{margin:0;background:#101827}img{display:block;width:1200px;height:380px}</style></head><body><picture>' + source + '<img id="header" alt="Sparks test" src="' + file_name + '.svg"></picture></body></html>')
         page.goto(wrapper.as_uri())
         page.wait_for_function("document.getElementById('header').complete && document.getElementById('header').naturalWidth === 1200")
         page.wait_for_timeout(400)
@@ -50,7 +51,10 @@ with tempfile.TemporaryDirectory() as temporary, sync_playwright() as pw:
         assert bronze > 300, (name, "robot artwork did not render", bronze)
         if stable:
             page.wait_for_timeout(500)
-            assert data == page.locator("#header").screenshot(animations="allow"), name + " still moved"
+            later = Image.open(io.BytesIO(page.locator("#header").screenshot(animations="allow"))).convert("RGB")
+            assert ImageChops.difference(picture, later).getbbox() is None, name + " still moved"
+            if reduced:
+                assert page.locator("#header").evaluate("(e) => e.currentSrc").endswith("/static.svg")
         images.append((name, picture))
         print("PASS:", name, "SVG-as-image loaded, robot pixels", bronze)
 
@@ -105,3 +109,131 @@ for start in range(0, len(encoded), 2000):
     print("SPARKS_PNG_CHUNK " + encoded[start:start + 2000])
 print("SPARKS_SCREENSHOT_END")
 print("All six local browser rendering checks passed.")
+
+# Exercise the complete supplied app through its real controls.
+dance_images = []
+layout_images = []
+with sync_playwright() as pw:
+    browser = pw.chromium.launch()
+    context = browser.new_context(viewport={"width": 1440, "height": 1100}, device_scale_factor=1)
+    page = context.new_page()
+    errors = []
+    page.on("pageerror", lambda error: errors.append(str(error)))
+    page.add_init_script("""
+        window.__audioContexts = [];
+        const OriginalAudioContext = window.AudioContext;
+        if (OriginalAudioContext) window.AudioContext = class extends OriginalAudioContext {
+          constructor(...args) { super(...args); window.__audioContexts.push(this); }
+        };
+    """)
+    page.goto((ROOT / "site/index.html").as_uri(), wait_until="domcontentloaded")
+    page.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6")
+    page.wait_for_timeout(500)
+    assert page.title() == "Sparks' Dance Floor"
+    assert page.locator(".move").count() == 6
+    assert page.locator("#sound").get_attribute("aria-pressed") == "false"
+    assert page.evaluate("window.__audioContexts.length") == 0
+    page.locator("#play").click()
+    assert not page.evaluate("__spark.S0.playing")
+    paused = page.evaluate("__spark.S0.t")
+    page.wait_for_timeout(250)
+    assert page.evaluate("__spark.S0.t") == paused
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+    layout_images.append(("Desktop", Image.open(io.BytesIO(page.screenshot())).convert("RGB")))
+    page.locator("#play").click()
+    page.wait_for_function("__spark.S0.t > " + str(paused))
+    page.locator("#sound").click()
+    page.wait_for_function("window.__audioContexts.length === 1 && window.__audioContexts[0].state === 'running'")
+    assert page.locator("#sound").get_attribute("aria-pressed") == "true"
+    page.locator("#play").click()
+    page.wait_for_function("window.__audioContexts[0].state === 'suspended'")
+    page.locator("#play").click()
+    page.wait_for_function("window.__audioContexts[0].state === 'running'")
+    page.locator("#sound").click()
+    page.wait_for_function("window.__audioContexts[0].state === 'suspended'")
+    assert page.locator("#sound").get_attribute("aria-pressed") == "false"
+    print("PASS: Pause/resume freezes and restarts choreography; sound is opt-in and suspends correctly.")
+    for index in range(6):
+        button = page.locator(".move").nth(index)
+        name = button.locator(".name").inner_text()
+        button.click()
+        assert page.evaluate("__spark.S0.idx") == index
+        assert page.locator(".move[aria-pressed='true']").count() == 1
+        assert page.locator("#all").get_attribute("aria-pressed") == "false"
+        page.locator("#play").click()
+        page.evaluate("""() => {
+          const d = __spark;
+          d.S0.t = Math.min(11, d.R[d.S0.idx].beats - 1) * 60 / d.R[d.S0.idx].bpm;
+          d.render();
+        }""")
+        page.wait_for_timeout(80)
+        picture = Image.open(io.BytesIO(page.locator("#stage").screenshot())).convert("RGB")
+        dance_images.append((name, picture))
+        assert not errors, errors
+        print("PASS: Routine", index + 1, name)
+    page.locator("#all").click()
+    page.evaluate("__spark.S0.t = __spark.R[0].beats * 60 / __spark.R[0].bpm - 0.01")
+    page.wait_for_function("__spark.S0.idx === 1")
+    assert page.locator("#nowName").inner_text() == "Be OK"
+    assert page.locator("#all").get_attribute("aria-pressed") == "true"
+    print("PASS: Whole set advances to the next routine and updates its label.")
+    page.locator("#play").click()
+    for width in (375, 320):
+        page.set_viewport_size({"width": width, "height": 1100})
+        page.wait_for_timeout(200)
+        assert page.evaluate("document.documentElement.scrollWidth <= innerWidth"), width
+        assert page.locator("#play").is_visible()
+        assert page.locator("#sound").is_visible()
+        if width == 375:
+            layout_images.append(("Mobile 375 px", Image.open(io.BytesIO(page.screenshot())).convert("RGB")))
+        print("PASS: Responsive layout at", width, "pixels without horizontal overflow.")
+    page.set_viewport_size({"width": 1440, "height": 1100})
+    page.locator(".move").nth(2).focus()
+    page.keyboard.press("Enter")
+    assert page.evaluate("__spark.S0.idx") == 2
+    assert page.evaluate("__spark.S0.playing")
+    print("PASS: Routine controls work from the keyboard.")
+    reduced_context = browser.new_context(viewport={"width": 1000, "height": 900}, reduced_motion="reduce")
+    reduced = reduced_context.new_page()
+    reduced.on("pageerror", lambda error: errors.append(str(error)))
+    reduced.goto((ROOT / "site/index.html").as_uri(), wait_until="domcontentloaded")
+    reduced.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6")
+    reduced.wait_for_timeout(500)
+    assert not reduced.evaluate("__spark.S0.playing")
+    a = Image.open(io.BytesIO(reduced.locator("#stage").screenshot())).convert("RGB")
+    reduced.wait_for_timeout(350)
+    b = Image.open(io.BytesIO(reduced.locator("#stage").screenshot())).convert("RGB")
+    assert ImageChops.difference(a, b).getbbox() is None, "Reduced-motion dance changed while paused"
+    reduced.locator("#play").click()
+    assert reduced.evaluate("__spark.S0.playing")
+    reduced.emulate_media(reduced_motion="no-preference")
+    reduced.emulate_media(reduced_motion="reduce")
+    reduced.wait_for_function("!__spark.S0.playing")
+    print("PASS: Reduced motion starts still, permits deliberate play, and pauses on preference change.")
+    assert not errors, errors
+    print("PASS: No JavaScript errors.")
+    browser.close()
+
+def emit_image(label, picture):
+    buffer = io.BytesIO()
+    picture.save(buffer, format="PNG", optimize=True)
+    encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
+    for start in range(0, len(encoded), 2000):
+        print(label + "_PNG_CHUNK " + encoded[start:start + 2000])
+
+sheet = Image.new("RGB", (960, 560), "#1b1424")
+draw = ImageDraw.Draw(sheet)
+for index, (name, picture) in enumerate(dance_images):
+    x, y = (index % 3) * 320, (index // 3) * 280
+    draw.text((x + 8, y + 8), name, fill="#ffb02e", font=ImageFont.load_default(size=14))
+    sheet.paste(picture.resize((320, 240), Image.Resampling.LANCZOS), (x, y + 36))
+emit_image("DANCE", sheet)
+layouts = Image.new("RGB", (1355, 1130), "#1b1424")
+draw = ImageDraw.Draw(layouts)
+for index, (name, picture) in enumerate(layout_images):
+    x = 0 if index == 0 else 980
+    draw.text((x + 10, 8), name, fill="#ffb02e", font=ImageFont.load_default(size=17))
+    if index == 0: picture = picture.resize((960, 733), Image.Resampling.LANCZOS)
+    layouts.paste(picture, (x, 30))
+emit_image("LAYOUT", layouts)
+print("All Dance Floor browser checks passed.")

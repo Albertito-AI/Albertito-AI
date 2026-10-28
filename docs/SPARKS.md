@@ -224,3 +224,12 @@ again.
 AI assistance: the original character, implementation and checks were prepared
 with ChatGPT. Public care requests and responses are game events, not research
 findings or academic judgements.
+
+## Dance Floor
+
+[Visit Sparks' Dance Floor](https://albertito-ai.github.io/Albertito-AI/) to play the
+six-routine browser demo. It uses the supplied robot sprites and offers setlist,
+pause and optional synthesized-beat controls. [Integration notes](SPARKS_DANCE_FLOOR.md).
+
+The profile selects the still header image when reduced motion is requested.
+The Dance Floor starts paused for the same preference.

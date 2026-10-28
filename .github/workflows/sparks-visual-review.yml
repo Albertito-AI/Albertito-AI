@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'assets/**'
+      - 'README.md'
+      - 'site/**'
       - '.github/workflows/sparks-visual-review.yml'
       - 'scripts/check_sparks_visual.py'
 
