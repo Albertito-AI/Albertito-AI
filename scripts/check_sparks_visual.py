@@ -206,8 +206,14 @@ with sync_playwright() as pw:
     assert ImageChops.difference(a, b).getbbox() is None, "Reduced-motion dance changed while paused"
     reduced.locator("#play").click()
     assert reduced.evaluate("__spark.S0.playing")
+    reduced.evaluate("""() => {
+      window.__motionEvents = [];
+      matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change", e => __motionEvents.push(e.matches));
+    }""")
     reduced.emulate_media(reduced_motion="no-preference")
+    reduced.wait_for_function("window.__motionEvents.includes(false)")
     reduced.emulate_media(reduced_motion="reduce")
+    reduced.wait_for_function("window.__motionEvents.includes(true)")
     reduced.wait_for_function("!__spark.S0.playing")
     print("PASS: Reduced motion starts still, permits deliberate play, and pauses on preference change.")
     assert not errors, errors

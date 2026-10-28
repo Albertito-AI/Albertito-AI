@@ -10,7 +10,7 @@
 Anyone signed into GitHub can submit a public care request. Choose an action,
 then click **Create**. Sparks may accept or decline according to his needs.
 
-[Dance with Sparks](https://albertito-ai.github.io/Albertito-AI/) · [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
+[Dance Floor](docs/SPARKS_DANCE_FLOOR.md) · [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
 · [Still image](assets/research-header-static.svg?version=sparks-retro-20261028)
 
 **[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
@@ -18,10 +18,11 @@ checked starting points, and notes on observed README and release changes.
 
 ## See it in action
 
-**[Open Sparks' Dance Floor](https://albertito-ai.github.io/Albertito-AI/)** for six
-routines, a looping setlist, pause controls and an optional synthesized beat.
-The interactive stage adapts to phones and starts paused when reduced motion
-is preferred. [About the dance demo](docs/SPARKS_DANCE_FLOOR.md).
+**[Sparks' Dance Floor](docs/SPARKS_DANCE_FLOOR.md)** adds six routines, a looping
+setlist, pause controls and an optional synthesized beat. The interactive stage
+adapts to phones and starts paused when reduced motion is preferred.
+Web publication awaits GitHub Pages activation; the source and launch status
+are in the [dance demo notes](docs/SPARKS_DANCE_FLOOR.md).
 
 **The animated header above is Sparks' running demonstration.** Choose a care
 action, submit the prefilled GitHub issue, and read his decision in the

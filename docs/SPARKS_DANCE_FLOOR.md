@@ -1,6 +1,15 @@
 # Sparks' Dance Floor
 
-[Open the Dance Floor](https://albertito-ai.github.io/Albertito-AI/) · [Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
+[Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
+
+**Publication status:** integrated and prepared for GitHub Pages. The repository
+owner must first enable **Settings → Pages → Build and deployment → Source →
+GitHub Actions**. The prepared workflow can then be rerun to publish the page.
+The intended URL is https://albertito-ai.github.io/Albertito-AI/; it is not a
+confirmed live page until that deployment succeeds.
+
+The self-contained [HTML source](../site/index.html) can also be downloaded and
+opened in a browser.
 
 The Dance Floor integrates the supplied Spark's Dance Floor HTML demonstration
 with the retro Sparks research companion. It preserves the supplied robot
