@@ -1,0 +1,44 @@
+name: Validate software citation metadata
+
+on:
+  push:
+    branches: ['check/software-citations-20261028']
+    paths: ['.github/workflows/validate-citations.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repository: Albertito-AI/regnav-source-watch
+            revision: 94c341ab8d431ab3928d8e823e1c378d068505d5
+          - repository: Albertito-AI/symbolon
+            revision: 281533d151f473bf5b93f98d4c7833c1307eb4a8
+          - repository: Albertito-AI/tallystick
+            revision: 2df460737b98e098e9fdf26096f4eca59ba227cd
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: ${{ matrix.repository }}
+          ref: ${{ matrix.revision }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11'
+      - name: Install the CFF 1.2.0 validator
+        run: python -m pip install cffconvert==2.0.0
+      - name: Validate the exact proposed citation
+        env:
+          CITATION_REVISION: ${{ matrix.revision }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$CITATION_REVISION"
+          python --version
+          cffconvert --version
+          cffconvert --validate --infile CITATION.cff
