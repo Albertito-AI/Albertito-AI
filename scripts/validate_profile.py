@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import base64
+import binascii
 from pathlib import Path
 import re
 import sys
@@ -20,6 +22,7 @@ REQUIRED_PATHS = {
     "docs/SPARKS_CARE_LOG.md",
     "docs/SPARKS_WORKBENCH.md",
     "assets/persona-template.svg",
+    "assets/sparks-retro.png",
     "assets/research-header-static.svg",
     "data/persona.json",
     "data/public-care.json",
@@ -73,6 +76,19 @@ def _local_target(markdown_file: Path, raw_target: str) -> Path | None:
         raise ValueError(f"link escapes repository: {target}") from exc
     return resolved
 
+
+
+def _is_approved_embedded_png(element: ET.Element, value: str) -> bool:
+    """Allow only the committed artwork as an inline PNG on an SVG image."""
+    prefix = "data:image/png;base64,"
+    if element.tag != "{http://www.w3.org/2000/svg}image" or not value.startswith(prefix):
+        return False
+    try:
+        decoded = base64.b64decode(value[len(prefix):], validate=True)
+        original = (ROOT / "assets/sparks-retro.png").read_bytes()
+    except (binascii.Error, ValueError, OSError):
+        return False
+    return decoded.startswith(b"\x89PNG\r\n\x1a\n") and decoded == original
 
 def validate() -> list[str]:
     errors: list[str] = []
@@ -138,7 +154,7 @@ def validate() -> list[str]:
                     local = attribute.split("}")[-1]
                     if local.lower().startswith("on"):
                         errors.append(f"{name} contains an event handler")
-                    if local == "href" and not value.startswith("#"):
+                    if local == "href" and not value.startswith("#") and not _is_approved_embedded_png(element, value):
                         errors.append(f"{name} contains an external reference")
             svg_text = svg_path.read_text(encoding="utf-8")
             if "@import" in svg_text.lower():

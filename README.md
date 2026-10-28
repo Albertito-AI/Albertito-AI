@@ -1,4 +1,4 @@
-![Albert Tan: Law, evidence and technology. Sparks, a fictional scholarly companion with animated breathing, blinking and persistent game state.](assets/research-header.svg)
+![Albert Tan: Law, evidence and technology. Sparks, a fictional retro research robot with subtle movement and persistent game state.](assets/research-header.svg?version=sparks-retro-20261028)
 
 **Meet Sparks**, my little digital research companion, cared for by the community.
 
@@ -8,7 +8,7 @@ Anyone signed into GitHub can submit a public care request. Choose an action,
 then click **Create**. Sparks may accept or decline according to his needs.
 
 [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
-· [Still image](assets/research-header-static.svg)
+· [Still image](assets/research-header-static.svg?version=sparks-retro-20261028)
 
 **[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
 checked starting points, and notes on observed README and release changes.
