@@ -21,6 +21,7 @@ REQUIRED_REPOSITORY_LINKS = {
     "https://github.com/Albertito-AI/AlberTito-MasterMind",
     "https://github.com/Albertito-AI/evtalbert",
     "https://github.com/Albertito-AI/policykit",
+    "https://github.com/Albertito-AI/regnav-source-watch",
     "https://github.com/Albertito-AI/symbolon",
     "https://github.com/Albertito-AI/piepowder",
     "https://github.com/Albertito-AI/tallystick",
