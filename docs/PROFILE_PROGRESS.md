@@ -1,5 +1,25 @@
 # Profile change record
 
+## 28 October 2026: demonstrations at each project entry point
+
+Albert requested that every repository README demonstrate its own capabilities
+so visitors can understand it more easily. The profile now explains the living
+header as Sparks' actual demonstration, links two observed public-care decisions,
+and points to the source-backed workbench. All seven other public repositories
+receive a direct **See demo** entry from the profile, using the common
+`#see-it-in-action` README anchor.
+
+The linked demonstrations use executed examples and captured outputs, with
+synthetic inputs and research limitations identified where applicable. The
+profile preserves the existing project descriptions, installation routes,
+publication information, licence distinctions and contribution paths. Private
+institutional and product records remain outside this public profile.
+
+The accepted and declined examples are existing diary receipts #10 and #11;
+this documentation update does not submit another care request or alter saved
+companion state. The existing profile integrity workflow validates the README
+and its local assets. Live page and demo links are checked after publication.
+
 ## 28 October 2026: Sparks begins useful public-project work
 
 Albert requested that Sparks grow into a useful agent whose abilities develop

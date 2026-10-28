@@ -13,6 +13,23 @@ then click **Create**. Sparks may accept or decline according to his needs.
 **[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
 checked starting points, and notes on observed README and release changes.
 
+## See it in action
+
+**The animated header above is Sparks' running demonstration.** Choose a care
+action, submit the prefilled GitHub issue, and read his decision in the
+[care diary](docs/SPARKS_CARE_LOG.md). His saved needs determine the response.
+
+| A recorded request | What Sparks did |
+| --- | --- |
+| [Feed an idea, #10](https://github.com/Albertito-AI/Albertito-AI/issues/10) | Accepted: “Thank you. That gives me something new to think about.” |
+| [Feed again, #11](https://github.com/Albertito-AI/Albertito-AI/issues/11) | Declined: “Thanks, I have enough ideas for now.” |
+
+His [public-project workbench](docs/SPARKS_WORKBENCH.md) shows another capability:
+checking project entry points and recording source revisions, README changes and
+release observations. Care uses explicit game rules; points and age do not
+measure intelligence. The header shows the latest saved snapshot, which GitHub
+may briefly cache. For the tools themselves, open a **See demo** link below.
+
 # Albert Tan Sin Hon
 
 I study how institutions turn evidence into decisions, and how those decisions
@@ -41,11 +58,11 @@ RegNav Source Watch received its first standalone GitHub Action release.
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
-| **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
-| **[RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch)** | Compare committed sources and claim links with a separate GitHub Action, identifying changes needing review rather than determining factual or legal correctness. | [Action installation](https://github.com/Albertito-AI/regnav-source-watch#add-it-to-a-repository) · [v0.1.0 release](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) |
-| **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
-| **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
-| **[Tallystick](https://github.com/Albertito-AI/tallystick)** | Replay sports-fact corrections, inspect count-market settlement rules and verify exported evidence from a fictional match. | [Run the research workbench](https://github.com/Albertito-AI/tallystick#run-it) |
+| **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [See demo](https://github.com/Albertito-AI/policykit#see-it-in-action) · [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
+| **[RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch)** | Compare committed sources and claim links with a separate GitHub Action, identifying changes needing review rather than determining factual or legal correctness. | [See demo](https://github.com/Albertito-AI/regnav-source-watch#see-it-in-action) · [Action installation](https://github.com/Albertito-AI/regnav-source-watch#add-it-to-a-repository) · [v0.1.0 release](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) |
+| **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [See demo](https://github.com/Albertito-AI/symbolon#see-it-in-action) · [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
+| **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See demo](https://github.com/Albertito-AI/piepowder#see-it-in-action) · [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
+| **[Tallystick](https://github.com/Albertito-AI/tallystick)** | Replay sports-fact corrections, inspect count-market settlement rules and verify exported evidence from a fictional match. | [See demo](https://github.com/Albertito-AI/tallystick#see-it-in-action) · [Run the research workbench](https://github.com/Albertito-AI/tallystick#run-it) |
 
 These are experimental tools. Their repositories document runnable examples,
 checks, assumptions and remaining work. Engineering is AI-assisted; independent
@@ -164,9 +181,11 @@ shows the evidence-ledger approach with two AI-prepared propositions still marke
 applies to both the example and teaching materials.
 
 My wider interests include philosophy, music and combat sport. Earlier exploratory
-notes remain available in [EVT-Albert](https://github.com/Albertito-AI/evtalbert) and
-[AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind), with their
-unvalidated research status retained.
+notes remain available in [EVT-Albert](https://github.com/Albertito-AI/evtalbert)
+([session-to-summary demo](https://github.com/Albertito-AI/evtalbert#see-it-in-action))
+and [AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind)
+([synthetic phase demo](https://github.com/Albertito-AI/AlberTito-MasterMind#see-it-in-action)),
+with their unvalidated research status retained.
 
 ## Music and Learning with Bert
 
