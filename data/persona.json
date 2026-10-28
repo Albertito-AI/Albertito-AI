@@ -2,11 +2,11 @@
   "schema_version": 2,
   "name": "Sparks",
   "born_at": "2026-10-28T06:34:57Z",
-  "updated_at": "2026-10-28T11:31:04Z",
+  "updated_at": "2026-10-28T11:32:09Z",
   "stats": {
-    "energy": 100.0,
-    "curiosity": 91.53236111111109,
-    "joy": 91.02588888888889
+    "energy": 99.94737756153071,
+    "curiosity": 91.52333333333331,
+    "joy": 91.01866666666666
   },
   "xp": 2,
   "care_count": 2,

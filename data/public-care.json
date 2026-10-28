@@ -41,6 +41,16 @@
       "processed_at": "2026-10-28T11:31:04Z",
       "created_at": "2026-10-28T11:30:52Z",
       "actor_key": "4a230f6c81f41da7d7477d123f67dae8cf755273d1e8b69c219c36c57158e975",
+      "pending_ack": false
+    },
+    "16": {
+      "action": "study",
+      "reason": "satisfied",
+      "message": "Thanks, I have enough to study for now.",
+      "accepted": false,
+      "processed_at": "2026-10-28T11:32:09Z",
+      "created_at": "2026-10-28T11:31:57Z",
+      "actor_key": "4a230f6c81f41da7d7477d123f67dae8cf755273d1e8b69c219c36c57158e975",
       "pending_ack": true
     }
   }
