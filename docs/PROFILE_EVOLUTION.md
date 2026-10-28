@@ -38,9 +38,19 @@ A scheduled review alone is not a publication or an observed outcome.
 
 The separate [Sparks companion](SPARKS.md) workflow maintains fictional game
 state, public care receipts and a care diary, and the two generated header images.
+Its bounded project worker also refreshes public-source observations and a
+generated workbench for the five featured projects. It retains source revisions,
+checks selected entry files and records observed README/release changes. This
+output supports the existing adoption and development workstreams; it does not
+become a separate owner of their roadmaps or edit those repositories.
 Its scheduled ticks do not change scholarly claims, project descriptions or the
 substantive profile-update date. Edit its source template when changing the
 character's design.
+
+The companion's care experience is fictional game progress. Claims about useful
+capabilities require implemented procedures, current evidence and appropriate
+checks. Private educational preparation, admissions and assessments stay outside
+this public repository.
 
 ## What merits an update
 
