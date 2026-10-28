@@ -1,0 +1,42 @@
+name: Export Sparks dance media
+
+on:
+  push:
+    branches: ['feat/sparks-dance-profile-*']
+    paths:
+      - 'scripts/export_sparks_dance.py'
+      - '.github/workflows/export-sparks-dance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    if: startsWith(github.ref, 'refs/heads/feat/sparks-dance-profile-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - name: Install rendering dependencies
+        run: |
+          python -m pip install playwright==1.64.1 Pillow==13.0.0
+          python -m playwright install --with-deps chromium
+      - name: Render and verify the profile media
+        run: python -u scripts/export_sparks_dance.py
+      - name: Save generated media to the feature branch
+        run: |
+          set -euo pipefail
+          git add -- assets/sparks-dance.gif assets/sparks-dance-still.png assets/sparks-dance.mp4 assets/sparks-dance-manifest.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'build: render the Sparks dance preview and full video'
+          git push origin "HEAD:$GITHUB_REF_NAME"
