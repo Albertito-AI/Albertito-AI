@@ -171,7 +171,7 @@ def check(url):
         require(regnav["limitation"] in regnav_card.inner_text(),
                 "Project scope and its concrete limitation are inspectable")
         contribution = next(item for item in catalog["contributions"] if item["project_id"] == regnav["id"])
-        require(regnav_card.locator("a").evaluate_all("(links) => links.map(link => link.href)").count(contribution["url"]) == 1,
+        require(regnav_card.get_by_role("link", name=contribution["title"] + " ↗", exact=True).get_attribute("href") == contribution["url"],
                 "The catalogue exposes the project's actual contribution route")
         with page.expect_download(timeout=10000) as citation_download:
             regnav_card.get_by_role("button", name="Download citation (.txt)", exact=True).click()
