@@ -227,9 +227,10 @@ findings or academic judgements.
 
 ## Dance Floor
 
-[Sparks' Dance Floor](SPARKS_DANCE_FLOOR.md) contains the six-routine browser demo
-and its current publication status. It uses the supplied robot sprites and offers setlist,
-pause and optional synthesized-beat controls. [Integration notes](SPARKS_DANCE_FLOOR.md).
+[Sparks' Dance Floor](SPARKS_DANCE_FLOOR.md) includes an animated profile preview,
+a full silent video and an interactive stage with all six routines. The stage uses
+the supplied robot sprites and offers setlist, pause and optional synthesized-beat
+controls. [Open the interactive stage](https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html).
 
 The profile selects the still header image when reduced motion is requested.
 The Dance Floor starts paused for the same preference.

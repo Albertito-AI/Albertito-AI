@@ -268,3 +268,16 @@ launch. The page retains six routines, robot sprites, stage and synthesized beat
 with profile navigation, responsive layout and reduced-motion handling. The dated
 source references were checked. GitHub Pages deployment and browser checks are
 recorded with the launch pull request; integration was AI-assisted.
+
+## 28 October 2026: Direct profile dance playback
+
+Adapted the dance scene for GitHub's README renderer using an animated GIF and a
+matching reduced-motion still. An 18-second sampler covers all six routines,
+with the complete silent dance set available as an MP4. The exports come from
+the reviewed HTML choreography, using the supplied motion references for the
+stage and portrait framing.
+
+The profile links to a reviewed, commit-pinned interactive preview served by
+raw.githack.com. Repository-owned Pages hosting remains optional. Verification
+covers decoded animation frames, file size, desktop/mobile layout, reduced
+motion, and the published profile. Changes and review were AI-assisted.
