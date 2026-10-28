@@ -320,6 +320,7 @@
   }
   function chooseTab(tab, focusTab) {
     if (!["before","after","review"].includes(tab)) return;
+    if (state.tab !== tab) state.sourceIndex = 0;
     state.tab = tab;
     Array.from(dom.tabs.querySelectorAll("[role=tab]")).forEach(function (button) {
       var selected = button.dataset.tab === tab;
@@ -339,8 +340,11 @@
       var paragraph = list(source.paragraphs).find(function (candidate) { return String(candidate.id) === String(item.pinpoint); });
       return {
         label:text(source.title, String(item.source_id || "Recorded source")) + (item.pinpoint ? " · " + item.pinpoint : ""),
-        quote:text(item.quote, paragraph && text(paragraph.text)),
-        url:item.source_url || source.url,
+        quote:typeof item.quote === "string" ? item.quote : (paragraph && text(paragraph.text)),
+        url:["temporary-fixture","unresolved-source"].includes(item.quote_origin) ? null : (item.source_url || source.url),
+        originalUrl:item.original_source_url,
+        quoteOrigin:text(item.quote_origin),
+        quoteLabel:text(item.quote_label),
         relation:text(item.relation),
         pinpoint:text(item.pinpoint),
         context:false
@@ -385,9 +389,10 @@
     var selected = options[state.sourceIndex];
     var figure = node("figure", null, "source-quote");
     figure.appendChild(node("blockquote", selected.quote || "No quoted passage is recorded for this source. Inspect the linked source and execution output."));
-    var caption = node("figcaption", selected.context ? "Full recorded source context" : "Passage quoted in the fictional example");
+    var caption = node("figcaption", selected.quoteLabel || (selected.context ? "Full recorded source context" : "Passage quoted in the fictional example"));
     if (selected.relation) caption.appendChild(node("div", "Recorded relation: " + selected.relation + (selected.pinpoint ? " · " + selected.pinpoint : "")));
     if (safeUrl(selected.url)) caption.appendChild(link("Inspect the source at its recorded revision ↗", selected.url));
+    if (selected.quoteOrigin === "temporary-fixture" && safeUrl(selected.originalUrl)) caption.appendChild(link("Original source context ↗", selected.originalUrl));
     figure.appendChild(caption);
     parent.appendChild(figure);
   }
@@ -457,6 +462,14 @@
     }
     var claim = selectedClaim();
     if (claim) {
+      var side = after ? "after" : "before";
+      if (Array.isArray(claim[side + "_evidence"])) {
+        claim = Object.assign({}, claim, {
+          evidence:claim[side + "_evidence"],
+          review_note:text(claim[side + "_review_note"]),
+          source_quote:"",source_url:null
+        });
+      }
       var card = node("div", null, "claim-display");
       card.appendChild(node("div", "CLAIM " + String(claim.id), "claim-kicker"));
       card.appendChild(node("p", text(claim.text, "Read the claim in the recorded source."), "claim-text"));

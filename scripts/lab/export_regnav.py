@@ -215,27 +215,50 @@ def ledger_text(ledger):
 def ledger_display(before, after, packet, fields, title):
     old = {item["id"]: item for item in before["claims"]}
     new = {item["id"]: item for item in after["claims"]}
-    sources = {item["id"]: item for item in packet["sources"]}
+    packet_sources = {item["id"]: item for item in packet["sources"]}
+
+    def evidence_for(claim, ledger):
+        if claim is None:
+            return []
+        recorded_ids = {item["id"] for item in ledger["sources"]}
+        evidence = []
+        for link in claim["evidence"]:
+            source = packet_sources.get(link["source_id"]) if link["source_id"] in recorded_ids else None
+            quote = next((part["text"] for part in source["paragraphs"] if part["id"] == link["pinpoint"]), "") if source else ""
+            url = source["url"] if source else None
+            label = ("Original fictional passage at the pinned source revision" if quote else
+                     "No pinpoint recorded" if source and not link["pinpoint"] else
+                     "No matching passage in the recorded source packet" if source else
+                     "Source not recorded in this snapshot")
+            evidence.append({
+                **link, "quote": quote, "source_url": url,
+                "original_source_url": url,
+                "quote_origin": "upstream-fixture" if source else "unresolved-source",
+                "quote_label": label,
+            })
+        return evidence
+
+    def note_for(claim):
+        if claim is None:
+            return "This proposition is absent from this snapshot."
+        return (claim.get("review") or {}).get("note", "No completed review declaration is recorded.")
+
     claims = []
     for identifier in dict.fromkeys([*old, *new]):
         previous, current = old.get(identifier), new.get(identifier)
         item = current or previous
-        evidence = []
-        for link in item["evidence"]:
-            source = sources.get(link["source_id"])
-            quote = next((part["text"] for part in source["paragraphs"] if part["id"] == link["pinpoint"]), "") if source else ""
-            evidence.append({
-                **link, "quote": quote,
-                "source_url": source["url"] if source else None,
-            })
+        before_evidence = evidence_for(previous, before)
+        after_evidence = evidence_for(current, after)
+        before_note, after_note = note_for(previous), note_for(current)
         claims.append({
             "id": identifier, "text": item["text"],
             "before_status": previous["review_status"] if previous else "not present",
             "after_status": current["review_status"] if current else "withdrawn from this fixture",
-            "source_quote": "\n".join(link["quote"] for link in evidence if link["quote"]),
-            "source_url": next((link["source_url"] for link in evidence if link["source_url"]), None),
-            "review_note": item.get("review", {}).get("note", "No completed review declaration is recorded."),
-            "evidence": evidence,
+            "before_evidence": before_evidence, "after_evidence": after_evidence,
+            "before_review_note": before_note, "after_review_note": after_note,
+            "source_quote": "\n".join(link["quote"] for link in after_evidence if link["quote"]),
+            "source_url": next((link["source_url"] for link in after_evidence if link["source_url"]), None),
+            "review_note": after_note, "evidence": after_evidence,
         })
     return {
         "before_title": "Original fictional ledger", "after_title": title,
@@ -361,26 +384,56 @@ def ledger_scenarios(run, fixture, packet, baseline, baseline_path):
 def watch_display(before, after, original_texts, changed_text, fields, title):
     old = {item["id"]: item for item in before["claims"]}
     new = {item["id"]: item for item in after["claims"]}
-    sources = {item["id"]: item for item in before["sources"]}
+    original_sources = {item["id"]: item for item in before["sources"]}
+    after_texts = {**original_texts, "source-policy": changed_text}
+
+    def evidence_for(claim, manifest, texts):
+        if claim is None:
+            return []
+        sources = {item["id"]: item for item in manifest["sources"]}
+        evidence = []
+        for link in claim["evidence"]:
+            identifier = link["source_id"]
+            source = sources.get(identifier)
+            original = original_sources.get(identifier)
+            quote = texts.get(identifier, "") if source else ""
+            original_url = (f"https://github.com/{WATCH_REPO}/blob/{WATCH_PIN}/examples/basic/{original['path']}"
+                            if original else None)
+            amended = source is not None and quote != original_texts.get(identifier, "")
+            origin = ("unresolved-source" if source is None else
+                      "temporary-fixture" if amended else "upstream-fixture")
+            label = ("Source not recorded in this snapshot" if source is None else
+                     "Fictional source text amended in this recorded temporary scenario" if amended else
+                     "Original fictional source at the pinned upstream revision")
+            evidence.append({
+                **link, "quote": quote,
+                "source_url": original_url if origin == "upstream-fixture" else None,
+                "original_source_url": original_url,
+                "quote_origin": origin, "quote_label": label,
+            })
+        return evidence
+
+    def note_for(claim):
+        if claim is None:
+            return "This proposition is absent from this snapshot."
+        return (claim.get("review") or {}).get("note", "No review declaration is recorded.")
+
     claims = []
     for identifier in dict.fromkeys([*old, *new]):
         previous, current = old.get(identifier), new.get(identifier)
         claim = current or previous
-        evidence = []
-        for link in claim["evidence"]:
-            source = sources.get(link["source_id"])
-            evidence.append({
-                **link, "quote": original_texts.get(link["source_id"], ""),
-                "source_url": f"https://github.com/{WATCH_REPO}/blob/{WATCH_PIN}/examples/basic/{source['path']}" if source else None,
-            })
+        before_evidence = evidence_for(previous, before, original_texts)
+        after_evidence = evidence_for(current, after, after_texts)
+        before_note, after_note = note_for(previous), note_for(current)
         claims.append({
             "id": identifier, "text": claim["text"],
             "before_status": "fictional declaration recorded" if previous and previous.get("review") else "no declaration",
             "after_status": "fictional declaration recorded" if current and current.get("review") else "no declaration",
-            "source_quote": "\n".join(link["quote"] for link in evidence if link["quote"]),
-            "source_url": next((link["source_url"] for link in evidence if link["source_url"]), None),
-            "review_note": claim.get("review", {}).get("note", "No review declaration is recorded."),
-            "evidence": evidence,
+            "before_evidence": before_evidence, "after_evidence": after_evidence,
+            "before_review_note": before_note, "after_review_note": after_note,
+            "source_quote": "\n".join(link["quote"] for link in after_evidence if link["quote"]),
+            "source_url": next((link["source_url"] for link in after_evidence if link["source_url"]), None),
+            "review_note": after_note, "evidence": after_evidence,
         })
     return {
         "before_title": "Unmodified upstream fictional source",

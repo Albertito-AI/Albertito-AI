@@ -13,6 +13,8 @@ retains its original address and controls. Research navigation lives under
 
 | Purpose | Route |
 | --- | --- |
+| Compare a fictional claim and its changed source | [Source replay](https://albertito-ai.github.io/Albertito-AI/lab/#replay) |
+| Inspect or reproduce the actual tool executions | [Verification](https://albertito-ai.github.io/Albertito-AI/lab/#verification) |
 | Find a publication and its bibliographic record | [Research](https://albertito-ai.github.io/Albertito-AI/lab/#research) |
 | Inspect software demonstrations and reuse terms | [Projects](https://albertito-ai.github.io/Albertito-AI/lab/#projects) |
 | Find source-checking materials | [Teaching](https://albertito-ai.github.io/Albertito-AI/lab/#teaching) |
@@ -124,11 +126,12 @@ items, with links to the source documentation.
 ## Citation and reuse
 
 Copy or export the available citation for the actual source you use. For
-software, retain the version and exact repository revision. RegNav's existing
-`CITATION.cff` supplies its software citation metadata. Where no CFF file was
-present at the inspected revision, the catalog supplies a transparent reference
-to that revision using verified metadata. No software DOI or archival-service
-connection is invented.
+software, retain the version and exact repository revision. RegNav, Source
+Watch, Symbolon and Tallystick provide `CITATION.cff` metadata. The catalog links
+to the specific metadata revision and retains a citation to the software
+revision inspected. Where formal author metadata is absent, the citation does
+not infer software authorship from project ownership. No software DOI or
+archival-service connection is asserted.
 
 The publication entries follow the linked University of Groningen records.
 The Singapore/Thailand article records DOI

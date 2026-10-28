@@ -95,6 +95,68 @@ def check(url):
         require(len(evidence_views) > len(data["scenarios"]),
                 "Scenario choices expose materially different evidence and explanations")
 
+        scenario_indexes = {item["id"]: str(index) for index, item in enumerate(data["scenarios"])}
+
+        def choose_claim(scenario_id, claim_id):
+            page.select_option("#scenario-select", scenario_indexes[scenario_id])
+            page.locator('#evidence-tabs [data-tab="before"]').click()
+            page.locator(f'.claim-button[data-claim-id="{claim_id}"]').click()
+
+        choose_claim("irrelevant-pinpoint", "CLAIM-remedy")
+        require("B.2" not in page.locator("#source-select option:checked").inner_text()
+                and "No quoted passage is recorded" in page.locator(".source-quote blockquote").inner_text(),
+                "Before the pinpoint edit, the selected claim has no invented passage")
+        page.locator("#tab-after").click()
+        require("B.2" in page.locator("#source-select option:checked").inner_text(),
+                "After the pinpoint edit, the selected claim identifies B.2")
+        expect(page.locator(".source-quote blockquote")).to_have_text("The reviewer responds within ten working days.")
+        page.locator("#tab-before").click()
+        require("B.2" not in page.locator("#source-select option:checked").inner_text()
+                and "No quoted passage is recorded" in page.locator(".source-quote blockquote").inner_text(),
+                "Returning to Before restores the missing pinpoint")
+
+        choose_claim("invalid-source", "CLAIM-remedy")
+        original_source = next(item["url"] for item in data["source_packet"]["sources"] if item["id"] == "SRC-draft-b")
+        require("SRC-not-recorded" not in page.locator("#source-select option:checked").inner_text()
+                and page.locator(".source-quote a").first.get_attribute("href") == original_source,
+                "Before an invalid reference, the selected source still resolves to Draft B")
+        page.locator("#tab-after").click()
+        require("SRC-not-recorded" in page.locator("#source-select option:checked").inner_text()
+                and "No quoted passage is recorded" in page.locator(".source-quote blockquote").inner_text()
+                and page.locator(".source-quote a").count() == 0,
+                "The invalid source remains unresolved in After without a borrowed quote or link")
+        page.locator("#tab-before").click()
+        require(page.locator(".source-quote a").first.get_attribute("href") == original_source,
+                "Returning to Before restores the valid source reference")
+
+        amendment = "Fictional amendment: the review target is now five days."
+        for scenario_id in ("watch-source-changed", "watch-review-edited"):
+            current = next(item for item in data["scenarios"] if item["id"] == scenario_id)
+            old_claim = next(item for item in current["input"]["base_manifest"]["claims"] if item["id"] == "claim-routine")
+            new_claim = next(item for item in current["input"]["manifest"]["claims"] if item["id"] == "claim-routine")
+            choose_claim(scenario_id, "claim-routine")
+            before_notes = "\n".join(page.locator("#evidence-panel > .claim-review-note").all_text_contents())
+            require(old_claim["review"]["note"] in before_notes
+                    and amendment not in page.locator(".source-quote blockquote").inner_text(),
+                    scenario_id + ": Before retains the original source and review declaration")
+            page.locator("#tab-after").click()
+            after_notes = "\n".join(page.locator("#evidence-panel > .claim-review-note").all_text_contents())
+            require(new_claim["review"]["note"] in after_notes
+                    and amendment in page.locator(".source-quote blockquote").inner_text(),
+                    scenario_id + ": After shows the actual amended fictional bytes and its declaration")
+            require(page.locator(".source-quote").get_by_role("link", name="Original source context ↗", exact=True).count() == 1
+                    and page.locator(".source-quote").get_by_role("link", name="Inspect the source at its recorded revision ↗", exact=True).count() == 0,
+                    "Amended fictional text does not claim to be the unchanged upstream source")
+            page.select_option("#source-select", "1")
+            specialist = page.locator(".source-quote blockquote").inner_text()
+            require("fourteen-day" in specialist and amendment not in specialist,
+                    "The qualifying specialist source retains its own unchanged text")
+            page.locator("#tab-before").click()
+            expect(page.locator("#source-select")).to_have_value("0")
+            require(amendment not in page.locator(".source-quote blockquote").inner_text()
+                    and old_claim["review"]["note"] in "\n".join(page.locator("#evidence-panel > .claim-review-note").all_text_contents()),
+                    "Changing tabs restores the correct original source and review note")
+
         first = "0"
         page.select_option("#scenario-select", first)
         page.locator('#evidence-tabs [data-tab="before"]').click()
@@ -108,6 +170,13 @@ def check(url):
                 page.select_option("#source-select", choice)
                 source_views.add(page.locator("#evidence-panel").inner_text())
             require(len(source_views) > 1, "Visitors can inspect distinct source records")
+
+        for tab in ("before", "after"):
+            page.locator(f'#evidence-tabs [data-tab="{tab}"]').click()
+            page.select_option("#source-select", "1")
+            expect(page.locator(".source-quote blockquote")).to_have_text("The reviewer responds within ten working days.")
+            require("Recorded relation: contradicts" in page.locator(".source-quote figcaption").inner_text(),
+                    "Contrary evidence keeps its actual passage and relation in " + tab)
 
         page.locator(".claim-button").first.click()
         page.locator('#evidence-tabs [data-tab="review"]').click()
@@ -283,6 +352,12 @@ def check(url):
                 "An unavailable execution record has a visible recovery explanation")
         require(fallback_page.locator('a[href^="https://github.com/Albertito-AI/"]').count() > 0,
                 "Source links remain available when the record cannot load")
+        fallback_page.unroute("**/data/regnav.json*")
+        fallback_page.locator("#replay-status").get_by_role("button", name="Try again", exact=True).click()
+        fallback_page.wait_for_function("() => document.querySelector('#scenario-select')?.options.length > 0")
+        expect(fallback_page.locator("#replay-status")).to_be_hidden()
+        require(fallback_page.locator("#scenario-select option").count() == len(data["scenarios"]),
+                "Try again restores all scenarios after the record becomes available")
         fallback.close()
         context.close()
         browser.close()

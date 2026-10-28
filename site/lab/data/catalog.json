@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-28T13:11:55Z",
+  "updated_at": "2026-10-28T14:02:08Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -122,13 +122,16 @@
       },
       "citation": {
         "available": true,
-        "format": "text",
-        "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/README.md",
+        "format": "cff",
+        "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/d2eb2126d2afa34314dfd3d4ab65c268dcf8a700/CITATION.cff",
         "text": "Albert Tan Sin Hon. RegNav Source Watch. Version 0.1.0; repository revision 2a6501fbbf535c58b11aeef16a8e8d0cc48148c0 (accessed 28 October 2026). https://github.com/Albertito-AI/regnav-source-watch/tree/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
         "version": "0.1.0",
         "doi": null,
-        "cff_available": false,
-        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+        "cff_available": true,
+        "provenance": "CITATION.cff was added using the existing software author, declared version and verified ORCID, then validated against CFF 1.2.0. The linked metadata revision is separate from the earlier software revision retained in this reference. No software DOI is recorded.",
+        "download_url": "https://raw.githubusercontent.com/Albertito-AI/regnav-source-watch/d2eb2126d2afa34314dfd3d4ab65c268dcf8a700/CITATION.cff",
+        "metadata_revision": "d2eb2126d2afa34314dfd3d4ab65c268dcf8a700",
+        "metadata_checked_at": "2026-10-28T14:02:08Z"
       },
       "rights": {
         "summary": "Apache-2.0 for this repository's original code, documentation and fictional fixtures. It grants no licence to policykit or third-party sources.",
@@ -181,13 +184,16 @@
       },
       "citation": {
         "available": true,
-        "format": "text",
-        "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/README.md",
+        "format": "cff",
+        "url": "https://github.com/Albertito-AI/symbolon/blob/43a4d7561d4e8df488902da19e979ddaebc63d38/CITATION.cff",
         "text": "Albert Tan Sin Hon. Symbolon. Version 0.1.0a1; repository revision dd7a85c0d5428f05f5803464ed2747cf9b75a4c4 (accessed 28 October 2026). https://github.com/Albertito-AI/symbolon/tree/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4",
         "version": "0.1.0a1",
         "doi": null,
-        "cff_available": false,
-        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+        "cff_available": true,
+        "provenance": "CITATION.cff was added using the existing software author, declared version and verified ORCID, then validated against CFF 1.2.0. The linked metadata revision is separate from the earlier software revision retained in this reference. No software DOI is recorded.",
+        "download_url": "https://raw.githubusercontent.com/Albertito-AI/symbolon/43a4d7561d4e8df488902da19e979ddaebc63d38/CITATION.cff",
+        "metadata_revision": "43a4d7561d4e8df488902da19e979ddaebc63d38",
+        "metadata_checked_at": "2026-10-28T14:02:08Z"
       },
       "rights": {
         "summary": "Apache-2.0 applies to the reference implementation. No live service or financial commitment is created by repository publication.",
@@ -301,13 +307,16 @@
       },
       "citation": {
         "available": true,
-        "format": "text",
-        "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/README.md",
+        "format": "cff",
+        "url": "https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/CITATION.cff",
         "text": "Albert Tan Sin Hon. Tallystick. Version 0.1.0; repository revision 8e957ada8ed86891589fdb2d4cff88ef3862b74f (accessed 28 October 2026). https://github.com/Albertito-AI/tallystick/tree/8e957ada8ed86891589fdb2d4cff88ef3862b74f",
         "version": "0.1.0",
         "doi": null,
-        "cff_available": false,
-        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+        "cff_available": true,
+        "provenance": "CITATION.cff was added using the existing software author, declared version and verified ORCID, then validated against CFF 1.2.0. The linked metadata revision is separate from the earlier software revision retained in this reference. No software DOI is recorded.",
+        "download_url": "https://raw.githubusercontent.com/Albertito-AI/tallystick/251cb7a6bac7984f94c8eaf91560c775b01fee82/CITATION.cff",
+        "metadata_revision": "251cb7a6bac7984f94c8eaf91560c775b01fee82",
+        "metadata_checked_at": "2026-10-28T14:02:08Z"
       },
       "rights": {
         "summary": "Original code and documentation: Apache-2.0. Original schemas and format definitions: CC BY 4.0. External data and the separate foundation paper retain their rights.",
