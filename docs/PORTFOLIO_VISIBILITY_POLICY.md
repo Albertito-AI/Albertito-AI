@@ -27,13 +27,17 @@ The public portfolio comprises:
 
 - the `Albertito-AI` profile and public navigation repository;
 - `policykit`, the RegNav evidence-ledger research prototype;
+- `regnav-source-watch`, the separately released Apache-2.0 Source Watch GitHub Action;
 - `symbolon`, the machine-work contract and verification reference implementation;
 - `piepowder`, the fictional agent-commerce acceptance and review prototype;
 - `tallystick`, the sports-fact provenance and settlement research workbench;
 - `AlberTito-MasterMind`, the RIF computational research prototype;
 - `evtalbert`, the EVT software prototype, with real user records excluded.
 
-Each public repository retains its own licence or rights statement. Public visibility alone grants no permission beyond those terms.
+Each public repository retains its own licence or rights statement. The
+Apache-2.0 licence of `regnav-source-watch` applies to that package only and
+does not change `policykit`'s reserved rights. Public visibility alone grants
+no permission beyond each repository's terms.
 
 ## Private institutional systems
 
