@@ -61,7 +61,8 @@ class PersonaStateTests(unittest.TestCase):
         self.assertEqual(blocked.state["xp"], 1)
         self.assertEqual(blocked.state["last_action"], "feed")
         accepted = pet.advance(blocked.state, self.start + timedelta(minutes=15), "play", "actions:102")
-        self.assertIn("accepted", accepted.message)
+        self.assertTrue(accepted.accepted)
+        self.assertEqual(accepted.reason, "accepted")
         self.assertEqual(accepted.state["xp"], 2)
         self.assertEqual(accepted.state["last_action"], "play")
 
@@ -133,7 +134,7 @@ class PersonaStateTests(unittest.TestCase):
 
     def test_malformed_or_inconsistent_state_is_rejected(self):
         variants = []
-        for key, value in (("schema_version", 2), ("xp", True), ("care_count", -1), ("last_workflow_run_id", -1), ("last_action", [])):
+        for key, value in (("schema_version", 3), ("name", "Albertito"), ("xp", True), ("care_count", -1), ("last_workflow_run_id", -1), ("last_action", [])):
             variant = deepcopy(self.state)
             variant[key] = value
             variants.append(variant)
@@ -153,6 +154,138 @@ class PersonaStateTests(unittest.TestCase):
         for variant in variants:
             with self.subTest(variant=variant), self.assertRaises(ValueError):
                 pet.validate_state(variant)
+
+    def test_care_satisfaction_thresholds_are_inclusive(self):
+        for action, stat, threshold in (("feed", "curiosity", 85), ("play", "joy", 85), ("rest", "energy", 90), ("study", "curiosity", 90)):
+            for value, accepted in ((threshold - 0.001, True), (threshold, False), (threshold + 0.001, False)):
+                candidate = deepcopy(self.state)
+                candidate["stats"][stat] = value
+                before = deepcopy(candidate)
+                result = pet.advance(candidate, self.start, action)
+                with self.subTest(action=action, value=value):
+                    self.assertEqual(result.accepted, accepted)
+                    self.assertEqual(result.reason, "accepted" if accepted else "satisfied")
+                    self.assertEqual(result.state["xp"], 1 if accepted else 0)
+                    if not accepted:
+                        self.assertEqual(result.state, before)
+                        self.assertIn("Thanks", result.message)
+                    self.assertEqual(candidate, before)
+
+    def test_study_tiredness_boundary_has_priority_over_fullness(self):
+        for energy, curiosity, expected in ((29.999, 75, "too_tired"), (30, 75, "accepted"), (29.999, 100, "too_tired"), (30, 90, "satisfied")):
+            candidate = deepcopy(self.state)
+            candidate["stats"].update(energy=energy, curiosity=curiosity)
+            result = pet.advance(candidate, self.start, "study")
+            with self.subTest(energy=energy, curiosity=curiosity):
+                self.assertEqual(result.reason, expected)
+                self.assertEqual(result.accepted, expected == "accepted")
+                self.assertEqual(result.state["xp"], 1 if expected == "accepted" else 0)
+
+    def test_refusal_precedes_cooldown_and_only_advances_elapsed_routine(self):
+        first = pet.advance(self.state, self.start, "feed").state
+        later = self.start + timedelta(minutes=1)
+        declined = pet.advance(first, later, "feed")
+        routine = pet.advance(first, later, "tick")
+        self.assertEqual(declined.reason, "satisfied")
+        self.assertFalse(declined.accepted)
+        self.assertFalse(declined.is_noop)
+        self.assertEqual(declined.message, "Thanks, I have enough ideas for now.")
+        self.assertEqual(declined.state, routine.state)
+        self.assertGreater(pet.parse_time(declined.state["updated_at"]), pet.parse_time(first["updated_at"]))
+        for key in ("xp", "care_count", "last_action", "last_action_at"):
+            self.assertEqual(declined.state[key], first[key])
+        # A refusal does not restart the shared care cooldown.
+        accepted = pet.advance(declined.state, self.start + timedelta(minutes=15), "play")
+        self.assertTrue(accepted.accepted)
+        self.assertEqual(accepted.state["xp"], 2)
+
+    def test_needs_use_current_elapsed_state_and_night_has_no_care_gate(self):
+        self.state["stats"]["curiosity"] = 85
+        after_decay = pet.advance(self.state, self.start + timedelta(hours=1), "feed")
+        self.assertTrue(after_decay.accepted)
+        night = pet.parse_time("2026-10-28T23:00:00+08:00")
+        night_care = pet.advance(pet.initial_state(night), night, "feed")
+        self.assertTrue(night_care.accepted)
+        self.assertEqual(pet.mode_for(night_care.state), "resting")
+
+    def test_public_calls_leave_owner_watermark_unchanged_and_expose_result_codes(self):
+        self.state["last_workflow_run_id"] = 9_000_000
+        fed = pet.advance(self.state, self.start, "feed", event_id=None)
+        self.assertTrue(fed.accepted)
+        self.assertEqual(fed.reason, "accepted")
+        self.assertEqual(fed.state["last_workflow_run_id"], 9_000_000)
+        cooldown = pet.advance(fed.state, self.start + timedelta(minutes=1), "play", event_id=None)
+        self.assertFalse(cooldown.accepted)
+        self.assertEqual(cooldown.reason, "cooldown")
+        self.assertNotIn("workflow", cooldown.message)
+        self.assertEqual(cooldown.state["last_workflow_run_id"], 9_000_000)
+        tick = pet.advance(fed.state, self.start + timedelta(minutes=1))
+        self.assertFalse(tick.accepted)
+        self.assertEqual(tick.reason, "tick")
+        replay = pet.advance(fed.state, self.start + timedelta(minutes=1), "feed", "actions:9000000")
+        self.assertFalse(replay.accepted)
+        self.assertEqual(replay.reason, "replayed")
+        self.assertTrue(replay.is_noop)
+
+
+class PersonaMigrationTests(unittest.TestCase):
+    def setUp(self):
+        self.legacy = {
+            "schema_version": 1,
+            "name": "Albertito",
+            "born_at": "2026-10-28T06:34:57Z",
+            "updated_at": "2026-10-29T08:30:00Z",
+            "stats": {"energy": 67.12345, "curiosity": 82.75, "joy": 73.5},
+            "xp": 12,
+            "care_count": 12,
+            "last_action": "study",
+            "last_action_at": "2026-10-29T07:00:00Z",
+            "last_workflow_run_id": 12345678,
+        }
+
+    def test_strict_legacy_migration_preserves_every_history_and_numeric_field(self):
+        before = deepcopy(self.legacy)
+        migrated = pet.migrate_state(self.legacy)
+        self.assertEqual(migrated["schema_version"], 2)
+        self.assertEqual(migrated["name"], "Sparks")
+        for key in set(before) - {"schema_version", "name"}:
+            self.assertEqual(migrated[key], before[key])
+        self.assertEqual(self.legacy, before)
+        self.assertEqual(pet.migrate_state(migrated), migrated)
+        self.assertIsNot(migrated["stats"], self.legacy["stats"])
+        pet.validate_state(migrated)
+        with self.assertRaisesRegex(ValueError, "expected 2"):
+            pet.validate_state(self.legacy)
+
+    def test_migration_rejects_impostor_legacy_states_and_unknown_schemas(self):
+        for key, value in (("name", "Sparks"), ("schema_version", True), ("schema_version", 3), ("xp", 11), ("last_action_at", "2027-01-01T00:00:00Z")):
+            candidate = deepcopy(self.legacy)
+            candidate[key] = value
+            with self.subTest(key=key, value=value), self.assertRaises(ValueError):
+                pet.migrate_state(candidate)
+        extra = deepcopy(self.legacy)
+        extra["unexpected"] = "discarding unknown history is forbidden"
+        with self.assertRaises(ValueError):
+            pet.migrate_state(extra)
+
+    def test_cli_check_requires_canonical_state_and_update_commits_migration(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "assets").mkdir()
+            (root / "data").mkdir()
+            template = root / "assets/persona-template.svg"
+            template.write_text(SIMPLE_TEMPLATE, encoding="utf-8")
+            state_path = root / "data/persona.json"
+            state_path.write_text(json.dumps(self.legacy), encoding="utf-8")
+            before = state_path.read_bytes(), state_path.stat().st_mtime_ns
+            with redirect_stderr(io.StringIO()):
+                self.assertEqual(pet.main(["--check"], root=root), 1)
+            self.assertEqual(before, (state_path.read_bytes(), state_path.stat().st_mtime_ns))
+            self.assertFalse((root / "assets/research-header.svg").exists())
+            with redirect_stdout(io.StringIO()):
+                self.assertEqual(pet.main(["--now", self.legacy["updated_at"]], root=root), 0)
+                self.assertEqual(pet.main(["--check"], root=root), 0)
+            self.assertEqual(json.loads(state_path.read_text(encoding="utf-8")), pet.migrate_state(self.legacy))
 
 
 class PersonaRenderingTests(unittest.TestCase):

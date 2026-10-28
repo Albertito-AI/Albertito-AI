@@ -1,8 +1,14 @@
-![Albert Tan: Law, evidence and technology. Albertito, a fictional scholarly companion with animated breathing, blinking and persistent game state.](assets/research-header.svg)
+![Albert Tan: Law, evidence and technology. Sparks, a fictional scholarly companion with animated breathing, blinking and persistent game state.](assets/research-header.svg)
 
-**Meet Albertito**, my little digital research companion.
-[About his life](docs/ALBERTITO.md) · [Still image](assets/research-header-static.svg)
-· [Care controls (repository write access)](https://github.com/Albertito-AI/Albertito-AI/actions/workflows/persona.yml)
+**Meet Sparks**, my little digital research companion, cared for by the community.
+
+**[Feed an idea](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20feed&body=Public%20care%3A%20feed.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Study](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20study&body=Public%20care%3A%20study.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Play](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20play&body=Public%20care%3A%20play.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Rest](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20rest&body=Public%20care%3A%20rest.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.)**
+
+Anyone signed into GitHub can submit a public care request. Choose an action,
+then click **Create**. Sparks may accept or decline according to his needs.
+
+[About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
+· [Still image](assets/research-header-static.svg)
 
 # Albert Tan Sin Hon
 

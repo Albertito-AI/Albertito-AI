@@ -31,3 +31,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Check generated companion images
         run: python scripts/update_persona.py --check
+      - name: Check public care receipts and diary
+        run: python scripts/public_care.py --check

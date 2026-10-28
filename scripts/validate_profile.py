@@ -16,11 +16,16 @@ REQUIRED_PATHS = {
     "docs/PROFILE_EVOLUTION.md",
     "docs/PROFILE_PROGRESS.md",
     "docs/ALBERTITO.md",
+    "docs/SPARKS.md",
+    "docs/SPARKS_CARE_LOG.md",
     "assets/persona-template.svg",
     "assets/research-header-static.svg",
     "data/persona.json",
+    "data/public-care.json",
     "scripts/update_persona.py",
+    "scripts/public_care.py",
     "tests/test_persona.py",
+    "tests/test_public_care.py",
     ".github/workflows/persona.yml",
 }
 

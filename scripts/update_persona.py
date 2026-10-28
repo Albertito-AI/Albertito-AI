@@ -1,4 +1,4 @@
-"""Update Albertito's fictional state and render self-contained profile images.
+"""Update Sparks' fictional state and render self-contained profile images.
 
 Only the Python standard library is used. No activity, visitor or private data
 is collected; the numbers describe a game, not Albert Tan's real life.
@@ -16,6 +16,7 @@ import math
 from pathlib import Path
 import re
 import sys
+from typing import Literal
 import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
@@ -27,6 +28,8 @@ ACTIONS = ("tick", "feed", "study", "play", "rest")
 CARE_COOLDOWN = timedelta(minutes=15)
 MOOD_DURATION = timedelta(hours=6)
 MAX_COUNTER = 1_000_000_000
+SCHEMA_VERSION = 2
+PERSONA_NAME = "Sparks"
 STATE_KEYS = {
     "schema_version", "name", "born_at", "updated_at", "stats", "xp",
     "care_count", "last_action", "last_action_at", "last_workflow_run_id",
@@ -42,6 +45,12 @@ EFFECTS = {
     "study": {"energy": -12, "curiosity": 12, "joy": 4},
     "play": {"energy": -8, "curiosity": 5, "joy": 24},
     "rest": {"energy": 25, "curiosity": -3, "joy": 8},
+}
+ACCEPTED_MESSAGES = {
+    "feed": "Thank you. That gives me something new to think about.",
+    "study": "Thank you. Let's work through a question together.",
+    "play": "Thank you. A little play sounds lovely.",
+    "rest": "Thank you. I'll take a little rest.",
 }
 
 
@@ -66,8 +75,8 @@ def timestamp(now: datetime) -> str:
 def initial_state(now: datetime) -> dict:
     stamp = timestamp(now)
     return {
-        "schema_version": 1,
-        "name": "Albertito",
+        "schema_version": SCHEMA_VERSION,
+        "name": PERSONA_NAME,
         "born_at": stamp,
         "updated_at": stamp,
         "stats": {"energy": 80.0, "curiosity": 75.0, "joy": 80.0},
@@ -79,13 +88,13 @@ def initial_state(now: datetime) -> dict:
     }
 
 
-def validate_state(state: dict) -> None:
+def _validate_state(state: dict, version: int, name: str) -> None:
     if not isinstance(state, dict) or set(state) != STATE_KEYS:
-        raise ValueError("state fields do not match schema version 1")
-    if type(state["schema_version"]) is not int or state["schema_version"] != 1:
-        raise ValueError("unsupported state schema version")
-    if state["name"] != "Albertito":
-        raise ValueError("state name must be Albertito")
+        raise ValueError(f"state fields do not match schema version {version}")
+    if type(state["schema_version"]) is not int or state["schema_version"] != version:
+        raise ValueError(f"unsupported state schema version; expected {version}")
+    if state["name"] != name:
+        raise ValueError(f"state name must be {name}")
     born, updated = parse_time(state["born_at"]), parse_time(state["updated_at"])
     if born > updated:
         raise ValueError("birth timestamp is later than the last update")
@@ -111,6 +120,24 @@ def validate_state(state: dict) -> None:
         raise ValueError("invalid last care action")
     elif not born <= parse_time(action_at) <= updated or state["care_count"] == 0:
         raise ValueError("last care timestamp is inconsistent with the state")
+
+
+def validate_state(state: dict) -> None:
+    """Require the canonical Sparks state, without implicitly migrating it."""
+    _validate_state(state, SCHEMA_VERSION, PERSONA_NAME)
+
+
+def migrate_state(state: dict) -> dict:
+    """Rename a strictly valid legacy pet while preserving its complete history."""
+    if isinstance(state, dict) and state.get("schema_version") == 1:
+        _validate_state(state, 1, "Albertito")
+        migrated = deepcopy(state)
+        migrated["schema_version"] = SCHEMA_VERSION
+        migrated["name"] = PERSONA_NAME
+        validate_state(migrated)
+        return migrated
+    validate_state(state)
+    return deepcopy(state)
 
 
 def _energy_segment(energy: float, start: datetime, end: datetime) -> float:
@@ -167,6 +194,23 @@ class UpdateResult:
     state: dict
     message: str
     is_noop: bool = False
+    accepted: bool = False
+    reason: Literal["accepted", "cooldown", "satisfied", "too_tired", "tick", "replayed"] = "tick"
+
+
+def _care_refusal(stats: dict, action: str) -> tuple[str, str] | None:
+    # Tiredness has priority when study would be both tiring and unnecessary.
+    if action == "study" and stats["energy"] < 30:
+        return "too_tired", "Thanks, I am too tired to study. A little rest would help."
+    if action == "feed" and stats["curiosity"] >= 85:
+        return "satisfied", "Thanks, I have enough ideas for now."
+    if action == "play" and stats["joy"] >= 85:
+        return "satisfied", "Thanks, I have had enough play for now."
+    if action == "rest" and stats["energy"] >= 90:
+        return "satisfied", "Thanks, I am already well rested."
+    if action == "study" and stats["curiosity"] >= 90:
+        return "satisfied", "Thanks, I have enough to study for now."
+    return None
 
 
 def advance(state: dict, now: datetime, action: str = "tick", event_id: str | None = None) -> UpdateResult:
@@ -179,7 +223,7 @@ def advance(state: dict, now: datetime, action: str = "tick", event_id: str | No
         raise ValueError("clock moved backwards; refusing to alter the saved state")
     run_id = workflow_id(event_id)
     if run_id is not None and run_id <= state["last_workflow_run_id"]:
-        return UpdateResult(deepcopy(state), "Previously processed or stale workflow run; no change.", is_noop=True)
+        return UpdateResult(deepcopy(state), "Previously processed or stale workflow run; no change.", is_noop=True, reason="replayed")
 
     result = deepcopy(state)
     hours = (now - previous).total_seconds() / 3600
@@ -192,10 +236,19 @@ def advance(state: dict, now: datetime, action: str = "tick", event_id: str | No
         result["last_workflow_run_id"] = run_id
 
     message = "Routine updated."
+    accepted = False
+    reason = "tick"
     last_care = parse_time(state["last_action_at"]) if state["last_action_at"] else None
-    if action != "tick" and last_care and now - last_care < CARE_COOLDOWN:
+    refusal = _care_refusal(result["stats"], action)
+    if refusal is not None:
+        reason, message = refusal
+    elif action != "tick" and last_care and now - last_care < CARE_COOLDOWN:
         remaining = math.ceil((CARE_COOLDOWN - (now - last_care)).total_seconds() / 60)
-        message = f"Care cooldown: start a new workflow run in {remaining} minute(s). Routine updated."
+        reason = "cooldown"
+        if run_id is None:
+            message = f"Thanks, please give me another {remaining} minute(s) before more care."
+        else:
+            message = f"Care cooldown: start a new workflow run in {remaining} minute(s). Routine updated."
     elif action != "tick":
         for key, delta in EFFECTS[action].items():
             result["stats"][key] = min(100.0, max(0.0, result["stats"][key] + delta))
@@ -203,9 +256,11 @@ def advance(state: dict, now: datetime, action: str = "tick", event_id: str | No
         result["care_count"] = result["xp"]
         result["last_action"] = action
         result["last_action_at"] = timestamp(now)
-        message = f"Care accepted: {action}."
+        message = ACCEPTED_MESSAGES[action]
+        accepted = True
+        reason = "accepted"
     validate_state(result)
-    return UpdateResult(result, message)
+    return UpdateResult(result, message, accepted=accepted, reason=reason)
 
 
 def mode_for(state: dict) -> str:
@@ -293,7 +348,10 @@ def main(argv: list[str] | None = None, root: Path = ROOT) -> int:
         state_path = root / "data/persona.json"
         if state_path.exists():
             state = json.loads(state_path.read_text(encoding="utf-8"))
-            validate_state(state)
+            if args.check:
+                validate_state(state)
+            else:
+                state = migrate_state(state)
         else:
             raise ValueError("saved state data/persona.json is missing; restore it from Git history before updating")
         message = "Saved state and both images are consistent."
