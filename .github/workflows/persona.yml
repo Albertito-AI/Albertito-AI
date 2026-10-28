@@ -1,0 +1,71 @@
+name: Albertito companion
+
+on:
+  schedule:
+    # 07:17, 13:17, 19:17 and 22:17 Asia/Singapore (UTC+08:00).
+    - cron: '17 5,11,14,23 * * *'
+  workflow_dispatch:
+    inputs:
+      care:
+        description: 'Choose how to care for Albertito (fictional game state)'
+        required: true
+        default: tick
+        type: choice
+        options:
+          - tick
+          - feed
+          - study
+          - play
+          - rest
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/persona-template.svg'
+      - 'scripts/update_persona.py'
+      - '.github/workflows/persona.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: albertito-companion-state
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'Albertito-AI/Albertito-AI' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Test state transitions
+        run: python -m unittest discover -s tests -v
+      - name: Update the fictional companion
+        env:
+          CARE_ACTION: ${{ inputs.care || 'tick' }}
+        run: python scripts/update_persona.py --action "$CARE_ACTION" --event-id "actions:$GITHUB_RUN_ID"
+      - name: Check the generated profile
+        run: |
+          python scripts/update_persona.py --check
+          python scripts/validate_profile.py
+      - name: Save the new state
+        run: |
+          set -euo pipefail
+          git add -- data/persona.json assets/research-header.svg assets/research-header-static.svg
+          if git diff --cached --quiet; then
+            echo 'Albertito is already up to date.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(persona): update Albertito game state'
+          # A normal push rejects concurrent main changes. Never force or overwrite them.
+          git push origin HEAD:main

@@ -15,6 +15,13 @@ REQUIRED_PATHS = {
     "docs/PORTFOLIO_VISIBILITY_POLICY.md",
     "docs/PROFILE_EVOLUTION.md",
     "docs/PROFILE_PROGRESS.md",
+    "docs/ALBERTITO.md",
+    "assets/persona-template.svg",
+    "assets/research-header-static.svg",
+    "data/persona.json",
+    "scripts/update_persona.py",
+    "tests/test_persona.py",
+    ".github/workflows/persona.yml",
 }
 
 REQUIRED_REPOSITORY_LINKS = {
@@ -100,15 +107,35 @@ def validate() -> list[str]:
         if "docs/PORTFOLIO_VISIBILITY_POLICY.md" not in readme:
             errors.append("README does not reference the portfolio visibility policy")
 
-    svg_path = ROOT / "assets" / "research-header.svg"
-    if svg_path.exists():
+    for name in ("research-header.svg", "research-header-static.svg", "persona-template.svg"):
+        svg_path = ROOT / "assets" / name
+        if not svg_path.exists():
+            continue
         try:
             root = ET.parse(svg_path).getroot()
         except ET.ParseError as exc:
-            errors.append(f"invalid SVG XML: {exc}")
+            errors.append(f"invalid SVG XML in {name}: {exc}")
         else:
-            if not root.tag.endswith("svg"):
-                errors.append("research-header.svg root element is not <svg>")
+            if root.tag != "{http://www.w3.org/2000/svg}svg":
+                errors.append(f"{name} root element is not an SVG document")
+            tags = {element.tag.split("}")[-1] for element in root.iter()}
+            if not {"title", "desc"}.issubset(tags):
+                errors.append(f"{name} needs an accessible title and description")
+            if tags & {"script", "foreignObject", "iframe", "object", "embed"}:
+                errors.append(f"{name} contains active embedded content")
+            for element in root.iter():
+                for attribute, value in element.attrib.items():
+                    local = attribute.split("}")[-1]
+                    if local.lower().startswith("on"):
+                        errors.append(f"{name} contains an event handler")
+                    if local == "href" and not value.startswith("#"):
+                        errors.append(f"{name} contains an external reference")
+            svg_text = svg_path.read_text(encoding="utf-8")
+            if "@import" in svg_text.lower():
+                errors.append(f"{name} imports an external stylesheet")
+            for reference in re.findall(r"url\(([^)]+)\)", svg_text, flags=re.I):
+                if not reference.strip(" \t\"'").startswith("#"):
+                    errors.append(f"{name} contains a nonlocal CSS reference")
 
     return errors
 

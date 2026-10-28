@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description" class="mode-{{mode}}">
+  <title id="title">Albert Tan: Law, evidence and technology. Meet Albertito.</title>
+  <desc id="description">Albertito is an animated fictional digital companion, a small golden scholar with glasses and an open book. Current game state: {{mode}}. Energy {{energy}}, curiosity {{curiosity}}, joy {{joy}}. {{stage}}, day {{age_days}}. {{thought}} Updated {{updated_at}}. These are game values, not measurements of Albert Tan.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="1" stop-color="#17253a"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#bfa06a" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#bfa06a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#fff1c9"/>
+      <stop offset="0.6" stop-color="#e9cc8f"/>
+      <stop offset="1" stop-color="#c69b59"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff9e8"/>
+      <stop offset="1" stop-color="#e7d5ab"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="1200" height="380" rx="20"/>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .serif { font-family: Georgia, 'Times New Roman', serif; }
+    .float { animation: breathe 6s ease-in-out infinite; }
+    .blink { transform-box: fill-box; transform-origin: center; animation: blink 7.2s infinite; }
+    .star { animation: glimmer 5s ease-in-out infinite; }
+    .star-late { animation-delay: -2.6s; }
+    .orbit { animation: drift 9s ease-in-out infinite; }
+    .page-light { animation: page 7s ease-in-out infinite; }
+    .sleep-eyes, .sleep-mark, .play-mouth, .play-spark { display: none; }
+    .mode-resting .awake-eyes, .mode-resting .awake-mouth { display: none; }
+    .mode-resting .sleep-eyes, .mode-resting .sleep-mark { display: inline; }
+    .mode-resting .float { animation-duration: 9s; }
+    .mode-resting .page-light { animation: none; opacity: 0.12; }
+    .mode-resting .sleep-mark { animation: dreaming 5s ease-in-out infinite; }
+    .mode-studying .page-light { animation-duration: 3.8s; }
+    .mode-playful .awake-mouth { display: none; }
+    .mode-playful .play-mouth, .mode-playful .play-spark { display: inline; }
+    .mode-playful .float { animation: happy 4s ease-in-out infinite; }
+    .mode-playful .play-spark { animation: glimmer 3s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { transform: translateY(2px); } 50% { transform: translateY(-4px); } }
+    @keyframes blink { 0%, 42%, 46%, 71%, 75%, 100% { transform: scaleY(1); } 44%, 73% { transform: scaleY(0.08); } }
+    @keyframes glimmer { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.95; } }
+    @keyframes drift { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(3px, -5px); } }
+    @keyframes page { 0%, 100% { opacity: 0.15; } 45% { opacity: 0.75; } }
+    @keyframes dreaming { 0%, 100% { opacity: 0.3; transform: translateY(2px); } 50% { opacity: 0.9; transform: translateY(-5px); } }
+    @keyframes happy { 0%, 100% { transform: translateY(2px) rotate(0deg); } 25% { transform: translateY(-4px) rotate(-1deg); } 75% { transform: translateY(-3px) rotate(1deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="380" fill="url(#sky)"/>
+    <ellipse cx="822" cy="177" rx="278" ry="244" fill="url(#halo)"/>
+    <rect x="0.5" y="0.5" width="1199" height="379" rx="19.5" fill="none" stroke="#9db3cc" stroke-opacity="0.13"/>
+
+    <!-- The original constellation becomes the companion's little sky. -->
+    <g fill="none" stroke="#bfa77c" stroke-width="1.1" opacity="0.3">
+      <path d="M677 119 L810 51 L953 110 L1102 80 L1061 210 L953 110 L810 224 L677 119"/>
+      <path d="M810 51 L810 224 M677 119 L953 110"/>
+    </g>
+    <g fill="#e8d4a8">
+      <circle class="star" cx="677" cy="119" r="2.6"/>
+      <circle cx="810" cy="51" r="3" opacity="0.7"/>
+      <circle class="star star-late" cx="953" cy="110" r="3.2"/>
+      <circle cx="1102" cy="80" r="2.4" opacity="0.55"/>
+      <circle class="star" cx="1061" cy="210" r="2.2"/>
+      <circle cx="810" cy="224" r="2.7" opacity="0.6"/>
+    </g>
+    <g fill="#d6dce7" opacity="0.35">
+      <circle cx="654" cy="58" r="1.3"/><circle cx="715" cy="211" r="1.4"/>
+      <circle cx="894" cy="39" r="1.2"/><circle cx="1036" cy="38" r="1.3"/>
+      <circle cx="1147" cy="133" r="1.5"/><circle cx="934" cy="275" r="1.4"/>
+      <circle cx="668" cy="286" r="1.1"/><circle cx="1159" cy="275" r="1.1"/>
+    </g>
+
+    <text x="59" y="51" fill="#c9b484" font-size="12" letter-spacing="3.1">A LIFE OF INQUIRY</text>
+    <text x="55" y="127" fill="#faf8f1" class="serif" font-size="66">Albert Tan</text>
+    <text x="59" y="169" fill="#d6dce7" font-size="25" letter-spacing="0.55">Law, evidence and technology</text>
+    <path d="M60 199 H133" stroke="#bfa77c" stroke-width="2"/>
+    <text x="59" y="239" fill="#e8dcc2" class="serif" font-size="21" font-style="italic">{{thought}}</text>
+
+    <g transform="translate(59 279)">
+      <rect width="111" height="26" rx="13" fill="#bfa77c" fill-opacity="0.12" stroke="#bfa77c" stroke-opacity="0.3"/>
+      <circle cx="15" cy="13" r="3.1" fill="#e8d4a8"/>
+      <text x="27" y="17" fill="#e8d4a8" font-size="11" letter-spacing="1.2">ALBERTITO</text>
+      <text x="124" y="18" fill="#a9b8cc" font-size="14">a digital companion</text>
+    </g>
+    <text x="60" y="330" fill="#aebbd0" font-size="15">{{stage}} <tspan fill="#6b7d96"> / </tspan> Day {{age_days}} <tspan fill="#6b7d96"> / </tspan> {{mode}}</text>
+
+    <!-- All movement is declarative. This SVG also works as a still image. -->
+    <ellipse cx="819" cy="279" rx="88" ry="12" fill="#070f1c" opacity="0.48"/>
+    <g transform="translate(819 172)">
+      <g class="float">
+        <path d="M-68 36 C-83 8 -77 -35 -48 -56 C-31 -69 -12 -70 2 -67 C13 -83 28 -82 31 -63 C61 -52 79 -24 74 10 C71 35 62 55 45 70 C33 81 12 83 -2 77 C-19 86 -38 81 -47 69 C-62 70 -75 57 -68 36 Z" fill="url(#gold)"/>
+        <path d="M-50 -37 C-39 -50 -20 -57 -4 -54" fill="none" stroke="#fff9e9" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+        <ellipse cx="-46" cy="24" rx="11" ry="5.5" fill="#d79177" opacity="0.38"/>
+        <ellipse cx="47" cy="24" rx="11" ry="5.5" fill="#d79177" opacity="0.38"/>
+
+        <g fill="none" stroke="#253348" stroke-width="4">
+          <circle cx="-27" cy="3" r="22"/>
+          <circle cx="29" cy="3" r="22"/>
+          <path d="M-5 1 Q1 -3 7 1 M-50 -2 L-62 -7 M52 -2 L64 -7" stroke-linecap="round"/>
+        </g>
+        <g class="awake-eyes" fill="#223047">
+          <g class="blink">
+            <ellipse cx="-24" cy="6" rx="4.4" ry="7"/>
+            <ellipse cx="26" cy="6" rx="4.4" ry="7"/>
+          </g>
+          <circle cx="-22.7" cy="3.7" r="1.4" fill="#fff7e0"/>
+          <circle cx="27.3" cy="3.7" r="1.4" fill="#fff7e0"/>
+        </g>
+        <g class="sleep-eyes" fill="none" stroke="#253348" stroke-width="3.5" stroke-linecap="round">
+          <path d="M-33 7 Q-25 13 -17 7 M18 7 Q26 13 34 7"/>
+        </g>
+        <path class="awake-mouth" d="M-8 31 Q1 40 10 31" fill="none" stroke="#644d35" stroke-width="2.7" stroke-linecap="round"/>
+        <path class="play-mouth" d="M-10 29 Q1 46 12 29 Z" fill="#654734"/>
+        <path class="sleep-eyes" d="M-4 34 Q2 31 8 34" fill="none" stroke="#644d35" stroke-width="2.4" stroke-linecap="round"/>
+
+        <!-- A miniature open book: research is this companion's habitat. -->
+        <path d="M-57 65 Q-31 56 -2 69 Q29 56 58 65 L62 102 Q33 94 0 105 Q-30 94 -61 102 Z" fill="#49627b" stroke="#18263a" stroke-width="2"/>
+        <path d="M-53 59 Q-29 54 0 67 Q29 54 54 59 L56 94 Q29 89 0 101 Q-29 89 -56 94 Z" fill="url(#paper)"/>
+        <path d="M0 68 V99" stroke="#b29a6c" stroke-width="1.8"/>
+        <g fill="none" stroke="#aa9876" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+          <path d="M-43 69 Q-27 66 -12 73 M-43 77 Q-28 74 -12 81 M-43 85 Q-28 82 -12 89"/>
+          <path d="M12 73 Q27 66 43 69 M12 81 Q28 74 43 77 M12 89 Q28 82 43 85"/>
+        </g>
+        <path class="page-light" d="M8 69 Q29 59 47 63 L48 90 Q29 88 8 96 Z" fill="#fffdf2" opacity="0.15"/>
+        <ellipse cx="-61" cy="76" rx="10" ry="14" transform="rotate(-18 -61 76)" fill="#e8ca8c" stroke="#bd985e" stroke-width="1"/>
+        <ellipse cx="62" cy="76" rx="10" ry="14" transform="rotate(18 62 76)" fill="#e8ca8c" stroke="#bd985e" stroke-width="1"/>
+      </g>
+    </g>
+
+    <g class="orbit" fill="none" stroke="#e8d4a8" stroke-width="1.7" stroke-linecap="round">
+      <path d="M715 153 v12 M709 159 h12"/>
+      <path d="M917 190 v8 M913 194 h8" opacity="0.6"/>
+    </g>
+    <g class="play-spark" fill="none" stroke="#e8d4a8" stroke-width="1.8" stroke-linecap="round">
+      <path d="M733 104 l-6 -7 M744 100 v-9 M754 104 l6 -7"/>
+    </g>
+    <g class="sleep-mark" fill="#c8d5e7" font-family="Georgia, serif">
+      <text x="902" y="143" font-size="19">z</text>
+      <text x="923" y="119" font-size="26">z</text>
+    </g>
+    <text x="819" y="316" text-anchor="middle" fill="#c8b892" font-size="12" letter-spacing="1.7">A SMALL SPARK OF CURIOSITY</text>
+
+    <path d="M984 137 V277" stroke="#8da2bd" stroke-opacity="0.19"/>
+    <g transform="translate(1012 143)">
+      <text y="0" fill="#b9c6d8" font-size="11" letter-spacing="1.5">ENERGY</text>
+      <text x="100" y="0" text-anchor="end" fill="#ead8ad" font-size="13">{{energy}}</text>
+      <rect y="12" width="100" height="5" rx="2.5" fill="#2a3a50"/>
+      <rect y="12" width="{{energy_width}}" height="5" rx="2.5" fill="#dec28a"/>
+      <text y="52" fill="#b9c6d8" font-size="11" letter-spacing="1.5">CURIOSITY</text>
+      <text x="100" y="52" text-anchor="end" fill="#d6e4dc" font-size="13">{{curiosity}}</text>
+      <rect y="64" width="100" height="5" rx="2.5" fill="#2a3a50"/>
+      <rect y="64" width="{{curiosity_width}}" height="5" rx="2.5" fill="#9db9ac"/>
+      <text y="104" fill="#b9c6d8" font-size="11" letter-spacing="1.5">JOY</text>
+      <text x="100" y="104" text-anchor="end" fill="#d5dfef" font-size="13">{{joy}}</text>
+      <rect y="116" width="100" height="5" rx="2.5" fill="#2a3a50"/>
+      <rect y="116" width="{{joy_width}}" height="5" rx="2.5" fill="#a8bdd9"/>
+      <text y="144" fill="#8fa1ba" font-size="10" letter-spacing="1.1">GAME STATE</text>
+    </g>
+
+    <path d="M60 351 H1140" stroke="#8da2bd" stroke-opacity="0.11"/>
+    <text x="1141" y="369" text-anchor="end" fill="#8f9eb3" font-size="11">Updated {{updated_at}}</text>
+  </g>
+</svg>
