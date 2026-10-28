@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-header-static.svg?version=sparks-retro-20261028">
-  <img src="assets/research-header.svg?version=sparks-retro-20261028" alt="Albert Tan: Law, evidence and technology. Sparks, a fictional retro research robot with subtle movement and persistent game state." width="1200" height="380">
+  <img src="assets/research-header.svg?version=sparks-retro-20261028" alt="Albert Tan: Law, evidence and technology. Sparks, a fictional retro research robot with subtle movement and persistent game state." width="1200">
 </picture>
 
 **Meet Sparks**, my little digital research companion, cared for by the community.

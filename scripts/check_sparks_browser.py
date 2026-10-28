@@ -77,8 +77,13 @@ with tempfile.TemporaryDirectory() as temporary, sync_playwright() as pw:
         page.goto(target, wait_until="domcontentloaded", timeout=60000)
         header = page.locator('article img[alt^="Albert Tan:"]').first
         header.wait_for(timeout=30000)
-        assert header.evaluate("(e) => e.complete && e.naturalWidth === 1200")
-        print("PASS: GitHub branch README image loaded:", header.get_attribute("src"))
+        page.wait_for_function("(e) => e.complete && e.naturalWidth === 1200", arg=header.element_handle(), timeout=30000)
+        print("PASS: GitHub branch README image loaded:", header.evaluate("(e) => e.currentSrc"))
+        page.set_viewport_size({"width": 375, "height": 812})
+        dimensions = header.bounding_box()
+        assert abs(dimensions["height"] - dimensions["width"] * 380 / 1200) < 2, dimensions
+        print("PASS: GitHub header retains its aspect ratio on mobile.")
+        page.set_viewport_size({"width": 1240, "height": 430})
     except Exception as exc:
         print("GITHUB_BRANCH_BROWSER_CHECK_UNAVAILABLE:", type(exc).__name__, str(exc)[:250])
 
@@ -86,29 +91,32 @@ with tempfile.TemporaryDirectory() as temporary, sync_playwright() as pw:
         page.goto("https://github.com/Albertito-AI", wait_until="domcontentloaded", timeout=60000)
         header = page.locator('article img[alt^="Albert Tan:"]').first
         header.wait_for(timeout=30000)
-        loaded = header.evaluate("(e) => e.complete && e.naturalWidth === 1200")
+        page.wait_for_function("(e) => e.complete && e.naturalWidth === 1200", arg=header.element_handle(), timeout=30000)
+        loaded = True
         retro = "retro research robot" in (header.get_attribute("alt") or "")
         print("PUBLIC_PROFILE_RETRO_LOADED:", bool(loaded and retro))
-        print("PUBLIC_PROFILE_IMAGE_URL:", header.get_attribute("src"))
+        print("PUBLIC_PROFILE_IMAGE_URL:", header.evaluate("(e) => e.currentSrc"))
     except Exception as exc:
         print("PUBLIC_PROFILE_BROWSER_CHECK_UNAVAILABLE:", type(exc).__name__, str(exc)[:250])
     browser.close()
 
-sheet = Image.new("RGB", (1200, 660), "#101827")
-draw = ImageDraw.Draw(sheet)
-font = ImageFont.load_default(size=17)
-for index, (name, picture) in enumerate(images):
-    x, y = (index % 2) * 600, (index // 2) * 220
-    draw.text((x + 12, y + 6), name, fill="#e8d4a8", font=font)
-    sheet.paste(picture.resize((600, 190), Image.Resampling.LANCZOS), (x, y + 30))
-buffer = io.BytesIO()
-sheet.save(buffer, format="PNG", optimize=True)
-encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
-print("SPARKS_SCREENSHOT_BEGIN")
-for start in range(0, len(encoded), 2000):
-    print("SPARKS_PNG_CHUNK " + encoded[start:start + 2000])
-print("SPARKS_SCREENSHOT_END")
-print("All six local browser rendering checks passed.")
+if os.environ.get("SPARKS_EMIT_PREVIEW") == "1":
+    sheet = Image.new("RGB", (1200, 660), "#101827")
+    draw = ImageDraw.Draw(sheet)
+    font = ImageFont.load_default(size=17)
+    for index, (name, picture) in enumerate(images):
+        x, y = (index % 2) * 600, (index // 2) * 220
+        draw.text((x + 12, y + 6), name, fill="#e8d4a8", font=font)
+        sheet.paste(picture.resize((600, 190), Image.Resampling.LANCZOS), (x, y + 30))
+    buffer = io.BytesIO()
+    sheet.save(buffer, format="PNG", optimize=True)
+    encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
+    print("SPARKS_SCREENSHOT_BEGIN")
+    for start in range(0, len(encoded), 2000):
+        print("SPARKS_PNG_CHUNK " + encoded[start:start + 2000])
+    print("SPARKS_SCREENSHOT_END")
+    print("All six local browser rendering checks passed.")
+print("All six header browser rendering checks passed.")
 
 # Exercise the complete supplied app through its real controls.
 dance_images = []
@@ -227,19 +235,20 @@ def emit_image(label, picture):
     for start in range(0, len(encoded), 2000):
         print(label + "_PNG_CHUNK " + encoded[start:start + 2000])
 
-sheet = Image.new("RGB", (960, 560), "#1b1424")
-draw = ImageDraw.Draw(sheet)
-for index, (name, picture) in enumerate(dance_images):
-    x, y = (index % 3) * 320, (index // 3) * 280
-    draw.text((x + 8, y + 8), name, fill="#ffb02e", font=ImageFont.load_default(size=14))
-    sheet.paste(picture.resize((320, 240), Image.Resampling.LANCZOS), (x, y + 36))
-emit_image("DANCE", sheet)
-layouts = Image.new("RGB", (1355, 1130), "#1b1424")
-draw = ImageDraw.Draw(layouts)
-for index, (name, picture) in enumerate(layout_images):
-    x = 0 if index == 0 else 980
-    draw.text((x + 10, 8), name, fill="#ffb02e", font=ImageFont.load_default(size=17))
-    if index == 0: picture = picture.resize((960, 733), Image.Resampling.LANCZOS)
-    layouts.paste(picture, (x, 30))
-emit_image("LAYOUT", layouts)
+if os.environ.get("SPARKS_EMIT_PREVIEW") == "1":
+    sheet = Image.new("RGB", (960, 560), "#1b1424")
+    draw = ImageDraw.Draw(sheet)
+    for index, (name, picture) in enumerate(dance_images):
+        x, y = (index % 3) * 320, (index // 3) * 280
+        draw.text((x + 8, y + 8), name, fill="#ffb02e", font=ImageFont.load_default(size=14))
+        sheet.paste(picture.resize((320, 240), Image.Resampling.LANCZOS), (x, y + 36))
+    emit_image("DANCE", sheet)
+    layouts = Image.new("RGB", (1355, 1130), "#1b1424")
+    draw = ImageDraw.Draw(layouts)
+    for index, (name, picture) in enumerate(layout_images):
+        x = 0 if index == 0 else 980
+        draw.text((x + 10, 8), name, fill="#ffb02e", font=ImageFont.load_default(size=17))
+        if index == 0: picture = picture.resize((960, 733), Image.Resampling.LANCZOS)
+        layouts.paste(picture, (x, 30))
+    emit_image("LAYOUT", layouts)
 print("All Dance Floor browser checks passed.")
