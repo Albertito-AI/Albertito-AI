@@ -1,0 +1,32 @@
+{
+  "source": "site/index.html",
+  "source_sha256": "9cf5fe9dadbb520245eeffe55df81c5c458bd189b43964fd938f19fb978573af",
+  "dimensions": [
+    304,
+    540
+  ],
+  "gif": {
+    "frames": 180,
+    "duration_ms": 18000,
+    "fps": 10,
+    "colors": 128,
+    "bytes": 3134030,
+    "loop": 0,
+    "sha256": "9e47d8b0c961807a99732c73d0949043be5230f17f7ba650534cacd840910598"
+  },
+  "video": {
+    "frames": 570,
+    "fps": 10,
+    "duration_seconds": 57.0,
+    "bytes": 1352730,
+    "audio": false
+  },
+  "routines": [
+    "Runway hip pop",
+    "Be OK",
+    "Pumpkin head illusion",
+    "Pray For Me slow-mo",
+    "Two Fishes",
+    "Ramalama costume walk"
+  ]
+}

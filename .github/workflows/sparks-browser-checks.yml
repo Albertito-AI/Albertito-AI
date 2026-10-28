@@ -8,6 +8,17 @@ on:
       - 'site/**'
       - '.github/workflows/sparks-browser-checks.yml'
       - 'scripts/check_sparks_browser.py'
+      - 'scripts/check_sparks_media.py'
+
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'assets/sparks-dance*'
+      - 'site/**'
+      - '.github/workflows/sparks-browser-checks.yml'
+      - 'scripts/check_sparks_browser.py'
+      - 'scripts/check_sparks_media.py'
 
   workflow_dispatch:
 
@@ -31,3 +42,12 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Check header rendering and Dance Floor behaviour
         run: python -u scripts/check_sparks_browser.py
+      - name: Verify the media, interactive stage and published profile
+        env:
+          VERIFY_PUBLIC: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        run: |
+          if [ "$VERIFY_PUBLIC" = 'true' ]; then
+            python -u scripts/check_sparks_media.py --public
+          else
+            python -u scripts/check_sparks_media.py
+          fi

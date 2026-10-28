@@ -1,11 +1,6 @@
 name: Publish Sparks Dance Floor
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'site/**'
-      - '.github/workflows/sparks-pages.yml'
   workflow_dispatch:
 
 permissions:

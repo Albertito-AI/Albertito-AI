@@ -2,21 +2,25 @@
 
 [Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
 
-**Publication status:** integrated and prepared for GitHub Pages. The repository
-owner must first enable **Settings → Pages → Build and deployment → Source →
-GitHub Actions**. The prepared workflow can then be rerun to publish the page.
-The intended URL is https://albertito-ai.github.io/Albertito-AI/; it is not a
-confirmed live page until that deployment succeeds.
+**[Open the interactive stage](https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html)** · [Full silent video](../assets/sparks-dance.mp4)
 
-The self-contained [HTML source](../site/index.html) can also be downloaded and
-opened in a browser.
+The [GitHub profile](https://github.com/Albertito-AI) includes an animated
+18-second sampler covering all six routines. It plays as a GIF directly in the
+README. A matching still is selected for reduced-motion preferences.
+
+The interactive stage runs from the reviewed public HTML through
+[raw.githack.com](https://raw.githack.com/), an independent preview host.
+It may show a destination confirmation before opening the page. The link pins
+commit `5038e7dfda8e18b9689536a380b2f8bf9256d288` so it serves the reviewed version.
+The complete [HTML source](../site/index.html) is also self-contained and can be
+downloaded and opened in a browser.
 
 The Dance Floor integrates the supplied Spark's Dance Floor HTML demonstration
 with the retro Sparks research companion. It preserves the supplied robot
 sprites, six routines, choreography, stage and synthesized beat, and adds links
 back to the GitHub profile and care diary.
 
-## Using the stage
+## Using the interactive stage
 
 Choose a routine to loop it, or choose **Play whole set** to cycle through all six.
 **Pause** stops the dance; **Beat off / Beat on** toggles a synthesized drum loop.
@@ -57,9 +61,23 @@ available if the fonts cannot load.
 
 The complete app is [site/index.html](../site/index.html), with its original PNG
 body-part sprites embedded. It runs as a static page with no build step or backend.
-GitHub Pages publishes only the `site/` directory through
-[the Pages workflow](../.github/workflows/sparks-pages.yml).
+The profile GIF and the full silent MP4 are rendered from that same canvas
+choreography using [the export script](../scripts/export_sparks_dance.py).
+The GIF uses three seconds from each routine; the MP4 contains the full set.
+Dimensions, duration, source checksum and output details are recorded in
+[the media manifest](../assets/sparks-dance-manifest.json).
 
-Browser checks exercise all six routines, setlist cycling, pause, sound controls,
+The export workflow writes only to a `feat/sparks-dance-profile-*` feature branch.
+Review and merge the generated assets through a pull request. If the HTML source
+changes, render fresh media and update the external preview link to its reviewed
+commit.
+
+Repository-owned GitHub Pages hosting remains an optional future destination.
+Its [manual deployment workflow](../.github/workflows/sparks-pages.yml) publishes
+only `site/` once Pages has been enabled. The current profile animation and
+external interactive preview do not require that setting.
+
+Browser checks verify actual GIF animation, the still fallback and the public
+profile after publication. They also exercise all six routines, setlist cycling, pause, sound controls,
 reduced motion, desktop and mobile layouts. Existing profile integrity checks
 continue to cover the companion's generated artwork and saved state.
