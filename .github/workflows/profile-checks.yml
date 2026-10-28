@@ -33,3 +33,5 @@ jobs:
         run: python scripts/update_persona.py --check
       - name: Check public care receipts and diary
         run: python scripts/public_care.py --check
+      - name: Check Sparks public knowledge and workbench
+        run: python scripts/sparks_agent.py --check

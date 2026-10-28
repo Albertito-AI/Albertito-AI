@@ -1,5 +1,33 @@
 # Profile change record
 
+## 28 October 2026: Sparks begins useful public-project work
+
+Albert requested that Sparks grow into a useful agent whose abilities develop
+over time. This adds a bounded autonomous work loop with persistent public-source
+memory, separate from fictional care experience.
+
+- A reviewed catalogue covers RegNav Evidence Ledger, RegNav Source Watch,
+  Symbolon, Piepowder and Tallystick.
+- The worker verifies public visibility before reading a project, pins source
+  observations to exact revisions and checks selected starting/contribution files.
+- The first observation establishes a baseline. Later runs can report changed
+  README fingerprints and published release records with links to the evidence.
+- Unavailable sources remain unavailable, with dated last-known evidence.
+- The [workbench](SPARKS_WORKBENCH.md) presents useful navigation, source checks,
+  observed changes and the next bounded task. It does not assess a project's
+  correctness or infer meaning merely from a changed fingerprint.
+
+The existing companion schedule supplies one normal observation per Singapore
+date and retries unavailable sources on later runs. Care submissions do not
+launch project scans. All generated writes share the existing queue and normal
+push protection. No model service or new paid infrastructure is used.
+
+Implemented procedures and their demonstrated outputs define capability. Age,
+care points and activity counts do not establish educational achievement or
+increasing general intelligence. Private preparation and assessment records are
+outside the public repository. Deployment evidence will be added after the first
+live source observation.
+
 ## 28 October 2026: Sparks and public care
 
 ### Request and behaviour

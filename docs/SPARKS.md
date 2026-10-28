@@ -58,6 +58,41 @@ Each accepted care action earns one game experience point. Growth stages are
 more). These are playful titles for the character. Scheduled refreshes and
 refused or replayed requests earn no points.
 
+## Useful work and persistent knowledge
+
+Sparks also maintains a [public workbench](SPARKS_WORKBENCH.md) for the five
+featured software projects. It provides a guide to their documented purposes,
+checks their selected starting and contribution files, and records observed
+README and published-release changes. Each successful observation identifies
+the repository revision and links to its evidence.
+
+This work has a persistent memory separate from his care values. The first
+observation establishes a baseline. Later observations compare the saved source
+fingerprints and release records. A failed lookup is reported as unavailable;
+the last good observation stays dated and visibly stale. A changed README
+fingerprint establishes that its bytes changed, not what that change means or
+whether the project improved.
+
+The workbench checks only the approved public catalogue. It never runs code
+from those projects. Project descriptions are maintained text, not conclusions
+generated from arbitrary repository instructions. A check that a starting file
+exists is not a test that its installation instructions succeed.
+
+The first eligible companion run each Singapore day refreshes the workbench.
+Later scheduled runs retry unavailable sources while leaving successfully
+checked sources alone until the next day, unless a fresh check is requested.
+Ordinary public care requests do not run a project scan. Owners can select
+**Check Sparks public project sources again today** in the manual workflow to
+request a fresh observation. Changes to the worker or catalogue also trigger a
+fresh check. GitHub may delay scheduled runs.
+
+Useful abilities are described through their actual outputs: source navigation,
+selected-file checks and comparison with prior observations. Care experience,
+age and the fictional growth titles are not educational marks or measures of
+general intelligence. Adding a new capability requires an implemented procedure,
+appropriate tests and review. The current worker uses explicit procedures and
+saved evidence; it does not train model weights or provide free-form chat.
+
 ## His persistent daily routine
 
 Self-contained SVG animation supplies the small movements while you view the
@@ -125,10 +160,15 @@ resume, enable the workflow and run `tick`.
 | [update_persona.py](../scripts/update_persona.py) | State transitions and escaped SVG rendering. |
 | [public_care.py](../scripts/public_care.py) | Public request processing, receipts and GitHub acknowledgements. |
 | [public-care.json](../data/public-care.json) | Public care activation time and processed-request ledger. |
+| [sparks_agent.py](../scripts/sparks_agent.py) | Bounded public-project observation, comparison and workbench rendering. |
+| [sparks-catalog.json](../data/sparks-catalog.json) | Reviewed public project descriptions and selected starting files. |
+| [sparks-knowledge.json](../data/sparks-knowledge.json) | Dated public-source observations and change memory. |
+| [SPARKS_WORKBENCH.md](SPARKS_WORKBENCH.md) | Generated project guide, source checks and change notes. |
 | [persona.yml](../.github/workflows/persona.yml) | Scheduled, issue-triggered and manual updates. |
 | [SPARKS_CARE_LOG.md](SPARKS_CARE_LOG.md) | Generated public care responses and decision times. |
 | [test_persona.py](../tests/test_persona.py) | Tests for the clock, state, replay and rendering rules. |
 | [test_public_care.py](../tests/test_public_care.py) | Tests for public requests, limits, receipts and acknowledgements. |
+| [test_sparks_agent.py](../tests/test_sparks_agent.py) | Tests for source evidence, failure handling, memory and workbench output. |
 
 Run the repository checks with Python 3.12 or later:
 
@@ -136,6 +176,7 @@ Run the repository checks with Python 3.12 or later:
 python -m unittest discover -s tests -v
 python scripts/update_persona.py --check
 python scripts/public_care.py --check
+python scripts/sparks_agent.py --check
 python scripts/validate_profile.py
 ```
 
@@ -161,7 +202,8 @@ acknowledgements can defer new requests.
 
 The workflow uses GitHub's built-in short-lived token. It needs no separately
 configured API key, external service, model call or paid hosting. Its generated
-outputs are the state, public care receipts and diary, and the two header images.
+outputs are the care state, public care receipts and diary, the two header images,
+and the public-source knowledge file and workbench.
 Existing scholarly text and the substantive profile-update date are outside its
 write list. A normal push rejects a competing change to `main`; no force push
 or branch-protection bypass is used. A missing state file is an error: restore

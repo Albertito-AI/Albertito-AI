@@ -10,6 +10,9 @@ then click **Create**. Sparks may accept or decline according to his needs.
 [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
 · [Still image](assets/research-header-static.svg)
 
+**[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
+checked starting points, and notes on observed README and release changes.
+
 # Albert Tan Sin Hon
 
 I study how institutions turn evidence into decisions, and how those decisions

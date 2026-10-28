@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "repo": "Albertito-AI/policykit",
+      "title": "RegNav Evidence Ledger",
+      "purpose": "Trace research claims to sources and preserve evidence links and human review decisions.",
+      "start_path": "docs/quickstart.md"
+    },
+    {
+      "repo": "Albertito-AI/regnav-source-watch",
+      "title": "RegNav Source Watch",
+      "purpose": "Compare committed evidence records and identify linked claims that need another review when their sources change.",
+      "start_path": "README.md",
+      "contribute_path": "CONTRIBUTING.md"
+    },
+    {
+      "repo": "Albertito-AI/symbolon",
+      "title": "Symbolon",
+      "purpose": "Explore bounded machine-work contracts, acceptance checks and replayable evidence using synthetic TEST units.",
+      "start_path": "README.md",
+      "contribute_path": "CONTRIBUTING.md"
+    },
+    {
+      "repo": "Albertito-AI/piepowder",
+      "title": "Piepowder",
+      "purpose": "Examine explicit acceptance criteria, fictional contract evidence and questions that still require human judgement.",
+      "start_path": "README.md",
+      "contribute_path": "CONTRIBUTING.md"
+    },
+    {
+      "repo": "Albertito-AI/tallystick",
+      "title": "Tallystick",
+      "purpose": "Inspect sports-fact provenance, corrections and settlement-rule replay through fictional match examples.",
+      "start_path": "README.md",
+      "contribute_path": "CONTRIBUTING.md"
+    }
+  ]
+}
