@@ -1,5 +1,41 @@
 # Profile change record
 
+## 28 October 2026: Sparks and public care
+
+### Request and behaviour
+
+Albert named the companion **Sparks**, requested care controls for visitors, and
+asked him to decline care once he has enough. The new state format retains the
+original birth time, values, care history and growth while changing his name.
+
+Four links beneath the header let anyone signed into GitHub submit a prefilled
+public care issue. Sparks evaluates his current needs before applying any care:
+he declines food when full of ideas, play when content, rest when refreshed, and
+study when too tired or already occupied with enough ideas. Refusals grant no
+care effect or experience and do not restart the successful-care cooldown.
+
+The existing 15-minute shared cooldown also applies to public requests, with
+one accepted public action per account per hour. Fixed responses appear in the
+generated [care diary](SPARKS_CARE_LOG.md); recognised issues receive a result
+label and are closed after their decision has been saved. The worker does not
+interpret issue bodies or publish bot comments.
+
+### Reliability and scope
+
+Public requests use their issue number as a durable receipt. State and receipts
+are saved together before acknowledgement, and retries do not repeat care.
+All companion writers share one queue. Scheduled runs also inspect pending
+requests, with bounded processing, a 24-hour eligibility window, retained
+unacknowledged receipts and a fail-closed storage cap.
+
+The companion uses explicit game rules, without a language model. This change
+does not modify Albert's scholarly profile text, project rights or other
+automation. The [Sparks guide](SPARKS.md) explains public participation, needs,
+limits and maintenance. Deployment verification is recorded after activation.
+
+AI assistance: implementation and review were performed with ChatGPT. No
+independent human engineering audit is claimed.
+
 ## 28 October 2026: Albertito companion activated
 
 ### Request and design

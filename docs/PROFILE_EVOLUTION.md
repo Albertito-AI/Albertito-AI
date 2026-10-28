@@ -36,10 +36,11 @@ work before editing so two workflows do not publish competing changes.
 The displayed update date changes only after a substantive profile update.
 A scheduled review alone is not a publication or an observed outcome.
 
-The separate [Albertito companion](ALBERTITO.md) workflow maintains fictional
-game state and the two generated header images. Its scheduled ticks do not
-change scholarly claims, project descriptions or the substantive profile-update
-date. Edit its source template when changing the character's design.
+The separate [Sparks companion](SPARKS.md) workflow maintains fictional game
+state, public care receipts and a care diary, and the two generated header images.
+Its scheduled ticks do not change scholarly claims, project descriptions or the
+substantive profile-update date. Edit its source template when changing the
+character's design.
 
 ## What merits an update
 
