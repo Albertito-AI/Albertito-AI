@@ -1,0 +1,3932 @@
+{
+  "schema_version": 1,
+  "id": "regnav",
+  "title": "RegNav: inspect evidence and replay source changes",
+  "status": "passed",
+  "generated_at": "2026-10-28T13:49:17Z",
+  "disclaimer": "Recorded executions of fictional training examples, not browser-side legal verification. Structural validity, unchanged bytes and recorded review declarations do not establish source authenticity, legal correctness, factual truth, completeness or an actual human review. Visitor notes are practice annotations and never alter the source review declarations.",
+  "provenance": {
+    "sources": [
+      {
+        "repository": "Albertito-AI/policykit",
+        "revision": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "url": "https://github.com/Albertito-AI/policykit/tree/130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "rights_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/RIGHTS.md",
+        "rights": "Rights reserved; consult policykit RIGHTS.md.",
+        "files": [
+          {
+            "path": "AGENTS.md",
+            "sha256": "769e710158b0eadb0ba618a0ac3b8f3d5448e82d6a0cdd922b87064a9ee9385a",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/AGENTS.md"
+          },
+          {
+            "path": "RIGHTS.md",
+            "sha256": "8dd218c7139adf78ad58114536a51b2c4d332b767a43b6c15b80d5d578af8ffb",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/RIGHTS.md"
+          },
+          {
+            "path": "examples/synthetic_ledger.json",
+            "sha256": "0778417c928e39b3af8e9aa0429c9dd0a22a5010c832b3243d91b38c2fd8622a",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/synthetic_ledger.json"
+          },
+          {
+            "path": "examples/training_sources.md",
+            "sha256": "710f311e6602d47e7b1cf89ec6901416269a108fbfb8bdc52964b0e9e305802f",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md"
+          },
+          {
+            "path": "regnav_evidence/__init__.py",
+            "sha256": "3145234d39d8bf4f550687eb192e2ebb5652d8cc175be9de53620b67b84fe9fc",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/__init__.py"
+          },
+          {
+            "path": "regnav_evidence/__main__.py",
+            "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/__main__.py"
+          },
+          {
+            "path": "regnav_evidence/changes.py",
+            "sha256": "12ae70b631070a37cee7dd14dcded5269a43a85410948d18f2e171d38cf76c17",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/changes.py"
+          },
+          {
+            "path": "regnav_evidence/cli.py",
+            "sha256": "8de1b2403246af2c5a43969d5a75c903250f1c83a935b8e21465ca4762cea8de",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/cli.py"
+          },
+          {
+            "path": "regnav_evidence/reports.py",
+            "sha256": "a2d213c569b941ef656318e0b6e8701cd2d4c78e17ed2768e810e3f489fcc3ad",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/reports.py"
+          },
+          {
+            "path": "regnav_evidence/validation.py",
+            "sha256": "da6847b91be08242c014c5777f0fe7378c68bb6fe0933092f041613e6c0912f6",
+            "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/regnav_evidence/validation.py"
+          }
+        ]
+      },
+      {
+        "repository": "Albertito-AI/regnav-source-watch",
+        "revision": "2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
+        "url": "https://github.com/Albertito-AI/regnav-source-watch/tree/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
+        "rights_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/LICENSE",
+        "rights": "Apache-2.0 for this separate project; consult its LICENSE and NOTICE.",
+        "files": [
+          {
+            "path": "AGENTS.md",
+            "sha256": "0b897739469cec84cad1239594f96dec41851e186a089a6b8b3bbf56b3224320",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/AGENTS.md"
+          },
+          {
+            "path": "LICENSE",
+            "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/LICENSE"
+          },
+          {
+            "path": "NOTICE",
+            "sha256": "b8214aa48398ead0fbc181694a1ae37167a821de0ef77bf40cc26bb641fad072",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/NOTICE"
+          },
+          {
+            "path": "examples/basic/.regnav/manifest.json",
+            "sha256": "3ba3521a94aa856fe2846d2109a4b36fc4a666b4fb33d3415ab9e5e1f7d166ee",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/.regnav/manifest.json"
+          },
+          {
+            "path": "examples/basic/README.md",
+            "sha256": "de1ac8c960d02767906dbd5cdb50620f502e95fe0c7aef349ce3be2c224e42c9",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/README.md"
+          },
+          {
+            "path": "examples/basic/sources/fictional-exception.md",
+            "sha256": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+          },
+          {
+            "path": "examples/basic/sources/fictional-policy.md",
+            "sha256": "f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md"
+          },
+          {
+            "path": "package.json",
+            "sha256": "0a917c96fb0bb1d94a086bf07591126e34076a3f3026b282162adc1ecdd57b0b",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/package.json"
+          },
+          {
+            "path": "scripts/demo.mjs",
+            "sha256": "e593382d83e63caf8ffd81a3b6fbe6842e710b3783ff779a65dc692ba51e4698",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/scripts/demo.mjs"
+          },
+          {
+            "path": "src/cli.mjs",
+            "sha256": "00269eaf8f170cd11734103afef5af31b55a67b1e3e70611e316b6339eec481a",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/src/cli.mjs"
+          },
+          {
+            "path": "src/core.mjs",
+            "sha256": "49ee48ca36fc9eec41811055e1514652b0b0868e4a57ab1260f8da3ac9d63e7e",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/src/core.mjs"
+          },
+          {
+            "path": "src/git.mjs",
+            "sha256": "c8d2d9174fc036d9ae1ee03356b3ff38171825ca448646d54cd00ba631e06fbd",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/src/git.mjs"
+          },
+          {
+            "path": "src/index.mjs",
+            "sha256": "36fe292980fdee51962a53ea9364cd18f342add8d11374003b65129564f5df63",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/src/index.mjs"
+          },
+          {
+            "path": "src/runner.mjs",
+            "sha256": "1b10298befd3e69a07d00967dd9ac61195c0405bf124f1e118d44ab2d6665c34",
+            "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/src/runner.mjs"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "provider": "GitHub Actions",
+      "repository": "Albertito-AI/Albertito-AI",
+      "run_id": "40699927170",
+      "run_attempt": "1",
+      "run_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/40699927170",
+      "commit": "a1218c62e44216959ce852b8351350ec1909cc9d"
+    },
+    "environment": {
+      "python": "3.12.15",
+      "node": "v24.21.0",
+      "git": "git version 2.55.0"
+    },
+    "exporter": {
+      "path": "scripts/lab/export_regnav.py",
+      "sha256": "924cc5d4497e66304132a375b4555872ed291ae83724d8bad246ba74985c2140",
+      "fixtures_path": "scripts/lab/regnav_fixtures.json",
+      "fixtures_sha256": "c6885524356300ab4fa94068b9f78b6d361c584cebe07ff569cfc0cfb1d70d06"
+    }
+  },
+  "source_packet": {
+    "title": "Complete fictional source packet",
+    "text": "# Synthetic training sources\n\nThese texts are invented solely to demonstrate the software. They are not legal\nauthorities, institutional policies, legal advice, or descriptions of an actual\njurisdiction. The example.org URLs in the JSON are illustrative. The complete\nfixture texts are here; the program does not retrieve a web page.\n\n## Draft A\n\n**A.1** A coordinator receives requests submitted to the fictional project.\n\n**A.2** The coordinator enters each request in a log before a reviewer examines it.\n\n**A.3** The reviewer responds within five working days.\n\n## Draft B\n\n**B.1** A coordinator keeps a register of requests and responses.\n\n**B.2** The reviewer responds within ten working days.\n\nThe exercise supplies no rule establishing which draft governs. Neither draft\nstates that a further review is available after the initial decision. Those\nlimits deliberately create a contested claim and an unreviewed claim in the\nsample ledger. The recorded reviewer and dates are fictional fixtures as well.\n\n",
+    "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md",
+    "sources": [
+      {
+        "id": "SRC-draft-a",
+        "title": "Synthetic internal procedure, draft A (training fixture)",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+        "paragraphs": [
+          {
+            "id": "A.1",
+            "text": "A coordinator receives requests submitted to the fictional project."
+          },
+          {
+            "id": "A.2",
+            "text": "The coordinator enters each request in a log before a reviewer examines it."
+          },
+          {
+            "id": "A.3",
+            "text": "The reviewer responds within five working days."
+          }
+        ]
+      },
+      {
+        "id": "SRC-draft-b",
+        "title": "Synthetic internal procedure, draft B (training fixture)",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b",
+        "paragraphs": [
+          {
+            "id": "B.1",
+            "text": "A coordinator keeps a register of requests and responses."
+          },
+          {
+            "id": "B.2",
+            "text": "The reviewer responds within ten working days."
+          }
+        ]
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "title": "Inspect the recorded gaps",
+      "prompt": "Select a proposition and read its linked passage. Which findings concern missing structure, and which preserve an unresolved question?",
+      "input": {
+        "ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "base_ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "fixture_sha256": "0778417c928e39b3af8e9aa0429c9dd0a22a5010c832b3243d91b38c2fd8622a"
+      },
+      "observed": {
+        "validation": {
+          "structurally_valid": true,
+          "error_count": 0,
+          "warning_count": 3,
+          "findings": [
+            {
+              "severity": "warning",
+              "code": "UNREVIEWED_CLAIM",
+              "path": "$.claims[1]",
+              "message": "No completed human review is declared for this proposition."
+            },
+            {
+              "severity": "warning",
+              "code": "MISSING_PINPOINT",
+              "path": "$.claims[1].evidence[0].pinpoint",
+              "message": "Identify a page, paragraph, provision, section or other reproducible location."
+            },
+            {
+              "severity": "warning",
+              "code": "CONTESTED_CLAIM",
+              "path": "$.claims[2]",
+              "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+            }
+          ],
+          "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+        }
+      },
+      "expected": {
+        "exit_code": 0,
+        "error_count": 0,
+        "warning_count": 3,
+        "warning_codes": [
+          "CONTESTED_CLAIM",
+          "MISSING_PINPOINT",
+          "UNREVIEWED_CLAIM"
+        ]
+      },
+      "explanation": "The distributed example has no structural errors but retains three warnings. Ordinary validation exits 0; strict validation exits 2. Neither exit status verifies the propositions or authenticates the fictional reviewer.",
+      "receipt_ids": [
+        "ledger-baseline",
+        "ledger-baseline-strict",
+        "ledger-matrix-csv"
+      ],
+      "display": {
+        "before_title": "Original fictional ledger",
+        "after_title": "Inspect the recorded gaps",
+        "before_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "after_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "changed_fields": [],
+        "claims": [
+          {
+            "id": "CLAIM-logging",
+            "text": "Draft A states that requests are entered in a log before review.",
+            "before_status": "checked",
+            "after_status": "checked",
+            "source_quote": "The coordinator enters each request in a log before a reviewer examines it.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "Example of a user-declared review record. No real reviewer is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.2",
+                "relation": "supports",
+                "quote": "The coordinator enters each request in a log before a reviewer examines it.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-remedy",
+            "text": "The drafts provide a further review procedure after an initial decision.",
+            "before_status": "unreviewed",
+            "after_status": "unreviewed",
+            "source_quote": "",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b",
+            "review_note": "No completed review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "",
+                "relation": "context",
+                "quote": "",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-timing",
+            "text": "The draft procedure specifies a response within five working days.",
+            "before_status": "contested",
+            "after_status": "contested",
+            "source_quote": "The reviewer responds within five working days.\nThe reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "The fixture drafts conflict, and the exercise supplies no governing choice between them.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.3",
+                "relation": "supports",
+                "quote": "The reviewer responds within five working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              },
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "contradicts",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "irrelevant-pinpoint",
+      "title": "A populated field is not supporting evidence",
+      "prompt": "The missing pinpoint is replaced with B.2. Read B.2: does its statement about response time establish a further review procedure?",
+      "input": {
+        "ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "base_ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "fixture_sha256": "135f14461677aee67c554b40a494ddcfe3e0f55fc0df98b93451ac7e0d52606a"
+      },
+      "observed": {
+        "validation": {
+          "structurally_valid": true,
+          "error_count": 0,
+          "warning_count": 2,
+          "findings": [
+            {
+              "severity": "warning",
+              "code": "UNREVIEWED_CLAIM",
+              "path": "$.claims[1]",
+              "message": "No completed human review is declared for this proposition."
+            },
+            {
+              "severity": "warning",
+              "code": "CONTESTED_CLAIM",
+              "path": "$.claims[2]",
+              "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+            }
+          ],
+          "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+        }
+      },
+      "expected": {
+        "exit_code": 0,
+        "error_count": 0,
+        "warning_count": 2,
+        "warning_codes": [
+          "CONTESTED_CLAIM",
+          "UNREVIEWED_CLAIM"
+        ]
+      },
+      "explanation": "B.2 discusses response time, not further review. The missing-pinpoint warning disappears because the field is populated. The claim remains unreviewed. This is a deliberate negative example of what structural validation cannot establish.",
+      "receipt_ids": [
+        "ledger-irrelevant-pinpoint"
+      ],
+      "display": {
+        "before_title": "Original fictional ledger",
+        "after_title": "A populated field is not supporting evidence",
+        "before_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "after_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, B.2, relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "changed_fields": [
+          "CLAIM-remedy.evidence[0].pinpoint"
+        ],
+        "claims": [
+          {
+            "id": "CLAIM-logging",
+            "text": "Draft A states that requests are entered in a log before review.",
+            "before_status": "checked",
+            "after_status": "checked",
+            "source_quote": "The coordinator enters each request in a log before a reviewer examines it.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "Example of a user-declared review record. No real reviewer is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.2",
+                "relation": "supports",
+                "quote": "The coordinator enters each request in a log before a reviewer examines it.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-remedy",
+            "text": "The drafts provide a further review procedure after an initial decision.",
+            "before_status": "unreviewed",
+            "after_status": "unreviewed",
+            "source_quote": "The reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b",
+            "review_note": "No completed review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "context",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-timing",
+            "text": "The draft procedure specifies a response within five working days.",
+            "before_status": "contested",
+            "after_status": "contested",
+            "source_quote": "The reviewer responds within five working days.\nThe reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "The fixture drafts conflict, and the exercise supplies no governing choice between them.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.3",
+                "relation": "supports",
+                "quote": "The reviewer responds within five working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              },
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "contradicts",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "withdraw-unsupported",
+      "title": "Withdraw an unsupported proposition",
+      "prompt": "Compare the ledger after withdrawing CLAIM-remedy. Does that resolve the separate five-day versus ten-day disagreement?",
+      "input": {
+        "ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "base_ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "fixture_sha256": "d9aa546403440a3c6ebdfa8d91d7a83579e6dcf391259903f6230732f31b2fa4"
+      },
+      "observed": {
+        "validation": {
+          "structurally_valid": true,
+          "error_count": 0,
+          "warning_count": 1,
+          "findings": [
+            {
+              "severity": "warning",
+              "code": "CONTESTED_CLAIM",
+              "path": "$.claims[1]",
+              "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+            }
+          ],
+          "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+        }
+      },
+      "expected": {
+        "exit_code": 0,
+        "error_count": 0,
+        "warning_count": 1,
+        "warning_codes": [
+          "CONTESTED_CLAIM"
+        ]
+      },
+      "explanation": "The unsupported proposition is removed in this temporary exercise. The contested timing proposition remains contested, and its warning remains. No human-review declaration has been fabricated or upgraded.",
+      "receipt_ids": [
+        "ledger-withdraw-unsupported"
+      ],
+      "display": {
+        "before_title": "Original fictional ledger",
+        "after_title": "Withdraw an unsupported proposition",
+        "before_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "after_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "changed_fields": [
+          "claims: CLAIM-remedy removed"
+        ],
+        "claims": [
+          {
+            "id": "CLAIM-logging",
+            "text": "Draft A states that requests are entered in a log before review.",
+            "before_status": "checked",
+            "after_status": "checked",
+            "source_quote": "The coordinator enters each request in a log before a reviewer examines it.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "Example of a user-declared review record. No real reviewer is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.2",
+                "relation": "supports",
+                "quote": "The coordinator enters each request in a log before a reviewer examines it.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-remedy",
+            "text": "The drafts provide a further review procedure after an initial decision.",
+            "before_status": "unreviewed",
+            "after_status": "withdrawn from this fixture",
+            "source_quote": "",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b",
+            "review_note": "No completed review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "",
+                "relation": "context",
+                "quote": "",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-timing",
+            "text": "The draft procedure specifies a response within five working days.",
+            "before_status": "contested",
+            "after_status": "contested",
+            "source_quote": "The reviewer responds within five working days.\nThe reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "The fixture drafts conflict, and the exercise supplies no governing choice between them.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.3",
+                "relation": "supports",
+                "quote": "The reviewer responds within five working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              },
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "contradicts",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "invalid-source",
+      "title": "Reject a reference to an absent source",
+      "prompt": "Inspect the source identifier on CLAIM-remedy. Is that source recorded anywhere in the ledger?",
+      "input": {
+        "ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-not-recorded",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "base_ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "fixture_sha256": "4fcbc1f0c9b85e3951cb83b2d27d1439513fee48d682d653c209dfd39c9901fc"
+      },
+      "observed": {
+        "validation": {
+          "structurally_valid": false,
+          "error_count": 1,
+          "warning_count": 3,
+          "findings": [
+            {
+              "severity": "warning",
+              "code": "UNREVIEWED_CLAIM",
+              "path": "$.claims[1]",
+              "message": "No completed human review is declared for this proposition."
+            },
+            {
+              "severity": "error",
+              "code": "UNKNOWN_SOURCE",
+              "path": "$.claims[1].evidence[0].source_id",
+              "message": "This link does not identify a recorded source."
+            },
+            {
+              "severity": "warning",
+              "code": "MISSING_PINPOINT",
+              "path": "$.claims[1].evidence[0].pinpoint",
+              "message": "Identify a page, paragraph, provision, section or other reproducible location."
+            },
+            {
+              "severity": "warning",
+              "code": "CONTESTED_CLAIM",
+              "path": "$.claims[2]",
+              "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+            }
+          ],
+          "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+        }
+      },
+      "expected": {
+        "exit_code": 1,
+        "error_count": 1,
+        "warning_count": 3,
+        "error_codes": [
+          "UNKNOWN_SOURCE"
+        ]
+      },
+      "explanation": "The actual CLI rejects the absent source reference with UNKNOWN_SOURCE and exit 1. A missing source is never converted into a successful or verified result.",
+      "receipt_ids": [
+        "ledger-invalid-source"
+      ],
+      "display": {
+        "before_title": "Original fictional ledger",
+        "after_title": "Reject a reference to an absent source",
+        "before_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "after_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-not-recorded, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "changed_fields": [
+          "CLAIM-remedy.evidence[0].source_id"
+        ],
+        "claims": [
+          {
+            "id": "CLAIM-logging",
+            "text": "Draft A states that requests are entered in a log before review.",
+            "before_status": "checked",
+            "after_status": "checked",
+            "source_quote": "The coordinator enters each request in a log before a reviewer examines it.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "Example of a user-declared review record. No real reviewer is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.2",
+                "relation": "supports",
+                "quote": "The coordinator enters each request in a log before a reviewer examines it.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-remedy",
+            "text": "The drafts provide a further review procedure after an initial decision.",
+            "before_status": "unreviewed",
+            "after_status": "unreviewed",
+            "source_quote": "",
+            "source_url": null,
+            "review_note": "No completed review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "SRC-not-recorded",
+                "pinpoint": "",
+                "relation": "context",
+                "quote": "",
+                "source_url": null
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-timing",
+            "text": "The draft procedure specifies a response within five working days.",
+            "before_status": "contested",
+            "after_status": "contested",
+            "source_quote": "The reviewer responds within five working days.\nThe reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "The fixture drafts conflict, and the exercise supplies no governing choice between them.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.3",
+                "relation": "supports",
+                "quote": "The reviewer responds within five working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              },
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "contradicts",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "source-version-changed",
+      "title": "A changed source record prompts reconsideration",
+      "prompt": "Which previously checked or contested propositions depend on draft A?",
+      "input": {
+        "ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A, revised fictional snapshot",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "base_ledger": {
+          "schema_version": "1.0",
+          "title": "Synthetic training example: recording an internal review procedure",
+          "description": "All source texts, propositions, dates and reviewer details in this file are fictional training fixtures. They express no actual law. The example.org URLs are illustrative and are never fetched. See training_sources.md for the complete mock texts.",
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "title": "Synthetic internal procedure, draft A (training fixture)",
+              "url": "https://example.org/regnav-training/draft-a",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft A",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "Mock source text is in examples/training_sources.md. This is not legislation or an actual institutional policy."
+            },
+            {
+              "id": "SRC-draft-b",
+              "title": "Synthetic internal procedure, draft B (training fixture)",
+              "url": "https://example.org/regnav-training/draft-b",
+              "source_type": "other",
+              "jurisdiction": "Fictional training setting",
+              "version": "Draft B",
+              "as_of": "2025-01-01",
+              "accessed": "2025-01-02",
+              "notes": "A deliberately inconsistent mock draft for the training exercise."
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        },
+        "fixture_sha256": "dc4c84fad092dedb20be19368ff6f25f9929ac8833d0a745196c6b7760a576fd"
+      },
+      "observed": {
+        "comparison": {
+          "notice": "Comparison of recorded data only. A recheck flag identifies a potentially stale previous declaration; it does not revoke, perform or certify human review.",
+          "summary": {
+            "changed_ledger_fields": 0,
+            "changed_sources": 1,
+            "changed_claims": 2,
+            "prior_reviews_to_reconsider": 2
+          },
+          "ledger_fields": [],
+          "sources": [
+            {
+              "id": "SRC-draft-a",
+              "change": "material",
+              "fields": [
+                "version"
+              ]
+            }
+          ],
+          "claims": [
+            {
+              "id": "CLAIM-logging",
+              "change": "material",
+              "recheck_prior_review": true,
+              "reasons": [
+                "Linked source changed: SRC-draft-a"
+              ]
+            },
+            {
+              "id": "CLAIM-timing",
+              "change": "material",
+              "recheck_prior_review": true,
+              "reasons": [
+                "Linked source changed: SRC-draft-a"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "recheck_claim_ids": [
+          "CLAIM-logging",
+          "CLAIM-timing"
+        ]
+      },
+      "explanation": "Only a fictional version label is changed here. The comparison conservatively identifies potentially stale prior declarations for CLAIM-logging and CLAIM-timing. It neither observes a real legal amendment nor performs a new review.",
+      "receipt_ids": [
+        "ledger-source-version-comparison"
+      ],
+      "display": {
+        "before_title": "Original fictional ledger",
+        "after_title": "Revised fictional source record",
+        "before_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "after_text": "Synthetic training example: recording an internal review procedure\n\nRecorded sources:\nSRC-draft-a: Draft A, revised fictional snapshot; accessed 2025-01-02.\nSRC-draft-b: Draft B; accessed 2025-01-02.\n\nRecorded propositions:\nCLAIM-logging [checked]\nDraft A states that requests are entered in a log before review.\n  SRC-draft-a, A.2, relation: supports.\nCLAIM-remedy [unreviewed]\nThe drafts provide a further review procedure after an initial decision.\n  SRC-draft-b, (no pinpoint), relation: context.\nCLAIM-timing [contested]\nThe draft procedure specifies a response within five working days.\n  SRC-draft-a, A.3, relation: supports.\n  SRC-draft-b, B.2, relation: contradicts.",
+        "changed_fields": [
+          "SRC-draft-a.version"
+        ],
+        "claims": [
+          {
+            "id": "CLAIM-logging",
+            "text": "Draft A states that requests are entered in a log before review.",
+            "before_status": "checked",
+            "after_status": "checked",
+            "source_quote": "The coordinator enters each request in a log before a reviewer examines it.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "Example of a user-declared review record. No real reviewer is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.2",
+                "relation": "supports",
+                "quote": "The coordinator enters each request in a log before a reviewer examines it.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-remedy",
+            "text": "The drafts provide a further review procedure after an initial decision.",
+            "before_status": "unreviewed",
+            "after_status": "unreviewed",
+            "source_quote": "",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b",
+            "review_note": "No completed review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "",
+                "relation": "context",
+                "quote": "",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          },
+          {
+            "id": "CLAIM-timing",
+            "text": "The draft procedure specifies a response within five working days.",
+            "before_status": "contested",
+            "after_status": "contested",
+            "source_quote": "The reviewer responds within five working days.\nThe reviewer responds within ten working days.",
+            "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a",
+            "review_note": "The fixture drafts conflict, and the exercise supplies no governing choice between them.",
+            "evidence": [
+              {
+                "source_id": "SRC-draft-a",
+                "pinpoint": "A.3",
+                "relation": "supports",
+                "quote": "The reviewer responds within five working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-a"
+              },
+              {
+                "source_id": "SRC-draft-b",
+                "pinpoint": "B.2",
+                "relation": "contradicts",
+                "quote": "The reviewer responds within ten working days.",
+                "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/examples/training_sources.md#draft-b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "watch-unchanged",
+      "title": "Compare the same recorded sources",
+      "prompt": "What can an unchanged result establish about these two exact snapshots?",
+      "input": {
+        "manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "base_manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "modified_paths": [],
+        "fixture_files_sha256": {
+          "sources/fictional-policy.md": "f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294",
+          "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+          ".regnav/manifest.json": "3ba3521a94aa856fe2846d2109a4b36fc4a666b4fb33d3415ab9e5e1f7d166ee"
+        }
+      },
+      "observed": {
+        "source_watch": {
+          "schema_version": "1.0",
+          "tool_version": "0.1.0",
+          "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "head_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "verdict": "UNCHANGED",
+          "source_changes": [],
+          "affected_claims": [],
+          "review_record_changes": [],
+          "counts": {
+            "sources": 2,
+            "claims": 2,
+            "affected_claims": 0
+          },
+          "limitations": [
+            "Only explicitly listed source files and declared evidence links are covered.",
+            "A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.",
+            "Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.",
+            "Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.",
+            "The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review."
+          ],
+          "manifest_path": ".regnav/manifest.json",
+          "mode": "strict"
+        }
+      },
+      "expected": {
+        "exit_code": 0,
+        "verdict": "UNCHANGED",
+        "affected_claim_ids": []
+      },
+      "explanation": "UNCHANGED describes only the listed source bytes and declared relationships at the compared commits. It is not a claim that the fictional statements are correct or that any real law is current.",
+      "fixture_history": {
+        "kind": "temporary fictional Git commits; not upstream GitHub commits",
+        "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "head_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "synthetic_author_date": "2026-10-28T00:00:00+00:00"
+      },
+      "receipt_ids": [
+        "watch-unchanged"
+      ],
+      "display": {
+        "before_title": "Unmodified upstream fictional source",
+        "after_title": "Compare the same recorded sources",
+        "before_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+        "after_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+        "changed_fields": [],
+        "claims": [
+          {
+            "id": "claim-routine",
+            "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+            "before_status": "fictional declaration recorded",
+            "after_status": "fictional declaration recorded",
+            "source_quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\n# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md",
+            "review_note": "Synthetic review declaration for the demonstration.",
+            "evidence": [
+              {
+                "source_id": "source-policy",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md"
+              },
+              {
+                "source_id": "source-exception",
+                "relation": "qualifies",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          },
+          {
+            "id": "claim-specialist",
+            "text": "The fictional specialist referral target is fourteen days.",
+            "before_status": "no declaration",
+            "after_status": "no declaration",
+            "source_quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md",
+            "review_note": "No review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "source-exception",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "watch-source-changed",
+      "title": "Observe a change in a recorded source file",
+      "prompt": "Which claim depends on the amended fictional policy, and which separate claim should remain unaffected?",
+      "input": {
+        "manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "base_manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "modified_paths": [
+          "sources/fictional-policy.md"
+        ],
+        "fixture_files_sha256": {
+          "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+          "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+          ".regnav/manifest.json": "3ba3521a94aa856fe2846d2109a4b36fc4a666b4fb33d3415ab9e5e1f7d166ee"
+        }
+      },
+      "observed": {
+        "source_watch": {
+          "schema_version": "1.0",
+          "tool_version": "0.1.0",
+          "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "head_revision": "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85",
+          "verdict": "RECHECK_REQUIRED",
+          "source_changes": [
+            {
+              "id": "source-policy",
+              "reasons": [
+                "SOURCE_BYTES_CHANGED"
+              ],
+              "before": {
+                "path": "sources/fictional-policy.md",
+                "sha256": "f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294",
+                "status": "observed",
+                "record": {
+                  "id": "source-policy",
+                  "path": "sources/fictional-policy.md",
+                  "title": "Fictional training review policy",
+                  "version": "training-1"
+                }
+              },
+              "after": {
+                "path": "sources/fictional-policy.md",
+                "sha256": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+                "status": "observed",
+                "record": {
+                  "id": "source-policy",
+                  "path": "sources/fictional-policy.md",
+                  "title": "Fictional training review policy",
+                  "version": "training-1"
+                }
+              }
+            }
+          ],
+          "affected_claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "reasons": [
+                "LINKED_SOURCE_CHANGED"
+              ],
+              "changed_source_ids": [
+                "source-policy"
+              ],
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "before": {
+                "id": "claim-routine",
+                "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+                "evidence": [
+                  {
+                    "source_id": "source-policy",
+                    "relation": "supports",
+                    "pinpoint": "Section 1"
+                  },
+                  {
+                    "source_id": "source-exception",
+                    "relation": "qualifies",
+                    "pinpoint": "Section 1"
+                  }
+                ],
+                "review": {
+                  "reviewer": "Fictional training reviewer",
+                  "date": "2026-10-27",
+                  "note": "Synthetic review declaration for the demonstration."
+                }
+              },
+              "after": {
+                "id": "claim-routine",
+                "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+                "evidence": [
+                  {
+                    "source_id": "source-policy",
+                    "relation": "supports",
+                    "pinpoint": "Section 1"
+                  },
+                  {
+                    "source_id": "source-exception",
+                    "relation": "qualifies",
+                    "pinpoint": "Section 1"
+                  }
+                ],
+                "review": {
+                  "reviewer": "Fictional training reviewer",
+                  "date": "2026-10-27",
+                  "note": "Synthetic review declaration for the demonstration."
+                }
+              },
+              "declared_review_before": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              },
+              "declared_review_after": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            }
+          ],
+          "review_record_changes": [],
+          "counts": {
+            "sources": 2,
+            "claims": 2,
+            "affected_claims": 1
+          },
+          "limitations": [
+            "Only explicitly listed source files and declared evidence links are covered.",
+            "A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.",
+            "Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.",
+            "Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.",
+            "The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review."
+          ],
+          "manifest_path": ".regnav/manifest.json",
+          "mode": "strict"
+        }
+      },
+      "expected": {
+        "exit_code": 2,
+        "verdict": "RECHECK_REQUIRED",
+        "affected_claim_ids": [
+          "claim-routine"
+        ]
+      },
+      "explanation": "The example appends the same fictional amendment used by the upstream demonstration. The real Source Watch CLI reports changed source bytes and flags only claim-routine. It does not determine which statement is legally correct.",
+      "fixture_history": {
+        "kind": "temporary fictional Git commits; not upstream GitHub commits",
+        "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "head_revision": "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85",
+        "synthetic_author_date": "2026-10-28T00:00:00+00:00"
+      },
+      "receipt_ids": [
+        "watch-source-changed"
+      ],
+      "display": {
+        "before_title": "Unmodified upstream fictional source",
+        "after_title": "Observe a change in a recorded source file",
+        "before_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+        "after_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\nFictional amendment: the review target is now five days.\n",
+        "changed_fields": [
+          "sources/fictional-policy.md"
+        ],
+        "claims": [
+          {
+            "id": "claim-routine",
+            "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+            "before_status": "fictional declaration recorded",
+            "after_status": "fictional declaration recorded",
+            "source_quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\n# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md",
+            "review_note": "Synthetic review declaration for the demonstration.",
+            "evidence": [
+              {
+                "source_id": "source-policy",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md"
+              },
+              {
+                "source_id": "source-exception",
+                "relation": "qualifies",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          },
+          {
+            "id": "claim-specialist",
+            "text": "The fictional specialist referral target is fourteen days.",
+            "before_status": "no declaration",
+            "after_status": "no declaration",
+            "source_quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md",
+            "review_note": "No review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "source-exception",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "watch-review-edited",
+      "title": "A review declaration cannot erase the observation",
+      "prompt": "The fictional review note changes after the source amendment. Does this make the earlier file change disappear?",
+      "input": {
+        "manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Fictional edited declaration for a negative test. No actual human review is represented."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "base_manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "modified_paths": [
+          "sources/fictional-policy.md",
+          ".regnav/manifest.json: claim-routine.review.note"
+        ],
+        "fixture_files_sha256": {
+          "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+          "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+          ".regnav/manifest.json": "493d85353fc89df05cbd67070d699a7b2ae856ae94de646da04940d74d646849"
+        }
+      },
+      "observed": {
+        "source_watch": {
+          "schema_version": "1.0",
+          "tool_version": "0.1.0",
+          "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "head_revision": "678d77cafe4752935bcc65b7ab2f32adfc33393d",
+          "verdict": "RECHECK_REQUIRED",
+          "source_changes": [
+            {
+              "id": "source-policy",
+              "reasons": [
+                "SOURCE_BYTES_CHANGED"
+              ],
+              "before": {
+                "path": "sources/fictional-policy.md",
+                "sha256": "f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294",
+                "status": "observed",
+                "record": {
+                  "id": "source-policy",
+                  "path": "sources/fictional-policy.md",
+                  "title": "Fictional training review policy",
+                  "version": "training-1"
+                }
+              },
+              "after": {
+                "path": "sources/fictional-policy.md",
+                "sha256": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+                "status": "observed",
+                "record": {
+                  "id": "source-policy",
+                  "path": "sources/fictional-policy.md",
+                  "title": "Fictional training review policy",
+                  "version": "training-1"
+                }
+              }
+            }
+          ],
+          "affected_claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "reasons": [
+                "LINKED_SOURCE_CHANGED"
+              ],
+              "changed_source_ids": [
+                "source-policy"
+              ],
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "before": {
+                "id": "claim-routine",
+                "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+                "evidence": [
+                  {
+                    "source_id": "source-policy",
+                    "relation": "supports",
+                    "pinpoint": "Section 1"
+                  },
+                  {
+                    "source_id": "source-exception",
+                    "relation": "qualifies",
+                    "pinpoint": "Section 1"
+                  }
+                ],
+                "review": {
+                  "reviewer": "Fictional training reviewer",
+                  "date": "2026-10-27",
+                  "note": "Synthetic review declaration for the demonstration."
+                }
+              },
+              "after": {
+                "id": "claim-routine",
+                "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+                "evidence": [
+                  {
+                    "source_id": "source-policy",
+                    "relation": "supports",
+                    "pinpoint": "Section 1"
+                  },
+                  {
+                    "source_id": "source-exception",
+                    "relation": "qualifies",
+                    "pinpoint": "Section 1"
+                  }
+                ],
+                "review": {
+                  "reviewer": "Fictional training reviewer",
+                  "date": "2026-10-27",
+                  "note": "Fictional edited declaration for a negative test. No actual human review is represented."
+                }
+              },
+              "declared_review_before": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              },
+              "declared_review_after": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Fictional edited declaration for a negative test. No actual human review is represented."
+              }
+            }
+          ],
+          "review_record_changes": [
+            {
+              "id": "claim-routine",
+              "before": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              },
+              "after": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Fictional edited declaration for a negative test. No actual human review is represented."
+              }
+            }
+          ],
+          "counts": {
+            "sources": 2,
+            "claims": 2,
+            "affected_claims": 1
+          },
+          "limitations": [
+            "Only explicitly listed source files and declared evidence links are covered.",
+            "A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.",
+            "Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.",
+            "Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.",
+            "The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review."
+          ],
+          "manifest_path": ".regnav/manifest.json",
+          "mode": "strict"
+        }
+      },
+      "expected": {
+        "exit_code": 2,
+        "verdict": "RECHECK_REQUIRED",
+        "affected_claim_ids": [
+          "claim-routine"
+        ]
+      },
+      "explanation": "The edited note is a deliberately fictional test record. Source Watch still returns RECHECK_REQUIRED and exit 2, retaining the source finding and affected claim. No actual reviewer or completed assessment is represented.",
+      "fixture_history": {
+        "kind": "temporary fictional Git commits; not upstream GitHub commits",
+        "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "head_revision": "678d77cafe4752935bcc65b7ab2f32adfc33393d",
+        "synthetic_author_date": "2026-10-28T00:00:00+00:00"
+      },
+      "receipt_ids": [
+        "watch-review-edited"
+      ],
+      "display": {
+        "before_title": "Unmodified upstream fictional source",
+        "after_title": "A review declaration cannot erase the observation",
+        "before_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+        "after_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\nFictional amendment: the review target is now five days.\n",
+        "changed_fields": [
+          "sources/fictional-policy.md",
+          ".regnav/manifest.json: claim-routine.review.note"
+        ],
+        "claims": [
+          {
+            "id": "claim-routine",
+            "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+            "before_status": "fictional declaration recorded",
+            "after_status": "fictional declaration recorded",
+            "source_quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\n# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md",
+            "review_note": "Fictional edited declaration for a negative test. No actual human review is represented.",
+            "evidence": [
+              {
+                "source_id": "source-policy",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-policy.md"
+              },
+              {
+                "source_id": "source-exception",
+                "relation": "qualifies",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          },
+          {
+            "id": "claim-specialist",
+            "text": "The fictional specialist referral target is fourteen days.",
+            "before_status": "no declaration",
+            "after_status": "no declaration",
+            "source_quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md",
+            "review_note": "No review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "source-exception",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "watch-invalid-manifest",
+      "title": "An invalid comparison cannot become unchanged",
+      "prompt": "What should happen when a declared evidence link names an absent source?",
+      "input": {
+        "manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "SRC-not-recorded",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Fictional edited declaration for a negative test. No actual human review is represented."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "base_manifest": {
+          "schema_version": "1.0",
+          "sources": [
+            {
+              "id": "source-policy",
+              "path": "sources/fictional-policy.md",
+              "title": "Fictional training review policy",
+              "version": "training-1"
+            },
+            {
+              "id": "source-exception",
+              "path": "sources/fictional-exception.md",
+              "title": "Fictional specialist referral note",
+              "version": "training-1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "claim-routine",
+              "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+              "evidence": [
+                {
+                  "source_id": "source-policy",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                },
+                {
+                  "source_id": "source-exception",
+                  "relation": "qualifies",
+                  "pinpoint": "Section 1"
+                }
+              ],
+              "review": {
+                "reviewer": "Fictional training reviewer",
+                "date": "2026-10-27",
+                "note": "Synthetic review declaration for the demonstration."
+              }
+            },
+            {
+              "id": "claim-specialist",
+              "text": "The fictional specialist referral target is fourteen days.",
+              "evidence": [
+                {
+                  "source_id": "source-exception",
+                  "relation": "supports",
+                  "pinpoint": "Section 1"
+                }
+              ]
+            }
+          ]
+        },
+        "modified_paths": [
+          ".regnav/manifest.json: absent source reference"
+        ],
+        "fixture_files_sha256": {
+          "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+          "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+          ".regnav/manifest.json": "59961a39c1f43a1832cf50cbf3dc290c26f0c34ee0925f9a12ea65f2cd24b363"
+        }
+      },
+      "observed": {
+        "source_watch": {
+          "schema_version": "1.0",
+          "tool_version": "0.1.0",
+          "verdict": "INVALID",
+          "errors": [
+            "Evidence link references an unknown source."
+          ]
+        }
+      },
+      "expected": {
+        "exit_code": 1,
+        "verdict": "INVALID"
+      },
+      "explanation": "The real CLI rejects the invalid manifest with verdict INVALID and exit 1. It supplies no successful unchanged comparison.",
+      "fixture_history": {
+        "kind": "temporary fictional Git commits; not upstream GitHub commits",
+        "base_revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "head_revision": "bd4ce9e28e4374b01ffcb02ebf1f717fe3d99c1e",
+        "synthetic_author_date": "2026-10-28T00:00:00+00:00"
+      },
+      "receipt_ids": [
+        "watch-invalid-manifest"
+      ],
+      "display": {
+        "before_title": "Unmodified upstream fictional source",
+        "after_title": "An invalid comparison cannot become unchanged",
+        "before_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n",
+        "after_text": "# Fictional training review policy\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nRoutine training records have a seven-day review target. Records requiring\nspecialist input follow the separate fictional referral note.\n\n## Section 2\n\nThe training reviewer records the source version considered and the relevant\nsection alongside each proposition.\n\nFictional amendment: the review target is now five days.\n",
+        "changed_fields": [
+          ".regnav/manifest.json: absent source reference"
+        ],
+        "claims": [
+          {
+            "id": "claim-routine",
+            "text": "Routine training records have a seven-day review target, subject to specialist referral.",
+            "before_status": "fictional declaration recorded",
+            "after_status": "fictional declaration recorded",
+            "source_quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md",
+            "review_note": "Fictional edited declaration for a negative test. No actual human review is represented.",
+            "evidence": [
+              {
+                "source_id": "SRC-not-recorded",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "",
+                "source_url": null
+              },
+              {
+                "source_id": "source-exception",
+                "relation": "qualifies",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          },
+          {
+            "id": "claim-specialist",
+            "text": "The fictional specialist referral target is fourteen days.",
+            "before_status": "no declaration",
+            "after_status": "no declaration",
+            "source_quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+            "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md",
+            "review_note": "No review declaration is recorded.",
+            "evidence": [
+              {
+                "source_id": "source-exception",
+                "relation": "supports",
+                "pinpoint": "Section 1",
+                "quote": "# Fictional specialist referral note\n\nThis is original synthetic training material. It describes no actual law,\norganisation, regulator or operating policy.\n\n## Section 1\n\nTraining records referred for specialist input have a fourteen-day review target.\nThe routine seven-day target does not apply to those referred records.\n",
+                "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/examples/basic/sources/fictional-exception.md"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "id": "ledger-baseline",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/baseline.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"structurally_valid\": true,\n  \"error_count\": 0,\n  \"warning_count\": 3,\n  \"findings\": [\n    {\n      \"severity\": \"warning\",\n      \"code\": \"UNREVIEWED_CLAIM\",\n      \"path\": \"$.claims[1]\",\n      \"message\": \"No completed human review is declared for this proposition.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"MISSING_PINPOINT\",\n      \"path\": \"$.claims[1].evidence[0].pinpoint\",\n      \"message\": \"Identify a page, paragraph, provision, section or other reproducible location.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"CONTESTED_CLAIM\",\n      \"path\": \"$.claims[2]\",\n      \"message\": \"This proposition is recorded as contested; retain the disagreement in any summary.\"\n    }\n  ],\n  \"notice\": \"Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "error_count",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "warning_count",
+          "passed": true,
+          "expected": 3,
+          "observed": 3
+        },
+        {
+          "name": "warning_codes",
+          "passed": true,
+          "expected": [
+            "CONTESTED_CLAIM",
+            "MISSING_PINPOINT",
+            "UNREVIEWED_CLAIM"
+          ],
+          "observed": [
+            "CONTESTED_CLAIM",
+            "MISSING_PINPOINT",
+            "UNREVIEWED_CLAIM"
+          ]
+        },
+        {
+          "name": "structural-validity flag",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-baseline-strict",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/baseline.json",
+        "--json",
+        "--strict"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "{\n  \"structurally_valid\": true,\n  \"error_count\": 0,\n  \"warning_count\": 3,\n  \"findings\": [\n    {\n      \"severity\": \"warning\",\n      \"code\": \"UNREVIEWED_CLAIM\",\n      \"path\": \"$.claims[1]\",\n      \"message\": \"No completed human review is declared for this proposition.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"MISSING_PINPOINT\",\n      \"path\": \"$.claims[1].evidence[0].pinpoint\",\n      \"message\": \"Identify a page, paragraph, provision, section or other reproducible location.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"CONTESTED_CLAIM\",\n      \"path\": \"$.claims[2]\",\n      \"message\": \"This proposition is recorded as contested; retain the disagreement in any summary.\"\n    }\n  ],\n  \"notice\": \"Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 2,
+          "observed": 2
+        },
+        {
+          "name": "error_count",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "warning_count",
+          "passed": true,
+          "expected": 3,
+          "observed": 3
+        },
+        {
+          "name": "warning_codes",
+          "passed": true,
+          "expected": [
+            "CONTESTED_CLAIM",
+            "MISSING_PINPOINT",
+            "UNREVIEWED_CLAIM"
+          ],
+          "observed": [
+            "CONTESTED_CLAIM",
+            "MISSING_PINPOINT",
+            "UNREVIEWED_CLAIM"
+          ]
+        },
+        {
+          "name": "structural-validity flag",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        },
+        {
+          "name": "strict mode preserves the same findings",
+          "passed": true,
+          "expected": {
+            "structurally_valid": true,
+            "error_count": 0,
+            "warning_count": 3,
+            "findings": [
+              {
+                "severity": "warning",
+                "code": "UNREVIEWED_CLAIM",
+                "path": "$.claims[1]",
+                "message": "No completed human review is declared for this proposition."
+              },
+              {
+                "severity": "warning",
+                "code": "MISSING_PINPOINT",
+                "path": "$.claims[1].evidence[0].pinpoint",
+                "message": "Identify a page, paragraph, provision, section or other reproducible location."
+              },
+              {
+                "severity": "warning",
+                "code": "CONTESTED_CLAIM",
+                "path": "$.claims[2]",
+                "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+              }
+            ],
+            "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+          },
+          "observed": {
+            "structurally_valid": true,
+            "error_count": 0,
+            "warning_count": 3,
+            "findings": [
+              {
+                "severity": "warning",
+                "code": "UNREVIEWED_CLAIM",
+                "path": "$.claims[1]",
+                "message": "No completed human review is declared for this proposition."
+              },
+              {
+                "severity": "warning",
+                "code": "MISSING_PINPOINT",
+                "path": "$.claims[1].evidence[0].pinpoint",
+                "message": "Identify a page, paragraph, provision, section or other reproducible location."
+              },
+              {
+                "severity": "warning",
+                "code": "CONTESTED_CLAIM",
+                "path": "$.claims[2]",
+                "message": "This proposition is recorded as contested; retain the disagreement in any summary."
+              }
+            ],
+            "notice": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth."
+          }
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "--json",
+          "--strict"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-matrix-csv",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "report",
+        "$FIXTURES/ledgers/baseline.json",
+        "--format",
+        "csv"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "\"Claim ID\",\"Proposition\",\"User-declared review\",\"Reviewer\",\"Review date\",\"Source ID\",\"Source title\",\"Source type\",\"Jurisdiction\",\"Version\",\"As of\",\"URL\",\"Pinpoint\",\"Relation\",\"Treatment of contrary evidence\"\n\"CLAIM-logging\",\"Draft A states that requests are entered in a log before review.\",\"checked\",\"Synthetic reviewer (training fixture)\",\"2025-01-02\",\"SRC-draft-a\",\"Synthetic internal procedure, draft A (training fixture)\",\"other\",\"Fictional training setting\",\"Draft A\",\"2025-01-01\",\"https://example.org/regnav-training/draft-a\",\"A.2\",\"supports\",\"\"\n\"CLAIM-remedy\",\"The drafts provide a further review procedure after an initial decision.\",\"unreviewed\",\"\",\"\",\"SRC-draft-b\",\"Synthetic internal procedure, draft B (training fixture)\",\"other\",\"Fictional training setting\",\"Draft B\",\"2025-01-01\",\"https://example.org/regnav-training/draft-b\",\"\",\"context\",\"\"\n\"CLAIM-timing\",\"The draft procedure specifies a response within five working days.\",\"contested\",\"Synthetic reviewer (training fixture)\",\"2025-01-02\",\"SRC-draft-a\",\"Synthetic internal procedure, draft A (training fixture)\",\"other\",\"Fictional training setting\",\"Draft A\",\"2025-01-01\",\"https://example.org/regnav-training/draft-a\",\"A.3\",\"supports\",\"\"\n\"CLAIM-timing\",\"The draft procedure specifies a response within five working days.\",\"contested\",\"Synthetic reviewer (training fixture)\",\"2025-01-02\",\"SRC-draft-b\",\"Synthetic internal procedure, draft B (training fixture)\",\"other\",\"Fictional training setting\",\"Draft B\",\"2025-01-01\",\"https://example.org/regnav-training/draft-b\",\"B.2\",\"contradicts\",\"\"\n",
+      "stderr": "Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\nnotice: 3 warning(s); run validate for their details.\n",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "CSV evidence row count",
+          "passed": true,
+          "expected": 4,
+          "observed": 4
+        },
+        {
+          "name": "CSV represents three propositions",
+          "passed": true,
+          "expected": [
+            "CLAIM-logging",
+            "CLAIM-remedy",
+            "CLAIM-timing"
+          ],
+          "observed": [
+            "CLAIM-logging",
+            "CLAIM-remedy",
+            "CLAIM-timing"
+          ]
+        },
+        {
+          "name": "two evidence rows preserve the timing disagreement",
+          "passed": true,
+          "expected": 2,
+          "observed": 2
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "report",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "--format",
+          "csv"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-irrelevant-pinpoint",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/irrelevant-pinpoint.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"structurally_valid\": true,\n  \"error_count\": 0,\n  \"warning_count\": 2,\n  \"findings\": [\n    {\n      \"severity\": \"warning\",\n      \"code\": \"UNREVIEWED_CLAIM\",\n      \"path\": \"$.claims[1]\",\n      \"message\": \"No completed human review is declared for this proposition.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"CONTESTED_CLAIM\",\n      \"path\": \"$.claims[2]\",\n      \"message\": \"This proposition is recorded as contested; retain the disagreement in any summary.\"\n    }\n  ],\n  \"notice\": \"Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "error_count",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "warning_count",
+          "passed": true,
+          "expected": 2,
+          "observed": 2
+        },
+        {
+          "name": "warning_codes",
+          "passed": true,
+          "expected": [
+            "CONTESTED_CLAIM",
+            "UNREVIEWED_CLAIM"
+          ],
+          "observed": [
+            "CONTESTED_CLAIM",
+            "UNREVIEWED_CLAIM"
+          ]
+        },
+        {
+          "name": "structural-validity flag",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        },
+        {
+          "name": "review declarations are unchanged",
+          "passed": true,
+          "expected": [
+            {
+              "reviewer": "Synthetic reviewer (training fixture)",
+              "date": "2025-01-02",
+              "note": "Example of a user-declared review record. No real reviewer is represented."
+            },
+            null,
+            {
+              "reviewer": "Synthetic reviewer (training fixture)",
+              "date": "2025-01-02",
+              "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+            }
+          ],
+          "observed": [
+            {
+              "reviewer": "Synthetic reviewer (training fixture)",
+              "date": "2025-01-02",
+              "note": "Example of a user-declared review record. No real reviewer is represented."
+            },
+            null,
+            {
+              "reviewer": "Synthetic reviewer (training fixture)",
+              "date": "2025-01-02",
+              "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+            }
+          ]
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/irrelevant-pinpoint.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-withdraw-unsupported",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/withdraw-unsupported.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"structurally_valid\": true,\n  \"error_count\": 0,\n  \"warning_count\": 1,\n  \"findings\": [\n    {\n      \"severity\": \"warning\",\n      \"code\": \"CONTESTED_CLAIM\",\n      \"path\": \"$.claims[1]\",\n      \"message\": \"This proposition is recorded as contested; retain the disagreement in any summary.\"\n    }\n  ],\n  \"notice\": \"Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "error_count",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "warning_count",
+          "passed": true,
+          "expected": 1,
+          "observed": 1
+        },
+        {
+          "name": "warning_codes",
+          "passed": true,
+          "expected": [
+            "CONTESTED_CLAIM"
+          ],
+          "observed": [
+            "CONTESTED_CLAIM"
+          ]
+        },
+        {
+          "name": "structural-validity flag",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        },
+        {
+          "name": "remaining propositions and declarations unchanged",
+          "passed": true,
+          "expected": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ],
+          "observed": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/withdraw-unsupported.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-invalid-source",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/invalid-source.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\n  \"structurally_valid\": false,\n  \"error_count\": 1,\n  \"warning_count\": 3,\n  \"findings\": [\n    {\n      \"severity\": \"warning\",\n      \"code\": \"UNREVIEWED_CLAIM\",\n      \"path\": \"$.claims[1]\",\n      \"message\": \"No completed human review is declared for this proposition.\"\n    },\n    {\n      \"severity\": \"error\",\n      \"code\": \"UNKNOWN_SOURCE\",\n      \"path\": \"$.claims[1].evidence[0].source_id\",\n      \"message\": \"This link does not identify a recorded source.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"MISSING_PINPOINT\",\n      \"path\": \"$.claims[1].evidence[0].pinpoint\",\n      \"message\": \"Identify a page, paragraph, provision, section or other reproducible location.\"\n    },\n    {\n      \"severity\": \"warning\",\n      \"code\": \"CONTESTED_CLAIM\",\n      \"path\": \"$.claims[2]\",\n      \"message\": \"This proposition is recorded as contested; retain the disagreement in any summary.\"\n    }\n  ],\n  \"notice\": \"Structural checks only. Review status is a user-declared human assessment; this software does not verify sources, quotations, legal validity or factual truth.\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 1,
+          "observed": 1
+        },
+        {
+          "name": "error_count",
+          "passed": true,
+          "expected": 1,
+          "observed": 1
+        },
+        {
+          "name": "warning_count",
+          "passed": true,
+          "expected": 3,
+          "observed": 3
+        },
+        {
+          "name": "error_codes",
+          "passed": true,
+          "expected": [
+            "UNKNOWN_SOURCE"
+          ],
+          "observed": [
+            "UNKNOWN_SOURCE"
+          ]
+        },
+        {
+          "name": "structural-validity flag",
+          "passed": true,
+          "expected": false,
+          "observed": false
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/invalid-source.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-source-version-comparison",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "compare",
+        "$FIXTURES/ledgers/baseline.json",
+        "$FIXTURES/ledgers/source-version-changed.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"notice\": \"Comparison of recorded data only. A recheck flag identifies a potentially stale previous declaration; it does not revoke, perform or certify human review.\",\n  \"summary\": {\n    \"changed_ledger_fields\": 0,\n    \"changed_sources\": 1,\n    \"changed_claims\": 2,\n    \"prior_reviews_to_reconsider\": 2\n  },\n  \"ledger_fields\": [],\n  \"sources\": [\n    {\n      \"id\": \"SRC-draft-a\",\n      \"change\": \"material\",\n      \"fields\": [\n        \"version\"\n      ]\n    }\n  ],\n  \"claims\": [\n    {\n      \"id\": \"CLAIM-logging\",\n      \"change\": \"material\",\n      \"recheck_prior_review\": true,\n      \"reasons\": [\n        \"Linked source changed: SRC-draft-a\"\n      ]\n    },\n    {\n      \"id\": \"CLAIM-timing\",\n      \"change\": \"material\",\n      \"recheck_prior_review\": true,\n      \"reasons\": [\n        \"Linked source changed: SRC-draft-a\"\n      ]\n    }\n  ]\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "previous declarations requiring reconsideration",
+          "passed": true,
+          "expected": [
+            "CLAIM-logging",
+            "CLAIM-timing"
+          ],
+          "observed": [
+            "CLAIM-logging",
+            "CLAIM-timing"
+          ]
+        },
+        {
+          "name": "one material source-record change",
+          "passed": true,
+          "expected": [
+            [
+              "SRC-draft-a",
+              "material"
+            ]
+          ],
+          "observed": [
+            [
+              "SRC-draft-a",
+              "material"
+            ]
+          ]
+        },
+        {
+          "name": "recorded declarations preserved",
+          "passed": true,
+          "expected": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ],
+          "observed": [
+            {
+              "id": "CLAIM-logging",
+              "text": "Draft A states that requests are entered in a log before review.",
+              "review_status": "checked",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.2",
+                  "relation": "supports"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "Example of a user-declared review record. No real reviewer is represented."
+              }
+            },
+            {
+              "id": "CLAIM-remedy",
+              "text": "The drafts provide a further review procedure after an initial decision.",
+              "review_status": "unreviewed",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "",
+                  "relation": "context"
+                }
+              ],
+              "notes": "This intentionally unsupported proposition illustrates an incomplete review."
+            },
+            {
+              "id": "CLAIM-timing",
+              "text": "The draft procedure specifies a response within five working days.",
+              "review_status": "contested",
+              "evidence": [
+                {
+                  "source_id": "SRC-draft-a",
+                  "pinpoint": "A.3",
+                  "relation": "supports"
+                },
+                {
+                  "source_id": "SRC-draft-b",
+                  "pinpoint": "B.2",
+                  "relation": "contradicts"
+                }
+              ],
+              "review": {
+                "reviewer": "Synthetic reviewer (training fixture)",
+                "date": "2025-01-02",
+                "note": "The fixture drafts conflict, and the exercise supplies no governing choice between them."
+              }
+            }
+          ]
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "compare",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/source-version-changed.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-metadata-only-negative",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "compare",
+        "$FIXTURES/ledgers/baseline.json",
+        "$FIXTURES/ledgers/metadata-only.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"notice\": \"Comparison of recorded data only. A recheck flag identifies a potentially stale previous declaration; it does not revoke, perform or certify human review.\",\n  \"summary\": {\n    \"changed_ledger_fields\": 0,\n    \"changed_sources\": 1,\n    \"changed_claims\": 0,\n    \"prior_reviews_to_reconsider\": 0\n  },\n  \"ledger_fields\": [],\n  \"sources\": [\n    {\n      \"id\": \"SRC-draft-a\",\n      \"change\": \"metadata_only\",\n      \"fields\": [\n        \"accessed\"\n      ]\n    }\n  ],\n  \"claims\": []\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "access-date edit does not demand renewed substantive review",
+          "passed": true,
+          "expected": [],
+          "observed": []
+        },
+        {
+          "name": "access-date category",
+          "passed": true,
+          "expected": "metadata_only",
+          "observed": "metadata_only"
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "compare",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/metadata-only.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "ledger-duplicate-key-negative",
+      "command": [
+        "python",
+        "-m",
+        "regnav_evidence",
+        "validate",
+        "$FIXTURES/ledgers/duplicate-key.json",
+        "--json"
+      ],
+      "cwd": "$POLICYKIT",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "error: Duplicate JSON key 'schema_version'; no value was silently replaced.\n",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 1,
+          "observed": 1
+        },
+        {
+          "name": "duplicate JSON key is explicitly rejected",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+          "-m",
+          "regnav_evidence",
+          "validate",
+          "/tmp/regnav-lab-xk1rzovl/ledgers/duplicate-key.json",
+          "--json"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
+      }
+    },
+    {
+      "id": "watch-unchanged",
+      "command": [
+        "node",
+        "$SOURCE_WATCH/src/cli.mjs",
+        "--repo",
+        "$FIXTURES/source-watch",
+        "--base",
+        "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "--head",
+        "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "--mode",
+        "strict"
+      ],
+      "cwd": "$SOURCE_WATCH",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\n  \"schema_version\": \"1.0\",\n  \"tool_version\": \"0.1.0\",\n  \"base_revision\": \"603ea141f2502158ce2736ba3bd674f49dbd9418\",\n  \"head_revision\": \"603ea141f2502158ce2736ba3bd674f49dbd9418\",\n  \"verdict\": \"UNCHANGED\",\n  \"source_changes\": [],\n  \"affected_claims\": [],\n  \"review_record_changes\": [],\n  \"counts\": {\n    \"sources\": 2,\n    \"claims\": 2,\n    \"affected_claims\": 0\n  },\n  \"limitations\": [\n    \"Only explicitly listed source files and declared evidence links are covered.\",\n    \"A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.\",\n    \"Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.\",\n    \"Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.\",\n    \"The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review.\"\n  ],\n  \"manifest_path\": \".regnav/manifest.json\",\n  \"mode\": \"strict\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 0,
+          "observed": 0
+        },
+        {
+          "name": "verdict",
+          "passed": true,
+          "expected": "UNCHANGED",
+          "observed": "UNCHANGED"
+        },
+        {
+          "name": "affected claims",
+          "passed": true,
+          "expected": [],
+          "observed": []
+        },
+        {
+          "name": "compared exact fixture commits",
+          "passed": true,
+          "expected": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "603ea141f2502158ce2736ba3bd674f49dbd9418"
+          ],
+          "observed": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "603ea141f2502158ce2736ba3bd674f49dbd9418"
+          ]
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:16Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
+          "--repo",
+          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "--base",
+          "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "--head",
+          "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "--mode",
+          "strict"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch"
+      }
+    },
+    {
+      "id": "watch-source-changed",
+      "command": [
+        "node",
+        "$SOURCE_WATCH/src/cli.mjs",
+        "--repo",
+        "$FIXTURES/source-watch",
+        "--base",
+        "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "--head",
+        "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85",
+        "--mode",
+        "strict"
+      ],
+      "cwd": "$SOURCE_WATCH",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "{\n  \"schema_version\": \"1.0\",\n  \"tool_version\": \"0.1.0\",\n  \"base_revision\": \"603ea141f2502158ce2736ba3bd674f49dbd9418\",\n  \"head_revision\": \"717f5c28a60ae99c18b8bf6df6c3ce63281aaa85\",\n  \"verdict\": \"RECHECK_REQUIRED\",\n  \"source_changes\": [\n    {\n      \"id\": \"source-policy\",\n      \"reasons\": [\n        \"SOURCE_BYTES_CHANGED\"\n      ],\n      \"before\": {\n        \"path\": \"sources/fictional-policy.md\",\n        \"sha256\": \"f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294\",\n        \"status\": \"observed\",\n        \"record\": {\n          \"id\": \"source-policy\",\n          \"path\": \"sources/fictional-policy.md\",\n          \"title\": \"Fictional training review policy\",\n          \"version\": \"training-1\"\n        }\n      },\n      \"after\": {\n        \"path\": \"sources/fictional-policy.md\",\n        \"sha256\": \"3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5\",\n        \"status\": \"observed\",\n        \"record\": {\n          \"id\": \"source-policy\",\n          \"path\": \"sources/fictional-policy.md\",\n          \"title\": \"Fictional training review policy\",\n          \"version\": \"training-1\"\n        }\n      }\n    }\n  ],\n  \"affected_claims\": [\n    {\n      \"id\": \"claim-routine\",\n      \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n      \"reasons\": [\n        \"LINKED_SOURCE_CHANGED\"\n      ],\n      \"changed_source_ids\": [\n        \"source-policy\"\n      ],\n      \"evidence\": [\n        {\n          \"source_id\": \"source-exception\",\n          \"relation\": \"qualifies\",\n          \"pinpoint\": \"Section 1\"\n        },\n        {\n          \"source_id\": \"source-policy\",\n          \"relation\": \"supports\",\n          \"pinpoint\": \"Section 1\"\n        }\n      ],\n      \"before\": {\n        \"id\": \"claim-routine\",\n        \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n        \"evidence\": [\n          {\n            \"source_id\": \"source-policy\",\n            \"relation\": \"supports\",\n            \"pinpoint\": \"Section 1\"\n          },\n          {\n            \"source_id\": \"source-exception\",\n            \"relation\": \"qualifies\",\n            \"pinpoint\": \"Section 1\"\n          }\n        ],\n        \"review\": {\n          \"reviewer\": \"Fictional training reviewer\",\n          \"date\": \"2026-10-27\",\n          \"note\": \"Synthetic review declaration for the demonstration.\"\n        }\n      },\n      \"after\": {\n        \"id\": \"claim-routine\",\n        \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n        \"evidence\": [\n          {\n            \"source_id\": \"source-policy\",\n            \"relation\": \"supports\",\n            \"pinpoint\": \"Section 1\"\n          },\n          {\n            \"source_id\": \"source-exception\",\n            \"relation\": \"qualifies\",\n            \"pinpoint\": \"Section 1\"\n          }\n        ],\n        \"review\": {\n          \"reviewer\": \"Fictional training reviewer\",\n          \"date\": \"2026-10-27\",\n          \"note\": \"Synthetic review declaration for the demonstration.\"\n        }\n      },\n      \"declared_review_before\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Synthetic review declaration for the demonstration.\"\n      },\n      \"declared_review_after\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Synthetic review declaration for the demonstration.\"\n      }\n    }\n  ],\n  \"review_record_changes\": [],\n  \"counts\": {\n    \"sources\": 2,\n    \"claims\": 2,\n    \"affected_claims\": 1\n  },\n  \"limitations\": [\n    \"Only explicitly listed source files and declared evidence links are covered.\",\n    \"A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.\",\n    \"Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.\",\n    \"Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.\",\n    \"The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review.\"\n  ],\n  \"manifest_path\": \".regnav/manifest.json\",\n  \"mode\": \"strict\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 2,
+          "observed": 2
+        },
+        {
+          "name": "verdict",
+          "passed": true,
+          "expected": "RECHECK_REQUIRED",
+          "observed": "RECHECK_REQUIRED"
+        },
+        {
+          "name": "affected claims",
+          "passed": true,
+          "expected": [
+            "claim-routine"
+          ],
+          "observed": [
+            "claim-routine"
+          ]
+        },
+        {
+          "name": "compared exact fixture commits",
+          "passed": true,
+          "expected": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85"
+          ],
+          "observed": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85"
+          ]
+        },
+        {
+          "name": "exactly the policy source changed",
+          "passed": true,
+          "expected": [
+            "source-policy"
+          ],
+          "observed": [
+            "source-policy"
+          ]
+        },
+        {
+          "name": "byte-change reason is retained",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:16Z",
+        "finished_at": "2026-10-28T13:49:17Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
+          "--repo",
+          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "--base",
+          "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "--head",
+          "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85",
+          "--mode",
+          "strict"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch"
+      }
+    },
+    {
+      "id": "watch-review-edited",
+      "command": [
+        "node",
+        "$SOURCE_WATCH/src/cli.mjs",
+        "--repo",
+        "$FIXTURES/source-watch",
+        "--base",
+        "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "--head",
+        "678d77cafe4752935bcc65b7ab2f32adfc33393d",
+        "--mode",
+        "strict"
+      ],
+      "cwd": "$SOURCE_WATCH",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "{\n  \"schema_version\": \"1.0\",\n  \"tool_version\": \"0.1.0\",\n  \"base_revision\": \"603ea141f2502158ce2736ba3bd674f49dbd9418\",\n  \"head_revision\": \"678d77cafe4752935bcc65b7ab2f32adfc33393d\",\n  \"verdict\": \"RECHECK_REQUIRED\",\n  \"source_changes\": [\n    {\n      \"id\": \"source-policy\",\n      \"reasons\": [\n        \"SOURCE_BYTES_CHANGED\"\n      ],\n      \"before\": {\n        \"path\": \"sources/fictional-policy.md\",\n        \"sha256\": \"f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294\",\n        \"status\": \"observed\",\n        \"record\": {\n          \"id\": \"source-policy\",\n          \"path\": \"sources/fictional-policy.md\",\n          \"title\": \"Fictional training review policy\",\n          \"version\": \"training-1\"\n        }\n      },\n      \"after\": {\n        \"path\": \"sources/fictional-policy.md\",\n        \"sha256\": \"3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5\",\n        \"status\": \"observed\",\n        \"record\": {\n          \"id\": \"source-policy\",\n          \"path\": \"sources/fictional-policy.md\",\n          \"title\": \"Fictional training review policy\",\n          \"version\": \"training-1\"\n        }\n      }\n    }\n  ],\n  \"affected_claims\": [\n    {\n      \"id\": \"claim-routine\",\n      \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n      \"reasons\": [\n        \"LINKED_SOURCE_CHANGED\"\n      ],\n      \"changed_source_ids\": [\n        \"source-policy\"\n      ],\n      \"evidence\": [\n        {\n          \"source_id\": \"source-exception\",\n          \"relation\": \"qualifies\",\n          \"pinpoint\": \"Section 1\"\n        },\n        {\n          \"source_id\": \"source-policy\",\n          \"relation\": \"supports\",\n          \"pinpoint\": \"Section 1\"\n        }\n      ],\n      \"before\": {\n        \"id\": \"claim-routine\",\n        \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n        \"evidence\": [\n          {\n            \"source_id\": \"source-policy\",\n            \"relation\": \"supports\",\n            \"pinpoint\": \"Section 1\"\n          },\n          {\n            \"source_id\": \"source-exception\",\n            \"relation\": \"qualifies\",\n            \"pinpoint\": \"Section 1\"\n          }\n        ],\n        \"review\": {\n          \"reviewer\": \"Fictional training reviewer\",\n          \"date\": \"2026-10-27\",\n          \"note\": \"Synthetic review declaration for the demonstration.\"\n        }\n      },\n      \"after\": {\n        \"id\": \"claim-routine\",\n        \"text\": \"Routine training records have a seven-day review target, subject to specialist referral.\",\n        \"evidence\": [\n          {\n            \"source_id\": \"source-policy\",\n            \"relation\": \"supports\",\n            \"pinpoint\": \"Section 1\"\n          },\n          {\n            \"source_id\": \"source-exception\",\n            \"relation\": \"qualifies\",\n            \"pinpoint\": \"Section 1\"\n          }\n        ],\n        \"review\": {\n          \"reviewer\": \"Fictional training reviewer\",\n          \"date\": \"2026-10-27\",\n          \"note\": \"Fictional edited declaration for a negative test. No actual human review is represented.\"\n        }\n      },\n      \"declared_review_before\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Synthetic review declaration for the demonstration.\"\n      },\n      \"declared_review_after\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Fictional edited declaration for a negative test. No actual human review is represented.\"\n      }\n    }\n  ],\n  \"review_record_changes\": [\n    {\n      \"id\": \"claim-routine\",\n      \"before\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Synthetic review declaration for the demonstration.\"\n      },\n      \"after\": {\n        \"reviewer\": \"Fictional training reviewer\",\n        \"date\": \"2026-10-27\",\n        \"note\": \"Fictional edited declaration for a negative test. No actual human review is represented.\"\n      }\n    }\n  ],\n  \"counts\": {\n    \"sources\": 2,\n    \"claims\": 2,\n    \"affected_claims\": 1\n  },\n  \"limitations\": [\n    \"Only explicitly listed source files and declared evidence links are covered.\",\n    \"A byte or record change identifies a need for review; it does not establish that a proposition is false or that law has changed.\",\n    \"Unchanged observations concern these two commits only; they do not establish current law, source authenticity, completeness or factual accuracy.\",\n    \"Review metadata is a declaration and is not authenticated. A changed review record never clears a source or claim finding.\",\n    \"The tool does not fetch URLs, read live websites, assess legal correctness or perform substantive human review.\"\n  ],\n  \"manifest_path\": \".regnav/manifest.json\",\n  \"mode\": \"strict\"\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 2,
+          "observed": 2
+        },
+        {
+          "name": "verdict",
+          "passed": true,
+          "expected": "RECHECK_REQUIRED",
+          "observed": "RECHECK_REQUIRED"
+        },
+        {
+          "name": "affected claims",
+          "passed": true,
+          "expected": [
+            "claim-routine"
+          ],
+          "observed": [
+            "claim-routine"
+          ]
+        },
+        {
+          "name": "compared exact fixture commits",
+          "passed": true,
+          "expected": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "678d77cafe4752935bcc65b7ab2f32adfc33393d"
+          ],
+          "observed": [
+            "603ea141f2502158ce2736ba3bd674f49dbd9418",
+            "678d77cafe4752935bcc65b7ab2f32adfc33393d"
+          ]
+        },
+        {
+          "name": "changed review record recorded separately",
+          "passed": true,
+          "expected": [
+            "claim-routine"
+          ],
+          "observed": [
+            "claim-routine"
+          ]
+        },
+        {
+          "name": "edited declaration does not clear changed source",
+          "passed": true,
+          "expected": [
+            "source-policy"
+          ],
+          "observed": [
+            "source-policy"
+          ]
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:17Z",
+        "finished_at": "2026-10-28T13:49:17Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
+          "--repo",
+          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "--base",
+          "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "--head",
+          "678d77cafe4752935bcc65b7ab2f32adfc33393d",
+          "--mode",
+          "strict"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch"
+      }
+    },
+    {
+      "id": "watch-invalid-manifest",
+      "command": [
+        "node",
+        "$SOURCE_WATCH/src/cli.mjs",
+        "--repo",
+        "$FIXTURES/source-watch",
+        "--base",
+        "603ea141f2502158ce2736ba3bd674f49dbd9418",
+        "--head",
+        "bd4ce9e28e4374b01ffcb02ebf1f717fe3d99c1e",
+        "--mode",
+        "strict"
+      ],
+      "cwd": "$SOURCE_WATCH",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\n  \"schema_version\": \"1.0\",\n  \"tool_version\": \"0.1.0\",\n  \"verdict\": \"INVALID\",\n  \"errors\": [\n    \"Evidence link references an unknown source.\"\n  ]\n}\n",
+      "stderr": "",
+      "assertions": [
+        {
+          "name": "exit code",
+          "passed": true,
+          "expected": 1,
+          "observed": 1
+        },
+        {
+          "name": "verdict",
+          "passed": true,
+          "expected": "INVALID",
+          "observed": "INVALID"
+        },
+        {
+          "name": "invalid input has an explicit error",
+          "passed": true,
+          "expected": true,
+          "observed": true
+        }
+      ],
+      "execution": {
+        "started_at": "2026-10-28T13:49:17Z",
+        "finished_at": "2026-10-28T13:49:17Z",
+        "actual_command": [
+          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
+          "--repo",
+          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "--base",
+          "603ea141f2502158ce2736ba3bd674f49dbd9418",
+          "--head",
+          "bd4ce9e28e4374b01ffcb02ebf1f717fe3d99c1e",
+          "--mode",
+          "strict"
+        ],
+        "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch"
+      }
+    }
+  ],
+  "fixtures": {
+    "baseline": {
+      "path": "$FIXTURES/ledgers/baseline.json",
+      "sha256": "0778417c928e39b3af8e9aa0429c9dd0a22a5010c832b3243d91b38c2fd8622a",
+      "bytes": 2741,
+      "kind": "fictional training fixture"
+    },
+    "irrelevant-pinpoint": {
+      "path": "$FIXTURES/ledgers/irrelevant-pinpoint.json",
+      "sha256": "135f14461677aee67c554b40a494ddcfe3e0f55fc0df98b93451ac7e0d52606a",
+      "bytes": 2904,
+      "kind": "fictional training fixture"
+    },
+    "withdraw-unsupported": {
+      "path": "$FIXTURES/ledgers/withdraw-unsupported.json",
+      "sha256": "d9aa546403440a3c6ebdfa8d91d7a83579e6dcf391259903f6230732f31b2fa4",
+      "bytes": 2494,
+      "kind": "fictional training fixture"
+    },
+    "invalid-source": {
+      "path": "$FIXTURES/ledgers/invalid-source.json",
+      "sha256": "4fcbc1f0c9b85e3951cb83b2d27d1439513fee48d682d653c209dfd39c9901fc",
+      "bytes": 2906,
+      "kind": "fictional training fixture"
+    },
+    "source-version-changed": {
+      "path": "$FIXTURES/ledgers/source-version-changed.json",
+      "sha256": "dc4c84fad092dedb20be19368ff6f25f9929ac8833d0a745196c6b7760a576fd",
+      "bytes": 2929,
+      "kind": "fictional training fixture"
+    },
+    "metadata-only": {
+      "path": "$FIXTURES/ledgers/metadata-only.json",
+      "sha256": "2b2354b0536d5a2fb4214690973da10c439660c401a9a55fd5a71f1391512538",
+      "bytes": 2901,
+      "kind": "fictional training fixture"
+    },
+    "duplicate-key": {
+      "path": "$FIXTURES/ledgers/duplicate-key.json",
+      "sha256": "dcec6a2fbe581086159d8beb821f06168946a2615cc6b70334dba47096d04653",
+      "bytes": 2766,
+      "kind": "fictional training fixture"
+    },
+    "watch-unchanged": {
+      "kind": "temporary fictional Git snapshot",
+      "revision": "603ea141f2502158ce2736ba3bd674f49dbd9418",
+      "files": {
+        "sources/fictional-policy.md": "f97423c0ae2c65f2d6af5b01523b77b80130ea2cde5e0df1d7a048c4cc19b294",
+        "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+        ".regnav/manifest.json": "3ba3521a94aa856fe2846d2109a4b36fc4a666b4fb33d3415ab9e5e1f7d166ee"
+      },
+      "author_date_is_synthetic": true
+    },
+    "watch-source-changed": {
+      "kind": "temporary fictional Git snapshot",
+      "revision": "717f5c28a60ae99c18b8bf6df6c3ce63281aaa85",
+      "files": {
+        "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+        "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+        ".regnav/manifest.json": "3ba3521a94aa856fe2846d2109a4b36fc4a666b4fb33d3415ab9e5e1f7d166ee"
+      },
+      "author_date_is_synthetic": true
+    },
+    "watch-review-edited": {
+      "kind": "temporary fictional Git snapshot",
+      "revision": "678d77cafe4752935bcc65b7ab2f32adfc33393d",
+      "files": {
+        "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+        "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+        ".regnav/manifest.json": "493d85353fc89df05cbd67070d699a7b2ae856ae94de646da04940d74d646849"
+      },
+      "author_date_is_synthetic": true
+    },
+    "watch-invalid-manifest": {
+      "kind": "temporary fictional Git snapshot",
+      "revision": "bd4ce9e28e4374b01ffcb02ebf1f717fe3d99c1e",
+      "files": {
+        "sources/fictional-policy.md": "3ebeb2b68907f33661eb9e9b7c8cf629657cede477c8e6b9cd1ddb01aa6891b5",
+        "sources/fictional-exception.md": "8d1e03312da8734e0f891e189fa677dd8365434faea2c71f008e3a0a970294d2",
+        ".regnav/manifest.json": "59961a39c1f43a1832cf50cbf3dc290c26f0c34ee0925f9a12ea65f2cd24b363"
+      },
+      "author_date_is_synthetic": true
+    }
+  },
+  "summary": {
+    "scenario_count": 9,
+    "command_count": 13,
+    "assertion_count": 60,
+    "meaning": "Every asserted result matched the observed CLI behaviour, including intended rejection cases.",
+    "independent_human_review": "Not established by this automated run."
+  }
+}
