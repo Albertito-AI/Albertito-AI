@@ -155,7 +155,7 @@
       <text y="0" fill="#b9c6d8" font-size="11" letter-spacing="1.5">ENERGY</text>
       <text x="100" y="0" text-anchor="end" fill="#ead8ad" font-size="13">100</text>
       <rect y="12" width="100" height="5" rx="2.5" fill="#2a3a50"/>
-      <rect y="12" width="99.9" height="5" rx="2.5" fill="#dec28a"/>
+      <rect y="12" width="99.88" height="5" rx="2.5" fill="#dec28a"/>
       <text y="52" fill="#b9c6d8" font-size="11" letter-spacing="1.5">CURIOSITY</text>
       <text x="100" y="52" text-anchor="end" fill="#d6e4dc" font-size="13">92</text>
       <rect y="64" width="100" height="5" rx="2.5" fill="#2a3a50"/>
