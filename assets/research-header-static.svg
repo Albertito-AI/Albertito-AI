@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description" class="mode-curious">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description" class="mode-resting">
   <title id="title">Albert Tan: Law, evidence and technology. Meet Sparks.</title>
-  <desc id="description">Sparks is an animated fictional digital companion, a retro research robot in charcoal and aged bronze with warm amber lights. Current game state: curious. Energy 86, curiosity 96, joy 84. Spark, day 0. What would count as good evidence? Updated 28 Oct 2026 · 15:59 SGT. These are game values, not measurements of Albert Tan.</desc>
+  <desc id="description">Sparks is an animated fictional digital companion, a retro research robot in charcoal and aged bronze with warm amber lights. Current game state: resting. Energy 100, curiosity 92, joy 91. Spark, day 0. Even good questions need a little sleep. Updated 28 Oct 2026 · 19:33 SGT. These are game values, not measurements of Albert Tan.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#101827"/>
@@ -67,7 +67,7 @@
     <text x="55" y="127" fill="#faf8f1" class="serif" font-size="66">Albert Tan</text>
     <text x="59" y="169" fill="#d6dce7" font-size="25" letter-spacing="0.55">Law, evidence and technology</text>
     <path d="M60 199 H133" stroke="#bfa77c" stroke-width="2"/>
-    <text x="59" y="239" fill="#e8dcc2" class="serif" font-size="21" font-style="italic">What would count as good evidence?</text>
+    <text x="59" y="239" fill="#e8dcc2" class="serif" font-size="21" font-style="italic">Even good questions need a little sleep.</text>
 
     <g transform="translate(59 279)">
       <rect width="94" height="26" rx="13" fill="#bfa77c" fill-opacity="0.12" stroke="#bfa77c" stroke-opacity="0.3"/>
@@ -75,7 +75,7 @@
       <text x="27" y="17" fill="#e8d4a8" font-size="11" letter-spacing="1.2">SPARKS</text>
       <text x="108" y="18" fill="#a9b8cc" font-size="14">a digital companion</text>
     </g>
-    <text x="60" y="330" fill="#aebbd0" font-size="15">Spark <tspan fill="#6b7d96"> / </tspan> Day 0 <tspan fill="#6b7d96"> / </tspan> curious</text>
+    <text x="60" y="330" fill="#aebbd0" font-size="15">Spark <tspan fill="#6b7d96"> / </tspan> Day 0 <tspan fill="#6b7d96"> / </tspan> resting</text>
 
     <!-- Approved retro artwork is embedded so the header is self-contained. -->
     <ellipse cx="819" cy="286" rx="66" ry="9" fill="#070f1c" opacity="0.48"/>
@@ -104,22 +104,22 @@
     <path d="M984 137 V277" stroke="#8da2bd" stroke-opacity="0.19"/>
     <g transform="translate(1012 143)">
       <text y="0" fill="#b9c6d8" font-size="11" letter-spacing="1.5">ENERGY</text>
-      <text x="100" y="0" text-anchor="end" fill="#ead8ad" font-size="13">86</text>
+      <text x="100" y="0" text-anchor="end" fill="#ead8ad" font-size="13">100</text>
       <rect y="12" width="100" height="5" rx="2.5" fill="#2a3a50"/>
-      <rect y="12" width="85.86" height="5" rx="2.5" fill="#dec28a"/>
+      <rect y="12" width="99.88" height="5" rx="2.5" fill="#dec28a"/>
       <text y="52" fill="#b9c6d8" font-size="11" letter-spacing="1.5">CURIOSITY</text>
-      <text x="100" y="52" text-anchor="end" fill="#d6e4dc" font-size="13">96</text>
+      <text x="100" y="52" text-anchor="end" fill="#d6e4dc" font-size="13">92</text>
       <rect y="64" width="100" height="5" rx="2.5" fill="#2a3a50"/>
-      <rect y="64" width="96.3" height="5" rx="2.5" fill="#9db9ac"/>
+      <rect y="64" width="91.51" height="5" rx="2.5" fill="#9db9ac"/>
       <text y="104" fill="#b9c6d8" font-size="11" letter-spacing="1.5">JOY</text>
-      <text x="100" y="104" text-anchor="end" fill="#d5dfef" font-size="13">84</text>
+      <text x="100" y="104" text-anchor="end" fill="#d5dfef" font-size="13">91</text>
       <rect y="116" width="100" height="5" rx="2.5" fill="#2a3a50"/>
-      <rect y="116" width="84.44" height="5" rx="2.5" fill="#a8bdd9"/>
+      <rect y="116" width="91.01" height="5" rx="2.5" fill="#a8bdd9"/>
       <text y="144" fill="#8fa1ba" font-size="10" letter-spacing="1.1">GAME STATE</text>
     </g>
 
     <path d="M60 351 H1140" stroke="#8da2bd" stroke-opacity="0.11"/>
-    <text x="1141" y="369" text-anchor="end" fill="#8f9eb3" font-size="11">Updated 28 Oct 2026 · 15:59 SGT</text>
+    <text x="1141" y="369" text-anchor="end" fill="#8f9eb3" font-size="11">Updated 28 Oct 2026 · 19:33 SGT</text>
   </g>
   <style>*, *::before, *::after { animation: none !important; transition: none !important; }</style>
 </svg>
