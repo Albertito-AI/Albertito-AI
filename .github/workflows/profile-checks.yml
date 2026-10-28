@@ -27,3 +27,7 @@ jobs:
           python-version: '3.12'
       - name: Validate the public profile repository
         run: python scripts/validate_profile.py
+      - name: Test the companion state engine
+        run: python -m unittest discover -s tests -v
+      - name: Check generated companion images
+        run: python scripts/update_persona.py --check

@@ -1,5 +1,37 @@
 # Profile change record
 
+## 28 October 2026: Albertito companion candidate
+
+### Request and design
+
+Albert requested a Tamagotchi-like living persona in the existing profile header.
+This candidate retains the navy-and-gold research identity and introduces an
+original fictional scholar with glasses, an open book and a constellation.
+
+### Implemented behaviour
+
+- Self-contained SVG motion: breathing, blinking, stars and page shimmer.
+- Persistent fictional energy, curiosity, joy, age and care-based growth.
+- A Singapore day-and-night routine and four daily scheduled state updates.
+- Repository-writer care actions through GitHub Actions, with cooldown and
+  workflow-replay protection.
+- Reduced-motion support, a still-image variant and a documented state engine.
+
+The character does not measure Albert's actual state or scholarly performance.
+Visitors do not get an in-image JavaScript game or public care controls.
+The proposed schedule becomes active when the workflow is on main. This entry
+records the implementation candidate, not an observed hosted schedule run.
+
+### Verification boundaries
+
+The change adds automated state-transition and generated-asset checks to the
+existing profile integrity workflow. The draft pull request records the checks
+actually performed and their results. Animation and saved-state updates are
+separate: browser movement does not prove that a scheduled run occurred.
+
+AI assistance: the design and implementation were prepared with ChatGPT.
+No independent human review is recorded for this candidate.
+
 ## 28 October 2026: separate Source Watch Action discovery
 
 ### Evidence and reader problem

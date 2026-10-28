@@ -1,4 +1,8 @@
-![Albert Tan: Law, evidence and technology](assets/research-header.svg)
+![Albert Tan: Law, evidence and technology. Albertito, a fictional scholarly companion with animated breathing, blinking and persistent game state.](assets/research-header.svg)
+
+**Meet Albertito**, my little digital research companion.
+[About his life](docs/ALBERTITO.md) · [Still image](assets/research-header-static.svg)
+· [Care controls (repository write access)](https://github.com/Albertito-AI/Albertito-AI/actions/workflows/persona.yml)
 
 # Albert Tan Sin Hon
 
