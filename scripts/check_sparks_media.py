@@ -40,7 +40,8 @@ print("PASS: Real animated GIF, distinct decoded frames, 18-second loop, matchin
 
 readme = (ROOT / "README.md").read_text()
 picture = re.search(r'<picture>\s*<source[^>]+sparks-dance-still[^>]+>\s*<img[^>]+sparks-dance\.gif[^>]+>\s*</picture>', readme).group(0)
-preview_url = re.search(r'\*\*\[Open the interactive stage\]\((https://rawcdn\.githack\.com/[^)]+)\)', readme).group(1)
+stage_url = re.search(r'\*\*\[Open the interactive stage\]\((https://[^)]+)\)', readme).group(1)
+assert stage_url == "https://albertito-ai.github.io/Albertito-AI/", stage_url
 selector = 'img[alt^="Sparks dancing through six routines"]'
 
 def check_picture(page, url, reduced):
@@ -92,14 +93,7 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     external = browser.new_page(viewport={"width": 1280, "height": 900})
     errors = []
     external.on("pageerror", lambda error: errors.append(str(error)))
-    external.goto(preview_url, wait_until="domcontentloaded", timeout=60000)
-    if external.locator("#stage").count() == 0:
-        print("PREVIEW_CONFIRMATION:", external.locator("body").inner_text()[:800])
-        candidate = external.get_by_role("button", name=re.compile("continue|confirm|proceed|open|yes", re.I))
-        if candidate.count() == 0:
-            candidate = external.get_by_role("link", name=re.compile("continue|confirm|proceed|open|yes", re.I))
-        assert candidate.count() == 1, "Unexpected preview confirmation"
-        candidate.click()
+    external.goto(stage_url, wait_until="domcontentloaded", timeout=60000)
     external.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6", timeout=30000)
     for index in range(6):
         external.locator(".move").nth(index).click()
@@ -114,7 +108,7 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     external.set_viewport_size({"width": 375, "height": 900})
     assert external.evaluate("document.documentElement.scrollWidth <= innerWidth")
     assert not errors, errors
-    print("PASS: Public interactive stage, six routines, pause, audio toggle, whole set and mobile layout.", external.url)
+    print("PASS: GitHub Pages stage, six routines, pause, audio toggle, whole set and mobile layout.", external.url)
 
     if args.public:
         for reduced in (False, True):

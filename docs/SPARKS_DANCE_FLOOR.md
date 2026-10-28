@@ -2,18 +2,15 @@
 
 [Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
 
-**[Open the interactive stage](https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html)** · [Full silent video](../assets/sparks-dance.mp4)
+**[Open the interactive stage](https://albertito-ai.github.io/Albertito-AI/)** · [Full silent video](../assets/sparks-dance.mp4)
 
 The [GitHub profile](https://github.com/Albertito-AI) includes an animated
 18-second sampler covering all six routines. It plays as a GIF directly in the
 README. A matching still is selected for reduced-motion preferences.
 
-The interactive stage runs from the reviewed public HTML through
-[raw.githack.com](https://raw.githack.com/), an independent preview host.
-It may show a destination confirmation before opening the page. The link pins
-commit `5038e7dfda8e18b9689536a380b2f8bf9256d288` so it serves the reviewed version.
-The complete [HTML source](../site/index.html) is also self-contained and can be
-downloaded and opened in a browser.
+The interactive stage is published from this repository on
+[GitHub Pages](https://albertito-ai.github.io/Albertito-AI/). The complete [HTML source](../site/index.html)
+is self-contained and can also be downloaded and opened in a browser.
 
 The Dance Floor integrates the supplied Spark's Dance Floor HTML demonstration
 with the retro Sparks research companion. It preserves the supplied robot
@@ -69,13 +66,12 @@ Dimensions, duration, source checksum and output details are recorded in
 
 The export workflow writes only to a `feat/sparks-dance-profile-*` feature branch.
 Review and merge the generated assets through a pull request. If the HTML source
-changes, render fresh media and update the external preview link to its reviewed
-commit.
+changes, render fresh GIF and MP4 files so the media continues to match the app.
 
-Repository-owned GitHub Pages hosting remains an optional future destination.
-Its [manual deployment workflow](../.github/workflows/sparks-pages.yml) publishes
-only `site/` once Pages has been enabled. The current profile animation and
-external interactive preview do not require that setting.
+The [Pages workflow](../.github/workflows/sparks-pages.yml) automatically publishes
+only `site/` when that directory or the deployment workflow changes on `main`.
+It can also be run manually from `main`. After deployment, the workflow checks
+that the public HTML matches the committed source.
 
 Browser checks verify actual GIF animation, the still fallback and the public
 profile after publication. They also exercise all six routines, setlist cycling, pause, sound controls,

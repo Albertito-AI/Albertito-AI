@@ -70,7 +70,7 @@ with tempfile.TemporaryDirectory() as temporary, sync_playwright() as pw:
     capture("Reduced motion", "curious", reduced=True, stable=True)
     capture("Still image", "static", stable=True)
 
-    branch = os.environ.get("GITHUB_HEAD_REF", "feat/sparks-retro-launch-20261028")
+    branch = os.environ.get("GITHUB_HEAD_REF") or os.environ.get("GITHUB_REF_NAME", "main")
     target = "https://github.com/Albertito-AI/Albertito-AI/tree/" + branch
     try:
         page.emulate_media(reduced_motion="reduce")

@@ -20,21 +20,21 @@ checked starting points, and notes on observed README and release changes.
 
 ### Sparks' Dance Floor
 
-<a href="https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html">
+<a href="https://albertito-ai.github.io/Albertito-AI/">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/sparks-dance-still.png?version=dance-20261028">
     <img src="assets/sparks-dance.gif?version=dance-20261028" alt="Sparks dancing through six routines on a purple and amber stage." width="304">
   </picture>
 </a>
 
-**[Open the interactive stage](https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html)**
+**[Open the interactive stage](https://albertito-ai.github.io/Albertito-AI/)**
 · [Full dance video](assets/sparks-dance.mp4)
 · [About the dances](docs/SPARKS_DANCE_FLOOR.md)
 
 The preview above loops through all six routines. Open the interactive stage to
 pick a dance, play the full set, pause or turn on a synthesized beat.
-The stage opens through an external preview host, which may ask you to confirm
-the destination. A still image is shown when reduced motion is preferred.
+The interactive stage is hosted on GitHub Pages. A still image is shown in this
+profile when reduced motion is preferred.
 
 **The animated header above is Sparks' running demonstration.** Choose a care
 action, submit the prefilled GitHub issue, and read his decision in the
