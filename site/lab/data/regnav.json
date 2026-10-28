@@ -3,7 +3,7 @@
   "id": "regnav",
   "title": "RegNav: inspect evidence and replay source changes",
   "status": "passed",
-  "generated_at": "2026-10-28T13:49:17Z",
+  "generated_at": "2026-10-28T13:57:04Z",
   "disclaimer": "Recorded executions of fictional training examples, not browser-side legal verification. Structural validity, unchanged bytes and recorded review declarations do not establish source authenticity, legal correctness, factual truth, completeness or an actual human review. Visitor notes are practice annotations and never alter the source review declarations.",
   "provenance": {
     "sources": [
@@ -149,15 +149,15 @@
     "workflow": {
       "provider": "GitHub Actions",
       "repository": "Albertito-AI/Albertito-AI",
-      "run_id": "40699927170",
+      "run_id": "40701148839",
       "run_attempt": "1",
-      "run_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/40699927170",
-      "commit": "a1218c62e44216959ce852b8351350ec1909cc9d"
+      "run_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/40701148839",
+      "commit": "ad2bb741b470119600e983be9e7315cd9cfe8941"
     },
     "environment": {
       "python": "3.12.15",
-      "node": "v24.21.0",
-      "git": "git version 2.55.0"
+      "node": "v24.22.1",
+      "git": "git version 2.56.0"
     },
     "exporter": {
       "path": "scripts/lab/export_regnav.py",
@@ -2738,14 +2738,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:03Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/baseline.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -2864,14 +2864,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:03Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/baseline.json",
           "--json",
           "--strict"
         ],
@@ -2929,14 +2929,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:03Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "report",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/baseline.json",
           "--format",
           "csv"
         ],
@@ -3027,14 +3027,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:03Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/irrelevant-pinpoint.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/irrelevant-pinpoint.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3178,14 +3178,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:03Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/withdraw-unsupported.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/withdraw-unsupported.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3243,14 +3243,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:03Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/invalid-source.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/invalid-source.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3421,15 +3421,15 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "compare",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/source-version-changed.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/baseline.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/source-version-changed.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3472,15 +3472,15 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "compare",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/baseline.json",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/metadata-only.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/baseline.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/metadata-only.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3516,14 +3516,14 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
           "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
           "-m",
           "regnav_evidence",
           "validate",
-          "/tmp/regnav-lab-xk1rzovl/ledgers/duplicate-key.json",
+          "/tmp/regnav-lab-tvcmmf2i/ledgers/duplicate-key.json",
           "--json"
         ],
         "actual_cwd": "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/policykit"
@@ -3581,13 +3581,13 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:16Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
-          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
           "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
           "--repo",
-          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "/tmp/regnav-lab-tvcmmf2i/source-watch",
           "--base",
           "603ea141f2502158ce2736ba3bd674f49dbd9418",
           "--head",
@@ -3670,13 +3670,13 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:16Z",
-        "finished_at": "2026-10-28T13:49:17Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
-          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
           "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
           "--repo",
-          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "/tmp/regnav-lab-tvcmmf2i/source-watch",
           "--base",
           "603ea141f2502158ce2736ba3bd674f49dbd9418",
           "--head",
@@ -3763,13 +3763,13 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:17Z",
-        "finished_at": "2026-10-28T13:49:17Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
-          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
           "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
           "--repo",
-          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "/tmp/regnav-lab-tvcmmf2i/source-watch",
           "--base",
           "603ea141f2502158ce2736ba3bd674f49dbd9418",
           "--head",
@@ -3820,13 +3820,13 @@
         }
       ],
       "execution": {
-        "started_at": "2026-10-28T13:49:17Z",
-        "finished_at": "2026-10-28T13:49:17Z",
+        "started_at": "2026-10-28T13:57:04Z",
+        "finished_at": "2026-10-28T13:57:04Z",
         "actual_command": [
-          "/opt/hostedtoolcache/node/24.21.0/x64/bin/node",
+          "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
           "/home/runner/work/Albertito-AI/Albertito-AI/.lab-sources/regnav-source-watch/src/cli.mjs",
           "--repo",
-          "/tmp/regnav-lab-xk1rzovl/source-watch",
+          "/tmp/regnav-lab-tvcmmf2i/source-watch",
           "--base",
           "603ea141f2502158ce2736ba3bd674f49dbd9418",
           "--head",
