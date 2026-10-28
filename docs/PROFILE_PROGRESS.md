@@ -281,3 +281,14 @@ The profile links to a reviewed, commit-pinned interactive preview served by
 raw.githack.com. Repository-owned Pages hosting remains optional. Verification
 covers decoded animation frames, file size, desktop/mobile layout, reduced
 motion, and the published profile. Changes and review were AI-assisted.
+
+## 28 October 2026: GitHub Pages publication
+
+After the owner enabled GitHub Pages, the existing Dance Floor deployment
+succeeded. The profile and documentation now link to
+https://albertito-ai.github.io/Albertito-AI/ as the primary interactive stage.
+The GIF and full video remain available directly in the repository.
+
+Automatic deployment is enabled for `site/` changes on `main`. A delivery check
+compares the published HTML with the committed file, and the browser suite checks
+the GitHub Pages stage and the profile's normal and reduced-motion presentation.

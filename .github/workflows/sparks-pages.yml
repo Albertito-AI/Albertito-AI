@@ -1,6 +1,11 @@
 name: Publish Sparks Dance Floor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/sparks-pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -12,6 +17,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -34,3 +40,30 @@ jobs:
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify the published HTML matches this commit
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+          import time
+          from urllib.request import Request, urlopen
+          expected = hashlib.sha256(Path("site/index.html").read_bytes()).hexdigest()
+          url = os.environ["PAGES_URL"]
+          assert url == "https://albertito-ai.github.io/Albertito-AI/", url
+          for attempt in range(6):
+              try:
+                  request = Request(url, headers={"Cache-Control": "no-cache", "User-Agent": "Sparks-Pages-Verification"})
+                  with urlopen(request, timeout=20) as response:
+                      actual = hashlib.sha256(response.read()).hexdigest()
+                  if actual == expected:
+                      print("Verified published HTML:", url, expected)
+                      break
+              except Exception as error:
+                  print("Delivery check:", type(error).__name__, str(error)[:200])
+              if attempt == 5:
+                  raise SystemExit("Published HTML did not match the committed source")
+              time.sleep(5)
+          PY

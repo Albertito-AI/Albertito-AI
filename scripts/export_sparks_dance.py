@@ -5,7 +5,6 @@ import hashlib
 import io
 import json
 import math
-import re
 import shutil
 import subprocess
 import tempfile
@@ -16,7 +15,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path.cwd()
 WIDTH, HEIGHT, FPS = 304, 540, 10
 ASSETS = ROOT / "assets"
-PREVIEW_URL = "https://rawcdn.githack.com/Albertito-AI/Albertito-AI/5038e7dfda8e18b9689536a380b2f8bf9256d288/site/index.html"
+STAGE_URL = "https://albertito-ai.github.io/Albertito-AI/"
 GIF_LIMIT = 4 * 1024 * 1024
 START_BEATS = {"hip": 5, "beok": 4, "pumpkin": 8, "slowmo": 3.5, "fishes": 2, "ramalama": 11}
 
@@ -121,19 +120,10 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     (ASSETS / "sparks-dance-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print("MEDIA_MANIFEST:", json.dumps(manifest), flush=True)
 
-    # Test the ordinary public preview, including its normal confirmation page.
+    # Verify the canonical public stage after exporting the current choreography.
     external = browser.new_page(viewport={"width": 1280, "height": 900})
     try:
-        external.goto(PREVIEW_URL, wait_until="domcontentloaded", timeout=60000)
-        if external.locator("#stage").count() == 0:
-            print("PREVIEW_NOTICE:", external.locator("body").inner_text()[:1600], flush=True)
-            controls = external.locator("a,button,input[type=submit]")
-            print("PREVIEW_CONTROLS:", controls.evaluate_all("(es) => es.map(e => ({text:e.textContent.trim(),value:e.value,href:e.getAttribute('href')}))"), flush=True)
-            candidate = external.get_by_role("button", name=re.compile("continue|confirm|proceed|open|yes", re.I))
-            if candidate.count() == 0:
-                candidate = external.get_by_role("link", name=re.compile("continue|confirm|proceed|open|yes", re.I))
-            assert candidate.count() == 1, "Confirmation needs explicit review"
-            candidate.click()
+        external.goto(STAGE_URL, wait_until="domcontentloaded", timeout=60000)
         external.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6", timeout=30000)
         external.locator("#move-beok").click()
         assert external.evaluate("__spark.S0.idx") == 1
@@ -142,9 +132,9 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
         external.locator("#sound").click()
         assert external.locator("#sound").get_attribute("aria-pressed") == "true"
         external.locator("#sound").click()
-        print("PUBLIC_INTERACTIVE_PREVIEW_VERIFIED:", external.url, flush=True)
+        print("PUBLIC_GITHUB_PAGES_STAGE_VERIFIED:", external.url, flush=True)
     except Exception as error:
-        print("PUBLIC_INTERACTIVE_PREVIEW_PENDING:", type(error).__name__, str(error)[:500], flush=True)
+        print("PUBLIC_GITHUB_PAGES_STAGE_PENDING:", type(error).__name__, str(error)[:500], flush=True)
     browser.close()
 
 sheet = Image.new("RGB", (684, 870), "#1b1424")
