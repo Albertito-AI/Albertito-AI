@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-28T13:11:55Z",
+  "title": "Albert Tan Research Lab",
+  "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
+  "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
+  "links": {
+    "profile": "https://github.com/Albertito-AI/Albertito-AI",
+    "website": "https://www.alberttansinhon.com/",
+    "institutional_profile": "https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/",
+    "orcid": "https://orcid.org/0009-0001-8996-7933",
+    "dance_floor": "https://albertito-ai.github.io/Albertito-AI/",
+    "feedback": "https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml",
+    "evaluation": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LAB_EVALUATION.md"
+  },
+  "items": [
+    {
+      "id": "project-regnav",
+      "title": "RegNav Evidence Ledger and ESG workbench",
+      "type": "project",
+      "description": "A local workflow for retained source passages, proposition-to-source evidence links and explicit human-review declarations.",
+      "maturity": "Working research prototype",
+      "topics": [
+        "Evidence",
+        "Sustainability reporting",
+        "Legal research"
+      ],
+      "limitation": "Structural checks and source locations do not establish legal or factual truth. Candidate outputs and legal examples require human review.",
+      "links": [
+        {
+          "label": "Ten-minute ledger guide",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/docs/quickstart.md",
+          "kind": "start"
+        },
+        {
+          "label": "Public ESG demonstration",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/README.md#run-the-public-demo",
+          "kind": "demo"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/policykit",
+          "kind": "repository"
+        },
+        {
+          "label": "Contribution guide",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/CONTRIBUTING.md",
+          "kind": "contribute"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/README.md",
+        "scope": "Repository documentation and metadata inspected at the recorded revision."
+      },
+      "citation": {
+        "available": true,
+        "format": "cff",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/CITATION.cff",
+        "text": "Tan, Sin Hon Albert. RegNav Evidence Ledger. Version 0.1.0; repository revision 130cf41b0d59e1f72a238b0cf3c145c6ca337265 (accessed 28 October 2026). https://github.com/Albertito-AI/policykit/tree/130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "version": "0.1.0",
+        "doi": null,
+        "cff_available": true,
+        "provenance": "Existing CITATION.cff supplies the software title, author, ORCID and version. No software DOI is recorded.",
+        "download_url": "https://raw.githubusercontent.com/Albertito-AI/policykit/130cf41b0d59e1f72a238b0cf3c145c6ca337265/CITATION.cff"
+      },
+      "rights": {
+        "summary": "Rights reserved; no general reuse or open-source licence is supplied.",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/RIGHTS.md"
+      },
+      "related_item_ids": [
+        "project-source-watch",
+        "research-sg-th-accountability",
+        "research-china-disclosure",
+        "teaching-source-checking",
+        "teaching-sgx-case"
+      ],
+      "relationship_note": "The repository identifies the Singapore/Thailand and China articles as research direction. Its teaching pack and Singapore case are separate materials; software checks do not validate the articles or complete human legal review."
+    },
+    {
+      "id": "project-source-watch",
+      "title": "RegNav Source Watch",
+      "type": "project",
+      "description": "A GitHub Action and local tool that compares committed evidence records and identifies claims affected by recorded source changes.",
+      "maturity": "Released v0.1.0",
+      "topics": [
+        "Evidence",
+        "Source changes",
+        "GitHub Actions"
+      ],
+      "limitation": "It checks declared Git inputs. It does not retrieve changing websites or decide whether a source proves a proposition.",
+      "links": [
+        {
+          "label": "Fictional demonstration",
+          "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/README.md#try-the-fictional-demonstration",
+          "kind": "demo"
+        },
+        {
+          "label": "Install the Action",
+          "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/README.md#add-it-to-a-repository",
+          "kind": "start"
+        },
+        {
+          "label": "v0.1.0 release",
+          "url": "https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0",
+          "kind": "release"
+        },
+        {
+          "label": "Contribution guide",
+          "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/CONTRIBUTING.md",
+          "kind": "contribute"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
+        "source_url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/README.md",
+        "scope": "Repository documentation and metadata inspected at the recorded revision.",
+        "release_url": "https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0",
+        "release_published_at": "2026-10-27T12:55:19Z"
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/README.md",
+        "text": "Albert Tan Sin Hon. RegNav Source Watch. Version 0.1.0; repository revision 2a6501fbbf535c58b11aeef16a8e8d0cc48148c0 (accessed 28 October 2026). https://github.com/Albertito-AI/regnav-source-watch/tree/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
+        "version": "0.1.0",
+        "doi": null,
+        "cff_available": false,
+        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+      },
+      "rights": {
+        "summary": "Apache-2.0 for this repository's original code, documentation and fictional fixtures. It grants no licence to policykit or third-party sources.",
+        "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/NOTICE"
+      },
+      "related_item_ids": [
+        "project-regnav"
+      ],
+      "relationship_note": "A separate implementation inspired by RegNav's evidence-record workflow. Its manifest is specific to this Action; the ledger JSON is not an interchange format for this release."
+    },
+    {
+      "id": "project-symbolon",
+      "title": "Symbolon",
+      "type": "project",
+      "description": "A local sandbox for specifying bounded machine work, checking recorded acceptance conditions and replaying evidence of a TEST-unit payment decision.",
+      "maturity": "Experimental alpha 0.1.0a1",
+      "topics": [
+        "Machine work",
+        "Acceptance",
+        "Evidence"
+      ],
+      "limitation": "The examples use synthetic TEST units. The repository is not a deployed marketplace or a live payment service.",
+      "links": [
+        {
+          "label": "Run the demonstration",
+          "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/README.md#run-the-demonstration",
+          "kind": "demo"
+        },
+        {
+          "label": "Trust boundary",
+          "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/README.md#trust-and-operating-boundary",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/symbolon",
+          "kind": "repository"
+        },
+        {
+          "label": "Contribution guide",
+          "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/CONTRIBUTING.md",
+          "kind": "contribute"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "dd7a85c0d5428f05f5803464ed2747cf9b75a4c4",
+        "source_url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/README.md",
+        "scope": "Repository documentation and metadata inspected at the recorded revision."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/README.md",
+        "text": "Albert Tan Sin Hon. Symbolon. Version 0.1.0a1; repository revision dd7a85c0d5428f05f5803464ed2747cf9b75a4c4 (accessed 28 October 2026). https://github.com/Albertito-AI/symbolon/tree/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4",
+        "version": "0.1.0a1",
+        "doi": null,
+        "cff_available": false,
+        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+      },
+      "rights": {
+        "summary": "Apache-2.0 applies to the reference implementation. No live service or financial commitment is created by repository publication.",
+        "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/LICENSE"
+      },
+      "related_item_ids": [
+        "project-piepowder"
+      ],
+      "relationship_note": "Piepowder's documented integration design proposes a separate interface with Symbolon. This catalog does not assert that the connector is implemented."
+    },
+    {
+      "id": "project-piepowder",
+      "title": "Piepowder",
+      "type": "project",
+      "description": "A local contract-evidence prototype that makes acceptance criteria explicit, preserves unresolved findings and simulates a review procedure.",
+      "maturity": "Experimental alpha 0.1.0a1",
+      "topics": [
+        "Acceptance",
+        "Contracts",
+        "Human review"
+      ],
+      "limitation": "All shipped cases are fictional. Completed numerical checks grant no legal determination, work permission or payment authority.",
+      "links": [
+        {
+          "label": "Recorded six-case demonstration",
+          "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/docs/demo/README.md",
+          "kind": "demo"
+        },
+        {
+          "label": "Run the local prototype",
+          "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/README.md#see-it-work",
+          "kind": "start"
+        },
+        {
+          "label": "Interpret results",
+          "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/README.md#interpret-the-result-correctly",
+          "kind": "scope"
+        },
+        {
+          "label": "Contribution guide",
+          "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/CONTRIBUTING.md",
+          "kind": "contribute"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "edb5ea6eeffc2ace7a80330979949544405fb2fb",
+        "source_url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/README.md",
+        "scope": "Repository documentation and metadata inspected at the recorded revision."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/README.md",
+        "text": "Piepowder. Version 0.1.0a1; repository revision edb5ea6eeffc2ace7a80330979949544405fb2fb (accessed 28 October 2026). https://github.com/Albertito-AI/piepowder/tree/edb5ea6eeffc2ace7a80330979949544405fb2fb",
+        "version": "0.1.0a1",
+        "doi": null,
+        "cff_available": false,
+        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata.",
+        "author_note": "The README identifies Albert Tan Sin Hon as project owner. No formal software-author metadata was found, so this reference does not infer sole authorship."
+      },
+      "rights": {
+        "summary": "Rights reserved. External evaluation and delivery require the owner's applicable permission; no general reuse licence is granted.",
+        "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/RIGHTS.md"
+      },
+      "related_item_ids": [
+        "project-symbolon",
+        "project-regnav"
+      ],
+      "relationship_note": "The README describes complementary project roles and a proposed read-only integration. It explicitly states that the connector is not implemented."
+    },
+    {
+      "id": "project-tallystick",
+      "title": "Tallystick",
+      "type": "project",
+      "description": "A research workbench that replays fictional sporting observations, corrections and count-market decisions, then exports evidence for a separate verifier.",
+      "maturity": "Experimental reference 0.1.0",
+      "topics": [
+        "Sports facts",
+        "Corrections",
+        "Evidence"
+      ],
+      "limitation": "Signatures and replay establish properties of the recorded example, not sporting truth, a live feed or financial settlement.",
+      "links": [
+        {
+          "label": "Recorded replay",
+          "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/docs/demo/README.md",
+          "kind": "demo"
+        },
+        {
+          "label": "Run the workbench",
+          "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/README.md#run-it",
+          "kind": "start"
+        },
+        {
+          "label": "Verification and trust",
+          "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/README.md#verification-and-trust",
+          "kind": "scope"
+        },
+        {
+          "label": "Contribution guide",
+          "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/CONTRIBUTING.md",
+          "kind": "contribute"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "8e957ada8ed86891589fdb2d4cff88ef3862b74f",
+        "source_url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/README.md",
+        "scope": "Repository documentation and metadata inspected at the recorded revision."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/README.md",
+        "text": "Albert Tan Sin Hon. Tallystick. Version 0.1.0; repository revision 8e957ada8ed86891589fdb2d4cff88ef3862b74f (accessed 28 October 2026). https://github.com/Albertito-AI/tallystick/tree/8e957ada8ed86891589fdb2d4cff88ef3862b74f",
+        "version": "0.1.0",
+        "doi": null,
+        "cff_available": false,
+        "provenance": "Citation assembled from the repository's recorded title, version and revision; author included only where explicitly identified as an author in its software metadata."
+      },
+      "rights": {
+        "summary": "Original code and documentation: Apache-2.0. Original schemas and format definitions: CC BY 4.0. External data and the separate foundation paper retain their rights.",
+        "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/NOTICE"
+      },
+      "related_item_ids": [],
+      "relationship_note": "Its stated foundation is the separately retained draft The price of a settled fact. No dependency on the sports-governance article in this catalog is asserted."
+    },
+    {
+      "id": "research-sg-th-accountability",
+      "title": "Converging Standards, Divergent Accountability: Sustainability Reporting in Singapore and Thailand",
+      "type": "research",
+      "description": "Comparative scholarship on how common reporting standards connect with evidence, supervision, liability and remedies in Singapore and Thailand.",
+      "maturity": "Advance online publication",
+      "topics": [
+        "Sustainability reporting",
+        "Singapore",
+        "Thailand",
+        "Accountability"
+      ],
+      "authors": [
+        "Tan Sin Hon Albert Tan"
+      ],
+      "venue": "European Journal of Comparative Law and Governance",
+      "year": 2026,
+      "publication_date": "2026-10-01",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "links": [
+        {
+          "label": "Institutional record and access",
+          "url": "https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/",
+          "kind": "publication"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1163/22134514-bja10122",
+          "kind": "doi"
+        },
+        {
+          "label": "Related source-inspection case",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/README.md",
+          "kind": "related"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": null,
+        "source_url": "https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/",
+        "scope": "Institutional bibliographic metadata and abstract inspected. This catalog is not a new legal-source audit of the paper."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/",
+        "text": "Tan, T. S. H. A. (2026). Converging Standards, Divergent Accountability: Sustainability Reporting in Singapore and Thailand. European Journal of Comparative Law and Governance. Advance online publication. https://doi.org/10.1163/22134514-bja10122",
+        "version": null,
+        "doi": "10.1163/22134514-bja10122"
+      },
+      "related_item_ids": [
+        "project-regnav",
+        "teaching-sgx-case"
+      ],
+      "relationship_note": "RegNav identifies this paper as research direction, and its Singapore case cites the article's distinction between reporting duties and legal consequences. The two case propositions remain unreviewed."
+    },
+    {
+      "id": "research-china-disclosure",
+      "title": "When Does a Sustainability Report Count as Securities Disclosure in China? Channel Integration and Remedial Consequences",
+      "type": "research",
+      "description": "Scholarship distinguishing the disclosure channel used for an ESG statement from the conditions determining its legal consequences.",
+      "maturity": "Published article",
+      "topics": [
+        "Sustainability reporting",
+        "China",
+        "Securities disclosure",
+        "Accountability"
+      ],
+      "authors": [
+        "Tan Sin Hon Albert Tan"
+      ],
+      "venue": "The Tsinghua China Law Review",
+      "year": 2026,
+      "publication_date": "2026-07-01",
+      "volume": "18",
+      "issue": "2",
+      "pages": "3-48",
+      "links": [
+        {
+          "label": "Institutional record and access",
+          "url": "https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/",
+          "kind": "publication"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": null,
+        "source_url": "https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/",
+        "scope": "Institutional bibliographic metadata and abstract inspected. No DOI is supplied in that record."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/",
+        "text": "Tan, T. S. H. A. (2026). When Does a Sustainability Report Count as Securities Disclosure in China? Channel Integration and Remedial Consequences. The Tsinghua China Law Review, 18(2), 3-48. https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/",
+        "version": null,
+        "doi": null
+      },
+      "related_item_ids": [
+        "project-regnav"
+      ],
+      "relationship_note": "RegNav's README names this article as research direction. It does not establish that the software implements the article's classification scheme or validates its conclusions."
+    },
+    {
+      "id": "research-sport-authority",
+      "title": "Constraint without Succession: External Legal Review and Retained Regulatory Authority in International Sport",
+      "type": "research",
+      "description": "Scholarship on the allocation of responsibility for the next sporting decision after external legal review.",
+      "maturity": "Published article",
+      "topics": [
+        "Sport governance",
+        "Institutional responsibility",
+        "Legal review"
+      ],
+      "authors": [
+        "Tan Sin Hon Albert Tan"
+      ],
+      "venue": "Sports Law, Policy & Diplomacy Journal",
+      "year": 2026,
+      "publication_date": "2026-08-12",
+      "volume": "4",
+      "issue": "1",
+      "pages": "45-60",
+      "links": [
+        {
+          "label": "Institutional record and access",
+          "url": "https://research.rug.nl/en/publications/constraint-without-succession-external-legal-review-and-retained-/",
+          "kind": "publication"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": null,
+        "source_url": "https://research.rug.nl/en/publications/constraint-without-succession-external-legal-review-and-retained-/",
+        "scope": "Institutional bibliographic metadata and abstract inspected. No DOI is supplied in that record."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://research.rug.nl/en/publications/constraint-without-succession-external-legal-review-and-retained-/",
+        "text": "Tan, T. S. H. A. (2026). Constraint without succession: External legal review and retained regulatory authority in international sport. Sports Law, Policy & Diplomacy Journal, 4(1), 45-60. https://research.rug.nl/en/publications/constraint-without-succession-external-legal-review-and-retained-/",
+        "version": null,
+        "doi": null
+      },
+      "related_item_ids": [],
+      "relationship_note": "Included as separate scholarship on institutional responsibility. No implementation or validation relationship with Tallystick is asserted."
+    },
+    {
+      "id": "teaching-source-checking",
+      "title": "Checking propositions against fictional sources",
+      "type": "teaching",
+      "description": "A suggested 55-minute exercise in locating evidence, distinguishing support from qualification, and repairing an overconfident draft. Includes a paper or spreadsheet route.",
+      "maturity": "Unevaluated teaching prototype",
+      "topics": [
+        "Teaching",
+        "Source checking",
+        "Evidence"
+      ],
+      "duration_minutes": 55,
+      "limitation": "The sources and reviewer in the training fixture are fictional. Learning benefits and independent educational effectiveness have not been demonstrated.",
+      "links": [
+        {
+          "label": "Teaching guide",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/teaching/README.md",
+          "kind": "start"
+        },
+        {
+          "label": "Learner handout",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/teaching/learner_handout.md",
+          "kind": "handout"
+        },
+        {
+          "label": "Facilitator guide",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/teaching/facilitator_guide.md",
+          "kind": "facilitator"
+        },
+        {
+          "label": "Assessment rubric",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/teaching/assessment_rubric.md",
+          "kind": "rubric"
+        },
+        {
+          "label": "Existing software usability protocol",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/docs/evaluation_protocol.md",
+          "kind": "evaluation"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/teaching/README.md",
+        "scope": "Teaching guide and named material paths inspected at the recorded revision; no participant outcome is claimed."
+      },
+      "rights": {
+        "summary": "RegNav's existing reserved-rights position applies. The pack is not an authorised companion to the coauthored forthcoming book ANSWERABLE.",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/RIGHTS.md"
+      },
+      "related_item_ids": [
+        "project-regnav"
+      ],
+      "relationship_note": "An original teaching prototype in the RegNav repository using its fictional ledger and source packet. It is separate from the coauthored book and from the software usability pilot."
+    },
+    {
+      "id": "teaching-sgx-case",
+      "title": "Singapore sustainability reporting: a narrow evidence case",
+      "type": "teaching",
+      "description": "A worked source-inspection case with two unreviewed propositions and primary-source references, showing how scope, versions and a separate disclosure duty must remain visible.",
+      "maturity": "AI-prepared case; human review pending",
+      "topics": [
+        "Teaching",
+        "Singapore",
+        "Sustainability reporting",
+        "Human review"
+      ],
+      "duration_minutes": null,
+      "limitation": "It determines no actual issuer's compliance, liability, standing or remedy. The catalog's inspection date does not update the legal source dates recorded in the case.",
+      "links": [
+        {
+          "label": "Case and source register",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/README.md",
+          "kind": "start"
+        },
+        {
+          "label": "Evidence ledger",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/ledger.json",
+          "kind": "data"
+        },
+        {
+          "label": "Authority map and its limits",
+          "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/common-law-authorities.md",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-28T13:11:55Z",
+        "revision": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+        "source_url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/README.md",
+        "scope": "Case README, unreviewed status and linked paths inspected. This catalog does not independently recheck the underlying legal authorities."
+      },
+      "rights": {
+        "summary": "RegNav's rights statement applies; SGX materials retain their own terms.",
+        "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/RIGHTS.md"
+      },
+      "related_item_ids": [
+        "project-regnav",
+        "research-sg-th-accountability"
+      ],
+      "relationship_note": "The case expressly uses the Singapore/Thailand article's analytical distinction. The software performs structural checks; it does not complete the independent legal review."
+    }
+  ],
+  "contributions": [
+    {
+      "id": "contribute-regnav",
+      "project_id": "project-regnav",
+      "title": "Trace one research proposition",
+      "description": "Propose a narrow question with primary sources, exact pinpoints and an explicit review status, or document a reproducible difficulty. Agree applicable permissions before executable evaluation.",
+      "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/CONTRIBUTING.md"
+    },
+    {
+      "id": "contribute-source-watch",
+      "project_id": "project-source-watch",
+      "title": "Reproduce a source-change example",
+      "description": "Use synthetic fixtures to examine missing sources, removed evidence links or review metadata changed beside its source.",
+      "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/CONTRIBUTING.md"
+    },
+    {
+      "id": "contribute-symbolon",
+      "project_id": "project-symbolon",
+      "title": "Reproduce the machine-work sandbox",
+      "description": "Check the quickstart, acceptance profiles or selective evidence export using the existing development issues and synthetic inputs.",
+      "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/CONTRIBUTING.md"
+    },
+    {
+      "id": "contribute-piepowder",
+      "project_id": "project-piepowder",
+      "title": "Clarify an unresolved finding",
+      "description": "Discuss a fictional benchmark or unclear first-use step; agree contribution scope and permission under the reserved-rights terms before implementation.",
+      "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/CONTRIBUTING.md"
+    },
+    {
+      "id": "contribute-tallystick",
+      "project_id": "project-tallystick",
+      "title": "Review a correction or completeness case",
+      "description": "Write the expected synthetic outcome before changing an evaluator, or document an actual quickstart reproduction with the recorded software versions.",
+      "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/CONTRIBUTING.md"
+    }
+  ],
+  "contribution_note": "Credit follows actual contributions. Funded work requires agreed roles, deliverables, intellectual-property and payment terms; participation alone creates no payment entitlement."
+}

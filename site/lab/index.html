@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Albert Tan's public research lab: inspect a recorded fictional source-change example, explore legal research tools, and follow their evidence and verification records.">
+  <meta name="color-scheme" content="light">
+  <title>Research Lab · Albert Tan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the research lab</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="Albert Tan research lab home"><span class="brand-mark" aria-hidden="true">+</span><span>Albert Tan <strong>Research Lab</strong></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#replay">Source replay</a>
+        <a href="#library">Research &amp; tools</a>
+        <a href="#verification">Verification</a>
+        <a href="../">Dance Floor <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow light">LAW · EVIDENCE · TECHNOLOGY</p>
+          <h1 id="hero-title">Research you can<br><em>inspect and reproduce.</em></h1>
+          <p class="hero-lead">A public workbench for legal evidence, institutional accountability and experimental research tools.</p>
+          <p class="hero-context">Start with a fictional example. Follow a claim to its source, inspect what changed, and examine the recorded result.</p>
+          <div class="hero-links"><a href="https://github.com/Albertito-AI">GitHub profile <span aria-hidden="true">↗</span></a><a href="https://www.alberttansinhon.com/">About Albert <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <figure class="hero-sparks">
+          <img src="assets/sparks.png" width="1086" height="1448" alt="Sparks, the graphite and bronze retro research robot with amber lights." loading="lazy" decoding="async">
+          <figcaption><strong>Meet Sparks</strong><span>Your guide to the public workbench.</span><a href="#guide">Choose a research task <span aria-hidden="true">↓</span></a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="lab-shell" id="lab-app">
+      <nav class="visitor-routes" aria-label="Choose your starting point">
+        <a href="#replay"><span class="route-number" aria-hidden="true">01</span><span><strong>Try a source replay</strong><small>Inspect a recorded fictional case.</small></span><span aria-hidden="true">↗</span></a>
+        <a href="#projects"><span class="route-number" aria-hidden="true">02</span><span><strong>Find a research tool</strong><small>Explore projects, scholarship and teaching.</small></span><span aria-hidden="true">↗</span></a>
+        <a href="#verification"><span class="route-number" aria-hidden="true">03</span><span><strong>Examine the verification</strong><small>Follow revisions, commands and receipts.</small></span><span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <noscript><div class="notice">This lab uses JavaScript to display recorded examples and filter the catalog. You can still read the <a href="https://github.com/Albertito-AI/Albertito-AI">profile repository</a>, <a href="https://github.com/Albertito-AI/policykit">RegNav source</a> and <a href="https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/SPARKS_WORKBENCH.md">public workbench</a>.</div></noscript>
+
+      <section id="replay" class="section" aria-labelledby="replay-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE RECORDED DEMONSTRATION</p><h2 id="replay-title">What changes when a source changes?</h2></div>
+          <span class="label label-plain">Fictional training material</span>
+        </div>
+        <p class="section-intro">Choose a scenario, inspect the claim and its cited passage, then examine the recorded checks. Selecting a scenario displays an existing execution record; it does not run a new legal assessment.</p>
+        <div id="replay-status" class="load-state" role="status" aria-live="polite"><span class="status-dot" aria-hidden="true"></span>Loading the recorded example…</div>
+        <div id="replay-content" hidden>
+          <div class="scenario-toolbar">
+            <div class="field scenario-field"><label for="scenario-select">Recorded scenario</label><select id="scenario-select"></select></div>
+            <div class="scenario-navigation"><button type="button" class="button button-quiet" id="previous-scenario" aria-label="Previous recorded scenario">← Previous</button><button type="button" class="button button-quiet" id="next-scenario" aria-label="Next recorded scenario">Next →</button></div>
+          </div>
+          <div class="scenario-summary"><p id="scenario-prompt"></p><p id="scenario-explanation" class="muted"></p></div>
+          <div class="evidence-workspace">
+            <aside class="claims-sidebar" aria-labelledby="claims-heading">
+              <div class="sidebar-heading"><h3 id="claims-heading">Claims in this record</h3><span id="claims-count" class="count"></span></div>
+              <div id="claims-list" class="claims-list"></div>
+              <p class="sidebar-note">A recorded review label describes the example's state. It does not establish that a proposition is legally correct.</p>
+            </aside>
+            <div class="evidence-main">
+              <div id="evidence-tabs" class="tabs" role="tablist" aria-label="Evidence view">
+                <button id="tab-before" type="button" role="tab" aria-selected="true" aria-controls="evidence-panel" data-tab="before">Before</button>
+                <button id="tab-after" type="button" role="tab" aria-selected="false" aria-controls="evidence-panel" tabindex="-1" data-tab="after">After</button>
+                <button id="tab-review" type="button" role="tab" aria-selected="false" aria-controls="evidence-panel" tabindex="-1" data-tab="review">My review notes</button>
+              </div>
+              <div id="evidence-panel" role="tabpanel" aria-labelledby="tab-before" tabindex="0"></div>
+              <div id="review-editor" hidden>
+                <p class="eyebrow">YOUR LOCAL ANNOTATION</p>
+                <h3>Record what you would check next.</h3>
+                <p class="muted">Your notes stay in this browser until you download them. They do not alter the source files, the recorded results or the example's review labels.</p>
+                <div class="field"><label for="review-status-select">Your next step</label><select id="review-status-select"><option value="no-decision">No decision recorded</option><option value="follow-up-needed">Further evidence needed</option><option value="comment-recorded">Comment recorded</option></select></div>
+                <div class="field"><label for="review-note">Review note</label><textarea id="review-note" rows="5" maxlength="6000" aria-describedby="review-context" placeholder="Which passage matters? What remains unsupported? What would you verify before relying on this claim?"></textarea><span class="field-help" id="review-context"></span></div>
+                <div class="review-actions"><button type="button" class="button button-primary" id="download-review" disabled>Download review JSON <span aria-hidden="true">↓</span></button><button type="button" class="button button-quiet" id="clear-review" disabled>Clear this note</button><span id="note-status" class="field-help" role="status" aria-live="polite"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="interpretation-note"><span class="note-symbol" aria-hidden="true">i</span><p id="replay-disclaimer">Structural checks can expose gaps and changes. They cannot determine whether a passage substantively supports a legal proposition.</p></div>
+        </div>
+      </section>
+
+      <section id="guide" class="section guide-section" aria-labelledby="guide-title">
+        <div class="guide-intro"><p class="eyebrow">SPARKS' FIELD GUIDE</p><h2 id="guide-title">What would you like to work on?</h2><p>This is a curated guide to the published examples and documentation. Every route leads to a source you can inspect.</p></div>
+        <div class="guide-workspace">
+          <div class="field"><label for="guide-intent">Choose a task</label><select id="guide-intent"><option value="trace">Trace a claim to its evidence</option><option value="watch">Watch for source changes</option><option value="teach">Teach source checking</option><option value="acceptance">Replay an acceptance decision</option></select></div>
+          <div id="guide-answer" aria-live="polite"><p class="muted">The guide will appear when the public catalog has loaded.</p></div>
+        </div>
+      </section>
+
+      <section id="library" class="section" aria-labelledby="library-title">
+        <span id="projects" class="anchor-target" aria-hidden="true"></span><span id="research" class="anchor-target" aria-hidden="true"></span><span id="teaching" class="anchor-target" aria-hidden="true"></span>
+        <div class="section-heading"><div><p class="eyebrow">PUBLIC RESEARCH &amp; TOOLS</p><h2 id="library-title">Find the work that fits your question.</h2></div><span id="catalog-date" class="field-help"></span></div>
+        <p class="section-intro" id="catalog-introduction">Explore the experimental projects, published scholarship and teaching materials. Each entry links to its source and describes its present scope.</p>
+        <div class="catalog-filters">
+          <div class="field search-field"><label for="catalog-search">Search the catalog</label><input id="catalog-search" type="search" placeholder="Try evidence, reporting or teaching" autocomplete="off"></div>
+          <div class="field type-field"><label for="catalog-type">Show</label><select id="catalog-type"><option value="all">All work</option><option value="project">Projects</option><option value="research">Research</option><option value="teaching">Teaching</option></select></div>
+        </div>
+        <p id="catalog-count" class="field-help" role="status" aria-live="polite"></p>
+        <div id="catalog-status" class="load-state" role="status" aria-live="polite"><span class="status-dot" aria-hidden="true"></span>Loading the public catalog…</div>
+        <div id="catalog-results" class="catalog-grid"></div>
+        <p id="catalog-scope" class="section-footnote"></p>
+      </section>
+
+      <section id="verification" class="section verification-section" aria-labelledby="verification-title">
+        <div class="section-heading"><div><p class="eyebrow">FOLLOW THE RECORD</p><h2 id="verification-title">What was actually checked?</h2></div><button type="button" class="button button-secondary" id="download-receipts" disabled>Download recorded receipts <span aria-hidden="true">↓</span></button></div>
+        <p class="section-intro">Inspect the source revisions, commands, expected outcomes and captured output behind the selected scenario. An expected rejection is shown as a rejection, rather than a successful validation.</p>
+        <div id="verification-record"><p class="muted">Verification records will appear when the recorded example has loaded.</p></div>
+      </section>
+
+      <section class="feedback-section" aria-labelledby="feedback-title">
+        <div><p class="eyebrow">HELP TEST THE WORK</p><h2 id="feedback-title">Tell us where the evidence stops being clear.</h2><p>A useful report describes the task you tried, the step that became unclear, and what you expected to happen. Independent use and reproduction are recorded when they occur.</p><p class="field-help">The feedback form opens a public GitHub issue. Use fictional or non-confidential examples.</p></div>
+        <div class="feedback-actions"><a class="button button-primary" id="feedback-link" href="https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml">Share feedback <span aria-hidden="true">↗</span></a><a id="evaluation-link" href="https://github.com/Albertito-AI/Albertito-AI">Read the evaluation approach</a></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div><strong>Albert Tan · Research Lab</strong><p>Public examples. Traceable sources. Explicit limits.</p></div><nav aria-label="Footer navigation"><a href="https://github.com/Albertito-AI/Albertito-AI">Source repository</a><a href="https://www.alberttansinhon.com/">Website</a><a href="../">Sparks' Dance Floor</a><a href="#main">Back to top ↑</a></nav></footer>
+  <div id="app-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

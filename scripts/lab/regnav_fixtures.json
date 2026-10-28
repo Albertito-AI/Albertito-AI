@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "label": "Fictional training fixtures. These examples express no actual law and record no real human review.",
+  "policykit_revision": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
+  "source_watch_revision": "2a6501fbbf535c58b11aeef16a8e8d0cc48148c0",
+  "synthetic_git_date": "2026-10-28T00:00:00+00:00",
+  "irrelevant_pinpoint": "B.2",
+  "withdrawn_claim_id": "CLAIM-remedy",
+  "invalid_source_id": "SRC-not-recorded",
+  "changed_version": "Draft A, revised fictional snapshot",
+  "metadata_accessed_date": "2025-01-03",
+  "source_watch_amendment": "\nFictional amendment: the review target is now five days.\n",
+  "edited_review_note": "Fictional edited declaration for a negative test. No actual human review is represented.",
+  "expectations": {
+    "baseline": {
+      "exit_code": 0,
+      "error_count": 0,
+      "warning_count": 3,
+      "warning_codes": [
+        "CONTESTED_CLAIM",
+        "MISSING_PINPOINT",
+        "UNREVIEWED_CLAIM"
+      ]
+    },
+    "irrelevant-pinpoint": {
+      "exit_code": 0,
+      "error_count": 0,
+      "warning_count": 2,
+      "warning_codes": [
+        "CONTESTED_CLAIM",
+        "UNREVIEWED_CLAIM"
+      ]
+    },
+    "withdraw-unsupported": {
+      "exit_code": 0,
+      "error_count": 0,
+      "warning_count": 1,
+      "warning_codes": [
+        "CONTESTED_CLAIM"
+      ]
+    },
+    "invalid-source": {
+      "exit_code": 1,
+      "error_count": 1,
+      "warning_count": 3,
+      "error_codes": [
+        "UNKNOWN_SOURCE"
+      ]
+    },
+    "source-version-changed": {
+      "recheck_claim_ids": [
+        "CLAIM-logging",
+        "CLAIM-timing"
+      ]
+    },
+    "metadata-only": {
+      "recheck_claim_ids": []
+    },
+    "watch-unchanged": {
+      "exit_code": 0,
+      "verdict": "UNCHANGED",
+      "affected_claim_ids": []
+    },
+    "watch-source-changed": {
+      "exit_code": 2,
+      "verdict": "RECHECK_REQUIRED",
+      "affected_claim_ids": [
+        "claim-routine"
+      ]
+    },
+    "watch-review-edited": {
+      "exit_code": 2,
+      "verdict": "RECHECK_REQUIRED",
+      "affected_claim_ids": [
+        "claim-routine"
+      ]
+    },
+    "watch-invalid-manifest": {
+      "exit_code": 1,
+      "verdict": "INVALID"
+    }
+  }
+}

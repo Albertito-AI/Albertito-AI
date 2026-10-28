@@ -1,0 +1,115 @@
+name: Research lab
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/sparks-research-lab-*'
+    paths:
+      - 'site/lab/**'
+      - 'scripts/lab/**'
+      - '.github/workflows/research-lab.yml'
+      - '.github/ISSUE_TEMPLATE/lab-feedback.yml'
+  pull_request:
+    paths:
+      - 'site/lab/**'
+      - 'scripts/lab/**'
+      - '.github/workflows/research-lab.yml'
+      - '.github/ISSUE_TEMPLATE/lab-feedback.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  record:
+    if: github.event_name == 'push' && startsWith(github.ref_name, 'feat/sparks-research-lab-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    outputs:
+      commit_sha: ${{ steps.record.outputs.commit_sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Albertito-AI/policykit
+          ref: 130cf41b0d59e1f72a238b0cf3c145c6ca337265
+          path: .lab-sources/policykit
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Albertito-AI/regnav-source-watch
+          ref: 2a6501fbbf535c58b11aeef16a8e8d0cc48148c0
+          path: .lab-sources/regnav-source-watch
+          persist-credentials: false
+      - name: Run the pinned tools and record their actual outputs
+        run: python -u scripts/lab/export_regnav.py --policykit .lab-sources/policykit --source-watch .lab-sources/regnav-source-watch --output site/lab/data/regnav.json
+      - name: Commit the generated record to this feature branch
+        id: record
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+        run: |
+          git add -- site/lab/data/regnav.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Record the verified RegNav research lab examples'
+            AUTH_HEADER=$(printf '%s' "x-access-token:$PUSH_TOKEN" | base64 -w0)
+            git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH_HEADER" push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  verify:
+    needs: record
+    if: always() && !cancelled() && (needs.record.result == 'success' || needs.record.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ needs.record.outputs.commit_sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Albertito-AI/policykit
+          ref: 130cf41b0d59e1f72a238b0cf3c145c6ca337265
+          path: .lab-sources/policykit
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Albertito-AI/regnav-source-watch
+          ref: 2a6501fbbf535c58b11aeef16a8e8d0cc48148c0
+          path: .lab-sources/regnav-source-watch
+          persist-credentials: false
+      - name: Reproduce and compare the committed execution record
+        run: python -u scripts/lab/export_regnav.py --policykit .lab-sources/policykit --source-watch .lab-sources/regnav-source-watch --output site/lab/data/regnav.json --verify
+      - name: Check browser JavaScript syntax
+        run: node --check site/lab/app.js
+      - name: Install browser verification
+        run: |
+          python -m pip install playwright==1.64.1
+          python -m playwright install --with-deps chromium
+      - name: Check the complete visitor journey
+        run: python -u scripts/lab/check_browser.py
