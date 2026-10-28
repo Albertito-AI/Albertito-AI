@@ -70,7 +70,10 @@
     try { return JSON.stringify(value, null, 2); } catch (_) { return String(value); }
   }
   function downloadJson(value, filename) {
-    var blob = new Blob([jsonText(value) + "\n"], {type:"application/json;charset=utf-8"});
+    downloadContent(jsonText(value) + "\n", filename, "application/json");
+  }
+  function downloadContent(value, filename, type) {
+    var blob = new Blob([value], {type:type + ";charset=utf-8"});
     var url = URL.createObjectURL(blob);
     var anchor = document.createElement("a");
     anchor.href = url;
@@ -501,6 +504,7 @@
     entries.forEach(function (item) {
       var card = node("article", null, "catalog-card");
       card.dataset.itemId = String(item.id);
+      card.tabIndex = -1;
       var top = node("div", null, "catalog-card-top");
       top.appendChild(node("span", ({project:"Project",research:"Research",teaching:"Teaching"})[item.type] || "Public work", "item-type"));
       if (text(item.maturity)) top.appendChild(node("span", item.maturity, "label label-plain"));
@@ -521,11 +525,13 @@
       var verification = item.verification || {};
       var rights = item.rights || {};
       var citation = item.citation || {};
-      if (Object.keys(verification).length || Object.keys(rights).length || citation.available) {
+      var contributions = list(state.catalog.contributions).filter(function (entry) { return entry.project_id === item.id; });
+      if (Object.keys(verification).length || Object.keys(rights).length || citation.available || text(item.limitation) || text(item.relationship_note) || list(item.related_item_ids).length || contributions.length) {
         var detail = node("details", null, "item-details");
         detail.appendChild(node("summary", "Source, scope and reuse"));
         if (verification.checked_at) detail.appendChild(node("p", "Source inspected: " + dateLabel(verification.checked_at) + "."));
         if (text(verification.scope)) detail.appendChild(node("p", verification.scope));
+        if (text(item.limitation)) detail.appendChild(node("p", "Limitation: " + item.limitation));
         if (text(verification.revision)) {
           var revision = node("p", "Recorded revision: ");
           revision.appendChild(link(shortRevision(verification.revision), verification.source_url));
@@ -544,11 +550,47 @@
           copy.type = "button";
           copy.addEventListener("click", function () { copyText(citation.text, copy); });
           citationBox.appendChild(copy);
+          var download = node("button", "Download citation (.txt)", "button button-secondary");
+          download.type = "button";
+          download.addEventListener("click", function () {
+            downloadContent(citation.text + "\n", String(item.id).replace(/[^a-zA-Z0-9_-]/g, "-") + "-citation.txt", "text/plain");
+            announce("Citation text downloaded.");
+          });
+          citationBox.appendChild(download);
           if (safeUrl(citation.url)) citationBox.appendChild(node("p"));
           if (safeUrl(citation.url)) citationBox.lastChild.appendChild(link("Citation source ↗", citation.url));
           detail.appendChild(citationBox);
         }
+        if (safeUrl(citation.download_url)) detail.appendChild(link("Download CITATION.cff ↗", citation.download_url));
         if (text(item.relationship_note)) detail.appendChild(node("p", item.relationship_note));
+        var related = node("div", null, "item-links");
+        list(item.related_item_ids).forEach(function (id) {
+          var target = list(state.catalog.items).find(function (entry) { return entry.id === id; });
+          if (!target) return;
+          var button = node("button", "Related: " + target.title, "button button-quiet");
+          button.type = "button";
+          button.dataset.relatedItemId = id;
+          button.addEventListener("click", function () {
+            dom.catalogSearch.value = "";
+            dom.catalogType.value = "all";
+            renderCatalog();
+            var targetCard = Array.from(dom.catalogResults.children).find(function (entry) { return entry.dataset.itemId === String(id); });
+            if (targetCard) {
+              targetCard.focus({preventScroll:true});
+              targetCard.scrollIntoView({behavior:"auto",block:"start"});
+              announce("Showing related entry: " + target.title + ". Filters cleared.");
+            }
+          });
+          related.appendChild(button);
+        });
+        if (related.childNodes.length) detail.appendChild(related);
+        if (contributions.length) detail.appendChild(node("h4", "Contribution routes"));
+        contributions.forEach(function (entry) {
+          var route = node("p");
+          route.appendChild(link(text(entry.title, "Contribution route") + " ↗", entry.url));
+          if (text(entry.description)) route.appendChild(node("span", ". " + entry.description));
+          detail.appendChild(route);
+        });
         card.appendChild(detail);
       }
       dom.catalogResults.appendChild(card);
@@ -558,7 +600,7 @@
     trace:{
       id:"project-regnav",title:"Start with a claim and its cited passage.",
       copy:"Open the recorded replay above to inspect a fictional evidence ledger. Compare what the source says with the claim, then use the RegNav quickstart to examine the underlying workflow.",
-      kinds:["quickstart","demo"],match:/quickstart/i,local:true
+      kinds:["start","quickstart","demo"],match:/quickstart/i,local:true
     },
     watch:{
       id:"project-source-watch",title:"Follow the source revision.",
@@ -586,7 +628,7 @@
     if (route.local) dom.guideAnswer.appendChild(link("Inspect the recorded replay ↑", "#replay"));
     if (item) {
       var links = list(item.links).filter(function (entry) { return !!safeUrl(entry.url); });
-      var source = links.find(function (entry) { return route.kinds.includes(entry.kind); }) ||
+      var source = route.kinds.map(function (kind) { return links.find(function (entry) { return entry.kind === kind; }); }).find(Boolean) ||
         links.find(function (entry) { return route.match.test(entry.label || "") || route.match.test(entry.url || ""); }) || links[0];
       if (source) {
         var line = node("div");
@@ -630,7 +672,7 @@
     var commandBlock = node("div", null, "command-block");
     commandBlock.appendChild(node("code", command));
     body.appendChild(commandBlock);
-    var copy = node("button", "Copy command", "button button-quiet");
+    var copy = node("button", "Copy recorded command", "button button-quiet");
     copy.type = "button";
     copy.style.marginTop = "12px";
     copy.addEventListener("click", function () { copyText(command, copy); });
@@ -657,7 +699,7 @@
       block.appendChild(node("pre", text(receipt[pair[0]], "(No output captured.)")));
       body.appendChild(block);
     });
-    body.appendChild(node("p", "This is captured execution output. Copying a command does not execute it in this browser.", "receipt-footnote"));
+    body.appendChild(node("p", "This is captured execution output. $POLICYKIT and $SOURCE_WATCH stand for the pinned repository checkouts; $FIXTURES is the generated fictional fixture directory. Resolve these path placeholders using the reproduction guide. Copying a command does not execute it in this browser.", "receipt-footnote"));
     detail.appendChild(body);
     return detail;
   }
@@ -668,6 +710,7 @@
     var workflow = provenance.workflow || {};
     var panel = node("div", null, "provenance-panel");
     panel.appendChild(node("h3", "Source and execution provenance"));
+    panel.appendChild(link("Reproduce the recorded executions ↗", "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/RESEARCH_LAB.md#reproduce-the-recorded-executions", "provenance-line"));
     if (state.replay.generated_at) panel.appendChild(node("p", "Record generated: " + dateLabel(state.replay.generated_at) + ".", "provenance-line"));
     if (safeUrl(workflow.run_url)) {
       var run = node("p", null, "provenance-line");

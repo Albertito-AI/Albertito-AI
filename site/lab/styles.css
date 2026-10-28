@@ -219,6 +219,11 @@ summary{cursor:pointer;font-size:.74rem;color:#6b536c;font-weight:600}
 .site-footer nav{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
 .site-footer a{color:#6b5074}
 .notice{padding:22px;margin-top:25px;background:#fff3d9;border:1px solid #d4ac72;border-radius:10px;font-size:.84rem}
+.catalog-card-top{flex-wrap:wrap}
+.catalog-card-top .label-plain{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.scenario-field,.search-field{min-width:0}
+.scenario-navigation{flex-shrink:0}
+#evidence-panel > #review-editor{padding:0}
 @media(max-width:1000px){
  .header-inner{align-items:flex-start}.site-header nav{gap:17px;padding-top:7px}.hero-inner{gap:25px;grid-template-columns:minmax(0,1fr) 175px}
  .visitor-routes a{padding:19px 17px;gap:10px}.route-number{font-size:1.15rem}

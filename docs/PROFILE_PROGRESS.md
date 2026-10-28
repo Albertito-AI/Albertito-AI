@@ -1,5 +1,35 @@
 # Profile change record
 
+## 28 October 2026: public research lab
+
+The [research lab](https://albertito-ai.github.io/Albertito-AI/lab/) brings a
+guided fictional RegNav exercise, recorded command-line results and a searchable
+index of projects, scholarship and teaching into one browser interface.
+The profile introduces the research purpose and visitor routes before the
+extended companion material. Sparks provides curated, source-linked guidance;
+the existing Dance Floor, public care and saved companion state continue to work.
+
+The exercise runs pinned versions of RegNav Evidence Ledger and RegNav Source
+Watch in GitHub Actions, then publishes their actual inputs, outputs, fixture
+hashes and execution receipts. Browser interaction explores those recorded
+runs. A visitor's practice review remains separate from the tool outputs and
+from any declaration of substantive human review.
+
+The lab includes citation and rights information from inspected project
+sources, local annotation export, keyboard and mobile controls, a fallback
+when data cannot load, and a structured public feedback form.
+[Reproduction instructions](RESEARCH_LAB.md) explain how to rerun the examples.
+The [evaluation protocol](LAB_EVALUATION.md) distinguishes automated checks from
+future outside-user observations; no outside evaluation is claimed.
+
+GitHub Actions checks reproducibility and the visitor journey. Publication
+checks the delivered bytes against every tracked site file and exercises the
+live lab in a browser. The primary Dance Floor address remains unchanged.
+
+AI assistance: ChatGPT implemented and reviewed this integration with automated
+verification. Existing repository rights and source attributions are retained.
+
+
 ## 28 October 2026: approved retro Sparks artwork
 
 The profile header now uses the approved charcoal and aged-bronze research robot

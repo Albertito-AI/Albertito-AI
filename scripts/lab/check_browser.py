@@ -164,6 +164,26 @@ def check(url):
                     "Catalogue filter displays " + kind + " content")
         page.select_option("#catalog-type", options[0])
 
+        page.select_option("#catalog-type", "project")
+        regnav = next(item for item in catalog["items"] if item["id"] == "project-regnav")
+        regnav_card = page.locator('.catalog-card[data-item-id="project-regnav"]')
+        regnav_card.locator("summary").click()
+        require(regnav["limitation"] in regnav_card.inner_text(),
+                "Project scope and its concrete limitation are inspectable")
+        contribution = next(item for item in catalog["contributions"] if item["project_id"] == regnav["id"])
+        require(regnav_card.locator("a").evaluate_all("(links) => links.map(link => link.href)").count(contribution["url"]) == 1,
+                "The catalogue exposes the project's actual contribution route")
+        with page.expect_download(timeout=10000) as citation_download:
+            regnav_card.get_by_role("button", name="Download citation (.txt)", exact=True).click()
+        require(Path(citation_download.value.path()).read_text(encoding="utf-8") == regnav["citation"]["text"] + "\n",
+                "Citation download preserves the recorded attribution and version")
+        related_id = "research-sg-th-accountability"
+        regnav_card.locator(f'button[data-related-item-id="{related_id}"]').click()
+        expect(page.locator("#catalog-type")).to_have_value("all")
+        expect(page.locator("#catalog-search")).to_have_value("")
+        expect(page.locator(f'.catalog-card[data-item-id="{related_id}"]')).to_be_focused()
+        require(True, "A related-research route clears incompatible filters and moves keyboard focus")
+
         intent_options = page.locator("#guide-intent option").evaluate_all("(items) => items.map(item => item.value)")
         require(len(intent_options) >= 3, "Sparks offers task-based guidance")
         guide_answers = set()
@@ -173,6 +193,13 @@ def check(url):
             require(len(answer) > 40, "Sparks explains the selected task")
             guide_answers.add(answer)
         require(len(guide_answers) >= 3, "Sparks' guidance changes with the visitor's intention")
+
+        page.select_option("#guide-intent", "trace")
+        quickstart = next(entry["url"] for entry in regnav["links"] if entry["kind"] == "start")
+        require(quickstart in page.locator("#guide-answer a").evaluate_all("(links) => links.map(link => link.href)"),
+                "The claim-tracing guide points to the recorded quickstart")
+        require(page.locator('#verification-record a[href$="#reproduce-the-recorded-executions"]').count() == 1,
+                "Recorded command placeholders link to complete reproduction instructions")
 
         feedback = page.locator("#feedback-link").get_attribute("href")
         require(feedback is not None and "template=lab-feedback.yml" in feedback
@@ -206,6 +233,19 @@ def check(url):
             dimensions = page.evaluate(
                 "() => ({viewport: innerWidth, content: document.documentElement.scrollWidth})"
             )
+            if dimensions["content"] > dimensions["viewport"] + 1:
+                offenders = page.evaluate("""() => Array.from(document.body.querySelectorAll('*'))
+                    .filter(element => {
+                        const rectangle = element.getBoundingClientRect();
+                        return rectangle.width && (rectangle.right > innerWidth + 1 || rectangle.left < -1);
+                    }).slice(0, 30).map(element => ({
+                        tag: element.tagName, id: element.id, class: element.className,
+                        right: element.getBoundingClientRect().right,
+                        left: element.getBoundingClientRect().left,
+                        text: element.textContent.trim().slice(0, 100)
+                    }))""")
+                print("OVERFLOW_DIAGNOSTICS=" + json.dumps({"dimensions": dimensions, "elements": offenders}), flush=True)
+                print("LAB_OVERFLOW_PNG=" + base64.b64encode(page.screenshot()).decode("ascii"), flush=True)
             require(dimensions["content"] <= dimensions["viewport"] + 1,
                     f"No horizontal page overflow at {width}px")
         require(not errors, "No uncaught browser JavaScript errors: " + repr(errors))
