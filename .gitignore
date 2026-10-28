@@ -1,2 +1,5 @@
 __pycache__/
 *.py[cod]
+
+# Pinned public source checkouts used by research-lab reproduction
+.lab-sources/

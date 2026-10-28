@@ -47,6 +47,9 @@ selector = 'img[alt^="Sparks dancing through six routines"]'
 def check_picture(page, url, reduced):
     page.goto(url, wait_until="domcontentloaded", timeout=60000)
     photo = page.locator(selector).first
+    preview = page.locator("summary").filter(has_text="Open Sparks' care controls and dance preview")
+    if preview.count() and not photo.is_visible():
+        preview.click()
     photo.wait_for(timeout=30000)
     photo.scroll_into_view_if_needed()
     page.wait_for_function("(e) => e.complete && e.naturalWidth === 304", arg=photo.element_handle(), timeout=60000)

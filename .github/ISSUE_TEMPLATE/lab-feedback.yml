@@ -1,0 +1,69 @@
+name: Research lab feedback
+description: Report a difficulty or a reproducible result from the public research lab.
+title: "[Research lab] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe an actual attempt using the public fictional examples.
+        This issue will be public. Include only non-confidential information.
+        Your report is evidence of your own attempt, not an endorsement or legal review.
+  - type: dropdown
+    id: task
+    attributes:
+      label: Task attempted
+      options:
+        - Find the source supporting a claim
+        - Explain a source-change warning
+        - Record and download a practice review
+        - Reproduce a command-line result
+        - Explore research or teaching
+        - Use the interface with a keyboard or assistive technology
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Example and revision
+      description: Paste the scenario name and source revision or verification link shown in the lab.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and observed result
+      description: Describe what you did and what happened. Include an error message only after removing private information.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected or found unclear
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and device, or operating system and runtime versions for a command-line attempt.
+    validations:
+      required: false
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome of your attempt
+      options:
+        - Completed without assistance
+        - Completed with assistance
+        - Could not complete
+        - Reporting a specific defect
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public report
+      options:
+        - label: I have removed personal, client and confidential information from this report.
+          required: true

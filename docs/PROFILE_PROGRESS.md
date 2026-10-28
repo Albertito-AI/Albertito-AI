@@ -1,5 +1,67 @@
 # Profile change record
 
+## 28 October 2026: public research lab
+
+The [research lab](https://albertito-ai.github.io/Albertito-AI/lab/) brings a
+guided fictional RegNav exercise, recorded command-line results and a searchable
+index of projects, scholarship and teaching into one browser interface.
+The profile introduces the research purpose and visitor routes before the
+extended companion material. Sparks provides curated, source-linked guidance;
+the existing Dance Floor, public care and saved companion state continue to work.
+
+The exercise runs pinned versions of RegNav Evidence Ledger and RegNav Source
+Watch in GitHub Actions, then publishes their actual inputs, outputs, fixture
+hashes and execution receipts. Browser interaction explores those recorded
+runs. A visitor's practice review remains separate from the tool outputs and
+from any declaration of substantive human review.
+
+The lab includes citation and rights information from inspected project
+sources, local annotation export, keyboard and mobile controls, a fallback
+when data cannot load, and a structured public feedback form.
+[Reproduction instructions](RESEARCH_LAB.md) explain how to rerun the examples.
+The [evaluation protocol](LAB_EVALUATION.md) distinguishes automated checks from
+future outside-user observations; no outside evaluation is claimed.
+
+GitHub Actions checks reproducibility and the visitor journey. Publication
+checks the delivered bytes against every tracked site file and exercises the
+live lab in a browser. The primary Dance Floor address remains unchanged.
+
+### Recorded implementation checks
+
+The [implementation pull request](https://github.com/Albertito-AI/Albertito-AI/pull/24)
+contains the source, generated examples and review history.
+
+- The [recording and reproduction run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40702423090)
+  completed 13 actual CLI executions, 60 assertions and nine displayed scenarios.
+  Its browser job passed after correcting the separation of Before and After
+  evidence, review declarations and amended fictional source text.
+- Browser checks passed for source selection, contrary evidence, annotation
+  persistence and isolation, original-receipt export, citation download,
+  related-entry navigation, keyboard tabs, reduced motion and recovery after
+  a failed data request. No page overflow was observed at 320, 390, 768 or
+  1280 pixels.
+- The [profile integrity run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40702432542)
+  passed all 72 existing tests. The
+  [Sparks browser run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40702432495)
+  also passed.
+- Citation metadata was merged in
+  [Source Watch #3](https://github.com/Albertito-AI/regnav-source-watch/pull/3),
+  [Symbolon #14](https://github.com/Albertito-AI/symbolon/pull/14) and
+  [Tallystick #4](https://github.com/Albertito-AI/tallystick/pull/4).
+  The three files passed
+  [CFF 1.2.0 validation](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40701439737).
+  Existing repository checks passed before and after each merge, including
+  the packaged Source Watch Action on its main-branch run.
+
+These results describe the identified implementation checks. The
+[publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/workflows/sparks-pages.yml)
+records deployment, delivered-file comparisons and the subsequent live browser
+check separately. External usability observations remain uncollected.
+
+AI assistance: ChatGPT implemented and reviewed this integration with automated
+verification. Existing repository rights and source attributions are retained.
+
+
 ## 28 October 2026: approved retro Sparks artwork
 
 The profile header now uses the approved charcoal and aged-bronze research robot
