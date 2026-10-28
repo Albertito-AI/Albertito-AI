@@ -51,6 +51,16 @@
       "processed_at": "2026-10-28T11:32:09Z",
       "created_at": "2026-10-28T11:31:57Z",
       "actor_key": "4a230f6c81f41da7d7477d123f67dae8cf755273d1e8b69c219c36c57158e975",
+      "pending_ack": false
+    },
+    "18": {
+      "action": "play",
+      "reason": "satisfied",
+      "message": "Thanks, I have had enough play for now.",
+      "accepted": false,
+      "processed_at": "2026-10-28T11:33:11Z",
+      "created_at": "2026-10-28T11:33:00Z",
+      "actor_key": "4a230f6c81f41da7d7477d123f67dae8cf755273d1e8b69c219c36c57158e975",
       "pending_ack": true
     }
   }
