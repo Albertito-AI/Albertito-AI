@@ -25,8 +25,26 @@ push protection. No model service or new paid infrastructure is used.
 Implemented procedures and their demonstrated outputs define capability. Age,
 care points and activity counts do not establish educational achievement or
 increasing general intelligence. Private preparation and assessment records are
-outside the public repository. Deployment evidence will be added after the first
-live source observation.
+outside the public repository.
+
+### Activation and observed results
+
+- [Pull request #13](https://github.com/Albertito-AI/Albertito-AI/pull/13) passed
+  [hosted validation](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40653571787)
+  and was merged as `879044b62a6f40758d550a8c7feb8e67a12db6d4`.
+- All 64 unit tests passed, including 18 new public-observer tests. The offline
+  workbench check and profile integrity checks also passed; independent code
+  review found no blocking defect.
+- The first [live observation run](https://github.com/Albertito-AI/Albertito-AI/actions/runs/40653616550)
+  completed successfully at **15:59 Singapore time**. All five allowlisted
+  repositories were public, all five starting paths and four configured
+  contribution paths were present at recorded revisions, and their snapshots
+  were saved in the public-source memory.
+- RegNav Source Watch returned stable release `v0.1.0`. The other four projects
+  returned no published stable release. This run established five baselines;
+  it did not invent earlier comparisons or claim an observed change.
+- The live profile shows **Sparks at work**, and its linked workbench renders
+  the verified paths, source revisions, release observations and next task.
 
 ## 28 October 2026: Sparks and public care
 
