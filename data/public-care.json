@@ -2,5 +2,16 @@
   "schema_version": 1,
   "enabled_at": "2026-10-28T07:07:58Z",
   "scan_page": 1,
-  "receipts": {}
+  "receipts": {
+    "10": {
+      "action": "feed",
+      "reason": "accepted",
+      "message": "Thank you. That gives me something new to think about.",
+      "accepted": true,
+      "processed_at": "2026-10-28T07:15:17Z",
+      "created_at": "2026-10-28T07:15:06Z",
+      "actor_key": "4a230f6c81f41da7d7477d123f67dae8cf755273d1e8b69c219c36c57158e975",
+      "pending_ack": true
+    }
+  }
 }
