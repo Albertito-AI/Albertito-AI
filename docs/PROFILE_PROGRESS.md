@@ -1,5 +1,28 @@
 # Profile change record
 
+## 29 October 2026: share an example and contribute an observation
+
+Research Lab visitors can prepare a link to the selected recorded scenario and
+open the existing feedback form with its public scenario and source-revision
+context. The link restores that scenario for another visitor. An unavailable
+scenario falls back with an explanation; a changed recording is identified.
+Local review notes remain in the visitor's browser and are excluded from both
+links, along with unrelated incoming query parameters.
+
+The existing project contribution tasks are now visible on catalogue cards,
+together with each project's reuse-terms link. These routes retain their
+existing descriptions and permission requirements. Opening feedback prepares a
+public GitHub form for the visitor to review and submit.
+
+Implementation and review are AI-assisted. JavaScript syntax, Python browser-test
+compilation, profile validation and whitespace checks passed locally. The
+existing browser verifier now covers shared scenarios, recovery, public feedback
+context, note privacy, clipboard fallback and visible contribution routes.
+Local browser execution is pending because the pinned Chromium download failed;
+the associated PR's hosted checks and later live verification must establish
+browser behaviour and delivery. This entry records the prepared change and
+makes no claim of additional visitors, contributors or independent adoption.
+
 ## 29 October 2026: contribution and merge evidence workflow
 
 The profile had an internal maintenance policy but no contributor guide or

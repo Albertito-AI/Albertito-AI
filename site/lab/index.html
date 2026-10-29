@@ -65,6 +65,11 @@
             <div class="scenario-navigation"><button type="button" class="button button-quiet" id="previous-scenario" aria-label="Previous recorded scenario">← Previous</button><button type="button" class="button button-quiet" id="next-scenario" aria-label="Next recorded scenario">Next →</button></div>
           </div>
           <div class="scenario-summary"><p id="scenario-prompt"></p><p id="scenario-explanation" class="muted"></p></div>
+          <div class="scenario-sharing">
+            <div class="field"><label for="scenario-share-url">Link to this recorded example</label><input id="scenario-share-url" type="text" readonly spellcheck="false" aria-describedby="scenario-share-status"></div>
+            <div class="review-actions"><button type="button" class="button button-secondary" id="copy-scenario-link" disabled>Copy example link</button><a class="button button-secondary" id="scenario-feedback-link" href="https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml">Report this example <span aria-hidden="true">↗</span></a></div>
+            <p id="scenario-share-status" class="field-help" role="status" aria-live="polite">Share the recorded example or open a public GitHub feedback form. Your review notes stay in this browser.</p>
+          </div>
           <div class="evidence-workspace">
             <aside class="claims-sidebar" aria-labelledby="claims-heading">
               <div class="sidebar-heading"><h3 id="claims-heading">Claims in this record</h3><span id="claims-count" class="count"></span></div>

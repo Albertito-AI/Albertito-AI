@@ -96,6 +96,10 @@ select:hover,input:hover,textarea:hover{border-color:#a68eab}
 .scenario-summary{margin:22px 0 24px;padding-left:16px;border-left:3px solid #d3a46b;font-size:.87rem}
 .scenario-summary #scenario-prompt{font-weight:650;color:#3e3047}
 .scenario-summary p+p{margin-top:6px}
+.scenario-sharing{margin:0 0 24px;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.scenario-sharing>.field-help{display:block;margin-top:12px}
+.item-contributions{border-top:1px solid var(--line);margin-top:18px;padding-top:16px;font-size:.86rem}
+.item-contributions h4{font-size:.85rem;margin-bottom:10px}
 .evidence-workspace{display:grid;grid-template-columns:238px minmax(0,1fr);min-height:440px;border:1px solid #d7cbd4;border-radius:var(--radius);background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}
 .claims-sidebar{background:#eee8ed;border-right:1px solid #d7cbd4;padding:24px 17px}
 .sidebar-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 5px 18px}

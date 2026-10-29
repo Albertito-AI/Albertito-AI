@@ -5,6 +5,8 @@
   var dom = {
     app: $("lab-app"), replayStatus: $("replay-status"), replayContent: $("replay-content"),
     scenario: $("scenario-select"), previous: $("previous-scenario"), next: $("next-scenario"),
+    scenarioShare: $("scenario-share-url"), copyScenario: $("copy-scenario-link"),
+    scenarioFeedback: $("scenario-feedback-link"), scenarioShareStatus: $("scenario-share-status"),
     prompt: $("scenario-prompt"), explanation: $("scenario-explanation"),
     claims: $("claims-list"), claimCount: $("claims-count"), tabs: $("evidence-tabs"),
     panel: $("evidence-panel"), editor: $("review-editor"), reviewStatus: $("review-status-select"),
@@ -256,8 +258,22 @@
     try {
       var data = await fetchJson("data/regnav.json");
       if (!list(data.scenarios).length || !Array.isArray(data.receipts)) throw new Error("The example has no scenarios or receipts");
+      var firstLoad = !state.replay;
       state.replay = data;
       state.scenarioIndex = Math.min(state.scenarioIndex, data.scenarios.length - 1);
+      var sharedNotice = "";
+      if (firstLoad) {
+        var parameters = new URL(window.location.href).searchParams;
+        var requested = parameters.get("scenario");
+        if (requested !== null) {
+          var requestedIndex = data.scenarios.findIndex(function (item) { return String(item.id) === requested; });
+          state.scenarioIndex = requestedIndex < 0 ? 0 : requestedIndex;
+          if (requestedIndex < 0) sharedNotice = "That shared scenario is unavailable. Showing the first recorded example.";
+          else if (parameters.has("record") && parameters.get("record") !== snapshotId()) {
+            sharedNotice = "The recorded dataset has changed since this link was shared. Showing the current recorded version of this example.";
+          }
+        }
+      }
       dom.scenario.replaceChildren();
       data.scenarios.forEach(function (item, index) {
         var option = node("option", (index + 1) + ". " + text(item.title, niceId(item.id)));
@@ -269,6 +285,7 @@
       dom.replayStatus.hidden = true;
       dom.downloadReceipts.disabled = false;
       setScenario(state.scenarioIndex, false);
+      if (sharedNotice) dom.scenarioShareStatus.textContent = sharedNotice + " Your review notes stay in this browser.";
     } catch (error) {
       console.warn("Recorded example unavailable:", error);
       loadError(dom.replayStatus, "recorded example", "regnav.json", loadReplay);
@@ -467,7 +484,31 @@
     renderEvidence();
     renderVerification();
     updateNoteButtons();
+    renderScenarioLinks();
     if (shouldAnnounce !== false) announce("Showing recorded scenario: " + text(current.title, current.id) + ".");
+  }
+  function renderScenarioLinks() {
+    var current = scenario();
+    if (!current) return;
+    var shared = new URL(window.location.href);
+    shared.search = "";
+    shared.hash = "replay";
+    shared.searchParams.set("scenario", String(current.id));
+    shared.searchParams.set("record", snapshotId());
+    dom.scenarioShare.value = shared.href;
+    dom.copyScenario.disabled = false;
+
+    var report = new URL("https://github.com/Albertito-AI/Albertito-AI/issues/new");
+    report.searchParams.set("template", "lab-feedback.yml");
+    report.searchParams.set("title", "[Research lab] " + text(current.title, current.id));
+    var context = [text(current.title, current.id) + " (" + String(current.id) + ")",
+      "Recorded dataset: " + text(state.replay.id, "regnav") + " at " + snapshotId()];
+    list(state.replay.provenance && state.replay.provenance.sources).forEach(function (source) {
+      if (text(source.repository) && text(source.revision)) context.push(source.repository + "@" + source.revision);
+    });
+    report.searchParams.set("version", context.join(" | "));
+    dom.scenarioFeedback.href = report.href;
+    dom.scenarioShareStatus.textContent = "Share the recorded example or open a public GitHub feedback form. Your review notes stay in this browser.";
   }
   function renderClaims() {
     var claims = claimsFor(scenario());
@@ -845,6 +886,22 @@
       var rights = record(item.rights);
       var citation = citationFor(item);
       var contributions = list(state.catalog && state.catalog.contributions).filter(function (entry) { return entry && entry.project_id === item.id; });
+      if (contributions.length && item.type === "project") {
+        var contribute = node("div", null, "item-contributions");
+        contribute.appendChild(node("h4", "Ways to contribute"));
+        contributions.forEach(function (entry) {
+          var route = node("p");
+          route.appendChild(link(text(entry.title, "Contribution route") + " ↗", entry.url));
+          if (text(entry.description)) route.appendChild(node("span", ". " + entry.description));
+          contribute.appendChild(route);
+        });
+        if (safeUrl(rights.url)) {
+          var terms = node("p", null, "field-help");
+          terms.appendChild(link("Project reuse terms ↗", rights.url));
+          contribute.appendChild(terms);
+        }
+        card.appendChild(contribute);
+      }
       if (item._fromLibrary || Object.keys(verification).length || Object.keys(rights).length || citation.available || text(item.limitation) || text(item.relationship_note) || list(item.related_item_ids).length || contributions.length) {
         var detail = node("details", null, "item-details");
         detail.appendChild(node("summary", "Source, scope and reuse"));
@@ -908,13 +965,6 @@
           related.appendChild(button);
         });
         if (related.childNodes.length) detail.appendChild(related);
-        if (contributions.length) detail.appendChild(node("h4", "Contribution routes"));
-        contributions.forEach(function (entry) {
-          var route = node("p");
-          route.appendChild(link(text(entry.title, "Contribution route") + " ↗", entry.url));
-          if (text(entry.description)) route.appendChild(node("span", ". " + entry.description));
-          detail.appendChild(route);
-        });
         card.appendChild(detail);
       }
       dom.catalogResults.appendChild(card);
@@ -1138,6 +1188,9 @@
     announce("Downloaded the recorded example and execution receipts.");
   });
   dom.catalogSearch.addEventListener("input", filterCatalog);
+  dom.copyScenario.addEventListener("click", function () {
+    if (dom.scenarioShare.value) copyText(dom.scenarioShare.value, dom.copyScenario);
+  });
   dom.catalogType.addEventListener("change", filterCatalog);
   dom.catalogTopic.addEventListener("change", filterCatalog);
   dom.catalogReview.addEventListener("change", filterCatalog);
