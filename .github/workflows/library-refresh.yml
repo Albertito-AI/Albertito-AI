@@ -1,0 +1,96 @@
+name: Research library refresh
+
+on:
+  schedule:
+    - cron: '23 0 * * *' # Daily at 08:23 Asia/Singapore; GitHub may delay scheduled runs.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/library_*.json'
+      - 'scripts/library/**'
+      - 'scripts/publish_library_update.py'
+      - '.github/workflows/library-refresh.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-library-refresh
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'Albertito-AI/Albertito-AI' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.publish.outputs.changed }}
+      commit_sha: ${{ steps.publish.outputs.commit_sha }}
+      health: ${{ steps.publish.outputs.health }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - name: Verify ingestion and preservation rules
+        run: python -m unittest discover -s tests -p 'test_library*.py' -v
+      - name: Retrieve bounded source metadata and retain last-good records
+        run: python -u scripts/library/refresh.py --refresh
+      - name: Validate generated records before publication
+        run: python scripts/library/refresh.py --check
+      - name: Commit only the generated library records
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/publish_library_update.py
+      - name: Record the actual refresh outcome
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('site/lab/data/library.json')
+          if not path.exists():
+              raise SystemExit('No usable library snapshot was produced.')
+          data = json.loads(path.read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as report:
+              report.write('# Research library refresh\n\n')
+              report.write('Source health: **' + data['status'] + '**\n\n')
+              report.write('Library records: ' + str(len(data['items'])) + '\n\n')
+              report.write('Latest attempt: ' + str(data.get('generated_at')) + '\n\n')
+              report.write('Last successful retrieval: ' + str(data.get('last_successful_refresh')) + '\n\n')
+              report.write('Publication and live verification are separate jobs. Metadata checks do not review article contents.\n')
+          PY
+
+  publish:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    uses: ./.github/workflows/sparks-pages.yml
+    with:
+      source_ref: ${{ needs.refresh.outputs.commit_sha }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+  source-health:
+    needs: [refresh, publish]
+    if: always() && needs.refresh.result == 'success'
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Keep failed or partial retrieval visible in Actions
+        env:
+          SOURCE_HEALTH: ${{ needs.refresh.outputs.health }}
+        run: |
+          if [ "$SOURCE_HEALTH" != 'ok' ]; then
+            echo '::error::A source refresh was incomplete. Last-good entries have been retained; inspect the published source status and this run.'
+            exit 1
+          fi

@@ -27,6 +27,14 @@ or search the public catalog. Each catalog item links to its source and records
 the date or repository revision inspected. Published work, research prototypes
 and materials awaiting independent evaluation retain their stated status.
 
+The [growing research library](https://albertito-ai.github.io/Albertito-AI/lab/#library)
+also includes external primary references and bounded daily research discovery.
+Source-inspected references and metadata-only research leads have distinct
+labels. Search, topic filters and citation exports support the
+[practical reading paths](docs/LIBRARY_READING_PATHS.md); the
+[maintenance record](docs/LIBRARY_WORKFLOW.md) explains the schedule, checks
+and limits.
+
 | What would you like to do? | Start here |
 | --- | --- |
 | Try a source-change exercise | [Guided RegNav replay](https://albertito-ai.github.io/Albertito-AI/lab/#replay) |

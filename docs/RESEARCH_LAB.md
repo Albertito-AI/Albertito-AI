@@ -16,6 +16,8 @@ retains its original address and controls. Research navigation lives under
 | Compare a fictional claim and its changed source | [Source replay](https://albertito-ai.github.io/Albertito-AI/lab/#replay) |
 | Inspect or reproduce the actual tool executions | [Verification](https://albertito-ai.github.io/Albertito-AI/lab/#verification) |
 | Find a publication and its bibliographic record | [Research](https://albertito-ai.github.io/Albertito-AI/lab/#research) |
+| Search the growing reference and research collection | [Living catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library) |
+| Work through a source-based research task | [Reading paths](LIBRARY_READING_PATHS.md) |
 | Inspect software demonstrations and reuse terms | [Projects](https://albertito-ai.github.io/Albertito-AI/lab/#projects) |
 | Find source-checking materials | [Teaching](https://albertito-ai.github.io/Albertito-AI/lab/#teaching) |
 | Follow a short set of maintained starting points | [Sparks guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
@@ -88,6 +90,19 @@ three published-research entries and two teaching or source-inspection entries.
 Each item includes its status, useful links, an inspection date and the scope
 of that inspection. Repository sources use exact commit URLs. Institutional
 publication records retain their own publication dates and bibliographic fields.
+
+The additional [reference library](../site/lab/data/library.json) supplies
+external primary references and daily, bounded Crossref metadata discovery.
+These are other authors' and institutions' work. Each entry identifies its
+review level and useful task; automated records are explicitly **metadata
+only**. Topic and review filters, sorting, pagination and JSON/BibTeX exports
+make the combined collection usable. The [reading paths](LIBRARY_READING_PATHS.md)
+connect selected primary references to practical research tasks.
+
+The page shows source health and distinct update and inspection dates. The
+original catalogue remains available if the additional library fails to load.
+See the [maintenance workflow](LIBRARY_WORKFLOW.md) for admission rules,
+failure handling, recurring discovery and editorial review.
 
 A catalog inspection establishes what its cited source stated at that time.
 It does not establish professional fitness, independent adoption, educational
@@ -165,8 +180,10 @@ remain pending until real observations are collected and recorded.
 
 ## Maintenance
 
-The catalog is maintained text, not a live scrape or a current-law service.
-Before changing an item, inspect its primary source, retain its exact revision
+The original catalogue and curated references are maintained text. A daily
+workflow adds bounded external bibliographic records; it does not inspect full
+texts or provide a current-law service. Before changing a curated item, inspect
+its primary source, retain its exact revision
 where available, check metadata and rights, and update only the inspection date
 for the work actually performed. Preserve contrary evidence and unknown fields.
 
@@ -177,3 +194,6 @@ external use, feedback and independent review only when they actually occur.
 The profile's [visibility policy](PORTFOLIO_VISIBILITY_POLICY.md) continues to
 govern publication. Private institutional records, confidential research inputs
 and participant data remain outside this public repository.
+
+For the schedule, source configuration, generation commands, review queue and
+publication checks, use [Maintaining a useful research library](LIBRARY_WORKFLOW.md).

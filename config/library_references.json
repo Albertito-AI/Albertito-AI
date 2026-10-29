@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "reference-sgx-mainboard-711a",
+      "title": "SGX Mainboard Rule 711A: Sustainability Report",
+      "type": "reference",
+      "description": "The Mainboard rule on issuing annual sustainability reports, including timing where external assurance is obtained.",
+      "maturity": "Official rulebook; displayed version from 1 January 2026",
+      "topics": [
+        "Sustainability reporting",
+        "Legal research",
+        "Singapore"
+      ],
+      "limitation": "Mainboard scope only. Check rule history, related provisions and issuer circumstances before application; this record does not determine compliance.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://rulebook.sgx.com/rulebook/711a",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://rulebook.sgx.com/rulebook/711a",
+        "scope": "Official Mainboard rule text, version selector and amendment note inspected. Publication date was not established separately from amendment dates."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Singapore Exchange, '711A', Mainboard Rules, Sustainability Report (displayed version: 1 January 2026 onwards; inspected 29 October 2026). https://rulebook.sgx.com/rulebook/711a",
+        "url": "https://rulebook.sgx.com/rulebook/711a"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://rulebook.sgx.com/rulebook/711a"
+      },
+      "related_item_ids": [
+        "reference-sgx-mainboard-711b",
+        "project-regnav",
+        "teaching-sgx-case"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": null,
+      "publisher": "Singapore Exchange",
+      "doi": null,
+      "authors": [
+        "Singapore Exchange"
+      ],
+      "use_for": "Identify the reporting timetable separately from content requirements, then record the rule version supporting a timing proposition."
+    },
+    {
+      "id": "reference-sgx-mainboard-711b",
+      "title": "SGX Mainboard Rule 711B: Sustainability Report",
+      "type": "reference",
+      "description": "The Mainboard rule identifying report components, internal review and the cross-reference governing climate-related disclosures.",
+      "maturity": "Official rulebook; displayed version from 1 January 2026",
+      "topics": [
+        "Sustainability reporting",
+        "Legal research",
+        "Singapore"
+      ],
+      "limitation": "Read with the referenced Practice Note and relevant historical version. The source inspection does not assess issuer compliance or enforcement consequences.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://rulebook.sgx.com/rulebook/711b",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://rulebook.sgx.com/rulebook/711b",
+        "scope": "Official Mainboard rule text, version selector and climate-disclosure cross-reference inspected. No complete review of the referenced Practice Note was performed."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Singapore Exchange, '711B', Mainboard Rules, Sustainability Report (displayed version: 1 January 2026 onwards; inspected 29 October 2026). https://rulebook.sgx.com/rulebook/711b",
+        "url": "https://rulebook.sgx.com/rulebook/711b"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://rulebook.sgx.com/rulebook/711b"
+      },
+      "related_item_ids": [
+        "reference-sgx-mainboard-711a",
+        "reference-ifrs-s1",
+        "project-regnav"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": null,
+      "publisher": "Singapore Exchange",
+      "doi": null,
+      "authors": [
+        "Singapore Exchange"
+      ],
+      "use_for": "Build a source-linked list of reporting components and identify cross-references requiring a separate applicability check."
+    },
+    {
+      "id": "reference-ifrs-s1",
+      "title": "IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information",
+      "type": "reference",
+      "description": "The ISSB's general sustainability-disclosure standard, introduced through the IFRS Foundation's public overview and implementation resources.",
+      "maturity": "Issued standard; public overview inspected",
+      "topics": [
+        "Sustainability reporting",
+        "Disclosure",
+        "Governance"
+      ],
+      "limitation": "The public overview is not the complete standard. Local adoption, effective application and licensing require separate checks.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+          "kind": "start"
+        },
+        {
+          "label": "Official implementation resources and issue date",
+          "url": "https://www.ifrs.org/supporting-implementation/supporting-materials-for-ifrs-sustainability-disclosure-standards/ifrs-s1/",
+          "kind": "context"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+        "scope": "Official overview, stated objective and implementation page inspected. The latter confirms the standard's issue date; complete standard text was not reviewed."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "International Sustainability Standards Board, IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information (IFRS Foundation, issued 26 June 2023), official overview. https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+        "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/"
+      },
+      "related_item_ids": [
+        "reference-sgx-mainboard-711b",
+        "reference-thai-sec-one-report",
+        "research-sg-th-accountability"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2023-06-26",
+      "publisher": "IFRS Foundation",
+      "doi": null,
+      "authors": [
+        "International Sustainability Standards Board"
+      ],
+      "use_for": "Distinguish a disclosure standard's investor-information objective from the domestic instrument that makes particular reporting duties applicable."
+    },
+    {
+      "id": "reference-thai-sec-one-report",
+      "title": "Form 56-1 One Report: Thai SEC resource hub",
+      "type": "reference",
+      "description": "The regulator's portal for One Report forms, related notifications and sustainability-disclosure materials.",
+      "maturity": "Official regulator resource hub",
+      "topics": [
+        "Sustainability reporting",
+        "Legal research",
+        "Thailand"
+      ],
+      "limitation": "Thai-language hub with materials from multiple periods. Individual instruments, translations and their applicability were not comprehensively reviewed.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.sec.or.th/TH/Pages/LawandRegulations/OneReport.aspx",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/OneReport.aspx",
+        "scope": "Official hub heading, notification list and form labels inspected. The page links materials associated with different amendments; no single publication date was established."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Securities and Exchange Commission, Thailand, 'แบบ 56-1 One Report' [Form 56-1 One Report], official resource hub (inspected 29 October 2026). https://www.sec.or.th/TH/Pages/LawandRegulations/OneReport.aspx",
+        "url": "https://www.sec.or.th/TH/Pages/LawandRegulations/OneReport.aspx"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.sec.or.th/TH/Pages/LawandRegulations/OneReport.aspx"
+      },
+      "related_item_ids": [
+        "reference-ifrs-s1",
+        "research-sg-th-accountability",
+        "project-regnav"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": null,
+      "publisher": "Securities and Exchange Commission, Thailand",
+      "doi": null,
+      "authors": [
+        "Securities and Exchange Commission, Thailand"
+      ],
+      "use_for": "Locate the exact notification and form version needed for a Singapore–Thailand reporting comparison, recording language and unresolved applicability."
+    },
+    {
+      "id": "reference-nist-ai-rmf-1",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "type": "reference",
+      "description": "A voluntary framework organising AI risk work through Govern, Map, Measure and Manage functions.",
+      "maturity": "Published voluntary framework, version 1.0",
+      "topics": [
+        "AI governance",
+        "Evaluation",
+        "Risk management"
+      ],
+      "limitation": "Version 1.0 is the inspected edition. Using its categories does not establish compliance, certification or measured system safety.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+          "kind": "start"
+        },
+        {
+          "label": "Official framework PDF",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+        "scope": "NIST publication metadata and the official PDF's introduction and Core structure inspected. Named authorship is preserved in the citation."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Elham Tabassi, Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1 (National Institute of Standards and Technology, 26 January 2023). https://doi.org/10.6028/NIST.AI.100-1",
+        "url": "https://doi.org/10.6028/NIST.AI.100-1"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10"
+      },
+      "related_item_ids": [
+        "reference-nist-genai-profile",
+        "reference-oecd-ai-2019",
+        "project-symbolon"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2023-01-26",
+      "publisher": "National Institute of Standards and Technology",
+      "doi": "10.6028/NIST.AI.100-1",
+      "authors": [
+        "National Institute of Standards and Technology"
+      ],
+      "use_for": "Turn one AI use case into a risk record with a responsible owner, evaluation evidence and a documented response."
+    },
+    {
+      "id": "reference-nist-genai-profile",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+      "type": "reference",
+      "description": "NIST's companion profile identifies generative-AI risks and suggested risk-management actions, including source checking and capability evaluation.",
+      "maturity": "Published voluntary profile, NIST AI 600-1",
+      "topics": [
+        "AI governance",
+        "Evaluation",
+        "Generative AI",
+        "Evidence"
+      ],
+      "limitation": "Suggested actions require context-specific implementation and evidence. This entry makes no claim about current executive-order obligations or certification.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+          "kind": "start"
+        },
+        {
+          "label": "Official generative-AI profile PDF",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "scope": "Publication metadata and official PDF introduction, confabulation discussion and selected measurement actions inspected; this is not a full implementation assessment."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Chloe Autio and others, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile, NIST AI 600-1 (National Institute of Standards and Technology, 26 July 2024). https://doi.org/10.6028/NIST.AI.600-1",
+        "url": "https://doi.org/10.6028/NIST.AI.600-1"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+      },
+      "related_item_ids": [
+        "reference-nist-ai-rmf-1",
+        "project-regnav",
+        "teaching-source-checking"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2024-07-26",
+      "publisher": "National Institute of Standards and Technology",
+      "doi": "10.6028/NIST.AI.600-1",
+      "authors": [
+        "National Institute of Standards and Technology"
+      ],
+      "use_for": "Specify an evaluation that checks generated citations against their sources and records failures before making a capability claim."
+    },
+    {
+      "id": "reference-oecd-ai-2019",
+      "title": "Recommendation of the Council on Artificial Intelligence: original 2019 text",
+      "type": "reference",
+      "description": "The original OECD recommendation presents values for responsible AI and policy directions for governments.",
+      "maturity": "Original 2019 instrument text; historical reference",
+      "topics": [
+        "AI governance",
+        "Accountability",
+        "Public policy"
+      ],
+      "limitation": "The inspected PDF reproduces the 2019 text. It is not represented as the current amended instrument or as a domestic compliance rule.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://oecd.ai/assets/files/OECD-LEGAL-0449-en.pdf",
+          "kind": "start"
+        },
+        {
+          "label": "Official instrument record; JavaScript required",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+          "kind": "context"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://oecd.ai/assets/files/OECD-LEGAL-0449-en.pdf",
+        "scope": "Official OECD-hosted PDF title, original adoption date (22 May 2019), principles and rights notice inspected. Adoption and file-publication dates are kept distinct."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "OECD, Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449 (original text adopted 22 May 2019; inspected 29 October 2026). https://oecd.ai/assets/files/OECD-LEGAL-0449-en.pdf",
+        "url": "https://oecd.ai/assets/files/OECD-LEGAL-0449-en.pdf"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://oecd.ai/assets/files/OECD-LEGAL-0449-en.pdf"
+      },
+      "related_item_ids": [
+        "reference-nist-ai-rmf-1"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": null,
+      "publisher": "Organisation for Economic Co-operation and Development",
+      "doi": null,
+      "authors": [
+        "Organisation for Economic Co-operation and Development"
+      ],
+      "use_for": "Trace the original accountability and transparency principles, then compare later official amendments before analysing present policy."
+    },
+    {
+      "id": "reference-w3c-prov-dm",
+      "title": "PROV-DM: The PROV Data Model",
+      "type": "reference",
+      "description": "A conceptual model for recording entities, activities, agents and their provenance relationships.",
+      "maturity": "W3C Recommendation dated 30 April 2013",
+      "topics": [
+        "Evidence",
+        "Provenance",
+        "Data models"
+      ],
+      "limitation": "A provenance record describes asserted lineage. It does not by itself establish the truth of a source or the quality of a decision.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/",
+        "scope": "Dated Recommendation, abstract, core concepts and relation structure inspected. No conformance assessment of the lab's software was performed."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "World Wide Web Consortium, PROV-DM: The PROV Data Model, W3C Recommendation (30 April 2013). https://www.w3.org/TR/2013/REC-prov-dm-20130430/",
+        "url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/"
+      },
+      "related_item_ids": [
+        "reference-w3c-prov-o",
+        "project-regnav",
+        "project-source-watch",
+        "project-tallystick"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2013-04-30",
+      "publisher": "World Wide Web Consortium",
+      "doi": null,
+      "authors": [
+        "World Wide Web Consortium"
+      ],
+      "use_for": "Sketch the lineage of one research claim from source capture through analysis to a revision, naming the responsible actors."
+    },
+    {
+      "id": "reference-w3c-prov-o",
+      "title": "PROV-O: The PROV Ontology",
+      "type": "reference",
+      "description": "The W3C ontology expresses PROV concepts using OWL 2 for representing and exchanging provenance information.",
+      "maturity": "W3C Recommendation dated 30 April 2013",
+      "topics": [
+        "Evidence",
+        "Provenance",
+        "Interoperability"
+      ],
+      "limitation": "This specification is a possible modelling reference; no implementation, interoperability or conformance by the lab's projects is claimed.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+        "scope": "Dated Recommendation, abstract, introduction and starting-point vocabulary inspected. The complete ontology and its constraints were not independently validated."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "World Wide Web Consortium, PROV-O: The PROV Ontology, W3C Recommendation (30 April 2013). https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+        "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+      },
+      "related_item_ids": [
+        "reference-w3c-prov-dm",
+        "project-regnav",
+        "project-tallystick"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2013-04-30",
+      "publisher": "World Wide Web Consortium",
+      "doi": null,
+      "authors": [
+        "World Wide Web Consortium"
+      ],
+      "use_for": "Compare a proposed evidence schema with standard provenance terms and identify relationships requiring an explicit mapping."
+    },
+    {
+      "id": "reference-w3c-vc-2",
+      "title": "Verifiable Credentials Data Model v2.0",
+      "type": "reference",
+      "description": "A data model for issuer claims exchanged through credentials and presentations, with security and privacy considerations.",
+      "maturity": "W3C Recommendation dated 15 May 2025",
+      "topics": [
+        "Credentials",
+        "Evidence",
+        "AI governance"
+      ],
+      "limitation": "Credential verification does not establish the truth of its claims or an issuer's accreditation. No credential service is implemented by adding this reference.",
+      "links": [
+        {
+          "label": "Official source",
+          "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:00:46Z",
+        "source_url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+        "scope": "Dated Recommendation, ecosystem overview, verification definition and trust-model discussion inspected. No implementation security audit was performed."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "World Wide Web Consortium, Verifiable Credentials Data Model v2.0, W3C Recommendation (15 May 2025). https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+        "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/"
+      },
+      "rights": {
+        "summary": "Link and bibliographic record; consult source terms for reuse. No source text is republished here.",
+        "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/"
+      },
+      "related_item_ids": [
+        "reference-w3c-prov-dm",
+        "reference-nist-ai-rmf-1"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-10-29T00:00:46Z",
+      "publication_date": "2025-05-15",
+      "publisher": "World Wide Web Consortium",
+      "doi": null,
+      "authors": [
+        "World Wide Web Consortium"
+      ],
+      "use_for": "Separate an issuer's assessment claim, the proof protecting a credential and the verifier's decision to trust that issuer."
+    }
+  ]
+}

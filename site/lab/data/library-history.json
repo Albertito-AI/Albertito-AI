@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "checked_at": "2026-10-29T00:04:41Z",
+      "status": "ok",
+      "changes": {
+        "added": [
+          "discovery-0775eb52220d1085d2d5",
+          "discovery-49b8705833070577976b",
+          "discovery-65b3522ef43d056dde46",
+          "discovery-742996f874e666b7f98e",
+          "discovery-e8d38a57331bb401bdb5",
+          "discovery-e9ad72781b8ddbe3e918",
+          "reference-ifrs-s1",
+          "reference-nist-ai-rmf-1",
+          "reference-nist-genai-profile",
+          "reference-oecd-ai-2019",
+          "reference-sgx-mainboard-711a",
+          "reference-sgx-mainboard-711b",
+          "reference-thai-sec-one-report",
+          "reference-w3c-prov-dm",
+          "reference-w3c-prov-o",
+          "reference-w3c-vc-2"
+        ],
+        "updated": [],
+        "flagged": [],
+        "rejected": {
+          "outside_topic": 204,
+          "unsupported_record_type": 13,
+          "missing_or_invalid_metadata": 5,
+          "daily_budget": 10
+        }
+      },
+      "total": 16,
+      "workflow_url": null
+    },
+    {
+      "checked_at": "2026-10-29T00:13:11Z",
+      "status": "ok",
+      "changes": {
+        "added": [
+          "discovery-0775eb52220d1085d2d5",
+          "discovery-1df0c670e0ed3e9719fc",
+          "discovery-4e20c2ce1b9a1b90853f",
+          "discovery-69fec69b89d05f80e9ee",
+          "discovery-742996f874e666b7f98e",
+          "discovery-7a03c22c13c263a027cf",
+          "discovery-9cece304eb03bef9e538",
+          "reference-ifrs-s1",
+          "reference-nist-ai-rmf-1",
+          "reference-nist-genai-profile",
+          "reference-oecd-ai-2019",
+          "reference-sgx-mainboard-711a",
+          "reference-sgx-mainboard-711b",
+          "reference-thai-sec-one-report",
+          "reference-w3c-prov-dm",
+          "reference-w3c-prov-o",
+          "reference-w3c-vc-2"
+        ],
+        "updated": [],
+        "flagged": [],
+        "superseded": [],
+        "rejected": {
+          "outside_topic": 433,
+          "unsupported_record_type": 15,
+          "update_notice": 4,
+          "missing_or_invalid_metadata": 5
+        }
+      },
+      "total": 17,
+      "workflow_url": null
+    }
+  ]
+}

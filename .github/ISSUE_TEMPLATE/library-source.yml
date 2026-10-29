@@ -1,0 +1,52 @@
+name: Suggest or correct a library source
+description: Propose a useful public source, report a correction, or explain a gap in a reading path.
+title: '[Library] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help someone answer a concrete research question. This form opens a public issue.
+        Include public links and concise original explanations. Do not upload private manuscripts,
+        client or student information, credentials, or copyrighted full text without permission.
+        A submission is a suggestion; it does not automatically enter the curated collection.
+  - type: dropdown
+    id: purpose
+    attributes:
+      label: What does this improve?
+      options:
+        - A useful new source
+        - A correction or changed source
+        - A broken or inaccessible link
+        - A practical reading path
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary source URL or DOI
+      description: Link to the issuer, publisher, authoritative repository, or original dataset.
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What specific question or task does this help with?
+      description: Explain who could use it and what they could actually do with it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source details and limits
+      description: Give the title, authors or issuer, date or version, useful page/section, and any limits or contrary evidence.
+    validations:
+      required: true
+  - type: input
+    id: existing
+    attributes:
+      label: Existing catalogue ID, if correcting an entry
+  - type: textarea
+    id: rights
+    attributes:
+      label: Access and reuse
+      description: Is the source publicly readable? Identify terms where known. Public access is not permission to copy its full text.

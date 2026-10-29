@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import argparse
 import base64
+from copy import deepcopy
+from datetime import datetime, timedelta, timezone
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -10,6 +12,7 @@ from pathlib import Path
 import re
 import tempfile
 import threading
+from urllib.parse import unquote
 
 from playwright.sync_api import sync_playwright, expect
 
@@ -49,6 +52,199 @@ def load_ready(page, url):
         "() => document.querySelector('#catalog-results')?.children.length > 0",
         timeout=30000,
     )
+    expect(page.locator("#lab-app")).to_have_attribute("aria-busy", "false", timeout=30000)
+
+
+def catalog_download(page):
+    with page.expect_download(timeout=10000) as event:
+        page.locator("#download-catalog-json").click()
+    return json.loads(Path(event.value.path()).read_text(encoding="utf-8"))
+
+
+def visible_catalog_ids(page):
+    return page.locator("#catalog-results .catalog-card").evaluate_all(
+        "cards => cards.map(card => card.dataset.itemId)"
+    )
+
+
+def expect_catalog_count(page, matched, total):
+    expect(page.locator("#catalog-count")).to_have_text(
+        re.compile(rf"^{matched} of {total} (?:entry|entries)(?: |\.)")
+    )
+
+
+def check_library_controls(page, catalog, library):
+    original = {item["id"]: item for item in catalog["items"]}
+    combined = dict(original)
+    for item in library["items"]:
+        combined.setdefault(item["id"], item)
+    total = len(combined)
+    require(library["schema_version"] == 1 and library["items"],
+            "The additional library contains actual published source records")
+    page.locator("#catalog-clear").click()
+    expect_catalog_count(page, total, total)
+    require("unavailable" not in page.locator("#library-health").inner_text().lower(),
+            "The additional library has loaded independently of the original catalog")
+    require(page.locator("#catalog-results .catalog-card").count() == min(12, total),
+            "The catalog renders a bounded first page of the combined records")
+    require(total > 12, "The actual combined collection exercises multiple result pages")
+    first_page_ids = set(visible_catalog_ids(page))
+    page.locator("#catalog-next").click()
+    expect(page.locator("#catalog-results")).to_be_focused()
+    require(set(visible_catalog_ids(page)) != first_page_ids,
+            "Next page changes the visible records and moves keyboard focus to the results")
+
+    exported = catalog_download(page)
+    exported_by_id = {item["id"]: item for item in exported["items"]}
+    require(set(exported_by_id) == set(combined)
+            and len(exported["items"]) == total
+            and first_page_ids <= set(exported_by_id),
+            "JSON exports all matching entries, including entries outside the visible second page")
+    require(exported["record_type"] == "filtered_library_metadata"
+            and exported["source_snapshot"]["library_generated_at"] == library["generated_at"]
+            and exported["source_snapshot"]["last_successful_refresh"] == library.get("last_successful_refresh"),
+            "The export distinguishes the snapshot rebuild from its last successful refresh")
+    for identifier, item in original.items():
+        require(exported_by_id[identifier]["title"] == item["title"]
+                and exported_by_id[identifier].get("citation") == item.get("citation"),
+                "The original title and citation survive the merge: " + identifier)
+    require(all("_fromLibrary" not in item for item in exported["items"]),
+            "Downloaded metadata excludes internal display fields")
+    with page.expect_download(timeout=10000) as bib_event:
+        page.locator("#download-catalog-bibtex").click()
+    bibliography = Path(bib_event.value.path()).read_text(encoding="utf-8")
+    citation_keys = re.findall(r"^@\w+\{([^,\n]+),", bibliography, flags=re.MULTILINE)
+    require(len(citation_keys) == total and len(set(citation_keys)) == total,
+            "BibTeX exports every match with a distinct citation key across pagination")
+    discoveries = [item for item in library["items"] if item.get("origin") == "crossref"]
+    require(discoveries, "Published metadata discoveries exercise publication citation links")
+    for item in discoveries:
+        citation_key = "lab-" + re.sub(r"[^a-zA-Z0-9_-]", "-", item["id"])
+        entry = next(block for block in bibliography.split("\n\n")
+                     if block.startswith("@misc{" + citation_key + ",\n"))
+        url_field = re.search(r"^  url = \{(.*)\},?$", entry, flags=re.MULTILINE)
+        require(url_field is not None, "A discovered publication exports a citation URL: " + item["id"])
+        citation_url = re.sub(r"\\([{}%&#_$])", r"\1", url_field.group(1))
+        citation_url = citation_url.replace(r"\textasciitilde{}", "~").replace(r"\textasciicircum{}", "^")
+        require(citation_url.startswith("https://doi.org/")
+                and unquote(citation_url.removeprefix("https://doi.org/")) == item["doi"],
+                "A discovered publication's BibTeX URL points to its DOI, not the registry API")
+
+    metadata = {item["id"] for item in library["items"] if item.get("review_status") == "metadata_only"}
+    inspected = {item["id"] for item in library["items"] if item.get("review_status") == "source_inspected"}
+    inspected.update(item["id"] for item in catalog["items"] if item.get("verification", {}).get("checked_at"))
+    require(metadata and inspected, "The published collection has both metadata and inspected-source records")
+    for review, expected_ids in (("metadata_only", metadata), ("source_inspected", inspected)):
+        page.select_option("#catalog-review", review)
+        expect_catalog_count(page, len(expected_ids), total)
+        expect(page.locator("#catalog-page")).to_have_text(re.compile(r"^Page 1 of "))
+        result = catalog_download(page)
+        require({item["id"] for item in result["items"]} == expected_ids
+                and all(item["review_status"] == review for item in result["items"]),
+                "Review-level filtering and export retain exactly the " + review + " records")
+    page.select_option("#catalog-review", "metadata_only")
+    first_metadata_id = visible_catalog_ids(page)[0]
+    metadata_card = page.locator(f'.catalog-card[data-item-id="{first_metadata_id}"]')
+    expect(metadata_card.locator(".item-review .label")).to_have_text("Metadata only")
+    metadata_card.locator("summary").click()
+    require("Source inspected:" not in metadata_card.inner_text()
+            and "full text has not been reviewed" in metadata_card.inner_text().lower(),
+            "A metadata retrieval is not presented as a source or full-text inspection")
+    selected = combined[first_metadata_id]
+    require(selected.get("publisher") and selected.get("authors") and selected.get("use_for"),
+            "Real discovery records supply publisher, author and intended-use metadata")
+    page.locator("#catalog-clear").click()
+    for term in (selected["publisher"], selected["authors"][0], selected["use_for"]):
+        page.locator("#catalog-search").fill(term)
+        require(first_metadata_id in {item["id"] for item in catalog_download(page)["items"]},
+                "A discovery record is searchable by its publisher, author or intended use")
+    page.locator("#catalog-clear").click()
+    topic = selected["topics"][0]
+    page.select_option("#catalog-topic", topic)
+    expected_topic = {identifier for identifier, item in combined.items() if topic in item.get("topics", [])}
+    expect_catalog_count(page, len(expected_topic), total)
+    require({item["id"] for item in catalog_download(page)["items"]} == expected_topic,
+            "The topic selector filters the actual source topics across both catalogs")
+    page.locator("#catalog-clear").click()
+    page.select_option("#catalog-type", "reference")
+    expected_references = {identifier for identifier, item in combined.items() if item.get("type") == "reference"}
+    expect_catalog_count(page, len(expected_references), total)
+    require(expected_references and {item["id"] for item in catalog_download(page)["items"]} == expected_references,
+            "References can be selected independently of projects and research publications")
+    page.locator("#catalog-clear").click()
+    page.select_option("#catalog-sort", "title")
+    require(page.locator("#catalog-results h3").evaluate_all("""headings => {
+        const titles = headings.map(heading => heading.textContent);
+        return titles.every((title, index) => index === 0 ||
+            titles[index - 1].localeCompare(title, 'en', {sensitivity: 'base'}) <= 0);
+    }"""), "Title ordering works on the visitor's visible results")
+    page.select_option("#catalog-sort", "publication")
+    dated = [item for item in combined.values() if item.get("publication_date")]
+    most_recent_publication = max(item["publication_date"] for item in dated)
+    require(combined[visible_catalog_ids(page)[0]].get("publication_date") == most_recent_publication,
+            "Publication ordering starts with the latest recorded publication date")
+    page.select_option("#catalog-sort", "recent")
+    page.locator("#catalog-clear").click()
+    require(page.locator('a[href$="docs/LIBRARY_READING_PATHS.md"]').count() == 1
+            and page.locator('a[href$="docs/LIBRARY_WORKFLOW.md"]').count() == 1
+            and page.locator('a[href$="template=library-source.yml"]').count() == 1,
+            "Reading paths, maintenance evidence and source suggestions are discoverable")
+
+
+def check_library_recovery(browser, url, catalog, library):
+    original_ids = {item["id"] for item in catalog["items"]}
+    combined_ids = original_ids | {item["id"] for item in library["items"]}
+    recovery = browser.new_context(accept_downloads=True)
+    recovery_page = recovery.new_page()
+    errors = []
+    recovery_page.on("pageerror", lambda error: errors.append(str(error)))
+    recovery_page.route("**/data/library.json*", lambda route: route.fulfill(
+        status=503, content_type="application/json", body='{"error":"fixture-unavailable"}'))
+    load_ready(recovery_page, url)
+    expect_catalog_count(recovery_page, len(original_ids), len(original_ids))
+    require(set(visible_catalog_ids(recovery_page)) <= original_ids
+            and len(visible_catalog_ids(recovery_page)) == min(12, len(original_ids))
+            and {item["id"] for item in catalog_download(recovery_page)["items"]} == original_ids,
+            "A failed library request preserves every original catalog entry")
+    require("unavailable" in recovery_page.locator("#library-health").inner_text().lower()
+            and "could not be loaded" in recovery_page.locator("#library-status-message").inner_text().lower(),
+            "A failed request has a visible recovery explanation and cannot claim a successful update")
+    expect(recovery_page.locator("#retry-library")).to_be_visible()
+    recovery_page.unroute("**/data/library.json*")
+    recovery_page.locator("#retry-library").click()
+    expect(recovery_page.locator("#library-retry")).to_be_hidden(timeout=30000)
+    expect_catalog_count(recovery_page, len(combined_ids), len(combined_ids))
+    require({item["id"] for item in catalog_download(recovery_page)["items"]} == combined_ids,
+            "Retry restores the complete merged library after the source record becomes available")
+    require(not errors, "Library failure and recovery cause no uncaught JavaScript errors")
+    recovery.close()
+
+    stale = deepcopy(library)
+    now = datetime.now(timezone.utc)
+    stale["generated_at"] = now.isoformat(timespec="seconds").replace("+00:00", "Z")
+    stale["last_successful_refresh"] = (now - timedelta(hours=72)).isoformat(timespec="seconds").replace("+00:00", "Z")
+    stale["status"] = "ok"
+    stale["refresh_mode"] = "curated_only"
+    require(stale.get("source_runs"), "The offline-rebuild fixture retains actual source-check records")
+    for index, source in enumerate(stale["source_runs"]):
+        source["checked_at"] = (now - timedelta(hours=96 + index)).isoformat(timespec="seconds").replace("+00:00", "Z")
+    stale["source_runs"][-1]["checked_at"] = stale["last_successful_refresh"]
+    stale_context = browser.new_context()
+    stale_page = stale_context.new_page()
+    stale_page.route("**/data/library.json*", lambda route: route.fulfill(
+        status=200, content_type="application/json", body=json.dumps(stale)))
+    load_ready(stale_page, url)
+    expect(stale_page.locator("#library-health")).to_have_attribute("data-state", "stale")
+    require("overdue" in stale_page.locator("#library-health").inner_text().lower()
+            and "48 hours" in stale_page.locator("#library-status-message").inner_text(),
+            "A saved ok status cannot mask a source refresh older than 48 hours")
+    attempt = stale_page.locator("#library-refresh-dates > div").filter(has_text="Latest source-update attempt").locator("dd").inner_text()
+    success = stale_page.locator("#library-refresh-dates > div").filter(has_text="Latest successful source update").locator("dd").inner_text()
+    rebuilt = stale_page.locator("#library-refresh-dates > div").filter(has_text="Snapshot rebuilt").locator("dd").inner_text()
+    require(attempt == success and attempt != rebuilt and "Not recorded" not in (attempt, success, rebuilt),
+            "An offline snapshot rebuild preserves the latest actual source-check date and older success date")
+    expect_catalog_count(stale_page, len(combined_ids), len(combined_ids))
+    stale_context.close()
 
 
 def check(url):
@@ -68,6 +264,7 @@ def check(url):
         print("LAB_INITIAL_PNG=" + base64.b64encode(page.screenshot()).decode("ascii"), flush=True)
         data = page.evaluate("async () => (await fetch('./data/regnav.json')).json()")
         catalog = page.evaluate("async () => (await fetch('./data/catalog.json')).json()")
+        library = page.evaluate("async () => (await fetch('./data/library.json')).json()")
         require(data["schema_version"] == 1 and data["receipts"] and data["scenarios"],
                 "The interface loads a real structured execution record")
         require(len({scenario["id"] for scenario in data["scenarios"]}) == len(data["scenarios"]),
@@ -214,6 +411,8 @@ def check(url):
         expect(page.locator("#download-review")).to_be_disabled()
         require(True, "Visitors can clear their saved practice note")
 
+        check_library_controls(page, catalog, library)
+
         page.locator("#catalog-search").fill("source watch")
         page.wait_for_timeout(250)
         results = page.locator("#catalog-results").inner_text()
@@ -252,6 +451,9 @@ def check(url):
         expect(page.locator("#catalog-search")).to_have_value("")
         expect(page.locator(f'.catalog-card[data-item-id="{related_id}"]')).to_be_focused()
         require(True, "A related-research route clears incompatible filters and moves keyboard focus")
+        related_page = re.match(r"Page (\d+) of (\d+)", page.locator("#catalog-page").inner_text())
+        require(related_page is not None and int(related_page.group(1)) > 1,
+                "Related-item navigation finds and focuses an entry beyond the first results page")
 
         intent_options = page.locator("#guide-intent option").evaluate_all("(items) => items.map(item => item.value)")
         require(len(intent_options) >= 3, "Sparks offers task-based guidance")
@@ -359,6 +561,7 @@ def check(url):
         require(fallback_page.locator("#scenario-select option").count() == len(data["scenarios"]),
                 "Try again restores all scenarios after the record becomes available")
         fallback.close()
+        check_library_recovery(browser, url, catalog, library)
         context.close()
         browser.close()
     print("RESEARCH_LAB_BROWSER_VERIFIED", flush=True)

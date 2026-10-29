@@ -14,15 +14,26 @@
     catalogSearch: $("catalog-search"), catalogType: $("catalog-type"),
     catalogResults: $("catalog-results"), catalogCount: $("catalog-count"),
     catalogDate: $("catalog-date"), catalogIntro: $("catalog-introduction"), catalogScope: $("catalog-scope"),
+    catalogTopic: $("catalog-topic"), catalogReview: $("catalog-review"), catalogSort: $("catalog-sort"),
+    catalogClear: $("catalog-clear"), catalogPagination: $("catalog-pagination"), catalogPage: $("catalog-page"),
+    catalogPrevious: $("catalog-previous"), catalogNext: $("catalog-next"),
+    downloadCatalogJson: $("download-catalog-json"), downloadCatalogBibtex: $("download-catalog-bibtex"),
+    libraryHealth: $("library-health"), libraryMessage: $("library-status-message"),
+    libraryDates: $("library-refresh-dates"), libraryCoverage: $("library-coverage"),
+    librarySources: $("library-source-runs"), libraryRetry: $("library-retry"), retryLibrary: $("retry-library"),
     guideIntent: $("guide-intent"), guideAnswer: $("guide-answer"),
     verification: $("verification-record"), downloadReceipts: $("download-receipts"),
     announcement: $("app-announcement")
   };
   var NOTE_STORAGE_KEY = "sparks-lab-review-notes-v1";
   var NOTE_STATUSES = ["no-decision", "follow-up-needed", "comment-recorded"];
+  var CATALOG_PAGE_SIZE = 12;
+  var LIBRARY_STALE_MS = 48 * 60 * 60 * 1000;
+  var REVIEW_LABELS = {source_inspected:"Source inspected",metadata_only:"Metadata only",needs_review:"Needs review"};
   var state = {
     replay: null, catalog: null, scenarioIndex: 0, claimId: null, sourceIndex: 0,
-    tab: "before", notes: Object.create(null), storageAvailable: true
+    tab: "before", notes: Object.create(null), storageAvailable: true,
+    library: null, libraryLoading: false, libraryLoadError: false, catalogPage: 1, filteredItems: []
   };
 
   function node(tag, text, className) {
@@ -35,6 +46,9 @@
     return typeof value === "string" && value.trim() ? value : (fallback || "");
   }
   function list(value) { return Array.isArray(value) ? value : []; }
+  function record(value) { return value && typeof value === "object" && !Array.isArray(value) ? value : {}; }
+  function stringList(value) { return list(value).filter(function (item) { return typeof item === "string" && item.trim(); }); }
+  function useFor(item) { return text(item.use_for) || stringList(item.use_for).join("; "); }
   function niceId(value) { return String(value || "").replace(/[-_]/g, " "); }
   function shortRevision(value) { return text(value).slice(0, 12); }
   function safeUrl(value) {
@@ -65,6 +79,20 @@
     var date = new Date(value);
     if (Number.isNaN(date.getTime())) return String(value);
     return date.toLocaleString("en-GB", {day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Singapore"}) + " SGT";
+  }
+  function timestamp(value) {
+    if (typeof value !== "string" || !value.trim()) return null;
+    var parsed = Date.parse(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+  function recordedDate(value) { return timestamp(value) === null ? "Not recorded" : dateLabel(value); }
+  function publicationLabel(value) {
+    value = text(value);
+    if (/^\d{4}$/.test(value)) return value;
+    if (/^\d{4}-\d{2}$/.test(value) && timestamp(value + "-01") !== null) {
+      return new Date(value + "-01T12:00:00Z").toLocaleDateString("en-GB",{month:"short",year:"numeric",timeZone:"UTC"});
+    }
+    return timestamp(value) === null ? value : dateLabel(value);
   }
   function jsonText(value) {
     try { return JSON.stringify(value, null, 2); } catch (_) { return String(value); }
@@ -256,19 +284,170 @@
       if (!Array.isArray(data.items)) throw new Error("The catalog has no item list");
       state.catalog = data;
       dom.catalogStatus.hidden = true;
-      dom.catalogDate.textContent = data.updated_at ? "Catalog checked " + dateLabel(data.updated_at) : "";
+      dom.catalogDate.textContent = data.updated_at ? "Original catalog updated " + dateLabel(data.updated_at) : "";
       if (text(data.introduction)) dom.catalogIntro.textContent = data.introduction;
       dom.catalogScope.textContent = text(data.scope_note);
       var links = data.links || {};
       setLink("feedback-link", links.feedback);
       setLink("evaluation-link", links.evaluation);
+      syncCatalogTopics();
       filterFromHash(false);
       renderCatalog();
       renderGuide();
+      renderLibraryStatus();
     } catch (error) {
       console.warn("Public catalog unavailable:", error);
       loadError(dom.catalogStatus, "public catalog", "catalog.json", loadCatalog);
+      renderCatalog();
+      renderLibraryStatus();
     }
+  }
+  async function loadLibrary() {
+    if (state.libraryLoading) return;
+    state.libraryLoading = true;
+    state.libraryLoadError = false;
+    renderLibraryStatus();
+    try {
+      var data = await fetchJson("data/library.json");
+      if (data.items !== undefined && !Array.isArray(data.items)) throw new Error("The library item list is invalid");
+      state.library = data;
+      syncCatalogTopics();
+      renderCatalog();
+    } catch (error) {
+      console.warn("Reference library unavailable:", error);
+      state.libraryLoadError = true;
+    } finally {
+      state.libraryLoading = false;
+      renderLibraryStatus();
+    }
+  }
+  function catalogEntries() {
+    var entries = [], seen = new Set();
+    function append(items, fromLibrary) {
+      list(items).forEach(function (item, index) {
+        if (!item || typeof item !== "object" || Array.isArray(item)) return;
+        var id = text(item.id, (fromLibrary ? "library" : "catalog") + "-entry-" + index);
+        if (seen.has(id)) return;
+        seen.add(id);
+        var type = ["project","research","teaching","reference"].includes(item.type) ? item.type : (fromLibrary ? "reference" : "unknown");
+        entries.push(Object.assign(Object.create(null), item, {id:id, type:type, _fromLibrary:fromLibrary}));
+      });
+    }
+    append(state.catalog && state.catalog.items, false);
+    append(state.library && state.library.items, true);
+    return entries;
+  }
+  function reviewStatusFor(item) {
+    if (Object.prototype.hasOwnProperty.call(REVIEW_LABELS, item.review_status)) return item.review_status;
+    if (!item._fromLibrary && record(item.verification).checked_at) return "source_inspected";
+    return "needs_review";
+  }
+  function syncCatalogTopics() {
+    var previous = dom.catalogTopic.value;
+    var topics = new Set();
+    catalogEntries().forEach(function (item) { stringList(item.topics).forEach(function (topic) { topics.add(topic); }); });
+    dom.catalogTopic.replaceChildren();
+    var all = node("option", "All topics");
+    all.value = "all";
+    dom.catalogTopic.appendChild(all);
+    Array.from(topics).sort(function (a,b) { return a.localeCompare(b,"en",{sensitivity:"base"}); }).forEach(function (topic) {
+      var option = node("option", topic);
+      option.value = topic;
+      dom.catalogTopic.appendChild(option);
+    });
+    dom.catalogTopic.value = topics.has(previous) ? previous : "all";
+  }
+  function renderLibraryStatus() {
+    var data = state.library || {};
+    var successTime = timestamp(data.last_successful_refresh);
+    var stale = successTime !== null && Date.now() - successTime > LIBRARY_STALE_MS;
+    var future = successTime !== null && successTime - Date.now() > 5 * 60 * 1000;
+    var label = "No update record", css = "label-plain";
+    var message = "No successful reference update is recorded. The original catalog remains available independently.";
+    if (state.libraryLoading) {
+      label = "Checking update record";
+      message = "Loading the additional reference library. Available catalog entries remain searchable.";
+    } else if (state.libraryLoadError) {
+      label = "Library update unavailable";
+      css = "label-red";
+      message = "The reference library could not be loaded. " + (state.library
+        ? "The previously loaded records remain available with their recorded dates."
+        : "The original catalog remains available when its separate record has loaded.") + " Try again or inspect the published data.";
+    } else if (state.library) {
+      if (data.status === "failed") {
+        label = "Latest update failed";
+        css = "label-red";
+        message = "The latest update did not succeed. Retained records remain searchable; their dates and source status are shown below.";
+      } else if (data.status === "degraded") {
+        label = "Some sources need attention";
+        css = "label-warm";
+        message = "Some source updates did not complete. Available records remain searchable; inspect the individual source results below.";
+      } else if (future) {
+        label = "Update date needs review";
+        css = "label-warm";
+        message = "The recorded success date is ahead of this browser's clock. Check the source history before treating the update as recent.";
+      } else if (stale) {
+        label = "Source update overdue";
+        css = "label-warm";
+        message = "The latest recorded successful source update is more than 48 hours old. The retained records are available, but current source coverage needs another check.";
+      } else if (data.status === "ok" && successTime !== null) {
+        label = "Last update succeeded";
+        css = "label-green";
+        message = "The recorded source update completed. Review labels show which entries received source inspection and which contain bibliographic metadata only.";
+      } else {
+        label = "Update status not established";
+        message = "Reference records are available, but a successful update date and status are not both recorded. Check the source history before relying on update recency.";
+      }
+      if (stale && data.status !== "ok") message += " The last recorded success is also more than 48 hours old.";
+    }
+    dom.libraryHealth.textContent = label;
+    dom.libraryHealth.className = "label " + css;
+    dom.libraryHealth.dataset.state = state.libraryLoadError ? "unavailable" : (stale ? "stale" : text(data.status,"unknown"));
+    dom.libraryMessage.textContent = message;
+    dom.libraryRetry.hidden = !state.libraryLoadError;
+    dom.retryLibrary.disabled = state.libraryLoading;
+    var entries = catalogEntries();
+    var inspectedDates = entries.filter(function (item) { return reviewStatusFor(item) === "source_inspected"; })
+      .map(function (item) { return record(item.verification).checked_at; })
+      .filter(function (value) { return timestamp(value) !== null; });
+    inspectedDates.sort(function (a,b) { return timestamp(b) - timestamp(a); });
+    var sourceAttemptDates = list(data.source_runs)
+      .map(function (source) { return record(source).checked_at; })
+      .filter(function (value) { return timestamp(value) !== null; });
+    sourceAttemptDates.sort(function (a,b) { return timestamp(b) - timestamp(a); });
+    dom.libraryDates.replaceChildren();
+    [
+      ["Latest source-update attempt", sourceAttemptDates[0]],
+      ["Latest successful source update", data.last_successful_refresh],
+      ["Snapshot rebuilt", data.generated_at],
+      ["Latest recorded curated inspection", inspectedDates[0]],
+      ["Original catalog updated", state.catalog && state.catalog.updated_at]
+    ].forEach(function (pair) {
+      var field = node("div");
+      field.append(node("dt",pair[0]),node("dd",recordedDate(pair[1])));
+      dom.libraryDates.appendChild(field);
+    });
+    var originalCount = entries.filter(function (item) { return !item._fromLibrary; }).length;
+    var referenceCount = entries.length - originalCount;
+    var metadataCount = entries.filter(function (item) { return item._fromLibrary && reviewStatusFor(item) === "metadata_only"; }).length;
+    dom.libraryCoverage.textContent = originalCount + " original catalog " + (originalCount === 1 ? "entry" : "entries") +
+      " · " + referenceCount + " added " + (referenceCount === 1 ? "reference" : "references") +
+      (metadataCount ? " · " + metadataCount + " with metadata only" : "") + ".";
+    dom.librarySources.replaceChildren();
+    list(data.source_runs).forEach(function (source) {
+      if (!source || typeof source !== "object" || Array.isArray(source)) return;
+      var row = node("li");
+      var runLabels = {ok:"Completed",success:"Completed",succeeded:"Completed",degraded:"Partial",partial:"Partial",failed:"Failed",error:"Failed",skipped:"Skipped"};
+      var runLabel = Object.prototype.hasOwnProperty.call(runLabels,source.status) ? runLabels[source.status] : "Status not recorded";
+      row.appendChild(node("strong",text(source.label,text(source.id,"Source")) + " · " + runLabel));
+      var parts = ["Checked: " + recordedDate(source.checked_at)];
+      if (Number.isInteger(source.discovered) && source.discovered >= 0) parts.push(source.discovered + " discovered");
+      if (Number.isInteger(source.accepted) && source.accepted >= 0) parts.push(source.accepted + " accepted");
+      row.appendChild(node("span",parts.join(" · "),"source-run-meta"));
+      if (text(source.error)) row.appendChild(node("span",source.error,"source-run-meta"));
+      dom.librarySources.appendChild(row);
+    });
+    if (!dom.librarySources.childNodes.length) dom.librarySources.appendChild(node("li","No individual source-update results are recorded."));
   }
 
   function setScenario(index, shouldAnnounce) {
@@ -488,25 +667,140 @@
     dom.panel.appendChild(receiptLink);
   }
 
-  function renderCatalog() {
-    if (!state.catalog) return;
+  function filteredCatalogEntries() {
     var query = dom.catalogSearch.value.trim().toLocaleLowerCase();
     var type = dom.catalogType.value;
-    var entries = list(state.catalog.items).filter(function (item) {
-      var haystack = [item.title,item.description,item.maturity].concat(list(item.topics)).join(" ").toLocaleLowerCase();
-      return (type === "all" || item.type === type) && (!query || haystack.includes(query));
+    var topic = dom.catalogTopic.value, review = dom.catalogReview.value;
+    var entries = catalogEntries().filter(function (item) {
+      var haystack = [text(item.title),text(item.description),text(item.maturity),text(item.publisher),
+        useFor(item),text(item.doi),text(record(item.citation).text)]
+        .concat(stringList(item.topics),stringList(item.authors)).join(" ").toLocaleLowerCase();
+      return (type === "all" || item.type === type) &&
+        (topic === "all" || stringList(item.topics).includes(topic)) &&
+        (review === "all" || reviewStatusFor(item) === review) && (!query || haystack.includes(query));
     });
+    var sort = dom.catalogSort.value;
+    return entries.sort(function (a,b) {
+      if (sort === "title") return text(a.title,a.id).localeCompare(text(b.title,b.id),"en",{sensitivity:"base"});
+      var left = timestamp(sort === "publication" ? a.publication_date : a.added_at);
+      var right = timestamp(sort === "publication" ? b.publication_date : b.added_at);
+      if (left === null && right === null) return 0;
+      if (left === null) return 1;
+      if (right === null) return -1;
+      return right - left;
+    });
+  }
+  function clearCatalogFilters() {
+    dom.catalogSearch.value = "";
+    dom.catalogType.value = "all";
+    dom.catalogTopic.value = "all";
+    dom.catalogReview.value = "all";
+    state.catalogPage = 1;
+  }
+  function filterCatalog() {
+    state.catalogPage = 1;
+    renderCatalog();
+  }
+  function changeCatalogPage(offset) {
+    state.catalogPage += offset;
+    renderCatalog();
+    dom.catalogResults.focus({preventScroll:true});
+    dom.catalogResults.scrollIntoView({behavior:"auto",block:"start"});
+    announce(dom.catalogCount.textContent);
+  }
+  function doiFor(item) {
+    var value = text(item.doi,text(record(item.citation).doi)).replace(/^https?:\/\/(?:dx\.)?doi\.org\//i,"").replace(/^doi:\s*/i,"").trim();
+    return /^10\.\d{4,9}\/[^\s]+$/i.test(value) ? value : "";
+  }
+  function primaryUrlFor(item) {
+    var citation = record(item.citation), verification = record(item.verification);
+    var source = list(item.links).find(function (entry) { return entry && entry.kind === "source" && safeUrl(entry.url); });
+    var first = list(item.links).find(function (entry) { return entry && safeUrl(entry.url); });
+    return safeUrl(item.url) || safeUrl(citation.url) ||
+      (doiFor(item) ? "https://doi.org/" + encodeURIComponent(doiFor(item)).replace(/%2F/gi,"/") : null) ||
+      safeUrl(source && source.url) || safeUrl(verification.source_url) || safeUrl(first && first.url);
+  }
+  function citationFor(item) {
+    var citation = record(item.citation);
+    if (citation.available && text(citation.text)) return citation;
+    if (!item._fromLibrary && item.type !== "reference") return citation;
+    var authors = stringList(item.authors).join("; ");
+    var parts = [authors,text(item.title,item.id),text(item.publisher),text(item.publication_date),primaryUrlFor(item)].filter(Boolean);
+    return {available:parts.length > 0,format:"text",text:parts.join(". "),url:primaryUrlFor(item),assembled:true};
+  }
+  function bibtexEscape(value) {
+    var escapes = {"\\":"\\textbackslash{}","{":"\\{","}":"\\}","%":"\\%","&":"\\&","#":"\\#","_":"\\_","$":"\\$","^":"\\textasciicircum{}","~":"\\textasciitilde{}"};
+    return String(value || "").replace(/[\u0000-\u001f\u007f]+/g," ").replace(/[\\{}%&#_$^~]/g,function (character) { return escapes[character]; });
+  }
+  function bibtexFor(items) {
+    var keys = new Set();
+    return items.map(function (item,index) {
+      var baseKey = "lab-" + String(item.id).replace(/[^a-zA-Z0-9_-]/g,"-");
+      var key = baseKey;
+      var suffix = index + 1;
+      while (keys.has(key)) key = baseKey + "-" + suffix++;
+      keys.add(key);
+      var fields = [["title",text(item.title,item.id)]];
+      var authors = stringList(item.authors);
+      if (authors.length) fields.push(["author",authors.join(" and ")]);
+      if (text(item.publisher)) fields.push(["publisher",item.publisher]);
+      var year = /^(\d{4})(?:-|$)/.exec(text(item.publication_date));
+      if (year) fields.push(["year",year[1]]);
+      if (doiFor(item)) fields.push(["doi",doiFor(item)]);
+      if (primaryUrlFor(item)) fields.push(["url",primaryUrlFor(item)]);
+      var notes = ["Review level: " + REVIEW_LABELS[reviewStatusFor(item)]];
+      if (useFor(item)) notes.push("Useful for: " + useFor(item));
+      if (!authors.length && text(record(item.citation).text)) notes.push("Recorded reference: " + item.citation.text);
+      fields.push(["note",notes.join(". ")]);
+      return "@misc{" + key + ",\n" + fields.map(function (field) { return "  " + field[0] + " = {" + bibtexEscape(field[1]) + "}"; }).join(",\n") + "\n}";
+    }).join("\n\n") + "\n";
+  }
+  function exportCatalog(format) {
+    var items = filteredCatalogEntries();
+    if (!items.length) return;
+    if (format === "bibtex") {
+      downloadContent(bibtexFor(items),"research-library-" + today() + ".bib","application/x-bibtex");
+    } else {
+      downloadJson({
+        schema_version:1,record_type:"filtered_library_metadata",exported_at:new Date().toISOString(),
+        notice:"Metadata and recorded review scope only. Review labels do not establish full-text or legal verification. Check sources and citation style before use.",
+        filters:{query:dom.catalogSearch.value.trim(),type:dom.catalogType.value,topic:dom.catalogTopic.value,review:dom.catalogReview.value,sort:dom.catalogSort.value},
+        source_snapshot:{catalog_updated_at:state.catalog && state.catalog.updated_at || null,library_generated_at:state.library && state.library.generated_at || null,last_successful_refresh:state.library && state.library.last_successful_refresh || null,library_status:state.libraryLoadError ? "unavailable" : (state.library && state.library.status || "unknown")},
+        items:items.map(function (item) {
+          var exported = Object.assign(Object.create(null),item,{review_status:reviewStatusFor(item)});
+          delete exported._fromLibrary;
+          return exported;
+        })
+      },"research-library-" + today() + ".json");
+    }
+    announce("Downloaded " + items.length + " matching catalog " + (items.length === 1 ? "entry" : "entries") + " as " + (format === "bibtex" ? "BibTeX" : "JSON") + ".");
+  }
+  function renderCatalog() {
+    if (!state.catalog && !state.library) return;
+    var entries = filteredCatalogEntries();
+    var allEntries = catalogEntries();
+    state.filteredItems = entries;
+    var totalPages = Math.max(1,Math.ceil(entries.length / CATALOG_PAGE_SIZE));
+    state.catalogPage = Math.max(1,Math.min(state.catalogPage,totalPages));
+    var start = (state.catalogPage - 1) * CATALOG_PAGE_SIZE;
+    var visibleEntries = entries.slice(start,start + CATALOG_PAGE_SIZE);
     dom.catalogResults.replaceChildren();
-    dom.catalogCount.textContent = entries.length + " " + (entries.length === 1 ? "entry" : "entries") +
-      (query ? ' matching “' + dom.catalogSearch.value.trim() + '”' : "") + ".";
+    dom.catalogCount.textContent = entries.length + " of " + allEntries.length + " " + (allEntries.length === 1 ? "entry" : "entries") +
+      (dom.catalogSearch.value.trim() ? ' matching “' + dom.catalogSearch.value.trim() + '”' : "") +
+      (entries.length ? " · showing " + (start + 1) + "–" + (start + visibleEntries.length) : "") + ".";
+    dom.downloadCatalogJson.disabled = entries.length === 0;
+    dom.downloadCatalogBibtex.disabled = entries.length === 0;
+    dom.catalogPagination.hidden = totalPages <= 1;
+    dom.catalogPrevious.disabled = state.catalogPage <= 1;
+    dom.catalogNext.disabled = state.catalogPage >= totalPages;
+    dom.catalogPage.textContent = "Page " + state.catalogPage + " of " + totalPages;
     if (!entries.length) {
       var empty = node("div", null, "empty-state");
       empty.appendChild(node("p", "No entries match this selection. Try a broader term or show all work."));
       var clear = node("button", "Clear filters", "button button-secondary");
       clear.type = "button";
       clear.addEventListener("click", function () {
-        dom.catalogSearch.value = "";
-        dom.catalogType.value = "all";
+        clearCatalogFilters();
         renderCatalog();
         dom.catalogSearch.focus();
       });
@@ -514,35 +808,50 @@
       dom.catalogResults.appendChild(empty);
       return;
     }
-    entries.forEach(function (item) {
+    visibleEntries.forEach(function (item) {
       var card = node("article", null, "catalog-card");
       card.dataset.itemId = String(item.id);
       card.tabIndex = -1;
       var top = node("div", null, "catalog-card-top");
-      top.appendChild(node("span", ({project:"Project",research:"Research",teaching:"Teaching"})[item.type] || "Public work", "item-type"));
+      top.appendChild(node("span", ({project:"Project",research:"Research",teaching:"Teaching",reference:"Reference"})[item.type] || "Public work", "item-type"));
       if (text(item.maturity)) top.appendChild(node("span", item.maturity, "label label-plain"));
       card.appendChild(top);
       card.appendChild(node("h3", text(item.title, item.id)));
+      if (stringList(item.authors).length) card.appendChild(node("p",stringList(item.authors).join("; "),"item-authors"));
+      var publication = [text(item.publisher),text(item.publication_date) ? "Published " + publicationLabel(item.publication_date) : ""].filter(Boolean);
+      if (publication.length) card.appendChild(node("p",publication.join(" · "),"item-publication"));
       card.appendChild(node("p", text(item.description), "item-description"));
-      if (list(item.topics).length) {
+      if (useFor(item)) card.appendChild(node("p","Useful for: " + useFor(item),"item-use-for"));
+      var reviewStatus = reviewStatusFor(item);
+      if (item._fromLibrary || text(item.review_status)) {
+        var reviewLine = node("div",null,"item-review");
+        reviewLine.appendChild(node("span",REVIEW_LABELS[reviewStatus],"label " + ({source_inspected:"label-green",metadata_only:"label-plain",needs_review:"label-warm"})[reviewStatus]));
+        reviewLine.appendChild(node("span",({source_inspected:"Read the inspection scope below before relying on this source.",metadata_only:"Bibliographic metadata only. The full text has not been reviewed for this entry.",needs_review:"Further review is needed before relying on this entry."})[reviewStatus]));
+        card.appendChild(reviewLine);
+      }
+      if (stringList(item.topics).length) {
         var topics = node("ul", null, "item-topics");
         topics.setAttribute("aria-label", "Topics");
-        list(item.topics).forEach(function (topic) { topics.appendChild(node("li", topic)); });
+        stringList(item.topics).forEach(function (topic) { topics.appendChild(node("li", topic)); });
         card.appendChild(topics);
       }
       var links = node("div", null, "item-links");
       list(item.links).forEach(function (entry) {
-        if (safeUrl(entry.url)) links.appendChild(link(text(entry.label,"Open source") + " ↗", entry.url));
+        if (entry && safeUrl(entry.url)) links.appendChild(link(text(entry.label,"Open source") + " ↗", entry.url));
       });
+      if (!links.childNodes.length && primaryUrlFor(item)) links.appendChild(link("Open source ↗",primaryUrlFor(item)));
       card.appendChild(links);
-      var verification = item.verification || {};
-      var rights = item.rights || {};
-      var citation = item.citation || {};
-      var contributions = list(state.catalog.contributions).filter(function (entry) { return entry.project_id === item.id; });
-      if (Object.keys(verification).length || Object.keys(rights).length || citation.available || text(item.limitation) || text(item.relationship_note) || list(item.related_item_ids).length || contributions.length) {
+      var verification = record(item.verification);
+      var rights = record(item.rights);
+      var citation = citationFor(item);
+      var contributions = list(state.catalog && state.catalog.contributions).filter(function (entry) { return entry && entry.project_id === item.id; });
+      if (item._fromLibrary || Object.keys(verification).length || Object.keys(rights).length || citation.available || text(item.limitation) || text(item.relationship_note) || list(item.related_item_ids).length || contributions.length) {
         var detail = node("details", null, "item-details");
         detail.appendChild(node("summary", "Source, scope and reuse"));
-        if (verification.checked_at) detail.appendChild(node("p", "Source inspected: " + dateLabel(verification.checked_at) + "."));
+        if (verification.checked_at) detail.appendChild(node("p", (reviewStatus === "source_inspected" ? "Source inspected: " : "Record checked: ") + recordedDate(verification.checked_at) + "."));
+        if (item.added_at) detail.appendChild(node("p","Added to this library: " + recordedDate(item.added_at) + "."));
+        if (item.origin === "crossref") detail.appendChild(node("p","Discovered through Crossref bibliographic metadata. Inclusion is not an endorsement or a full-text review."));
+        if (item.origin === "curated_reference") detail.appendChild(node("p","Curated reference. The recorded source scope describes what was inspected."));
         if (text(verification.scope)) detail.appendChild(node("p", verification.scope));
         if (text(item.limitation)) detail.appendChild(node("p", "Limitation: " + item.limitation));
         if (text(verification.revision)) {
@@ -558,6 +867,7 @@
         }
         if (citation.available && text(citation.text)) {
           var citationBox = node("div", null, "citation-box");
+          if (citation.assembled) citationBox.appendChild(node("p","Reference assembled from the recorded metadata. Check the source and your required citation style.","field-help"));
           citationBox.appendChild(node("pre", citation.text));
           var copy = node("button", "Copy citation", "button button-secondary");
           copy.type = "button";
@@ -578,14 +888,15 @@
         if (text(item.relationship_note)) detail.appendChild(node("p", item.relationship_note));
         var related = node("div", null, "item-links");
         list(item.related_item_ids).forEach(function (id) {
-          var target = list(state.catalog.items).find(function (entry) { return entry.id === id; });
+          var target = allEntries.find(function (entry) { return entry.id === id; });
           if (!target) return;
           var button = node("button", "Related: " + target.title, "button button-quiet");
           button.type = "button";
           button.dataset.relatedItemId = id;
           button.addEventListener("click", function () {
-            dom.catalogSearch.value = "";
-            dom.catalogType.value = "all";
+            clearCatalogFilters();
+            var targetIndex = filteredCatalogEntries().findIndex(function (entry) { return entry.id === id; });
+            state.catalogPage = Math.floor(Math.max(0,targetIndex) / CATALOG_PAGE_SIZE) + 1;
             renderCatalog();
             var targetCard = Array.from(dom.catalogResults.children).find(function (entry) { return entry.dataset.itemId === String(id); });
             if (targetCard) {
@@ -655,11 +966,14 @@
     }
   }
   function filterFromHash(shouldScroll) {
-    var map = {"#projects":"project","#research":"research","#teaching":"teaching"};
+    var map = {"#projects":"project","#research":"research","#teaching":"teaching","#references":"reference"};
     var type = map[window.location.hash];
     if (!type) return;
     dom.catalogType.value = type;
     dom.catalogSearch.value = "";
+    dom.catalogTopic.value = "all";
+    dom.catalogReview.value = "all";
+    state.catalogPage = 1;
     renderCatalog();
     if (shouldScroll) $("library").scrollIntoView({behavior:"auto",block:"start"});
   }
@@ -823,13 +1137,28 @@
     downloadJson(state.replay, "regnav-recorded-receipts-" + today() + ".json");
     announce("Downloaded the recorded example and execution receipts.");
   });
-  dom.catalogSearch.addEventListener("input", renderCatalog);
-  dom.catalogType.addEventListener("change", renderCatalog);
+  dom.catalogSearch.addEventListener("input", filterCatalog);
+  dom.catalogType.addEventListener("change", filterCatalog);
+  dom.catalogTopic.addEventListener("change", filterCatalog);
+  dom.catalogReview.addEventListener("change", filterCatalog);
+  dom.catalogSort.addEventListener("change", filterCatalog);
+  dom.catalogClear.addEventListener("click", function () {
+    clearCatalogFilters();
+    renderCatalog();
+    dom.catalogSearch.focus();
+    announce("Catalog filters cleared.");
+  });
+  dom.catalogPrevious.addEventListener("click", function () { changeCatalogPage(-1); });
+  dom.catalogNext.addEventListener("click", function () { changeCatalogPage(1); });
+  dom.downloadCatalogJson.addEventListener("click", function () { exportCatalog("json"); });
+  dom.downloadCatalogBibtex.addEventListener("click", function () { exportCatalog("bibtex"); });
+  dom.retryLibrary.addEventListener("click", loadLibrary);
   dom.guideIntent.addEventListener("change", renderGuide);
   window.addEventListener("hashchange", function () { filterFromHash(true); });
   readNotes();
   dom.app.setAttribute("aria-busy","true");
-  Promise.allSettled([loadReplay(),loadCatalog()]).then(function () {
+  Promise.allSettled([loadReplay(),loadCatalog(),loadLibrary()]).then(function () {
     dom.app.setAttribute("aria-busy","false");
   });
+  window.setInterval(renderLibraryStatus,60000);
 })();
