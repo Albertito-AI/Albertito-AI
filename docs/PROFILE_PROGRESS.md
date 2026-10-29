@@ -1,5 +1,26 @@
 # Profile change record
 
+## 29 October 2026: direct music and learning routes
+
+This change gives visitors an explicit route from the profile's opening
+navigation and the Research Lab to Bert Chan's existing YouTube channel.
+The lab offers separate links to the existing Original Music and Learning
+with Bert collections, alongside the whole-channel link. The invitation to
+subscribe leaves that choice with the viewer on YouTube.
+
+The collection URLs are retained from the profile at revision
+`6feee900c67544dc66191153f9b4843c9b3844e1`. The existing catalogue and its
+video-review labels remain the source records for individually indexed videos.
+This navigation change does not assess the recordings or establish audience
+growth. The static links also work without the catalogue's JavaScript.
+
+Local profile-integrity and static-anchor checks passed. The three outgoing
+URLs match the earlier published profile; their current playlist contents
+were not re-inspected for this navigation change.
+
+Implementation and review are AI-assisted. Publication and deployment are
+recorded by the associated pull request and existing Pages workflow.
+
 ## 29 October 2026: agent entry path and selected YouTube resources
 
 Albert requested help making his work known and useful within the AI agent
