@@ -28,6 +28,7 @@ adoption need separate evidence.
 | Find scholarship or source-checking teaching materials | [Catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library) | Source links, status, bibliographic records and related resources |
 | Explore an educational video | [Learning with Bert](https://www.alberttansinhon.com/listen-and-learn/) | Individual videos and collections; check each item's content-review and rights status |
 | Preserve captions and prepare a creator review | [One-video archive pilot](../examples/video-archive-pilot/README.md) | A local caption parser, synthetic example and measured result from one real video |
+| Check selected evidence in digital PDFs | [Research workflow pilot](../examples/research-workflow-pilot/README.md) | Two real source records, extraction comparisons, citation exports and a Pandoc report with retained corrections |
 
 The separate Source Watch Action and the gateway inside policykit have different
 interfaces and rights. The Action's licence does not cover the gateway.

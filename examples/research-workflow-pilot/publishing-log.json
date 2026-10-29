@@ -1,0 +1,33 @@
+{
+  "pandoc": "pandoc 3.1.3",
+  "commands": [
+    {
+      "command": [
+        "pandoc",
+        "report.md",
+        "--standalone",
+        "--citeproc",
+        "--bibliography=references.csl.json",
+        "--to=html5",
+        "--css=report.css",
+        "--embed-resources",
+        "--output=output/report.html"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pandoc",
+        "report.md",
+        "--standalone",
+        "--citeproc",
+        "--bibliography=references.csl.json",
+        "--pdf-engine=xelatex",
+        "--output=output/pdf/report.pdf"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ]
+}

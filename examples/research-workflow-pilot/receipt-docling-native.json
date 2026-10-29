@@ -1,0 +1,41 @@
+{
+  "engine": "docling-native",
+  "python": "3.12.14",
+  "platform": "Linux",
+  "supported_reproduction_environment": "Linux with Python 3.12; resource.ru_maxrss is reported in KiB on Linux",
+  "versions": {
+    "docling-slim": "2.144.0",
+    "docling-core": "2.105.0",
+    "docling-parse": "7.24.1",
+    "pdfplumber": "0.11.9"
+  },
+  "documents": [
+    {
+      "id": "sg-mti-advance-gdp-2024",
+      "source_sha256": "d2c0b07a1fe09dc22f15fb1cfb680aa28cbc2bf8c5e440c260b4cffa0882cb0a",
+      "pages": 4,
+      "text_cells": 204,
+      "structured_tables_emitted": 0,
+      "elapsed_seconds": 0.1354
+    },
+    {
+      "id": "th-bot-mpc-2025-1",
+      "source_sha256": "0bffa74beced7f5008d4522c93a0ff49fb139e03a35c0e0b1cbfe1794d9d6fc7",
+      "pages": 2,
+      "text_cells": 58,
+      "structured_tables_emitted": 0,
+      "elapsed_seconds": 0.2116
+    }
+  ],
+  "model_api_calls": 0,
+  "model_downloads": 0,
+  "network_attempts_blocked": [],
+  "process_peak_rss_kib": 190340,
+  "models_present": {
+    "torch": false,
+    "transformers": false,
+    "onnxruntime": false,
+    "rapidocr": false
+  },
+  "limitations": "Native text only. Docling native emits text cells with boxes, not inferred reading order, headings or tables. Extraction does not OCR scanned pages. Timing excludes imports/converter construction and is a single local run, not a performance benchmark."
+}

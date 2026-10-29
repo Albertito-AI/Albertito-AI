@@ -1,0 +1,1038 @@
+{
+  "reference_file": "reference_set.v2.json",
+  "reference_set_version": 2,
+  "reference_sha256": "294a2b6eb54545f1bd6dac79ca653b1799a8e2efb1394d638f815b2d48cef4bb",
+  "reference_count": 16,
+  "engines": {
+    "docling-native": {
+      "content_correct": 16,
+      "location_correct": 14,
+      "joint_correct": 14,
+      "rows": [
+        {
+          "id": "SG01",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Opening paragraph: six growth rates in reading order",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.17818,
+            0.83942,
+            0.28467
+          ],
+          "found_value": null,
+          "paragraph_word_count": 82
+        },
+        {
+          "id": "SG02",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Footnote: source months and revision qualification",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.86507,
+            0.87702,
+            0.95494
+          ],
+          "found_value": null,
+          "paragraph_word_count": 71
+        },
+        {
+          "id": "SG03",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year GDP, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.3",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.39097,
+            0.79624,
+            0.40738
+          ],
+          "found_value": "4.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG04",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Annual GDP, 2024 advance estimate",
+          "expected_page": 1,
+          "expected_value": "4.0",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.85078,
+            0.39097,
+            0.87698,
+            0.40738
+          ],
+          "found_value": "4.0",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG05",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year manufacturing, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77003,
+            0.45211,
+            0.79624,
+            0.46852
+          ],
+          "found_value": "4.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG06",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year construction, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "5.9",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.4824,
+            0.79624,
+            0.49881
+          ],
+          "found_value": "5.9",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG07",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly GDP, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "0.1",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.77134,
+            0.18888,
+            0.79755,
+            0.20529
+          ],
+          "found_value": "0.1",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG08",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly goods industries, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-1.3",
+          "content_correct": true,
+          "location_correct": false,
+          "joint_correct": false,
+          "found_page": 2,
+          "found_bbox": [
+            0.41198,
+            0.21974,
+            0.79745,
+            0.23615
+          ],
+          "found_value": "-1.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG09",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly manufacturing, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-2.5",
+          "content_correct": true,
+          "location_correct": false,
+          "joint_correct": false,
+          "found_page": 2,
+          "found_bbox": [
+            0.41198,
+            0.25002,
+            0.79745,
+            0.26643
+          ],
+          "found_value": "-2.5",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG10",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly trade/transport group, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-0.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.69948,
+            0.35328,
+            0.79746,
+            0.36969
+          ],
+          "found_value": "-0.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "TH01",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Opening paragraph: meeting date",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.18072,
+            0.89077,
+            0.22668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 22
+        },
+        {
+          "id": "TH02",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Decision paragraph: vote, cut and old/new policy rates",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.24557,
+            0.89131,
+            0.31694
+          ],
+          "found_value": null,
+          "paragraph_word_count": 30
+        },
+        {
+          "id": "TH03",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Inflation paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.10161,
+            0.8915,
+            0.29938
+          ],
+          "found_value": null,
+          "paragraph_word_count": 97
+        },
+        {
+          "id": "TH04",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Financial conditions paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.31815,
+            0.89154,
+            0.56668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 119
+        },
+        {
+          "id": "TH05",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Framework paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.58542,
+            0.89155,
+            0.75799
+          ],
+          "found_value": null,
+          "paragraph_word_count": 76
+        },
+        {
+          "id": "TH06",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Issued date near signature",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.56633,
+            0.81308,
+            0.70691,
+            0.83382
+          ],
+          "found_value": null,
+          "paragraph_word_count": 3
+        }
+      ]
+    },
+    "pdfplumber": {
+      "content_correct": 16,
+      "location_correct": 16,
+      "joint_correct": 16,
+      "rows": [
+        {
+          "id": "SG01",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Opening paragraph: six growth rates in reading order",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.17926,
+            0.83942,
+            0.28467
+          ],
+          "found_value": null,
+          "paragraph_word_count": 80
+        },
+        {
+          "id": "SG02",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Footnote: source months and revision qualification",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.86589,
+            0.87702,
+            0.95494
+          ],
+          "found_value": null,
+          "paragraph_word_count": 71
+        },
+        {
+          "id": "SG03",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year GDP, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.3",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.39256,
+            0.79624,
+            0.40738
+          ],
+          "found_value": "4.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG04",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Annual GDP, 2024 advance estimate",
+          "expected_page": 1,
+          "expected_value": "4.0",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.85078,
+            0.39256,
+            0.87698,
+            0.40738
+          ],
+          "found_value": "4.0",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG05",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year manufacturing, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77003,
+            0.4537,
+            0.79624,
+            0.46852
+          ],
+          "found_value": "4.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG06",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year construction, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "5.9",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.48399,
+            0.79624,
+            0.49881
+          ],
+          "found_value": "5.9",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG07",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly GDP, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "0.1",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.77134,
+            0.19047,
+            0.79755,
+            0.20529
+          ],
+          "found_value": "0.1",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG08",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly goods industries, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-1.3",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.22132,
+            0.79745,
+            0.23615
+          ],
+          "found_value": "-1.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG09",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly manufacturing, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-2.5",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.25161,
+            0.79745,
+            0.26643
+          ],
+          "found_value": "-2.5",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG10",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly trade/transport group, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-0.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.35486,
+            0.79746,
+            0.36969
+          ],
+          "found_value": "-0.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "TH01",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Opening paragraph: meeting date",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.1825,
+            0.89077,
+            0.22668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 22
+        },
+        {
+          "id": "TH02",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Decision paragraph: vote, cut and old/new policy rates",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.24735,
+            0.89131,
+            0.31694
+          ],
+          "found_value": null,
+          "paragraph_word_count": 30
+        },
+        {
+          "id": "TH03",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Inflation paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.10339,
+            0.8915,
+            0.29938
+          ],
+          "found_value": null,
+          "paragraph_word_count": 97
+        },
+        {
+          "id": "TH04",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Financial conditions paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.31994,
+            0.89154,
+            0.56668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 119
+        },
+        {
+          "id": "TH05",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Framework paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.58721,
+            0.89155,
+            0.75799
+          ],
+          "found_value": null,
+          "paragraph_word_count": 76
+        },
+        {
+          "id": "TH06",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Issued date near signature",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.56633,
+            0.81486,
+            0.70691,
+            0.83382
+          ],
+          "found_value": null,
+          "paragraph_word_count": 3
+        }
+      ]
+    },
+    "docling-plus-word-grounding": {
+      "content_correct": 16,
+      "location_correct": 16,
+      "joint_correct": 16,
+      "rows": [
+        {
+          "id": "SG01",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Opening paragraph: six growth rates in reading order",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.17818,
+            0.83942,
+            0.28467
+          ],
+          "found_value": null,
+          "paragraph_word_count": 82
+        },
+        {
+          "id": "SG02",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "paragraph",
+          "description": "Footnote: source months and revision qualification",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.1512,
+            0.86507,
+            0.87702,
+            0.95494
+          ],
+          "found_value": null,
+          "paragraph_word_count": 71
+        },
+        {
+          "id": "SG03",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year GDP, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.3",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.39256,
+            0.79624,
+            0.40738
+          ],
+          "found_value": "4.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG04",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Annual GDP, 2024 advance estimate",
+          "expected_page": 1,
+          "expected_value": "4.0",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.85078,
+            0.39256,
+            0.87698,
+            0.40738
+          ],
+          "found_value": "4.0",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG05",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year manufacturing, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "4.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77003,
+            0.4537,
+            0.79624,
+            0.46852
+          ],
+          "found_value": "4.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG06",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Year-on-year construction, fourth quarter 2024",
+          "expected_page": 1,
+          "expected_value": "5.9",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.77004,
+            0.48399,
+            0.79624,
+            0.49881
+          ],
+          "found_value": "5.9",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG07",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly GDP, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "0.1",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.77134,
+            0.19047,
+            0.79755,
+            0.20529
+          ],
+          "found_value": "0.1",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG08",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly goods industries, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-1.3",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.22132,
+            0.79745,
+            0.23615
+          ],
+          "found_value": "-1.3",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG09",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly manufacturing, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-2.5",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.25161,
+            0.79745,
+            0.26643
+          ],
+          "found_value": "-2.5",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "SG10",
+          "source": "sg-mti-advance-gdp-2024",
+          "kind": "table_cell",
+          "description": "Seasonally adjusted quarterly trade/transport group, fourth quarter 2024",
+          "expected_page": 2,
+          "expected_value": "-0.2",
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.76429,
+            0.35486,
+            0.79746,
+            0.36969
+          ],
+          "found_value": "-0.2",
+          "paragraph_word_count": null
+        },
+        {
+          "id": "TH01",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Opening paragraph: meeting date",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.18072,
+            0.89077,
+            0.22668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 22
+        },
+        {
+          "id": "TH02",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Decision paragraph: vote, cut and old/new policy rates",
+          "expected_page": 1,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 1,
+          "found_bbox": [
+            0.14296,
+            0.24557,
+            0.89131,
+            0.31694
+          ],
+          "found_value": null,
+          "paragraph_word_count": 30
+        },
+        {
+          "id": "TH03",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Inflation paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.10161,
+            0.8915,
+            0.29938
+          ],
+          "found_value": null,
+          "paragraph_word_count": 97
+        },
+        {
+          "id": "TH04",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Financial conditions paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.31815,
+            0.89154,
+            0.56668
+          ],
+          "found_value": null,
+          "paragraph_word_count": 119
+        },
+        {
+          "id": "TH05",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Framework paragraph: selected semantic cues",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.14296,
+            0.58542,
+            0.89155,
+            0.75799
+          ],
+          "found_value": null,
+          "paragraph_word_count": 76
+        },
+        {
+          "id": "TH06",
+          "source": "th-bot-mpc-2025-1",
+          "kind": "paragraph",
+          "description": "Issued date near signature",
+          "expected_page": 2,
+          "expected_value": null,
+          "content_correct": true,
+          "location_correct": true,
+          "joint_correct": true,
+          "found_page": 2,
+          "found_bbox": [
+            0.56633,
+            0.81308,
+            0.70691,
+            0.83382
+          ],
+          "found_value": null,
+          "paragraph_word_count": 3
+        }
+      ]
+    }
+  },
+  "negative_controls": [
+    {
+      "name": "wrong_number",
+      "reference": "SG03",
+      "rejected": true,
+      "content_correct": false,
+      "location_correct": true,
+      "joint_correct": false
+    },
+    {
+      "name": "wrong_page",
+      "reference": "TH03",
+      "rejected": true,
+      "content_correct": true,
+      "location_correct": false,
+      "joint_correct": false
+    },
+    {
+      "name": "wrong_cell_region",
+      "reference": "SG03",
+      "rejected": true,
+      "content_correct": true,
+      "location_correct": false,
+      "joint_correct": false
+    }
+  ],
+  "structural_date_controls": [
+    {
+      "name": "changed_input_date",
+      "passed": true,
+      "original_target_content_correct": false,
+      "note": "Synthetic date returned after changing the input date and rejected by the original content target; no expected date supplied to locator."
+    },
+    {
+      "name": "missing_corporate_signature",
+      "passed": true,
+      "note": "Date lookup rejected when the signature anchor was removed."
+    }
+  ],
+  "method_limits": [
+    "16 selected references; manually annotated and evaluated by the same assistant, not a blinded held-out benchmark.",
+    "Location means correct physical PDF page and prediction center inside the manually drawn region; it does not measure exact bounding-box overlap.",
+    "Paragraph content means selected ordered tokens/cues, not complete transcription or semantic equivalence.",
+    "Table-cell retrieval uses an original deterministic row/column locator above native text cells; Docling native itself emitted zero structured tables.",
+    "Only digital PDFs with native text were tested; no scanned pages or Thai-language body text were evaluated.",
+    "V1 TH06 embedded the expected date in its selector. V2 replaces it with a structural date-after-signature selector after independent review. This post-outcome correction is recorded; original v1 targets/results are preserved. V2 was not frozen before all observation.",
+    "Both the earlier date-line grouping fix and v2 semantic-selector correction were developed after outcomes. This is a development-set result, not held-out performance.",
+    "The hybrid uses Docling values and pdfplumber word boxes. It must not be described as Docling-only location accuracy."
+  ]
+}

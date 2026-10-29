@@ -1,0 +1,47 @@
+{
+  "purpose": "Explicit inclusion list for the public repository example. No recursive copying of this directory.",
+  "repository_files": [
+    ".gitignore",
+    "README.md",
+    "SOURCE_NOTICES.md",
+    "fetch_sources.py",
+    "extract.py",
+    "evaluate.py",
+    "build_report.py",
+    "validate.py",
+    "requirements.txt",
+    "reference_set.json",
+    "reference_set.sha256",
+    "sources.json",
+    "references.csl.json",
+    "references.bib",
+    "results-first-pass.json",
+    "results.json",
+    "receipt-docling-native.json",
+    "receipt-pdfplumber.json",
+    "publishing-log.json",
+    "report.md",
+    "report.css",
+    "output/report.html",
+    "public-allowlist.json",
+    "validation.json",
+    "review-notes.json",
+    "reference_set.v2.json",
+    "reference_set.v2.sha256",
+    "results-v1-final.json",
+    "EVALUATION_HISTORY.md"
+  ],
+  "local_preview_files": [
+    "output/pdf/report.pdf"
+  ],
+  "excluded": [
+    "tmp/**",
+    "__pycache__/**",
+    "*.pyc",
+    "all third-party source PDFs",
+    "all full source-text extractions",
+    "all source-page images",
+    "all installed dependency files"
+  ],
+  "licensing_note": "No new project-wide licence. Third-party sources and software retain their own terms. The preview PDF is the original pilot report, not either input document."
+}

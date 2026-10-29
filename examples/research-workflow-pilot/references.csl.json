@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sg-mti-advance-gdp-2024",
+    "type": "report",
+    "title": "Singapore’s GDP Grew by 4.3 Per Cent in the Fourth Quarter of 2024 and by 4.0 Per Cent in 2024",
+    "author": [
+      {
+        "literal": "Ministry of Trade and Industry, Singapore"
+      }
+    ],
+    "publisher": "Ministry of Trade and Industry, Singapore",
+    "genre": "Press release",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          2
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          29
+        ]
+      ]
+    },
+    "URL": "https://www.meti.gov.sg/newsroom/singapore-s-gdp-grew-by-4-3-per-cent-in-the-fourth-quarter-of-2024-and-by-4-0-per-cent-in-2024/",
+    "language": "en"
+  },
+  {
+    "id": "th-bot-mpc-2025-1",
+    "type": "report",
+    "title": "Monetary Policy Committee’s Decision 1/2025",
+    "author": [
+      {
+        "literal": "Bank of Thailand"
+      }
+    ],
+    "publisher": "Bank of Thailand",
+    "genre": "Press release",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          26
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          29
+        ]
+      ]
+    },
+    "URL": "https://www.bot.or.th/en/news-and-media/news/news-20250226.html",
+    "language": "en",
+    "number": "6/2025"
+  }
+]

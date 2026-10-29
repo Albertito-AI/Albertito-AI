@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Prepared for Albert Tan Sin Hon; AI-assisted pilot" />
+  <meta name="dcterms.date" content="2026-10-29" />
+  <title>Two-document research pilot</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+}
+.hanging-indent div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+} </style>
+  <style type="text/css">body { max-width: 850px; margin: 2.5rem auto; padding: 0 1.5rem; color: #18313d; font-family: system-ui, sans-serif; line-height: 1.6; background: #fff; }
+h1, h2 { color: #143b4f; line-height: 1.2; }
+h1 { font-size: 2.2rem; }
+h2 { margin-top: 2rem; border-bottom: 1px solid #b9cbd3; padding-bottom: .35rem; }
+.subtitle { font-size: 1.15rem; color: #526c79; }
+table { border-collapse: collapse; width: 100%; margin: 1.3rem 0; }
+th, td { padding: .65rem; border-bottom: 1px solid #cad6db; text-align: left; }
+th { background: #e9f0f3; }
+a { color: #075d8d; overflow-wrap: anywhere; }
+code { font-size: .9em; overflow-wrap: anywhere; }
+.csl-entry { margin: .8rem 0; }
+@media print { body { margin: 0; max-width: none; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Two-document research pilot</h1>
+<p class="subtitle">Native PDF extraction, source grounding and citation
+publishing</p>
+<p class="author">Prepared for Albert Tan Sin Hon; AI-assisted pilot</p>
+<p class="date">29 October 2026</p>
+</header>
+<h2 id="result">Result</h2>
+<p>A working local workflow processed two official public PDFs,
+preserved source identifiers, exported citation data and published this
+report with Pandoc. The combined Docling and pdfplumber workflow passed
+<strong>16 of 16 selected content and location checks</strong>. Docling
+native alone recovered all selected content but passed 14 of 16 location
+checks. These are development-set results on six pages, not a general
+document-accuracy benchmark.</p>
+<h2 id="sources-and-historical-context">Sources and historical
+context</h2>
+<p>The Singapore release is an advance GDP estimate issued on 2 January
+2025. The Thai release records a monetary-policy decision issued on 26
+February 2025. Their figures are historical statements, not current
+economic estimates or today’s interest rate. <span class="citation" data-cites="sg-mti-advance-gdp-2024 th-bot-mpc-2025-1">(<a href="#ref-sg-mti-advance-gdp-2024" role="doc-biblioref">Ministry of
+Trade and Industry, Singapore 2025</a>; <a href="#ref-th-bot-mpc-2025-1" role="doc-biblioref">Bank of Thailand 2025</a>)</span></p>
+<ul>
+<li><strong>Ministry of Trade and Industry, Singapore</strong>: 4 PDF
+pages; issued 2025-01-02; source SHA-256 starts
+<code>d2c0b07a1fe09dc2</code>.</li>
+<li><strong>Bank of Thailand</strong>: 2 PDF pages; issued 2025-02-26;
+source SHA-256 starts <code>0bffa74beced7f50</code>.</li>
+</ul>
+<p>The original Singapore document names the Ministry of Trade and
+Industry. Its official landing page has since migrated to the METI
+domain; the citation retains the original issuing author. Full URLs,
+download timestamps, byte sizes and SHA-256 hashes are recorded in
+<code>sources.json</code>.</p>
+<h2 id="measured-results">Measured results</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Extraction and grounding route</th>
+<th style="text-align: right;">Content</th>
+<th style="text-align: right;">Location</th>
+<th style="text-align: right;">Both</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Docling native</td>
+<td style="text-align: right;">16/16</td>
+<td style="text-align: right;">14/16</td>
+<td style="text-align: right;">14/16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pdfplumber</td>
+<td style="text-align: right;">16/16</td>
+<td style="text-align: right;">16/16</td>
+<td style="text-align: right;">16/16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Docling + word boxes</td>
+<td style="text-align: right;">16/16</td>
+<td style="text-align: right;">16/16</td>
+<td style="text-align: right;">16/16</td>
+</tr>
+</tbody>
+</table>
+<p>The reference set contains eight selected table cells and eight
+paragraph or date regions. V1 targets were manually defined from
+rendered source pages and frozen before evaluation. After reviewing the
+outcomes, v2 replaced one answer-bearing date selector with a structural
+lookup. Both versions and hashes are preserved; <strong>v2 was not
+frozen before all observation</strong>.</p>
+<p><strong>Content</strong> means exact selected table values or ordered
+paragraph tokens/cues. It does not mean complete transcription or
+semantic equivalence. <strong>Location</strong> means the correct
+physical PDF page and the returned box’s centre inside the manually
+marked region. It does not measure exact box overlap. Semantic locators
+receive v2 row/column labels, paragraph cues or a corporate-signature
+role, without the expected target values, pages or boxes.</p>
+<h2 id="what-the-pilot-exposed">What the pilot exposed</h2>
+<p>Docling’s native pipeline merged several adjacent numeric cells into
+one text box for references SG08 and SG09. The correct values were
+present, but their boxes were too broad to satisfy the selected-cell
+location check. The combined route retains Docling’s value and finds a
+unique matching pdfplumber word inside the original box. An ambiguous
+match is rejected.</p>
+<p>The first pass scored <strong>13/16</strong> jointly for Docling and
+<strong>15/16</strong> for pdfplumber. Both routes initially merged the
+Thai issued-date line with nearby contact information. A generic
+standalone-date rule corrected that locator. Original results remain in
+<code>results-first-pass.json</code>, and the earlier corrected v1
+results remain in <code>results-v1-final.json</code>.</p>
+<p>An independent code review then found that TH06’s v1 selector
+contained the very date being tested, making that content check
+answer-bearing. V2 locates a generic standalone date immediately after
+the issuing organisation’s signature. It contains no target date, page
+or coordinates. The expected targets remain unchanged, but the selector
+was revised after outcomes. A synthetic changed-date check confirms that
+the locator returns the new input date; removing the signature correctly
+makes the lookup fail. See <code>EVALUATION_HISTORY.md</code>. All
+corrections were developed on this same small set; the final numbers are
+not held-out performance.</p>
+<p>Three negative controls substituted a wrong number, wrong page and
+wrong cell region. All were rejected. This checks that the evaluator
+distinguishes content recovery from source-location correctness.</p>
+<h2 id="tools-spending-and-boundaries">Tools, spending and
+boundaries</h2>
+<p>The pilot ran on <strong>Linux with Python 3.12</strong>. The
+executed parser was <strong>docling-slim 2.144.0</strong>, using
+NativePdfPipeline with docling-parse 7.24.1 and docling-core 2.105.0.
+Its native mode uses no OCR, layout or table model. It emitted zero
+structured tables; table lookup was performed by this pilot’s original
+deterministic code. The pdfplumber baseline was also run. The native
+option is described in the <a href="https://docling-project.github.io/docling/usage/advanced_options/#extract-the-native-content-of-a-pdf">official
+Docling documentation</a>.</p>
+<p>No model API calls, AI-model downloads, paid services, subscriptions
+or private GitHub Actions were used. Source retrieval and isolated
+package installation used network access; extraction ran with network
+access blocked by an audit hook. Existing local compute was used. This
+does not establish zero operating cost for future unattended
+hosting.</p>
+<p><code>references.csl.json</code> and <code>references.bib</code>
+contain two source records in standard citation formats. Pandoc actually
+consumed the CSL JSON via citeproc. These are <strong>Zotero-compatible
+exports</strong>; Zotero application import, account integration and
+cloud sync were not performed. Pandoc 3.1.3 produced this PDF and a
+standalone HTML report. Full source PDFs, page images and full
+extraction text are excluded from the public package.</p>
+<h2 id="practical-conclusion">Practical conclusion</h2>
+<p>The small workflow is useful for reproducible, source-linked notes
+from digital PDFs. On these references, pdfplumber alone was sufficient;
+the test provides no evidence that adding Docling improves accuracy.
+Docling supplies a common document representation, while fine location
+claims still require checking. Before wider adoption, test unseen
+documents, scanned pages and Thai-language body text. A single assistant
+annotated and evaluated this pilot; no independent annotation or
+statistical confidence estimate is claimed.</p>
+<h2 id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-th-bot-mpc-2025-1" class="csl-entry" role="listitem">
+Bank of Thailand. 2025. <span>“Monetary Policy Committee’s Decision
+1/2025.”</span> Press release 6/2025. Bank of Thailand. <a href="https://www.bot.or.th/en/news-and-media/news/news-20250226.html">https://www.bot.or.th/en/news-and-media/news/news-20250226.html</a>.
+</div>
+<div id="ref-sg-mti-advance-gdp-2024" class="csl-entry" role="listitem">
+Ministry of Trade and Industry, Singapore. 2025. <span>“Singapore’s GDP
+Grew by 4.3 Per Cent in the Fourth Quarter of 2024 and by 4.0 Per Cent
+in 2024.”</span> Press release. Ministry of Trade and Industry,
+Singapore. <a href="https://www.meti.gov.sg/newsroom/singapore-s-gdp-grew-by-4-3-per-cent-in-the-fourth-quarter-of-2024-and-by-4-0-per-cent-in-2024/">https://www.meti.gov.sg/newsroom/singapore-s-gdp-grew-by-4-3-per-cent-in-the-fourth-quarter-of-2024-and-by-4-0-per-cent-in-2024/</a>.
+</div>
+</div>
+</body>
+</html>
