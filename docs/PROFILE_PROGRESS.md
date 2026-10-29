@@ -1,5 +1,28 @@
 # Profile change record
 
+## 29 October 2026: source-linked research workflow pilot
+
+The [two-document example](../examples/research-workflow-pilot/README.md) records
+actual native Docling and pdfplumber extraction, selected page/region checks,
+CSL JSON and BibTeX exports, and Pandoc publishing. The six-page corpus consists
+of two official historical releases. Source hashes, expected annotations and
+method limitations are retained; full third-party PDFs and extracted text are
+excluded from the public example.
+
+The final development comparison recovered all sixteen selected content items.
+Docling native passed fourteen location checks; pdfplumber and the combined
+word-grounding route passed sixteen. A separate agent found a date selector
+that contained its expected answer. The original reference version and results
+remain available, and the corrected structural selector is explicitly marked
+as a post-outcome revision. Changed-date and missing-signature checks verify the
+specific correction. These results are not a held-out accuracy benchmark.
+
+The artifact validator passed sixty-four checks. The two-page report was
+rendered and visually inspected. Implementation and separate review are
+AI-assisted; the associated PR records repository validation and delivery.
+No Zotero application integration, paid model call or automated publishing
+service was established.
+
 ## 29 October 2026: reusable video-caption ingestion pilot
 
 The [one-video archive example](../examples/video-archive-pilot/README.md) turns

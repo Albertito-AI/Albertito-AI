@@ -1,0 +1,29 @@
+{
+  "review_date": "2026-10-29",
+  "reviewer": "Assistant performing this pilot; no independent second annotation claimed",
+  "source_visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "pages_reviewed": {
+      "sg-mti-advance-gdp-2024": [
+        1,
+        2
+      ],
+      "th-bot-mpc-2025-1": [
+        1,
+        2
+      ]
+    },
+    "reference_definition": "V1 values and expected regions were manually annotated before evaluation; v2 preserves those targets but revises TH06 selector after independent review."
+  },
+  "output_visual_review": {
+    "file": "output/pdf/report.pdf",
+    "pages_reviewed": [
+      1,
+      2
+    ],
+    "result": "V2 PDF pages 1 and 2 rendered and inspected: legible title/Albert attribution, results table, explicit post-outcome correction, Linux scope and references; no clipping, overlap or missing glyphs observed."
+  },
+  "iteration": "V1 references and first-pass/pre-review final results preserved. Independent post-outcome review found TH06 exact-date selector leakage. V2 changes only that selector to date-after-corporate-signature; expected targets unchanged. V2 was not frozen before all observation. The generic date grouping fix and word-box refinement also followed outcomes.",
+  "scope_warning": "Development-set checks, not a held-out benchmark or full-document accuracy measure.",
+  "evaluation_history": "EVALUATION_HISTORY.md"
+}
