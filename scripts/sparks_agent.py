@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 UTC = timezone.utc
 SGT = ZoneInfo("Asia/Singapore")
 WATCHLIST = tuple("Albertito-AI/" + name for name in ("policykit", "regnav-source-watch", "symbolon", "piepowder", "tallystick"))
+# Legacy paths and the stored agent identifier preserve existing evidence.
+# The public utility operates independently of the retired companion state.
 CATALOG_PATH = "data/sparks-catalog.json"
 MEMORY_PATH = "data/sparks-knowledge.json"
 WORKBENCH_PATH = "docs/SPARKS_WORKBENCH.md"
@@ -258,7 +260,7 @@ class GitHubClient:
     def get(self, repo: str, resource: str):
         if repo not in WATCHLIST or not isinstance(resource, str) or resource.startswith(("/", "http")) or ".." in resource or "\\" in resource or "#" in resource:
             raise ValueError("refusing a source outside the fixed public API scope")
-        headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "Sparks-Public-Portfolio"}
+        headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "Albert-Tan-Public-Source-Observations"}
         if self._token:
             headers["Authorization"] = f"Bearer {self._token}"
         request = Request(f"https://api.github.com/repos/{repo}" + ("/" + resource if resource else ""), headers=headers, method="GET")
@@ -439,7 +441,7 @@ def render_workbench(memory: dict, catalog: dict) -> str:
     digest = catalog_digest(catalog)
     config_current = digest == memory["catalog_sha256"]
     projects = {project["repo"]: project for project in catalog["projects"]}
-    lines = ["# Sparks' public workbench", "", "Sparks keeps a small memory of five public projects, checks their selected entrypoints and compares source observations over time. The work below is produced by bounded rules and GitHub source reads.", "", "Project purposes come from the maintained public portfolio catalog. File checks establish presence at a recorded commit; they do not establish correctness, legal reliability, adoption or successful execution.", ""]
+    lines = ["# Public project source observations", "", "This workbench checks selected entrypoints in five public projects and compares source observations over time. Each result comes from a bounded GitHub source read and retains its recorded evidence.", "", "Project purposes come from the maintained public portfolio catalog. File checks establish presence at a recorded commit; they do not establish correctness, legal reliability, adoption or successful execution.", "", "[Maintenance and scope](PUBLIC_SOURCE_OBSERVATIONS.md).", ""]
     if memory["last_observed_date"] is None:
         lines.append("**Observation status:** awaiting the first public-source observation.")
     else:
@@ -449,7 +451,7 @@ def render_workbench(memory: dict, catalog: dict) -> str:
     current = [repo for repo in WATCHLIST if memory["repositories"][repo]["status"] == "current" and config_current]
     verified_starts = sum(memory["repositories"][repo]["last_good"]["files"].get(projects[repo]["start_path"], {}).get("status") == "present" for repo in current)
     compared = sum(memory["repositories"][repo]["has_compared"] for repo in current)
-    lines.extend(["", "## Work Sparks can demonstrate", "", f"- **Project navigation:** {verified_starts} of 5 selected starting paths are present in current public snapshots.", f"- **Entrypoint audit:** {len(current)} of 5 projects have current complete source observations; absent or non-file paths are reported below.", f"- **Change briefing:** {compared} of 5 current projects have been compared with an earlier successful observation. First observations establish baselines.", "", "These are evidence-backed task states, independent of care experience points.", "", "## Find a project", "", "| Project and purpose | Start here | Contribution path | Source status |", "| --- | --- | --- | --- |"])
+    lines.extend(["", "## Recorded checks", "", f"- **Project navigation:** {verified_starts} of 5 selected starting paths are present in current public snapshots.", f"- **Entrypoint audit:** {len(current)} of 5 projects have current complete source observations; absent or non-file paths are reported below.", f"- **Change briefing:** {compared} of 5 current projects have been compared with an earlier successful observation. First observations establish baselines.", "", "## Find a project", "", "| Project and purpose | Start here | Contribution path | Source status |", "| --- | --- | --- | --- |"])
     for repo in WATCHLIST:
         project, record = projects[repo], memory["repositories"][repo]
         snapshot = record["last_good"]
@@ -474,7 +476,7 @@ def render_workbench(memory: dict, catalog: dict) -> str:
         if record["status"] == "unavailable":
             label += "; current source unavailable, retained evidence is stale"
         lines.append(f"- **{_text(project['title'])}:** {label}.")
-    lines.extend(["", "## Changes Sparks has recorded", "", "Only differences between successful observations enter this list. An unavailable source is never reported as unchanged. At most the latest 20 change receipts are retained.", ""])
+    lines.extend(["", "## Recorded source changes", "", "Only differences between successful observations enter this list. An unavailable source is never reported as unchanged. At most the latest 20 change receipts are retained.", ""])
     if not memory["changes"]:
         lines.append("No README or release-identity change has been recorded. This alone does not establish that every source is current or has a comparison baseline.")
     for change in reversed(memory["changes"]):
@@ -497,7 +499,7 @@ def render_workbench(memory: dict, catalog: dict) -> str:
         if missing:
             next_task = f"Review the configured entrypoint {_text(missing[0])} for {_text(project['title'])}; the latest source tree does not establish it as a regular file."
             break
-    lines.extend(["", "## Next useful task", "", next_task, "", "The observer reads only the fixed public watchlist. It does not execute source code or edit the watched projects. Observations and change receipts persist in [Sparks' public-source memory](../data/sparks-knowledge.json).", ""])
+    lines.extend(["", "## Next useful task", "", next_task, "", "The observer reads only the fixed public watchlist. It does not execute source code or edit the watched projects. Observations and change receipts persist in the [public-source record](../data/sparks-knowledge.json).", ""])
     return "\n".join(lines)
 
 

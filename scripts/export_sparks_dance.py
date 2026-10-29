@@ -1,4 +1,4 @@
-"""Export the existing canvas choreography for GitHub's inline image renderer."""
+"""Manually reproduce the archived canvas choreography; no live site is changed."""
 from pathlib import Path
 import base64
 import hashlib
@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path.cwd()
 WIDTH, HEIGHT, FPS = 304, 540, 10
 ASSETS = ROOT / "assets"
-STAGE_URL = "https://albertito-ai.github.io/Albertito-AI/"
+ARCHIVE_SOURCE = "archive/sparks/dance-floor.html"
 GIF_LIMIT = 4 * 1024 * 1024
 START_BEATS = {"hip": 5, "beok": 4, "pumpkin": 8, "slowmo": 3.5, "fishes": 2, "ramalama": 11}
 
@@ -26,7 +26,7 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     page = context.new_page()
     errors = []
     page.on("pageerror", lambda error: errors.append(str(error)))
-    page.goto((ROOT / "site/index.html").as_uri(), wait_until="domcontentloaded")
+    page.goto((ROOT / ARCHIVE_SOURCE).as_uri(), wait_until="domcontentloaded")
     page.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6")
     page.add_style_tag(content="#stage { width:304px !important; height:540px !important; aspect-ratio:auto !important; }")
     page.evaluate("__spark.resize()")
@@ -107,8 +107,8 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
                     "-c:v", "libx264", "-crf", "24", "-pix_fmt", "yuv420p",
                     "-movflags", "+faststart", str(ASSETS / "sparks-dance.mp4")], check=True)
     manifest = {
-        "source": "site/index.html",
-        "source_sha256": hashlib.sha256((ROOT / "site/index.html").read_bytes()).hexdigest(),
+        "source": ARCHIVE_SOURCE,
+        "source_sha256": hashlib.sha256((ROOT / ARCHIVE_SOURCE).read_bytes()).hexdigest(),
         "dimensions": [WIDTH, HEIGHT],
         "gif": {"frames": count, "duration_ms": total_ms, "fps": used_fps, "colors": used_colors,
                 "bytes": gif_path.stat().st_size, "loop": 0,
@@ -120,21 +120,7 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     (ASSETS / "sparks-dance-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print("MEDIA_MANIFEST:", json.dumps(manifest), flush=True)
 
-    # Verify the canonical public stage after exporting the current choreography.
-    external = browser.new_page(viewport={"width": 1280, "height": 900})
-    try:
-        external.goto(STAGE_URL, wait_until="domcontentloaded", timeout=60000)
-        external.wait_for_function("window.__spark && document.querySelectorAll('.move').length === 6", timeout=30000)
-        external.locator("#move-beok").click()
-        assert external.evaluate("__spark.S0.idx") == 1
-        external.locator("#play").click()
-        assert not external.evaluate("__spark.S0.playing")
-        external.locator("#sound").click()
-        assert external.locator("#sound").get_attribute("aria-pressed") == "true"
-        external.locator("#sound").click()
-        print("PUBLIC_GITHUB_PAGES_STAGE_VERIFIED:", external.url, flush=True)
-    except Exception as error:
-        print("PUBLIC_GITHUB_PAGES_STAGE_PENDING:", type(error).__name__, str(error)[:500], flush=True)
+    # The retired stage is verified locally by check_sparks_media.py.
     browser.close()
 
 sheet = Image.new("RGB", (684, 870), "#1b1424")

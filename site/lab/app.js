@@ -27,6 +27,7 @@
     verification: $("verification-record"), downloadReceipts: $("download-receipts"),
     announcement: $("app-announcement")
   };
+  // Retain this historical key so existing visitors keep their saved notes.
   var NOTE_STORAGE_KEY = "sparks-lab-review-notes-v1";
   var NOTE_STATUSES = ["no-decision", "follow-up-needed", "comment-recorded"];
   var CATALOG_PAGE_SIZE = 12;
@@ -1179,7 +1180,7 @@
       notice:"These are visitor-authored notes about a recorded fictional example. They do not modify the source ledger or establish legal correctness.",
       recorded_dataset:{id:state.replay.id,generated_at:state.replay.generated_at},
       notes:notes
-    }, "sparks-review-" + today() + ".json");
+    }, "research-review-" + today() + ".json");
     announce("Downloaded " + notes.length + " local review " + (notes.length === 1 ? "note" : "notes") + " as JSON.");
   });
   dom.downloadReceipts.addEventListener("click", function () {

@@ -1,27 +1,13 @@
-name: Sparks companion
+name: Public project source observations
 
 on:
   schedule:
-    # 07:17, 13:17, 19:17 and 22:17 Asia/Singapore (UTC+08:00).
-    - cron: '17 5,11,14,23 * * *'
-  issues:
-    types:
-      - opened
+    # One daily source check at 07:17 Asia/Singapore (UTC+08:00).
+    - cron: '17 23 * * *'
   workflow_dispatch:
     inputs:
-      care:
-        description: 'Choose how to care for Sparks (fictional game state)'
-        required: true
-        default: tick
-        type: choice
-        options:
-          - tick
-          - feed
-          - study
-          - play
-          - rest
       refresh_workbench:
-        description: 'Check Sparks public project sources again today'
+        description: 'Check the public project sources again today'
         required: false
         default: false
         type: boolean
@@ -29,9 +15,6 @@ on:
     branches:
       - main
     paths:
-      - 'assets/persona-template.svg'
-      - 'scripts/update_persona.py'
-      - 'scripts/public_care.py'
       - 'scripts/sparks_agent.py'
       - 'data/sparks-catalog.json'
       - '.github/workflows/persona.yml'
@@ -41,18 +24,9 @@ permissions:
 
 jobs:
   update:
-    # Filter unrelated issues before acquiring the shared state lock. Python
-    # validates exact, case-sensitive titles and current issue state again.
-    if: >-
-      github.repository == 'Albertito-AI/Albertito-AI' &&
-      ((github.event_name != 'issues' && github.ref == 'refs/heads/main') ||
-       (github.event_name == 'issues' && github.event.action == 'opened' &&
-        (github.event.issue.title == '[Sparks] feed' ||
-         github.event.issue.title == '[Sparks] study' ||
-         github.event.issue.title == '[Sparks] play' ||
-         github.event.issue.title == '[Sparks] rest')))
+    if: github.repository == 'Albertito-AI/Albertito-AI' && github.ref == 'refs/heads/main'
     concurrency:
-      # Retain the original lock name so every companion writer is serialized.
+      # Preserve the existing lock while retiring the former companion writer.
       group: albertito-companion-state
       cancel-in-progress: false
       queue: max
@@ -60,7 +34,6 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: write
-      issues: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -68,19 +41,9 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
-      - name: Test state transitions
-        run: python -m unittest discover -s tests -v
-      - name: Update the fictional companion
-        if: github.event_name != 'issues'
-        env:
-          CARE_ACTION: ${{ inputs.care || 'tick' }}
-        run: python scripts/update_persona.py --action "$CARE_ACTION" --event-id "actions:$GITHUB_RUN_ID"
-      - name: Prepare public care decisions
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/public_care.py prepare
-      - name: Update Sparks public project knowledge
-        if: github.event_name != 'issues'
+      - name: Test public-source observation and evidence preservation
+        run: python -m unittest discover -s tests -p 'test_sparks_agent.py' -v
+      - name: Observe public project sources
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REFRESH_WORKBENCH: ${{ github.event_name == 'push' || inputs.refresh_workbench }}
@@ -90,26 +53,20 @@ jobs:
           else
             python scripts/sparks_agent.py observe --event-id "actions:$GITHUB_RUN_ID"
           fi
-      - name: Check the generated profile
+      - name: Check source observations and profile integrity
         run: |
-          python scripts/update_persona.py --check
-          python scripts/public_care.py --check
           python scripts/sparks_agent.py --check
           python scripts/validate_profile.py
-      - name: Save the new state
+      - name: Save public-source observations
         run: |
           set -euo pipefail
-          git add -- data/persona.json assets/research-header.svg assets/research-header-static.svg data/public-care.json docs/SPARKS_CARE_LOG.md data/sparks-knowledge.json docs/SPARKS_WORKBENCH.md
+          git add -- data/sparks-knowledge.json docs/SPARKS_WORKBENCH.md
           if git diff --cached --quiet; then
-            echo 'Sparks is already up to date.'
+            echo 'Public project observations are already up to date.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'chore(persona): update Sparks and public care receipts'
-          # A normal push rejects concurrent main changes. Never force or overwrite them.
+          git commit -m 'chore: refresh public project source observations'
+          # A normal push rejects concurrent main changes. Never overwrite them.
           git push origin HEAD:main
-      - name: Acknowledge committed public care decisions
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/public_care.py acknowledge

@@ -27,11 +27,11 @@ jobs:
           python-version: '3.12'
       - name: Validate the public profile repository
         run: python scripts/validate_profile.py
-      - name: Test the companion state engine
+      - name: Test repository state and research utilities
         run: python -m unittest discover -s tests -v
-      - name: Check generated companion images
+      - name: Verify preserved companion image records
         run: python scripts/update_persona.py --check
-      - name: Check public care receipts and diary
+      - name: Verify preserved care receipts and diary
         run: python scripts/public_care.py --check
-      - name: Check Sparks public knowledge and workbench
+      - name: Check public-source observations and workbench
         run: python scripts/sparks_agent.py --check

@@ -1,46 +1,26 @@
-name: Export Sparks dance media
+name: Archived Sparks media checks
 
+# Historical media remains inspectable. It has no scheduled or push-triggered upkeep.
 on:
-  push:
-    branches: ['feat/sparks-dance-profile-*']
-    paths:
-      - 'scripts/export_sparks_dance.py'
-      - '.github/workflows/export-sparks-dance.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  export:
-    if: startsWith(github.ref, 'refs/heads/feat/sparks-dance-profile-')
+  verify_archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: write
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.12'
-      - name: Install rendering dependencies
+      - name: Install archive verification dependencies
         run: |
           python -m pip install playwright==1.64.1 Pillow==13.0.0
           python -m playwright install --with-deps chromium
-      - name: Install the video encoder
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends ffmpeg
-      - name: Render and verify the profile media
-        run: python -u scripts/export_sparks_dance.py
-      - name: Save generated media to the feature branch
-        run: |
-          set -euo pipefail
-          git add -- assets/sparks-dance.gif assets/sparks-dance-still.png assets/sparks-dance.mp4 assets/sparks-dance-manifest.json
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'build: render the Sparks dance preview and full video'
-          git push origin "HEAD:$GITHUB_REF_NAME"
+      - name: Verify the preserved dance source and media locally
+        run: python -u scripts/check_sparks_media.py
