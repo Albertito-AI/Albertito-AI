@@ -163,6 +163,12 @@ use and institutional endorsement require their own evidence.
 
 ## Contribute to the surrounding ecosystem
 
+For a navigation, catalogue or reproducibility improvement in this repository,
+follow the [contribution guide](../CONTRIBUTING.md). It explains how to scope a
+useful PR, retain accurate attribution, verify the current revision and record
+merge and delivery separately. The PR template requests the same evidence at
+submission.
+
 A concrete source or permission problem can support a useful upstream
 contribution. The [MCP contributor guide](https://modelcontextprotocol.io/community/contributing)
 and [Tool Annotations Interest Group](https://modelcontextprotocol.io/community/interest-groups/tool-annotations)

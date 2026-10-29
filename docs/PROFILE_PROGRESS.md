@@ -1,5 +1,24 @@
 # Profile change record
 
+## 29 October 2026: contribution and merge evidence workflow
+
+The profile had an internal maintenance policy but no contributor guide or
+pull-request template. This change gives contributors and agent operators a
+common entry path for scoped work, attribution, relevant checks and delivery
+evidence.
+
+The new [contribution guide](../CONTRIBUTING.md) explains review before merging,
+an expected-head guard, post-merge confirmation and targeted recovery. Its
+receipt convention keeps owner-portfolio merges, independent upstream
+acceptance and observed use distinct. The agent starting guide links the same
+workflow. Existing generated-data writers, repository settings and CI triggers
+are unchanged.
+
+Implementation and review are AI-assisted. Local profile validation, changed
+relative-link checks and whitespace checks passed. This entry records the
+prepared change; the associated PR and hosted checks establish later merge and
+delivery states. No increase in external adoption or achievement tier is claimed.
+
 ## 29 October 2026: learning routes by interest
 
 This change adds three direct video links under the Research Lab's existing
