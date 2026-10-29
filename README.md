@@ -16,7 +16,7 @@ research tools and teaching materials.
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
+**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
 
 ## Research Lab
 
@@ -50,6 +50,20 @@ do not establish the truth of a legal proposition or validate a publication.
 [About the lab](docs/RESEARCH_LAB.md) ·
 [Usability protocol](docs/LAB_EVALUATION.md) ·
 [Sparks and the Dance Floor](#sparks-and-the-dance-floor)
+
+## For agents and agent builders
+
+I am developing evidence and accountability workflows for agent-assisted
+research. The [agent starting guide](docs/AGENT_START_HERE.md) connects specific
+tasks to existing tools, documented local MCP interfaces, fictional examples,
+reuse terms and citation metadata. The [public catalogue JSON](https://albertito-ai.github.io/Albertito-AI/lab/data/catalog.json)
+provides source-linked project and selected Learning with Bert video records
+for programmatic reading.
+
+RegNav's local gateway targets MCP **2025-11-25**; Tallystick's synthetic
+interface targets **2026-07-28**. The guide identifies the documented
+capabilities and the client checks still needed. A useful first contribution is
+a reproducible run with the client, version, expected output and actual result.
 
 ## Current focus
 
@@ -274,10 +288,18 @@ learning collections are separate from the coauthored book and the RegNav
 exercise. Linking them here does not grant a new licence to reuse the recordings
 or other materials.
 
+For a question about AI, the catalogue now includes individual links to
+[The Honest AI](https://www.youtube.com/watch?v=BwHQWbHH-o4) and
+[Scaling AI: Now Comes the Hard Part](https://www.youtube.com/watch?v=MoXO1VAzN6M).
+These are metadata-only starting points. Their video content and transcripts
+have not been reviewed for the catalogue; the
+[agent guide](docs/AGENT_START_HERE.md#learning-with-bert-and-the-youtube-channel)
+explains how to retain source attribution and review status.
+
 ---
 
 **Keeping this useful:** project descriptions, contribution paths and selected
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **28 October 2026**.
+Last substantive profile update: **29 October 2026**.

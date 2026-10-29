@@ -429,10 +429,10 @@
     });
     var originalCount = entries.filter(function (item) { return !item._fromLibrary; }).length;
     var referenceCount = entries.length - originalCount;
-    var metadataCount = entries.filter(function (item) { return item._fromLibrary && reviewStatusFor(item) === "metadata_only"; }).length;
+    var metadataCount = entries.filter(function (item) { return reviewStatusFor(item) === "metadata_only"; }).length;
     dom.libraryCoverage.textContent = originalCount + " original catalog " + (originalCount === 1 ? "entry" : "entries") +
       " · " + referenceCount + " added " + (referenceCount === 1 ? "reference" : "references") +
-      (metadataCount ? " · " + metadataCount + " with metadata only" : "") + ".";
+      (metadataCount ? " · " + metadataCount + " metadata-only records in total" : "") + ".";
     dom.librarySources.replaceChildren();
     list(data.source_runs).forEach(function (source) {
       if (!source || typeof source !== "object" || Array.isArray(source)) return;
@@ -826,7 +826,7 @@
       if (item._fromLibrary || text(item.review_status)) {
         var reviewLine = node("div",null,"item-review");
         reviewLine.appendChild(node("span",REVIEW_LABELS[reviewStatus],"label " + ({source_inspected:"label-green",metadata_only:"label-plain",needs_review:"label-warm"})[reviewStatus]));
-        reviewLine.appendChild(node("span",({source_inspected:"Read the inspection scope below before relying on this source.",metadata_only:"Bibliographic metadata only. The full text has not been reviewed for this entry.",needs_review:"Further review is needed before relying on this entry."})[reviewStatus]));
+        reviewLine.appendChild(node("span",({source_inspected:"Read the inspection scope below before relying on this source.",metadata_only:item.medium === "video" ? "Video metadata only. The recording and transcript have not been reviewed for this entry." : "Bibliographic metadata only. The full text has not been reviewed for this entry.",needs_review:"Further review is needed before relying on this entry."})[reviewStatus]));
         card.appendChild(reviewLine);
       }
       if (stringList(item.topics).length) {

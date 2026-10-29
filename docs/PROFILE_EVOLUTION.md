@@ -79,6 +79,54 @@ Maintain the current reuse terms. A public repository is not automatically open
 source. New licences, paid obligations, financial accounts and grant terms require
 the appropriate owner decision.
 
+## Agent discovery and adoption
+
+Albert's 29 October 2026 request adds a specific aim: make his useful work
+discoverable, usable and accurately attributable within agent workflows,
+including his YouTube channel. The
+[agent starting guide](AGENT_START_HERE.md) and the existing
+[public catalogue](../site/lab/data/catalog.json) remain within this profile's
+existing ownership. Preserve one catalogue and the existing shared work limit.
+
+Review the following as evidence or reader needs change:
+
+- Can a reader or agent find a relevant task, its current interface and a
+  documented example without confusing a proposal with an implementation?
+- Do interface records retain protocol version, source revision, inspection
+  scope, rights and actual client compatibility limits?
+- Can a user identify the source and author actually relied on?
+- Can an individual Learning with Bert video be found by the question it helps
+  answer, with a reviewed transcript or an honest metadata-only label?
+- What obstacle appears in a genuine outside reproduction or contribution?
+
+Preserve the original verification dates on existing catalogue observations.
+The optional agent_access.inspection object describes a separate inspection.
+A catalogue update does not rerun a tool or establish external interoperability.
+Video metadata does not establish the content of a recording or the accuracy of
+automatic captions. Retain creator, curator and underlying-source attribution.
+
+Within existing capacity, prioritise one documented first-use path, then one
+real client interoperability check, then a distributable integration if the
+evidence justifies it. Academic GitHub Development owns core changes; Release
+Readiness checks actual distribution and registry requirements; Community Care
+handles authorised communication and genuine feedback. Coordinate selected
+video curation with the existing Daily Website Resource Refresh and website
+handoff. This adds no outreach permission, new scheduler, parallel tracker or
+mandatory content quota.
+
+Suggested review horizons are 30, 60 and 90 days from 29 October 2026. Assess
+whether there is a reproducible entry path, useful outside feedback and repeat
+use respectively. These are outcome questions, not publication deadlines or
+promises of adoption. Existing obligations and shared priorities continue to
+govern selection.
+
+Count independent reproduction only when an external person or team supplies
+evidence of the version and result. Record integrations, substantive citations,
+accepted contributions and repeat use separately. Internal agent checks,
+requests, stars and downloads do not establish those outcomes. Missing evidence
+remains unverified. Keep records in the existing operational review, with public
+progress entries only for substantive public changes.
+
 ## Review outcomes
 
 The private review considers whether people can find and use the work, whether

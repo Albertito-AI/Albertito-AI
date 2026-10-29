@@ -1,5 +1,42 @@
 # Profile change record
 
+## 29 October 2026: agent entry path and selected YouTube resources
+
+Albert requested help making his work known and useful within the AI agent
+ecosystem, and specifically included his YouTube channel.
+
+The profile and Research Lab now link a dedicated
+[agent starting guide](AGENT_START_HERE.md). It identifies relevant tasks,
+documents the different RegNav and Tallystick MCP protocol targets, and retains
+each project's rights and citation route. The existing catalogue gains optional
+interface records with source revisions and inspection scope; earlier project
+observations keep their dates.
+
+Two Learning with Bert videos have individual searchable records:
+[The Honest AI](https://www.youtube.com/watch?v=BwHQWbHH-o4) and
+[Scaling AI: Now Comes the Hard Part](https://www.youtube.com/watch?v=MoXO1VAzN6M).
+YouTube oEmbed confirmed both titles and the uploading channel @chanxinghong.
+Public search metadata supplied the description's assistance and rights notice.
+Direct watch-page retrieval was throttled. Both records remain metadata-only,
+with unverified publication dates, unknown caption availability and no invented
+summaries, quotations or timestamps. No channel-wide inventory is claimed.
+
+The existing profile and library maintenance documents now include this entry
+path and bounded video curation. The daily Crossref ingestion remains separate.
+Existing scheduler identities, shared priorities and native YouTube settings
+are unchanged.
+
+Local profile/link validation, library-record validation, JavaScript syntax and
+all 115 existing unit tests passed. Two AI reviewers checked the draft and
+identified command-role and coverage-count ambiguities; both were corrected.
+The existing browser verification now checks metadata labels across both
+catalogues and the appropriate video wording. Hosted check and publication
+outcomes belong to the associated pull request and deployment records.
+
+This work improves navigation and attribution. It is not evidence of external
+agent use, a new registry listing, a reviewed video transcript or increased
+audience. Implementation, source inspection and review were AI-assisted.
+
 ## 28 October 2026: public research lab
 
 The [research lab](https://albertito-ai.github.io/Albertito-AI/lab/) brings a
