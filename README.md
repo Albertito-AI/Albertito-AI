@@ -16,7 +16,7 @@ research tools and teaching materials.
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
+**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Watch & listen](#music-and-learning-with-bert) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
 
 ## Research Lab
 
@@ -271,6 +271,10 @@ may briefly cache. For the tools themselves, open a **See demo** link above.
 I make music as **Bert Chan (陳信宏)**. Alongside my scholarship, I share notes,
 ideas and learning collections through **Learning with Bert** on the same
 [YouTube channel](https://www.youtube.com/@chanxinghong).
+
+**[Explore the channel](https://www.youtube.com/@chanxinghong)** for music and
+learning videos. If you enjoy what you find, subscribe on YouTube to follow
+new uploads.
 
 The [Listen & Learn hub](https://www.alberttansinhon.com/listen-and-learn/)
 brings these collections together. Choose a collection below to listen or
