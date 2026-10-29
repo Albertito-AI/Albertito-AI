@@ -12,7 +12,7 @@ from pathlib import Path
 import re
 import tempfile
 import threading
-from urllib.parse import unquote
+from urllib.parse import parse_qs, unquote, urlencode, urlsplit, urlunsplit
 
 from playwright.sync_api import sync_playwright, expect
 
@@ -71,6 +71,119 @@ def expect_catalog_count(page, matched, total):
     expect(page.locator("#catalog-count")).to_have_text(
         re.compile(rf"^{matched} of {total} (?:entry|entries)(?: |\.)")
     )
+
+
+def check_example_sharing(browser, url, data, catalog):
+    """Follow a shared example and prepare public feedback without publishing it."""
+    parts = urlsplit(url)
+
+    def example_url(parameters, fragment="replay"):
+        return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(parameters), fragment))
+
+    selected = next(item for item in data["scenarios"] if item["id"] == "watch-source-changed")
+    selected_index = str(data["scenarios"].index(selected))
+    context = browser.new_context()
+    context.add_init_script("""Object.defineProperty(navigator, 'clipboard', {
+        configurable: true, value: {writeText: async value => {window.__copiedExample = value;}}
+    });""")
+    page = context.new_page()
+    errors, writes = [], []
+    page.on("pageerror", lambda error: errors.append(str(error)))
+    page.on("request", lambda request: writes.append(request.url) if request.method not in ("GET", "HEAD") else None)
+    load_ready(page, example_url({
+        "scenario": selected["id"], "record": data["generated_at"], "private": "PRIVATE_QUERY_SENTINEL",
+    }))
+    expect(page.locator("#scenario-select")).to_have_value(selected_index)
+    expect(page.locator("#scenario-prompt")).to_have_text(selected["prompt"])
+    shared = page.locator("#scenario-share-url").input_value()
+    shared_parts = urlsplit(shared)
+    require(parse_qs(shared_parts.query) == {
+        "scenario": [selected["id"]], "record": [data["generated_at"]],
+    } and shared_parts.fragment == "replay"
+        and (shared_parts.scheme, shared_parts.netloc, shared_parts.path) == (parts.scheme, parts.netloc, parts.path),
+        "An example link retains its public scenario and record while removing unrelated query values")
+
+    page.locator("#tab-review").click()
+    page.locator("#review-note").fill("PRIVATE_NOTE_SENTINEL")
+    report = page.locator("#scenario-feedback-link").get_attribute("href")
+    report_parts = urlsplit(report)
+    report_fields = parse_qs(report_parts.query)
+    version = report_fields.get("version", [""])[0]
+    require(report_parts.scheme == "https" and report_parts.netloc == "github.com"
+            and report_parts.path == "/Albertito-AI/Albertito-AI/issues/new"
+            and set(report_fields) == {"template", "title", "version"}
+            and report_fields["template"] == ["lab-feedback.yml"]
+            and report_fields["title"] == ["[Research lab] " + selected["title"]]
+            and selected["title"] in version and selected["id"] in version
+            and data["generated_at"] in version
+            and all(source["repository"] + "@" + source["revision"] in version
+                    for source in data["provenance"]["sources"]),
+            "Report this example prepares the existing form with the selected public example and exact source revisions")
+    require("PRIVATE_QUERY_SENTINEL" not in shared + report
+            and "PRIVATE_NOTE_SENTINEL" not in shared + report
+            and page.locator("#scenario-share-url").input_value() == shared,
+            "Private query values and browser review notes are absent from both sharing routes")
+    page.locator("#copy-scenario-link").click()
+    require(page.evaluate("() => window.__copiedExample") == shared,
+            "Copy example link copies the displayed public URL")
+
+    reader = browser.new_context()
+    reader_page = reader.new_page()
+    reader_page.on("pageerror", lambda error: errors.append(str(error)))
+    load_ready(reader_page, shared)
+    expect(reader_page.locator("#scenario-select")).to_have_value(selected_index)
+    reader_page.locator("#tab-review").click()
+    expect(reader_page.locator("#review-note")).to_have_value("")
+    require(True, "A fresh visitor opens the selected example without receiving another visitor's notes")
+    reader.close()
+
+    page.select_option("#scenario-select", "0")
+    first = data["scenarios"][0]
+    require(parse_qs(urlsplit(page.locator("#scenario-share-url").input_value()).query)["scenario"] == [first["id"]]
+            and first["title"] in parse_qs(urlsplit(page.locator("#scenario-feedback-link").get_attribute("href")).query)["version"][0],
+            "Changing the selection updates both the share link and feedback context")
+    page.evaluate("""() => {
+        Object.defineProperty(navigator, 'clipboard', {configurable: true,
+            value: {writeText: () => Promise.reject(new Error('clipboard unavailable'))}});
+        document.execCommand = () => false;
+    }""")
+    page.locator("#copy-scenario-link").click()
+    expect(page.locator("#app-announcement")).to_contain_text("Select and copy the text shown above the button")
+    expect(page.locator("#scenario-share-url")).to_be_visible()
+    expect(page.locator("#scenario-share-url")).to_have_attribute("readonly", "")
+    require(True, "Clipboard failure leaves a visible selectable URL and an accessible recovery message")
+
+    load_ready(page, example_url({"scenario": "missing-scenario-sentinel"}))
+    expect(page.locator("#scenario-select")).to_have_value("0")
+    expect(page.locator("#scenario-share-status")).to_contain_text("That shared scenario is unavailable")
+    require("missing-scenario-sentinel" not in page.locator("#scenario-share-url").input_value(),
+            "An unavailable scenario falls back visibly to a known recorded example")
+    load_ready(page, example_url({"scenario": selected["id"], "record": "older-record-sentinel"}))
+    expect(page.locator("#scenario-select")).to_have_value(selected_index)
+    expect(page.locator("#scenario-share-status")).to_contain_text("dataset has changed")
+    require(parse_qs(urlsplit(page.locator("#scenario-share-url").input_value()).query)["record"] == [data["generated_at"]],
+            "An older shared record is identified and the new share link names the actual loaded record")
+
+    load_ready(page, example_url({"scenario": selected["id"]}, "projects"))
+    expect(page.locator("#scenario-select")).to_have_value(selected_index)
+    expect(page.locator("#catalog-type")).to_have_value("project")
+    require(True, "Scenario deep links and the existing project hash filter work together")
+    projects = {item["id"]: item for item in catalog["items"] if item["type"] == "project"}
+    for route in catalog["contributions"]:
+        if route["project_id"] not in projects:
+            continue
+        card = page.locator(f'.catalog-card[data-item-id="{route["project_id"]}"]')
+        contribution = card.locator(".item-contributions")
+        expect(contribution).to_be_visible()
+        expect(contribution.get_by_role("link", name=route["title"] + " ↗", exact=True)).to_be_visible()
+        require(route["description"] in contribution.inner_text()
+                and contribution.get_by_role("link", name="Project reuse terms ↗", exact=True).get_attribute("href")
+                == projects[route["project_id"]]["rights"]["url"]
+                and not card.locator("details").evaluate("element => element.open"),
+                "A project contribution task and its actual terms are visible without opening source details: " + route["project_id"])
+    require(not writes and not errors,
+            "Sharing and feedback preparation cause no submissions, annotation uploads or JavaScript errors")
+    context.close()
 
 
 def check_library_controls(page, catalog, library):
@@ -283,6 +396,7 @@ def check(url):
                 "The visitor is told that the exercise shows recorded execution")
         require(page.locator("#scenario-select option").count() == len(data["scenarios"]),
                 "Every recorded scenario can be selected")
+        check_example_sharing(browser, url, data, catalog)
 
         evidence_views = set()
         for index, scenario in enumerate(data["scenarios"]):
