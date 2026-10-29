@@ -1,0 +1,9 @@
+README.md
+ingest_video.py
+capture_public_metadata.py
+tests/test_ingest_video.py
+fixtures/synthetic.metadata.json
+fixtures/synthetic.en.vtt
+pilot_summary.json
+PUBLIC_ALLOWLIST.txt
+.gitignore

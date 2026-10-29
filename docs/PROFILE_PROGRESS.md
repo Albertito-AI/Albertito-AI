@@ -1,5 +1,24 @@
 # Profile change record
 
+## 29 October 2026: reusable video-caption ingestion pilot
+
+The [one-video archive example](../examples/video-archive-pilot/README.md) turns
+an authorised local caption file and source metadata into preserved timed cues,
+a separate reading copy with an explicit overlap map, and review records. It
+includes a synthetic fixture, nineteen checks and a public execution summary
+from Learning with Bert's The Honest AI. The real pilot preserved 239 source
+cues; detailed transcripts and editorial notes remain in the creator deliverable.
+
+Standard media retrieval returned HTML error bodies, so no audio verification
+or rendered excerpt is claimed. The source-sensitive narration remains subject
+to review. CohortFrame retains responsibility for future composition and
+rendering; this example provides caption and provenance preparation only.
+
+Implementation and independent review are AI-assisted. The nineteen tests and
+real-caption provenance checks passed. The associated PR records repository
+validation and delivery. This work establishes a small reusable ingestion
+step, not whole-channel automation, audience growth or outside adoption.
+
 ## 29 October 2026: retire the mascot and focus the public entry points
 
 Albert retired Sparks to concentrate effort on useful research, outside adoption
