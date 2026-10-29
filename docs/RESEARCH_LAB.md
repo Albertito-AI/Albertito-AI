@@ -13,6 +13,7 @@ retains its original address and controls. Research navigation lives under
 
 | Purpose | Route |
 | --- | --- |
+| Find documented agent interfaces and attribution | [For agents and agent builders](AGENT_START_HERE.md) |
 | Compare a fictional claim and its changed source | [Source replay](https://albertito-ai.github.io/Albertito-AI/lab/#replay) |
 | Inspect or reproduce the actual tool executions | [Verification](https://albertito-ai.github.io/Albertito-AI/lab/#verification) |
 | Find a publication and its bibliographic record | [Research](https://albertito-ai.github.io/Albertito-AI/lab/#research) |
@@ -86,10 +87,17 @@ assertions pass. Review the resulting diff before publishing it.
 ## What the catalog records
 
 The [catalog source](../site/lab/data/catalog.json) contains five project entries,
-three published-research entries and two teaching or source-inspection entries.
+three published-research entries, two teaching or source-inspection entries and
+two Learning with Bert video metadata records.
 Each item includes its status, useful links, an inspection date and the scope
 of that inspection. Repository sources use exact commit URLs. Institutional
 publication records retain their own publication dates and bibliographic fields.
+
+RegNav and Tallystick have additional agent_access records describing their
+documented local MCP interfaces. These keep their own inspection revisions and
+dates. The video entries retain metadata-only labels and unknown transcript
+status; their content has not been assessed for the catalogue. The
+[agent guide](AGENT_START_HERE.md) explains these access and attribution paths.
 
 The additional [reference library](../site/lab/data/library.json) supplies
 external primary references and daily, bounded Crossref metadata discovery.

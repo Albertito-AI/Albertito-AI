@@ -130,9 +130,10 @@ def check_library_controls(page, catalog, library):
                 and unquote(citation_url.removeprefix("https://doi.org/")) == item["doi"],
                 "A discovered publication's BibTeX URL points to its DOI, not the registry API")
 
-    metadata = {item["id"] for item in library["items"] if item.get("review_status") == "metadata_only"}
-    inspected = {item["id"] for item in library["items"] if item.get("review_status") == "source_inspected"}
-    inspected.update(item["id"] for item in catalog["items"] if item.get("verification", {}).get("checked_at"))
+    metadata = {item["id"] for item in combined.values() if item.get("review_status") == "metadata_only"}
+    inspected = {item["id"] for item in combined.values() if item.get("review_status") == "source_inspected"}
+    inspected.update(item["id"] for item in catalog["items"]
+                     if not item.get("review_status") and item.get("verification", {}).get("checked_at"))
     require(metadata and inspected, "The published collection has both metadata and inspected-source records")
     for review, expected_ids in (("metadata_only", metadata), ("source_inspected", inspected)):
         page.select_option("#catalog-review", review)
@@ -147,10 +148,14 @@ def check_library_controls(page, catalog, library):
     metadata_card = page.locator(f'.catalog-card[data-item-id="{first_metadata_id}"]')
     expect(metadata_card.locator(".item-review .label")).to_have_text("Metadata only")
     metadata_card.locator("summary").click()
-    require("Source inspected:" not in metadata_card.inner_text()
-            and "full text has not been reviewed" in metadata_card.inner_text().lower(),
-            "A metadata retrieval is not presented as a source or full-text inspection")
     selected = combined[first_metadata_id]
+    expected_notice = ("recording and transcript have not been reviewed"
+                       if selected.get("medium") == "video" else "full text has not been reviewed")
+    require("Source inspected:" not in metadata_card.inner_text()
+            and expected_notice in metadata_card.inner_text().lower(),
+            "A metadata retrieval is not presented as a source or content inspection")
+    require(f"{len(metadata)} metadata-only records in total" in page.locator("#library-coverage").inner_text(),
+            "Coverage counts metadata-only records from both catalogues")
     require(selected.get("publisher") and selected.get("authors") and selected.get("use_for"),
             "Real discovery records supply publisher, author and intended-use metadata")
     page.locator("#catalog-clear").click()

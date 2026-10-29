@@ -1,7 +1,7 @@
 # Maintaining a useful research library
 
 The [Research Lab catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library)
-combines Albert Tan's original ten research, project and teaching records with
+combines Albert Tan's research, project, teaching and selected video records with
 external primary references and a bounded stream of research metadata. Its
 purpose is to help someone find a source, understand what it can support and
 take a useful next step. A growing record count alone does not establish value.
@@ -38,6 +38,29 @@ Additional records are generated into
 [`library.json`](../site/lab/data/library.json). The browser loads these
 independently. Failure to load the additional library does not remove the
 original catalogue or the separate source-replay exercise.
+
+## Selected YouTube resources
+
+The manually maintained original catalogue can include individual videos from
+the existing Bert Chan and Learning with Bert channel and collections. This is
+a bounded editorial route; the Crossref workflow below does not ingest YouTube.
+
+Record the canonical video URL and ID, actual uploading channel, creator or
+curator role, available date, topic, useful question, rights and inspection
+scope. Public title or description metadata supports a metadata-only lead.
+Keep transcript availability unknown until checked. Do not invent a summary,
+timestamp, quotation, chapter or underlying source from a video title.
+
+For a content-reviewed record, inspect the recording or an authorised
+transcript, verify quotations and timestamps, identify underlying sources, and
+state the actual scope. Keep original content and curated third-party work
+separately attributable. Transcript or excerpt republication must respect the
+applicable rights. Caption access and a public video link are different matters.
+
+Use stable video IDs for deduplication and retain unavailable-item history.
+Coordinate this curation with the existing Daily Website Resource Refresh;
+channel-wide ingestion and native YouTube edits require their own implemented,
+authorised access. The two records added on 29 October 2026 are metadata-only.
 
 ## Daily discovery and publication
 

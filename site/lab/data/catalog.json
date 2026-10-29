@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-28T14:02:08Z",
+  "updated_at": "2026-10-29T03:19:09Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -11,7 +11,10 @@
     "orcid": "https://orcid.org/0009-0001-8996-7933",
     "dance_floor": "https://albertito-ai.github.io/Albertito-AI/",
     "feedback": "https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml",
-    "evaluation": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LAB_EVALUATION.md"
+    "evaluation": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LAB_EVALUATION.md",
+    "agent_start": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/AGENT_START_HERE.md",
+    "youtube_channel": "https://www.youtube.com/@chanxinghong",
+    "listen_and_learn": "https://www.alberttansinhon.com/listen-and-learn/"
   },
   "items": [
     {
@@ -76,7 +79,32 @@
         "teaching-source-checking",
         "teaching-sgx-case"
       ],
-      "relationship_note": "The repository identifies the Singapore/Thailand and China articles as research direction. Its teaching pack and Singapore case are separate materials; software checks do not validate the articles or complete human legal review."
+      "relationship_note": "The repository identifies the Singapore/Thailand and China articles as research direction. Its teaching pack and Singapore case are separate materials; software checks do not validate the articles or complete human legal review.",
+      "agent_access": {
+        "kind": "local_mcp",
+        "status": "documented_research_prototype",
+        "protocol": "MCP",
+        "protocol_version": "2025-11-25",
+        "transport": "stdio",
+        "documentation_url": "https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/README.md",
+        "implementation_url": "https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/server.py",
+        "documented_command": "python experiments/agent_gateway/demo.py",
+        "command_context": "From an authorised inspected checkout after the documented environment setup; consult the linked guide before execution.",
+        "tools": [
+          "regnav_capabilities",
+          "source_watch_check"
+        ],
+        "scope": "Local prototype with operator-selected baseline and source directory. Uses the initialize/notifications/initialized lifecycle. The documented demo uses fictional disposable files.",
+        "rights_summary": "Reserved rights. An authorised local reproduction is required; no general execution, reuse or commercial licence is supplied.",
+        "host_interoperability": "Not verified by this catalogue inspection; check the exact client, version and permitted task.",
+        "inspection": {
+          "checked_at": "2026-10-29T03:19:09Z",
+          "revision": "a406dddf51f107867d72532f89d19cc639ebbb74",
+          "source_url": "https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/README.md",
+          "scope": "Documentation and bounded implementation inspection. No new execution, full protocol conformance assessment or independent adoption is claimed."
+        },
+        "command_purpose": "fictional_subprocess_demonstration"
+      }
     },
     {
       "id": "project-source-watch",
@@ -323,7 +351,33 @@
         "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/NOTICE"
       },
       "related_item_ids": [],
-      "relationship_note": "Its stated foundation is the separately retained draft The price of a settled fact. No dependency on the sports-governance article in this catalog is asserted."
+      "relationship_note": "Its stated foundation is the separately retained draft The price of a settled fact. No dependency on the sports-governance article in this catalog is asserted.",
+      "agent_access": {
+        "kind": "local_mcp",
+        "status": "documented_research_prototype",
+        "protocol": "MCP",
+        "protocol_version": "2026-07-28",
+        "transport": "stdio",
+        "documentation_url": "https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md",
+        "implementation_url": "https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/src/tallystick/mcp.py",
+        "documented_command": "python -m tallystick mcp",
+        "command_context": "From an authorised inspected checkout after the documented environment setup; consult the linked guide before execution.",
+        "tools": [
+          "tallystick_market_check",
+          "tallystick_pricing_example",
+          "tallystick_settlement_preview"
+        ],
+        "scope": "Read-only local synthetic interface. Uses per-request protocol metadata and server/discover; rejects the older initialize lifecycle. No live wager, payment or external feed operation.",
+        "rights_summary": "Original code and documentation: Apache-2.0. Original schemas and format definitions: CC BY 4.0. Other material retains its own rights.",
+        "host_interoperability": "Not verified by this catalogue inspection; check the exact client, version and permitted task.",
+        "inspection": {
+          "checked_at": "2026-10-29T03:19:09Z",
+          "revision": "251cb7a6bac7984f94c8eaf91560c775b01fee82",
+          "source_url": "https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md",
+          "scope": "Documentation and bounded implementation inspection. No new execution, full protocol conformance assessment or independent adoption is claimed."
+        },
+        "command_purpose": "start_stdio_server"
+      }
     },
     {
       "id": "research-sg-th-accountability",
@@ -575,6 +629,154 @@
         "research-sg-th-accountability"
       ],
       "relationship_note": "The case expressly uses the Singapore/Thailand article's analytical distinction. The software performs structural checks; it does not complete the independent legal review."
+    },
+    {
+      "id": "video-youtube-BwHQWbHH-o4",
+      "title": "Learning with Bert - The Honest AI",
+      "type": "teaching",
+      "medium": "video",
+      "description": "Learning with Bert educational video on the Bert Chan channel. The public description discloses Google NotebookLM assistance. This entry identifies a recording; it does not summarise its unreviewed content.",
+      "maturity": "Video metadata only",
+      "review_status": "metadata_only",
+      "topics": [
+        "AI",
+        "Honesty",
+        "Learning with Bert"
+      ],
+      "authors": [
+        "Bert Chan (陳信宏)"
+      ],
+      "publisher": "YouTube",
+      "publication_date": null,
+      "publication_date_note": "Not independently verified for this record.",
+      "added_at": "2026-10-29T03:19:09Z",
+      "use_for": "Find an educational lead about AI honesty; inspect the recording and supporting sources before relying on a claim.",
+      "limitation": "Only public metadata was inspected. The recording, captions, substantive claims, underlying sources and precise timestamps have not been reviewed.",
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/watch?v=BwHQWbHH-o4",
+          "kind": "source"
+        },
+        {
+          "label": "Uploading channel",
+          "url": "https://www.youtube.com/@chanxinghong",
+          "kind": "creator"
+        },
+        {
+          "label": "Listen & Learn collections",
+          "url": "https://www.alberttansinhon.com/listen-and-learn/",
+          "kind": "collection"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T03:19:09Z",
+        "revision": null,
+        "source_url": "https://www.youtube.com/watch?v=BwHQWbHH-o4",
+        "scope": "Title and uploading-channel identity confirmed through YouTube oEmbed. Public search metadata supplied the description disclosure and rights notice. Direct watch-page retrieval was throttled; no audiovisual or transcript review was performed.",
+        "metadata_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBwHQWbHH-o4&format=json"
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://www.youtube.com/watch?v=BwHQWbHH-o4",
+        "text": "Bert Chan (陳信宏), \"Learning with Bert - The Honest AI\" (YouTube video; publication date not verified; accessed 29 October 2026). https://www.youtube.com/watch?v=BwHQWbHH-o4",
+        "provenance": "Reference assembled from verified channel/title metadata. Uploader attribution does not establish authorship of underlying source material.",
+        "doi": null
+      },
+      "rights": {
+        "summary": "The public description asserts Albert Tan reserved rights in original explanations, slides and commentary and retains third-party rights. This metadata entry supplies links and grants no transcript, recording or source-material reuse licence.",
+        "url": "https://www.youtube.com/watch?v=BwHQWbHH-o4"
+      },
+      "video": {
+        "platform": "YouTube",
+        "video_id": "BwHQWbHH-o4",
+        "channel_handle": "@chanxinghong",
+        "channel_name": "Bert Chan (陳信宏)",
+        "channel_url": "https://www.youtube.com/@chanxinghong",
+        "attribution_scope": "Uploading channel verified; complete authorship and underlying-source attribution have not been assessed.",
+        "transcript": {
+          "availability": "not_verified",
+          "review_status": "not_reviewed",
+          "url": null
+        },
+        "verified_segments": []
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "video-youtube-MoXO1VAzN6M",
+      "title": "Learning with Bert - Scaling AI  Now Comes the Hard Part",
+      "type": "teaching",
+      "medium": "video",
+      "description": "Learning with Bert educational video on the Bert Chan channel. The public description discloses Google NotebookLM assistance. This entry identifies a recording; it does not summarise its unreviewed content.",
+      "maturity": "Video metadata only",
+      "review_status": "metadata_only",
+      "topics": [
+        "AI",
+        "Scaling AI",
+        "Learning with Bert"
+      ],
+      "authors": [
+        "Bert Chan (陳信宏)"
+      ],
+      "publisher": "YouTube",
+      "publication_date": null,
+      "publication_date_note": "Not independently verified for this record.",
+      "added_at": "2026-10-29T03:19:09Z",
+      "use_for": "Find an educational lead about scaling AI; inspect the recording and supporting sources before relying on a claim.",
+      "limitation": "Only public metadata was inspected. The recording, captions, substantive claims, underlying sources and precise timestamps have not been reviewed.",
+      "links": [
+        {
+          "label": "Watch on YouTube",
+          "url": "https://www.youtube.com/watch?v=MoXO1VAzN6M",
+          "kind": "source"
+        },
+        {
+          "label": "Uploading channel",
+          "url": "https://www.youtube.com/@chanxinghong",
+          "kind": "creator"
+        },
+        {
+          "label": "Listen & Learn collections",
+          "url": "https://www.alberttansinhon.com/listen-and-learn/",
+          "kind": "collection"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T03:19:09Z",
+        "revision": null,
+        "source_url": "https://www.youtube.com/watch?v=MoXO1VAzN6M",
+        "scope": "Title and uploading-channel identity confirmed through YouTube oEmbed. Public search metadata supplied the description disclosure and rights notice. Direct watch-page retrieval was throttled; no audiovisual or transcript review was performed.",
+        "metadata_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMoXO1VAzN6M&format=json"
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://www.youtube.com/watch?v=MoXO1VAzN6M",
+        "text": "Bert Chan (陳信宏), \"Learning with Bert - Scaling AI  Now Comes the Hard Part\" (YouTube video; publication date not verified; accessed 29 October 2026). https://www.youtube.com/watch?v=MoXO1VAzN6M",
+        "provenance": "Reference assembled from verified channel/title metadata. Uploader attribution does not establish authorship of underlying source material.",
+        "doi": null
+      },
+      "rights": {
+        "summary": "The public description asserts Albert Tan reserved rights in original explanations, slides and commentary and retains third-party rights. This metadata entry supplies links and grants no transcript, recording or source-material reuse licence.",
+        "url": "https://www.youtube.com/watch?v=MoXO1VAzN6M"
+      },
+      "video": {
+        "platform": "YouTube",
+        "video_id": "MoXO1VAzN6M",
+        "channel_handle": "@chanxinghong",
+        "channel_name": "Bert Chan (陳信宏)",
+        "channel_url": "https://www.youtube.com/@chanxinghong",
+        "attribution_scope": "Uploading channel verified; complete authorship and underlying-source attribution have not been assessed.",
+        "transcript": {
+          "availability": "not_verified",
+          "review_status": "not_reviewed",
+          "url": null
+        },
+        "verified_segments": []
+      },
+      "related_item_ids": []
     }
   ],
   "contributions": [
