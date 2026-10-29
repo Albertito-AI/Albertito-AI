@@ -97,16 +97,33 @@
       </section>
 
       <section id="library" class="section" aria-labelledby="library-title">
-        <span id="projects" class="anchor-target" aria-hidden="true"></span><span id="research" class="anchor-target" aria-hidden="true"></span><span id="teaching" class="anchor-target" aria-hidden="true"></span>
+        <span id="projects" class="anchor-target" aria-hidden="true"></span><span id="research" class="anchor-target" aria-hidden="true"></span><span id="teaching" class="anchor-target" aria-hidden="true"></span><span id="references" class="anchor-target" aria-hidden="true"></span>
         <div class="section-heading"><div><p class="eyebrow">PUBLIC RESEARCH &amp; TOOLS</p><h2 id="library-title">Find the work that fits your question.</h2></div><span id="catalog-date" class="field-help"></span></div>
         <p class="section-intro" id="catalog-introduction">Explore the experimental projects, published scholarship and teaching materials. Each entry links to its source and describes its present scope.</p>
+        <div class="library-source-panel" aria-labelledby="library-status-heading">
+          <div class="library-status-heading"><h3 id="library-status-heading">Library updates</h3><span id="library-health" class="label label-plain">Checking update record</span></div>
+          <p id="library-status-message" class="library-status-message" role="status" aria-live="polite">Loading the additional reference library. The original catalog loads independently.</p>
+          <dl id="library-refresh-dates" class="library-refresh-dates"></dl>
+          <p id="library-coverage" class="field-help"></p>
+          <div id="library-retry" hidden><button type="button" id="retry-library" class="button button-secondary">Try library again</button></div>
+          <details class="library-source-details"><summary>Sources and update history</summary><ul id="library-source-runs" class="library-source-runs"></ul><p class="field-help">A successful update retrieves source records. Inspection dates describe the recorded review scope; neither label certifies full-text or legal accuracy.</p><div class="item-links"><a href="data/library.json">Published library data</a><a href="data/library-review-queue.json">Review queue</a><a href="data/library-history.json">Update history</a><a href="https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LIBRARY_WORKFLOW.md">How the library is maintained ↗</a></div></details>
+        </div>
+        <div class="library-paths"><a href="https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LIBRARY_READING_PATHS.md">Follow a reading path ↗</a><a href="https://github.com/Albertito-AI/Albertito-AI/issues/new?template=library-source.yml">Suggest a source ↗</a></div>
         <div class="catalog-filters">
-          <div class="field search-field"><label for="catalog-search">Search the catalog</label><input id="catalog-search" type="search" placeholder="Try evidence, reporting or teaching" autocomplete="off"></div>
-          <div class="field type-field"><label for="catalog-type">Show</label><select id="catalog-type"><option value="all">All work</option><option value="project">Projects</option><option value="research">Research</option><option value="teaching">Teaching</option></select></div>
+          <div class="field search-field"><label for="catalog-search">Search the catalog</label><input id="catalog-search" type="search" placeholder="Search topics, authors, publishers or a research task" autocomplete="off"></div>
+          <div class="field type-field"><label for="catalog-type">Show</label><select id="catalog-type"><option value="all">All work</option><option value="project">Projects</option><option value="research">Research</option><option value="teaching">Teaching</option><option value="reference">References</option></select></div>
+        </div>
+        <div class="catalog-refinements">
+          <div class="field"><label for="catalog-topic">Topic</label><select id="catalog-topic"><option value="all">All topics</option></select></div>
+          <div class="field"><label for="catalog-review">Review level</label><select id="catalog-review"><option value="all">All review levels</option><option value="source_inspected">Source inspected</option><option value="metadata_only">Metadata only</option><option value="needs_review">Needs review</option></select></div>
+          <div class="field"><label for="catalog-sort">Sort by</label><select id="catalog-sort"><option value="recent">Recently added</option><option value="publication">Publication date</option><option value="title">Title A–Z</option></select></div>
+          <button type="button" id="catalog-clear" class="button button-quiet">Clear filters</button>
         </div>
         <p id="catalog-count" class="field-help" role="status" aria-live="polite"></p>
+        <div class="catalog-export"><button type="button" id="download-catalog-json" class="button button-secondary" disabled>Download matches (.json)</button><button type="button" id="download-catalog-bibtex" class="button button-secondary" disabled>Download matches (.bib)</button><span class="field-help">Exports include all matching records and their review labels, across every results page. Check the source and citation style before use.</span></div>
         <div id="catalog-status" class="load-state" role="status" aria-live="polite"><span class="status-dot" aria-hidden="true"></span>Loading the public catalog…</div>
-        <div id="catalog-results" class="catalog-grid"></div>
+        <div id="catalog-results" class="catalog-grid" tabindex="-1" aria-label="Catalog results"></div>
+        <nav id="catalog-pagination" class="catalog-pagination" aria-label="Catalog results pages" hidden><button type="button" id="catalog-previous" class="button button-secondary" aria-controls="catalog-results">← Previous page</button><span id="catalog-page" class="field-help"></span><button type="button" id="catalog-next" class="button button-secondary" aria-controls="catalog-results">Next page →</button></nav>
         <p id="catalog-scope" class="section-footnote"></p>
       </section>
 

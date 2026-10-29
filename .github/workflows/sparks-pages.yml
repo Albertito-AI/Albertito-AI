@@ -8,12 +8,20 @@ on:
       - 'scripts/lab/**'
       - '.github/workflows/sparks-pages.yml'
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      source_ref:
+        description: Exact data-update commit to publish after a scheduled refresh.
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: read
 
 concurrency:
   group: sparks-pages
+  queue: max
   cancel-in-progress: false
 
 jobs:
@@ -31,6 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
+          ref: ${{ inputs.source_ref || github.sha }}
           persist-credentials: false
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
@@ -49,6 +58,15 @@ jobs:
           assert record["provenance"]["sources"], "No pinned source revisions"
           print("Recorded research lab files are present.")
           PY
+      - name: Validate the growing library
+        run: python scripts/library/refresh.py --check
+      - name: Avoid publishing an outdated revision
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          if [ "$(git rev-parse HEAD:site)" != "$(git rev-parse FETCH_HEAD:site)" ]; then
+            echo '::error::The site changed on main before publication. Its newer site deployment must publish the combined state.'
+            exit 1
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
       - name: Upload the research lab and Dance Floor

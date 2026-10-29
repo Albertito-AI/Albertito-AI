@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "provider": "Crossref",
+  "api_url": "https://api.crossref.org/works",
+  "minimum_year": 2015,
+  "daily_limit": 9,
+  "recheck_limit": 6,
+  "recent_index_days": 30,
+  "backfill_max_offset": 400,
+  "pending_limit_per_topic": 120,
+  "chapter_limit_per_venue_per_day": 1,
+  "curated_review_after_days": 90,
+  "sources": [
+    {
+      "id": "esg-disclosure",
+      "label": "ESG disclosure and accountability",
+      "query": "sustainability ESG disclosure reporting accountability",
+      "rows": 80,
+      "daily_limit": 3,
+      "required_groups": [
+        ["sustainability", "sustainable", "esg", "climate", "environmental"],
+        ["disclosure", "disclosures", "reporting", "assurance", "accountability"]
+      ]
+    },
+    {
+      "id": "ai-agent-governance",
+      "label": "AI governance and agent evaluation",
+      "query": "artificial intelligence agent governance evaluation accountability",
+      "rows": 80,
+      "daily_limit": 3,
+      "required_groups": [
+        ["artificial intelligence", "ai", "agentic", "large language model", "large language models", "autonomous agent", "autonomous agents", "multi agent"],
+        ["governance", "accountability", "evaluation", "evaluating", "verification", "assurance", "safety", "audit", "auditing"]
+      ]
+    },
+    {
+      "id": "legal-evidence-provenance",
+      "label": "Legal evidence and provenance",
+      "query": "legal evidence provenance verification",
+      "rows": 80,
+      "daily_limit": 3,
+      "required_groups": [
+        ["evidence", "provenance", "traceability", "verification", "verifiability"],
+        ["legal", "law", "judicial", "court", "courts", "research integrity", "reproducibility"]
+      ]
+    }
+  ]
+}
