@@ -1,21 +1,15 @@
-# Sparks' Dance Floor
+# Sparks' Dance Floor: archived
 
-[Meet Sparks](SPARKS.md) · [Profile](https://github.com/Albertito-AI)
+**Retired from the public website on 29 October 2026.** The
+[GitHub Pages entry](https://albertito-ai.github.io/Albertito-AI/) now opens the
+Research Lab. The former stage is preserved as
+[archived self-contained HTML](../archive/sparks/dance-floor.html), outside the
+published `site/` directory. Its original robot sprites, six routines,
+choreography and optional synthesized beat remain available in that artifact.
 
-**[Open the interactive stage](https://albertito-ai.github.io/Albertito-AI/)** · [Full silent video](../assets/sparks-dance.mp4)
-
-The [GitHub profile](https://github.com/Albertito-AI) includes an animated
-18-second sampler covering all six routines. It plays as a GIF directly in the
-README. A matching still is selected for reduced-motion preferences.
-
-The interactive stage is published from this repository on
-[GitHub Pages](https://albertito-ai.github.io/Albertito-AI/). The complete [HTML source](../site/index.html)
-is self-contained and can also be downloaded and opened in a browser.
-
-The Dance Floor integrates the supplied Spark's Dance Floor HTML demonstration
-with the retro Sparks research companion. It preserves the supplied robot
-sprites, six routines, choreography, stage and synthesized beat, and adds links
-back to the GitHub profile and care diary.
+The profile preview and [silent video](../assets/sparks-dance.mp4) are retained
+historical media. The following description explains the archived demonstration;
+mascot care and ongoing dance development are retired.
 
 ## Using the interactive stage
 
@@ -37,8 +31,8 @@ choose to play it. Turning on reduced motion while the page is open pauses the
 dance. The layout adapts to narrow screens, controls work with a keyboard, and
 audio pauses when the dance is paused or the tab is hidden.
 
-Dancing is a browser demonstration. GitHub care requests and saved companion
-state continue through the profile's Feed, Study, Play and Rest links.
+Dancing was a browser demonstration. Public care requests are retired; saved
+companion state and receipts remain historical records.
 
 ## Inspiration and attribution
 
@@ -54,26 +48,16 @@ and verification were AI-assisted. The original sources remain linked from the
 page. Google Fonts supplies optional display fonts; system fallbacks remain
 available if the fonts cannot load.
 
-## Source and deployment
+## Archived source and provenance
 
-The complete app is [site/index.html](../site/index.html), with its original PNG
-body-part sprites embedded. It runs as a static page with no build step or backend.
-The profile GIF and the full silent MP4 are rendered from that same canvas
-choreography using [the export script](../scripts/export_sparks_dance.py).
-The GIF uses three seconds from each routine; the MP4 contains the full set.
-Dimensions, duration, source checksum and output details are recorded in
-[the media manifest](../assets/sparks-dance-manifest.json).
+The complete historical app is
+[archive/sparks/dance-floor.html](../archive/sparks/dance-floor.html), with its
+original PNG body-part sprites embedded. It is preserved byte-for-byte from the
+pre-retirement page and can be opened locally without a build step or backend.
+The [media manifest](../assets/sparks-dance-manifest.json) records the source
+checksum and retained GIF, still image and silent MP4 outputs.
 
-The export workflow writes only to a `feat/sparks-dance-profile-*` feature branch.
-Review and merge the generated assets through a pull request. If the HTML source
-changes, render fresh GIF and MP4 files so the media continues to match the app.
-
-The [Pages workflow](../.github/workflows/sparks-pages.yml) automatically publishes
-only `site/` when that directory or the deployment workflow changes on `main`.
-It can also be run manually from `main`. After deployment, the workflow checks
-that the public HTML matches the committed source.
-
-Browser checks verify actual GIF animation, the still fallback and the public
-profile after publication. They also exercise all six routines, setlist cycling, pause, sound controls,
-reduced motion, desktop and mobile layouts. Existing profile integrity checks
-continue to cover the companion's generated artwork and saved state.
+The earlier [implementation and verification record](https://github.com/Albertito-AI/Albertito-AI/blob/ec31e53752af9b9d8f658eb6faf0c4a1a1e04852/docs/SPARKS_DANCE_FLOOR.md)
+is retained in Git history. Automatic dance export and its dedicated browser
+maintenance are retired. The current Pages workflow publishes the Research Lab
+and its entry page; the archive directory is outside its deployment boundary.

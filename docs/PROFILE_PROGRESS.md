@@ -1,5 +1,33 @@
 # Profile change record
 
+## 29 October 2026: retire the mascot and focus the public entry points
+
+Albert retired Sparks to concentrate effort on useful research, outside adoption
+and professional work. The profile now begins with his name and research
+introduction. Mascot care and dance invitations are removed from the profile
+and Research Lab. The task-based research guide retains its existing routes
+under a neutral name.
+
+The GitHub Pages root now opens the Research Lab, retaining recognised research
+anchors and the public scenario/record query fields. A direct Lab link remains
+available without JavaScript. The former Dance Floor HTML is preserved
+byte-for-byte in [the archive](../archive/sparks/README.md), outside the published
+site. Its original artwork, media, saved care state and historical records remain
+available. The duplicate, unused robot PNG is removed from the published site;
+the identical original remains in `assets/sparks-retro.png`.
+
+Recorded source examples, verification receipts, the growing catalogue,
+contribution tasks and music and learning routes are retained. Existing local
+review notes keep their original storage key; new review downloads use the
+Research Lab name. A browser regression case checks that a pre-existing note
+still opens with its recorded next step after the presentation change.
+
+Implementation is AI-assisted. JavaScript syntax, Python browser-check
+compilation, profile validation and whitespace checks passed locally. Browser
+checks, guarded merge and live delivery are evidenced by the associated PR and
+publication workflow. This entry records the prepared change; it does not claim
+measured savings, outside adoption or a financial return.
+
 ## 29 October 2026: share an example and contribute an observation
 
 Research Lab visitors can prepare a link to the selected recorded scenario and

@@ -1,8 +1,3 @@
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/research-header-static.svg?version=sparks-retro-20261028">
-  <img src="assets/research-header.svg?version=sparks-retro-20261028" alt="Albert Tan: Law, evidence and technology. Sparks, a fictional retro research robot with subtle movement and persistent game state." width="1200">
-</picture>
-
 # Albert Tan Sin Hon
 
 I study how institutions turn evidence into decisions, and how those decisions
@@ -42,14 +37,13 @@ and limits.
 | Read published scholarship | [Research and source records](https://albertito-ai.github.io/Albertito-AI/lab/#research) |
 | Inspect a software example | [Projects and demonstrations](https://albertito-ai.github.io/Albertito-AI/lab/#projects) |
 | Prepare a source-checking exercise | [Teaching materials](https://albertito-ai.github.io/Albertito-AI/lab/#teaching) |
-| Follow a bounded route with Sparks | [Curated research guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
+| Follow a guided research task | [Curated research guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
 | Report an observed problem | [Lab feedback form](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml) |
 
 The lab's guide follows curated links. Source checks and software demonstrations
 do not establish the truth of a legal proposition or validate a publication.
 [About the lab](docs/RESEARCH_LAB.md) ·
-[Usability protocol](docs/LAB_EVALUATION.md) ·
-[Sparks and the Dance Floor](#sparks-and-the-dance-floor)
+[Usability protocol](docs/LAB_EVALUATION.md)
 
 ## For agents and agent builders
 
@@ -206,65 +200,6 @@ notes remain available in [EVT-Albert](https://github.com/Albertito-AI/evtalbert
 and [AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind)
 ([synthetic phase demo](https://github.com/Albertito-AI/AlberTito-MasterMind#see-it-in-action)),
 with their unvalidated research status retained.
-
-## Sparks and the Dance Floor
-
-[Open the Dance Floor](https://albertito-ai.github.io/Albertito-AI/) ·
-[Public-project workbench](docs/SPARKS_WORKBENCH.md) ·
-[About Sparks](docs/SPARKS.md)
-
-<details>
-<summary>Open Sparks' care controls and dance preview</summary>
-
-**Meet Sparks**, my little digital research companion, cared for by the community.
-
-**[Feed an idea](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20feed&body=Public%20care%3A%20feed.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Study](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20study&body=Public%20care%3A%20study.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Play](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20play&body=Public%20care%3A%20play.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.) · [Rest](https://github.com/Albertito-AI/Albertito-AI/issues/new?title=%5BSparks%5D%20rest&body=Public%20care%3A%20rest.%20Sparks%20may%20decline%20when%20full%2C%20tired%20or%20on%20cooldown.%20Click%20Create%20to%20submit.)**
-
-Anyone signed into GitHub can submit a public care request. Choose an action,
-then click **Create**. Sparks may accept or decline according to his needs.
-
-[Dance Floor](docs/SPARKS_DANCE_FLOOR.md) · [About Sparks](docs/SPARKS.md) · [Care diary](docs/SPARKS_CARE_LOG.md)
-· [Still image](assets/research-header-static.svg?version=sparks-retro-20261028)
-
-**[Sparks at work](docs/SPARKS_WORKBENCH.md):** a guide to the public projects,
-checked starting points, and notes on observed README and release changes.
-
-## See it in action
-
-### Sparks' Dance Floor
-
-<a href="https://albertito-ai.github.io/Albertito-AI/">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/sparks-dance-still.png?version=dance-20261028">
-    <img src="assets/sparks-dance.gif?version=dance-20261028" alt="Sparks dancing through six routines on a purple and amber stage." width="304">
-  </picture>
-</a>
-
-**[Open the interactive stage](https://albertito-ai.github.io/Albertito-AI/)**
-· [Full dance video](assets/sparks-dance.mp4)
-· [About the dances](docs/SPARKS_DANCE_FLOOR.md)
-
-The preview above loops through all six routines. Open the interactive stage to
-pick a dance, play the full set, pause or turn on a synthesized beat.
-The interactive stage is hosted on GitHub Pages. A still image is shown in this
-profile when reduced motion is preferred.
-
-**The animated header above is Sparks' running demonstration.** Choose a care
-action, submit the prefilled GitHub issue, and read his decision in the
-[care diary](docs/SPARKS_CARE_LOG.md). His saved needs determine the response.
-
-| A recorded request | What Sparks did |
-| --- | --- |
-| [Feed an idea, #10](https://github.com/Albertito-AI/Albertito-AI/issues/10) | Accepted: “Thank you. That gives me something new to think about.” |
-| [Feed again, #11](https://github.com/Albertito-AI/Albertito-AI/issues/11) | Declined: “Thanks, I have enough ideas for now.” |
-
-His [public-project workbench](docs/SPARKS_WORKBENCH.md) shows another capability:
-checking project entry points and recording source revisions, README changes and
-release observations. Care uses explicit game rules; points and age do not
-measure intelligence. The header shows the latest saved snapshot, which GitHub
-may briefly cache. For the tools themselves, open a **See demo** link above.
-
-</details>
 
 ## Music and Learning with Bert
 

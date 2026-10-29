@@ -1,18 +1,18 @@
-# Sparks' public workbench
+# Public project source observations
 
-Sparks keeps a small memory of five public projects, checks their selected entrypoints and compares source observations over time. The work below is produced by bounded rules and GitHub source reads.
+This workbench checks selected entrypoints in five public projects and compares source observations over time. Each result comes from a bounded GitHub source read and retains its recorded evidence.
 
 Project purposes come from the maintained public portfolio catalog. File checks establish presence at a recorded commit; they do not establish correctness, legal reliability, adoption or successful execution.
 
+[Maintenance and scope](PUBLIC_SOURCE_OBSERVATIONS.md).
+
 **Latest observation:** 29 Oct 2026, 01:11 SGT. Each project below retains its own source-check time.
 
-## Work Sparks can demonstrate
+## Recorded checks
 
 - **Project navigation:** 5 of 5 selected starting paths are present in current public snapshots.
 - **Entrypoint audit:** 5 of 5 projects have current complete source observations; absent or non-file paths are reported below.
 - **Change briefing:** 5 of 5 current projects have been compared with an earlier successful observation. First observations establish baselines.
-
-These are evidence-backed task states, independent of care experience points.
 
 ## Find a project
 
@@ -32,7 +32,7 @@ These are evidence-backed task states, independent of care experience points.
 - **Piepowder:** No published stable release was returned; observed 29 Oct 2026, 01:11 SGT.
 - **Tallystick:** No published stable release was returned; observed 29 Oct 2026, 01:11 SGT.
 
-## Changes Sparks has recorded
+## Recorded source changes
 
 Only differences between successful observations enter this list. An unavailable source is never reported as unchanged. At most the latest 20 change receipts are retained.
 
@@ -46,4 +46,4 @@ Only differences between successful observations enter this list. An unavailable
 
 Compare the next daily public-source snapshots with the saved evidence.
 
-The observer reads only the fixed public watchlist. It does not execute source code or edit the watched projects. Observations and change receipts persist in [Sparks' public-source memory](../data/sparks-knowledge.json).
+The observer reads only the fixed public watchlist. It does not execute source code or edit the watched projects. Observations and change receipts persist in the [public-source record](../data/sparks-knowledge.json).

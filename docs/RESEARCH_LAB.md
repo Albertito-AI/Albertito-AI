@@ -5,9 +5,9 @@ index of Albert Tan's scholarship, experimental software and teaching materials.
 It helps a visitor locate a relevant source, inspect a documented example,
 understand its status and choose a bounded next step.
 
-The existing [Sparks Dance Floor](https://albertito-ai.github.io/Albertito-AI/)
-retains its original address and controls. Research navigation lives under
-`/lab/`; neither route replaces the other.
+The [GitHub Pages entry](https://albertito-ai.github.io/Albertito-AI/) opens
+the Research Lab at `/lab/`. The retired mascot experiment is retained in
+[the repository archive](../archive/sparks/README.md).
 
 ## Choose a route
 
@@ -21,10 +21,10 @@ retains its original address and controls. Research navigation lives under
 | Work through a source-based research task | [Reading paths](LIBRARY_READING_PATHS.md) |
 | Inspect software demonstrations and reuse terms | [Projects](https://albertito-ai.github.io/Albertito-AI/lab/#projects) |
 | Find source-checking materials | [Teaching](https://albertito-ai.github.io/Albertito-AI/lab/#teaching) |
-| Follow a short set of maintained starting points | [Sparks guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
+| Follow a short set of maintained starting points | [Research guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
 | Report a reproducible difficulty or unclear explanation | [Feedback form](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml) |
 
-Sparks' lab guide is curated navigation. It selects documented routes from the
+The lab guide is curated navigation. It selects documented routes from the
 catalog; it does not generate legal advice or certify the linked material.
 Use each project's actual demonstration and current rights statement before
 planning an executable evaluation or contribution.

@@ -1,4 +1,4 @@
-name: Publish research lab and Sparks Dance Floor
+name: Publish Research Lab
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
           import json
           from pathlib import Path
           root = Path("site/lab")
-          for name in ["index.html", "app.js", "styles.css", "data/catalog.json", "data/regnav.json", "assets/sparks.png"]:
+          for name in ["index.html", "app.js", "styles.css", "data/catalog.json", "data/regnav.json"]:
               assert (root / name).is_file(), name
           record = json.loads((root / "data/regnav.json").read_text())
           assert record["receipts"], "No executed examples recorded"
@@ -69,7 +69,7 @@ jobs:
           fi
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
-      - name: Upload the research lab and Dance Floor
+      - name: Upload the Research Lab
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         with:
           path: site
@@ -88,3 +88,7 @@ jobs:
         env:
           PAGES_URL: ${{ steps.deployment.outputs.page_url }}
         run: python -u scripts/lab/check_browser.py --url "${PAGES_URL}lab/"
+      - name: Verify the published entry and fallback routes
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python -u scripts/check_sparks_browser.py --url "$PAGES_URL"

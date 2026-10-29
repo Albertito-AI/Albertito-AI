@@ -29,7 +29,7 @@ what actually happened.
 | Check reuse and citation | Visitor locates the relevant rights statement and a source-specific citation or revision. |
 | Find a teaching route | Visitor locates the source-checking materials and recognises their unevaluated status. |
 | Use a personal note or export | Visitor creates a non-confidential test note and can locate the resulting download. |
-| Find feedback and the Dance Floor | Visitor finds the feedback form without sending it, then opens the existing Dance Floor. |
+| Find a contribution route | Visitor finds the feedback form without sending it, then locates a bounded project contribution task and its reuse terms. |
 
 For a keyboard or reduced-motion session, also record whether focus is visible,
 controls are reachable and motion settings are respected. Do not infer broad

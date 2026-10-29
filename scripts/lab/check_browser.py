@@ -73,6 +73,35 @@ def expect_catalog_count(page, matched, total):
     )
 
 
+def check_retained_review_notes(browser, url, data):
+    """A note saved before mascot retirement must remain available afterwards."""
+    scenario = data["scenarios"][0]
+    claim_id = scenario["display"]["claims"][0]["id"]
+    entry = {
+        "dataset_id": data["id"], "recorded_at": data["generated_at"],
+        "scenario_id": scenario["id"], "scenario_title": scenario["title"],
+        "claim_id": claim_id, "next_step": "follow-up-needed",
+        "note": "A review note saved before the presentation changed.",
+        "created_at": "2026-10-28T15:00:00Z", "updated_at": "2026-10-28T15:00:00Z",
+        "source_revisions": [], "receipt_ids": scenario["receipt_ids"],
+    }
+    key = "::".join([data["id"], data["generated_at"], scenario["id"], claim_id])
+    saved = json.dumps({key: entry})
+    context = browser.new_context()
+    context.add_init_script(
+        "localStorage.setItem('sparks-lab-review-notes-v1', " + json.dumps(saved) + ");"
+    )
+    page = context.new_page()
+    load_ready(page, url)
+    page.select_option("#scenario-select", "0")
+    page.locator(f'.claim-button[data-claim-id="{claim_id}"]').click()
+    page.locator("#tab-review").click()
+    expect(page.locator("#review-note")).to_have_value(entry["note"])
+    expect(page.locator("#review-status-select")).to_have_value("follow-up-needed")
+    require(True, "Review notes saved before mascot retirement remain available")
+    context.close()
+
+
 def check_example_sharing(browser, url, data, catalog):
     """Follow a shared example and prepare public feedback without publishing it."""
     parts = urlsplit(url)
@@ -396,6 +425,7 @@ def check(url):
                 "The visitor is told that the exercise shows recorded execution")
         require(page.locator("#scenario-select option").count() == len(data["scenarios"]),
                 "Every recorded scenario can be selected")
+        check_retained_review_notes(browser, url, data)
         check_example_sharing(browser, url, data, catalog)
 
         evidence_views = set()
@@ -501,6 +531,8 @@ def check(url):
         with page.expect_download(timeout=10000) as download_event:
             page.locator("#download-review").click()
         download = download_event.value
+        require(re.fullmatch(r"research-review-\d{4}-\d{2}-\d{2}\.json", download.suggested_filename) is not None,
+                "Review downloads use the current Research Lab name")
         exported = json.loads(Path(download.path()).read_text(encoding="utf-8"))
         require(note in list(text_values(exported)), "Downloaded annotation preserves the visitor's exact note")
         require(exported["record_type"] == "local_reviewer_annotations"
@@ -575,14 +607,14 @@ def check(url):
                 "Related-item navigation finds and focuses an entry beyond the first results page")
 
         intent_options = page.locator("#guide-intent option").evaluate_all("(items) => items.map(item => item.value)")
-        require(len(intent_options) >= 3, "Sparks offers task-based guidance")
+        require(len(intent_options) >= 3, "The research guide offers task-based navigation")
         guide_answers = set()
         for intent in intent_options:
             page.select_option("#guide-intent", intent)
             answer = page.locator("#guide-answer").inner_text().strip()
-            require(len(answer) > 40, "Sparks explains the selected task")
+            require(len(answer) > 40, "The research guide explains the selected task")
             guide_answers.add(answer)
-        require(len(guide_answers) >= 3, "Sparks' guidance changes with the visitor's intention")
+        require(len(guide_answers) >= 3, "Research guidance changes with the visitor's intention")
 
         page.select_option("#guide-intent", "trace")
         quickstart = next(entry["url"] for entry in regnav["links"] if entry["kind"] == "start")

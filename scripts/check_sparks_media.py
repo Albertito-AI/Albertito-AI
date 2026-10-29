@@ -1,19 +1,14 @@
-"""Verify that the committed dance exports actually play on GitHub."""
+"""Verify preserved dance media against its archived source without public-site requests."""
 from pathlib import Path
-import argparse
 import hashlib
 import io
 import json
-import re
 import tempfile
 
 from PIL import Image, ImageChops
 from playwright.sync_api import sync_playwright
 
 ROOT = Path.cwd()
-parser = argparse.ArgumentParser()
-parser.add_argument("--public", action="store_true")
-args = parser.parse_args()
 manifest = json.loads((ROOT / "assets/sparks-dance-manifest.json").read_text())
 assert manifest["source_sha256"] == hashlib.sha256((ROOT / manifest["source"]).read_bytes()).hexdigest()
 gif_path = ROOT / "assets/sparks-dance.gif"
@@ -38,10 +33,8 @@ with Image.open(ROOT / "assets/sparks-dance-still.png") as still:
 assert (ROOT / "assets/sparks-dance.mp4").stat().st_size == manifest["video"]["bytes"]
 print("PASS: Real animated GIF, distinct decoded frames, 18-second loop, matching still, source checksum and size budget.")
 
-readme = (ROOT / "README.md").read_text()
-picture = re.search(r'<picture>\s*<source[^>]+sparks-dance-still[^>]+>\s*<img[^>]+sparks-dance\.gif[^>]+>\s*</picture>', readme).group(0)
-stage_url = re.search(r'\*\*\[Open the interactive stage\]\((https://[^)]+)\)', readme).group(1)
-assert stage_url == "https://albertito-ai.github.io/Albertito-AI/", stage_url
+picture = '<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/sparks-dance-still.png"><img alt="Sparks dancing through six routines" src="assets/sparks-dance.gif" width="304"></picture>'
+stage_url = (ROOT / manifest["source"]).as_uri()
 selector = 'img[alt^="Sparks dancing through six routines"]'
 
 def check_picture(page, url, reduced):
@@ -67,7 +60,7 @@ def check_picture(page, url, reduced):
     dimensions = photo.bounding_box()
     assert dimensions["width"] <= 375
     assert abs(dimensions["height"] - dimensions["width"] * 540 / 304) < 2
-    print("PASS:", "public profile" if url.startswith("https:") else "README picture",
+    print("PASS:", "archived media",
           "still" if reduced else "animated", current)
 
 with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
@@ -111,14 +104,7 @@ with tempfile.TemporaryDirectory() as temp, sync_playwright() as pw:
     external.set_viewport_size({"width": 375, "height": 900})
     assert external.evaluate("document.documentElement.scrollWidth <= innerWidth")
     assert not errors, errors
-    print("PASS: GitHub Pages stage, six routines, pause, audio toggle, whole set and mobile layout.", external.url)
+    print("PASS: Archived stage, six routines, pause, audio toggle, whole set and mobile layout.")
 
-    if args.public:
-        for reduced in (False, True):
-            context = browser.new_context(viewport={"width": 1280, "height": 1100},
-                                          reduced_motion="reduce" if reduced else "no-preference")
-            check_picture(context.new_page(), "https://github.com/Albertito-AI", reduced)
-            context.close()
-        print("PUBLIC_DANCE_PROFILE_VERIFIED")
     browser.close()
-print("All dance media checks passed.")
+print("All archived dance media checks passed without public-site requests.")
