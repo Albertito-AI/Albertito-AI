@@ -27,6 +27,7 @@ adoption need separate evidence.
 | Examine procedural treatment of a disputed result | [Piepowder demonstration](https://github.com/Albertito-AI/piepowder#see-it-work) | Fictional cases, findings and unresolved human decisions, subject to its reserved rights |
 | Find scholarship or source-checking teaching materials | [Catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library) | Source links, status, bibliographic records and related resources |
 | Explore an educational video | [Learning with Bert](https://www.alberttansinhon.com/listen-and-learn/) | Individual videos and collections; check each item's content-review and rights status |
+| Preserve captions and prepare a creator review | [One-video archive pilot](../examples/video-archive-pilot/README.md) | A local caption parser, synthetic example and measured result from one real video |
 
 The separate Source Watch Action and the gateway inside policykit have different
 interfaces and rights. The Action's licence does not cover the gateway.
@@ -113,9 +114,12 @@ The catalogue now provides two individually linked educational video records:
 [The Honest AI](https://www.youtube.com/watch?v=BwHQWbHH-o4) and
 [Scaling AI: Now Comes the Hard Part](https://www.youtube.com/watch?v=MoXO1VAzN6M).
 Their public title and description metadata identify the channel and disclose
-Google NotebookLM assistance. These are **metadata-only leads**: the video
-content, transcripts, source support and timestamped claims have not been
-reviewed for these entries. No substantive summary is inferred from a title.
+Google NotebookLM assistance. Their catalogue entries remain **metadata-only
+leads**. A separate [caption-ingestion pilot](../examples/video-archive-pilot/README.md)
+retrieved and preserved 239 English auto-caption cues for The Honest AI and
+prepared private review drafts. Audio comparison and source-claim verification
+remain incomplete, and no rendered excerpt was produced. This does not upgrade
+either catalogue entry to a verified educational source.
 
 For a video used as evidence, inspect the actual passage, verify captions
 against the recording, retain its timestamp and follow any underlying primary

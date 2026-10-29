@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-29",
+  "source": {
+    "video_id": "BwHQWbHH-o4",
+    "title": "Learning with Bert - The Honest AI",
+    "url": "https://www.youtube.com/watch?v=BwHQWbHH-o4",
+    "channel_id": "UC4TOK2rX0iM6xNZhQ82WfTQ",
+    "duration_seconds": 291,
+    "metadata_review_status": "public_player_metadata_verified_caption_text_read_audio_not_listened"
+  },
+  "source_caption": {
+    "origin": "youtube_auto",
+    "language_code_advertised": "en",
+    "bytes": 38927,
+    "sha256": "f9e16c55c6904ff2cc7b63f2a2f7a23161be188dc2b4a1326b4230359837e58e",
+    "cue_count": 239,
+    "first_cue_start_seconds": 0.4,
+    "last_cue_end_seconds": 291.0,
+    "completeness_or_speech_accuracy_verified": false
+  },
+  "reading_copy": {
+    "status": "derived_not_audio_corrected",
+    "mapping_entries": 239,
+    "removed_exact_overlap_tokens": 1370,
+    "original_cues_preserved": true
+  },
+  "completed": [
+    "verified_source_metadata",
+    "retrieved_source_auto_captions",
+    "preserved_timed_cues",
+    "VTT_format_conversion",
+    "raw_cue_transcript",
+    "derived_reading_copy_and_mapping",
+    "private_editorial_candidates",
+    "portable_local_ingestion_utility"
+  ],
+  "rendered_excerpt": "blocked: retrieval yielded HTML",
+  "local_asr_performed": false,
+  "audio_listening_performed": false,
+  "promotional_publication_performed": false,
+  "claim_review_status": "source_sensitive_narration_assertions_held_for_primary_source_review",
+  "measurements": {
+    "caption_retrieval": {
+      "elapsed_seconds": 1.763,
+      "peak_child_rss_kib": 45560
+    },
+    "caption_ingestion": {
+      "elapsed_seconds": 0.008282,
+      "process_peak_rss_kib": 12820
+    },
+    "blocked_media_retrieval": {
+      "elapsed_seconds": 2.038,
+      "peak_child_rss_kib": 49072
+    }
+  },
+  "measurement_limit": "Individual operations in this execution environment; excludes tool scheduling, research, editorial work and earlier attempts. Not channel-throughput or local-computer performance.",
+  "paid_api_calls": 0,
+  "new_paid_services": 0,
+  "new_paid_advertising": 0,
+  "source_media_bytes_received": 0,
+  "media_error_body_bytes_received": 390,
+  "runtime": {
+    "python": "3.12.14",
+    "yt_dlp": "2026.10.26",
+    "ffmpeg": "6.1.1-3ubuntu5"
+  },
+  "public_payload_note": "Real transcript/captions and detailed claim review excluded; only source identifiers, hashes, counts and status included.",
+  "validation": {
+    "synthetic_contract_tests_passed": 19,
+    "real_source_cue_and_reading_copy_roundtrip_verified": true,
+    "latest_code_validation_at_utc": "2026-10-29T14:27:31Z"
+  }
+}

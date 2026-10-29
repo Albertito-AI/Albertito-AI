@@ -1,0 +1,8 @@
+{
+  "video_id": "SYNTHETIC01",
+  "title": "Synthetic caption parser fixture: not a real video",
+  "channel_id": "SYNTHETIC_TEST_CHANNEL",
+  "source_url": "https://example.invalid/synthetic-fixture",
+  "duration_seconds": 10,
+  "fixture_only": true
+}

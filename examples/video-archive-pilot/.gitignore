@@ -1,0 +1,9 @@
+.deps/
+__pycache__/
+*.pyc
+build/
+input/
+output/
+evidence/
+private_delivery_allowlist.txt
+PRIVATE_PILOT_REPORT.md
