@@ -1,5 +1,22 @@
 # Profile change record
 
+## 29 October 2026: learning routes by interest
+
+This change adds three direct video links under the Research Lab's existing
+Watch and listen section. Chemistry, business and philosophy give visitors
+specific starting points alongside the retained channel and playlist routes.
+The links preserve the videos' published titles and work without JavaScript.
+
+The three native YouTube watch pages were inspected on 29 October 2026.
+Their titles, Bert Chan channel identity and available players were verified.
+This was a metadata and availability check, not a substantive content review.
+The links do not imply educational outcomes or measured audience growth.
+
+Local profile integrity, link-preservation and static-anchor checks passed.
+Implementation and review are AI-assisted. This entry records the prepared
+change; publication and deployment belong to the associated pull request and
+existing Pages workflow.
+
 ## 29 October 2026: direct music and learning routes
 
 This change gives visitors an explicit route from the profile's opening
