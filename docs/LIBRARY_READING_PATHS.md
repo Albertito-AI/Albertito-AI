@@ -1,14 +1,14 @@
 # External reference reading paths
 
-These paths use primary resources issued by SGX, the IFRS Foundation, the Thai
-SEC, NIST, the OECD and W3C. They are external authors' and institutions' work.
+These paths use official resources issued by SGX, the IFRS Foundation, the Thai
+SEC, NIST, the OECD and W3C, alongside explicitly scoped scholarly readings. They are external authors' and institutions' work.
 They are included to support visitors' research and evaluation; they are not
 Albert Tan's publications or endorsements of the lab.
 
-The ten records are maintained in
+The reference records are maintained in
 [`config/library_references.json`](../config/library_references.json).
 Each linked identifier below is the exact catalogue item ID and opens its
-official source. Source inspection was completed on **29 October 2026 at
+source. Initial reference inspections were completed on **29 October 2026 at
 00:00:46 UTC**. The review covered the sections described in each record, not
 every provision or linked document. `source_inspected` records AI source
 inspection and does not mean independent human approval.
@@ -54,6 +54,23 @@ which questions remain outside that source?
 A useful result may contain an unresolved cell. Filling a gap with an assumption
 would obscure the next research task. The lab's RegNav exercise can help organise
 such a record, but these reading paths do not establish its legal conclusions.
+
+### Optional empirical comparison: measurement and legal consequence
+
+The queue-derived [study by Mega Silvia](https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2026.1786642/full)
+(catalogue ID `discovery-2e5caf68f02f9ec3c286`) offers a bounded reading task.
+Read **Research methodology**, especially the proxy construction and its final
+endogeneity caveat. Make two columns: what the statistical measure records,
+and what a statement-specific legal inquiry would still need. Keep the study's
+observed association separate from causal inference and from a finding that an
+issuer violated a legal duty. Check any regulatory chronology against primary
+instruments before using it in a legal comparison.
+
+**Produce:** a short measurement-to-claim note with one supported use and one
+unresolved inference. The source inspection covered the abstract, selected
+methodology and rights notice on 29 October 2026; it did not audit the data,
+results tables or cited law. This exercise is a proposed use, not an evaluation
+result or endorsement of the paper's conclusions.
 
 ## Path 2: Turn an AI principle into an observable evaluation
 
