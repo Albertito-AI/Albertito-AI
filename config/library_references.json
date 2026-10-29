@@ -519,6 +519,156 @@
         "World Wide Web Consortium"
       ],
       "use_for": "Separate an issuer's assessment claim, the proof protecting a credential and the verifier's decision to trust that issuer."
+    },
+    {
+      "id": "discovery-2e5caf68f02f9ec3c286",
+      "title": "Sustainability disclosure, greenwashing, and earnings management: evidence from weak institutional environments",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "An empirical study of disclosure–performance differences and earnings-management measures in Indonesian listed firms.",
+      "maturity": "Published research; bounded AI source inspection",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Mega Silvia"
+      ],
+      "publisher": "Frontiers Media SA",
+      "venue": "Frontiers in Climate",
+      "year": 2026,
+      "publication_date": "2026-06-15",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.3389/fclim.2026.1786642",
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-10-29T00:13:11Z",
+      "last_metadata_check": "2026-10-29T00:13:11Z",
+      "use_for": "Compare a statistical greenwashing proxy with the evidence needed to establish a legal misrepresentation; record what the proxy leaves unresolved.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Observational association is not definitive causation. The proxy is not a legal finding about a particular issuer. Regulatory chronology requires separate primary-source checks.",
+      "links": [
+        {
+          "label": "Inspected publisher article",
+          "url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2026.1786642/full",
+          "kind": "start"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.3389/fclim.2026.1786642",
+          "kind": "publication"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T00:57:00Z",
+        "source_url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2026.1786642/full",
+        "scope": "Publisher HTML: authorship/date, Abstract, Research methodology (sample, proxy construction and final endogeneity caveat), and Copyright. Results tables, underlying data and cited legal instruments were not independently audited."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.3389/fclim.2026.1786642",
+        "text": "Mega Silvia (2026). Sustainability disclosure, greenwashing, and earnings management: evidence from weak institutional environments. Frontiers in Climate. https://doi.org/10.3389/fclim.2026.1786642",
+        "doi": "10.3389/fclim.2026.1786642"
+      },
+      "rights": {
+        "summary": "Publisher states CC BY; this record supplies attribution, links and an original description only.",
+        "url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2026.1786642/full"
+      },
+      "related_item_ids": [
+        "research-sg-th-accountability",
+        "reference-sgx-mainboard-711b"
+      ],
+      "metadata_sha256": "e5f1dc6645b61883ad99d73ec306d4d32a70219136bac6f23e5ff7c2fc86cd65",
+      "discovered_at": "2026-10-29T00:13:11Z",
+      "discovery_provenance": {
+        "promoted_from": "pending_admission",
+        "original_record": {
+          "id": "discovery-2e5caf68f02f9ec3c286",
+          "title": "Sustainability disclosure, greenwashing, and earnings management: evidence from weak institutional environments",
+          "type": "research",
+          "work_type": "journal-article",
+          "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+          "maturity": "Bibliographic record; content review pending",
+          "topics": [
+            "ESG disclosure and accountability"
+          ],
+          "authors": [
+            "Mega Silvia"
+          ],
+          "publisher": "Frontiers Media SA",
+          "venue": "Frontiers in Climate",
+          "year": 2026,
+          "publication_date": "2026-06-15",
+          "publication_date_precision": "day",
+          "publication_date_source": "issued",
+          "doi": "10.3389/fclim.2026.1786642",
+          "origin": "crossref",
+          "review_status": "metadata_only",
+          "discovery_source_id": "esg-disclosure",
+          "added_at": "2026-10-29T00:13:11Z",
+          "last_metadata_check": "2026-10-29T00:13:11Z",
+          "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+          "relevance": {
+            "basis": "Title and publisher-supplied subject terms",
+            "matched_groups": [
+              [
+                "sustainability"
+              ],
+              [
+                "disclosure"
+              ]
+            ],
+            "source_id": "esg-disclosure"
+          },
+          "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+          "links": [
+            {
+              "label": "Open publication via DOI",
+              "url": "https://doi.org/10.3389/fclim.2026.1786642",
+              "kind": "publication"
+            },
+            {
+              "label": "Inspect registry metadata",
+              "url": "https://api.crossref.org/works/10.3389%2Ffclim.2026.1786642",
+              "kind": "source"
+            }
+          ],
+          "verification": {
+            "checked_at": "2026-10-29T00:13:11Z",
+            "source_url": "https://api.crossref.org/works/10.3389%2Ffclim.2026.1786642",
+            "revision": null,
+            "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+          },
+          "citation": {
+            "available": true,
+            "format": "text",
+            "url": "https://doi.org/10.3389/fclim.2026.1786642",
+            "text": "Mega Silvia (2026). Sustainability disclosure, greenwashing, and earnings management: evidence from weak institutional environments. Frontiers in Climate. https://doi.org/10.3389/fclim.2026.1786642",
+            "doi": "10.3389/fclim.2026.1786642"
+          },
+          "rights": {
+            "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+          },
+          "related_item_ids": [],
+          "metadata_sha256": "e5f1dc6645b61883ad99d73ec306d4d32a70219136bac6f23e5ff7c2fc86cd65",
+          "discovered_at": "2026-10-29T00:13:11Z"
+        },
+        "editorial_action": "2026-W44:lab-library-editorial",
+        "inspection_kind": "AI source inspection, not independent human approval"
+      }
     }
   ]
 }
