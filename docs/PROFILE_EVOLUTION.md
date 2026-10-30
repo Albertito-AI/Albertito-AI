@@ -36,21 +36,22 @@ work before editing so two workflows do not publish competing changes.
 The displayed update date changes only after a substantive profile update.
 A scheduled review alone is not a publication or an observed outcome.
 
-The separate [Sparks companion](SPARKS.md) workflow maintains fictional game
-state, public care receipts and a care diary, and the two generated header images.
-Its bounded project worker also refreshes public-source observations and a
-generated workbench for the five featured projects. It retains source revisions,
-checks selected entry files and records observed README/release changes. This
-output supports the existing adoption and development workstreams; it does not
-become a separate owner of their roadmaps or edit those repositories.
-Its scheduled ticks do not change scholarly claims, project descriptions or the
-substantive profile-update date. Edit its source template when changing the
-character's design.
+## Retired mascot and retained source observations
 
-The companion's care experience is fictional game progress. Claims about useful
-capabilities require implemented procedures, current evidence and appropriate
-checks. Private educational preparation, admissions and assessments stay outside
-this public repository.
+Albert retired the public Sparks mascot, care requests, game progression and
+Dance Floor promotion on 29 October 2026. The [retirement record](SPARKS.md) and
+[archived demonstration](../archive/sparks/README.md) preserve the historical
+material; they are not active public experiences or development priorities.
+Do not reinstate care controls or school preparation from earlier records.
+
+The existing [public-source observations](PUBLIC_SOURCE_OBSERVATIONS.md) and
+[workbench](SPARKS_WORKBENCH.md) continue in neutral language. This bounded
+process checks selected public entry files, source revisions and recorded
+changes for five featured projects. It does not edit those projects, validate
+scholarly propositions or establish independent use. Data-only refreshes do not
+constitute substantive profile updates or change the displayed date.
+
+Private cohort admissions and assessments remain outside the public portfolio.
 
 ## What merits an update
 
