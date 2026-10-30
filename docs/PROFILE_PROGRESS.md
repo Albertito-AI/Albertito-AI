@@ -1,5 +1,19 @@
 # Profile change record
 
+## 30 October 2026: correct the active profile-maintenance charter
+
+The maintained profile guidance still described Sparks' care and game progression
+as active after the owner retired that programme on 29 October. Updated the
+[profile maintenance guide](PROFILE_EVOLUTION.md) to distinguish archived mascot
+materials from the continuing neutral public-source observer. Existing reader
+paths, source records, local notes, project ownership, reuse terms and private
+cohort boundaries remain unchanged.
+
+This is a documentation consistency correction, not a resumed mascot workflow,
+a new feature, or evidence of outside adoption, saved reviewer time or revenue.
+The public README and its substantive-update date are unchanged. Exact
+publication and repository checks belong to the associated pull request.
+
 ## 29 October 2026: source-linked research workflow pilot
 
 The [two-document example](../examples/research-workflow-pilot/README.md) records
