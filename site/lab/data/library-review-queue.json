@@ -1,8 +1,112 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T06:04:10Z",
+  "generated_at": "2026-10-31T05:58:34Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-d1ff21c405293bab64d9",
+      "title": "Environmental Compliance and Legal Accountability in Blockchain-Driven Water Management Systems",
+      "doi": "10.1201/9781003682820-2",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1201%2F9781003682820-2",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-bc972eefedc9f23119ce",
+      "title": "The Role of Consumer Ethics and Accountability in Resilient and Sustainable Consumption",
+      "doi": "10.4324/9781003768494-13",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.4324%2F9781003768494-13",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-961f72330180cf3f228a",
+      "title": "Human-in-the-loop annotation and review platform for dental panoramic radiographs: a comparative evaluation of multimodal large language models in tooth-level abnormality detection",
+      "doi": "10.1186/s12903-026-10205-9",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1186%2Fs12903-026-10205-9",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-65b3522ef43d056dde46",
+      "title": "Regulatory Expectations and AI Governance",
+      "doi": "10.1007/979-8-8688-3353-3_3",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1007%2F979-8-8688-3353-3_3",
+      "publication_date": "2026-10-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-41a70bfba0daac86e3d8",
+      "title": "Governance and Artificial Intelligence in Comparative Perspective: Between Innovation, Control, and Resistance",
+      "doi": "10.56201/jpslr.vol.11.no10.2025.pg26.33",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.56201%2Fjpslr.vol.11.no10.2025.pg26.33",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3100b7e9ec950e75321c",
+      "title": "SUSTAINABLE DEVELOPMENT GOALS AND CORPORATE REPORTING IN INDIA: A CONTENT ANALYSIS OF SDG DISCLOSURES IN BRSR REPORTS",
+      "doi": "10.36713/epra31953",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.36713%2Fepra31953",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1235df4d99a0d256a1af",
+      "title": "Valoración judicial de la prueba digital en los procesos civiles ecuatorianos",
+      "doi": "10.21855/resnonverba.v16i2.1225",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.21855%2Fresnonverba.v16i2.1225",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-05baa9dc34febe2ead13",
+      "title": "Translated Transcripts From Covert Recordings Used for Evidence in Court: Issues of Reliability",
+      "doi": "10.3389/fcomm.2021.779227",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffcomm.2021.779227",
+      "publication_date": "2021-12-03",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-e9ad72781b8ddbe3e918",
       "title": "The Future of AI Governance in Financial Services",
@@ -199,19 +303,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-3100b7e9ec950e75321c",
-      "title": "SUSTAINABLE DEVELOPMENT GOALS AND CORPORATE REPORTING IN INDIA: A CONTENT ANALYSIS OF SDG DISCLOSURES IN BRSR REPORTS",
-      "doi": "10.36713/epra31953",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.36713%2Fepra31953",
-      "publication_date": "2026-10-28",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-33660a08da9482568ac7",
       "title": "Ownership structure and climate-related corporate reporting",
       "doi": "10.1080/01559982.2024.2301850",
@@ -225,19 +316,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-65b3522ef43d056dde46",
-      "title": "Regulatory Expectations and AI Governance",
-      "doi": "10.1007/979-8-8688-3353-3_3",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1007%2F979-8-8688-3353-3_3",
-      "publication_date": "2026-10-29",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-a4aa29c4323f3fc7c9c6",
       "title": "Assessing the level of environmental information disclosure by listed companies on the stock market in Vietnam",
       "doi": "10.21511/ppm.17(3).2019.17",
@@ -248,32 +326,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.21511%2Fppm.17%283%29.2019.17",
       "publication_date": "2019-08-21",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-bc972eefedc9f23119ce",
-      "title": "The Role of Consumer Ethics and Accountability in Resilient and Sustainable Consumption",
-      "doi": "10.4324/9781003768494-13",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.4324%2F9781003768494-13",
-      "publication_date": "2026-10-28",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-d1ff21c405293bab64d9",
-      "title": "Environmental Compliance and Legal Accountability in Blockchain-Driven Water Management Systems",
-      "doi": "10.1201/9781003682820-2",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1201%2F9781003682820-2",
-      "publication_date": "2026-10-28",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -325,19 +377,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.30976%2Fsusead.1972524",
-      "publication_date": "2026-10-28",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-41a70bfba0daac86e3d8",
-      "title": "Governance and Artificial Intelligence in Comparative Perspective: Between Innovation, Control, and Resistance",
-      "doi": "10.56201/jpslr.vol.11.no10.2025.pg26.33",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.56201%2Fjpslr.vol.11.no10.2025.pg26.33",
       "publication_date": "2026-10-28",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -417,19 +456,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1016%2Fj.bar.2014.01.002",
       "publication_date": "2015-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-961f72330180cf3f228a",
-      "title": "Human-in-the-loop annotation and review platform for dental panoramic radiographs: a comparative evaluation of multimodal large language models in tooth-level abnormality detection",
-      "doi": "10.1186/s12903-026-10205-9",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1186%2Fs12903-026-10205-9",
-      "publication_date": "2026-10-28",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -911,6 +937,84 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1186%2Fs41180-018-0019-x",
       "publication_date": "2018-09-15",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3c4c10052977bc1c8d0a",
+      "title": "Audit transformation in the era of artificial intelligence: an integrative literature review of AI’s impact on audit quality, professional skepticism, and auditor competence",
+      "doi": "10.60036/jbm.1477",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-40f43a82d54ae10b4870",
+      "title": "Artificial Intelligence Chatbots as Patient Information Tools: A Bilingual, Two-Round Evaluation of the e-Nabız Personal Health Record System",
+      "doi": "10.55050/sarad.2011897",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.55050%2Fsarad.2011897",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4217514f6dc5cd85cdf4",
+      "title": "Climate risk disclosure, cross-regional capital flow, and corporate dual innovation",
+      "doi": "10.1080/09537325.2026.2753212",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1080%2F09537325.2026.2753212",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4fecf1b400f4d7ef3c18",
+      "title": "Evaluation of Radon Content in Soil Using Artificial Intelligence",
+      "doi": "10.59490/6ad293b71111c11e2bf47f2e",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.59490%2F6ad293b71111c11e2bf47f2e",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-bff71bef104220bad22f",
+      "title": "Mandatory sustainability reporting and corporate hiring: the impact of CSRD introduction in Germany",
+      "doi": "10.1007/s11573-026-01279-6",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs11573-026-01279-6",
+      "publication_date": "2026-09-25",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d68b0149644b9fb6bd71",
+      "title": "Integrating AI-driven adaptive learning and ethnomathematical game design to address persistent conceptual difficulties in LCM and GCD: Development and evaluation of the DAKOGI platform",
+      "doi": "10.22342/jme.v17i3.pp797-830",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.22342%2Fjme.v17i3.pp797-830",
+      "publication_date": "2026-06-06",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
