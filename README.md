@@ -11,7 +11,7 @@ research tools and teaching materials.
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Watch & listen](#music-and-learning-with-bert) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
+**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [For courts](#for-courts-and-justice-technology-teams) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Watch & listen](#music-and-learning-with-bert) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
 
 ## Research Lab
 
@@ -68,11 +68,35 @@ demonstrations, improve the explanations and understand a specific user's
 problem well enough to design a worthwhile pilot. On **27 October 2026**,
 RegNav Source Watch received its first standalone GitHub Action release.
 
+## For courts and justice-technology teams
+
+**[Court Submission Integrity](https://github.com/Albertito-AI/court-submission-integrity)**
+is a new standalone research alpha for inspecting submissions before substantive
+human review. Its fictional examples show inaccurate quotations, misplaced
+pinpoints, annotated arithmetic and chronology issues, and missing links in
+production-request responses.
+
+**[See the three-minute demonstration](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/DEMO.md) · [Understand its capabilities](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/CAPABILITIES.md) · [Discuss collaboration and testing](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md)**
+
+For example, a quotation stating SGD 1,400 is displayed beside a supplied fictional
+invoice stating SGD 1,250, with a specific mismatch finding. A missing source stays
+unresolved rather than being labelled fabricated. Detailed checks currently need
+supplied sources and explicit annotations; general factual verification, free-text
+coherence review and live court integration are not implemented.
+
+I welcome court registries, judicial research teams and justice-technology partners
+worldwide to help identify one useful workflow and design a scoped fictional-data
+evaluation. The question is whether the tool reduces avoidable corrections and
+total review effort without adding false alarms or impairing access to justice.
+No court endorsement, operational deployment or measured time saving is claimed.
+Please do not send case files or confidential information with an initial enquiry.
+
 ## Projects you can explore
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
 | **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [See demo](https://github.com/Albertito-AI/policykit#see-it-in-action) · [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
+| **[Court Submission Integrity](https://github.com/Albertito-AI/court-submission-integrity)** | Inspect supplied-source quotations and pinpoints, annotated consistency and document-production links; retain unknowns and human decisions. | [See demo](https://github.com/Albertito-AI/court-submission-integrity#see-it-in-action) · [Capability guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/CAPABILITIES.md) · [Collaboration](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md) |
 | **[RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch)** | Compare committed sources and claim links with a separate GitHub Action, identifying changes needing review rather than determining factual or legal correctness. | [See demo](https://github.com/Albertito-AI/regnav-source-watch#see-it-in-action) · [Action installation](https://github.com/Albertito-AI/regnav-source-watch#add-it-to-a-repository) · [v0.1.0 release](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) |
 | **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [See demo](https://github.com/Albertito-AI/symbolon#see-it-in-action) · [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
 | **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See demo](https://github.com/Albertito-AI/piepowder#see-it-in-action) · [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
@@ -85,8 +109,8 @@ human review and external use are recorded when they occur.
 **Reuse terms:** Symbolon, Tallystick and the separate RegNav Source Watch Action
 use Apache-2.0 for their original code. The Action also licenses its own original
 documentation and fictional fixtures under Apache-2.0; Tallystick's original
-schemas use CC BY 4.0. The `policykit` RegNav ledger and Piepowder retain their
-reserved rights. The Action's licence does not extend to those repositories.
+schemas use CC BY 4.0. The `policykit` RegNav ledger, Piepowder and Court Submission Integrity retain
+their reserved rights. The Action's licence does not extend to those repositories.
 Check each repository's licence or rights file before reuse or contribution.
 
 ## Repository architecture
@@ -109,6 +133,9 @@ licence or rights file controls reuse. The complete decision rule is recorded in
 A useful first contribution can be small: reproduce a documented run, explain a
 confusing step, or propose a carefully specified example that exposes a problem.
 
+- **Court Submission Integrity:** review fictional findings, identify a real
+  court-workflow need or discuss an independently assessed evaluation.
+  [Collaboration guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md).
 - **Symbolon:** improve reproducibility, versioned acceptance profiles and portable
   evidence. [Contribution guide](https://github.com/Albertito-AI/symbolon/blob/main/CONTRIBUTING.md).
 - **Tallystick:** try the quickstart, review correction/completeness cases or improve
@@ -241,4 +268,4 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **29 October 2026**.
+Last substantive profile update: **1 November 2026**.
