@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "court-submission-integrity"
+version = "0.1.0a1"
+description = "Offline, structured-input submission-integrity research prototype; not a truth verifier"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=5.9,<7"]
+
+[project.scripts]
+court-integrity = "court_integrity.__main__:main"
+court-intake = "court_integrity.intake:main"
+
+[tool.setuptools.packages.find]
+include = ["court_integrity*"]

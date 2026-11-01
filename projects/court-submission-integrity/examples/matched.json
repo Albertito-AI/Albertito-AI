@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1",
+  "profile": {
+    "id": "fictional-production-demo",
+    "version": "1",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "status": "fictional"
+  },
+  "submission": {
+    "id": "SYN-MATCHED-001",
+    "title": "Fictional source-linked submission",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "blocks": [
+      {
+        "id": "p1",
+        "text": "The fictional invoice records a total of SGD 1,250."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "EX-1",
+      "kind": "exhibit",
+      "title": "Fictional training source EX-1",
+      "citation": "",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "fictional://training/EX-1",
+      "completeness": "complete",
+      "locators": {
+        "printed-page:1": "Fictional invoice. Total: SGD 1,250."
+      },
+      "expected_text_digest": "544452e549fb620d36d0eabd719041ad114c193c4c94e21ea6bad3ed529fa531"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "block_id": "p1",
+      "text": "The fictional invoice records a total of SGD 1,250.",
+      "kind": "fact",
+      "evidence": [
+        {
+          "source_id": "EX-1",
+          "locator": "printed-page:1",
+          "quotation": "Total: SGD 1,250."
+        }
+      ]
+    }
+  ],
+  "arithmetic": [
+    {
+      "id": "SUM-1",
+      "block_id": "p1",
+      "components": [
+        "1000",
+        "250"
+      ],
+      "total": "1250",
+      "unit": "SGD"
+    }
+  ],
+  "requests": [
+    {
+      "id": "R1",
+      "text": "Produce the fictional invoice."
+    }
+  ],
+  "responses": [
+    {
+      "request_id": "R1",
+      "status": "produced",
+      "source_ids": [
+        "EX-1"
+      ],
+      "explanation": "Training example only."
+    }
+  ]
+}

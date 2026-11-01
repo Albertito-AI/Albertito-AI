@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1",
+  "sources": [
+    {
+      "id": "fictional-sg",
+      "kind": "authority",
+      "title": "Fictional parser exercise, not an authority",
+      "citation": "[2099] SGHC 900001",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "Original fictional test data, created 1 November 2026",
+      "completeness": "complete",
+      "locators": {
+        "para:12": "This is an invented source passage for software testing. No legal rule is expressed."
+      },
+      "expected_text_digest": "4e0a8826114c34c5efa892664218f677a188574f6056803806bd6849cd80af1b"
+    },
+    {
+      "id": "fictional-uk",
+      "kind": "authority",
+      "title": "Fictional parser exercise, not an authority",
+      "citation": "[2099] UKSC 900002",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "Original fictional test data, created 1 November 2026",
+      "completeness": "partial",
+      "locators": {
+        "para:4": "This is an invented partial transcription for range-handling tests."
+      },
+      "expected_text_digest": "5a00b6e5c3fafa5e9315399b562456d57f996d314ba990a385dcfb8f3d53a21b"
+    }
+  ]
+}

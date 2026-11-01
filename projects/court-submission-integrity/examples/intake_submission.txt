@@ -1,0 +1,11 @@
+FICTIONAL PARSER EXERCISE. All authorities and case tokens below are invented test data. This is not a real legal submission.
+
+1. This paragraph refers to the fictional source [2099] SGHC 900001 at [12]. The program must not infer that this source supports any legal proposition.
+
+2. This paragraph refers to [2099] SGHC 900001 at [99]. Paragraph 99 is deliberately absent from the supplied fictional transcription.
+
+3. This paragraph refers to [2099] UKSC 900002 at [4]-[6]. The prototype must not silently reduce a range to the first paragraph.
+
+4. This paragraph refers to [2099] SGCA 900003 at [8]. No matching source is supplied. That is not evidence of falsity or an external source search.
+
+5. A factual assertion appears here without a supplied claim annotation. The prototype must not present the document as fully reviewed.
