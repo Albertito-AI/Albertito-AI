@@ -1,5 +1,23 @@
 # Profile change record
 
+## 1 November 2026: connect the public tools and simplify the first visit
+
+Added a static, accessible portfolio banner and a task-based starting table.
+CohortFrame 0.2 now has a prominent composer/download entry, a project-table
+record, a contribution route and a local-CLI entry in the agent guide. Its public
+repository visibility was verified after the owner changed it. The existing
+licensing distinctions and alpha limitations remain explicit.
+
+The main website now includes a dedicated CohortFrame section, and the product
+page returns visitors to the Research Lab and contact section. Both Sites
+deployments succeeded. Specialist profile detail remains available in
+expandable sections, with existing anchors and research, teaching and music
+content retained. No mascot programme was resumed.
+
+The associated commit and workflow runs record repository verification.
+Browser visual QA was unavailable in the execution environment; no claim of
+measured conversion, independent adoption or revenue follows from this update.
+
 ## 30 October 2026: correct the active profile-maintenance charter
 
 The maintained profile guidance still described Sparks' care and game progression

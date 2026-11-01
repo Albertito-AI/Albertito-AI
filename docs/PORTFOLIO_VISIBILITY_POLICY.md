@@ -27,6 +27,8 @@ The public portfolio comprises:
 
 - the `Albertito-AI` profile and public navigation repository;
 - `policykit`, the RegNav evidence-ledger research prototype;
+- `court-submission-integrity`, the supplied-source submission-checking research alpha;
+- `cohortframe`, the visual brief composer and local video-rendering evaluation alpha;
 - `regnav-source-watch`, the separately released Apache-2.0 Source Watch GitHub Action;
 - `symbolon`, the machine-work contract and verification reference implementation;
 - `piepowder`, the fictional agent-commerce acceptance and review prototype;

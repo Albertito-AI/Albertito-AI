@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+<title id="title">Albert Tan Sin Hon: research you can inspect, tools you can try</title>
+<desc id="desc">A cream and purple portfolio banner connecting law, institutions and human capability with three routes: read, try and build.</desc>
+<rect width="1280" height="320" fill="#f2eedf"/>
+<path d="M0 0H1280V320H0Z" fill="none" stroke="#19171b" stroke-width="4"/>
+<rect x="38" y="37" width="9" height="12" fill="#6c35c4"/>
+<text x="61" y="48" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="2.6" font-weight="700" fill="#19171b">LAW / INSTITUTIONS / HUMAN CAPABILITY</text>
+<text x="38" y="133" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="700" letter-spacing="-2" fill="#19171b">Research you can inspect.</text>
+<text x="38" y="198" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="700" letter-spacing="-2" fill="#6c35c4">Tools you can try.</text>
+<path d="M38 240H805" stroke="#19171b" stroke-width="1.5"/>
+<text x="38" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#514b48">Scholarship. Practical experiments. Useful conversations.</text>
+<rect x="898" y="38" width="326" height="65" fill="#6c35c4" stroke="#19171b" stroke-width="2"/>
+<text x="921" y="80" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#fff">01 / READ</text>
+<rect x="922" y="125" width="302" height="65" fill="#a6d83d" stroke="#19171b" stroke-width="2"/>
+<text x="945" y="167" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#19171b">02 / TRY</text>
+<rect x="946" y="212" width="278" height="65" fill="#ff742f" stroke="#19171b" stroke-width="2"/>
+<text x="969" y="254" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#19171b">03 / BUILD</text>
+</svg>

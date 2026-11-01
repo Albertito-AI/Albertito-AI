@@ -20,6 +20,7 @@ adoption need separate evidence.
 
 | Task | Starting resource | Result you can inspect |
 | --- | --- | --- |
+| Compose a structured title-card video | [CohortFrame](https://github.com/Albertito-AI/cohortframe) | A v1 JSON brief, exact PNG previews and a local MP4 with an inspectable job receipt; evaluation alpha with reserved rights |
 | Identify supplied claims affected by a changed or missing local source | [RegNav gateway exchange](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/sample_exchange.json) | An internal fictional exchange with unchanged, changed and unavailable source states |
 | Add source-change checks to a GitHub workflow | [RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch) | A separate Apache-2.0 Action, documented installation and a fictional demonstration |
 | Inspect a local agent tool with synthetic inputs | [Tallystick agent interface](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md) | Read-only checks, illustrative calculations and a settlement preview using invented records |
@@ -32,6 +33,24 @@ adoption need separate evidence.
 
 The separate Source Watch Action and the gateway inside policykit have different
 interfaces and rights. The Action's licence does not cover the gateway.
+
+## CohortFrame: brief to local video
+
+Added on **1 November 2026**, following the verified 0.2 release. Use the
+[browser composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer)
+or construct a v1 JSON brief directly. After installing from the
+[documented evaluation package](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started),
+inspect `cohortframe capabilities` and `cohortframe doctor`, then run
+`cohortframe validate project.json`. Exact still previews are available through
+`cohortframe preview project.json --output frames`.
+
+Rendering uses explicit project and job commands, expected revisions and
+project-scoped idempotency keys. The [README](https://github.com/Albertito-AI/cohortframe#agent-interface-and-durable-jobs)
+documents the JSON CLI contract and the path to the output artifact. This is a
+local CLI, not an MCP server or a hosted rendering API. The limits are 12
+title-card scenes, 60 seconds and printable ASCII text. Python and FFmpeg are
+required for MP4 rendering. See the [rights notice](https://github.com/Albertito-AI/cohortframe/blob/main/NOTICE.md)
+and [release evidence](https://github.com/Albertito-AI/cohortframe/blob/main/docs/RELEASE_0_2.md).
 
 ## Read the catalogue programmatically
 

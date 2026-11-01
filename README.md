@@ -1,5 +1,7 @@
 # Albert Tan Sin Hon
 
+![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
+
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher at the
 University of Groningen, working on sustainability reporting, legal accountability
@@ -11,9 +13,40 @@ research tools and teaching materials.
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-**[Open the Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [For courts](#for-courts-and-justice-technology-teams) · [Read the research](#selected-scholarship) · [Explore the projects](#projects-you-can-explore) · [Watch & listen](#music-and-learning-with-bert) · [Build with us](#build-with-us) · [Work with me](#work-with-me)**
+**[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
+
+## Choose a starting point
+
+| Your task | A useful first step |
+| --- | --- |
+| **Create a short video** | [Open CohortFrame's visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer), then export a brief for local rendering. |
+| **Explore court-submission checks** | [Inspect the fictional Court Submission Integrity demo](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/DEMO.md). |
+| **Trace a claim to its sources** | [Try the recorded RegNav exercise](https://albertito-ai.github.io/Albertito-AI/lab/#replay). |
+| **Read the research** | [Selected scholarship](#selected-scholarship), with institutional records and access links. |
+| **Discuss a project or workshop** | [Contact me through my website](https://www.alberttansinhon.com/#contact) with a short, non-confidential brief. |
+| **Listen and learn** | [Explore music and learning collections](https://www.alberttansinhon.com/listen-and-learn/). |
+
+## Create with CohortFrame
+
+**CohortFrame 0.2 is now available for public evaluation.** Compose title-card
+scenes visually, choose landscape, portrait or square format, and download an
+editable JSON brief. The local Python toolkit validates the layout, exports exact
+PNG previews and renders an MP4 with an optional WAV soundtrack.
+
+[**Try the composer**](https://cohortframe-studio.travelingbert.chatgpt.site/#composer)
+ · [Download and get started](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started)
+ · [Public source and release checks](https://github.com/Albertito-AI/cohortframe)
+ · [CohortFrame on my website](https://www.alberttansinhon.com/#cohortframe)
+
+The browser composer needs no account or provider key. MP4 rendering runs locally
+with Python and FFmpeg. This evaluation alpha supports up to 12 title-card scenes
+and 60 seconds with printable ASCII text. It does not generate footage or music
+with AI. Public source availability does not grant an open-source licence.
 
 ## Research Lab
+
+<details>
+<summary>Explore the catalogue, teaching routes and verification records</summary>
 
 The [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) connects
 published scholarship, experimental software and teaching materials. Try the
@@ -45,7 +78,12 @@ do not establish the truth of a legal proposition or validate a publication.
 [About the lab](docs/RESEARCH_LAB.md) ·
 [Usability protocol](docs/LAB_EVALUATION.md)
 
+</details>
+
 ## For agents and agent builders
+
+<details>
+<summary>Interfaces, machine-readable resources and first-use guidance</summary>
 
 I am developing evidence and accountability workflows for agent-assisted
 research. The [agent starting guide](docs/AGENT_START_HERE.md) connects specific
@@ -59,14 +97,15 @@ interface targets **2026-07-28**. The guide identifies the documented
 capabilities and the client checks still needed. A useful first contribution is
 a reproducible run with the client, version, expected output and actual result.
 
+</details>
+
 ## Current focus
 
-I am opening the development process to people who want to test, improve and
-apply these ideas. On **26 October 2026**, Symbolon, Piepowder and Tallystick
-joined the already public RegNav repository. The next useful work is to reproduce the
-demonstrations, improve the explanations and understand a specific user's
-problem well enough to design a worthwhile pilot. On **27 October 2026**,
-RegNav Source Watch received its first standalone GitHub Action release.
+I am inviting focused evaluation of three connected areas: source-linked legal
+research, court-submission review, and repeatable creative workflows. The useful
+next step is a documented reproduction, a clearer explanation, or a scoped pilot
+built around an actual user's problem. Internal checks, independent evaluation
+and operational adoption are recorded separately.
 
 ## For courts and justice-technology teams
 
@@ -95,6 +134,7 @@ Please do not send case files or confidential information with an initial enquir
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
+| **[CohortFrame](https://github.com/Albertito-AI/cohortframe)** | Compose title-card briefs, inspect exact still previews and render local MP4s with retained job records. | [Visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer) · [Installation and downloads](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started) |
 | **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [See demo](https://github.com/Albertito-AI/policykit#see-it-in-action) · [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
 | **[Court Submission Integrity](https://github.com/Albertito-AI/court-submission-integrity)** | Inspect supplied-source quotations and pinpoints, annotated consistency and document-production links; retain unknowns and human decisions. | [See demo](https://github.com/Albertito-AI/court-submission-integrity#see-it-in-action) · [Capability guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/CAPABILITIES.md) · [Collaboration](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md) |
 | **[RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch)** | Compare committed sources and claim links with a separate GitHub Action, identifying changes needing review rather than determining factual or legal correctness. | [See demo](https://github.com/Albertito-AI/regnav-source-watch#see-it-in-action) · [Action installation](https://github.com/Albertito-AI/regnav-source-watch#add-it-to-a-repository) · [v0.1.0 release](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) |
@@ -109,11 +149,14 @@ human review and external use are recorded when they occur.
 **Reuse terms:** Symbolon, Tallystick and the separate RegNav Source Watch Action
 use Apache-2.0 for their original code. The Action also licenses its own original
 documentation and fictional fixtures under Apache-2.0; Tallystick's original
-schemas use CC BY 4.0. The `policykit` RegNav ledger, Piepowder and Court Submission Integrity retain
+schemas use CC BY 4.0. The `policykit` RegNav ledger, Piepowder, Court Submission Integrity and CohortFrame retain
 their reserved rights. The Action's licence does not extend to those repositories.
 Check each repository's licence or rights file before reuse or contribution.
 
 ## Repository architecture
+
+<details>
+<summary>Public work, private operations and reuse boundaries</summary>
 
 This account separates **inspectable public reference work** from **non-public
 operations and confidential records**. Public repositories may contain original
@@ -128,11 +171,16 @@ boundaries. Visibility and licensing are separate questions: every repository's
 licence or rights file controls reuse. The complete decision rule is recorded in the
 [portfolio visibility policy](docs/PORTFOLIO_VISIBILITY_POLICY.md).
 
+</details>
+
 ## Build with us
 
 A useful first contribution can be small: reproduce a documented run, explain a
 confusing step, or propose a carefully specified example that exposes a problem.
 
+- **CohortFrame:** try a template, reproduce an export or report a specific
+  layout or installation problem using [the project issues](https://github.com/Albertito-AI/cohortframe/issues).
+  Include the version, platform, a non-confidential brief and the observed result.
 - **Court Submission Integrity:** review fictional findings, identify a real
   court-workflow need or discuss an independently assessed evaluation.
   [Collaboration guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md).
@@ -161,8 +209,8 @@ design, research and AI-literacy workshops, and commissioned prototype work**.
 The first conversation should establish the problem, the intended user and the
 evidence needed to judge whether the work helps.
 
-For an academic collaboration or paid-work enquiry, use the contact route on my
-[institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/).
+For an academic collaboration or paid-work enquiry, use the
+[contact section on my website](https://www.alberttansinhon.com/#contact).
 Include a short non-confidential brief: the problem, desired deliverable,
 relevant jurisdiction, available data or materials, timeline and budget range.
 Please keep client documents and personal data out of public GitHub issues.
