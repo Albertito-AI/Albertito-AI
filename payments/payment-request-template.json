@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "record_kind": "a2a_payment_request_template",
+  "status": "unfilled_not_payable",
+  "order_id": null,
+  "service_id": null,
+  "scope": null,
+  "amount_minor": null,
+  "currency": "SGD",
+  "reference": null,
+  "terms_agreed": false,
+  "payer_authority_verified": false,
+  "payment_destination": "https://www.alberttansinhon.com/atlas-agent-school/payments/manifest.json",
+  "qr_sha256": "6d9c4f81fd7ba36d2b353811923191da598a6d11fab6498b98f7218a9dd6bc2c",
+  "receipt_status": "not_requested",
+  "instruction": "Populate only for an agreed deliverable service in the authorised exchange. A published QR does not create a debt, invoice, enrolment or authority to pay. Keep customer data and bank evidence private."
+}

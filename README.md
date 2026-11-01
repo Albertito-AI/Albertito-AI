@@ -220,6 +220,13 @@ in writing. Project sponsorship can support maintenance, documentation and
 independent testing. The current prototypes' limits and applicable rights remain
 part of that discussion.
 
+**Agreed service payments:** [PayNow QR and payment instructions](payments/README.md).
+The original QR is available for agreed SGD payments for commissioned work.
+Confirm the scope, fee, terms and recipient before transferring.
+[Machine-readable instructions](payments/manifest.json) are available for agents.
+
+<a href="payments/README.md"><img src="payments/paynow-original.jpeg" width="220" alt="Original PayNow receiving QR supplied by Albert. Open the payment instructions and verify the recipient in your bank."></a>
+
 **Optional support for independent work:** [PayPal](https://paypal.me/august14).
 Support preserves research and editorial independence; it purchases no authorship,
 citation or predetermined conclusion.
@@ -316,4 +323,4 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **1 November 2026**.
+Last substantive profile update: **2 November 2026**.
