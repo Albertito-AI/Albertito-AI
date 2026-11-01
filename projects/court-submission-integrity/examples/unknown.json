@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1",
+  "profile": {
+    "id": "fictional-production-demo",
+    "version": "1",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "status": "fictional"
+  },
+  "submission": {
+    "id": "SYN-UNKNOWN-001",
+    "title": "Fictional unavailable-source example: uncertainty is not falsity",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "blocks": [
+      {
+        "id": "p1",
+        "text": "The fictional invoice records a total of SGD 1,250."
+      }
+    ]
+  },
+  "sources": [],
+  "claims": [
+    {
+      "id": "C1",
+      "block_id": "p1",
+      "text": "The fictional invoice records a total of SGD 1,250.",
+      "kind": "fact",
+      "evidence": [
+        {
+          "source_id": "EX-1",
+          "locator": "printed-page:1",
+          "quotation": "Total: SGD 1,250."
+        }
+      ]
+    }
+  ],
+  "arithmetic": [],
+  "requests": [
+    {
+      "id": "R1",
+      "text": "Produce the fictional invoice."
+    }
+  ],
+  "responses": [
+    {
+      "request_id": "R1",
+      "status": "produced",
+      "source_ids": [
+        "EX-1"
+      ],
+      "explanation": "Training example only."
+    }
+  ]
+}

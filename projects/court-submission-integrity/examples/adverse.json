@@ -1,0 +1,262 @@
+{
+  "schema_version": "0.1",
+  "profile": {
+    "id": "fictional-production-demo",
+    "version": "1",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "status": "fictional"
+  },
+  "submission": {
+    "id": "SYN-ADVERSE-001",
+    "title": "Fictional discovery-stage submission: intentionally defective example",
+    "jurisdiction": "FICTIONAL",
+    "stage": "document-production",
+    "blocks": [
+      {
+        "id": "p1",
+        "text": "The fictional invoice records a total of SGD 1,400."
+      },
+      {
+        "id": "p2",
+        "text": "The fictional rule requires disclosure without any exception."
+      },
+      {
+        "id": "p3",
+        "text": "The fictional rule states that a court may order production."
+      },
+      {
+        "id": "p4",
+        "text": "The same transfer was SGD 1,200."
+      },
+      {
+        "id": "p5",
+        "text": "The same transfer was SGD 1,500."
+      },
+      {
+        "id": "p6",
+        "text": "The absent training authority supports this application."
+      },
+      {
+        "id": "p7",
+        "text": "The notice was sent on 15 May 2026 and received on 10 May 2026."
+      },
+      {
+        "id": "p8",
+        "text": "The partly transcribed record confirms receipt."
+      },
+      {
+        "id": "p9",
+        "text": "Additional narrative has not been mapped to any claim."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "EX-1",
+      "kind": "exhibit",
+      "title": "Fictional training source EX-1",
+      "citation": "",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "fictional://training/EX-1",
+      "completeness": "complete",
+      "locators": {
+        "printed-page:1": "Fictional invoice. Total: SGD 1,250."
+      },
+      "expected_text_digest": "544452e549fb620d36d0eabd719041ad114c193c4c94e21ea6bad3ed529fa531"
+    },
+    {
+      "id": "AUTH-1",
+      "kind": "authority",
+      "title": "Fictional training source AUTH-1",
+      "citation": "DEMO-AUTHORITY-001",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "fictional://training/AUTH-1",
+      "completeness": "complete",
+      "locators": {
+        "para:8": "In this fictional exercise, a court may order production.",
+        "para:9": "This fictional direction contains exceptions. Privileged material is not included in this training request."
+      },
+      "expected_text_digest": "ac85bbff68d2a9ccf2a42a99d91c518dfaefe7fa3d58a1c69b8b52fe7adcdde6"
+    },
+    {
+      "id": "EX-PARTIAL",
+      "kind": "exhibit",
+      "title": "Fictional training source EX-PARTIAL",
+      "citation": "",
+      "jurisdiction": "FICTIONAL",
+      "version": "fixture-v1",
+      "origin": "fictional://training/EX-PARTIAL",
+      "completeness": "partial",
+      "locators": {
+        "pdf-page:1": "Fictional partial transcript."
+      },
+      "expected_text_digest": "54e3c551b8f8f2805e048124289b09a5d656a72129336e0f473c18384d1093ee"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "block_id": "p1",
+      "text": "The fictional invoice records a total of SGD 1,400.",
+      "kind": "fact",
+      "evidence": [
+        {
+          "source_id": "EX-1",
+          "locator": "printed-page:1",
+          "quotation": "Total: SGD 1,400."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "block_id": "p2",
+      "text": "The fictional rule requires disclosure without any exception.",
+      "kind": "legal_argument",
+      "evidence": [
+        {
+          "source_id": "AUTH-1",
+          "locator": "para:9",
+          "quotation": "Disclosure is required without any exception.",
+          "cited_as": "DEMO-AUTHORITY-002"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "block_id": "p3",
+      "text": "The fictional rule states that a court may order production.",
+      "kind": "legal_argument",
+      "evidence": [
+        {
+          "source_id": "AUTH-1",
+          "locator": "para:9",
+          "quotation": "a court may order production.",
+          "cited_as": "DEMO-AUTHORITY-001"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "block_id": "p4",
+      "text": "The same transfer was SGD 1,200.",
+      "kind": "allegation",
+      "evidence": [],
+      "assertion": {
+        "key": "transfer.amount",
+        "context": "same-transfer-1",
+        "position": "claimant",
+        "scenario": "primary",
+        "unit": "SGD",
+        "value": "1200"
+      }
+    },
+    {
+      "id": "C5",
+      "block_id": "p5",
+      "text": "The same transfer was SGD 1,500.",
+      "kind": "allegation",
+      "evidence": [],
+      "assertion": {
+        "key": "transfer.amount",
+        "context": "same-transfer-1",
+        "position": "claimant",
+        "scenario": "primary",
+        "unit": "SGD",
+        "value": "1500"
+      }
+    },
+    {
+      "id": "C6",
+      "block_id": "p6",
+      "text": "The absent training authority supports this application.",
+      "kind": "legal_argument",
+      "evidence": [
+        {
+          "source_id": "AUTH-NOT-SUPPLIED",
+          "locator": "para:42",
+          "quotation": "Relief follows."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "block_id": "p7",
+      "text": "The notice was sent on 15 May 2026 and received on 10 May 2026.",
+      "kind": "fact",
+      "evidence": []
+    },
+    {
+      "id": "C8",
+      "block_id": "p8",
+      "text": "The partly transcribed record confirms receipt.",
+      "kind": "fact",
+      "evidence": [
+        {
+          "source_id": "EX-PARTIAL",
+          "locator": "pdf-page:8",
+          "quotation": "Received."
+        }
+      ]
+    }
+  ],
+  "arithmetic": [
+    {
+      "id": "SUM-1",
+      "block_id": "p1",
+      "components": [
+        "1000",
+        "250"
+      ],
+      "total": "1400",
+      "unit": "SGD"
+    }
+  ],
+  "requests": [
+    {
+      "id": "R1",
+      "text": "Produce the fictional invoice."
+    },
+    {
+      "id": "R2",
+      "text": "State the response to the fictional second request."
+    }
+  ],
+  "responses": [
+    {
+      "request_id": "R1",
+      "status": "produced",
+      "source_ids": [
+        "EX-MISSING"
+      ],
+      "explanation": "Training example only."
+    }
+  ],
+  "chronology": [
+    {
+      "id": "DATE-1",
+      "block_id": "p7",
+      "description": "Declared send date must not be after declared receipt date.",
+      "earlier": "2026-05-15",
+      "later": "2026-05-10"
+    }
+  ],
+  "arguments": [
+    {
+      "id": "ARG1",
+      "conclusion": "C2",
+      "premises": [
+        "C3"
+      ]
+    },
+    {
+      "id": "ARG2",
+      "conclusion": "C3",
+      "premises": [
+        "C2"
+      ]
+    }
+  ]
+}
