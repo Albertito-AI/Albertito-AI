@@ -38,6 +38,10 @@ REQUIRED_PATHS = {
 }
 
 REQUIRED_REPOSITORY_LINKS = {
+    "https://github.com/Albertito-AI/CommCode",
+    "https://github.com/Albertito-AI/channel-income-os",
+    "https://github.com/Albertito-AI/cohortframe",
+    "https://github.com/Albertito-AI/court-submission-integrity",
     "https://github.com/Albertito-AI/AlberTito-MasterMind",
     "https://github.com/Albertito-AI/evtalbert",
     "https://github.com/Albertito-AI/policykit",

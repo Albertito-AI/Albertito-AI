@@ -1,5 +1,29 @@
 # Profile change record
 
+## 2 November 2026: bring the profile and catalogue up to date
+
+The public profile omitted CommCode and Channel Income OS, while the Research
+Lab catalogue still listed only five software projects. Added verified entry
+paths for all eleven public software repositories and the twelve public
+whitepapers, including this profile's paper. CommCode's 0.1.0-dev.1 prerelease
+and Channel Income OS's 0.1.0 commercial preview now have release links, stated
+limitations and accurate reuse terms. The agent guide and public visibility
+inventory follow the same scope.
+
+Six new catalogue records retain exact inspected revisions, source and rights
+links, plain-text software references and bounded review descriptions. Earlier
+inspection dates, execution receipts, scholarship and video-review states are
+preserved. The whitepaper index's three-column table now separates repository,
+paper and Wiki-setup links correctly. Wiki publication remains separately
+blocked pending initial pages; committed papers remain readable immediately.
+
+Local profile validation, library validation, all 115 existing unit tests and
+the three preserved-state checks passed. Added GitHub file destinations were
+read back, and the complete diff was reviewed with AI assistance. The associated
+pull request and Actions records retain the exact author, head/base revisions,
+hosted checks, merge and Pages delivery result. No independent adoption,
+professional validation or measured social benefit is inferred from this update.
+
 ## 1 November 2026: connect the public tools and simplify the first visit
 
 Added a static, accessible portfolio banner and a task-based starting table.
