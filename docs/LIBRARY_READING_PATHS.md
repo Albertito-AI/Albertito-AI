@@ -72,6 +72,23 @@ methodology and rights notice on 29 October 2026; it did not audit the data,
 results tables or cited law. This exercise is a proposed use, not an evaluation
 result or endorsement of the paper's conclusions.
 
+### Optional historical coding exercise: what does a disclosure score measure?
+
+Read [Thi Kim Tuyen Nguyen, Ngoc Tien Nguyen and Thi Mai Huong Nguyen (2019)](https://doi.org/10.21511/ppm.17(3).2019.17),
+catalogue ID `discovery-a4aa29c4323f3fc7c9c6`. Use section 2.3.2 (p.211)
+to construct a small coding sheet for a fictional annual report. Keep the
+four disclosure categories separate and record the exact passage supporting
+each coding decision. Then add a separate column for what the score leaves
+unresolved, such as environmental performance or a legal compliance finding.
+
+**Produce:** a coding sheet with source passage, category, reason and unresolved
+question. Read section 2.2.2 (p.211) for the sample period and the final
+limitations paragraph (p.216) before proposing a comparison. The study uses
+2017 annual reports and cannot establish present conditions. This proposed
+exercise follows a bounded AI inspection on 2 November 2026 of the source's
+identity, selected methods, limitations and rights notice; it does not audit
+the dataset, results or cited law, or record a completed learner assessment.
+
 ## Path 2: Turn an AI principle into an observable evaluation
 
 **Useful question:** What evidence would justify a particular claim about one
