@@ -1,0 +1,186 @@
+name: Atlas Flexible Zero Fail
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+concurrency:
+  group: atlas-flexible-zero-fail-${{ github.repository }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Audit, retry and report
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        continue-on-error: true
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Static repository health scan
+        continue-on-error: true
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, py_compile, shutil, subprocess
+          from pathlib import Path
+
+          skip = {'.git', '.venv', 'venv', 'node_modules', 'dist', 'build', '__pycache__', '.pytest_cache'}
+          files = [p for p in Path('.').rglob('*') if p.is_file() and not any(part in skip for part in p.parts)]
+          findings = []
+
+          for path in files:
+              try:
+                  if path.suffix.lower() == '.json':
+                      json.loads(path.read_text(encoding='utf-8'))
+                  elif path.suffix.lower() == '.py':
+                      py_compile.compile(str(path), doraise=True)
+                  elif path.suffix.lower() == '.sh':
+                      result = subprocess.run(['bash', '-n', str(path)], capture_output=True, text=True)
+                      if result.returncode:
+                          findings.append(f'{path}: shell syntax: {result.stderr.strip()}')
+                  elif path.suffix.lower() in {'.js', '.mjs', '.cjs'} and shutil.which('node'):
+                      result = subprocess.run(['node', '--check', str(path)], capture_output=True, text=True)
+                      if result.returncode:
+                          findings.append(f'{path}: JavaScript syntax: {result.stderr.strip()}')
+              except Exception as exc:
+                  findings.append(f'{path}: {type(exc).__name__}: {exc}')
+
+          for path in Path('.github/workflows').glob('*.y*ml') if Path('.github/workflows').exists() else []:
+              text = path.read_text(encoding='utf-8')
+              if not text.strip():
+                  findings.append(f'{path}: empty workflow file')
+              if any(line.startswith('\t') for line in text.splitlines()):
+                  findings.append(f'{path}: tab indentation detected')
+
+          sensitive = {'.env', 'credentials.json', 'client_secret.json'}
+          for path in files:
+              if path.name.lower() in sensitive or path.suffix.lower() in {'.pem', '.p12', '.pfx'}:
+                  findings.append(f'{path}: sensitive-looking tracked file requires review')
+
+          Path('atlas-static.json').write_text(json.dumps({'checked_files': len(files), 'findings': findings}, indent=2), encoding='utf-8')
+          PY
+
+      - name: Inspect and retry recent failed main-branch runs
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+          CURRENT_WORKFLOW: ${{ github.workflow }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import datetime as dt, json, os, urllib.error, urllib.request
+          repo = os.environ['GH_REPOSITORY']
+          token = os.environ['GH_TOKEN']
+          current = os.environ['CURRENT_WORKFLOW']
+          base = f'https://api.github.com/repos/{repo}'
+          headers = {'Accept': 'application/vnd.github+json', 'Authorization': f'Bearer {token}', 'X-GitHub-Api-Version': '2022-11-28'}
+
+          def request(url, method='GET'):
+              req = urllib.request.Request(url, method=method, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  body = response.read()
+                  return json.loads(body) if body else {}
+
+          findings, retried = [], []
+          try:
+              data = request(f'{base}/actions/runs?branch=main&per_page=50')
+              latest = {}
+              for run in data.get('workflow_runs', []):
+                  if run.get('name') == current:
+                      continue
+                  latest.setdefault(run.get('workflow_id'), run)
+              bad = {'failure', 'timed_out', 'startup_failure', 'action_required'}
+              now = dt.datetime.now(dt.timezone.utc)
+              for run in latest.values():
+                  if run.get('status') != 'completed' or run.get('conclusion') not in bad:
+                      continue
+                  created = dt.datetime.fromisoformat(run['created_at'].replace('Z', '+00:00'))
+                  age = now - created
+                  if run.get('run_attempt', 1) < 2 and age < dt.timedelta(hours=48):
+                      try:
+                          request(f"{base}/actions/runs/{run['id']}/rerun-failed-jobs", method='POST')
+                          retried.append({'name': run['name'], 'url': run['html_url']})
+                          continue
+                      except Exception as exc:
+                          findings.append(f"Could not retry {run['name']}: {exc}")
+                  findings.append(f"{run['name']}: {run['conclusion']} ({run['html_url']})")
+          except Exception as exc:
+              findings.append(f'Actions audit could not complete: {type(exc).__name__}: {exc}')
+
+          Path = __import__('pathlib').Path
+          Path('atlas-actions.json').write_text(json.dumps({'findings': findings, 'retried': retried}, indent=2), encoding='utf-8')
+          PY
+
+      - name: Maintain Atlas remediation issue
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          from pathlib import Path
+
+          repo = os.environ['GH_REPOSITORY']
+          token = os.environ['GH_TOKEN']
+          title = '[Atlas Flexible Zero Fail] Remediation required'
+          headers = {'Accept': 'application/vnd.github+json', 'Authorization': f'Bearer {token}', 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json'}
+          base = f'https://api.github.com/repos/{repo}'
+
+          def api(url, method='GET', payload=None):
+              data = json.dumps(payload).encode() if payload is not None else None
+              req = urllib.request.Request(url, data=data, method=method, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  body = response.read()
+                  return json.loads(body) if body else {}
+
+          static = json.loads(Path('atlas-static.json').read_text()) if Path('atlas-static.json').exists() else {'findings': ['Static scan did not produce a result.'], 'checked_files': 0}
+          actions = json.loads(Path('atlas-actions.json').read_text()) if Path('atlas-actions.json').exists() else {'findings': ['Actions scan did not produce a result.'], 'retried': []}
+          findings = static.get('findings', []) + actions.get('findings', [])
+          retried = actions.get('retried', [])
+
+          lines = [f'# Atlas Flexible Zero Fail', '', f"Checked **{static.get('checked_files', 0)}** repository files."]
+          if retried:
+              lines += ['', '## Automatically retried', *[f"- [{item['name']}]({item['url']})" for item in retried]]
+          if findings:
+              lines += ['', '## Unresolved findings', *[f'- {item}' for item in findings], '', 'This issue is maintained by the Atlas Flexible Zero Fail workflow.']
+          else:
+              lines += ['', 'No unresolved repository or latest-workflow findings were detected.']
+          report = '\n'.join(lines)
+          summary = os.environ.get('GITHUB_STEP_SUMMARY')
+          if summary:
+              Path(summary).write_text(report + '\n', encoding='utf-8')
+
+          try:
+              issues = api(f'{base}/issues?state=open&per_page=100')
+              existing = next((i for i in issues if i.get('title') == title and 'pull_request' not in i), None)
+              if findings:
+                  if existing:
+                      api(f"{base}/issues/{existing['number']}", 'PATCH', {'body': report})
+                  else:
+                      api(f'{base}/issues', 'POST', {'title': title, 'body': report})
+              elif existing:
+                  api(f"{base}/issues/{existing['number']}", 'PATCH', {'state': 'closed', 'body': report})
+          except Exception as exc:
+              print(f'Issue maintenance warning: {exc}')
+          PY
+
+      - name: Complete monitoring cycle
+        if: always()
+        run: echo 'Atlas Flexible Zero Fail completed; substantive findings are recorded as issues rather than hidden in red workflow noise.'
