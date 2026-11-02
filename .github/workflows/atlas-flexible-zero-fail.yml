@@ -6,6 +6,7 @@ on:
   schedule:
     - cron: '17 0 * * *'
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
@@ -82,7 +83,9 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import datetime as dt, json, os, urllib.error, urllib.request
+          import datetime as dt, json, os, urllib.request
+          from pathlib import Path
+
           repo = os.environ['GH_REPOSITORY']
           token = os.environ['GH_TOKEN']
           current = os.environ['CURRENT_WORKFLOW']
@@ -121,7 +124,6 @@ jobs:
           except Exception as exc:
               findings.append(f'Actions audit could not complete: {type(exc).__name__}: {exc}')
 
-          Path = __import__('pathlib').Path
           Path('atlas-actions.json').write_text(json.dumps({'findings': findings, 'retried': retried}, indent=2), encoding='utf-8')
           PY
 
@@ -155,7 +157,7 @@ jobs:
           findings = static.get('findings', []) + actions.get('findings', [])
           retried = actions.get('retried', [])
 
-          lines = [f'# Atlas Flexible Zero Fail', '', f"Checked **{static.get('checked_files', 0)}** repository files."]
+          lines = ['# Atlas Flexible Zero Fail', '', f"Checked **{static.get('checked_files', 0)}** repository files."]
           if retried:
               lines += ['', '## Automatically retried', *[f"- [{item['name']}]({item['url']})" for item in retried]]
           if findings:
