@@ -13,18 +13,34 @@ research tools and teaching materials.
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
-**[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
+**[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
 ## Choose a starting point
 
 | Your task | A useful first step |
 | --- | --- |
+| **Build and inspect software locally** | [Start with CommCode](https://github.com/Albertito-AI/CommCode#quick-start), a development preview with an editor, tests, Git and application previews. |
 | **Create a short video** | [Open CohortFrame's visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer), then export a brief for local rendering. |
+| **Review a channel's performance** | [Inspect Channel Income OS's synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md), then analyse authorised CSV exports locally under its applicable licence. |
 | **Explore court-submission checks** | [Inspect the fictional Court Submission Integrity demo](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/DEMO.md). |
 | **Trace a claim to its sources** | [Try the recorded RegNav exercise](https://albertito-ai.github.io/Albertito-AI/lab/#replay). |
 | **Read the research** | [Selected scholarship](#selected-scholarship), with institutional records and access links. |
 | **Discuss a project or workshop** | [Contact me through my website](https://www.alberttansinhon.com/#contact) with a short, non-confidential brief. |
 | **Listen and learn** | [Explore music and learning collections](https://www.alberttansinhon.com/listen-and-learn/). |
+
+## Latest releases
+
+- **[CommCode 0.1.0-dev.1](https://github.com/Albertito-AI/CommCode/releases/tag/v0.1.0-dev.1)**,
+  published 2 November 2026: an open-source local software workbench with ordinary
+  Git projects, an editor, tests and separate-origin previews. Docker execution
+  and browser interactions have recorded CI checks. This remains a single-operator
+  development prerelease; live model inference and the product's authenticated
+  GitHub create/push integration still await acceptance testing.
+- **[Channel Income OS 0.1.0](https://github.com/Albertito-AI/channel-income-os/releases/tag/v0.1.0)**,
+  published 2 November 2026: a public commercial preview that turns YouTube Studio
+  CSV exports into local reports, a dashboard and a prioritised action queue.
+  Its demonstration is synthetic. Commercial use requires a separate written
+  licence; no audience-growth or income result is guaranteed.
 
 ## Create with CohortFrame
 
@@ -101,11 +117,19 @@ a reproducible run with the client, version, expected output and actual result.
 
 ## Current focus
 
-I am inviting focused evaluation of three connected areas: source-linked legal
-research, court-submission review, and repeatable creative workflows. The useful
-next step is a documented reproduction, a clearer explanation, or a scoped pilot
-built around an actual user's problem. Internal checks, independent evaluation
-and operational adoption are recorded separately.
+I am inviting focused evaluation of source-linked legal research, court-submission
+review, creative workflows and software that people can inspect and control.
+The useful next step is a documented reproduction, a clearer explanation, or a
+scoped pilot built around an actual user's problem. Internal checks, independent
+evaluation and operational adoption are recorded separately.
+
+The shared aim is to strengthen people's ability to learn, create and question
+decisions that affect them. The [twelve public project whitepapers](wiki/PORTFOLIO.md)
+set out first principles, underlying logic, societal aims and ideal development
+paths, alongside risks and evidence needed before claiming benefit. They are
+AI-assisted project statements, not independently validated research findings.
+The versioned papers are available now; publication in GitHub's Wiki tabs remains
+pending initial Wiki setup, as recorded in the index.
 
 ## For courts and justice-technology teams
 
@@ -134,6 +158,8 @@ Please do not send case files or confidential information with an initial enquir
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
+| **[CommCode](https://github.com/Albertito-AI/CommCode)** | Edit, test, run and export ordinary Git projects locally; review bounded AI proposals when a model is configured. Development prerelease 0.1.0-dev.1. | [Installation](https://github.com/Albertito-AI/CommCode/blob/main/docs/INSTALLATION.md) · [Verification and remaining gates](https://github.com/Albertito-AI/CommCode/blob/main/docs/VERIFICATION.md) |
+| **[Channel Income OS](https://github.com/Albertito-AI/channel-income-os)** | Inspect local CSV analysis, rights holds, revenue scenarios and prioritised experiments. Public commercial preview 0.1.0. | [Synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md) · [Export guide](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/EXPORT_GUIDE.md) |
 | **[CohortFrame](https://github.com/Albertito-AI/cohortframe)** | Compose title-card briefs, inspect exact still previews and render local MP4s with retained job records. | [Visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer) · [Installation and downloads](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started) |
 | **[RegNav Evidence Ledger](https://github.com/Albertito-AI/policykit)** | Trace legal propositions to sources and precise locations; inspect human-review declarations and structural gaps in an evidence matrix. | [See demo](https://github.com/Albertito-AI/policykit#see-it-in-action) · [Ten-minute fictional quickstart](https://github.com/Albertito-AI/policykit/blob/main/docs/quickstart.md) |
 | **[Court Submission Integrity](https://github.com/Albertito-AI/court-submission-integrity)** | Inspect supplied-source quotations and pinpoints, annotated consistency and document-production links; retain unknowns and human decisions. | [See demo](https://github.com/Albertito-AI/court-submission-integrity#see-it-in-action) · [Capability guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/CAPABILITIES.md) · [Collaboration](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md) |
@@ -141,13 +167,18 @@ Please do not send case files or confidential information with an initial enquir
 | **[Symbolon](https://github.com/Albertito-AI/symbolon)** | Specify bounded machine work, check acceptance conditions and replay a recorded payment decision using synthetic TEST units. | [See demo](https://github.com/Albertito-AI/symbolon#see-it-in-action) · [Run the local demonstration](https://github.com/Albertito-AI/symbolon#run-the-demonstration) |
 | **[Piepowder](https://github.com/Albertito-AI/piepowder)** | Inspect explicit contract criteria, evidence findings and unresolved human decisions through fictional cases and a procedural simulator. | [See demo](https://github.com/Albertito-AI/piepowder#see-it-in-action) · [See the prototype and its terms](https://github.com/Albertito-AI/piepowder#see-it-work) |
 | **[Tallystick](https://github.com/Albertito-AI/tallystick)** | Replay sports-fact corrections, inspect count-market settlement rules and verify exported evidence from a fictional match. | [See demo](https://github.com/Albertito-AI/tallystick#see-it-in-action) · [Run the research workbench](https://github.com/Albertito-AI/tallystick#run-it) |
+| **[RIF / AlberTito-MasterMind](https://github.com/Albertito-AI/AlberTito-MasterMind)** | Inspect synthetic phase-coherence calculations and a testable research hypothesis. No biological or clinical validation is established. | [Synthetic demonstration](https://github.com/Albertito-AI/AlberTito-MasterMind#see-it-in-action) · [Research boundary](https://github.com/Albertito-AI/AlberTito-MasterMind#research-boundary) |
+| **[EVT-Albert](https://github.com/Albertito-AI/evtalbert)** | Follow invented training sessions through a legacy logger and analytics archive. The proposed Volitional Index remains unvalidated. | [Session-to-summary demo](https://github.com/Albertito-AI/evtalbert#see-it-in-action) · [Archive limitations](https://github.com/Albertito-AI/evtalbert#current-limitations) |
 
 These are experimental tools. Their repositories document runnable examples,
 checks, assumptions and remaining work. Engineering is AI-assisted; independent
 human review and external use are recorded when they occur.
 
-**Reuse terms:** Symbolon, Tallystick and the separate RegNav Source Watch Action
-use Apache-2.0 for their original code. The Action also licenses its own original
+**Reuse terms:** CommCode uses AGPL-3.0-or-later for its platform and CC0-1.0 for
+its starter templates. Channel Income OS uses PolyForm Noncommercial 1.0.0,
+with a separate written licence required for commercial use. EVT-Albert uses MIT.
+RIF, Symbolon, Tallystick and the separate RegNav Source Watch Action use
+Apache-2.0 for their original code. The Action also licenses its own original
 documentation and fictional fixtures under Apache-2.0; Tallystick's original
 schemas use CC BY 4.0. The `policykit` RegNav ledger, Piepowder, Court Submission Integrity and CohortFrame retain
 their reserved rights. The Action's licence does not extend to those repositories.
@@ -181,6 +212,12 @@ confusing step, or propose a carefully specified example that exposes a problem.
 - **CohortFrame:** try a template, reproduce an export or report a specific
   layout or installation problem using [the project issues](https://github.com/Albertito-AI/cohortframe/issues).
   Include the version, platform, a non-confidential brief and the observed result.
+- **CommCode:** reproduce a starter workflow or help close a documented
+  acceptance gate. [Contribution guide](https://github.com/Albertito-AI/CommCode/blob/main/CONTRIBUTING.md).
+  Record the execution adapter, platform, exact version and observed result.
+- **Channel Income OS:** check the synthetic report or report a reproducible
+  CSV-import problem through [the project issues](https://github.com/Albertito-AI/channel-income-os/issues).
+  Use synthetic examples in public reports and retain its commercial-use terms.
 - **Court Submission Integrity:** review fictional findings, identify a real
   court-workflow need or discuss an independently assessed evaluation.
   [Collaboration guide](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/COLLABORATION.md).

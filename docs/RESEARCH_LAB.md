@@ -86,9 +86,14 @@ assertions pass. Review the resulting diff before publishing it.
 
 ## What the catalog records
 
-The [catalog source](../site/lab/data/catalog.json) contains five project entries,
+The [catalogue source](../site/lab/data/catalog.json) contains eleven project entries,
 three published-research entries, two teaching or source-inspection entries and
 two Learning with Bert video metadata records.
+The project entries cover all eleven public software repositories as inspected
+on 2 November 2026. The profile repository provides this index. The
+[twelve public whitepapers](../wiki/PORTFOLIO.md) explain the projects' foundations,
+societal aims and possible development paths; their aspirations are distinct
+from demonstrated capabilities. Private institutional material is excluded.
 Each item includes its status, useful links, an inspection date and the scope
 of that inspection. Repository sources use exact commit URLs. Institutional
 publication records retain their own publication dates and bibliographic fields.
@@ -166,6 +171,10 @@ Citation metadata grants no reuse licence. RegNav and Piepowder retain their
 reserved-rights positions. Source Watch and Symbolon use Apache-2.0 for their
 covered original material. Tallystick's original code and documentation use
 Apache-2.0, while its original schemas and format definitions use CC BY 4.0.
+CommCode's platform uses AGPL-3.0-or-later and its starter templates use CC0-1.0.
+Channel Income OS uses PolyForm Noncommercial 1.0.0 with a separate commercial
+licence. CohortFrame and Court Submission Integrity retain reserved rights.
+RIF's original code uses Apache-2.0; EVT-Albert uses MIT.
 Third-party material keeps its own terms. Follow the exact rights link on each
 project entry.
 

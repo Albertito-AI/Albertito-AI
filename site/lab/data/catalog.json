@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-29T03:19:09Z",
+  "updated_at": "2026-11-02T14:38:54Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -14,9 +14,366 @@
     "evaluation": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/LAB_EVALUATION.md",
     "agent_start": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/AGENT_START_HERE.md",
     "youtube_channel": "https://www.youtube.com/@chanxinghong",
-    "listen_and_learn": "https://www.alberttansinhon.com/listen-and-learn/"
+    "listen_and_learn": "https://www.alberttansinhon.com/listen-and-learn/",
+    "whitepapers": "https://github.com/Albertito-AI/Albertito-AI/blob/main/wiki/PORTFOLIO.md"
   },
   "items": [
+    {
+      "id": "project-commcode",
+      "title": "CommCode",
+      "type": "project",
+      "description": "A local software workbench with a browser editor, bounded tests and commands, Git history, application previews and optional reviewed AI proposals.",
+      "maturity": "Development prerelease 0.1.0-dev.1",
+      "review_status": "source_inspected",
+      "topics": [
+        "Software creation",
+        "Local tools",
+        "Human review"
+      ],
+      "limitation": "Single-operator loopback development service. Docker and browser CI are recorded; live model inference and authenticated GitHub create/push through the product remain unverified. Not a hosted multi-user service.",
+      "links": [
+        {
+          "label": "Installation",
+          "url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/docs/INSTALLATION.md",
+          "kind": "start"
+        },
+        {
+          "label": "Verification and remaining gates",
+          "url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/docs/VERIFICATION.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Release v0.1.0-dev.1",
+          "url": "https://github.com/Albertito-AI/CommCode/releases/tag/v0.1.0-dev.1",
+          "kind": "release"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/CommCode",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952",
+        "source_url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/README.md",
+        "text": "CommCode. Version 0.1.0-dev.1; repository revision 2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952 (accessed 2 November 2026). https://github.com/Albertito-AI/CommCode/tree/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952",
+        "version": "0.1.0-dev.1",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "Platform: AGPL-3.0-or-later. Included starter templates: CC0-1.0. Third-party components retain their own terms.",
+        "url": "https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/LICENSE"
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "project-channel-income-os",
+      "title": "Channel Income OS",
+      "type": "project",
+      "description": "A local Python tool that turns YouTube Studio CSV exports into a report, private HTML dashboard, prioritised action queue and JSON scorecard.",
+      "maturity": "Public commercial preview 0.1.0",
+      "review_status": "source_inspected",
+      "topics": [
+        "Creator analytics",
+        "Local tools",
+        "Evidence"
+      ],
+      "limitation": "Synthetic demonstration. Target calculations are scenarios, not forecasts; no audience growth, monetisation eligibility or income is guaranteed. Real channel records remain private.",
+      "links": [
+        {
+          "label": "Synthetic report",
+          "url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/docs/demo/report.md",
+          "kind": "demo"
+        },
+        {
+          "label": "Export guide",
+          "url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/docs/EXPORT_GUIDE.md",
+          "kind": "start"
+        },
+        {
+          "label": "Release v0.1.0",
+          "url": "https://github.com/Albertito-AI/channel-income-os/releases/tag/v0.1.0",
+          "kind": "release"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/channel-income-os",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "97456351244fd0617fc62577a6d5bd87b501c7b2",
+        "source_url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/README.md",
+        "text": "Channel Income OS. Version 0.1.0; repository revision 97456351244fd0617fc62577a6d5bd87b501c7b2 (accessed 2 November 2026). https://github.com/Albertito-AI/channel-income-os/tree/97456351244fd0617fc62577a6d5bd87b501c7b2",
+        "version": "0.1.0",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "PolyForm Noncommercial 1.0.0. Commercial use requires a separate written licence from the copyright holder.",
+        "url": "https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/LICENSE"
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "project-cohortframe",
+      "title": "CohortFrame",
+      "type": "project",
+      "description": "A visual composer and local Python/FFmpeg toolkit for structured title-card videos, exact PNG previews and retained render records.",
+      "maturity": "Evaluation alpha 0.2.0",
+      "review_status": "source_inspected",
+      "topics": [
+        "Video creation",
+        "Local tools",
+        "Reproducibility"
+      ],
+      "limitation": "Up to 12 title-card scenes, 60 seconds and printable ASCII text. No footage import or AI media generation. Linux rendering is recorded; desktop/mobile visual browser QA was not completed for this release.",
+      "links": [
+        {
+          "label": "Quickstart",
+          "url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/README.md#quick-start",
+          "kind": "start"
+        },
+        {
+          "label": "Release evidence",
+          "url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/docs/RELEASE_0_2.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Visual composer",
+          "url": "https://cohortframe-studio.travelingbert.chatgpt.site/#composer",
+          "kind": "demo"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/cohortframe",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "b138d459b21cbb669924e2164ff629597b2f24b6",
+        "source_url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/README.md",
+        "text": "CohortFrame. Version 0.2.0; repository revision b138d459b21cbb669924e2164ff629597b2f24b6 (accessed 2 November 2026). https://github.com/Albertito-AI/cohortframe/tree/b138d459b21cbb669924e2164ff629597b2f24b6",
+        "version": "0.2.0",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "Reserved rights. The evaluation package does not grant an open-source or commercial redistribution licence.",
+        "url": "https://github.com/Albertito-AI/cohortframe/blob/b138d459b21cbb669924e2164ff629597b2f24b6/NOTICE.md"
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "project-court-submission-integrity",
+      "title": "Court Submission Integrity",
+      "type": "project",
+      "description": "A local preflight tool for supplied-source quotations and pinpoints, annotated consistency checks and document-production links, retaining unresolved questions for human review.",
+      "maturity": "Research alpha 0.1.0a1",
+      "review_status": "source_inspected",
+      "topics": [
+        "Court submissions",
+        "Evidence",
+        "Human review"
+      ],
+      "limitation": "Detailed checks require supplied sources and explicit annotations. No general truth finding, judicial decision, court integration, endorsement, operational adoption or measured time saving is established.",
+      "links": [
+        {
+          "label": "Fictional demonstration",
+          "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/docs/DEMO.md",
+          "kind": "demo"
+        },
+        {
+          "label": "Capabilities",
+          "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/docs/CAPABILITIES.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Collaboration and evaluation",
+          "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/docs/COLLABORATION.md",
+          "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/court-submission-integrity",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "acb937c249c5add7cdbfc511a9dd9d13f562c805",
+        "source_url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/README.md",
+        "text": "Court Submission Integrity. Version 0.1.0a1; repository revision acb937c249c5add7cdbfc511a9dd9d13f562c805 (accessed 2 November 2026). https://github.com/Albertito-AI/court-submission-integrity/tree/acb937c249c5add7cdbfc511a9dd9d13f562c805",
+        "version": "0.1.0a1",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "Reserved rights. Public visibility creates no open-source or third-party redistribution grant.",
+        "url": "https://github.com/Albertito-AI/court-submission-integrity/blob/acb937c249c5add7cdbfc511a9dd9d13f562c805/RIGHTS.md"
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "project-rif",
+      "title": "RIF: Resonant Inference Field",
+      "type": "project",
+      "description": "A reference implementation with synthetic phase-coherence calculations, connectome-harmonic utilities and research-governance templates for examining a falsifiable hypothesis.",
+      "maturity": "Early research prototype",
+      "review_status": "source_inspected",
+      "topics": [
+        "Research methods",
+        "Synthetic demonstrations",
+        "Reproducibility"
+      ],
+      "limitation": "No biological data in the demonstration. The logistic transform is unvalidated; the software does not establish a theory of consciousness, clinical conclusion or medical-device fitness.",
+      "links": [
+        {
+          "label": "Synthetic phase demonstration",
+          "url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/README.md#see-it-in-action",
+          "kind": "demo"
+        },
+        {
+          "label": "Research boundary",
+          "url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/README.md#research-boundary",
+          "kind": "scope"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/AlberTito-MasterMind",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "a7258b5f61654ad7de5c89c05e44358b05be1c6e",
+        "source_url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/README.md",
+        "text": "RIF: Resonant Inference Field. Version 0.1.0; repository revision a7258b5f61654ad7de5c89c05e44358b05be1c6e (accessed 2 November 2026). https://github.com/Albertito-AI/AlberTito-MasterMind/tree/a7258b5f61654ad7de5c89c05e44358b05be1c6e",
+        "version": "0.1.0",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "Original code: Apache-2.0. Third-party dependencies and datasets retain their own terms.",
+        "url": "https://github.com/Albertito-AI/AlberTito-MasterMind/blob/a7258b5f61654ad7de5c89c05e44358b05be1c6e/LICENSE"
+      },
+      "related_item_ids": []
+    },
+    {
+      "id": "project-evt",
+      "title": "EVT-Albert",
+      "type": "project",
+      "description": "A session logger and analytics toolkit demonstrated with invented performance records, derived indicators and CSV export from its preserved source archive.",
+      "maturity": "Legacy software research prototype 0.1.0",
+      "review_status": "source_inspected",
+      "topics": [
+        "Reflective practice",
+        "Synthetic demonstrations",
+        "Local tools"
+      ],
+      "limitation": "The proposed Volitional Index is unvalidated. Source remains in a legacy ZIP with known packaging defects; archive checks do not establish scientific validity or readiness for real personal records.",
+      "links": [
+        {
+          "label": "Session-to-summary demonstration",
+          "url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/README.md#see-it-in-action",
+          "kind": "demo"
+        },
+        {
+          "label": "Archive limitations",
+          "url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/README.md#current-limitations",
+          "kind": "scope"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/evtalbert",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-02T14:38:54Z",
+        "revision": "0bcac11bc464552b984dd0aa6ea30a04f2027c91",
+        "source_url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/README.md",
+        "scope": "Current README, linked documentation and reuse terms inspected; release metadata checked where a release is linked. Describes repository evidence, not a new execution, independent evaluation or observed adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/README.md",
+        "text": "EVT-Albert. Version 0.1.0; repository revision 0bcac11bc464552b984dd0aa6ea30a04f2027c91 (accessed 2 November 2026). https://github.com/Albertito-AI/evtalbert/tree/0bcac11bc464552b984dd0aa6ea30a04f2027c91",
+        "version": "0.1.0",
+        "doi": null,
+        "provenance": "Plain-text reference assembled from the inspected project title, version and revision. It does not assert sole software authorship or replace project citation metadata."
+      },
+      "rights": {
+        "summary": "MIT for the original software. Actual session, emotional-state and health-related records remain private.",
+        "url": "https://github.com/Albertito-AI/evtalbert/blob/0bcac11bc464552b984dd0aa6ea30a04f2027c91/LICENSE"
+      },
+      "related_item_ids": []
+    },
     {
       "id": "project-regnav",
       "title": "RegNav Evidence Ledger and ESG workbench",
@@ -49,6 +406,11 @@
           "label": "Contribution guide",
           "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/CONTRIBUTING.md",
           "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/policykit/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -138,6 +500,11 @@
           "label": "Contribution guide",
           "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/2a6501fbbf535c58b11aeef16a8e8d0cc48148c0/CONTRIBUTING.md",
           "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -202,6 +569,11 @@
           "label": "Contribution guide",
           "url": "https://github.com/Albertito-AI/symbolon/blob/dd7a85c0d5428f05f5803464ed2747cf9b75a4c4/CONTRIBUTING.md",
           "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/symbolon/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -264,6 +636,11 @@
           "label": "Contribution guide",
           "url": "https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/CONTRIBUTING.md",
           "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/piepowder/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -325,6 +702,11 @@
           "label": "Contribution guide",
           "url": "https://github.com/Albertito-AI/tallystick/blob/8e957ada8ed86891589fdb2d4cff88ef3862b74f/CONTRIBUTING.md",
           "kind": "contribute"
+        },
+        {
+          "label": "Project whitepaper",
+          "url": "https://github.com/Albertito-AI/tallystick/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
         }
       ],
       "verification": {

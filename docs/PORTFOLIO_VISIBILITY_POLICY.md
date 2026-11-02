@@ -23,9 +23,11 @@ Credentials, personal data, client documents, participant or student records, pr
 
 ## Current public portfolio
 
-The public portfolio comprises:
+As inspected on 2 November 2026, the public portfolio comprises twelve repositories:
 
 - the `Albertito-AI` profile and public navigation repository;
+- `CommCode`, the AGPL local software-workbench development prerelease;
+- `channel-income-os`, the local creator-analytics commercial preview;
 - `policykit`, the RegNav evidence-ledger research prototype;
 - `court-submission-integrity`, the supplied-source submission-checking research alpha;
 - `cohortframe`, the visual brief composer and local video-rendering evaluation alpha;

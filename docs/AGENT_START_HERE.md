@@ -8,19 +8,25 @@ and reuse terms.
 [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) ·
 [Public catalogue JSON](https://albertito-ai.github.io/Albertito-AI/lab/data/catalog.json) ·
 [Catalogue source](../site/lab/data/catalog.json) ·
+[Project whitepapers](../wiki/PORTFOLIO.md) ·
 [Institutional profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) ·
 [ORCID](https://orcid.org/0009-0001-8996-7933) ·
 [YouTube](https://www.youtube.com/@chanxinghong)
 
-Interface documentation inspected on **29 October 2026**. The links below pin
-the source revisions inspected. Host-specific interoperability and independent
+MCP interface documentation was inspected on **29 October 2026**. Additional
+project entry paths were inspected on **2 November 2026**, at the revisions
+recorded below and in the catalogue. Existing execution and interface records
+retain their original dates. Host-specific interoperability and independent
 adoption need separate evidence.
 
 ## Choose a useful task
 
 | Task | Starting resource | Result you can inspect |
 | --- | --- | --- |
+| Create, edit and test a local software project | [CommCode](https://github.com/Albertito-AI/CommCode) | An ordinary Git workspace, bounded commands, application preview and reviewed changes; single-operator development prerelease |
+| Analyse authorised channel exports | [Channel Income OS](https://github.com/Albertito-AI/channel-income-os) | Local Markdown/HTML reports, CSV actions and a JSON scorecard; commercial use requires a separate written licence |
 | Compose a structured title-card video | [CohortFrame](https://github.com/Albertito-AI/cohortframe) | A v1 JSON brief, exact PNG previews and a local MP4 with an inspectable job receipt; evaluation alpha with reserved rights |
+| Inspect a supplied quotation or pinpoint | [Court Submission Integrity](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/DEMO.md) | Fictional supplied-source findings, unresolved questions and human decisions; research alpha with reserved rights |
 | Identify supplied claims affected by a changed or missing local source | [RegNav gateway exchange](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/sample_exchange.json) | An internal fictional exchange with unchanged, changed and unavailable source states |
 | Add source-change checks to a GitHub workflow | [RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch) | A separate Apache-2.0 Action, documented installation and a fictional demonstration |
 | Inspect a local agent tool with synthetic inputs | [Tallystick agent interface](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md) | Read-only checks, illustrative calculations and a settlement preview using invented records |
@@ -30,9 +36,43 @@ adoption need separate evidence.
 | Explore an educational video | [Learning with Bert](https://www.alberttansinhon.com/listen-and-learn/) | Individual videos and collections; check each item's content-review and rights status |
 | Preserve captions and prepare a creator review | [One-video archive pilot](../examples/video-archive-pilot/README.md) | A local caption parser, synthetic example and measured result from one real video |
 | Check selected evidence in digital PDFs | [Research workflow pilot](../examples/research-workflow-pilot/README.md) | Two real source records, extraction comparisons, citation exports and a Pandoc report with retained corrections |
+| Understand a project's foundations and intended social benefit | [Public whitepaper index](../wiki/PORTFOLIO.md) | Twelve versioned project papers separating current implementation, future ambitions, risks and evidence gates |
 
 The separate Source Watch Action and the gateway inside policykit have different
 interfaces and rights. The Action's licence does not cover the gateway.
+
+## CommCode: local software workbench
+
+The [0.1.0-dev.1 prerelease](https://github.com/Albertito-AI/CommCode/releases/tag/v0.1.0-dev.1)
+provides a browser editor, local tests, Git operations, a separate preview origin
+and an optional review/apply/test loop for AI proposals. Inspect the
+[installation guide](https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/docs/INSTALLATION.md)
+before running it. Linux, Node.js 24+, Git and Docker are the documented normal
+path; the explicit unsafe-local mode executes code on the host without isolation.
+
+The [verification record](https://github.com/Albertito-AI/CommCode/blob/2c8e2d637c9ed2ed00b356c739d6eb1dfc19a952/docs/VERIFICATION.md)
+records real Docker and Chromium checks. Model responses were fixtures: live
+inference and authenticated GitHub creation/push through the product remain
+unverified. This is a single-operator loopback service, with no claim of a hosted
+multi-user service or MCP interface. Review source context before sending it to
+a configured provider. The platform uses AGPL-3.0-or-later and the included
+starter templates use CC0-1.0; retain each component's terms.
+
+## Channel Income OS: local CSV analysis
+
+The [0.1.0 release](https://github.com/Albertito-AI/channel-income-os/releases/tag/v0.1.0)
+is a public commercial preview. Follow the
+[pinned quickstart](https://github.com/Albertito-AI/channel-income-os/blob/97456351244fd0617fc62577a6d5bd87b501c7b2/README.md#quick-demonstration)
+to install with Python 3.11+ and run `channel-income-os demo` on synthetic data.
+The analysis command reads authorised YouTube Studio CSV exports and produces
+`report.md`, `dashboard.html`, `action_queue.csv` and `scorecard.json` locally.
+No YouTube API key or cloud upload is required.
+
+Treat suggested interventions and target calculations as reviewable operating
+scenarios, not verified forecasts or autonomous channel actions. No income or
+audience result is guaranteed. Keep real analytics and generated private reports
+out of public issues. The source uses PolyForm Noncommercial 1.0.0; commercial
+use requires the owner's separate written licence.
 
 ## CohortFrame: brief to local video
 
