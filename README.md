@@ -225,7 +225,7 @@ The original QR is available for agreed SGD payments for commissioned work.
 Confirm the scope, fee, terms and recipient before transferring.
 [Machine-readable instructions](payments/manifest.json) are available for agents.
 
-<a href="payments/README.md"><img src="payments/paynow-original.jpeg" width="220" alt="Original PayNow receiving QR supplied by Albert. Open the payment instructions and verify the recipient in your bank."></a>
+<a href="payments/README.md"><img src="payments/paynow-20261102-v2.jpeg" width="220" alt="Original PayNow receiving QR supplied by Albert. Open the payment instructions and verify the recipient in your bank."></a>
 
 **Optional support for independent work:** [PayPal](https://paypal.me/august14).
 Support preserves research and editorial independence; it purchases no authorship,

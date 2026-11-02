@@ -9,8 +9,8 @@
   "currency": "SGD",
   "stripe_enabled": false,
   "page_url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/payments",
-  "qr_image_url": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/paynow-original.jpeg",
-  "qr_image_sha256": "6d9c4f81fd7ba36d2b353811923191da598a6d11fab6498b98f7218a9dd6bc2c",
+  "qr_image_url": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/paynow-20261102-v2.jpeg",
+  "qr_image_sha256": "665476215ca7ff9a1b537e5bf602eac77d8b55b85a1d206b8c487e9b84aedbe5",
   "qr_payload": "00020126380009SG.PAYNOW010100211+6585888386030115204000053037025802SG5902NA6009Singapore6304d5cd",
   "qr_payload_url": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/paynow-payload.txt",
   "qr_decode_verified": true,
@@ -44,5 +44,13 @@
     "https://www.abs.org.sg/e-payments/pay-now"
   ],
   "discovery_type": "Static HTTPS JSON; not an A2A server or executable payment endpoint",
-  "mirror_of": "https://www.alberttansinhon.com/atlas-agent-school/payments/"
+  "mirror_of": "https://www.alberttansinhon.com/atlas-agent-school/payments/",
+  "image_revision": "2026-11-02-v2",
+  "supersedes_image_sha256": "6d9c4f81fd7ba36d2b353811923191da598a6d11fab6498b98f7218a9dd6bc2c",
+  "payment_payload_changed": false,
+  "image_dimensions": {
+    "width": 945,
+    "height": 1046
+  },
+  "revision_note": "Owner-requested replacement image. Payment payload unchanged. Refresh cached copies; the original URL also serves this replacement."
 }

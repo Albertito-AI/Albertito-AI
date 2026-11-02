@@ -1,12 +1,15 @@
 # Pay Albert via PayNow
 
+**Current image: revision v2, 2 November 2026.** This owner-requested replacement
+uses the same payment details. Replace older cached images with this version.
+
 For an agreed research, teaching or project engagement, confirm the scope, fee,
 terms and payment reference before transferring Singapore dollars. This page
 provides Albert Tan Sin Hon's original receiving QR, published at his request.
 
-<a href="paynow-original.jpeg"><img src="paynow-original.jpeg" width="360" alt="Original PayNow QR supplied by Albert Tan Sin Hon"></a>
+<a href="paynow-20261102-v2.jpeg"><img src="paynow-20261102-v2.jpeg" width="360" alt="Original PayNow QR supplied by Albert Tan Sin Hon"></a>
 
-[Open or download the original image](paynow-original.jpeg) ·
+[Open or download the original image](paynow-20261102-v2.jpeg) ·
 [Machine-readable payment instructions](manifest.json) ·
 [Website payment page](https://www.alberttansinhon.com/atlas-agent-school/payments/)
 
@@ -27,5 +30,5 @@ For agents: [exact QR payload](paynow-payload.txt) and
 [unfilled payment-request template](payment-request-template.json).
 
 Original image SHA-256:
-`6d9c4f81fd7ba36d2b353811923191da598a6d11fab6498b98f7218a9dd6bc2c`.
+`665476215ca7ff9a1b537e5bf602eac77d8b55b85a1d206b8c487e9b84aedbe5`.
 The image is unchanged from the owner's upload of 2 November 2026.
