@@ -6,7 +6,7 @@ Project purposes come from the maintained public portfolio catalog. File checks 
 
 [Maintenance and scope](PUBLIC_SOURCE_OBSERVATIONS.md).
 
-**Latest observation:** 02 Nov 2026, 10:31 SGT. Each project below retains its own source-check time.
+**Latest observation:** 03 Nov 2026, 11:56 SGT. Each project below retains its own source-check time.
 
 ## Recorded checks
 
@@ -18,19 +18,19 @@ Project purposes come from the maintained public portfolio catalog. File checks 
 
 | Project and purpose | Start here | Contribution path | Source status |
 | --- | --- | --- | --- |
-| **RegNav Evidence Ledger**. Trace research claims to sources and preserve evidence links and human review decisions. | [docs/quickstart.md](https://github.com/Albertito-AI/policykit/blob/9fd02edd21445a8a1169e87fd07b40acfede5bc0/docs/quickstart.md) | No separate path configured | Current observation Checked 02 Nov 2026, 10:31 SGT at [9fd02edd21](https://github.com/Albertito-AI/policykit/tree/9fd02edd21445a8a1169e87fd07b40acfede5bc0). |
-| **RegNav Source Watch**. Compare committed evidence records and identify linked claims that need another review when their sources change. | [README.md](https://github.com/Albertito-AI/regnav-source-watch/blob/d2eb2126d2afa34314dfd3d4ab65c268dcf8a700/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/regnav-source-watch/blob/d2eb2126d2afa34314dfd3d4ab65c268dcf8a700/CONTRIBUTING.md) | Current observation Checked 02 Nov 2026, 10:31 SGT at [d2eb2126d2](https://github.com/Albertito-AI/regnav-source-watch/tree/d2eb2126d2afa34314dfd3d4ab65c268dcf8a700). |
-| **Symbolon**. Explore bounded machine-work contracts, acceptance checks and replayable evidence using synthetic TEST units. | [README.md](https://github.com/Albertito-AI/symbolon/blob/7b8001627433afa924263743e37cf7f3710c8141/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/symbolon/blob/7b8001627433afa924263743e37cf7f3710c8141/CONTRIBUTING.md) | Current observation Checked 02 Nov 2026, 10:31 SGT at [7b80016274](https://github.com/Albertito-AI/symbolon/tree/7b8001627433afa924263743e37cf7f3710c8141). |
-| **Piepowder**. Examine explicit acceptance criteria, fictional contract evidence and questions that still require human judgement. | [README.md](https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/piepowder/blob/edb5ea6eeffc2ace7a80330979949544405fb2fb/CONTRIBUTING.md) | Current observation Checked 02 Nov 2026, 10:31 SGT at [edb5ea6eef](https://github.com/Albertito-AI/piepowder/tree/edb5ea6eeffc2ace7a80330979949544405fb2fb). |
-| **Tallystick**. Inspect sports-fact provenance, corrections and settlement-rule replay through fictional match examples. | [README.md](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/CONTRIBUTING.md) | Current observation Checked 02 Nov 2026, 10:31 SGT at [251cb7a6ba](https://github.com/Albertito-AI/tallystick/tree/251cb7a6bac7984f94c8eaf91560c775b01fee82). |
+| **RegNav Evidence Ledger**. Trace research claims to sources and preserve evidence links and human review decisions. | [docs/quickstart.md](https://github.com/Albertito-AI/policykit/blob/dd59dc76b6ffff8ffec1a9cff92a8315cce8894c/docs/quickstart.md) | No separate path configured | Current observation Checked 03 Nov 2026, 11:56 SGT at [dd59dc76b6](https://github.com/Albertito-AI/policykit/tree/dd59dc76b6ffff8ffec1a9cff92a8315cce8894c). |
+| **RegNav Source Watch**. Compare committed evidence records and identify linked claims that need another review when their sources change. | [README.md](https://github.com/Albertito-AI/regnav-source-watch/blob/6e9c7a112da8de3b2ba926bb00c0859c630c2f4f/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/regnav-source-watch/blob/6e9c7a112da8de3b2ba926bb00c0859c630c2f4f/CONTRIBUTING.md) | Current observation Checked 03 Nov 2026, 11:56 SGT at [6e9c7a112d](https://github.com/Albertito-AI/regnav-source-watch/tree/6e9c7a112da8de3b2ba926bb00c0859c630c2f4f). |
+| **Symbolon**. Explore bounded machine-work contracts, acceptance checks and replayable evidence using synthetic TEST units. | [README.md](https://github.com/Albertito-AI/symbolon/blob/8c58bb4788cfbdba6fabb0341f7e8a2526851148/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/symbolon/blob/8c58bb4788cfbdba6fabb0341f7e8a2526851148/CONTRIBUTING.md) | Current observation Checked 03 Nov 2026, 11:56 SGT at [8c58bb4788](https://github.com/Albertito-AI/symbolon/tree/8c58bb4788cfbdba6fabb0341f7e8a2526851148). |
+| **Piepowder**. Examine explicit acceptance criteria, fictional contract evidence and questions that still require human judgement. | [README.md](https://github.com/Albertito-AI/piepowder/blob/19dd4449e20f2a217e2e62156b70a3200c6324e5/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/piepowder/blob/19dd4449e20f2a217e2e62156b70a3200c6324e5/CONTRIBUTING.md) | Current observation Checked 03 Nov 2026, 11:56 SGT at [19dd4449e2](https://github.com/Albertito-AI/piepowder/tree/19dd4449e20f2a217e2e62156b70a3200c6324e5). |
+| **Tallystick**. Inspect sports-fact provenance, corrections and settlement-rule replay through fictional match examples. | [README.md](https://github.com/Albertito-AI/tallystick/blob/35262688647108195bc47a44a57f3d2f86e4632e/README.md) | [CONTRIBUTING.md](https://github.com/Albertito-AI/tallystick/blob/35262688647108195bc47a44a57f3d2f86e4632e/CONTRIBUTING.md) | Current observation Checked 03 Nov 2026, 11:56 SGT at [3526268864](https://github.com/Albertito-AI/tallystick/tree/35262688647108195bc47a44a57f3d2f86e4632e). |
 
 ## Published-release observations
 
-- **RegNav Evidence Ledger:** No published stable release was returned; observed 02 Nov 2026, 10:31 SGT.
-- **RegNav Source Watch:** [v0.1.0](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) ([record 425459073](https://api.github.com/repos/Albertito-AI/regnav-source-watch/releases/425459073)); observed 02 Nov 2026, 10:31 SGT.
-- **Symbolon:** No published stable release was returned; observed 02 Nov 2026, 10:31 SGT.
-- **Piepowder:** No published stable release was returned; observed 02 Nov 2026, 10:31 SGT.
-- **Tallystick:** No published stable release was returned; observed 02 Nov 2026, 10:31 SGT.
+- **RegNav Evidence Ledger:** No published stable release was returned; observed 03 Nov 2026, 11:56 SGT.
+- **RegNav Source Watch:** [v0.1.0](https://github.com/Albertito-AI/regnav-source-watch/releases/tag/v0.1.0) ([record 425459073](https://api.github.com/repos/Albertito-AI/regnav-source-watch/releases/425459073)); observed 03 Nov 2026, 11:56 SGT.
+- **Symbolon:** No published stable release was returned; observed 03 Nov 2026, 11:56 SGT.
+- **Piepowder:** No published stable release was returned; observed 03 Nov 2026, 11:56 SGT.
+- **Tallystick:** No published stable release was returned; observed 03 Nov 2026, 11:56 SGT.
 
 ## Recorded source changes
 
