@@ -1,8 +1,99 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T06:29:27Z",
+  "generated_at": "2026-11-03T07:00:40Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-64d2f38f8677fb104976",
+      "title": "Data governance framework for the implementation of automated healthcare-associated infection surveillance using large language models: Privacy-by-design with open-source de-identification pipeline",
+      "doi": "10.1093/cid/ciag560",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1093%2Fcid%2Fciag560",
+      "publication_date": "2026-10-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-5b469b478a67fda8e94b",
+      "title": "Corporate financing constraints and environmental information disclosure hype",
+      "doi": "10.1016/j.iref.2025.104284",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.iref.2025.104284",
+      "publication_date": "2025-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-56b15b1dbe5b5e08f654",
+      "title": "Environmental Sensitivity Firm, Environment Performance Rating, Profitability, and Carbon Disclosure – Does Firm Size Matter?",
+      "doi": "10.1088/1755-1315/1414/1/012067",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1088%2F1755-1315%2F1414%2F1%2F012067",
+      "publication_date": "2024-12-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-54dffafa017c81aa718d",
+      "title": "Evidence and substantiation in the case of a nun’s claim for her residence in a monastery after the termination of her monastic status (in the context of the Supreme Court’s appeal to the European Court of Human Rights for an advisory opinion)",
+      "doi": "10.24144/2307-3322.2025.92.1.77",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.24144%2F2307-3322.2025.92.1.77",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4e3732c272a4119fee83",
+      "title": "Environmental, Social and Governance (ESG) Disclosure in Africa: Current State of Play",
+      "doi": "10.67221/xrfrtd47",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.67221%2Fxrfrtd47",
+      "publication_date": "2026-10-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1540b2712a95d88f32f3",
+      "title": "Exploring the adoption and evaluation of artificial intelligence research tools in licensed electronic resources",
+      "doi": "10.1080/1941126x.2026.2751719",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1080%2F1941126x.2026.2751719",
+      "publication_date": "2026-10-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-08baf6b149353304c0c1",
+      "title": "An evaluation of large language models for panoramic radiographs",
+      "doi": "10.1186/s12903-026-10346-x",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1186%2Fs12903-026-10346-x",
+      "publication_date": "2026-10-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-cd841fef1370e3fe72c7",
       "title": "Corporate Governance, ESG Disclosure and Firm Value in an Emerging Market",
@@ -459,45 +550,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-4e3732c272a4119fee83",
-      "title": "Environmental, Social and Governance (ESG) Disclosure in Africa: Current State of Play",
-      "doi": "10.67221/xrfrtd47",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.67221%2Fxrfrtd47",
-      "publication_date": "2026-10-27",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-56b15b1dbe5b5e08f654",
-      "title": "Environmental Sensitivity Firm, Environment Performance Rating, Profitability, and Carbon Disclosure – Does Firm Size Matter?",
-      "doi": "10.1088/1755-1315/1414/1/012067",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1088%2F1755-1315%2F1414%2F1%2F012067",
-      "publication_date": "2024-12-01",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-5b469b478a67fda8e94b",
-      "title": "Corporate financing constraints and environmental information disclosure hype",
-      "doi": "10.1016/j.iref.2025.104284",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.iref.2025.104284",
-      "publication_date": "2025-09",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-87ea9a47929b82a4c08e",
       "title": "Gender diversity, board independence, environmental committee and greenhouse gas disclosure",
       "doi": "10.1016/j.bar.2014.01.002",
@@ -654,19 +706,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-08baf6b149353304c0c1",
-      "title": "An evaluation of large language models for panoramic radiographs",
-      "doi": "10.1186/s12903-026-10346-x",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1186%2Fs12903-026-10346-x",
-      "publication_date": "2026-10-29",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-0f5c9374790b7f493f10",
       "title": "The real effects of ESG reporting and GRI standards on carbon mitigation: International evidence",
       "doi": "10.1002/bse.3281",
@@ -677,19 +716,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1002%2Fbse.3281",
       "publication_date": "2022-10-17",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-1540b2712a95d88f32f3",
-      "title": "Exploring the adoption and evaluation of artificial intelligence research tools in licensed electronic resources",
-      "doi": "10.1080/1941126x.2026.2751719",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1080%2F1941126x.2026.2751719",
-      "publication_date": "2026-10-29",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -742,19 +768,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1108%2Fmedar-06-2021-1356",
       "publication_date": "2022-06-14",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-64d2f38f8677fb104976",
-      "title": "Data governance framework for the implementation of automated healthcare-associated infection surveillance using large language models: Privacy-by-design with open-source de-identification pipeline",
-      "doi": "10.1093/cid/ciag560",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1093%2Fcid%2Fciag560",
-      "publication_date": "2026-10-29",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -1652,6 +1665,253 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1016%2Fj.jaad.2026.01.084",
       "publication_date": "2026-07",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-05593643db2b964114ac",
+      "title": "Impact of Corporate and Sustainability Reporting Quality on Firm's Performance: Pakistan’s Perspective",
+      "doi": "10.22555/pbr.v27i3.1389",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.22555%2Fpbr.v27i3.1389",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-219910589ea0eb155d4d",
+      "title": "Exploring Drivers Affecting Environmental Sustainability Reporting Practices: A Study Based on the Sri Lankan Hotel Industry",
+      "doi": "10.4038/jmtr1.v7i2.3",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4038%2Fjmtr1.v7i2.3",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-21cff8ea20f2036a2ae5",
+      "title": "Determinants of climate change disclosure practices of global hotel companies: Application of institutional and stakeholder theories",
+      "doi": "10.1016/j.tourman.2021.104404",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.tourman.2021.104404",
+      "publication_date": "2022-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-39eac955cd651ee648e3",
+      "title": "IMPACT OF IFRS S1 AND IFRS S2 IN SUSTAINABILITY REPORTING OF BANGLADESH",
+      "doi": "10.67295/jis.v6i1.284",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.67295%2Fjis.v6i1.284",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3c5592c83e492bdb0d6d",
+      "title": "Supply chains (Scope 3) toward sustainable food systems: An analysis of food & beverage processing corporate greenhouse gas emissions disclosure",
+      "doi": "10.1016/j.clpl.2021.100002",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.clpl.2021.100002",
+      "publication_date": "2021-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-450df274e8ab39106da2",
+      "title": "UK AI Governance at a Crossroads: Charting the Path Ahead",
+      "doi": "10.6000/2818-3401.2025.03.12",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.6000%2F2818-3401.2025.03.12",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-51f2f5a9ab26a850ac3b",
+      "title": "Structural ownership and ESG disclosure: Unveiling their impact on corporate financial performance",
+      "doi": "10.18196/jai.v26i1.24193",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.18196%2Fjai.v26i1.24193",
+      "publication_date": "2025-01-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6da489c7db437f4f3480",
+      "title": "Mapping the Landscape of Sustainability Reporting: A Bibliometric Analysis Across ESG, Circular Economy, and Integrated Reporting with Sectoral Perspectives",
+      "doi": "10.3390/jrfm18080416",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fjrfm18080416",
+      "publication_date": "2025-07-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7a71f56d333c13d729c8",
+      "title": "Artificial Intelligence and Economic Security in EU Macro-Level Smart Energy Systems: A Sustainability-Driven Governance Framework",
+      "doi": "10.31875/2978-6436.2025.01.06",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.31875%2F2978-6436.2025.01.06",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7e8d5d9c413059cdaa42",
+      "title": "The relationship between ESG, financial performance, and cost of debt: the role of independent assurance",
+      "doi": "10.1080/23311975.2024.2437137",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1080%2F23311975.2024.2437137",
+      "publication_date": "2024-12-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8cc7bb9f47f07d660331",
+      "title": "Green disclosure policies and market dynamics: evidence from agent-based ESG models",
+      "doi": "10.1007/s10458-026-09734-y",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10458-026-09734-y",
+      "publication_date": "2026-02-07",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a8ed6e71e8028e30edd3",
+      "title": "The effectiveness of environmental accounting in supporting ESG (Environmental, Social, Governance) disclosure",
+      "doi": "10.60036/tjf3cf27",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.60036%2Ftjf3cf27",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b8fdf4114a4f63bbb04b",
+      "title": "Exploring the impact of sustainability (ESG) disclosure on firm value and financial performance (FP) in airline industry: the moderating role of size and age",
+      "doi": "10.1007/s10668-021-01649-w",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10668-021-01649-w",
+      "publication_date": "2021-08-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-bf74f26b0d79d3a289c6",
+      "title": "A framework for evaluation and requirement extraction for fine-tuning of Large Language Models in multimodal medical diagnosis",
+      "doi": "10.1016/j.knosys.2025.113975",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.knosys.2025.113975",
+      "publication_date": "2025-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c07672c25d6b2bcd519c",
+      "title": "The Impact of Environmental, Social, and Governance (ESG) Performance on Financial Reporting Quality: International Evidence",
+      "doi": "10.15388/ekon.2021.100.2.9",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.15388%2Fekon.2021.100.2.9",
+      "publication_date": "2021-11-25",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c87e045e77af5e3c86a4",
+      "title": "ESG Reporting: Assessing Compliance of Polish Public Companies with EU Taxonomy Guidelines",
+      "doi": "10.58691/man/196152",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.58691%2Fman%2F196152",
+      "publication_date": "2025-01-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-daf42caa3b0d952027a2",
+      "title": "Exploring How Corporate Maturity Moderates the Value Relevance of ESG Disclosures in Sustainable Reporting: Evidence from Bangladesh’s Developing Market",
+      "doi": "10.3390/su17135936",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu17135936",
+      "publication_date": "2025-06-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-fcc8131dbedd4b0b8b36",
+      "title": "SUSTAINABILITY REPORTING, INDUSTRY SENSITIVITY AND MARKET VALUE OF LISTED COMPANIES IN NIGERIA",
+      "doi": "10.63452/ijafssr.2026.4403",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.63452%2Fijafssr.2026.4403",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-fcec66c88f0b1675c2f6",
+      "title": "The Impact of ESG Factors on Investment Decisions: Exploring the Interplay between Sustainability Reporting, Corporate Governance, and Financial Performance",
+      "doi": "10.62754/joe.v4i1.6342",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.62754%2Fjoe.v4i1.6342",
+      "publication_date": "2025-02-09",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
