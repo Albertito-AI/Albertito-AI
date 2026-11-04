@@ -246,6 +246,30 @@ design, research and AI-literacy workshops, and commissioned prototype work**.
 The first conversation should establish the problem, the intended user and the
 evidence needed to judge whether the work helps.
 
+**A scoped workshop enquiry: Source Verification for Legal Research Teams.**
+A university, research centre or legal-operations team can enquire about one
+90-minute online group session for up to 12 participants. The proposed session
+uses a [public fictional teaching exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching)
+to practise checking quotations, pinpoints, source gaps and review decisions,
+followed by a facilitated debrief. The agreed deliverables would be the single
+live session and an original one-page source-checking checklist. Participants'
+reuse terms would be agreed in writing. The institution supplies its meeting
+platform; no real case files, privileged documents or personal data are
+requested. This is research-method education, not legal advice, a court
+product, bespoke case review or ongoing technical support.
+
+**Fee and next step:** A specific SGD quotation, session date, delivery terms
+and capacity are agreed individually before a booking or payment. No fixed
+price or automatic checkout is offered. For this workshop, email
+**travelingbert@gmail.com** with the subject **Source verification workshop**
+and a non-confidential description of the audience, main learning problem,
+participant count, preferred date and budget range. After written agreement,
+the existing [PayNow service-payment instructions](payments/README.md) may be
+used for an agreed SGD amount; the payer must verify the bank-resolved
+recipient, and the actual incoming bank credit must be matched to the order
+before receipt is confirmed. A QR scan or payment screenshot does not confirm
+a booking or an earned receipt.
+
 For an academic collaboration or paid-work enquiry, use the
 [contact section on my website](https://www.alberttansinhon.com/#contact).
 Include a short non-confidential brief: the problem, desired deliverable,
