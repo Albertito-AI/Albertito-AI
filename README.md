@@ -15,6 +15,14 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
+## Build with IMIKWON
+
+**[IMIKWON 0.1.0a1](https://github.com/Albertito-AI/IMIKWON)** is a new, free MIT-licensed coding assistant for Kimi K3.1 Pro. Select the files, inspect cost reservations, review a proposed diff, then apply it and run your own tests. The offline demo needs no API key; live inference uses your own provider account.
+
+[**Try IMIKWON**](https://www.alberttansinhon.com/imikwon/) · [Source and quickstart](https://github.com/Albertito-AI/IMIKWON#try-it-in-one-minute-without-an-api-key) · [Verification record](https://github.com/Albertito-AI/IMIKWON/blob/main/docs/VERIFICATION.md)
+
+Public alpha: offline and mocked checks pass. Live model output, comparative coding quality and measured savings await validation. IMIKWON adds no subscription or API markup. Kimi's model terms and provider charges remain separate.
+
 ## Choose a starting point
 
 | Your task | A useful first step |
