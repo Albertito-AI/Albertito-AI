@@ -1,5 +1,24 @@
 # Profile change record
 
+## 4 November 2026: add a computing route and existing learning-session enquiry
+
+The Research Lab's Watch and listen section now adds the already-public
+*Learning with Bert - Quantum Computing  Hype vs Reality* as a computing
+starting point. The existing chemistry, business, philosophy, channel, music
+and Learning with Bert routes remain unchanged.
+
+The same section links to the already-approved legal-pluralism learning-session
+enquiry on Albert's website. It preserves the published scope: a small-group
+session, with availability, scope and any fee agreed before a booking. No price,
+benefit, availability or booking is promised by this route.
+
+Public checks on 4 November 2026 verified the exact video title, Bert Chan
+channel identity and available watch page. This was a metadata and availability
+check, not a substantive content review. The enquiry route may support a buyer
+decision, but publication does not establish an enquiry, sale, payment or
+settled cash. The owner-reported aggregate Atlas settled-receipt baseline
+remains SGD0 as at 4 November 2026.
+
 ## 2 November 2026: bring the profile and catalogue up to date
 
 The public profile omitted CommCode and Channel Income OS, while the Research
