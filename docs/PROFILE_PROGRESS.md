@@ -1,5 +1,19 @@
 # Profile change record
 
+## 5 November 2026: link contributions to independent projects
+
+Added a [public contribution record](OPEN_SOURCE_CONTRIBUTIONS.md), linked
+from the profile, for the submitted tscircuit unit-conversion fix, Datasette
+contributor-guide correction and existing Tari board-preservation fix.
+Each entry retains its upstream pull request, tested revisions, observed
+validation and current review state. The record discloses AI assistance and
+keeps submission, maintainer acceptance and paid delivery distinct.
+
+The linked requests were read back under Albertito-AI with the expected
+heads and file counts. The tscircuit hosted test check passed. All three
+requests remained open and unmerged at this checkpoint; no payment is claimed.
+Existing service enquiries continue through the established contact route.
+
 ## 4 November 2026: add a computing route and existing learning-session enquiry
 
 The Research Lab's Watch and listen section now adds the already-public
