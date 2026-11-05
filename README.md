@@ -251,7 +251,7 @@ participation carries no automatic payment entitlement or revenue share.
 
 The [public contribution record](docs/OPEN_SOURCE_CONTRIBUTIONS.md) links
 reproducible fixes and developer-documentation improvements submitted to
-tscircuit, Datasette and Tari. It records the tests performed, AI assistance
+PyPA, tscircuit, Datasette and Tari. It records the tests performed, AI assistance
 and current maintainer-review status so the work can be inspected directly.
 
 ## Work with me

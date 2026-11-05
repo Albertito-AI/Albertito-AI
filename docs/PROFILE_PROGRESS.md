@@ -1,5 +1,27 @@
 # Profile change record
 
+## 5 November 2026: record Markdown and CAD regression fixes
+
+Extended the [public contribution record](OPEN_SOURCE_CONTRIBUTIONS.md) with
+[readme_renderer #391](https://github.com/pypa/readme_renderer/pull/391) and
+[jscad-planner #25](https://github.com/tscircuit/jscad-planner/pull/25), both
+submitted through Albertito-AI. The fixes address Markdown heading links that
+are mistaken for footnotes and convex hulls that are incorrectly replaced by
+their single concave input. Each entry retains the reviewed base, submitted
+head and validation scope.
+
+The Markdown fix passed 105 local tests with 2 skipped, plus all 50 Markdown
+tests on the minimum supported comrak version. A separate AI review found and
+helped resolve quoted-attribute and encoded-fragment cases before submission.
+The CAD fix passed 41 local tests with 305 assertions; hosted type checking
+and package preview also passed. Hosted success is recorded separately from
+the local regression suite. The two Markdown workflows report `action_required`
+and need maintainer action; one approving review is also required.
+
+All five recorded upstream pull requests remain open and unmerged. No bounty
+award, payment or independent maintainer acceptance is claimed. The next
+observable step is substantive review or a verified change in submission status.
+
 ## 5 November 2026: link contributions to independent projects
 
 Added a [public contribution record](OPEN_SOURCE_CONTRIBUTIONS.md), linked
