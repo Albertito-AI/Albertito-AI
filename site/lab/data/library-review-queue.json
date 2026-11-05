@@ -1,8 +1,112 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T06:44:21Z",
+  "generated_at": "2026-11-05T07:03:35Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-e90d96c998d116a96960",
+      "title": "The AI ESG protocol: Evaluating and disclosing the environment, social, and governance implications of artificial intelligence capabilities, assets, and activities",
+      "doi": "10.1002/sd.2438",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fsd.2438",
+      "publication_date": "2022-10-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d07ec142404fc78bf557",
+      "title": "Legal Force of Evidence in Court Against Landowners Acting in Good Faith with Letter C Evidence Above Which Another Party's Certificate of Ownership is Issued",
+      "doi": "10.30659/ldj.7.4.759-767",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.30659%2Fldj.7.4.759-767",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c4ba5f3bed13482d9549",
+      "title": "Decoupling Sustainability Reporting and Social Media Communication After a Sustainability Scandal: Strategic Silence, Selective Disclosure and Legitimacy Stabilisation",
+      "doi": "10.1002/bse.71775",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71775",
+      "publication_date": "2026-10-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-87ea9a47929b82a4c08e",
+      "title": "Gender diversity, board independence, environmental committee and greenhouse gas disclosure",
+      "doi": "10.1016/j.bar.2014.01.002",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.bar.2014.01.002",
+      "publication_date": "2015-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-737a4eca1e697269ae02",
+      "title": "Semiotic Evidence and “Green” Victimology in Indonesian Environmental Criminal Law: Rebuilding Ecological Justice Through Law",
+      "doi": "10.23969/litigasi.v26i2.42522",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.23969%2Flitigasi.v26i2.42522",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-40f43a82d54ae10b4870",
+      "title": "Artificial Intelligence Chatbots as Patient Information Tools: A Bilingual, Two-Round Evaluation of the e-Nabız Personal Health Record System",
+      "doi": "10.55050/sarad.2011897",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.55050%2Fsarad.2011897",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-06b6a4c23907f5a545b2",
+      "title": "Development and Evaluation of Automated Artificial Intelligence–Based Brain Tumor Response Assessment in Patients with Glioblastoma",
+      "doi": "10.3174/ajnr.a8580",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3174%2Fajnr.a8580",
+      "publication_date": "2024-11-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-02c06b2cec606294cb4a",
+      "title": "Do Audit Committee Characteristics Influence Climate‐Related Disclosure? Evidence From Italian Listed Firms",
+      "doi": "10.1002/bse.71788",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71788",
+      "publication_date": "2026-10-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-dcdfa26e5494f51c5cfd",
       "title": "Cheating or being cheated? Academic integrity and a changing cheating habitus in international AI governance discourse",
@@ -641,32 +745,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-87ea9a47929b82a4c08e",
-      "title": "Gender diversity, board independence, environmental committee and greenhouse gas disclosure",
-      "doi": "10.1016/j.bar.2014.01.002",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.bar.2014.01.002",
-      "publication_date": "2015-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-02c06b2cec606294cb4a",
-      "title": "Do Audit Committee Characteristics Influence Climate‐Related Disclosure? Evidence From Italian Listed Firms",
-      "doi": "10.1002/bse.71788",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71788",
-      "publication_date": "2026-10-27",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-257d273c3536cee57b0b",
       "title": "Auditors’ Intention to Engage in Sustainability Assurance: Evidence From Vietnam",
       "doi": "10.56578/cis140512",
@@ -719,19 +797,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-c4ba5f3bed13482d9549",
-      "title": "Decoupling Sustainability Reporting and Social Media Communication After a Sustainability Scandal: Strategic Silence, Selective Disclosure and Legitimacy Stabilisation",
-      "doi": "10.1002/bse.71775",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71775",
-      "publication_date": "2026-10-27",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-d235a76e5343ab5040e9",
       "title": "When does profitability translate into credible sustainability reporting? The role of board governance",
       "doi": "10.1108/sl-09-2026-0448",
@@ -742,19 +807,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1108%2Fsl-09-2026-0448",
       "publication_date": "2026-10-27",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-06b6a4c23907f5a545b2",
-      "title": "Development and Evaluation of Automated Artificial Intelligence–Based Brain Tumor Response Assessment in Patients with Glioblastoma",
-      "doi": "10.3174/ajnr.a8580",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3174%2Fajnr.a8580",
-      "publication_date": "2024-11-14",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -927,19 +979,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-e90d96c998d116a96960",
-      "title": "The AI ESG protocol: Evaluating and disclosing the environment, social, and governance implications of artificial intelligence capabilities, assets, and activities",
-      "doi": "10.1002/sd.2438",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1002%2Fsd.2438",
-      "publication_date": "2022-10-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-edbe60b9462930dcb5a7",
       "title": "Corporate sustainability disclosure’s importance in China: financial analysts’ perception",
       "doi": "10.1108/srj-10-2018-0272",
@@ -975,19 +1014,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-40f43a82d54ae10b4870",
-      "title": "Artificial Intelligence Chatbots as Patient Information Tools: A Bilingual, Two-Round Evaluation of the e-Nabız Personal Health Record System",
-      "doi": "10.55050/sarad.2011897",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.55050%2Fsarad.2011897",
       "publication_date": "2026-10-30",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -2223,6 +2249,123 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.37641%2Fjiakes.v13i6.4410",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-475d9302c52619063431",
+      "title": "Institutional Isomorphism, Top Management Commitment, and Environmental Disclosure in Tanzania’s Construction Sector",
+      "doi": "10.56279/bmrj.v28i2.8663",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.56279%2Fbmrj.v28i2.8663",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-53ce8a8f43136a60fcac",
+      "title": "A content analysis of sustainability reporting: A pathway to advancing low-carbon cities development in Malaysia",
+      "doi": "10.18488/11.v14i4.4641",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.18488%2F11.v14i4.4641",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6c11659440381e7b158b",
+      "title": "Sustainability, ESG Reporting, and Corporate Financial Investment Decisions in Emerging Economies: Panel Evidence From Nigerian Deposit Money Banks",
+      "doi": "10.51137/wrp.ijarbm.519",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.51137%2Fwrp.ijarbm.519",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-72493246a9d605d8e3d0",
+      "title": "AI Governance in East Asia",
+      "doi": "10.1017/9781009580632.017",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1017%2F9781009580632.017",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a5c9e8fabbf12eb1b42a",
+      "title": "Using secure artificial intelligence agents integrated within the electronic medical record for the evaluation of blood culture appropriateness—Northern California, 2025",
+      "doi": "10.1017/ice.2025.10349",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1017%2Fice.2025.10349",
+      "publication_date": "2025-11-11",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b451e3ca9561c3521ed8",
+      "title": "Does Sustainability Disclosure Improve Investment Efficiency? Applied Study",
+      "doi": "10.21608/atasu.2025.513367",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.21608%2Fatasu.2025.513367",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-cfdb751b4e7cd486b0b4",
+      "title": "AI Driven ESG Assurance and Greenwashing Detection in Emerging Markets: Evidence and Future Direction",
+      "doi": "10.62823/exre/2025/02/04.136",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.62823%2Fexre%2F2025%2F02%2F04.136",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e2f8b01688c748ad615a",
+      "title": "Experimenting with algorithmic governance: Artificial intelligence between innovation and democratic responsibility",
+      "doi": "10.29379/jedem.v17i4.1177",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.29379%2Fjedem.v17i4.1177",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-f71a03b9f1b20644147f",
+      "title": "ESG Disclosure, Firm Value, and Investment Decisions",
+      "doi": "10.24843/eja.2025.v35.i12.p12",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.24843%2Feja.2025.v35.i12.p12",
       "publication_date": "2025-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
