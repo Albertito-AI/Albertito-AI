@@ -247,6 +247,13 @@ receives accurate attribution. When a funded assignment is available, contributo
 can agree roles, deliverables, IP and payment terms before starting. Voluntary
 participation carries no automatic payment entitlement or revenue share.
 
+## Contributions to other projects
+
+The [public contribution record](docs/OPEN_SOURCE_CONTRIBUTIONS.md) links
+reproducible fixes and developer-documentation improvements submitted to
+tscircuit, Datasette and Tari. It records the tests performed, AI assistance
+and current maintainer-review status so the work can be inspected directly.
+
 ## Work with me
 
 I welcome scoped enquiries about **comparative legal research, evidence-workflow
@@ -392,4 +399,4 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **2 November 2026**.
+Last substantive profile update: **5 November 2026**.
