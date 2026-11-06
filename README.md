@@ -15,6 +15,12 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
+## Teach an agent to write its own operations manual
+
+**[Atlas Opsbook](https://github.com/Albertito-AI/atlas-opsbook)** lets a coding agent turn a mistake into a project instruction, test the proposed rule against separate cases, and pass the accepted procedure to its next session. Try the packaging case to see why an initially plausible rule fails. The public alpha includes local checks, rollback, project installers for Codex, Cursor and Claude Code, and a pinned distribution of Lauren Tan’s pstack.
+
+[**Try the interactive casebook**](https://www.alberttansinhon.com/atlas-opsbook/) · [Download the public alpha](https://github.com/Albertito-AI/atlas-opsbook/releases/tag/v0.1.0) · [Inspect the verification record](https://github.com/Albertito-AI/atlas-opsbook/blob/main/docs/VERIFICATION.md)
+
 ## Build with IMIKWON
 
 **[IMIKWON 0.1.0a1](https://github.com/Albertito-AI/IMIKWON)** is a new, free MIT-licensed coding assistant for Kimi K3.1 Pro. Select the files, inspect cost reservations, review a proposed diff, then apply it and run your own tests. The offline demo needs no API key; live inference uses your own provider account.
