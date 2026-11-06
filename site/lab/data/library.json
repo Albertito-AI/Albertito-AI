@@ -1,142 +1,141 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T07:03:35Z",
+  "generated_at": "2026-11-06T07:03:38Z",
   "refresh_mode": "network",
-  "service_day": "2026-11-05",
-  "last_successful_refresh": "2026-11-05T07:03:35Z",
+  "service_day": "2026-11-06",
+  "last_successful_refresh": "2026-11-06T07:03:38Z",
   "status": "ok",
   "scope_note": "Curated source references and automatically indexed publisher metadata have different review levels. Discovery does not verify article contents, legal currency, free access or independent usefulness.",
   "source_runs": [
     {
       "id": "esg-disclosure",
       "label": "ESG disclosure and accountability",
-      "checked_at": "2026-11-05T07:03:35Z",
-      "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+      "checked_at": "2026-11-06T07:03:38Z",
+      "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
       "status": "ok",
       "discovered": 160,
       "accepted": 3,
       "rejected": {
         "outside_topic": 145,
-        "update_notice": 2,
-        "unsupported_record_type": 4,
+        "update_notice": 1,
         "missing_or_invalid_metadata": 3
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "e1ce28b8d54de001ecfb9aa30979291e581da90eddd6ce225b9d4abcb16ada72",
-          "reported_total": 59734
+          "response_sha256": "28b7710849294ab8714dda642277e737e676f7fec3bbbd3fbda7ddbd9e10e414",
+          "reported_total": 59583
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=320&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=400&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "c90b762872c05c999e2b995c588765341b713c64b1d1a956fa4376e2fd9234e6",
-          "reported_total": 59677,
+          "response_sha256": "a8b8c572817e65ec6f8d68b82b281c02979b013c87bc88766f22c34f3c23bd35",
+          "reported_total": 59696,
           "position": {
             "year": 2025,
-            "offset": 320
+            "offset": 400
           }
         }
       ],
-      "last_successful_check": "2026-11-05T07:03:35Z",
-      "queued_by_daily_limit": 94,
+      "last_successful_check": "2026-11-06T07:03:38Z",
+      "queued_by_daily_limit": 102,
       "pending_limit": 120,
-      "pending_count": 94,
+      "pending_count": 102,
       "pending_overflow": 0
     },
     {
       "id": "ai-agent-governance",
       "label": "AI governance and agent evaluation",
-      "checked_at": "2026-11-05T07:03:35Z",
-      "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+      "checked_at": "2026-11-06T07:03:38Z",
+      "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
       "status": "ok",
       "discovered": 160,
       "accepted": 3,
       "rejected": {
-        "outside_topic": 149,
-        "update_notice": 1,
-        "unsupported_record_type": 2,
-        "missing_or_invalid_metadata": 5
+        "outside_topic": 145,
+        "update_notice": 3,
+        "missing_or_invalid_metadata": 6,
+        "unsupported_record_type": 1
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "aa84f64214315c975d9cdf0983329839e840c8db42387c062368c6b4c4abfb4a",
-          "reported_total": 291148
+          "response_sha256": "d119b2dd6a42bcbc201de60fb9b0bb96fe7c33ac9ffadad5129f1f0335e6bb5e",
+          "reported_total": 291202
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=320&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=400&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "fca7b4dc080808ba497789c8ad2bc1c90414a36d433778f9c89c7ffcc8efa92f",
-          "reported_total": 286624,
+          "response_sha256": "13c95e2ddda165d9e947ac111b46071dd57a586015bd4499f1f7ef292cdcc2ab",
+          "reported_total": 286669,
           "position": {
             "year": 2025,
-            "offset": 320
+            "offset": 400
           }
         }
       ],
-      "last_successful_check": "2026-11-05T07:03:35Z",
-      "queued_by_daily_limit": 31,
+      "last_successful_check": "2026-11-06T07:03:38Z",
+      "queued_by_daily_limit": 33,
       "pending_limit": 120,
-      "pending_count": 31,
+      "pending_count": 33,
       "pending_overflow": 0
     },
     {
       "id": "legal-evidence-provenance",
       "label": "Legal evidence and provenance",
-      "checked_at": "2026-11-05T07:03:35Z",
-      "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+      "checked_at": "2026-11-06T07:03:38Z",
+      "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
       "status": "ok",
       "discovered": 160,
-      "accepted": 2,
+      "accepted": 1,
       "rejected": {
-        "outside_topic": 147,
+        "outside_topic": 150,
+        "update_notice": 4,
         "unsupported_record_type": 1,
-        "update_notice": 1,
-        "missing_or_invalid_metadata": 9
+        "missing_or_invalid_metadata": 4
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-06%2Cuntil-index-date%3A2026-11-05%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-05",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-07%2Cuntil-index-date%3A2026-11-06%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-06",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "d1f6e87ed1e8ebbf2e09ed0f32ccaaeb3f9ee624ece6866e929bfcd08ec58e0b",
-          "reported_total": 137080
+          "response_sha256": "341fbdc78858b16e60051437ea3b7813f2311109ff2d6d0554567fede8ce23bf",
+          "reported_total": 136439
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=320&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=400&filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31",
           "status": "ok",
-          "checked_at": "2026-11-05T07:03:35Z",
+          "checked_at": "2026-11-06T07:03:38Z",
           "returned": 80,
-          "response_sha256": "55f7bdd4a1599f00f7c08d10eac0e792dc5f52a5874a3b5f199d131894ff49ce",
-          "reported_total": 120666,
+          "response_sha256": "019198a8dc58a280f54a3b192caf15296a9056142da8072c717b3f16d1ac3efd",
+          "reported_total": 120676,
           "position": {
             "year": 2025,
-            "offset": 320
+            "offset": 400
           }
         }
       ],
-      "last_successful_check": "2026-11-05T07:03:35Z",
+      "last_successful_check": "2026-11-06T07:03:38Z",
       "pending_limit": 120,
       "pending_count": 0,
       "pending_overflow": 0
@@ -145,7 +144,7 @@
       "id": "known-record-rechecks",
       "label": "Previously indexed records",
       "status": "ok",
-      "checked_at": "2026-11-05T07:03:35Z",
+      "checked_at": "2026-11-06T07:03:38Z",
       "discovered": 6,
       "accepted": 0,
       "failed_checks": 0,
@@ -155,19 +154,19 @@
   "coverage": {
     "sources": {
       "esg-disclosure": {
-        "year": 2025,
-        "offset": 400,
-        "last_advanced_at": "2026-11-05T07:03:35Z"
+        "year": 2024,
+        "offset": 0,
+        "last_advanced_at": "2026-11-06T07:03:38Z"
       },
       "ai-agent-governance": {
-        "year": 2025,
-        "offset": 400,
-        "last_advanced_at": "2026-11-05T07:03:35Z"
+        "year": 2024,
+        "offset": 0,
+        "last_advanced_at": "2026-11-06T07:03:38Z"
       },
       "legal-evidence-provenance": {
-        "year": 2025,
-        "offset": 400,
-        "last_advanced_at": "2026-11-05T07:03:35Z"
+        "year": 2024,
+        "offset": 0,
+        "last_advanced_at": "2026-11-06T07:03:38Z"
       }
     },
     "mode": "bounded_discovery",
@@ -253,150 +252,6 @@
       "discovered_at": "2026-10-29T01:00:03Z"
     },
     {
-      "id": "discovery-87a5440364fd4a50cb56",
-      "title": "Microfinance sustainability amid gender inequalities in G20 emerging economies: the role of female board representation and voice and accountability",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Kuldeep Singh",
-        "Arpita Sharma"
-      ],
-      "publisher": "Emerald",
-      "venue": "Journal of Public Budgeting, Accounting & Financial Management",
-      "year": 2026,
-      "publication_date": "2026-10-27",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1108/jpbafm-06-2025-0159",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-10-29T01:00:03Z",
-      "last_metadata_check": "2026-10-29T01:00:03Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "sustainability"
-          ],
-          [
-            "accountability"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1108/jpbafm-06-2025-0159",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1108%2Fjpbafm-06-2025-0159",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-29T01:00:03Z",
-        "source_url": "https://api.crossref.org/works/10.1108%2Fjpbafm-06-2025-0159",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1108/jpbafm-06-2025-0159",
-        "text": "Kuldeep Singh; Arpita Sharma (2026). Microfinance sustainability amid gender inequalities in G20 emerging economies: the role of female board representation and voice and accountability. Journal of Public Budgeting, Accounting & Financial Management. https://doi.org/10.1108/jpbafm-06-2025-0159",
-        "doi": "10.1108/jpbafm-06-2025-0159"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "3fef96058d58faa16e491016760d1b6e9ebbbb7096905ca6f36838dc2ab8a5c5",
-      "discovered_at": "2026-10-29T01:00:03Z"
-    },
-    {
-      "id": "discovery-a92d1c9f58784d90585f",
-      "title": "Advancing Sustainable Finance in the EU: The Role of ESG Reporting and Due Diligence in Building Ethical Corporate Responsibility",
-      "type": "research",
-      "work_type": "book-chapter",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Sidhant Mohapatra"
-      ],
-      "publisher": "Emerald Publishing Limited",
-      "venue": "Sustainable Finance 2.0, FinTech and Inclusive Financial Transformation",
-      "year": 2026,
-      "publication_date": "2026-10-27",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1108/978-1-80686-803-220261026",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-10-29T01:00:03Z",
-      "last_metadata_check": "2026-10-29T01:00:03Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "sustainable",
-            "esg"
-          ],
-          [
-            "reporting"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1108/978-1-80686-803-220261026",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1108%2F978-1-80686-803-220261026",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-29T01:00:03Z",
-        "source_url": "https://api.crossref.org/works/10.1108%2F978-1-80686-803-220261026",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1108/978-1-80686-803-220261026",
-        "text": "Sidhant Mohapatra (2026). Advancing Sustainable Finance in the EU: The Role of ESG Reporting and Due Diligence in Building Ethical Corporate Responsibility. Sustainable Finance 2.0, FinTech and Inclusive Financial Transformation. https://doi.org/10.1108/978-1-80686-803-220261026",
-        "doi": "10.1108/978-1-80686-803-220261026"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "19d7fc56878db5321e4492ffa64ecd77acbd153122c6042ddf7c220c02b9bf63",
-      "discovered_at": "2026-10-29T01:00:03Z"
-    },
-    {
       "id": "discovery-b1a1904fab6fe889d98b",
       "title": "Justice in the Crossfire: Legal Accountability for Pesticides and Their Role in Climate Change",
       "type": "research",
@@ -466,77 +321,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "01775671cac58f3f292c3a3c2dd3a1211e6ff683ab3acef51b14c76a3257b9dd",
-      "discovered_at": "2026-10-29T01:00:03Z"
-    },
-    {
-      "id": "discovery-d235a76e5343ab5040e9",
-      "title": "When does profitability translate into credible sustainability reporting? The role of board governance",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Prince Gyimah"
-      ],
-      "publisher": "Emerald",
-      "venue": "Strategy & Leadership",
-      "year": 2026,
-      "publication_date": "2026-10-27",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1108/sl-09-2026-0448",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-10-29T01:00:03Z",
-      "last_metadata_check": "2026-10-29T01:00:03Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "sustainability"
-          ],
-          [
-            "reporting"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1108/sl-09-2026-0448",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1108%2Fsl-09-2026-0448",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-29T01:00:03Z",
-        "source_url": "https://api.crossref.org/works/10.1108%2Fsl-09-2026-0448",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1108/sl-09-2026-0448",
-        "text": "Prince Gyimah (2026). When does profitability translate into credible sustainability reporting? The role of board governance. Strategy & Leadership. https://doi.org/10.1108/sl-09-2026-0448",
-        "doi": "10.1108/sl-09-2026-0448"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "a7dd22192ef84934750735fd929bb924bf8d14beb09f1760c55fdfe2cf597154",
       "discovered_at": "2026-10-29T01:00:03Z"
     },
     {
@@ -1635,81 +1419,6 @@
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
-      "id": "discovery-3c4c10052977bc1c8d0a",
-      "title": "Audit transformation in the era of artificial intelligence: an integrative literature review of AI’s impact on audit quality, professional skepticism, and auditor competence",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "Angel II P. Esmeralda",
-        "Nur Hidayah K. Fadhilah",
-        "Dea Arme Tiara Harahap",
-        "Meutia Riany"
-      ],
-      "publisher": "Aksara Indo Rajawali",
-      "venue": "Jurnal Bisnis Mahasiswa",
-      "year": 2026,
-      "publication_date": "2026-10-30",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.60036/jbm.1477",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-10-31T05:58:34Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "artificial intelligence",
-            "ai"
-          ],
-          [
-            "audit"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.60036/jbm.1477",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
-        "source_url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.60036/jbm.1477",
-        "text": "Angel II P. Esmeralda; Nur Hidayah K. Fadhilah; Dea Arme Tiara Harahap; Meutia Riany (2026). Audit transformation in the era of artificial intelligence: an integrative literature review of AI’s impact on audit quality, professional skepticism, and auditor competence. Jurnal Bisnis Mahasiswa. https://doi.org/10.60036/jbm.1477",
-        "doi": "10.60036/jbm.1477"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "7415ae94337d2df332930b86c6ca385c8c76683377cb5673be539c16000a8bd9",
-      "discovered_at": "2026-10-31T05:58:34Z"
-    },
-    {
       "id": "discovery-4217514f6dc5cd85cdf4",
       "title": "Climate risk disclosure, cross-regional capital flow, and corporate dual innovation",
       "type": "research",
@@ -1782,77 +1491,6 @@
       "discovered_at": "2026-10-31T05:58:34Z"
     },
     {
-      "id": "discovery-4fecf1b400f4d7ef3c18",
-      "title": "Evaluation of Radon Content in Soil Using Artificial Intelligence",
-      "type": "research",
-      "work_type": "proceedings-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "W. J. Wehr"
-      ],
-      "publisher": "TU Delft OPEN Publishing",
-      "venue": "IAEG 2026: Engineering Geology in a Rapidly Changing World - XV IAEG World Congress",
-      "year": 2026,
-      "publication_date": "2026-10-30",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.59490/6ad293b71111c11e2bf47f2e",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-10-31T05:58:34Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "artificial intelligence"
-          ],
-          [
-            "evaluation"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.59490%2F6ad293b71111c11e2bf47f2e",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
-        "source_url": "https://api.crossref.org/works/10.59490%2F6ad293b71111c11e2bf47f2e",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
-        "text": "W. J. Wehr (2026). Evaluation of Radon Content in Soil Using Artificial Intelligence. IAEG 2026: Engineering Geology in a Rapidly Changing World - XV IAEG World Congress. https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
-        "doi": "10.59490/6ad293b71111c11e2bf47f2e"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "be0ef09d5f98180304e3ed1d1a41c9377c2dfcf071bb5db6f3f88687bc3f89b4",
-      "discovered_at": "2026-10-31T05:58:34Z"
-    },
-    {
       "id": "discovery-bff71bef104220bad22f",
       "title": "Mandatory sustainability reporting and corporate hiring: the impact of CSRD introduction in Germany",
       "type": "research",
@@ -1921,80 +1559,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "fc510bfee2ebffd27c9fc3e2099a77258ae8c70b55a0a3543402da32e565f317",
-      "discovered_at": "2026-10-31T05:58:34Z"
-    },
-    {
-      "id": "discovery-d68b0149644b9fb6bd71",
-      "title": "Integrating AI-driven adaptive learning and ethnomathematical game design to address persistent conceptual difficulties in LCM and GCD: Development and evaluation of the DAKOGI platform",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "I Nyoman Bagus Pramartha",
-        "Agus Hendriyanto",
-        "Lukman Hakim Muhaimin",
-        "Deshinta Arrova Dewi"
-      ],
-      "publisher": "Indonesian Mathematical Society",
-      "venue": "Journal on Mathematics Education",
-      "year": 2026,
-      "publication_date": "2026-06-06",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.22342/jme.v17i3.pp797-830",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-10-31T05:58:34Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "ai"
-          ],
-          [
-            "evaluation"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.22342/jme.v17i3.pp797-830",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.22342%2Fjme.v17i3.pp797-830",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
-        "source_url": "https://api.crossref.org/works/10.22342%2Fjme.v17i3.pp797-830",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.22342/jme.v17i3.pp797-830",
-        "text": "I Nyoman Bagus Pramartha; Agus Hendriyanto; Lukman Hakim Muhaimin; Deshinta Arrova Dewi (2026). Integrating AI-driven adaptive learning and ethnomathematical game design to address persistent conceptual difficulties in LCM and GCD: Development and evaluation of the DAKOGI platform. Journal on Mathematics Education. https://doi.org/10.22342/jme.v17i3.pp797-830",
-        "doi": "10.22342/jme.v17i3.pp797-830"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "1401a9bc4fd6090e4d630fc35d2c47b7cb055c19c428fcf46d27c966afd6ab46",
       "discovered_at": "2026-10-31T05:58:34Z"
     },
     {
@@ -9333,6 +8897,1177 @@
       "related_item_ids": [],
       "metadata_sha256": "9ac531a46546c494410c97bc790866148052443ff6aa1a0dc90dd48be2642869",
       "discovered_at": "2026-11-05T07:03:35Z"
+    },
+    {
+      "id": "discovery-08cb73f6bcea7baf3138",
+      "title": "THE VALUE RELEVANCE OF FINANCIAL INFORMATION AND NON FINANCIAL INFORMATION: SUSTAINABILITY REPORTING AND GREEN ACCOUNTING IN INDONESIA",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Dwi Fitri Puspa",
+        "Neva Novianti",
+        "Ietje Nazaruddin"
+      ],
+      "publisher": "Universitas Trisakti",
+      "venue": "Media Riset Akuntansi, Auditing & Informasi",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.25105/mraai.v25i2.21980",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.25105/mraai.v25i2.21980",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.25105%2Fmraai.v25i2.21980",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.25105%2Fmraai.v25i2.21980",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.25105/mraai.v25i2.21980",
+        "text": "Dwi Fitri Puspa; Neva Novianti; Ietje Nazaruddin (2025). THE VALUE RELEVANCE OF FINANCIAL INFORMATION AND NON FINANCIAL INFORMATION: SUSTAINABILITY REPORTING AND GREEN ACCOUNTING IN INDONESIA. Media Riset Akuntansi, Auditing & Informasi. https://doi.org/10.25105/mraai.v25i2.21980",
+        "doi": "10.25105/mraai.v25i2.21980"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "efda8cf7539a8bd4900ad22181b0a57db3211c52cd30b6394f460033cbae2418",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-14e0586c81044f4ed8d9",
+      "title": "The Role of AI in Military Cyber Security: Data Insights and Evaluation Methods",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Clara Maathuis",
+        "Kasper Cools"
+      ],
+      "publisher": "Elsevier BV",
+      "venue": "Procedia Computer Science",
+      "year": 2025,
+      "publication_date": "2025",
+      "publication_date_precision": "year",
+      "publication_date_source": "issued",
+      "doi": "10.1016/j.procs.2025.02.078",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1016/j.procs.2025.02.078",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.procs.2025.02.078",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.1016%2Fj.procs.2025.02.078",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1016/j.procs.2025.02.078",
+        "text": "Clara Maathuis; Kasper Cools (2025). The Role of AI in Military Cyber Security: Data Insights and Evaluation Methods. Procedia Computer Science. https://doi.org/10.1016/j.procs.2025.02.078",
+        "doi": "10.1016/j.procs.2025.02.078"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "86f61eb1572f03880509471e5c70fe1c9b966b80d5d03bda778da1f6c737e375",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-2cbd7ec1d44c99966c7b",
+      "title": "Circular Economy Disclosure in Sustainability Reporting: The Effect of Firm Characteristics",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Filippo Vitolla",
+        "Vitiana L’Abate",
+        "Felice Petruzzella",
+        "Nicola Raimo",
+        "Antonio Salvi"
+      ],
+      "publisher": "MDPI AG",
+      "venue": "Sustainability",
+      "year": 2023,
+      "publication_date": "2023-01-24",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.3390/su15032200",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "disclosure",
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.3390/su15032200",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.3390%2Fsu15032200",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.3390%2Fsu15032200",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.3390/su15032200",
+        "text": "Filippo Vitolla; Vitiana L’Abate; Felice Petruzzella; Nicola Raimo; Antonio Salvi (2023). Circular Economy Disclosure in Sustainability Reporting: The Effect of Firm Characteristics. Sustainability. https://doi.org/10.3390/su15032200",
+        "doi": "10.3390/su15032200"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "6dab5e7e7dc8c821e1ddc35bc1dbfe140e12861e29d56a823b5dd348e20153ca",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-3786f59269ba319ccaae",
+      "title": "A Study on the Enhancement of ESG Management Based on Natural Capital Disclosure : Global Case Comparisons and Application Strategies for Korea",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "상명대학교 글로벌경영학과 학사과정",
+        "Seungri Kim",
+        "Heeyeon Jeon",
+        "Hyojung Kim"
+      ],
+      "publisher": "Korean Academy of International Business Management",
+      "venue": "INTERNATIONAL BUSINESS REVIEW",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.21739/kaibm.2025.12.29.4.7",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.21739/kaibm.2025.12.29.4.7",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.21739%2Fkaibm.2025.12.29.4.7",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.21739%2Fkaibm.2025.12.29.4.7",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.21739/kaibm.2025.12.29.4.7",
+        "text": "상명대학교 글로벌경영학과 학사과정; Seungri Kim; Heeyeon Jeon; Hyojung Kim (2025). A Study on the Enhancement of ESG Management Based on Natural Capital Disclosure : Global Case Comparisons and Application Strategies for Korea. INTERNATIONAL BUSINESS REVIEW. https://doi.org/10.21739/kaibm.2025.12.29.4.7",
+        "doi": "10.21739/kaibm.2025.12.29.4.7"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "d27a2f98966aa6af6fe209870af91d28630c5265d1c26d12f5b98c7a02ba7131",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-3bad48831020fe250d88",
+      "title": "Enhancing Environmental Performance through EMA and Accountability in Pakistan",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Muhammad Siddique",
+        "Kamran ALi"
+      ],
+      "publisher": "Bahria Business School, Bahria University, Islamabad",
+      "venue": "BJMT",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.62533/2vz58496",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "environmental"
+          ],
+          [
+            "accountability"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.62533/2vz58496",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.62533%2F2vz58496",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.62533%2F2vz58496",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.62533/2vz58496",
+        "text": "Muhammad Siddique; Kamran ALi (2025). Enhancing Environmental Performance through EMA and Accountability in Pakistan. BJMT. https://doi.org/10.62533/2vz58496",
+        "doi": "10.62533/2vz58496"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "eec7eea1b9cf21f6c8f1cc5272620c49be43bb7ac3350334b238c90d610a810a",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-4641e045434cb0d96e8f",
+      "title": "Applications for Generative AI in Banking and Finance: Opportunities, Risks, and Governance",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Maha Sameen"
+      ],
+      "publisher": "International Research Alliance for Sustainable Development",
+      "venue": "iRASD Journal of Finance",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.52131/jof.2025.0401.0016",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "governance"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.52131/jof.2025.0401.0016",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.52131%2Fjof.2025.0401.0016",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.52131%2Fjof.2025.0401.0016",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.52131/jof.2025.0401.0016",
+        "text": "Maha Sameen (2025). Applications for Generative AI in Banking and Finance: Opportunities, Risks, and Governance. iRASD Journal of Finance. https://doi.org/10.52131/jof.2025.0401.0016",
+        "doi": "10.52131/jof.2025.0401.0016"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "195949377f66ea7ec112f0e95b86b4bf6db99b7bd3015446bc137b26876a7713",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-8518522d414b169728bd",
+      "title": "Strategic governance and Sustainable Development Goals (SDG) reporting in Malaysia",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Siti Hawa Mohd Yusof",
+        "Dalilawati Zainal",
+        "Karina Harjanto"
+      ],
+      "publisher": "Informa UK Limited",
+      "venue": "Cogent Business & Management",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1080/23311975.2025.2607200",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainable"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1080/23311975.2025.2607200",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1080%2F23311975.2025.2607200",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.1080%2F23311975.2025.2607200",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1080/23311975.2025.2607200",
+        "text": "Siti Hawa Mohd Yusof; Dalilawati Zainal; Karina Harjanto (2025). Strategic governance and Sustainable Development Goals (SDG) reporting in Malaysia. Cogent Business & Management. https://doi.org/10.1080/23311975.2025.2607200",
+        "doi": "10.1080/23311975.2025.2607200"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "e8a9fd1fd314c98c1799cf6cb8a82b7796569cf42d07738f03406f9e4371ebe7",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-9b236ba6712b4c3a6d1b",
+      "title": "DOES ESG DISCLOSURE MATTER FOR INTELLECTUAL CAPITAL AND FIRM PERFORMANCE IN DEVELOPING COUNTRIES?",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Management and Science University",
+        "MUHAMMAD AHMAD",
+        "NUR HAFIZAH ROSLAN",
+        "SITI ZAITUN SADDAM",
+        "Universiti Teknologi MARA",
+        "MUHAMMAD M. MA’AJI",
+        "CamEd Business School"
+      ],
+      "publisher": "Penerbit UMT, Universiti Malaysia Terengganu",
+      "venue": "JOURNAL OF SUSTAINABILITY SCIENCE AND MANAGEMENT",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.46754/jssm.2025.12.013",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.46754/jssm.2025.12.013",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.46754%2Fjssm.2025.12.013",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.46754%2Fjssm.2025.12.013",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.46754/jssm.2025.12.013",
+        "text": "Management and Science University; MUHAMMAD AHMAD; NUR HAFIZAH ROSLAN; SITI ZAITUN SADDAM; Universiti Teknologi MARA; MUHAMMAD M. MA’AJI; CamEd Business School (2025). DOES ESG DISCLOSURE MATTER FOR INTELLECTUAL CAPITAL AND FIRM PERFORMANCE IN DEVELOPING COUNTRIES?. JOURNAL OF SUSTAINABILITY SCIENCE AND MANAGEMENT. https://doi.org/10.46754/jssm.2025.12.013",
+        "doi": "10.46754/jssm.2025.12.013"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "36aa7ed6583a83fdac5e1e54cd8b5b47a2bb7506fad1044a9c5c2ef5cbc26e53",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-b8cd91e6be024be73f3d",
+      "title": "ESG disclosure as a signaling mechanism linking green capabilities to competitive advantage",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "M. F. Arrozi Adhikara",
+        "Fredy Rizaldi",
+        "Sugiyanto Sugiyanto",
+        "Agung Mulyo Widodo"
+      ],
+      "publisher": "Fakultas Ekonomi dan Bisnis Universitas Islam Malang",
+      "venue": "JEMA: Jurnal Ilmiah Bidang Akuntansi dan Manajemen",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.31106/jema.v22i2.24143",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.31106/jema.v22i2.24143",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.31106%2Fjema.v22i2.24143",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.31106%2Fjema.v22i2.24143",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.31106/jema.v22i2.24143",
+        "text": "M. F. Arrozi Adhikara; Fredy Rizaldi; Sugiyanto Sugiyanto; Agung Mulyo Widodo (2025). ESG disclosure as a signaling mechanism linking green capabilities to competitive advantage. JEMA: Jurnal Ilmiah Bidang Akuntansi dan Manajemen. https://doi.org/10.31106/jema.v22i2.24143",
+        "doi": "10.31106/jema.v22i2.24143"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "8f1f8d6ce6091bd3b8030845a825b7c6ef91db1974058dd5cecf890426911e97",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-c0fd64c5c84d3ba4d190",
+      "title": "Moderating Impact of Firm Size on the Relationship between Sustainability Disclosure and Financial Performance of Firms Listed Nairobi Securities Exchange, Kenya",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Opiyo James",
+        "Maniagi Musiega",
+        "Charles Tibbs"
+      ],
+      "publisher": "CSRC Publishing, Center for Sustainability Research and Consultancy",
+      "venue": "Journal of Business and Social Review in Emerging Economies",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.26710/jbsee.v11i4.3783",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.26710/jbsee.v11i4.3783",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.26710%2Fjbsee.v11i4.3783",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.26710%2Fjbsee.v11i4.3783",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.26710/jbsee.v11i4.3783",
+        "text": "Opiyo James; Maniagi Musiega; Charles Tibbs (2025). Moderating Impact of Firm Size on the Relationship between Sustainability Disclosure and Financial Performance of Firms Listed Nairobi Securities Exchange, Kenya. Journal of Business and Social Review in Emerging Economies. https://doi.org/10.26710/jbsee.v11i4.3783",
+        "doi": "10.26710/jbsee.v11i4.3783"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "879debc00f6a819b2e9f922defb270ef2d9b5d0dfcebd476dd5e0ca1c3a611ed",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-c4d14ab235e3c18246b3",
+      "title": "Comparative evaluation of artificial intelligence based prediction of dye removal by ultrasonic activated carbon composites derived from mixed biomass: Optimization and sensitivity analysis using Garson and Pertubation method",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "S. Karishma",
+        "Y.P. Ragini",
+        "A. Saravanan",
+        "A.S. Vickram"
+      ],
+      "publisher": "Elsevier BV",
+      "venue": "Diamond and Related Materials",
+      "year": 2025,
+      "publication_date": "2025-11",
+      "publication_date_precision": "month",
+      "publication_date_source": "issued",
+      "doi": "10.1016/j.diamond.2025.112886",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "artificial intelligence"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1016/j.diamond.2025.112886",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.diamond.2025.112886",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.1016%2Fj.diamond.2025.112886",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1016/j.diamond.2025.112886",
+        "text": "S. Karishma; Y.P. Ragini; A. Saravanan; A.S. Vickram (2025). Comparative evaluation of artificial intelligence based prediction of dye removal by ultrasonic activated carbon composites derived from mixed biomass: Optimization and sensitivity analysis using Garson and Pertubation method. Diamond and Related Materials. https://doi.org/10.1016/j.diamond.2025.112886",
+        "doi": "10.1016/j.diamond.2025.112886"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "8c000ba3a0029abaa7381bf974076f5cb76da31da9caf2059804851ed7bf2f4a",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-e580473fb9ec105df4b4",
+      "title": "Transformation of accounting, reporting, and ESG auditing for economic security and sustainable business development",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Tetyana S. Hayduchok",
+        "Nina I. Tsehelnyk",
+        "Yuliia V. Maksymiv",
+        "Tetyana V. Solodzhuk"
+      ],
+      "publisher": "State Institution - Institute of regional research named after M.I. Dolishniy of NAS of Ukraine",
+      "venue": "Socio-Economic Problems of the Modern Period of Ukraine",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.36818/2071-4653-2025-4-11",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainable",
+            "esg"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.36818/2071-4653-2025-4-11",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.36818%2F2071-4653-2025-4-11",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.36818%2F2071-4653-2025-4-11",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.36818/2071-4653-2025-4-11",
+        "text": "Tetyana S. Hayduchok; Nina I. Tsehelnyk; Yuliia V. Maksymiv; Tetyana V. Solodzhuk (2025). Transformation of accounting, reporting, and ESG auditing for economic security and sustainable business development. Socio-Economic Problems of the Modern Period of Ukraine. https://doi.org/10.36818/2071-4653-2025-4-11",
+        "doi": "10.36818/2071-4653-2025-4-11"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "528557090373c8bd441a71954430790012fd26c2d0e9cdb44f9cefaa46042437",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-ec2604bd876490beca98",
+      "title": "Architecting Responsible AI Governance on SAP BTP for Intelligent Enterprise Transformation through Explainable Systems, Adaptive Compliance Controls, and Trusted Automation Engineering",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Rajendra Asuri"
+      ],
+      "publisher": "PT. Sanskara Karya Internasional",
+      "venue": "The Eastasouth Journal of Information System and Computer Science",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.58812/esiscs.v3i02.1247",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "governance"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.58812/esiscs.v3i02.1247",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.58812%2Fesiscs.v3i02.1247",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.58812%2Fesiscs.v3i02.1247",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.58812/esiscs.v3i02.1247",
+        "text": "Rajendra Asuri (2025). Architecting Responsible AI Governance on SAP BTP for Intelligent Enterprise Transformation through Explainable Systems, Adaptive Compliance Controls, and Trusted Automation Engineering. The Eastasouth Journal of Information System and Computer Science. https://doi.org/10.58812/esiscs.v3i02.1247",
+        "doi": "10.58812/esiscs.v3i02.1247"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "bda6eb68c0d51c753f69a97dad9d6ce932676d253c3ea8edaca21f8880138d00",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-f46b5e99cdbb40960b3f",
+      "title": "Responsible AI in Financial Risk Systems the Transparent Equity Framework (TEF): An Auditable Governance Methodology for Equitable Financial Decision-Making",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        ".",
+        "Pankaj Kumar"
+      ],
+      "publisher": "Everant Journals",
+      "venue": "Journal of Economics, Finance And Management Studies",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.47191/jefms/v8-i12-63",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "governance"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.47191/jefms/v8-i12-63",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.47191%2Fjefms%2Fv8-i12-63",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.47191%2Fjefms%2Fv8-i12-63",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.47191/jefms/v8-i12-63",
+        "text": ".; Pankaj Kumar (2025). Responsible AI in Financial Risk Systems the Transparent Equity Framework (TEF): An Auditable Governance Methodology for Equitable Financial Decision-Making. Journal of Economics, Finance And Management Studies. https://doi.org/10.47191/jefms/v8-i12-63",
+        "doi": "10.47191/jefms/v8-i12-63"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "30cf4c46842193fe9e3eca5f8dbc5880fcb45e4af0f616644ef0338983657662",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-f86275f773e616ff0dfb",
+      "title": "THE CEO OVERCONFIDENCE, INDUSTRY CHARACTERISTICS, AND FOREIGN OWNERSHIP: THEIR EFFECTS ON ESG DISCLOSURE",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Shendy Gavriel Alexander",
+        "Tigor Tambunan"
+      ],
+      "publisher": "Universitas Bina Nusantara",
+      "venue": "Journal of Applied Finance and Accounting",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.21512/jafa.v12i2.13976",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.21512/jafa.v12i2.13976",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.21512%2Fjafa.v12i2.13976",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.21512%2Fjafa.v12i2.13976",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.21512/jafa.v12i2.13976",
+        "text": "Shendy Gavriel Alexander; Tigor Tambunan (2025). THE CEO OVERCONFIDENCE, INDUSTRY CHARACTERISTICS, AND FOREIGN OWNERSHIP: THEIR EFFECTS ON ESG DISCLOSURE. Journal of Applied Finance and Accounting. https://doi.org/10.21512/jafa.v12i2.13976",
+        "doi": "10.21512/jafa.v12i2.13976"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "040589fe403d820f4494608ad13768ff0a1776887024efcab41bc108c1897ef3",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-f98cbdf76165de37c7cc",
+      "title": "Corporate Governance Matters: Analysing Its Effect on Sustainability Reporting",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "S. M. Tharanga",
+        "N. L. E. Abeywardana"
+      ],
+      "publisher": "Sri Lanka Journals Online",
+      "venue": "International Journal of Accounting and Business Finance",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.4038/ijabf.v11i2.182",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.4038/ijabf.v11i2.182",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.4038%2Fijabf.v11i2.182",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.4038%2Fijabf.v11i2.182",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.4038/ijabf.v11i2.182",
+        "text": "S. M. Tharanga; N. L. E. Abeywardana (2025). Corporate Governance Matters: Analysing Its Effect on Sustainability Reporting. International Journal of Accounting and Business Finance. https://doi.org/10.4038/ijabf.v11i2.182",
+        "doi": "10.4038/ijabf.v11i2.182"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "3390da3deffa60dd6248a5879826b863f81a7b4743a28b2ec3cd6ccd4a449fc6",
+      "discovered_at": "2026-11-06T07:03:38Z"
     }
   ],
   "superseded_records": [
@@ -9417,6 +10152,513 @@
   ],
   "items": [
     {
+      "id": "discovery-d68b0149644b9fb6bd71",
+      "title": "Integrating AI-driven adaptive learning and ethnomathematical game design to address persistent conceptual difficulties in LCM and GCD: Development and evaluation of the DAKOGI platform",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "I Nyoman Bagus Pramartha",
+        "Agus Hendriyanto",
+        "Lukman Hakim Muhaimin",
+        "Deshinta Arrova Dewi"
+      ],
+      "publisher": "Indonesian Mathematical Society",
+      "venue": "Journal on Mathematics Education",
+      "year": 2026,
+      "publication_date": "2026-06-06",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.22342/jme.v17i3.pp797-830",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.22342/jme.v17i3.pp797-830",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.22342%2Fjme.v17i3.pp797-830",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-31T05:58:34Z",
+        "source_url": "https://api.crossref.org/works/10.22342%2Fjme.v17i3.pp797-830",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.22342/jme.v17i3.pp797-830",
+        "text": "I Nyoman Bagus Pramartha; Agus Hendriyanto; Lukman Hakim Muhaimin; Deshinta Arrova Dewi (2026). Integrating AI-driven adaptive learning and ethnomathematical game design to address persistent conceptual difficulties in LCM and GCD: Development and evaluation of the DAKOGI platform. Journal on Mathematics Education. https://doi.org/10.22342/jme.v17i3.pp797-830",
+        "doi": "10.22342/jme.v17i3.pp797-830"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "1401a9bc4fd6090e4d630fc35d2c47b7cb055c19c428fcf46d27c966afd6ab46",
+      "discovered_at": "2026-10-31T05:58:34Z"
+    },
+    {
+      "id": "discovery-d235a76e5343ab5040e9",
+      "title": "When does profitability translate into credible sustainability reporting? The role of board governance",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Prince Gyimah"
+      ],
+      "publisher": "Emerald",
+      "venue": "Strategy & Leadership",
+      "year": 2026,
+      "publication_date": "2026-10-27",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1108/sl-09-2026-0448",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-29T01:00:03Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1108/sl-09-2026-0448",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1108%2Fsl-09-2026-0448",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T01:00:03Z",
+        "source_url": "https://api.crossref.org/works/10.1108%2Fsl-09-2026-0448",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1108/sl-09-2026-0448",
+        "text": "Prince Gyimah (2026). When does profitability translate into credible sustainability reporting? The role of board governance. Strategy & Leadership. https://doi.org/10.1108/sl-09-2026-0448",
+        "doi": "10.1108/sl-09-2026-0448"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "a7dd22192ef84934750735fd929bb924bf8d14beb09f1760c55fdfe2cf597154",
+      "discovered_at": "2026-10-29T01:00:03Z"
+    },
+    {
+      "id": "discovery-a92d1c9f58784d90585f",
+      "title": "Advancing Sustainable Finance in the EU: The Role of ESG Reporting and Due Diligence in Building Ethical Corporate Responsibility",
+      "type": "research",
+      "work_type": "book-chapter",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Sidhant Mohapatra"
+      ],
+      "publisher": "Emerald Publishing Limited",
+      "venue": "Sustainable Finance 2.0, FinTech and Inclusive Financial Transformation",
+      "year": 2026,
+      "publication_date": "2026-10-27",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1108/978-1-80686-803-220261026",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-29T01:00:03Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainable",
+            "esg"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1108/978-1-80686-803-220261026",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1108%2F978-1-80686-803-220261026",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T01:00:03Z",
+        "source_url": "https://api.crossref.org/works/10.1108%2F978-1-80686-803-220261026",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1108/978-1-80686-803-220261026",
+        "text": "Sidhant Mohapatra (2026). Advancing Sustainable Finance in the EU: The Role of ESG Reporting and Due Diligence in Building Ethical Corporate Responsibility. Sustainable Finance 2.0, FinTech and Inclusive Financial Transformation. https://doi.org/10.1108/978-1-80686-803-220261026",
+        "doi": "10.1108/978-1-80686-803-220261026"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "19d7fc56878db5321e4492ffa64ecd77acbd153122c6042ddf7c220c02b9bf63",
+      "discovered_at": "2026-10-29T01:00:03Z"
+    },
+    {
+      "id": "discovery-9104558669e92366af4e",
+      "title": "Ethics before Evidence: The Essential Role of IERB Approval in Research Integrity",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "authors": [
+        "Rehana Khadim",
+        "Shaista Noor Qureshi"
+      ],
+      "publisher": "Army Medical College",
+      "venue": "Pakistan Armed Forces Medical Journal",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.51253/pafmj.v75i6.14146",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "legal-evidence-provenance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
+      "use_for": "Locate and assess this publication for legal evidence and provenance. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "evidence"
+          ],
+          [
+            "research integrity"
+          ]
+        ],
+        "source_id": "legal-evidence-provenance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.51253/pafmj.v75i6.14146",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.51253%2Fpafmj.v75i6.14146",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-06T07:03:38Z",
+        "source_url": "https://api.crossref.org/works/10.51253%2Fpafmj.v75i6.14146",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.51253/pafmj.v75i6.14146",
+        "text": "Rehana Khadim; Shaista Noor Qureshi (2025). Ethics before Evidence: The Essential Role of IERB Approval in Research Integrity. Pakistan Armed Forces Medical Journal. https://doi.org/10.51253/pafmj.v75i6.14146",
+        "doi": "10.51253/pafmj.v75i6.14146"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "aa2e5591ce42e5b05a6aaa1c8adc200eb117135b458d2854f8003555b7975a23",
+      "discovered_at": "2026-11-06T07:03:38Z"
+    },
+    {
+      "id": "discovery-87a5440364fd4a50cb56",
+      "title": "Microfinance sustainability amid gender inequalities in G20 emerging economies: the role of female board representation and voice and accountability",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Kuldeep Singh",
+        "Arpita Sharma"
+      ],
+      "publisher": "Emerald",
+      "venue": "Journal of Public Budgeting, Accounting & Financial Management",
+      "year": 2026,
+      "publication_date": "2026-10-27",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1108/jpbafm-06-2025-0159",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-29T01:00:03Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "accountability"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1108/jpbafm-06-2025-0159",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1108%2Fjpbafm-06-2025-0159",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-29T01:00:03Z",
+        "source_url": "https://api.crossref.org/works/10.1108%2Fjpbafm-06-2025-0159",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1108/jpbafm-06-2025-0159",
+        "text": "Kuldeep Singh; Arpita Sharma (2026). Microfinance sustainability amid gender inequalities in G20 emerging economies: the role of female board representation and voice and accountability. Journal of Public Budgeting, Accounting & Financial Management. https://doi.org/10.1108/jpbafm-06-2025-0159",
+        "doi": "10.1108/jpbafm-06-2025-0159"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "3fef96058d58faa16e491016760d1b6e9ebbbb7096905ca6f36838dc2ab8a5c5",
+      "discovered_at": "2026-10-29T01:00:03Z"
+    },
+    {
+      "id": "discovery-4fecf1b400f4d7ef3c18",
+      "title": "Evaluation of Radon Content in Soil Using Artificial Intelligence",
+      "type": "research",
+      "work_type": "proceedings-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "W. J. Wehr"
+      ],
+      "publisher": "TU Delft OPEN Publishing",
+      "venue": "IAEG 2026: Engineering Geology in a Rapidly Changing World - XV IAEG World Congress",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.59490/6ad293b71111c11e2bf47f2e",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "artificial intelligence"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.59490%2F6ad293b71111c11e2bf47f2e",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-31T05:58:34Z",
+        "source_url": "https://api.crossref.org/works/10.59490%2F6ad293b71111c11e2bf47f2e",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
+        "text": "W. J. Wehr (2026). Evaluation of Radon Content in Soil Using Artificial Intelligence. IAEG 2026: Engineering Geology in a Rapidly Changing World - XV IAEG World Congress. https://doi.org/10.59490/6ad293b71111c11e2bf47f2e",
+        "doi": "10.59490/6ad293b71111c11e2bf47f2e"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "be0ef09d5f98180304e3ed1d1a41c9377c2dfcf071bb5db6f3f88687bc3f89b4",
+      "discovered_at": "2026-10-31T05:58:34Z"
+    },
+    {
+      "id": "discovery-3c4c10052977bc1c8d0a",
+      "title": "Audit transformation in the era of artificial intelligence: an integrative literature review of AI’s impact on audit quality, professional skepticism, and auditor competence",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Angel II P. Esmeralda",
+        "Nur Hidayah K. Fadhilah",
+        "Dea Arme Tiara Harahap",
+        "Meutia Riany"
+      ],
+      "publisher": "Aksara Indo Rajawali",
+      "venue": "Jurnal Bisnis Mahasiswa",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.60036/jbm.1477",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-06T07:03:38Z",
+      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "artificial intelligence",
+            "ai"
+          ],
+          [
+            "audit"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.60036/jbm.1477",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-10-31T05:58:34Z",
+        "source_url": "https://api.crossref.org/works/10.60036%2Fjbm.1477",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.60036/jbm.1477",
+        "text": "Angel II P. Esmeralda; Nur Hidayah K. Fadhilah; Dea Arme Tiara Harahap; Meutia Riany (2026). Audit transformation in the era of artificial intelligence: an integrative literature review of AI’s impact on audit quality, professional skepticism, and auditor competence. Jurnal Bisnis Mahasiswa. https://doi.org/10.60036/jbm.1477",
+        "doi": "10.60036/jbm.1477"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "7415ae94337d2df332930b86c6ca385c8c76683377cb5673be539c16000a8bd9",
+      "discovered_at": "2026-10-31T05:58:34Z"
+    },
+    {
       "id": "discovery-e90d96c998d116a96960",
       "title": "The AI ESG protocol: Evaluating and disclosing the environment, social, and governance implications of artificial intelligence capabilities, assets, and activities",
       "type": "research",
@@ -9440,7 +10682,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-05T07:03:35Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -9470,7 +10712,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.1002%2Fsd.2438",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -9487,6 +10729,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "68e6caabc24fcd5587e42d6e10ad7e2a5e46c418f218cb3c45343647b7a9ff4f",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -9589,7 +10832,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-05T07:03:35Z",
-      "last_metadata_check": "2026-10-29T01:00:03Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -9618,7 +10861,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-29T01:00:03Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71775",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -9635,6 +10878,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "c88739644b9085f34efdaf123617fec9de686cc25eecd1ab73ebaa7601483338",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-29T01:00:03Z"
     },
     {
@@ -9663,7 +10907,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-05T07:03:35Z",
-      "last_metadata_check": "2026-10-29T00:51:53Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -9691,7 +10935,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-29T00:51:53Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.1016%2Fj.bar.2014.01.002",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -9708,6 +10952,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "9d9914516fd1da8bdece6ef4b164bdd5d80d68ca9b1840103acee7b7e3aa8e9f",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-29T00:51:53Z"
     },
     {
@@ -9888,7 +11133,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-05T07:03:35Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -9916,7 +11161,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.3174%2Fajnr.a8580",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -9933,6 +11178,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "c295b963ff6c76920d1dfc38efe460bc8eb0a6e50b2713f406cef704b211753c",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -9962,7 +11208,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-05T07:03:35Z",
-      "last_metadata_check": "2026-10-29T01:00:03Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -9990,7 +11236,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-29T01:00:03Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71788",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -10007,6 +11253,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "20e36cd53155da01b018497b98708d30701a8b5a6409682ec54e9c70dc7324a9",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-29T01:00:03Z"
     },
     {
@@ -12714,7 +13961,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-10-30T06:04:10Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-06T07:03:38Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12742,7 +13989,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-06T07:03:38Z",
         "source_url": "https://api.crossref.org/works/10.1007%2F979-8-8688-3353-3_18",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12759,6 +14006,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "bde4068e1614e6690a9532e0d58fb879f58df227c4c4f07296c36a90f7be7bd4",
+      "last_metadata_attempt": "2026-11-06T07:03:38Z",
       "discovered_at": "2026-10-29T00:13:11Z"
     },
     {
@@ -14475,35 +15723,34 @@
   ],
   "changes": {
     "added": [
-      "discovery-02c06b2cec606294cb4a",
-      "discovery-06b6a4c23907f5a545b2",
-      "discovery-40f43a82d54ae10b4870",
-      "discovery-737a4eca1e697269ae02",
-      "discovery-87ea9a47929b82a4c08e",
-      "discovery-c4ba5f3bed13482d9549",
-      "discovery-d07ec142404fc78bf557",
-      "discovery-e90d96c998d116a96960"
+      "discovery-3c4c10052977bc1c8d0a",
+      "discovery-4fecf1b400f4d7ef3c18",
+      "discovery-87a5440364fd4a50cb56",
+      "discovery-9104558669e92366af4e",
+      "discovery-a92d1c9f58784d90585f",
+      "discovery-d235a76e5343ab5040e9",
+      "discovery-d68b0149644b9fb6bd71"
     ],
     "updated": [],
     "flagged": [],
     "superseded": [],
     "rejected": {
-      "outside_topic": 441,
-      "update_notice": 4,
-      "unsupported_record_type": 7,
-      "missing_or_invalid_metadata": 17
+      "outside_topic": 440,
+      "update_notice": 8,
+      "missing_or_invalid_metadata": 13,
+      "unsupported_record_type": 2
     }
   },
   "stats": {
-    "total": 69,
+    "total": 76,
     "curated_references": 12,
-    "metadata_records": 57,
+    "metadata_records": 64,
     "needs_review": 0,
-    "added_this_run": 8,
-    "new_metadata_today": 8,
-    "pending": 125,
+    "added_this_run": 7,
+    "new_metadata_today": 7,
+    "pending": 135,
     "pending_overflow_this_run": 0,
     "superseded_records": 1
   },
-  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/41984545723"
+  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42178361469"
 }
