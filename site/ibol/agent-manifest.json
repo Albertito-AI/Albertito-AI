@@ -6,6 +6,11 @@
   "legal_cutoff": "2026-08-01",
   "companion_status": "AI-assisted teaching supplement commissioned by the author; not publisher-reviewed",
   "description": "A doctrinal study of how Mainland-connected value enters Hong Kong insurance, supports offshore credit and interacts with trust and company governance. The book develops relational legal analysis and examines whether authorised institutions can assemble the evidence required for a particular decision.",
+  "mirrors": {
+    "github_pages": "https://albertito-ai.github.io/Albertito-AI/ibol/",
+    "github_source": "https://github.com/Albertito-AI/Albertito-AI/tree/main/site/ibol",
+    "path_rule": "Resource paths relative to the official companion also exist below the GitHub Pages base."
+  },
   "resources": {
     "book_metadata": "https://www.alberttansinhon.com/ibol/data/book.json",
     "lessons": "https://www.alberttansinhon.com/ibol/data/lessons.json",

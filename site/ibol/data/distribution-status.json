@@ -128,12 +128,15 @@
     },
     {
       "service": "Website and GitHub companion",
-      "status": "prepared",
+      "status": "confirmed",
       "record_url": "https://www.alberttansinhon.com/ibol/",
       "source_url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/site/ibol",
-      "observed": "Prepared as part of this project. This distribution review does not itself verify deployment.",
-      "next_action": "Use the project’s separate delivery verification to confirm live URLs and source revision.",
-      "action_status": "proposed"
+      "observed": "Official Site version 27 deployed successfully and was checked in the browser. GitHub pull request 46 merged; Pages delivery workflow succeeded. Mirror homepage, manifest, lecture and ZIP returned HTTP 200 with exact source bytes.",
+      "next_action": "Maintain source and website together; record actual external adoption separately.",
+      "action_status": "proposed",
+      "release_pull_request": "https://github.com/Albertito-AI/Albertito-AI/pull/46",
+      "mirror_url": "https://albertito-ai.github.io/Albertito-AI/ibol/",
+      "delivery_workflow": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42360149326"
     }
   ],
   "adoption_evidence": {

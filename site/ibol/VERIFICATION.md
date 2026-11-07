@@ -29,3 +29,9 @@ See the [distribution status record](data/distribution-status.json). Crossref an
 ## Report a problem
 
 [Open an issue](https://github.com/Albertito-AI/Albertito-AI/issues/new) with the file, companion version, chapter/page and a reproducible description. For a doctrinal correction, identify the authoritative text and explain whether it concerns the published edition or later law. Include only material you have authority to share.
+
+## Initial release delivery
+
+[Pull request 46](https://github.com/Albertito-AI/Albertito-AI/pull/46) merged at 09:32:11 UTC on 7 November 2026 as `6d714762a0d549a355e871dac212d80acd90e83b`, from reviewed head `c032226fa4c4064f76f36f999ff56b8de27ac7bd` against base `2668deb12aabccedc1841b1a849b43bcdf266867`. All four applicable pull-request workflows passed; no requested reviews or unresolved review threads were present. The [Pages delivery workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/42360149326) then passed, including its every-file delivery check and existing live-browser journeys.
+
+Official Site version 27, source `97662b099f63ef2516e9d305845be60a8ae584dc`, deployed successfully. The official domain's live companion, quiz feedback and lecture presentation were inspected in the browser. Separate command-line requests to the GitHub Pages homepage, manifest, slides and classroom ZIP returned 200 and matched the source bytes. The official hostname returned 403 to that command-line client, so the agent guide includes the verified GitHub route. These receipts establish publication and tested access, not library indexing or independent adoption.
