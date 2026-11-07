@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Three records, three questions</title>
+<desc id="desc">The same transaction can be reconstructed through separate records of legal positions, value movements and institutional information. Legal-position records identify rights, duties, offices and powers. Value records track payment, drawdown and repayment. Information records identify holders, receipt, permitted disclosure and use. A document may assist more than one inquiry, but the purpose of each use must remain explicit.</desc>
+<rect width="1200" height="630" fill="#f6f3eb"/>
+<g font-family="Arial, sans-serif">
+<text x="42" y="43" font-size="12" fill="#aa472b" font-weight="700" letter-spacing="2">RELATIONAL LEGAL ANALYSIS</text>
+<text x="42" y="94" font-family="Georgia, serif" font-size="42" fill="#244e46">Three records, three questions</text>
+<text x="42" y="132" font-size="18" fill="#52625f">Keep the purpose of each factual inquiry explicit.</text>
+<g fill="#fffdf7" stroke="#d5d9ce"><rect x="42" y="172" width="348" height="333"/><rect x="426" y="172" width="348" height="333"/><rect x="810" y="172" width="348" height="333"/></g>
+<g fill="#244e46"><rect x="42" y="172" width="348" height="6"/><rect x="426" y="172" width="348" height="6"/><rect x="810" y="172" width="348" height="6"/></g>
+<g font-family="Georgia, serif" fill="#244e46" font-size="27"><text x="66" y="222">Legal positions</text><text x="450" y="222">Value movements</text><text x="834" y="222" font-size="24">Institutional information</text></g>
+<g fill="#aa472b" font-size="15" font-weight="700"><text x="66" y="258">Who holds which right or power?</text><text x="450" y="258">What moved, when and where?</text><text x="834" y="258">Who may know and use what?</text></g>
+<g fill="#52625f" font-size="17">
+<text x="66" y="305"><tspan x="66">Policyholder and contractual rights</tspan><tspan x="66" dy="36">Security interest and priority</tspan><tspan x="66" dy="36">Trust property and consent powers</tspan><tspan x="66" dy="36">Company and account authority</tspan></text>
+<text x="450" y="305"><tspan x="450">Premium amount and payment date</tspan><tspan x="450" dy="36">Source and destination accounts</tspan><tspan x="450" dy="36">Loan drawdown and use of proceeds</tspan><tspan x="450" dy="36">Repayment and later transfers</tspan></text>
+<text x="834" y="305"><tspan x="834">Custody of the original application</tspan><tspan x="834" dy="36">Receipt of an amended mandate</tspan><tspan x="834" dy="36">Authority to disclose a record</tspan><tspan x="834" dy="36">Permitted purpose and correction</tspan></text>
+</g>
+<g fill="#244e46" font-size="14"><text x="66" y="472">State the instrument, law and date.</text><text x="450" y="472">Preserve the transaction chronology.</text><text x="834" y="472">Preserve provenance and meaning.</text></g>
+<text x="42" y="548" font-size="17" fill="#244e46">One document can inform several inquiries. Its evidential function changes with the proposition being tested.</text>
+<text x="42" y="588" font-size="12" fill="#52625f">Original companion diagram · Albert Tan Sin Hon, Insurance-Backed Offshore Liquidity (2026), Chapter 1, pp. 35–44 · CC BY 4.0</text>
+</g></svg>

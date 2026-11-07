@@ -1,0 +1,98 @@
+[
+  {
+    "id": "C01",
+    "title": "The familiar file",
+    "facts": "An adviser sees a policy, a security instrument and a company account statement, then concludes that the policyholder owns the loan proceeds.",
+    "chapter": 1,
+    "question": "Which inquiry best tests the missing connection?",
+    "options": [
+      "Identify the legal basis and evidence for the asserted entitlement to company proceeds",
+      "Count the number of documents",
+      "Check whether the parties share a surname"
+    ],
+    "answer": 0,
+    "explanation": "The missing step concerns entitlement to a distinct account asset. Familiar documents and association do not supply that legal basis.",
+    "source": "ch. 1, pp. 35–44",
+    "fictional": true
+  },
+  {
+    "id": "C02",
+    "title": "The mixed premium",
+    "facts": "A fictional premium has three source routes. One remittance has a potentially inconsistent purpose description.",
+    "chapter": 2,
+    "question": "What is the most defensible next move?",
+    "options": [
+      "Treat the entire policy as invalid",
+      "Request tranche-specific records and test the relevant rule",
+      "Disregard all origin evidence after policy issue"
+    ],
+    "answer": 1,
+    "explanation": "Keep the tranches separate, obtain the complete record and identify any competent procedure. An inconsistency is not a concluded transaction-wide result.",
+    "source": "ch. 2, pp. 87–89",
+    "fictional": true
+  },
+  {
+    "id": "C03",
+    "title": "The shareholder trustee",
+    "facts": "A trustee holds shares in a borrower company. An individual owns the policy securing its debt.",
+    "chapter": 4,
+    "question": "Which additional evidence is most relevant to a claim that the trustee can surrender the policy?",
+    "options": [
+      "The trust’s name",
+      "A beneficiary’s preference",
+      "The policy rights, any transfer or mandate and the relevant governing instruments"
+    ],
+    "answer": 2,
+    "explanation": "The property actually vested in the trustee determines the starting allocation. Share ownership alone does not confer an individual’s policy powers.",
+    "source": "ch. 4, pp. 129–130",
+    "fictional": true
+  },
+  {
+    "id": "C04",
+    "title": "The replacement power",
+    "facts": "Lee may replace a protector. The company account mandate excludes Lee, and borrowing needs several independent approvals.",
+    "chapter": 5,
+    "question": "What does the current file best support?",
+    "options": [
+      "A limited replacement power, with outcome-producing authority unproved",
+      "A guaranteed ability to spend all loan proceeds",
+      "Automatic ownership of the borrower company’s assets"
+    ],
+    "answer": 0,
+    "explanation": "The replacement power changes an office-holder’s identity. Consent, company action, lender discretion and account authority remain separate.",
+    "source": "ch. 5, pp. 163–164, 180–184",
+    "fictional": true
+  },
+  {
+    "id": "C05",
+    "title": "The scattered records",
+    "facts": "Three institutions hold relevant records. No information-sharing or production route is supplied in the fictional case.",
+    "chapter": 6,
+    "question": "What should the adviser examine first?",
+    "options": [
+      "Whether the records can be copied without authority",
+      "Which existing powers permit a defined decision-maker to assemble and use the necessary facts",
+      "Whether a larger database would make every conclusion correct"
+    ],
+    "answer": 1,
+    "explanation": "Diagnose the information route and any institutional gap. Relevance does not create authority to disclose or reuse records.",
+    "source": "ch. 6, pp. 193–195",
+    "fictional": true
+  },
+  {
+    "id": "C06",
+    "title": "The token proposal",
+    "facts": "A company proposes digital payment. An employee can sign with a key, but the company mandate and supplier acceptance terms are missing.",
+    "chapter": 7,
+    "question": "Which conclusion is supported?",
+    "options": [
+      "The debt has already been discharged",
+      "The employee owns all transferred value",
+      "Technical capability is shown, while authority and discharge remain unresolved"
+    ],
+    "answer": 2,
+    "explanation": "The record separates technical control, legal authority and the effect of payment. The proposal is not a completed transaction.",
+    "source": "ch. 7, pp. 227–228",
+    "fictional": true
+  }
+]

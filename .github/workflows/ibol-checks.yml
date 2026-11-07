@@ -1,0 +1,36 @@
+name: IBOL companion checks
+
+on:
+  pull_request:
+    paths: ['site/ibol/**', 'scripts/ibol/**', '.github/workflows/ibol-checks.yml']
+  push:
+    branches: [main]
+    paths: ['site/ibol/**', 'scripts/ibol/**', '.github/workflows/ibol-checks.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  companion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+      - name: Install the optional agent interface dependency
+        run: python -m pip install -r scripts/ibol/requirements.txt
+      - name: Build and check generated files
+        run: |
+          python scripts/ibol/build.py
+          git diff --exit-code -- site/ibol
+      - name: Test content, package and agent interface
+        run: python -m unittest discover -s scripts/ibol -p 'test_*.py' -v
+      - name: Check JavaScript syntax
+        run: |
+          node --check site/ibol/app.js
+          node --check site/ibol/content.js

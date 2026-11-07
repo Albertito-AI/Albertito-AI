@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "For the book, use the preferred citation. This companion is a separate teaching resource."
+title: "IBOL Open Learning Companion"
+version: 1.0.0
+date-released: 2026-11-07
+url: "https://www.alberttansinhon.com/ibol/"
+authors:
+  - family-names: "Tan"
+    given-names: "Sin Hon Albert"
+    orcid: "https://orcid.org/0009-0001-8996-7933"
+preferred-citation:
+  type: book
+  title: "Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface"
+  authors:
+    - family-names: "Tan"
+      given-names: "Sin Hon Albert"
+      orcid: "https://orcid.org/0009-0001-8996-7933"
+  year: 2026
+  month: 11
+  doi: "10.21827/6ac3948159a9e"
+  isbn: "9789403431925"
+  publisher:
+    name: "University of Groningen Press"
+  url: "https://books.ugp.rug.nl/ugp/catalog/book/300"

@@ -1,0 +1,21 @@
+# IBOL Open Learning Companion
+
+> Reading, teaching and citation resources for Albert Tan Sin Hon’s open-access book on financial law, insurance and trust governance at the PRC–Hong Kong interface.
+
+Published 6 November 2026 by University of Groningen Press. DOI: 10.21827/6ac3948159a9e. The book’s legal cut-off is 1 August 2026. Companion summaries and exercises are separate, AI-assisted teaching materials commissioned by the author. The published book is CC BY-NC-ND 4.0; original companion teaching materials are CC BY 4.0 and code is MIT. This file is a navigation convention, not a guarantee of indexing or recommendation.
+
+## Book and provenance
+- [Published book](https://books.ugp.rug.nl/ugp/catalog/book/300)
+- [Bibliographic and source record](https://www.alberttansinhon.com/ibol/data/book.json)
+- [Rights and attribution](https://www.alberttansinhon.com/ibol/RIGHTS.md)
+
+## Teaching and research
+- [Eight seminar plans](https://www.alberttansinhon.com/ibol/teaching-guide.md)
+- [Practice question bank](https://www.alberttansinhon.com/ibol/data/quiz.json)
+- [Fictional evidence cases](https://www.alberttansinhon.com/ibol/data/cases.json)
+- [Library adoption packet](https://www.alberttansinhon.com/ibol/library-kit.md)
+
+## Agent access
+- [Agent integration guide](https://www.alberttansinhon.com/ibol/agents.md)
+- [Resource manifest](https://www.alberttansinhon.com/ibol/agent-manifest.json)
+- [CSL citation](https://www.alberttansinhon.com/ibol/metadata/book.csl.json)

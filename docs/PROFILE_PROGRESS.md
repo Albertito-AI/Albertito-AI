@@ -652,3 +652,10 @@ The GIF and full video remain available directly in the repository.
 Automatic deployment is enabled for `site/` changes on `main`. A delivery check
 compares the published HTML with the committed file, and the browser suite checks
 the GitHub Pages stage and the profile's normal and reduced-motion presentation.
+
+
+## IBOL open learning companion, 7 November 2026
+
+Albert requested dissemination of the newly published open-access book through his existing website and GitHub. The companion adds eight seminars, 32 explained questions, six fictional case exercises, a nine-card sorting game, 16 lecture slides, original visuals, citation exports, library discovery guidance and six read-only local MCP tools. The original publisher edition remains the authority; book and companion licences are separated.
+
+Prepared against main `2668deb12aabccedc1841b1a849b43bcdf266867`. Local evidence: 46 companion tests and 115 existing tests passed, existing profile/care checks passed, and browser journeys were checked. Six AI workstreams contributed and separately reviewed fidelity, interfaces, teaching, visuals and defects; this is not independent human peer review. The pull request, Actions checks and merge record are the primary revision receipts. Publication additionally requires the GitHub Pages and official Site deployment receipts. No library holding, external adoption or universal agent recommendation is inferred from publication. Public evidence and bounded limitations are in [the verification record](../site/ibol/VERIFICATION.md).

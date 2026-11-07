@@ -1,0 +1,47 @@
+[
+  {
+    "text": "Record who is named as policyholder in the executed policy.",
+    "category": "Legal position",
+    "why": "The immediate task identifies a contractual position. The same document may also be evidence in another inquiry."
+  },
+  {
+    "text": "Record the amount and date of a premium transfer.",
+    "category": "Value movement",
+    "why": "This task reconstructs movement of value. The transfer’s legal effect requires a further inquiry."
+  },
+  {
+    "text": "Record which institution holds the original application.",
+    "category": "Institutional information",
+    "why": "This task identifies custody of information, not ownership of the policy."
+  },
+  {
+    "text": "Record the rights transferred by the security instrument.",
+    "category": "Legal position",
+    "why": "The immediate task concerns the security interest’s content, subject to construction and governing law."
+  },
+  {
+    "text": "Record when loan proceeds were credited to the company account.",
+    "category": "Value movement",
+    "why": "The immediate task reconstructs the drawdown’s movement and date."
+  },
+  {
+    "text": "Record the legal purpose for which a bank may disclose an account record.",
+    "category": "Institutional information",
+    "why": "The task concerns an information channel and its permitted use."
+  },
+  {
+    "text": "Record which office holds a consent power under the deed.",
+    "category": "Legal position",
+    "why": "The task identifies an office and power, distinct from actual exercise."
+  },
+  {
+    "text": "Record repayment of the facility from the account.",
+    "category": "Value movement",
+    "why": "The task records the payment event. Release of security must be analysed separately."
+  },
+  {
+    "text": "Record whether the lender received the amended mandate.",
+    "category": "Institutional information",
+    "why": "The task concerns institutional receipt and currency of information."
+  }
+]

@@ -1,0 +1,450 @@
+[
+  {
+    "id": "Q01",
+    "chapter": 1,
+    "question": "What must connect a cross-component fact to a legal consequence?",
+    "options": [
+      "A persuasive transaction-wide label",
+      "The number of documents in the file",
+      "The size of the premium",
+      "An applicable legal basis and evidence satisfying it"
+    ],
+    "answer": 3,
+    "explanation": "Economic connection frames the inquiry. The relevant rule, proof and competent decision-maker determine its legal effect.",
+    "source": "ch. 1, pp. 35–36, 44–47"
+  },
+  {
+    "id": "Q02",
+    "chapter": 1,
+    "question": "A premium receipt most directly records which event?",
+    "options": [
+      "Ownership of a later company account",
+      "Validity of every later assignment",
+      "Payment towards the premium",
+      "The lender’s complete knowledge"
+    ],
+    "answer": 2,
+    "explanation": "The receipt’s evidential function must be confined to what it records. Further conclusions need their own evidence.",
+    "source": "ch. 1, pp. 37–41"
+  },
+  {
+    "id": "Q03",
+    "chapter": 1,
+    "question": "Where should the label “open” be attached?",
+    "options": [
+      "Automatically to the whole transaction",
+      "To a specified proposition whose resolution remains uncertain",
+      "To every foreign document",
+      "Only to a final judicial ruling"
+    ],
+    "answer": 1,
+    "explanation": "Evidence labels are proposition-specific and do not displace statutory burdens or standards.",
+    "source": "ch. 1, pp. 41–44"
+  },
+  {
+    "id": "Q04",
+    "chapter": 1,
+    "question": "What is a sound reason to end a wider relational inquiry?",
+    "options": [
+      "The alleged connection is contradicted or the proposed rule cannot reach it",
+      "Every document looks familiar",
+      "A participant asks for a quick answer",
+      "A high-value policy must be lawful"
+    ],
+    "answer": 0,
+    "explanation": "Closure requires a reason grounded in the record and law, with any relevant review trigger preserved.",
+    "source": "ch. 1, pp. 31, 50"
+  },
+  {
+    "id": "Q05",
+    "chapter": 2,
+    "question": "Which is the best starting point for premium provenance?",
+    "options": [
+      "The purchaser’s nationality alone",
+      "The insurer’s brand",
+      "The policy’s projected return",
+      "The actual source, route, participants, purpose and dates"
+    ],
+    "answer": 3,
+    "explanation": "The chapter follows legally material movement of identified tranches rather than treating personal identity as proof.",
+    "source": "ch. 2, pp. 58–59"
+  },
+  {
+    "id": "Q06",
+    "chapter": 2,
+    "question": "A bank processed a remittance. What does that establish by itself?",
+    "options": [
+      "Final legality of all later uses",
+      "A judicial finding that every declaration was true",
+      "An operational processing event on the available information",
+      "Automatic validity of a downstream trust"
+    ],
+    "answer": 2,
+    "explanation": "Processing, legal determination and downstream consequence perform different functions.",
+    "source": "ch. 2, p. 58"
+  },
+  {
+    "id": "Q07",
+    "chapter": 2,
+    "question": "One premium combines three funding routes. What follows?",
+    "options": [
+      "All three routes inherit the most serious allegation",
+      "Each route needs its own inquiry before any authorised aggregation",
+      "All three routes are necessarily regular",
+      "The routes become legally identical at receipt"
+    ],
+    "answer": 1,
+    "explanation": "Economic aggregation at the insurer does not supply a legal aggregation rule.",
+    "source": "ch. 2, pp. 58, 87–89"
+  },
+  {
+    "id": "Q08",
+    "chapter": 2,
+    "question": "A purpose description appears inconsistent with the immediate payment. What is the responsible next step?",
+    "options": [
+      "Obtain the complete record and test the applicable rule",
+      "Declare the whole policy void",
+      "Assume fraud by every participant",
+      "Ignore it because the insurer issued a policy"
+    ],
+    "answer": 0,
+    "explanation": "An inconsistency supports investigation. A concluded breach, attribution and sanction require further legal and factual work.",
+    "source": "ch. 2, pp. 87–89"
+  },
+  {
+    "id": "Q09",
+    "chapter": 3,
+    "question": "Which amount necessarily equals immediately available cash?",
+    "options": [
+      "Death benefit",
+      "Projected maturity value",
+      "Original premium",
+      "None without the relevant terms, event and date"
+    ],
+    "answer": 3,
+    "explanation": "Different amounts concern different rights and events. Accessible value depends on terms, deductions and authority.",
+    "source": "ch. 3, pp. 91–92"
+  },
+  {
+    "id": "Q10",
+    "chapter": 3,
+    "question": "A person paid 30% of the premium. What follows about beneficial ownership?",
+    "options": [
+      "The person automatically owns 30% of the policy",
+      "The person automatically controls all policy powers",
+      "A proprietary share requires an additional legal basis",
+      "The person is automatically a trustee"
+    ],
+    "answer": 2,
+    "explanation": "Payment alone does not create a proportional proprietary interest in the resulting policy.",
+    "source": "ch. 3, p. 92"
+  },
+  {
+    "id": "Q11",
+    "chapter": 3,
+    "question": "What should an assignment analysis identify?",
+    "options": [
+      "Only the parties’ family relationship",
+      "Rights transferred, formalities, third-party effect and relevant dates",
+      "Only the premium amount",
+      "Only the insurer’s marketing description"
+    ],
+    "answer": 1,
+    "explanation": "The legal work depends on the instrument, applicable law and relevant third-party positions.",
+    "source": "ch. 3, ss. 3.8–3.9, pp. 111–119"
+  },
+  {
+    "id": "Q12",
+    "chapter": 3,
+    "question": "In the seminar’s invented arithmetic, 620,000 less 310,000 debt and 15,000 costs equals what?",
+    "options": [
+      "295,000, subject to the stated legal assumptions",
+      "500,000 because that is the collateral estimate",
+      "1,000,000 because that is the death benefit",
+      "295,000 as a guaranteed entitlement"
+    ],
+    "answer": 0,
+    "explanation": "Arithmetic alone does not establish priority, additional deductions or the person entitled to a surplus.",
+    "source": "ch. 3, p. 92; companion lesson 3 fictional figures"
+  },
+  {
+    "id": "Q13",
+    "chapter": 4,
+    "question": "A trustee holds shares in a company. What follows automatically?",
+    "options": [
+      "The trustee owns every company asset directly",
+      "The company’s bank account belongs to each beneficiary",
+      "The individual’s pledged policy belongs to the trustee",
+      "The trustee holds the shares, subject to the proved constitution and terms"
+    ],
+    "answer": 3,
+    "explanation": "Identify the specific property vested and preserve the company’s separate asset position.",
+    "source": "ch. 4, pp. 129–130"
+  },
+  {
+    "id": "Q14",
+    "chapter": 4,
+    "question": "What should replace the statement “the insurance asset is in trust”?",
+    "options": [
+      "A larger transaction diagram alone",
+      "An assumption based on the trust’s name",
+      "A precise identification of the property, transfer and trustee capacity",
+      "A general assertion of family control"
+    ],
+    "answer": 2,
+    "explanation": "Policy rights, proceeds, premium reserves and company shares produce different allocations of authority.",
+    "source": "ch. 4, pp. 129–130"
+  },
+  {
+    "id": "Q15",
+    "chapter": 4,
+    "question": "Does a trust governing-law clause resolve every external transfer and company issue?",
+    "options": [
+      "Yes, because the trust is the main structure",
+      "Each external issue still requires its own governing-law analysis",
+      "Yes, if all parties are related",
+      "Yes, once the trustee signs"
+    ],
+    "answer": 1,
+    "explanation": "Internal trust administration and external asset, company and contractual questions can require different legal inquiries.",
+    "source": "ch. 4, p. 130"
+  },
+  {
+    "id": "Q16",
+    "chapter": 4,
+    "question": "How should a clause limiting trustee monitoring be analysed?",
+    "options": [
+      "By construing the particular instrument, duty and act",
+      "As universal immunity",
+      "As proof that the trust is a sham",
+      "As automatic transfer of all board powers"
+    ],
+    "answer": 0,
+    "explanation": "The chapter treats monitoring, delegation, reserved decisions and exemption separately.",
+    "source": "ch. 4, p. 130 and s. 4.8, pp. 146–148"
+  },
+  {
+    "id": "Q17",
+    "chapter": 5,
+    "question": "A power to replace a protector establishes which capacity most directly?",
+    "options": [
+      "An automatic right to the company’s loan proceeds",
+      "The protector’s consent to every proposal",
+      "The lender’s agreement to lend",
+      "A power affecting the office-holder’s identity, subject to its terms"
+    ],
+    "answer": 3,
+    "explanation": "Appointment or removal does not itself exercise the powers of the replaced office or supply independent approvals.",
+    "source": "ch. 5, pp. 163–164"
+  },
+  {
+    "id": "Q18",
+    "chapter": 5,
+    "question": "Collateral enablement means what in the chapter’s analysis?",
+    "options": [
+      "The security provider owns the borrower’s account",
+      "The security provider may always spend the proceeds",
+      "One person’s property supports another person’s borrowing",
+      "The lender becomes a trustee of the policyholder"
+    ],
+    "answer": 2,
+    "explanation": "Direction, access, benefit and later return of value require further proof.",
+    "source": "ch. 5, p. 164"
+  },
+  {
+    "id": "Q19",
+    "chapter": 5,
+    "question": "Which record most directly addresses who may operate the loan account?",
+    "options": [
+      "The original premium amount",
+      "The account mandate and relevant authority records",
+      "A generic family tree",
+      "The policy’s projected maturity value"
+    ],
+    "answer": 1,
+    "explanation": "The account mandate answers a different question from policy ownership or collateral support.",
+    "source": "ch. 5, ss. 5.8–5.9, pp. 180–184"
+  },
+  {
+    "id": "Q20",
+    "chapter": 5,
+    "question": "Why distinguish a veto from power to cause an outcome?",
+    "options": [
+      "Preventing an act may leave affirmative approvals with others",
+      "A veto always creates ownership",
+      "A veto eliminates every fiduciary duty",
+      "All vetoes are legally ineffective"
+    ],
+    "answer": 0,
+    "explanation": "Outcome-producing authority depends on the complete sequence of required decisions and the governing legal purpose.",
+    "source": "ch. 5, pp. 183, 188–189"
+  },
+  {
+    "id": "Q21",
+    "chapter": 6,
+    "question": "Structural legibility is assessed relative to what?",
+    "options": [
+      "The largest possible data collection",
+      "The number of databases available",
+      "A universal right to see all records",
+      "A specified authorised decision and its evidential needs"
+    ],
+    "answer": 3,
+    "explanation": "The book connects lawful assembly, testing and correction to a defined institutional task.",
+    "source": "ch. 6, pp. 193–195"
+  },
+  {
+    "id": "Q22",
+    "chapter": 6,
+    "question": "Harmful conduct falls outside existing substantive rules, and there is a defensible case for regulating it. Which possible gap is being diagnosed?",
+    "options": [
+      "Only a file-format problem",
+      "Automatically a proven offence",
+      "A substantive gap",
+      "A conclusive sham finding"
+    ],
+    "answer": 2,
+    "explanation": "A substantive gap concerns an inadequacy in the reach of existing rules. It requires testing current duties and attribution routes and justifying the proposed coverage. Proof and institutional allocation require separate diagnosis.",
+    "source": "ch. 6, s. 6.9.3, pp. 216–217; conclusion p. 280"
+  },
+  {
+    "id": "Q23",
+    "chapter": 6,
+    "question": "Records exist across institutions but no assigned route assembles the required decision file. Which gap may arise?",
+    "options": [
+      "Automatic beneficial ownership",
+      "An institutional gap",
+      "Automatic invalidity of the policy",
+      "Proof that every record-holder acted unlawfully"
+    ],
+    "answer": 1,
+    "explanation": "Local compliance may coexist with a missing decision-specific responsibility or channel. Existing powers must still be checked.",
+    "source": "ch. 6, pp. 214–217, 225–226"
+  },
+  {
+    "id": "Q24",
+    "chapter": 6,
+    "question": "Can a reporting classification alone establish private-law control for a different decision?",
+    "options": [
+      "The receiving decision requires its own governing rule and evidence",
+      "Yes, all uses of “control” mean the same thing",
+      "Yes, if the data transfer was accurate",
+      "Yes, if the report is machine-readable"
+    ],
+    "answer": 0,
+    "explanation": "Technical accuracy does not preserve legal meaning when a field is repurposed without attention to its regime.",
+    "source": "ch. 6, pp. 194–195"
+  },
+  {
+    "id": "Q25",
+    "chapter": 7,
+    "question": "An enacted provision has not commenced. What should the status record say?",
+    "options": [
+      "Presently binding solely because it was enacted",
+      "Only a press rumour",
+      "Automatically retrospective",
+      "Enacted but not yet in force for the relevant issue"
+    ],
+    "answer": 3,
+    "explanation": "Separate enactment, commencement and any transitional effect, using the actual source.",
+    "source": "ch. 7, p. 228"
+  },
+  {
+    "id": "Q26",
+    "chapter": 7,
+    "question": "A licence has been issued. What remains to be checked about a proposed product use?",
+    "options": [
+      "Nothing; every customer can use it",
+      "Only the licence logo",
+      "Launch, eligibility, terms and the particular transaction",
+      "Whether the user likes the product name"
+    ],
+    "answer": 2,
+    "explanation": "Institutional authorisation does not by itself establish operational availability or transaction completion.",
+    "source": "ch. 7, pp. 228–229"
+  },
+  {
+    "id": "Q27",
+    "chapter": 7,
+    "question": "An employee holds a signing key. What does this establish by itself?",
+    "options": [
+      "Legal ownership of every token",
+      "Practical signing capability, subject to the evidence",
+      "Corporate authority for every transfer",
+      "Discharge of a supplier invoice"
+    ],
+    "answer": 1,
+    "explanation": "Authority, ownership and payment effect depend on the relevant mandate, terms and legal rules.",
+    "source": "ch. 7, p. 228"
+  },
+  {
+    "id": "Q28",
+    "chapter": 7,
+    "question": "How should this 2026 book be used for advice after its legal cut-off?",
+    "options": [
+      "Recheck current primary sources and material transaction facts",
+      "Treat every chapter as automatically current",
+      "Change publication dates to the present",
+      "Assume proposals have become law"
+    ],
+    "answer": 0,
+    "explanation": "The edition fixes its legal position at 1 August 2026 unless stated otherwise. Later use needs status and currency checking.",
+    "source": "preliminary note p. 9; ch. 7, p. 228"
+  },
+  {
+    "id": "Q29",
+    "chapter": 8,
+    "question": "What should synthesis preserve?",
+    "options": [
+      "One verdict about the whole structure",
+      "The assumption that all value remains one asset",
+      "A presumption that every participant knows every fact",
+      "Distinct rights, findings, dates and operative legal bases"
+    ],
+    "answer": 3,
+    "explanation": "The chapter follows substitutions and their legal consequences without merging component conclusions.",
+    "source": "ch. 8, pp. 255–256, 275"
+  },
+  {
+    "id": "Q30",
+    "chapter": 8,
+    "question": "Repayment and release occur later. What follows for earlier ownership of loan proceeds?",
+    "options": [
+      "It automatically transfers retrospectively to the policyholder",
+      "It becomes impossible to investigate",
+      "The earlier ownership question retains its own legal and evidential basis",
+      "It is settled by the release alone"
+    ],
+    "answer": 2,
+    "explanation": "Later changes to debt and security do not rewrite the earlier account asset or the rights then proved.",
+    "source": "ch. 8, p. 275"
+  },
+  {
+    "id": "Q31",
+    "chapter": 8,
+    "question": "A proposed remedy should identify what?",
+    "options": [
+      "Only the amount of economic value",
+      "The claimant, defendant, legal basis, conditions and affected rights",
+      "Only a general concern about complexity",
+      "Only a broad allegation of control"
+    ],
+    "answer": 1,
+    "explanation": "Remedial precision makes the conclusion contestable and preserves rights outside the rule’s reach.",
+    "source": "ch. 8, ss. 8.3 and 8.8, pp. 261–266, 276–277; conclusion p. 281"
+  },
+  {
+    "id": "Q32",
+    "chapter": 8,
+    "question": "What empirical claim do the constructed transactions establish?",
+    "options": [
+      "No estimate of prevalence, typicality or motive",
+      "The frequency of every real-world arrangement",
+      "The motive of all policyholders",
+      "The scale of illicit use"
+    ],
+    "answer": 0,
+    "explanation": "Constructed examples expose doctrinal reasoning on a disclosed record. Population claims require separate empirical evidence.",
+    "source": "introduction p. 17; conclusion p. 283"
+  }
+]
