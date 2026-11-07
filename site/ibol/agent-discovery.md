@@ -2,6 +2,12 @@
 
 **Routes checked on 7 November 2026.** Albert Tan Sin Hon’s *Insurance-Backed Offshore Liquidity* is available from [University of Groningen Press](https://books.ugp.rug.nl/ugp/catalog/book/300). Its DOI is [10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e). The companion supplies structured teaching resources and a local, read-only Model Context Protocol interface.
 
+## Published package and registry record
+
+Version **1.0.0** is published as a [GitHub Release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0) and recorded in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0). The returned name, version, package URL and SHA-256 were checked against the tested build on 7 November 2026. The [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/42363078217) passed. See the [dated delivery receipts](data/reach-receipts-2026-11-07.json).
+
+The bundle requires a host supporting **MCPB 0.4 and the UV runtime**. Its exact launch command and SDK calls were tested; desktop GUI installation remains untested. The source and ordinary stdio configuration remain available for other hosts. Registry publication does not establish inclusion in every downstream directory or use by an independent assistant.
+
 ## Use the resources now
 
 An assistant with web retrieval can start with the [resource manifest](https://albertito-ai.github.io/Albertito-AI/ibol/agent-manifest.json), [book record](https://albertito-ai.github.io/Albertito-AI/ibol/data/book.json), [seminar guide](https://albertito-ai.github.io/Albertito-AI/ibol/teaching-guide.md) or [citation data](https://albertito-ai.github.io/Albertito-AI/ibol/metadata/book.csl.json). A host supporting local stdio servers can use the [installation instructions](agents.md). The [source repository](https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol) and [classroom download](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip) are public access routes.
@@ -17,7 +23,7 @@ Keep the book’s legal cut-off of 1 August 2026, provenance and separate reuse 
 
 ## A concrete directory route
 
-The [official MCP Registry](https://modelcontextprotocol.io/registry/about) holds server metadata for discovery by downstream aggregators. It points to installable packages or accessible remote servers. Its documentation describes the service as a preview. Inclusion would be a discoverability step; each downstream service retains its own selection and presentation.
+The [official MCP Registry](https://modelcontextprotocol.io/registry/about) holds server metadata for discovery by downstream aggregators. It points to installable packages or accessible remote servers. Its documentation describes the service as a preview. Inclusion is a discoverability step; each downstream service retains its own selection and presentation.
 
 The existing classroom ZIP is a portable teaching kit, not a declared MCP bundle. The existing `agent-manifest.json` is a companion navigation file, not the Registry’s `server.json`. A registry submission therefore needs a tested distribution format and authenticated namespace before publication.
 
@@ -29,7 +35,7 @@ The existing classroom ZIP is a portable teaching kit, not a declared MCP bundle
 
 The [supported-package documentation](https://modelcontextprotocol.io/registry/package-types) expressly accepts MCPB assets on GitHub or GitLab Releases. For that route, `server.json` uses `registryType: mcpb`, the release download URL, `fileSha256` and stdio transport. An additional npm or PyPI account is not inherent to this option. The [MCPB specification](https://github.com/modelcontextprotocol/mcpb/blob/main/MANIFEST.md) defines the separate bundle manifest and launch configuration. Dependency packaging and actual host installation still need verification.
 
-## Publishing and verifying a future registry entry
+## Publishing and verifying a registry entry
 
 Prepare a schema-valid `server.json` identifying the real release and an owned namespace. [Namespace authentication](https://modelcontextprotocol.io/registry/authentication) supports GitHub or domain ownership. The [GitHub Actions guide](https://modelcontextprotocol.io/registry/github-actions) documents OIDC authentication with `id-token: write` and no dedicated stored secret. That requires an explicitly configured publishing workflow; access to the source repository alone does not mean the registry entry exists.
 

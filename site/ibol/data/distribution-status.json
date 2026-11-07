@@ -10,7 +10,8 @@
     "confirmed": "A title-specific primary record or successful response was inspected.",
     "unconfirmed": "No sufficient title-specific record was retrieved; this is not a finding of absence.",
     "prepared": "Work exists for review or publication; publication has not been established by this record.",
-    "proposed": "An action is recommended and has not been performed by this review."
+    "proposed": "An action is recommended and has not been performed by this review.",
+    "received_key_validation_pending": "Notification received; ownership-key validation is pending, and indexing is not established."
   },
   "observations": [
     {
@@ -137,6 +138,20 @@
       "release_pull_request": "https://github.com/Albertito-AI/Albertito-AI/pull/46",
       "mirror_url": "https://albertito-ai.github.io/Albertito-AI/ibol/",
       "delivery_workflow": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42360149326"
+    },
+    {
+      "service": "Official MCP Registry",
+      "status": "confirmed",
+      "record_url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+      "observed": "Version 1.0.0 metadata and package checksum matched the tested build. GitHub Release and registry publication workflow succeeded.",
+      "next_action": "Record actual downstream installation and use separately."
+    },
+    {
+      "service": "IndexNow notification",
+      "status": "received_key_validation_pending",
+      "record_url": "https://albertito-ai.github.io/Albertito-AI/ibol/data/reach-receipts-2026-11-07.json",
+      "observed": "One batch containing 10 GitHub-hosted book routes received HTTP 202. Key validation pending; indexing not established. Official hostname proof check returned 403, so no notification was sent for that host.",
+      "next_action": "Observe actual indexing; avoid treating receipt as inclusion."
     }
   ],
   "adoption_evidence": {
@@ -147,8 +162,10 @@
   },
   "external_actions": {
     "messages_sent": 0,
-    "records_submitted": 0,
-    "statement": "This review performed read-only checks and prepared materials. No outreach message or repository submission was sent by it."
+    "library_records_submitted": 0,
+    "registry_records_published": 1,
+    "search_notification_batches_received": 1,
+    "statement": "One official MCP Registry record was published and verified. One IndexNow batch returned 202 with validation pending. No person-directed messages or library catalogue submissions were sent."
   },
   "limitations": [
     "HTTP 403 or an empty search result does not establish absence from a service.",
