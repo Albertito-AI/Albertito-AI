@@ -1,0 +1,2662 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "title": "IBOL dissemination: eleven rounds of six assignments",
+  "worker_count": 6,
+  "planned_rounds": 11,
+  "planned_assignments": 66,
+  "completed_assignments": 66,
+  "scope": "Six AI workers complete distinct assignments in eleven rounds. Completion measures work, not external adoption, search ranking or readership.",
+  "book_doi": "10.21827/6ac3948159a9e",
+  "assignments": [
+    {
+      "task_id": "R01-A",
+      "round": 1,
+      "lane": "A",
+      "task": "Crossref and publisher identity: verify current DOI metadata and exact correction needs.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Rechecked live publisher and Crossref metadata. Confirmed existing DOI/author identity and four publisher-review items: ePDF format misclassification, missing print ISBN, incomplete dates, missing licence field. Created source-backed catalogue guide; no metadata deposit or message sent.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Direct HTTPS 200, 23,538 bytes at 2026-11-07T10:54:20Z; citation/visible date 2026-11-06, ePDF and print ISBNs, licence."
+        },
+        {
+          "url": "https://api.crossref.org/works/10.21827%2F6ac3948159a9e",
+          "observation": "Direct HTTPS 200, 2,075 bytes at 2026-11-07T10:54:28Z; DOI monograph, author family Tan/given Sin Hon Albert and correct ORCID; ePDF ISBN typed print, separate print ISBN absent, dates year-only, license absent."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+          "observation": "Previously pinned publisher PDF imprint re-read locally, physical page 6: ePDF/print ISBNs and CC BY-NC-ND 4.0."
+        },
+        {
+          "url": "https://www.crossref.org/documentation/register-maintain-records/maintaining-your-metadata/updating-your-metadata/",
+          "observation": "Official current guidance retrieved through web search: metadata can be updated using a complete revised record; existing DOI persists."
+        },
+        {
+          "url": "https://www.crossref.org/documentation/schema-library/markup-guide-metadata-segments/issn-isbn/",
+          "observation": "Official guidance retrieved: different formats have different ISBNs; include print and electronic identifiers where applicable."
+        }
+      ],
+      "checks": [
+        "Compared live Crossref fields against publisher HTML and pinned PDF imprint.",
+        "Preserved distinction between catalogue author ordering and actual identity.",
+        "Documented inability of web open tool to retrieve title/API, followed by successful direct HTTPS read."
+      ],
+      "limitations": [
+        "No Crossref correction submitted.",
+        "No catalogue holding or indexing outcome inferred.",
+        "Separate format publication dates require publisher confirmation."
+      ],
+      "completed_at": "2026-11-07T10:55:25.217094+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R01-B",
+      "round": 1,
+      "lane": "B",
+      "task": "Read back active official MCP Registry entry and immutable GitHub release checksums.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Read back active Registry version 1.0.0; downloaded and hashed release bundle; checksum, Registry digest and GitHub asset digest agree. GitHub immutable-release setting is false, so integrity is pinned by checksum and no-overwrite workflow, not platform immutability.",
+      "evidence": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+          "observation": "Direct HTTPS 200; name/version match; official status active and isLatest true."
+        },
+        {
+          "url": "https://api.github.com/repos/Albertito-AI/Albertito-AI/releases/tags/ibol-mcp-v1.0.0",
+          "observation": "200; published 2026-11-07T10:14:38Z, draft=false, prerelease=false, immutable=false; bundle asset 47,498 bytes and expected SHA-256."
+        },
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.0/SHA256SUMS",
+          "observation": "HTTPS 200; expected bundle SHA-256."
+        },
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.0/ibol-open-learning-1.0.0.mcpb",
+          "observation": "HTTPS 200; 47,498 bytes; calculated SHA-256 5a4cea2a291fb180a7818a356e15118315737f330eab5d48ce2b162774383b77."
+        }
+      ],
+      "checks": [
+        "Read installed manifest 0.4 UV runtime and Python >=3.12 <3.13 constraints.",
+        "Compared calculated binary digest to checksum file, Registry and GitHub asset metadata."
+      ],
+      "limitations": [
+        "No client GUI installation or downstream use verified.",
+        "Web search open could not access Registry API; direct HTTPS read succeeded."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R01-C",
+      "round": 1,
+      "lane": "C",
+      "task": "Create a source-grounded 45-minute introductory teaching plan in the adoption guide.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Created a six-page preparatory reading route, timed 45-minute lesson, original fictional file, facilitator guidance and 100-word exit task.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=39",
+          "observation": "Pinned publisher text printed p.37 directly read; three distinct records and their limitations verified."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+          "observation": "Printed pp.40–42 directly read; evidence labels attach to propositions and do not replace legal standards."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+          "observation": "Printed pp.48–49 directly read; consequence requires operative legal basis, decision-maker and procedure."
+        }
+      ],
+      "checks": [
+        "Time blocks sum to 45 minutes.",
+        "Preparatory reading is six printed pages.",
+        "Every PDF page fragment equals printed page plus two.",
+        "No current-law claim, book excerpt redistribution or alteration of immutable MCP inputs."
+      ],
+      "limitations": [
+        "Introductory method exercise only; no full underlying-authority audit and no observed classroom adoption."
+      ],
+      "completed_at": "2026-11-07T10:55:24.720088+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R01-D",
+      "round": 1,
+      "lane": "D",
+      "task": "Audit existing companion accessibility against relevant official WCAG guidance and plan a small standalone study lab.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Inspected existing HTML, CSS and JavaScript, recorded implemented accessibility features and specific interaction checks, and specified a bounded eight-card offline study lab, worksheet and FAQ.",
+      "evidence": [
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+          "observation": "Official keyboard operability guidance read."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+          "observation": "Official focus visibility guidance read."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+          "observation": "Official status message guidance read."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+          "observation": "Official 320 CSS-pixel reflow guidance read."
+        }
+      ],
+      "checks": [
+        "Read existing index.html, styles.css and app.js.",
+        "Checked planned controls against primary W3C guidance.",
+        "No changes to shared app or published MCP inputs."
+      ],
+      "limitations": [
+        "Source inspection only; no new browser or screen-reader conformance test.",
+        "Potential focus concerns are verification items, not confirmed failures."
+      ],
+      "completed_at": "2026-11-07T10:55:20.942670+00:00",
+      "files": [
+        "site/ibol/activities/ACCESSIBILITY.md"
+      ]
+    },
+    {
+      "task_id": "R01-E",
+      "round": 1,
+      "lane": "E",
+      "task": "Design a targeted library adoption approach and verify appropriate public subject-library entry points.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Created a targeted adoption approach and three source-backed entry points, distinguishing research-help access from recommendation eligibility and proposed routes from adoption.",
+      "evidence": [
+        {
+          "url": "https://oapen.org/topic/services-libraries",
+          "observation": "Official search retrieval describes library metadata feeds and discovery integration; legacy direct page returned HTTP 403."
+        },
+        {
+          "url": "https://www.law.georgetown.edu/library/research-help/",
+          "observation": "Public page opened; foreign/international law service and university-focused eligibility verified."
+        },
+        {
+          "url": "https://guides.library.harvard.edu/law/financialinstitutions",
+          "observation": "Public subject guide opened; secondary-literature scope and US federal-law focus verified."
+        },
+        {
+          "url": "https://guides.ll.georgetown.edu/bankinglaw",
+          "observation": "Official search result found; direct fetch HTTP 429, no retry."
+        }
+      ],
+      "checks": [
+        "Read repository contribution rules and verified local book metadata.",
+        "Used official primary sources, including authoritative engine verification.",
+        "No outbound messages or external submissions."
+      ],
+      "limitations": [
+        "No book holding, recommendation, adoption or new index inclusion established.",
+        "Detailed Georgetown banking guide contents unverified because of rate limit."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R01-F",
+      "round": 1,
+      "lane": "F",
+      "task": "Baseline current public artefacts and evidence: identify what is live, registered, submitted or unverified.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Mirror homepage and 60-file classroom kit returned HTTP 200 with exact current source bytes. Official MCP Registry returned active latest version 1.0.0 with the established release checksum. Existing IndexNow receipt records HTTP 202 only; official-host proof failed and that notification was not sent. No library holding, downstream client install, course adoption or readership is established.",
+      "evidence": [
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/",
+          "observation": "HTTP 200; checked 2026-11-07T10:54:56.475275+00:00; SHA-256 397ce032f7074adf6794c42644bcf331449f762c5e7057ef4df5a3d2c3b76457"
+        },
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+          "observation": "HTTP 200; checked 2026-11-07T10:55:03.350657+00:00; SHA-256 66914de8063f970f92f5b0df478ab07756ddf824c360aeb1138611729d2912b7"
+        },
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip",
+          "observation": "HTTP 200; checked 2026-11-07T10:55:11.101679+00:00; SHA-256 ce4493653c11ba967a37ca14eb21277b97ab698565d68df26a61ed6e194f421d"
+        },
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/data/reach-receipts-2026-11-07.json",
+          "observation": "Existing receipt inspected from repository: mirror notification received with key validation pending; official host not submitted."
+        }
+      ],
+      "checks": [
+        "mirror: live SHA-256 equals current local source",
+        "kit: live SHA-256 equals current local source",
+        "Registry active latest1.0.0 checksum matches established record",
+        "Local classroom kit has60files",
+        "Baseline commit25916bb29921beb7123e96fc0043592e5969f8ab"
+      ],
+      "limitations": [
+        "Official website was not rechecked in a browser in this assignment.",
+        "Registry readback is metadata availability, not downstream installation.",
+        "No new indexing, library holding or independent readership evidence.",
+        "Distribution-status site version27 is a historical observation, not the current deployment version."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R02-A",
+      "round": 2,
+      "lane": "A",
+      "task": "DOAB: verify publisher submission route, eligibility and current listing evidence.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified publisher-only submission route and admission criteria. Added concrete UGP action and downstream metadata routes. Exact title/ISBN web checks yielded no matching record; listing remains unconfirmed.",
+      "evidence": [
+        {
+          "url": "https://doabooks.org/en/researchers/faq",
+          "observation": "Official FAQ states publishers submit books; authors should contact publisher; DOAB can contact an already participating publisher on author behalf."
+        },
+        {
+          "url": "https://doabooks.org/en/publishers/join-doab",
+          "observation": "Official current requirements specify independent external peer review, scholarly scope, licensing, access without registration and ISBNs; publisher criteria also apply."
+        },
+        {
+          "url": "https://doabooks.org/en/publishers/guidance",
+          "observation": "Publishers maintain records through accounts; guide and bulk-change template available."
+        },
+        {
+          "url": "https://doabooks.org/en/librarians/doab-metadata",
+          "observation": "Official metadata formats, CC0 status and known downstream users verified."
+        },
+        {
+          "url": "https://directory.doabooks.org",
+          "observation": "Bounded web title and ISBN searches produced no matching title record; earlier direct 403 not repeated; no absence claim."
+        }
+      ],
+      "checks": [
+        "Current official primary guidance searched and opened.",
+        "Author versus publisher submission authority distinguished.",
+        "PRISM and catalogue coverage distinguished."
+      ],
+      "limitations": [
+        "No DOAB title-level inclusion confirmed.",
+        "No publisher admission or title peer-review decision inferred.",
+        "No submission or message sent."
+      ],
+      "completed_at": "2026-11-07T10:56:41.413339+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R02-B",
+      "round": 2,
+      "lane": "B",
+      "task": "Create verified Claude Desktop installation guide for existing MCPB; distinguish actual runtime test from untested host install.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added a concise Claude Desktop installation and verification guide using current official help and MCPB UV documentation, with checksum commands and explicit separation of runtime tests from unperformed GUI installation.",
+      "evidence": [
+        {
+          "url": "https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop",
+          "observation": "Current official article describes Settings > Desktop app > Manage beside Extensions, Advanced settings, Install Extension and .mcpb file, plus status/logs and organisational controls."
+        },
+        {
+          "url": "https://github.com/modelcontextprotocol/mcpb/blob/main/examples/hello-world-uv/README.md",
+          "observation": "Official example documents host-managed Python and dependencies for UV runtime and installation of .mcpb in Claude Desktop."
+        },
+        {
+          "url": "https://github.com/modelcontextprotocol/mcpb/blob/main/MANIFEST.md",
+          "observation": "Official manifest specification identifies uv type as v0.4+ and pyproject.toml requirements."
+        }
+      ],
+      "checks": [
+        "Compared instructions with local manifest runtime, required Python version and six declared tools.",
+        "Read test_mcpb.py exact extracted package and frozen UV launch coverage; no new host execution represented.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No Claude Desktop GUI installation performed.",
+        "Runtime support and organisational policy must be confirmed on the installing host.",
+        "No Claude extension-directory inclusion established."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R02-C",
+      "round": 2,
+      "lane": "C",
+      "task": "Add a four-week course pathway with pinpoint source readings and outcomes.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added four 90-minute classes with 20–22 selected printed pages weekly, planning workload, source-linked weekly outcomes, preparation tasks and final 600-word opinion.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=59",
+          "observation": "Chapter 2 pp.57–70 opening, provenance/processing distinction and section boundaries checked in pinned text."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=131",
+          "observation": "Chapter 4 pp.129–142 property and governance passages and section boundaries checked; Chapter 5 pp.164,167 read for office and present exercisability."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=195",
+          "observation": "Chapter 6 pp.193–199 purpose-specific information and Chapter 8 pp.255–268 bounded synthesis passages checked."
+        }
+      ],
+      "checks": [
+        "Weekly core page envelopes are 20,21,20,22 printed pages; partial boundary pages expressly identified.",
+        "Proposed class rhythm totals 90 minutes.",
+        "Each linked seminar exists locally; individual fictional cases expressly kept separate.",
+        "Scope is selected teaching route rather than full book or present-law verification."
+      ],
+      "limitations": [
+        "Workload estimates are instructor planning estimates, not empirical completion measurements.",
+        "Selected textual passages and section boundaries checked; no new audit of every underlying authority."
+      ],
+      "completed_at": "2026-11-07T10:57:37.982205+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R02-D",
+      "round": 2,
+      "lane": "D",
+      "task": "Build an offline-capable original flashcard study lab, accessible HTML/CSS/JS, with source links and no trackers.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Created a self-contained eight-card study lab with original fictional prompts, revealed commentary, source pinpoints, previous/next/restart controls and an ordinary HTML reading alternative. No external scripts, styles, fetch or persistence.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=37",
+          "observation": "Read pinned publisher text at printed pp. 35–41 and 48–51; eight commentaries matched to these source passages."
+        }
+      ],
+      "checks": [
+        "Eight unique cards and eight static disclosures parsed with Python standard-library HTMLParser.",
+        "All PDF anchors match printed page + 2.",
+        "No remote script, stylesheet, iframe, request API or storage API.",
+        "Node JavaScript syntax check passed.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Browser interaction and assistive-technology testing remain separate next-round work.",
+        "Initial optional BeautifulSoup check unavailable; replaced with successful standard-library parser check.",
+        "External publisher and citation links require internet access; study cards work from the saved file."
+      ],
+      "completed_at": "2026-11-07T10:58:20.227343+00:00",
+      "files": [
+        "site/ibol/activities/study-lab.html"
+      ]
+    },
+    {
+      "task_id": "R02-E",
+      "round": 2,
+      "lane": "E",
+      "task": "Verify two United States academic library purchase/resource suggestion routes and eligibility.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added Stanford Law and UC Berkeley routes, eligibility boundaries, human form requirements and suitable next actions.",
+      "evidence": [
+        {
+          "url": "https://law.stanford.edu/robert-crown-law-library/student-services/",
+          "observation": "Opened official page; Recommend a Resource link specifically supports books, journals and other resources."
+        },
+        {
+          "url": "https://law.stanford.edu/robert-crown-law-library/access-policies/",
+          "observation": "Official search retrieval states recommended resources are reviewed and considered."
+        },
+        {
+          "url": "https://www.lib.berkeley.edu/help/purchase-request-form",
+          "observation": "Opened public form; collection/budget criteria, affiliation/campus fields and human-verification control present."
+        },
+        {
+          "url": "https://stanforduniversity.qualtrics.com/jfe/form/SV_5iQABR6VSszIQMR",
+          "observation": "Official university contact page linked general suggestion form; fetch returned no readable fields."
+        }
+      ],
+      "checks": [
+        "Official primary sources verified through search and page retrieval.",
+        "No login, form completion, submission or messaging.",
+        "Explicitly labelled external-author eligibility unconfirmed."
+      ],
+      "limitations": [
+        "Not an assurance that unaffiliated authors may use either form.",
+        "No holding or adoption check performed."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R02-F",
+      "round": 2,
+      "lane": "F",
+      "task": "Audit rights separation across existing and proposed companion resources.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Existing rights separation is accurate and the classroom ZIP excludes the book. New teaching materials preserve the distinction. Identified later-stage checks for standalone exports and precise checksum-pinned release terminology.",
+      "evidence": [
+        {
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "observation": "Official CC deed permits sharing under attribution/noncommercial terms and restricts distribution of adaptations, while preserving exceptions and limitations."
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/",
+          "observation": "Official CC BY deed permits sharing and adaptations with attribution, including commercial use."
+        }
+      ],
+      "checks": [
+        "Read RIGHTS.md, LICENSE-CODE.txt, README, agent manifest/guide and present new materials",
+        "Verified ZIP inventory has no book PDF or cache",
+        "Compared licence descriptions with official Creative Commons deeds"
+      ],
+      "limitations": [
+        "This is a bounded rights-description audit, not an adjudication of copyright subsistence or every possible use.",
+        "New activities and exports are still being developed.",
+        "No change to published book licence or existing MCP package inputs."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R03-A",
+      "round": 3,
+      "lane": "A",
+      "task": "OAPEN: verify deposit eligibility, preservation and library distribution route.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified OAPEN publisher deposit workflow, formats, preservation and discovery services. Found official UGP publisher peer-review profile and UGP preservation policy. Added concrete title-level confirmation request; book deposit remains unconfirmed.",
+      "evidence": [
+        {
+          "url": "https://www.oapen.org/article/16244634-university-of-groningen-press",
+          "observation": "Official search retrieval exposes detailed UGP peer-review profile. Direct web open failed; evidence is publisher-level, not this book’s deposit."
+        },
+        {
+          "url": "https://oapen.org/publishers/join-oapen-library",
+          "observation": "Official admission guidance requires academic publisher and peer-review information."
+        },
+        {
+          "url": "https://oapen.org/article/upload-instructions",
+          "observation": "Participating publishers upload metadata (spreadsheet or ONIX 3.0) and PDF/EPUB through provided credentials; original-content download link required."
+        },
+        {
+          "url": "https://oapen.org/publishers/services-publishers",
+          "observation": "Official services describe library discovery distribution, automatic DOAB indexing for hosted books, Portico/CLOCKSS preservation and publisher metrics."
+        },
+        {
+          "url": "https://www.rug.nl/research/ugp/policies-funding/?lang=en",
+          "observation": "UGP states e-Depot preservation policy for books; title-specific deposit not independently confirmed."
+        },
+        {
+          "url": "https://www.oapen.org/researchers/deposit-your-eu-funded-publication",
+          "observation": "Special author deposit route limited to eligible EU-funded outputs; no eligibility claimed for this book."
+        }
+      ],
+      "checks": [
+        "Publisher-level profile distinguished from title deposit.",
+        "Book CC BY-NC-ND licence preserved.",
+        "No repeated blocked catalogue requests."
+      ],
+      "limitations": [
+        "No OAPEN title handle or deposit receipt confirmed.",
+        "No independent preservation receipt or downstream title record confirmed.",
+        "No external upload or message sent."
+      ],
+      "completed_at": "2026-11-07T10:59:32.247204+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R03-B",
+      "round": 3,
+      "lane": "B",
+      "task": "Create verified VS Code local MCP setup guide for this Python server.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added current VS Code/Copilot configuration guidance and portable extracted-bundle preparation. Executed the documented frozen UV argument pattern through MCP SDK from an unrelated working directory; six tools and correct DOI returned.",
+      "evidence": [
+        {
+          "url": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
+          "observation": "Current primary documentation distinguishes Copilot Global portable configuration from older .vscode/mcp.json, with command stdio flow and actual-tool-response verification."
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/agents/reference/mcp-configuration",
+          "observation": "Portable mcpServers versus VS Code servers schema, arguments, executable path and cwd fields verified."
+        }
+      ],
+      "checks": [
+        "Actual MCP initialisation via uv run --frozen --directory extracted-bundle scripts/mcp_server.py from cwd /tmp.",
+        "Expected six tools and get_citation CSL DOI asserted.",
+        "catalog.data_directory resolves paths from __file__, not process cwd; import catalog resolves beside server script.",
+        "JSON examples parsed and reviewed against official schema."
+      ],
+      "limitations": [
+        "VS Code application was not installed/configured or exercised.",
+        "Example absolute paths must be replaced on the installing machine."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R03-C",
+      "round": 3,
+      "lane": "C",
+      "task": "Add an eight-week course pathway with realistic workload and links to all eight seminars.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added a full eight-chapter postgraduate route, 12 contact hours, 238 chapter pages, realistic preparation estimates, formative notes, staged opinion assessment and optional critical closing reading.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=229",
+          "observation": "Chapter 7 opening and status-control text pp.227–228 and conclusion p.252 read to ground digital-value outcomes."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=279",
+          "observation": "Chapter 8 final printed page277 directly checked for construction/empirical limits and legal cut-off."
+        }
+      ],
+      "checks": [
+        "All eight chapter start/end pages matched existing source-grounded lesson data; concluding pages directly inspected.",
+        "Inclusive page counts 25+34+35+33+28+34+26+23=238.",
+        "Eight 90-minute seminars total 12 hours.",
+        "All eight seminar URLs map to existing local HTML files.",
+        "Separate preparatory/optional/final-assessment workload avoids misleading totals."
+      ],
+      "limitations": [
+        "Course plan is an original proposal, not an accredited course or observed adoption.",
+        "Chapter assignment does not claim a new full doctrinal audit of all chapter authorities."
+      ],
+      "completed_at": "2026-11-07T10:59:50.691657+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R03-D",
+      "round": 3,
+      "lane": "D",
+      "task": "Implement and verify keyboard/reveal/reset controls and accessible announcements.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Added clear native-keyboard instructions, a focusable skip target, card-count association and documented focus/announcement behaviour. Exercised actual inline script through eight-card transitions and edge conditions with a minimal DOM harness.",
+      "evidence": [
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+          "observation": "Native buttons retain platform keyboard operation; no keyboard-event interception."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+          "observation": "Reveal, hide and restart results use an atomic polite status region."
+        }
+      ],
+      "checks": [
+        "Actual script passed eight-card reveal/hide, boundary, backwards-navigation and restart assertions.",
+        "Source-link correspondence and hidden/aria-expanded state assertions passed.",
+        "Focus is not stolen on load; navigation/restart focus the card heading.",
+        "Native button type and live-region semantics assertions passed.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Harness is unit-level, not a browser or screen reader.",
+        "Root to verify specified Enter/Space/Tab, focus, local-file, zoom and print cases through CUA."
+      ],
+      "completed_at": "2026-11-07T10:59:59.956496+00:00",
+      "files": [
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/ACCESSIBILITY.md"
+      ]
+    },
+    {
+      "task_id": "R03-E",
+      "round": 3,
+      "lane": "E",
+      "task": "Verify two United Kingdom academic library resource suggestion routes and eligibility.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added UCL member-only recommendation and Cambridge open-access ebook link-donation route with precise eligibility and access evidence.",
+      "evidence": [
+        {
+          "url": "https://www.ucl.ac.uk/library/finding-resources/suggesting-new-book-or-resource",
+          "observation": "Opened official page; library membership prerequisite and electronic-first policy verified."
+        },
+        {
+          "url": "https://libguides.cam.ac.uk/cambridgeebooks/faqs",
+          "observation": "Opened official FAQ; ebook link donations accepted for secure stable open-access/permissioned sources subject to collection fit; hosting requests declined; no donor-affiliation restriction stated in section."
+        },
+        {
+          "url": "https://www.lib.cam.ac.uk/collections/recommend-item-our-collection",
+          "observation": "Official search result found, but direct fetch HTTP 403; no repeat request."
+        }
+      ],
+      "checks": [
+        "Primary official pages read and search-engine verification performed.",
+        "No submission, messaging or presumed membership."
+      ],
+      "limitations": [
+        "Cambridge consideration does not guarantee cataloguing.",
+        "No campaign submission or adoption established."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R03-F",
+      "round": 3,
+      "lane": "F",
+      "task": "Audit citation metadata consistency across public formats.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "20 bounded consistency checks passed across seven citation formats and pinned publisher PDF identity. No conflicting DOI, ISBN, title, name components, licence or dates found.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Existing publisher identity record used as authoritative baseline; pinned PDF checksum reverified."
+        },
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/metadata/library.csv",
+          "observation": "Current source CSV separates ePDF and print ISBNs; other formats correctly cite ePDF."
+        }
+      ],
+      "checks": [
+        "CSL full title",
+        "JSON-LD full title",
+        "CSV full title",
+        "Dublin Core title",
+        "CSL family/given names",
+        "JSON-LD family/given names and ORCID",
+        "CSL full date",
+        "JSON-LD full date",
+        "CSV full date",
+        "Dublin Core full date",
+        "CSL DOI and ePDF ISBN",
+        "JSON-LD DOI, ePDF format and licence",
+        "CSV distinct print/ePDF ISBNs",
+        "metadata/book.ris title/DOI/ePDF ISBN",
+        "metadata/book.bib title/DOI/ePDF ISBN",
+        "CITATION.cff title/DOI/ePDF ISBN",
+        "RIS date and names",
+        "BibTeX surname parsing",
+        "CFF preferred book vs companion",
+        "Publisher PDF unchanged"
+      ],
+      "limitations": [
+        "This audit checks identity and cross-format consistency, not every citation-manager importer.",
+        "CFF year/month and BibTeX year-only metadata are less precise than source full date but do not conflict.",
+        "No external catalogue metadata was changed."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R04-A",
+      "round": 4,
+      "lane": "A",
+      "task": "WorldCat: verify publisher/library routes and distinguish holdings from records.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified OCLC author, member-library, publisher partnership and institutional repository routes. Added evidence distinctions and concrete request for UGP’s OCLC record identifier.",
+      "evidence": [
+        {
+          "url": "https://help.oclc.org/Discovery_and_Reference/WorldCat-org/Information_for_authors/How_can_I_add_my_work_to_WorldCat",
+          "observation": "OCLC recommends author contact member library about cataloguing; public visibility depends on relevant arrangements."
+        },
+        {
+          "url": "https://help.oclc.org/Discovery_and_Reference/WorldCat-org/Information_for_authors",
+          "observation": "OCLC recommends publisher or owning institution first for record corrections."
+        },
+        {
+          "url": "https://help.oclc.org/Librarian_Toolbox/WorldCat_Holdings",
+          "observation": "Holdings associate institution symbol with records for owned/licensed resources; institutions maintain them."
+        },
+        {
+          "url": "https://www.oclc.org/en/open-access.html",
+          "observation": "Official publisher/aggregator partnerships and library open-content contribution routes documented."
+        },
+        {
+          "url": "https://www.oclc.org/en/digital-gateway/getting-started.html",
+          "observation": "Institutional registration and OAI repository prerequisite for metadata harvesting route."
+        },
+        {
+          "url": "https://www.rug.nl/research/ugp/policies-funding/?lang=en",
+          "observation": "UGP says its books are listed in WorldCat; general policy not title-specific evidence."
+        }
+      ],
+      "checks": [
+        "Used current official OCLC sources.",
+        "Separated bibliographic record, institutional holding, knowledge-base entry and use.",
+        "No mass library additions or institution impersonation."
+      ],
+      "limitations": [
+        "No title-specific WorldCat record confirmed.",
+        "No library holding or local activation confirmed.",
+        "No external submission performed."
+      ],
+      "completed_at": "2026-11-07T11:01:12.185624+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R04-B",
+      "round": 4,
+      "lane": "B",
+      "task": "Create verified Cursor local MCP setup guide for this Python server.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added Cursor local stdio configuration with current documented schema and locations, exact frozen launch, tool-result verification and logging instructions.",
+      "evidence": [
+        {
+          "url": "https://cursor.com/docs/mcp",
+          "observation": "Official documentation verifies .cursor/mcp.json project and ~/.cursor/mcp.json global paths, mcpServers, required stdio type and command fields, Customize management, MCP Logs and tool-response inspection."
+        }
+      ],
+      "checks": [
+        "Parsed all JSON examples successfully.",
+        "Launch args match actual successful R03-B SDK check.",
+        "No OAuth or API key requested by IBOL server.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No Cursor application installation or host-specific invocation performed.",
+        "No Cursor marketplace listing asserted."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R04-C",
+      "round": 4,
+      "lane": "C",
+      "task": "Add an original assessment rubric separating legal analysis, evidence and uncertainty.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added an adaptable five-criterion rubric with explicit evidence/uncertainty criteria, transparent weighting and worked arithmetic, moderation and feedback guidance.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+          "observation": "Book pp.40–44 distinguish proposition-specific evidence, counter-evidence, inference and legal basis; these inform learning aims, not invented grading authority."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=55",
+          "observation": "Printed p.53 bounded preliminary conclusion supports assessment of qualified conclusions and outstanding work."
+        }
+      ],
+      "checks": [
+        "Weights total100%; worked 0–4 scoring example calculates75%.",
+        "Rubric expressly labelled original/adaptable, with institutional grading and academic-integrity rules left to applicable course requirements.",
+        "Defensible disagreement and bounded uncertainty explicitly receive credit."
+      ],
+      "limitations": [
+        "No empirical calibration, institutional endorsement or observed student outcome is claimed."
+      ],
+      "completed_at": "2026-11-07T11:01:50.048019+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R04-D",
+      "round": 4,
+      "lane": "D",
+      "task": "Create a printable original evidence-mapping worksheet as static HTML.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Created a standalone original fictional four-record exercise with separate legal-position, value-movement and institutional-information prompts; missing-evidence, counter-evidence and bounded-opinion tasks; writing space and print-specific page break. Added full MIT notice to portable HTML source as requested.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=38",
+          "observation": "Worksheet applies Chapter 1 section 1.4 printed pp. 36–37 and section 1.6 pp. 40–41, previously read from pinned publisher text."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+          "observation": "Bounded-opinion prompts link to Chapter 1 sections 1.7–1.9, printed pp. 48–51."
+        }
+      ],
+      "checks": [
+        "HTML parser: unique IDs in both portable HTML files.",
+        "Full MIT copyright/permission/warranty notice present in both sources.",
+        "Visible CC BY 4.0 attribution and separate CC BY-NC-ND 4.0 book reference present.",
+        "No remote script or stylesheet dependency.",
+        "Existing study-lab interaction harness passed after licence changes.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Print stylesheet and deliberate page break inspected; final printed pagination requires central rendered verification.",
+        "The fictional file supplies authentic-record assumptions for teaching, not a governing-law conclusion."
+      ],
+      "completed_at": "2026-11-07T11:02:27.117145+00:00",
+      "files": [
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/study-lab.html"
+      ]
+    },
+    {
+      "task_id": "R04-E",
+      "round": 4,
+      "lane": "E",
+      "task": "Verify two Australian university library suggestion routes and eligibility.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added Melbourne Law Library and Curtin recommendation routes with explicit institutional eligibility and electronic-resource relevance.",
+      "evidence": [
+        {
+          "url": "https://law.unimelb.edu.au/law-library/services/recommend-a-purchase",
+          "observation": "Public page opened; request form explicitly requires UoM login."
+        },
+        {
+          "url": "https://uniskills.library.curtin.edu.au/guides/using-the-catalogue/request/",
+          "observation": "Public guide opened; students and staff may recommend materials through linked form."
+        },
+        {
+          "url": "https://www.curtin.edu.au/study/help-support/app/answers/detail/a-id/2086/can-i-request-that-the-library-purchase-a-book/",
+          "observation": "Official FAQ opened; digital-by-default collection policy stated."
+        }
+      ],
+      "checks": [
+        "Official primary source reads and authoritative search verification.",
+        "Cambridge link-donation route remains separate.",
+        "No assumed current affiliation or account access."
+      ],
+      "limitations": [
+        "No login or form submission attempted.",
+        "Book holding/adoption not established."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R04-F",
+      "round": 4,
+      "lane": "F",
+      "task": "Check a bounded sample of existing quiz questions and teaching claims against publisher text.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Eight questions, one from each chapter, have supported keyed answers and explanations in the cited publisher text. No source mismatch found in this sample.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=37",
+          "observation": "Q01: Applicable rule, proved interaction and competent decision-maker support the keyed answer; the book expressly rejects conclusion from overall impression."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=60",
+          "observation": "Q05: The provenance inquiry begins with tranche source, account history, purpose, route and dates; personal identity alone is insufficient."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=93",
+          "observation": "Q09: The book separates death benefit, surrender, borrowing, collateral recovery and net realisation; none is automatically immediately accessible cash."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=131",
+          "observation": "Q13: Trustee shareholding, company account/facility rights and the individual policy remain distinct; the keyed shareholding answer is appropriately qualified."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=165",
+          "observation": "Q17: Replacement power changes the office-holder identity; consent, shareholder approval, board authority, lending and account access remain separate."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=195",
+          "observation": "Q21: Structural legibility is explicitly decision-relative and concerns lawful assembly, understanding, testing and correction."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=230",
+          "observation": "Q25: The source distinguishes enactment from commencement and limits uncommenced rules to prospective effect; the question also preserves relevant-issue wording."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=257",
+          "observation": "Q29: Synthesis preserves legal substitutions, operative gateways, decision-makers, qualifications and surviving rights; no single aggregate verdict is licensed."
+        }
+      ],
+      "checks": [
+        "Read printed pp35–36,58–59,91–92,129–130,163–164,193–194,228,255–256",
+        "Checked answer options and explanation for Q01,Q05,Q09,Q13,Q17,Q21,Q25,Q29",
+        "Reconciled printed pages with physical PDF offset+2"
+      ],
+      "limitations": [
+        "No full audit of32questions or book footnotes performed.",
+        "Checks establish fidelity to the published edition, not independent verification of all underlying legal authorities or subsequent law."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R05-A",
+      "round": 5,
+      "lane": "A",
+      "task": "Open Library: check exact ISBN/title/author records and permissible catalogue contribution path without duplicating.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Carried forward same-day ISBN/title checks and made two bounded author queries. No examined match; homonym risk documented. Verified work/edition contribution process and prepared exact-format metadata guidance.",
+      "evidence": [
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/data/search-observations.json",
+          "observation": "Existing 7 November 10:00–10:01 UTC evidence: both exact ISBNs 404 and exact title zero results; reused without repetition."
+        },
+        {
+          "url": "https://openlibrary.org/search.json?author=Albert+Tan&limit=20&fields=key%2Ctitle%2Cauthor_name%2Cisbn",
+          "observation": "HTTP 200; reported 31 results, 20 examined; no matching title/ISBN; 2026-11-07T11:03:14.992174+00:00"
+        },
+        {
+          "url": "https://openlibrary.org/search.json?author=Sin+Hon&limit=20&fields=key%2Ctitle%2Cauthor_name%2Cisbn",
+          "observation": "HTTP 200; reported 20 results, 20 examined; no matching title/ISBN; 2026-11-07T11:03:23.637248+00:00"
+        },
+        {
+          "url": "https://openlibrary.org/help/faq/editing/getting-started-guide",
+          "observation": "Official account/editing guide: search before new record, distinguish work from edition, cite metadata source and inspect saved history."
+        },
+        {
+          "url": "https://openlibrary.org/tour/books",
+          "observation": "Official guidance: title, author and edition searches before creation."
+        },
+        {
+          "url": "https://openlibrary.org/help/faq/editing",
+          "observation": "Official FAQ: print/electronic formats separate editions, software/games not standalone book records."
+        }
+      ],
+      "checks": [
+        "Compared examined author-query titles and ISBNs with exact publisher record.",
+        "Retained limit: 20 of 31 Albert Tan query results examined.",
+        "Distinguished broad name matches from this author."
+      ],
+      "limitations": [
+        "Bounded queries do not establish complete catalogue absence.",
+        "All author identities not exhaustively resolved.",
+        "No account or catalogue record created."
+      ],
+      "completed_at": "2026-11-07T11:03:58.506010+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R05-B",
+      "round": 5,
+      "lane": "B",
+      "task": "Create verified Goose local MCP setup guide.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added Goose YAML extension configuration and platform-specific config locations, preserving provider settings and clearly separating server authentication from client/model access requirements.",
+      "evidence": [
+        {
+          "url": "https://github.com/aaif-goose/goose/blob/main/documentation/docs/guides/config-files.md",
+          "observation": "Maintained official repository documentation gives YAML stdio cmd/args schema, macOS/Linux and Windows paths, restart guidance and separate provider configuration."
+        },
+        {
+          "url": "https://block.github.io/goose/docs/getting-started/using-extensions/",
+          "observation": "Old documentation route returned 404 in web tool; guide therefore links the maintained repository source."
+        }
+      ],
+      "checks": [
+        "Parsed YAML; launch args match the previously executed frozen command.",
+        "Reviewed stdio command and data layout independence.",
+        "Explicit account/payment wording now distinguishes companion server from AI client/model provider.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No Goose installation or host-specific tool invocation performed.",
+        "No Goose directory inclusion established."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R05-C",
+      "round": 5,
+      "lane": "C",
+      "task": "Add an original fictional evidence-file assignment with facilitator outline.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added an eight-item fictional evidence file,800-word provisional opinion task,one-page capped proposition schedule,90-minute workshop and nuanced facilitator outline.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=140",
+          "observation": "Printed p.138 directly inspected earlier; trust shareholding and company property kept distinct."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=166",
+          "observation": "Printed pp.164–168 power/office analysis informed the fictional replacement-power issue; no copy of book case facts is presented as empirical."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=195",
+          "observation": "Purpose-specific information authority constrains document-request task."
+        }
+      ],
+      "checks": [
+        "Eight numbered documents and dates consistently referenced.",
+        "Fictional case explicitly separate from earlier exercise and book recurring case.",
+        "Workshop20+25+25+20=90 minutes; polished submission requires additional time.",
+        "Incomplete security/consent file not converted into automatic invalidity; missing evidence not proof."
+      ],
+      "limitations": [
+        "Document abstracts and facts are invented; no legal opinion on real conduct or fresh current-law verification."
+      ],
+      "completed_at": "2026-11-07T11:04:32.725103+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R05-D",
+      "round": 5,
+      "lane": "D",
+      "task": "Add a facilitator view/guide for the study lab and worksheet.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Added a 35-minute facilitation plan, adaptable discussion prompts, record-by-record worksheet commentary, counter-evidence guidance and formative feedback criteria. Linked the guide from both activity pages.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=37",
+          "observation": "Guide follows Chapter 1 printed pp. 35–41: actor/capacity/date, separate records, relational propositions and evidence limits."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+          "observation": "Guide follows printed pp. 48–51 on operative authority, bounded conclusion and review triggers."
+        }
+      ],
+      "checks": [
+        "Guide reconciled against the actual four-record worksheet and eight card source passages.",
+        "Relative guide links resolve to the created file.",
+        "Stand-alone attribution, licence distinction, fictional facts and AI assistance stated.",
+        "Existing study-lab interaction harness passed.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Suggested timing has not been empirically measured.",
+        "No learning-outcome effectiveness or publisher review claimed.",
+        "Central rendered/browser checks remain separate."
+      ],
+      "completed_at": "2026-11-07T11:04:11.812189+00:00",
+      "files": [
+        "site/ibol/activities/facilitator.md",
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/worksheet.html"
+      ]
+    },
+    {
+      "task_id": "R05-E",
+      "round": 5,
+      "lane": "E",
+      "task": "Verify Singapore university and national library resource recommendation routes.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added NUS and NTU institutional recommendation routes, NLB authenticated reader recommendation and separately assessed national-collection donation route, with OA suitability limits.",
+      "evidence": [
+        {
+          "url": "https://libfaq.nus.edu.sg/faq/71393",
+          "observation": "Opened; valid NUS staff/student and NUSNET login restrictions stated."
+        },
+        {
+          "url": "https://libguides.ntu.edu.sg/library-resources-recommendations-and-requests/books",
+          "observation": "Opened; current NTU staff/student eligibility, e-format preference, separate NIE/RSIS routes and exclusions verified."
+        },
+        {
+          "url": "https://www.nlb.gov.sg/main/about-us/About-NLB/Collection-Development-Policy",
+          "observation": "Opened; reader recommendation form linked, selection criteria and specialised-material limit stated."
+        },
+        {
+          "url": "https://www.nlb.gov.sg/mylibrary/RecommendToNLB",
+          "observation": "Official policy link followed; redirected to inaccessible NLB sign-in, no login attempted."
+        },
+        {
+          "url": "https://www.nlb.gov.sg/main/partner-us/Donate-to-our-Collections",
+          "observation": "Opened; public donation offer route and Singapore/Southeast Asia collecting focus verified."
+        }
+      ],
+      "checks": [
+        "Current official pages and primary-source search verification.",
+        "No API-writing or recommendation manipulation; NLB read-recommendation API is not an acquisition route.",
+        "No form submission or assumed current institutional identity."
+      ],
+      "limitations": [
+        "Authenticated NLB form contents and exact account eligibility not verified.",
+        "No holding, adoption or legal-deposit conclusion."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R05-F",
+      "round": 5,
+      "lane": "F",
+      "task": "Audit source accessibility/canonical metadata and distinguish environment errors from public crawl claims.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Five selected public URLs returned HTTP200, including the official hub and robots.txt. Official and mirror hubs share the correct official canonical, and no noindex directive was observed. New adoption/discovery landing pages have expected local canonicals. Earlier403 remains a historical client-specific observation.",
+      "evidence": [
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/",
+          "observation": "HTTP200 at2026-11-07T11:03:19.590352+00:00; canonical ['https://www.alberttansinhon.com/ibol/']"
+        },
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/01.html",
+          "observation": "HTTP200 at2026-11-07T11:03:19.591195+00:00; canonical ['https://www.alberttansinhon.com/ibol/lessons/01.html']"
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/",
+          "observation": "HTTP200 at2026-11-07T11:03:19.591778+00:00; canonical ['https://www.alberttansinhon.com/ibol/']"
+        },
+        {
+          "url": "https://www.alberttansinhon.com/robots.txt",
+          "observation": "HTTP200 at2026-11-07T11:03:19.592296+00:00; robots allowsall and lists official sitemap"
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "HTTP200 at2026-11-07T11:03:19.593463+00:00; canonical []"
+        }
+      ],
+      "checks": [
+        "HTTP/content-type/redirect/header checks for five URLs",
+        "Parsed canonical/meta robots tags",
+        "Inspected new local adoption and discovery canonical routes"
+      ],
+      "limitations": [
+        "These requests do not prove every crawler can access the site or that any search engine has indexed it.",
+        "New landing pages remain local until root completes publication.",
+        "No IndexNow submission or resubmission was performed."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R06-A",
+      "round": 6,
+      "lane": "A",
+      "task": "OpenAlex: verify DOI lookup and current author/publisher correction route; respect rate limits.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Reused same-day exact DOI 404 and filter 429 evidence, avoiding throttled retries. Verified current ingestion and correction guidance; prepared precise evidence packet for a possible future single support report.",
+      "evidence": [
+        {
+          "url": "https://albertito-ai.github.io/Albertito-AI/ibol/data/search-observations.json",
+          "observation": "Existing 7 November 10:00 UTC exact DOI 404 and filter 429; carried forward with explicit limits."
+        },
+        {
+          "url": "https://help.openalex.org/how-to/fixing-data-errors/",
+          "observation": "Current official page (updated 18 September 2026) requires record ID/DOI, specific problem, correct value and source evidence; distinguishes author-profile corrections from missing work."
+        },
+        {
+          "url": "https://help.openalex.org/access/fixing-errors/works/",
+          "observation": "Official work-error guidance lists missing works and metadata errors as ticket cases; reports verified by service agents."
+        },
+        {
+          "url": "https://help.openalex.org/how-to/getting-indexed/",
+          "observation": "Official guidance documents ingestion through Crossref and other scholarly indexes and repositories."
+        },
+        {
+          "url": "https://openalex.org/contact",
+          "observation": "Contact endpoint linked by official correction documentation; no ticket submitted."
+        }
+      ],
+      "checks": [
+        "No repeated throttled API request.",
+        "Existing Crossref DOI verified in R01-A used as upstream evidence.",
+        "Book distinguished from separate SSRN essay."
+      ],
+      "limitations": [
+        "No exact OpenAlex work record confirmed.",
+        "No missing-work conclusion from 404/rate limit alone.",
+        "No ticket, profile edit or ingestion outcome claimed."
+      ],
+      "completed_at": "2026-11-07T11:05:25.354432+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R06-B",
+      "round": 6,
+      "lane": "B",
+      "task": "Create verified Gemini CLI local MCP setup guide.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added Gemini CLI MCP setup with current settings schema and locations, trust=false, connection and tool-result checks, and explicit host testing limits.",
+      "evidence": [
+        {
+          "url": "https://geminicli.com/docs/tools/mcp-server/",
+          "observation": "Official reference verifies mcpServers command/args, optional trust false, user/project settings files, gemini mcp list, /mcp and trusted-folder requirement for local stdio checks."
+        }
+      ],
+      "checks": [
+        "Parsed JSON examples.",
+        "Args match exercised frozen UV launch from R03-B.",
+        "Server itself needs no credential, while Gemini provider authentication remains separate.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No Gemini CLI installation or client-specific invocation performed.",
+        "No Gemini extension-directory listing established."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md"
+      ]
+    },
+    {
+      "task_id": "R06-C",
+      "round": 6,
+      "lane": "C",
+      "task": "Add an oral examination guide and defensible marking guidance.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added a15-minute source-based oral defence, eight question prompts with reasoning guidance, comparable-variation procedure and evidence-based marking/moderation. Aligned fictional assignment review date with edition cut-off1August2026.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+          "observation": "Evidence schedule informs source/claim questioning."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=166",
+          "observation": "Power and office distinctions inform controlled factual variations."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=267",
+          "observation": "Bounded dispositions and different gateway outcomes inform qualification and revision questions."
+        }
+      ],
+      "checks": [
+        "Timetable3+4+4+3+1=15minutes.",
+        "Question guidance preserves legal/evidential uncertainty and accepts reasoned alternatives.",
+        "Marking criteria assessed through explicit answer evidence, with correction and moderation guidance.",
+        "Review date in fictional assignment changed to1August2026 so edition sources need not be projected back into June."
+      ],
+      "limitations": [
+        "No institution has approved or calibrated this proposed examination format.",
+        "Institutional assessment and adjustment requirements remain controlling."
+      ],
+      "completed_at": "2026-11-07T11:06:07.913165+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R06-D",
+      "round": 6,
+      "lane": "D",
+      "task": "Add portable JSON flashcards export and transparent licence/source metadata.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Published-source-ready JSON export contains the same eight cards as the standalone lab, with stable IDs, printed pages, PDF anchors, book DOI and pinned checksum, original-content attribution and licence, separate book licence, and AI/publisher-review provenance. Linked from the lab and facilitator guide.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Export book identity/licence taken from the verified local publisher-source metadata record."
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/",
+          "observation": "Original companion content licence preserved separately from source book terms."
+        }
+      ],
+      "checks": [
+        "All eight exported cards exactly equal the lab inline JSON data.",
+        "Unique stable IDs and publisher PDF source anchors verified.",
+        "No executable code or full book text included in the export.",
+        "Actual-script study lab interaction harness passed.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "The JSON format is local to the companion; no external interchange standard certification claimed.",
+        "Importer compatibility is not established by JSON validity.",
+        "Root publication and live download verification remain separate."
+      ],
+      "completed_at": "2026-11-07T11:06:02.091605+00:00",
+      "files": [
+        "site/ibol/activities/study-cards.json",
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/facilitator.md"
+      ]
+    },
+    {
+      "task_id": "R06-E",
+      "round": 6,
+      "lane": "E",
+      "task": "Verify Hong Kong university library recommendation routes.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added HKU borrower/staff-specific routes and CUHK authenticated recommendation plus external-user enquiry route, separating subject-fit inference from confirmed selection.",
+      "evidence": [
+        {
+          "url": "https://lib.hku.hk/general/e-form/eform_book.html",
+          "observation": "Official form directory identifies borrower, departmental and SPACE recommendation categories."
+        },
+        {
+          "url": "https://www.lib.hku.hk/userinfo/student.html",
+          "observation": "Opened official student page; borrower recommendation form linked for undergraduate and postgraduate students."
+        },
+        {
+          "url": "https://libguides.lib.hku.hk/readinglist/faq",
+          "observation": "Opened official FAQ; course instructors can contact subject librarian or use book recommendation form."
+        },
+        {
+          "url": "https://www.lib.cuhk.edu.hk/en/collections/recommend-purchase/",
+          "observation": "Official search retrieval verified CUHK staff/student login requirement and other-user enquiry route; direct fetch timed out."
+        }
+      ],
+      "checks": [
+        "Official primary sources and two-engine verification.",
+        "No credentials, login, outgoing message or form submission."
+      ],
+      "limitations": [
+        "CUHK authenticated form not inspected because direct page timed out.",
+        "Hong Kong subject fit is an inference; no institution endorsement or adoption established."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R06-F",
+      "round": 6,
+      "lane": "F",
+      "task": "Independently review lane C teaching content source accuracy and pedagogy; report/fix only in own audit files.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Reviewed five teaching sections against publisher passages; timings, reading counts, scoring, rights and principal source anchors are sound. Identified one minor invented-premise sentence in D5 facilitator guidance and sent an exact correction to the owning worker.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=39",
+          "observation": "Actual publisher text read at printed page37 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+          "observation": "Actual publisher text read at printed page40 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=43",
+          "observation": "Actual publisher text read at printed page41 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=44",
+          "observation": "Actual publisher text read at printed page42 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+          "observation": "Actual publisher text read at printed page48 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=51",
+          "observation": "Actual publisher text read at printed page49 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=55",
+          "observation": "Actual publisher text read at printed page53 for teaching-source comparison."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=140",
+          "observation": "Actual publisher text read at printed page138 for teaching-source comparison."
+        }
+      ],
+      "checks": [
+        "Introduction timing0–5–13–25–37–45 totals45minutes; six preparatory pages count is correct.",
+        "Four-week page counts20,21,20,22 fit stated20–22pages; class rhythm totals90minutes.",
+        "Eight complete chapter reading counts sum238; eight90-minute classes total12contacthours.",
+        "Rubric weights total100%; example scoring totals75%.",
+        "Book/companion licence, fictional status, source edition and legal cut-off are explicit.",
+        "Source anchors for three records, evidence labels, operative legal basis, bounded conclusion and trust-property distinction match actual published passages."
+      ],
+      "limitations": [
+        "Oral examination section under parallel construction is outside this snapshot.",
+        "Not every source authority underlying the book has been independently revalidated.",
+        "Workload estimates remain teacher-adjustable, not empirically validated."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R07-A",
+      "round": 7,
+      "lane": "A",
+      "task": "Google Books: verify partner submission process and rights requirements.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified current Partner Center rights, workflow and duplicate-delivery policies; distinguished free pricing, preview percentage and full-text access. Prepared publisher-first route without account or upload action.",
+      "evidence": [
+        {
+          "url": "https://support.google.com/books/partner/answer/18625?hl=en",
+          "observation": "Current programme policy requires rights to submit; accepts books with or without ISBNs."
+        },
+        {
+          "url": "https://support.google.com/books/partner/answer/3244021?hl=en",
+          "observation": "Official Partner Center overview describes author/publisher bibliographic and file management, account access and user permissions."
+        },
+        {
+          "url": "https://support.google.com/books/partner/answer/1067634?hl=en",
+          "observation": "Official policy warns duplicate non-exclusive deliveries may be rejected and account authority must be confirmable."
+        },
+        {
+          "url": "https://support.google.com/books/partner/answer/3289675?hl=en",
+          "observation": "Official single-book submission workflow opened; metadata, file upload, review and Publish stages."
+        },
+        {
+          "url": "https://support.google.com/books/partner/answer/3324395?hl=en",
+          "observation": "Official programme introduction describes free preview-based discovery."
+        },
+        {
+          "url": "https://support.google.com/books/partner/answer/6009574?hl=en",
+          "observation": "Official no-charge guide distinguishes zero price from preview percentage and download settings; payment profile conditions documented."
+        }
+      ],
+      "checks": [
+        "Current support policy preferred over older author FAQ claiming ISBN mandatory.",
+        "Did not equate author identity with access to publisher account.",
+        "Did not repeat earlier rate-limited ISBN API calls."
+      ],
+      "limitations": [
+        "No Google Books title record confirmed.",
+        "Actual contract/account rights not assessed.",
+        "No external account creation, acceptance, submission or metadata change."
+      ],
+      "completed_at": "2026-11-07T11:07:12.509304+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R07-B",
+      "round": 7,
+      "lane": "B",
+      "task": "Verify OpenAI search crawler/indexing guidance and practical relevance to these public resources.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Created precise OpenAI search/training/user-retrieval guidance and checked actual robots responses. Official root robots returned HTTP 200 and matched Allow / source; GitHub hostname root robots returned 404. No policy changes or inclusion claims.",
+      "evidence": [
+        {
+          "url": "https://developers.openai.com/api/docs/bots",
+          "observation": "Opened official documentation; OAI-SearchBot search, independent GPTBot training settings, and user-initiated ChatGPT-User distinguished; search IP range access and approximately 24-hour robots-update propagation documented."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/robots.txt",
+          "observation": "Direct HTTPS 200 with User-agent: *, Allow: /, and official sitemap URL, matching local source."
+        },
+        {
+          "url": "https://albertito-ai.github.io/robots.txt",
+          "observation": "Direct HTTPS returned 404; no project-path robots file added."
+        }
+      ],
+      "checks": [
+        "Compared fetched official root robots bytes with source.",
+        "Inspected previous public IndexNow receipt to preserve distinct request-specific 403 evidence.",
+        "No crawler-policy changes made.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No verified crawler-origin request logs examined.",
+        "No search inclusion, ranking, model training or independent reader use verified."
+      ],
+      "files": [
+        "site/ibol/discovery/search-discovery.md"
+      ]
+    },
+    {
+      "task_id": "R07-C",
+      "round": 7,
+      "lane": "C",
+      "task": "Add a journal-club session with critical questions, limitations and counterarguments.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added a60-minute critical session on originality, practical burden, unequal evidence access, normative gap diagnosis, institutional allocation, comparative limits and empirical evaluation.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=219",
+          "observation": "Printed pp.217–219 directly read: gap diagnosis, distributional objection and explicit access audit fairly reflected."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=281",
+          "observation": "Printed pp.279–283 directly read: coordination contribution, institutional/reform implications and constructed-file limits verified."
+        }
+      ],
+      "checks": [
+        "Reading6+2+3+5=16printed pages.",
+        "Session5+10+15+15+10+5=60minutes.",
+        "Criticism acknowledges author response before challenging practical sufficiency.",
+        "Proposed empirical design marked exploratory, with selection/expertise/ground-truth limitations."
+      ],
+      "limitations": [
+        "No claim that the method is empirically validated or that the proposed study has been performed.",
+        "Discussion of cited scholars is confined to the book engagement, not a fresh independent literature review."
+      ],
+      "completed_at": "2026-11-07T11:07:51.559219+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R07-D",
+      "round": 7,
+      "lane": "D",
+      "task": "Audit screen-reader semantics, focus order, contrast and reduced-motion behaviour in new activities; fix concrete issues.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Audited activity semantics and ARIA references, native focus order, declared colour contrast and absence of motion. Hid keyboard-only activity instructions until controls are available and darkened worksheet writing boundaries. Documented precise scope and remaining browser/assistive-technology tests.",
+      "evidence": [
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+          "observation": "Read current primary text-contrast guidance and checked declared normal-text colours against 4.5:1."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+          "observation": "Read primary non-text contrast guidance and checked focus/writing boundaries against 3:1."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+          "observation": "Read focus-order guidance and inspected native document order and explicit heading focus."
+        }
+      ],
+      "checks": [
+        "One H1, English language declaration, no positive tabindex, all ARIA references resolve.",
+        "Four colour threshold assertions passed using unrounded luminance ratios.",
+        "No animated transitions, timer or automatic scrolling code.",
+        "Actual-script eight-card interaction harness passed.",
+        "Exported cards still exactly equal inline data.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No WCAG conformance certification.",
+        "Screen-reader semantics were inspected in source; actual spoken output and browser layout remain untested by this lane.",
+        "Central CUA verification still required for keyboard behaviour, 320px/400% reflow and print."
+      ],
+      "completed_at": "2026-11-07T11:08:32.832365+00:00",
+      "files": [
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/ACCESSIBILITY.md"
+      ]
+    },
+    {
+      "task_id": "R07-E",
+      "round": 7,
+      "lane": "E",
+      "task": "Verify Dutch university library recommendation routes.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added Groningen, Radboud and Leiden routes. Radboud explicitly welcomes external suggestions; Groningen author/publisher relationship is recorded as context without inferring deposit.",
+      "evidence": [
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/acquisition-suggestions?lang=en",
+          "observation": "Opened; staff/student/emeritus eligibility and Ocasys/collection-specialist paths verified."
+        },
+        {
+          "url": "https://www.ru.nl/en/staff/services/library/retrieving-literature-or-borrowing-materials/making-a-purchase-suggestion",
+          "observation": "Opened; anyone may submit, with priority to university staff/students and policy/budget conditions."
+        },
+        {
+          "url": "https://ask-a-librarian.universiteitleiden.nl/faq/222625",
+          "observation": "Opened; affiliated researchers/students may suggest printed or digital books."
+        }
+      ],
+      "checks": [
+        "Primary official pages read and authoritative-engine verification.",
+        "No presumed institutional deposit, holding or authenticated status.",
+        "No suggestion submitted."
+      ],
+      "limitations": [
+        "Radboud permits consideration, not assured acceptance.",
+        "Existing catalogue holdings not checked in this assignment."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R07-F",
+      "round": 7,
+      "lane": "F",
+      "task": "Independently review lane B client configuration instructions against installed server capabilities.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Five named-client configurations and server capability descriptions agree with primary documentation and the existing six-tool implementation. JSON examples parse; two minor usability refinements sent to B. Previous D5 teaching finding independently confirmed resolved.",
+      "evidence": [
+        {
+          "url": "https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop",
+          "observation": "Custom .mcpb installation path and organisation controls confirmed."
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
+          "observation": "Current guided customisations/AddServer flow, portable and compatibility destinations confirmed."
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/agents/reference/mcp-configuration",
+          "observation": "mcpServers vs servers schemas confirmed."
+        },
+        {
+          "url": "https://cursor.com/docs/mcp",
+          "observation": "stdio fields and project/global configuration paths confirmed."
+        },
+        {
+          "url": "https://github.com/aaif-goose/goose/blob/main/documentation/docs/guides/config-files.md",
+          "observation": "YAML extension fields, timeout and OS-specific paths confirmed."
+        },
+        {
+          "url": "https://geminicli.com/docs/tools/mcp-server/",
+          "observation": "mcpServers settings, trust:false and trusted-folder connection testing confirmed."
+        }
+      ],
+      "checks": [
+        "Parsed all three JSON configuration examples",
+        "Reviewed Goose YAML against official example",
+        "Matched frozen UV argument pattern to published manifest",
+        "Compared six documented capabilities with actual MCP server function definitions",
+        "Confirmed guide distinguishes guide search from separately cached full-book search",
+        "Reviewed prior R03-B actual SDK launch receipt without claiming GUI installation",
+        "Independently verified C resolved D5 finding"
+      ],
+      "limitations": [
+        "No graphical client installation or client-specific live invocation was performed by this review.",
+        "Prior SDK command test is server interoperability evidence, not host installation evidence.",
+        "Provider terms/accounts and policies remain separate from local server access."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R08-A",
+      "round": 8,
+      "lane": "A",
+      "task": "Google Scholar: verify book inclusion and author/publisher technical guidance.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified official Scholar guidance and identified edition-specific consequence: 8,684,011-byte publisher PDF exceeds the guidance’s 5 MB direct-file threshold, supporting coordinated Google Books delivery. Checked companion schema remains WebPage/about Book.",
+      "evidence": [
+        {
+          "url": "https://scholar.google.com/intl/en/scholar/inclusion.html",
+          "observation": "Official guidance directs documents over 5 MB, including books, to Google Book Search; describes accessible content, searchable files, crawl links and publication metadata."
+        },
+        {
+          "url": "https://scholar.google.com/intl/en/scholar/help.html",
+          "observation": "Official coverage includes academic books; recommends exact-title coverage checks; states bulk access is unavailable."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+          "observation": "Pinned publisher PDF local file size rechecked by stat: 8,684,011 bytes."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "R01-A saved publisher HTML contains citation title/author/date, ISBN and PDF URL; these fields are not themselves an indexing receipt."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/",
+          "observation": "Repository page source inspected: structured data identifies companion as WebPage/about Book, preserving educational identity."
+        }
+      ],
+      "checks": [
+        "Rechecked actual local pinned PDF byte size.",
+        "Inspected companion metadata and saved publisher metadata.",
+        "No bulk Scholar queries or fabricated citations."
+      ],
+      "limitations": [
+        "No actual Scholar title result confirmed.",
+        "No complete publisher-platform compatibility audit.",
+        "Guidance does not guarantee timing or ranking for this book."
+      ],
+      "completed_at": "2026-11-07T11:09:30.802314+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R08-B",
+      "round": 8,
+      "lane": "B",
+      "task": "Verify Google AI Search discovery requirements and visible-content consistency.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Added current Google AI Search requirements and bounded source audit. Core visible book facts match structured data and eight direct seminar links exist. Recommended making ISBNs and ORCID visible in hub citation; no special-AI-file or indexing guarantee claimed.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/search/docs/appearance/ai-features",
+          "observation": "Official guidance requires ordinary Search indexing/snippet eligibility, crawl access, internal links, text and consistent structured data; no special AI file/schema requirement and no indexing guarantee."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/",
+          "observation": "Source audit, not Google fetch: title, author, publisher, date, DOI, licence and free-access claims align; eight explicit seminar links present."
+        }
+      ],
+      "checks": [
+        "Parsed hub with standard HTMLParser and embedded JSON-LD after optional BeautifulSoup dependency was unavailable.",
+        "Asserted visible core identity facts and all eight direct seminar links.",
+        "Flagged visible ISBN/ORCID enhancement to root, who owns index.html.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No Search Console ownership or URL Inspection evidence obtained.",
+        "Source consistency is not an indexing, ranking or AI-feature inclusion result."
+      ],
+      "files": [
+        "site/ibol/discovery/search-discovery.md"
+      ]
+    },
+    {
+      "task_id": "R08-C",
+      "round": 8,
+      "lane": "C",
+      "task": "Create a one-page librarian/adoption brief as static HTML.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Created standalone static library/adoption brief with print A4 styles, book identity, typedISBNs, collection fit, course resources, citation exports and separated licence terms.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Identity metadata matched authoritative publisher-derived local book.json."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=8",
+          "observation": "Preface printedp6 identifies advanced postgraduate and specialist audience."
+        }
+      ],
+      "checks": [
+        "ePDF9789403431925 and print9789403431918 correctly distinguished.",
+        "StaticHTML contains no executable scripts, tracking or remote assets.",
+        "Local cited exports and teaching files exist; canonical official page supplied.",
+        "PrintA4 styles, responsive layout, semantic headings and visible focus prepared."
+      ],
+      "limitations": [
+        "Print stylesheet targets one A4 page; browser pagination and screenshot inspection remain for integration QA.",
+        "No catalogue holdings or institutional adoption claim."
+      ],
+      "completed_at": "2026-11-07T11:10:27.390592+00:00",
+      "files": [
+        "site/ibol/adoption/librarian-brief.html"
+      ]
+    },
+    {
+      "task_id": "R08-D",
+      "round": 8,
+      "lane": "D",
+      "task": "Add a static factual FAQ for book/companion/rights/citation and activity discovery.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Created a self-contained 14-answer HTML FAQ covering source identity, free access, edition date, learning routes, original supplement status, distinct licences, offline use, JSON export, privacy, citation, library metadata, agent integration, evidence of reach and corrections. Linked it from both activity pages without changing interaction logic.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Publication title, publisher, date, identifiers and licence reconciled to verified book.json and source record."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/RIGHTS.md",
+          "observation": "FAQ preserves existing distinct book, original teaching and code permissions."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/data/reach-receipts-2026-11-07.json",
+          "observation": "FAQ links dated receipts and distinguishes listing/submission from indexing, installation and use."
+        }
+      ],
+      "checks": [
+        "14 H2 answers, one H1, unique IDs and no executable scripts.",
+        "All FAQ relative link paths exist locally.",
+        "Full MIT source notice and visible original-content attribution included.",
+        "No interaction-code changes; actual-script harness passed.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No current-law verification beyond edition scope.",
+        "FAQ does not establish institutional adoption or agent recommendations.",
+        "Publication and central browser delivery checks remain separate."
+      ],
+      "completed_at": "2026-11-07T11:10:44.846484+00:00",
+      "files": [
+        "site/ibol/activities/faq.html",
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/ACCESSIBILITY.md"
+      ]
+    },
+    {
+      "task_id": "R08-E",
+      "round": 8,
+      "lane": "E",
+      "task": "Verify Thai university library recommendation routes; label language/access limitations.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Added Prince of Songkla and NIDA routes with current-route verification needs, explicit account limits and Thai-to-English summary caveat. Detected stale PSU English deadline and broken NIDA form link.",
+      "evidence": [
+        {
+          "url": "https://lib.psu.ac.th/services/information-resource-provision",
+          "observation": "Opened official English service page; PSU Passport and departmental review specified, but old 2023 textbook deadline remains."
+        },
+        {
+          "url": "https://lib.psu.ac.th/17250",
+          "observation": "Official Thai notice invites faculty, students and personnel to propose Thai/foreign-language books and ebooks via linked form; summarised in English."
+        },
+        {
+          "url": "https://library.nida.ac.th/library_service/book-suggestion-service/",
+          "observation": "Opened English service page; library-user suggestions reviewed by librarian. More link led to malformed destination and HTTP 404."
+        }
+      ],
+      "checks": [
+        "Distinguished Prince of Songkla University from unrelated PSU search results.",
+        "No assumption that visiting appointment creates student/member/login eligibility.",
+        "No expired deadline presented as current; no submission."
+      ],
+      "limitations": [
+        "PSU current operational channel and account entitlement require library confirmation.",
+        "NIDA external eligibility not defined; linked detailed route broken.",
+        "Thai notice summary is not an official translation."
+      ],
+      "files": [
+        "site/ibol/discovery/library-routes.md"
+      ]
+    },
+    {
+      "task_id": "R08-F",
+      "round": 8,
+      "lane": "F",
+      "task": "Audit new static routes, sitemap integration requirements and ordinary discovery paths.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Audited16current HTML files, local links and both sitemaps. Identified .html canonical versus observed extensionless host-route mismatch, five new canonical routes awaiting sitemap integration, and three links to planned files still being written. Sent precise integration changes to root.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+          "observation": "Primary guidance supports consistency among redirects, self-canonicals and sitemap preferences; canonicalisation remains a search-engine decision."
+        },
+        {
+          "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+          "observation": "Primary guidance uses absolute canonical URLs and root sitemap scope."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/lessons/01",
+          "observation": "Root reported successful final URL after .html request; no redundant network retry performed."
+        }
+      ],
+      "checks": [
+        "Parsed canonical/noindex from16HTMLfiles",
+        "Resolved relative local links",
+        "Parsed official and GitHub sitemaps",
+        "Checked new routes against current pre-integration sitemap"
+      ],
+      "limitations": [
+        "New resources are still local and some are under construction.",
+        "Only lesson01redirect directly reported; final publication should verify representative new routes.",
+        "Sitemap inclusion and canonical preference do not establish search indexing."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R09-A",
+      "round": 9,
+      "lane": "A",
+      "task": "Groningen institutional repository: verify public discovery and author deposit route.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Successfully retrieved public author profile with correct ORCID; no IBOL book shown among five displayed article outputs. Verified book template, claim/import options and validation-dependent public visibility. Prepared non-duplicate route; no institutional mutation.",
+      "evidence": [
+        {
+          "url": "https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/",
+          "observation": "Web retrieval succeeded: correct ORCID and PSU Visiting Professor position; five article outputs displayed, no matching book in that list. Pending/unlinked records not assessed."
+        },
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/pure/using-pure/add-content-to-pure/submission-guide-3.0/book?lang=en",
+          "observation": "Official route Research output > Book/report > Book; academic category requires peer-review choice."
+        },
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/pure/using-pure/add-content-to-pure/how-to-add-research-output/?lang=en",
+          "observation": "Official instructions distinguish claim existing record, source/file imports and template creation."
+        },
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/pure/faqs?lang=en&tcid=verint_1071_16083_16058",
+          "observation": "Official FAQ explains search without My content filter, claim existing publication, affiliation care and full-text rights validation."
+        },
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/pure/using-pure/add-content-to-pure/workflow-and-visibility",
+          "observation": "Official workflow distinguishes Entry in Progress, For validation and Validated; Research Portal public display follows validation, unlike MePa."
+        }
+      ],
+      "checks": [
+        "Matched ORCID to publisher metadata.",
+        "Avoided inferring no internal/pending record from public profile.",
+        "Distinguished book registration from doctoral-thesis workflow."
+      ],
+      "limitations": [
+        "Authenticated Pure access and current institutional account permissions not assessed.",
+        "No title-specific public book record confirmed.",
+        "No claim/import/upload performed."
+      ],
+      "completed_at": "2026-11-07T11:11:55.966602+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R09-B",
+      "round": 9,
+      "lane": "B",
+      "task": "Verify Bing/IndexNow requirements and audit existing receipt without duplicate submission.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Audited IndexNow protocol/Bing guidance, existing 10-URL mirror HTTP202 receipt and both official proof-file HTTP403 preflight failures. Confirmed no official notification submitted and performed no resubmission.",
+      "evidence": [
+        {
+          "url": "https://www.indexnow.org/documentation",
+          "observation": "Ownership proof, keyLocation path scope, participant sharing and response meanings verified."
+        },
+        {
+          "url": "https://www.indexnow.org/faq",
+          "observation": "Meaningful change submissions, duplicate avoidance and absence of indexing guarantees verified."
+        },
+        {
+          "url": "https://www.bing.com/indexnow/getstarted",
+          "observation": "Bing recommends Webmaster Tools receipt inspection and explicitly states notification does not guarantee crawling/indexing."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/data/reach-receipts-2026-11-07.json",
+          "observation": "Local source receipt reviewed: mirror10 URLs HTTP202 at 10:15:39 UTC; earlier official proof blocked, submitted=false."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/data/campaign-distribution.json",
+          "observation": "Prepared public record, not claimed live yet: official proof recheck HTTP403 at 11:04:18 UTC, submitted=false; exactly matches root scratch receipt."
+        }
+      ],
+      "checks": [
+        "Asserted both official submitted flags false and mirror received true with HTTP202.",
+        "Compared public campaign distribution entry exactly with root scratch receipt.",
+        "Inspected notifier dry-run default, URL allowlist, proof preflight and no automatic retries.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "No new notification was sent in this task.",
+        "No authenticated Bing Webmaster Tools report or confirmed indexing/adoption obtained.",
+        "Public campaign-distribution path may await root publication."
+      ],
+      "files": [
+        "site/ibol/discovery/search-discovery.md"
+      ]
+    },
+    {
+      "task_id": "R09-C",
+      "round": 9,
+      "lane": "C",
+      "task": "Add a compact learner glossary based on verified book passages and source pinpoints.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Added12 concise method-term explanations and five proposition-specific evidence labels with publisher PDF pinpoints.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=35",
+          "observation": "Table1.1 and adjacent text directly read in R01; legal object,hinge and interface explanations anchored here."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=52",
+          "observation": "Printedp50 directly read this round: distinct grounds of closure and review-trigger examples verified."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=218",
+          "observation": "Printedp216 directly read this round; gap-diagnosis distinction checked alongside p217 previously read."
+        }
+      ],
+      "checks": [
+        "All12 glossary entries carry printed-page citations and correct PDF offsets.",
+        "Evidence labels qualified as professional descriptions, not substituted legal proof standards.",
+        "Negative closure includes access-audit qualification.",
+        "Substantive-gap explanation retains normative justification requirement."
+      ],
+      "limitations": [
+        "Concise guide does not replace the fuller doctrinal treatment or verify subsequent law."
+      ],
+      "completed_at": "2026-11-07T11:12:08.208534+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md"
+      ]
+    },
+    {
+      "task_id": "R09-D",
+      "round": 9,
+      "lane": "D",
+      "task": "Test exports, print structure and local link integrity; prepare stable activity files.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Validated relative HTML/Markdown destinations, JSON/inline card identity, source pagination, standalone licences and worksheet print structure. Identified a stale classroom ZIP before final build and notified root to regenerate it. Canonical HTML metadata already matches root’s extensionless official routes; portable relative filenames remain unchanged.",
+      "evidence": [
+        {
+          "url": "https://www.alberttansinhon.com/ibol/activities/study-lab",
+          "observation": "Official canonical metadata inspected locally after root’s redirect verification; this lane did not claim live delivery."
+        }
+      ],
+      "checks": [
+        "33 local HTML links and fragments resolved; local Markdown targets exist.",
+        "Eight exported cards equal inline data; stable IDs and printed-page offsets validated.",
+        "Book DOI, distinct licences and full standalone MIT notices checked.",
+        "Seven writing areas, A4 print rule and deliberate page break inspected.",
+        "ZIP integrity check passed, but member freshness requires regeneration.",
+        "Actual-script interaction harness passed; git diff --check passed."
+      ],
+      "limitations": [
+        "No rendered print/PDF pagination check by this lane.",
+        "At this check the ZIP omitted FAQ and had older lab, worksheet and accessibility members; root owns final rebuild and delivery check.",
+        "Link validation here is local existence/fragment validation, not external HTTP verification."
+      ],
+      "completed_at": "2026-11-07T11:13:18.962568+00:00",
+      "files": [
+        "site/ibol/activities/ACCESSIBILITY.md",
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/study-cards.json",
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/faq.html",
+        "site/ibol/activities/facilitator.md"
+      ]
+    },
+    {
+      "task_id": "R09-E",
+      "round": 9,
+      "lane": "E",
+      "task": "Prepare an original research-seminar invitation package and reading choices for lawful academic dissemination; no sending.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Created unsent author seminar and reading-group invitations, proposed description and formats, and three pinpoint reading routes checked against the pinned publisher PDF text.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "Publication metadata matched the existing verified book record: University of Groningen Press, 6 November 2026, full title and author, DOI."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+          "observation": "Locally inspected pinned publisher text for sections 1.2–1.3 pp. 32–35, section 4.1 pp. 130–132 including Figure 4.1 and Table 4.1, and section 6.3 pp. 197–199 including Table 6.1. Confirmed printed-to-viewer offset +2; links refer to unmodified full PDF."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/",
+          "observation": "Used canonical official teaching-companion URL from verified metadata and linked existing lesson files."
+        }
+      ],
+      "checks": [
+        "Reading boundaries and summaries checked against local published.txt, not merely the companion summaries.",
+        "All relative links resolve; no em dashes.",
+        "python scripts/validate_profile.py passed: 74 Markdown files, local links resolved.",
+        "git diff --check for owned file passed.",
+        "No invented appointment, endorsement, availability, event, adoption or empirical prevalence claims."
+      ],
+      "limitations": [
+        "Drafts only. No messages sent and no events agreed.",
+        "Possible formats are author proposals, not confirmed commitments.",
+        "Reading prompts describe the book at its legal cut-off of 1 August 2026, not current legal advice.",
+        "PDF page fragments depend on the reader's support."
+      ],
+      "files": [
+        "site/ibol/adoption/announcements.md"
+      ]
+    },
+    {
+      "task_id": "R09-F",
+      "round": 9,
+      "lane": "F",
+      "task": "Run relevant local verification and inspect package inventory; report actionable failures.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Ran65IBOL tests:64passed; one failed because the planned announcements file did not yet exist. Profile validation and whitespace checks passed.73-file ZIP excludes book/cache but awaits rebuild for new and changed resources. Root notified of exact pre-freeze findings.",
+      "evidence": [
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol",
+          "observation": "Local test suite exercised existing implementation plus new campaign tests against working tree based on25916bb."
+        }
+      ],
+      "checks": [
+        "65IBOL tests including MCPstdio, package checksum/no-overwrite, frozenUV runtime and study-lab harness",
+        "Profile integrity validation",
+        "git diff --check",
+        "Classroom ZIP inventory and source-byte comparison"
+      ],
+      "limitations": [
+        "Working tree was under concurrent development; this is not a final passing release check.",
+        "One missing planned file must be created and final build/tests rerun.",
+        "No new live publication was assessed."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R10-A",
+      "round": 10,
+      "lane": "A",
+      "task": "OER Commons and MERLOT: verify teaching-resource submission eligibility and workflows.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Verified both educational-resource workflows and proposed a concrete CC BY seminar with accurate metadata. Documented OER Commons ND distinction and avoided relabelling the book or claiming directory review.",
+      "evidence": [
+        {
+          "url": "https://help.oercommons.org/support/solutions/articles/42000046849-submit-oer",
+          "observation": "Official page opened: signed-in Submit from Web, metadata review, pending then librarian approval."
+        },
+        {
+          "url": "https://help.oercommons.org/support/solutions/articles/42000046846-introduction-to-oer",
+          "observation": "Official definition explicitly excludes ND-licensed resources from OER definition."
+        },
+        {
+          "url": "https://help.oercommons.org/support/solutions/articles/42000046845-usage-rights",
+          "observation": "Broader rights guide also documents share-only/ND category; no blanket directory rejection inferred."
+        },
+        {
+          "url": "https://help.oercommons.org/support/solutions/articles/42000119485-role-of-author-on-oer-commons-resources",
+          "observation": "Registered active account required; author field should identify creators rather than automatically assuming uploader."
+        },
+        {
+          "url": "https://info.merlot.org/merlothelp/Add_a_Material.htm",
+          "observation": "Official page opened: member submission of online resource URL, required metadata, external material hosting, licensing fields."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/lessons/01.html",
+          "observation": "Concrete existing candidate: original CC BY 4.0 seminar with book-source link and separate book licence."
+        }
+      ],
+      "checks": [
+        "Distinguished book NC-ND from original companion CC BY and code MIT.",
+        "Prepared bounded candidate description from existing seminar facts.",
+        "No directory admission or peer-review outcome inferred."
+      ],
+      "limitations": [
+        "Directory-specific account access not checked.",
+        "No duplicate search performed for an actual submission because no submission initiated.",
+        "No account, submission or acceptance."
+      ],
+      "completed_at": "2026-11-07T11:15:32.649895+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R10-B",
+      "round": 10,
+      "lane": "B",
+      "task": "Consolidate five client guides into a source-backed installation document with explicit tested/unverified scope.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Consolidated five client guides with route/test-scope table and common setup. All three JSON examples and Goose YAML use the same frozen manifest command; private paths absent; local links resolve. Updated search audit to reflect visible ISBN/ORCID fix in latest source.",
+      "evidence": [
+        {
+          "url": "https://docs.astral.sh/uv/getting-started/installation/",
+          "observation": "Official UV installation reference opened for the guide prerequisite link."
+        },
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0",
+          "observation": "Pinned downloaded release bytes rehashed locally and compared with documented SHA-256 and extracted manifest arguments; no platform immutable-release claim."
+        }
+      ],
+      "checks": [
+        "Three JSON configurations parse and exactly match manifest args after substituting installation path.",
+        "Goose YAML parses and exactly matches frozen args.",
+        "All relative links in both owned documents resolve.",
+        "No workspace paths or em dashes in owned documents.",
+        "Latest hub body contains both ISBNs and ORCID.",
+        "Pinned local MCPB bytes retain expected SHA-256.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Five client-specific integrations remain documentation-verified, not host-executed.",
+        "Shared runtime execution is the earlier R03-B MCP SDK check, not five independent host runs.",
+        "No new directory registrations or search notifications performed in this task."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md",
+        "site/ibol/discovery/search-discovery.md"
+      ]
+    },
+    {
+      "task_id": "R10-C",
+      "round": 10,
+      "lane": "C",
+      "task": "Audit all new teaching source references and internal links; prepare adoption guide for release.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Audited all70Markdown and18HTML links,47publisher PDF pinpoints,typed identifiers,source roles and proposed workloads. Corrected four-week first reading to sections1.2–1.8 pp32–50 stopping before1.9 and revised weekly range to19–22pages. Tightened established evidence label to reliable primary support. Own files frozen for release.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "status": 200,
+          "final_url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+          "status": 200,
+          "final_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        },
+        {
+          "url": "https://doi.org/10.21827/6ac3948159a9e",
+          "status": 200,
+          "final_url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        },
+        {
+          "url": "https://orcid.org/0009-0001-8996-7933",
+          "status": 200,
+          "final_url": "https://orcid.org/0009-0001-8996-7933",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by/4.0/",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "status": 200,
+          "final_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "observation": "HEAD response received; fragments checked locally against pinned publisher text."
+        }
+      ],
+      "checks": [
+        "All47PDF fragments equal the first cited printed page plus2; no broken local links.",
+        "Publisher PDF SHA256 verified as 5880c476d82151f6030865e452f7bd4bec6e597e9664ecadf96b32355a6559d5.",
+        "All six unique external identity/licence/source destinations returned HTTP200; DOI redirects to correctpublisher catalogue.",
+        "Eight lessons and32practice questions verified from data.",
+        "No executable HTML scripts,duplicateIDs or em dashes.",
+        "Profile integrity validation passed for74Markdown files; git diff --check passed.",
+        "Previous independent verifier correction to D5 preserved.",
+        "Eight-week inclusive chapter reading remains238pages; rubric weights100%; arithmetic and timed activities checked."
+      ],
+      "limitations": [
+        "Source checking concerns this pinned edition and selected doctrinal passages; it is not a new full audit of every authority.",
+        "Librarian brief was observed legible in root browser QA; print pagination remains unverified.",
+        "ExternalHEAD200 verifies response availability,not library adoption or indexing."
+      ],
+      "completed_at": "2026-11-07T11:16:54.357343+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md",
+        "site/ibol/adoption/librarian-brief.html"
+      ]
+    },
+    {
+      "task_id": "R10-D",
+      "round": 10,
+      "lane": "D",
+      "task": "Review complete study lab code and edge cases; address independent QA findings.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Final source review found no blocking defect. Checked fixed trusted card data, textContent-based rendering, bounded navigation, reveal state, restart, focus, no background requests/storage, static fallback and portable licences. All six activity members now match the rebuilt classroom ZIP, resolving the round-nine archive freshness finding. Read the central CUA preview receipt and preserved its test limitations. Activity source is frozen after this review.",
+      "evidence": [
+        {
+          "url": "https://www.alberttansinhon.com/ibol/activities/study-lab",
+          "observation": "Official canonical destination is recorded in reviewed source; central preview tests use the local Site preview, not this live URL."
+        }
+      ],
+      "checks": [
+        "Four campaign integration tests passed, including actual inline script state transitions and export equality.",
+        "33 local HTML links/fragments and local Markdown paths resolved.",
+        "All six activity files are present in ZIP and byte-identical to worktree at this check.",
+        "Central CUA receipt records all-eight-card Enter/Space reveal, source links, final boundary and restart checks.",
+        "Central CUA receipt records no horizontal overflow at 305px/375px content widths for the lab and 305px for worksheet.",
+        "git diff --check passed."
+      ],
+      "limitations": [
+        "Central preview is separate from production delivery.",
+        "No assistive-technology certification, rendered print pagination or 400% zoom test.",
+        "Actual use by students, libraries or external agents is not established."
+      ],
+      "completed_at": "2026-11-07T11:16:16.990783+00:00",
+      "files": [
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/study-cards.json",
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/faq.html",
+        "site/ibol/activities/facilitator.md",
+        "site/ibol/activities/ACCESSIBILITY.md"
+      ]
+    },
+    {
+      "task_id": "R10-E",
+      "round": 10,
+      "lane": "E",
+      "task": "Prepare concise author announcements, librarian blurb and course-adoption invitation with precise source/licence facts.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Expanded announcements.md with three reusable unsent texts, publisher and official-site links, library identifiers, separate book and companion licences, and no invented institutional endorsements or biographical positions. Lane E public files now frozen for integration and review.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+          "observation": "All title, author, publisher, publication date, DOI, ISBN and book-licence details match the previously verified source record in data/book.json."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/",
+          "observation": "Uses the canonical official companion URL; existing seminar, question, game and slide resources support the general teaching-resource description."
+        }
+      ],
+      "checks": [
+        "Metadata strings compared against data/book.json; date matched 6 November 2026.",
+        "All relative links resolve; no em dashes.",
+        "python scripts/validate_profile.py passed: 74 Markdown files.",
+        "git diff --check for both owned public files passed.",
+        "Text states prepared drafts; no messages sent; potential audiences and teaching use do not imply endorsement or adoption."
+      ],
+      "limitations": [
+        "No announcements, invitations, recommendations or messages were sent.",
+        "No claimed library holdings or course adoption.",
+        "No new external research was required for these source-grounded original drafts."
+      ],
+      "files": [
+        "site/ibol/adoption/announcements.md"
+      ]
+    },
+    {
+      "task_id": "R10-F",
+      "round": 10,
+      "lane": "F",
+      "task": "Independent full diff review for factual accuracy, functionality, privacy and immutable MCP release protection.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Reviewed tracked changes and new code/resources. No material blocking defect found at this snapshot. All17indexable HTML canonicals match the official sitemap; no broken HTML link or sensitive-data finding remains. Published MCP1.0.0inputs are unchanged and their exact source digest still validates. Final build/tests and deployment remain separate gates.",
+      "evidence": [
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/site/ibol",
+          "observation": "Local full diff reviewed against base25916bb29921beb7123e96fc0043592e5969f8ab, including untracked proposed additions."
+        },
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0",
+          "observation": "Protected source digest remains1e442bf6b62f1684c50382ac6bbe6da1cba3f9e89226952d939673a890822f82; no published bundle input changed."
+        }
+      ],
+      "checks": [
+        "Reviewed ledger renderer escaping, safe public evidence and count semantics",
+        "Reviewed actual study-lab interaction script and independent behavioural harness",
+        "Reviewed new discovery/adoption resources, exact source identifiers and rights distinctions",
+        "Checked17canonicals against official sitemap and allrelativeHTMLlinks",
+        "Scanned changed/new textual files for private paths, tokens and key material",
+        "Validated protected release source digest and unchanged input file set"
+      ],
+      "limitations": [
+        "Final build, frozen working-tree test run and native publication still pending.",
+        "Not a new complete doctrinal or third-party service audit; source-fidelity findings from preceding rounds carried forward.",
+        "GUI/browser and assistive-technology observations are distinct from unit-level interaction checks."
+      ],
+      "files": [
+        "scripts/ibol/build_campaign.py",
+        "scripts/ibol/check_study_lab.cjs",
+        "scripts/ibol/test_campaign.py"
+      ]
+    },
+    {
+      "task_id": "R11-A",
+      "round": 11,
+      "lane": "A",
+      "task": "Final review: audit global library routes from lane E, correct overclaims, consolidate catalogue action priorities.",
+      "status": "completed",
+      "agent": "/root/catalogue_worker",
+      "outcome": "Cross-read entire library-routes guide and independently re-opened Cambridge, Radboud and current OAPEN library guidance. Sampled eligibility claims supported; proposed one legacy-link replacement to root. Added concise prioritised action/evidence table to catalogue guide.",
+      "evidence": [
+        {
+          "url": "https://libguides.cam.ac.uk/cambridgeebooks/faqs",
+          "observation": "Independently opened: accepts suitable OA/author-permitted stable ebook links, excludes file-hosting donations; catalogue/guide inclusion subject to collection fit."
+        },
+        {
+          "url": "https://www.ru.nl/en/staff/services/library/retrieving-literature-or-borrowing-materials/making-a-purchase-suggestion",
+          "observation": "Independently opened: anyone may suggest; affiliated staff/student requests prioritised; policy and budget control acceptance."
+        },
+        {
+          "url": "https://oapen.org/librarians/services-libraries",
+          "observation": "Current official page opened successfully; daily metadata formats, discovery and library integrations. Replacement for lane E legacy URL recommended."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/discovery/catalogues.md",
+          "observation": "Web open tool could not retrieve this new live route. No live-delivery success inferred from that tool response."
+        }
+      ],
+      "checks": [
+        "Read all lane E library-routes.md eligibility/holding/endorsement qualifiers.",
+        "Independently sampled two strongest external suggestion routes.",
+        "All relative links in updated catalogue guide resolve locally.",
+        "No em dash in updated catalogue guide.",
+        "No content edits outside owned catalogue guide."
+      ],
+      "limitations": [
+        "Not a fresh independent recheck of every institution in lane E.",
+        "New companion route not retrievable through web open tool in this check; parent handles live publication verification.",
+        "No library requests, support messages, accounts or catalogue submissions performed in lane A."
+      ],
+      "completed_at": "2026-11-07T11:20:49.059143+00:00",
+      "files": [
+        "site/ibol/discovery/catalogues.md"
+      ]
+    },
+    {
+      "task_id": "R11-B",
+      "round": 11,
+      "lane": "B",
+      "task": "Final interoperability review: verify published links and immutable bundle/version references in all new materials.",
+      "status": "completed",
+      "agent": "/root/interoperability_worker",
+      "outcome": "Verified official published client and search-discovery guides return HTTP200 and exactly match reviewed local bytes. Discovery landing links both. Official MCP Registry remains active at1.0.0 and published checksum still matches pinned bundle digest; release source-input validation passes.",
+      "evidence": [
+        {
+          "url": "https://www.alberttansinhon.com/ibol/discovery/ai-clients.md",
+          "observation": "HTTP200; 11,356bytes; SHA256 401efff7bb549e0734816b0e2dfb29e12643ca2676e5427bb526a474b2f57f75; byte-identical to reviewed source."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/discovery/search-discovery.md",
+          "observation": "HTTP200; 6,597bytes; SHA256 5a457bdea24f49e02fbd8d53868320363242443ac6fc6bcce10a1da86ca8cae6; byte-identical to reviewed source."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/discovery/",
+          "observation": "HTTP200; client and search-discovery links present."
+        },
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+          "observation": "HTTP200; exact name and version1.0.0; statusactive; expected package SHA256."
+        },
+        {
+          "url": "https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.0/SHA256SUMS",
+          "observation": "HTTP200; SHA256SUMS retains bundle SHA256 5a4cea2a291fb180a7818a356e15118315737f330eab5d48ce2b162774383b77."
+        }
+      ],
+      "checks": [
+        "All five public requests succeeded.",
+        "Both owned published guide byte hashes match source.",
+        "Five client sections and exact versioned release/Registry links verified.",
+        "package_mcpb.validate_request passed, preserving published release inputs.",
+        "All eleven lane B receipts are saved."
+      ],
+      "limitations": [
+        "New mirror guides await root GitHub publication; no claim that those new mirror paths are live.",
+        "Client-specific desktop/CLI installations remain unperformed.",
+        "Registry publication and documentation do not establish downstream adoption or search inclusion."
+      ],
+      "files": [
+        "site/ibol/discovery/ai-clients.md",
+        "site/ibol/discovery/search-discovery.md"
+      ]
+    },
+    {
+      "task_id": "R11-C",
+      "round": 11,
+      "lane": "C",
+      "task": "Final cross-review of lane D study activities and printable worksheet against source and teaching aims.",
+      "status": "completed",
+      "agent": "/root/teaching_worker",
+      "outcome": "Independently reviewed eight study cards,worksheet,facilitator guide and FAQ. No material source-fidelity or pedagogy error found. Confirmed card/export/fallback consistency,source pinpoints and locally resolvable activity links. No activity source edits required.",
+      "evidence": [
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=37",
+          "observation": "Pinned publisher printedpp35–36 directly reread for connecting-proposition and reconstruction cards."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+          "observation": "Printedpp40–41 previously directly read; missing-document/evidence-label cards faithfully preserve proposition-specific reasoning and legal burdens."
+        },
+        {
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+          "observation": "Printedpp48–51 directly read during this campaign; decision-authority and review-trigger cards align with bounded legal consequences."
+        }
+      ],
+      "checks": [
+        "All8cards match inlineJSON and machine-readable export exactly.",
+        "All8prompts and commentaries appear in ordinary readableHTML.",
+        "All8publisher PDF offsets equal first printed page+2.",
+        "No broken local links in study lab,worksheet or FAQ.",
+        "Worksheet authenticity assumption distinguished from truth,completeness and legal effect.",
+        "Facilitator35-minute plan totals5+10+15+5 and labels timing as planning.",
+        "FAQ preserves publication/companion rights and separates listing from adoption.",
+        "Standalone source inspected for remote requests/storage; privacy description limited to standalone activity."
+      ],
+      "limitations": [
+        "This was a source-content and pedagogy review,not a new browser interaction or assistive-technology test.",
+        "No learning improvement,adoption or institutional endorsement established.",
+        "Root reported officialSiteversion31 live; live delivery verification belongs to root and laneF,not inferred from this local source review.",
+        "Separate laneD review recommends portable librarian brief MIT notice and directCCBYlink; root notified for final integration."
+      ],
+      "completed_at": "2026-11-07T11:21:24.992351+00:00",
+      "files": [
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/study-cards.json",
+        "site/ibol/activities/worksheet.html",
+        "site/ibol/activities/facilitator.md",
+        "site/ibol/activities/faq.html"
+      ]
+    },
+    {
+      "task_id": "R11-D",
+      "round": 11,
+      "lane": "D",
+      "task": "Final cross-review of lane C adoption materials for usability and accessible structure.",
+      "status": "completed",
+      "agent": "/root/activity_worker",
+      "outcome": "Cross-reviewed the teaching pathways, adoption hub and librarian brief for clear entry routes, workload guidance, assessment instructions, semantic HTML and links. Identified missing portable licence details in the self-contained brief; root added the complete MIT source notice and direct CC BY 4.0 link, which were read back locally. A bounded direct HTTPS request returned the live adoption hub with the expected heading.",
+      "evidence": [
+        {
+          "url": "https://www.alberttansinhon.com/ibol/adoption/",
+          "observation": "Direct HTTPS returned 200 at 2026-11-07T11:21:37.022245+00:00 and contained “Bring the book into the classroom”. Web-open access separately failed; the successful direct result is the delivery evidence for this hub only."
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+          "observation": "Source review checked native link order, language, single H1 and meaningful section labels against the already-consulted guidance."
+        }
+      ],
+      "checks": [
+        "27 local HTML links/fragments and all teaching-pathway local Markdown targets resolved.",
+        "Both HTML pages have English language, one H1 and resolvable ARIA labels.",
+        "Course instructions distinguish preparation, activity, output, assessment and planning estimates.",
+        "Eight chapter ranges total 238 pages; eight 90-minute seminars total 12 hours.",
+        "Rubric weights total 100%; worked scoring example equals 75%.",
+        "Root’s complete MIT notice and direct teaching-licence link verified in librarian brief source.",
+        "Direct HTTPS adoption hub 200 with expected heading."
+      ],
+      "limitations": [
+        "Local licence fix still needs root’s final archive and deployment refresh; live hub response does not certify that later brief revision.",
+        "No screen-reader audit, print pagination or 400% zoom claim.",
+        "Markdown table presentation depends on the reader’s renderer.",
+        "Review addresses usability and structure; it is not an independent legal peer review of the book."
+      ],
+      "completed_at": "2026-11-07T11:22:10.861167+00:00",
+      "files": [
+        "site/ibol/adoption/teaching-pathways.md",
+        "site/ibol/adoption/index.html",
+        "site/ibol/adoption/librarian-brief.html"
+      ]
+    },
+    {
+      "task_id": "R11-E",
+      "round": 11,
+      "lane": "E",
+      "task": "Final cross-review of lane A catalogue recommendations and consolidate honest next-action routes.",
+      "status": "completed",
+      "agent": "/root/outreach_worker",
+      "outcome": "Read the complete catalogue guide and all ten lane A receipts; independently re-opened eight primary sources. No material factual blocker found. Recommended a concise order of next actions to root without changing frozen public files.",
+      "evidence": [
+        {
+          "url": "https://doabooks.org/en/publishers/join-doab",
+          "observation": "Official requirements confirm independent external peer review, clear licensing, no-registration access, ISBNs and publisher eligibility. Guide does not infer title acceptance."
+        },
+        {
+          "url": "https://oapen.org/publishers/services-publishers",
+          "observation": "Official page confirms discovery partnerships, automatic DOAB indexing for OAPEN-hosted OA books and Portico/CLOCKSS preservation. Guide distinguishes service-wide capabilities from this title's unconfirmed deposit."
+        },
+        {
+          "url": "https://scholar.google.com/intl/en/scholar/inclusion.html",
+          "observation": "Official text explicitly directs files above 5 MB to Google Book Search. Guide gives a relevant publisher route without claiming this title's inclusion."
+        },
+        {
+          "url": "https://help.oercommons.org/support/solutions/articles/42000046846-introduction-to-oer",
+          "observation": "Official definition excludes ND licences from OER. Guide correctly proposes an original CC BY seminar and preserves linked book's different licence."
+        },
+        {
+          "url": "https://www.rug.nl/research/ugp/policies-funding/?lang=en",
+          "observation": "UGP policy supports e-Depot, WorldCat and eligible-book DOAB expectations. Guide does not convert policy into a title-specific receipt."
+        },
+        {
+          "url": "https://help.oclc.org/Discovery_and_Reference/WorldCat-org/Information_for_authors/How_can_I_add_my_work_to_WorldCat",
+          "observation": "Official route is OCLC member-library cataloguing; public display depends on library subscriptions. Guide accurately describes institutional authority and public-discovery limits."
+        },
+        {
+          "url": "https://help.openalex.org/how-to/fixing-data-errors/",
+          "observation": "Official September 2026 guidance confirms DOI-specific correction tickets and agent-assisted verification. Missing-work reports require evidence. Guide avoids duplicate DOI creation and premature missing-work assertion."
+        },
+        {
+          "url": "https://www.rug.nl/library/education-and-research/support/pure/using-pure/add-content-to-pure/workflow-and-visibility",
+          "observation": "Official workflow confirms library validation and visibility requirements; guide distinguishes saved entries, staff-page visibility and Research Portal delivery."
+        }
+      ],
+      "checks": [
+        "Read full guide and R01-A to R10-A receipts.",
+        "Independently re-opened eight official sources on 7 November 2026.",
+        "All relative links in catalogues.md resolve; no em dashes.",
+        "No absence inferred from blocked or rate-limited searches.",
+        "No library holdings, readership, artificial citations or universal distribution claimed.",
+        "Publisher-only, member-library and account-dependent routes distinguish eligibility from permission and successful execution."
+      ],
+      "limitations": [
+        "Sampled primary-source review, not a re-run of every earlier query or endpoint.",
+        "No catalogue inclusion, institutional account permission or acceptance confirmed beyond the guide's stated evidence.",
+        "No external submission or message sent; no frozen public file modified."
+      ],
+      "files": []
+    },
+    {
+      "task_id": "R11-F",
+      "round": 11,
+      "lane": "F",
+      "task": "Post-publication verification: read back public changed files and final evidence ledger; state limits precisely.",
+      "status": "completed",
+      "agent": "verification_worker",
+      "outcome": "Six selected new official-site URLs returned HTTP200 and exact bytes from deployed version31 source a5dd7bdd. New study lab, adoption hub and FAQ expose matching extensionless/directory canonicals. Public ledger honestly shows60completed and sixround11assignments pending at this check. Published78-file classroom ZIP includes the study lab and excludes the book PDF. Final66ledger publication and GitHubmirror delivery remain root follow-up.",
+      "evidence": [
+        {
+          "url": "https://www.alberttansinhon.com/ibol/activities/study-lab",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.250402+00:00; SHA256 9fd6f617fddb9b0596487816ac0f3c1258b7f2b97350c053ff1ec09c34d8acc7; exact deployed-source bytes matched."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/adoption/",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.251164+00:00; SHA256 6e5776456806870b97940629073809a1f8a4572753032903656cfe1c4280f291; exact deployed-source bytes matched."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/activities/faq",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.251670+00:00; SHA256 31312fc2235b8e3e1001fe1a391eca8c8d3198a5815fcc690e13bcca3c053fef; exact deployed-source bytes matched."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/data/campaign-66.json",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.252088+00:00; SHA256 3c0d3eb2672a31c7d97f10f67e15313d00b1c3a4443eddfd6c7af869ad1705aa; exact deployed-source bytes matched."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/discovery/campaign",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.253829+00:00; SHA256 33e5468b6d088a44522105e8404036d3edc2a70a3b1696e46ea3002f56a4c7f0; exact deployed-source bytes matched."
+        },
+        {
+          "url": "https://www.alberttansinhon.com/ibol/downloads/IBOL_Classroom_Kit.zip",
+          "observation": "HTTP200 at 2026-11-07T11:20:32.254800+00:00; SHA256 bae6c991f9ea58784ff3bce20dd720f9d24f9e0b9d4fbc2f36b1b5994ed66054; exact deployed-source bytes matched."
+        }
+      ],
+      "checks": [
+        "Read six public destinations after nativeSite version31deployment",
+        "Matched every fetched body to source commit a5dd7bddf9b1e4ace798efbb53e6abc2f996b64d",
+        "Parsed four liveHTML canonical tags",
+        "Counted60completed/sixpending/66total with sixworkers in publicJSON; HTML count agrees",
+        "Inspected liveZIP78entries; study lab included; no PDFbundled"
+      ],
+      "limitations": [
+        "Finalround11receipts were necessarily pending in the inspected version31snapshot; root must assemble/redeploy66completion ledger after collecting these receipts.",
+        "NewGitHubmirror resources were awaiting PRpublication at this check.",
+        "HTTPsuccess proves these deliveries, not searchindexing, libraryholding, hostinstallation or readership.",
+        "No newbrowserGUI or assistive-technology test performed in this assignment."
+      ],
+      "files": [
+        "site/ibol/activities/study-lab.html",
+        "site/ibol/activities/faq.html",
+        "site/ibol/adoption/index.html",
+        "site/ibol/data/campaign-66.json",
+        "site/ibol/discovery/campaign.html",
+        "site/ibol/downloads/IBOL_Classroom_Kit.zip"
+      ]
+    }
+  ]
+}

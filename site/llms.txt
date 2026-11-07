@@ -14,6 +14,9 @@
 - [Eight seminar plans](https://albertito-ai.github.io/Albertito-AI/ibol/teaching-guide.md): reading, fictional exercises, facilitator commentary and source references.
 - [Library adoption packet](https://albertito-ai.github.io/Albertito-AI/ibol/library-kit.md): scope, identifiers, rights and importable citation formats.
 - [Agent integration guide](https://albertito-ai.github.io/Albertito-AI/ibol/agents.md): a local command-line interface and six read-only MCP tools, including optional verified book-text retrieval.
+- [Course adoption resources](https://albertito-ai.github.io/Albertito-AI/ibol/adoption/index.html): course pathways, original assessment and a library brief.
+- [Offline study lab](https://albertito-ai.github.io/Albertito-AI/ibol/activities/study-lab.html): eight source-linked recall cards.
+- [Library and AI discovery](https://albertito-ai.github.io/Albertito-AI/ibol/discovery/index.html): catalogue routes, eligibility and client setup.
 - [Classroom kit](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip): downloadable activities, guides, lecture and interface code.
 - [Rights and attribution](https://albertito-ai.github.io/Albertito-AI/ibol/RIGHTS.md): the book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT.
 - [Verification record](https://albertito-ai.github.io/Albertito-AI/ibol/VERIFICATION.md): tested behaviour, source checks, publication receipts and limits.

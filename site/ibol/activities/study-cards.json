@@ -1,0 +1,161 @@
+{
+  "format_version": 1,
+  "resource_type": "original-companion-flashcards",
+  "title": "Evidence and inference study lab",
+  "language": "en",
+  "created": "2026-11-07",
+  "url": "https://www.alberttansinhon.com/ibol/activities/study-lab.html",
+  "creator": "Albert Tan Sin Hon",
+  "attribution": "IBOL Open Learning Companion, Albert Tan Sin Hon, 2026, CC BY 4.0, https://www.alberttansinhon.com/ibol/",
+  "licence": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "identifier": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "scope": "Original companion prompts and commentary only. Identify adaptations. This export does not include the book or third-party excerpts."
+  },
+  "provenance": {
+    "prepared_with_ai_assistance": true,
+    "commissioned_by": "Albert Tan Sin Hon",
+    "publisher_reviewed": false,
+    "content_relationship": "Original educational prompts and commentary referring to the published book; not a replacement edition."
+  },
+  "source_book": {
+    "title": "Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface",
+    "author": "Albert Tan Sin Hon",
+    "publisher": "University of Groningen Press",
+    "publication_date": "2026-11-06",
+    "doi": "10.21827/6ac3948159a9e",
+    "catalogue_url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+    "pdf_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+    "licence": "CC BY-NC-ND 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "legal_cutoff": "2026-08-01",
+    "inspected_pdf_sha256": "5880c476d82151f6030865e452f7bd4bec6e597e9664ecadf96b32355a6559d5",
+    "printed_page_to_pdf_offset": 2,
+    "pagination_scope": "Applies to the pinned publisher PDF. A replacement PDF may change pagination."
+  },
+  "use": {
+    "purpose": "Formative retrieval practice and source discussion",
+    "all_scenarios_fictional": true,
+    "score": "None",
+    "timing": "Self-paced",
+    "current_law_verified": false,
+    "interpretation": "An unresolved proposition may warrant a qualified conclusion. Commentary does not establish facts about real transactions."
+  },
+  "card_fields": {
+    "id": "Stable card identifier",
+    "title": "Short learning focus",
+    "question": "Original learner prompt",
+    "answer": "Original formative commentary",
+    "pages": "Inclusive printed source-page bounds",
+    "sections": "Source section reference and any additional reading",
+    "source_url": "Publisher PDF link with physical page anchor",
+    "source_label": "Human-readable source reference"
+  },
+  "cards": [
+    {
+      "id": "record-purpose",
+      "title": "Choose the record",
+      "question": "A bank statement shows a payment into a company account. What can you record immediately, and which legal conclusion still needs its own basis?",
+      "answer": "Record the dated amount, channel and destination in the value-movement record. Record the document and its holder separately. Ownership, beneficial entitlement and authority over the account still require the relevant instruments, facts and governing rules. The statement may support those inquiries without deciding them by itself.",
+      "pages": [
+        36,
+        37
+      ],
+      "sections": "1.4",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=38",
+      "source_label": "Chapter 1, printed pp. 36–37; section 1.4"
+    },
+    {
+      "id": "material-date",
+      "title": "Fix the date",
+      "question": "A lender released security last month. A report says the policy currently secures the facility because it did so at drawdown. What must the report revisit?",
+      "answer": "Check the dated release, the debt position and the rights that survive. Historical collateral support and a present security interest are different propositions. The opinion should identify its assessment date and the effect that the proved release has under the applicable instruments and law.",
+      "pages": [
+        37,
+        38
+      ],
+      "sections": "1.4",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=39",
+      "source_label": "Chapter 1, printed pp. 37–38; section 1.4"
+    },
+    {
+      "id": "component-state",
+      "title": "Specify effectiveness",
+      "question": "An assignment binds its signatories, but a competing claimant is alleged. Is calling the assignment “valid” enough to state the risk?",
+      "answer": "Separate formation, scope and effect between the parties from third-party effect, priority and enforcement. Identify the competing right, material dates and any notice or registration question. The record may support one dimension while leaving another unresolved.",
+      "pages": [
+        38,
+        40
+      ],
+      "sections": "1.5",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=40",
+      "source_label": "Chapter 1, printed pp. 38–40; section 1.5"
+    },
+    {
+      "id": "connecting-proposition",
+      "title": "State the connection",
+      "question": "A premium funded a policy, and the policy later supported a company loan. How would you test a claim that the premium payer therefore owns the proceeds?",
+      "answer": "Identify the distinct assets and persons, the alleged connecting act and the evidence supporting or contradicting the claim. Specify the proprietary, contractual, trust, agency or other rule relied on. Economic sequence alone does not supply that missing legal premise.",
+      "pages": [
+        35,
+        36
+      ],
+      "sections": "1.3; see also 1.6, pp. 40–41",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=37",
+      "source_label": "Chapter 1, printed pp. 35–36; section 1.3; see also 1.6, pp. 40–41"
+    },
+    {
+      "id": "missing-document",
+      "title": "Treat the gap honestly",
+      "question": "An account mandate is missing. May an adviser treat its absence alone as proof that a person secretly controlled the account?",
+      "answer": "Identify the proposition left unresolved, who may hold the mandate and any lawful route to obtain it. Assess other available evidence. An adverse inference needs its own lawful basis; missing material alone does not turn speculation into proof or displace the applicable burden.",
+      "pages": [
+        40,
+        41
+      ],
+      "sections": "1.6",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=42",
+      "source_label": "Chapter 1, printed pp. 40–41; section 1.6"
+    },
+    {
+      "id": "evidence-label",
+      "title": "Calibrate the conclusion",
+      "question": "Two responsible explanations remain possible because a necessary document is absent. Which evidence label fits, and what does the label change?",
+      "answer": "“Open” describes the unresolved proposition on those facts. State the missing record and any competing explanation. The book’s professional evidence labels calibrate advice; they do not amend a statutory burden, evidential presumption or tribunal standard.",
+      "pages": [
+        41,
+        41
+      ],
+      "sections": "1.6",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=43",
+      "source_label": "Chapter 1, printed p. 41; section 1.6"
+    },
+    {
+      "id": "decision-authority",
+      "title": "Name the decision-maker",
+      "question": "A file raises a concern and a proposed remedy. What must connect the concern to an operative legal consequence?",
+      "answer": "Identify the source of the right, duty or power; the relevant actor and capacity; required elements; scope and date; competent decision-maker; and required procedure. State the precise consequence the rule permits. Investigation, finding, election and remedy may occur at different stages.",
+      "pages": [
+        48,
+        49
+      ],
+      "sections": "1.7–1.8",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=50",
+      "source_label": "Chapter 1, printed pp. 48–49; section 1.7–1.8"
+    },
+    {
+      "id": "review-trigger",
+      "title": "Close with a reason",
+      "question": "An opinion cannot resolve an asserted connection on the present file. What makes its stopping point useful to the next reviewer?",
+      "answer": "State whether the obstacle is factual, legal, procedural, territorial or institutional, and tie the conclusion to the available record and date. Name a specific review trigger, such as production of the mandate or a proved release. An unproved proposition should remain described as unproved.",
+      "pages": [
+        50,
+        51
+      ],
+      "sections": "1.8–1.9",
+      "source_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=52",
+      "source_label": "Chapter 1, printed pp. 50–51; section 1.8–1.9"
+    }
+  ]
+}

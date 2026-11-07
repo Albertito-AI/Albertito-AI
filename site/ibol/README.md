@@ -14,6 +14,10 @@ This companion supports *Insurance-Backed Offshore Liquidity: Financial Law, Tru
 
 The classroom ZIP includes the site and executable agent source in `scripts/`. Open its `index.html` in a browser. Online links, publisher downloads and copying through the clipboard may depend on your browser and connection. Most teaching activities remain usable offline.
 
+## Course adoption and discovery
+
+Use the [teaching pathways](adoption/teaching-pathways.md), [offline study lab](activities/study-lab.html), [printable worksheet](activities/worksheet.html) and [library brief](adoption/librarian-brief.html). The [discovery hub](discovery/index.html) links to verified catalogue routes, library recommendation eligibility, AI client setup and the dated campaign evidence ledger.
+
 ## Maintain it
 
 The source content is in `data/`. Run `python scripts/ibol/build.py` **from the parent GitHub repository** to regenerate Markdown, metadata, `content.js` and the download. This build program is intentionally not included in the classroom ZIP. Review source references and licences before changing content. See [verification](VERIFICATION.md).

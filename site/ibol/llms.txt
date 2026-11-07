@@ -14,6 +14,9 @@ Published 6 November 2026 by University of Groningen Press. DOI: 10.21827/6ac394
 - [Practice question bank](https://www.alberttansinhon.com/ibol/data/quiz.json)
 - [Fictional evidence cases](https://www.alberttansinhon.com/ibol/data/cases.json)
 - [Library adoption packet](https://www.alberttansinhon.com/ibol/library-kit.md)
+- [Course pathways and adoption](https://www.alberttansinhon.com/ibol/adoption/)
+- [Offline study lab](https://www.alberttansinhon.com/ibol/activities/study-lab.html)
+- [Library and AI discovery guides](https://www.alberttansinhon.com/ibol/discovery/)
 
 ## Agent access
 - [GitHub Pages mirror](https://albertito-ai.github.io/Albertito-AI/ibol/)
