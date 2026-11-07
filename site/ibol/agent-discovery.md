@@ -21,24 +21,10 @@ Useful requests include:
 
 Keep the book’s legal cut-off of 1 August 2026, provenance and separate reuse terms with the result. The source-linked material helps answer relevant research and teaching questions. A public page or manifest does not itself establish that a model has indexed, installed or recommended it.
 
-## A concrete directory route
+## Client setup and discovery evidence
 
-The [official MCP Registry](https://modelcontextprotocol.io/registry/about) holds server metadata for discovery by downstream aggregators. It points to installable packages or accessible remote servers. Its documentation describes the service as a preview. Inclusion is a discoverability step; each downstream service retains its own selection and presentation.
+The [client guide](discovery/ai-clients.md) gives documentation-verified setup routes for Claude Desktop, VS Code, Cursor, Goose and Gemini CLI. It records exact runtime checks separately from untested application installation. The existing Registry listing points to the checksum-pinned version 1.0.0 release; GitHub's separate immutable-release setting was reported as disabled on 7 November 2026.
 
-The existing classroom ZIP is a portable teaching kit, not a declared MCP bundle. The existing `agent-manifest.json` is a companion navigation file, not the Registry’s `server.json`. A registry submission therefore needs a tested distribution format and authenticated namespace before publication.
+The [search guide](discovery/search-discovery.md) explains ordinary search and AI retrieval requirements. The [catalogue guide](discovery/catalogues.md) and [library routes](discovery/library-routes.md) identify eligible academic discovery paths. The [campaign ledger](discovery/campaign.html) records the work and its limits.
 
-| Route | Additional implementation and evidence |
-| --- | --- |
-| MCP bundle on a GitHub Release | Build a valid `.mcpb` containing the server, required runtime dependencies and `manifest.json`; test installation in a named supporting host; publish a versioned release asset; record its SHA-256. |
-| Python package on PyPI | Build and test an installable package including companion data, publish it under an owned PyPI name, and add the Registry’s required ownership marker to its package description. |
-| Public remote server | Deploy and test a real MCP endpoint supporting Streamable HTTP. Static HTML, JSON files and a local stdio command do not supply that endpoint. |
-
-The [supported-package documentation](https://modelcontextprotocol.io/registry/package-types) expressly accepts MCPB assets on GitHub or GitLab Releases. For that route, `server.json` uses `registryType: mcpb`, the release download URL, `fileSha256` and stdio transport. An additional npm or PyPI account is not inherent to this option. The [MCPB specification](https://github.com/modelcontextprotocol/mcpb/blob/main/MANIFEST.md) defines the separate bundle manifest and launch configuration. Dependency packaging and actual host installation still need verification.
-
-## Publishing and verifying a registry entry
-
-Prepare a schema-valid `server.json` identifying the real release and an owned namespace. [Namespace authentication](https://modelcontextprotocol.io/registry/authentication) supports GitHub or domain ownership. The [GitHub Actions guide](https://modelcontextprotocol.io/registry/github-actions) documents OIDC authentication with `id-token: write` and no dedicated stored secret. That requires an explicitly configured publishing workflow; access to the source repository alone does not mean the registry entry exists.
-
-The [publisher CLI](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/cli/commands.md) can validate metadata before publishing. Pin and verify the publisher executable, publish the tested release, then read back the exact server name, version, package URL and checksum from the Registry. Record a downstream listing only after inspecting its actual entry. The Registry’s [own repository](https://github.com/modelcontextprotocol/registry) states that adding a file or opening a pull request there does not publish a server.
-
-A concrete MCPB 0.4 release configuration and reviewed-request workflow are now prepared under [`mcp/ibol`](https://github.com/Albertito-AI/Albertito-AI/tree/main/mcp/ibol). Seven package and release-boundary tests passed, including the extracted bundle launched through its frozen UV command and the official MCP client. The official MCPB CLI validated its manifest, and the official Registry publisher validated its `server.json`. Publication and Registry acceptance require separate successful receipts from the release workflow. Desktop GUI installation remains untested. Current operating instructions and observed interface tests remain in [the agent guide](agents.md) and [verification record](VERIFICATION.md).
+The Registry stores metadata for downstream discovery. Its [package documentation](https://modelcontextprotocol.io/registry/package-types) explains MCPB distribution, and its [authentication guide](https://modelcontextprotocol.io/registry/authentication) explains namespace ownership. The live IBOL record and publication receipt above establish this specific registration. Other directory listings and independent use require their own evidence.

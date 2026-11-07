@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-07",
+  "official_indexnow_retry": {
+    "observed_at_utc": "2026-11-07T11:04:18.804770+00:00",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "host": "www.alberttansinhon.com",
+    "urls": [
+      "https://www.alberttansinhon.com/ibol/",
+      "https://www.alberttansinhon.com/ibol/slides.html",
+      "https://www.alberttansinhon.com/ibol/lessons/01.html",
+      "https://www.alberttansinhon.com/ibol/lessons/02.html",
+      "https://www.alberttansinhon.com/ibol/lessons/03.html",
+      "https://www.alberttansinhon.com/ibol/lessons/04.html",
+      "https://www.alberttansinhon.com/ibol/lessons/05.html",
+      "https://www.alberttansinhon.com/ibol/lessons/06.html",
+      "https://www.alberttansinhon.com/ibol/lessons/07.html",
+      "https://www.alberttansinhon.com/ibol/lessons/08.html"
+    ],
+    "payload_sha256": "385fa1dde9de00e45ea5eb4d39ef91f7240c0072dda484f6700fa0a666bdc983",
+    "submitted": false,
+    "received": false,
+    "meaning": "No evidence of crawling, indexing, ranking or readership.",
+    "state": "proof_unverified",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "scope": "One recheck after the public hub became accessible to a verification client. Ownership proof still failed; no notification was sent. Earlier mirror receipt remains separately recorded.",
+  "phase1_site_publication": {
+    "version": 31,
+    "source_commit": "a5dd7bddf9b1e4ace798efbb53e6abc2f996b64d",
+    "status": "succeeded",
+    "site_url": "https://www.alberttansinhon.com/ibol/",
+    "provider_url": "https://albertito.travelingbert.chatgpt.site",
+    "deployment_id": "appgdep_6aef0929d1c88191b5cb6094b25be13f",
+    "observed_at": "2026-11-07T11:19:25.029680+00:00",
+    "scope": "First publication of expanded resources with 60 completed assignments and six final reviews pending."
+  }
+}

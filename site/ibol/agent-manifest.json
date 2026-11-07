@@ -19,7 +19,13 @@
     "reading_guide": "https://www.alberttansinhon.com/ibol/teaching-guide.md",
     "citation": "https://www.alberttansinhon.com/ibol/metadata/book.csl.json",
     "rights": "https://www.alberttansinhon.com/ibol/RIGHTS.md",
-    "agent_guide": "https://www.alberttansinhon.com/ibol/agents.md"
+    "agent_guide": "https://www.alberttansinhon.com/ibol/agents.md",
+    "course_pathways": "https://www.alberttansinhon.com/ibol/adoption/teaching-pathways.md",
+    "study_lab": "https://www.alberttansinhon.com/ibol/activities/study-lab.html",
+    "printable_worksheet": "https://www.alberttansinhon.com/ibol/activities/worksheet.html",
+    "library_routes": "https://www.alberttansinhon.com/ibol/discovery/library-routes.md",
+    "client_setup": "https://www.alberttansinhon.com/ibol/discovery/ai-clients.md",
+    "campaign_evidence": "https://www.alberttansinhon.com/ibol/data/campaign-66.json"
   },
   "mcp": {
     "registry_record": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
