@@ -1,0 +1,38 @@
+{
+  "targets": {
+    "official": {
+      "host": "www.alberttansinhon.com",
+      "key": "8244236dbe83400f8514827d5ad213e6",
+      "keyLocation": "https://www.alberttansinhon.com/8244236dbe83400f8514827d5ad213e6.txt",
+      "urlList": [
+        "https://www.alberttansinhon.com/ibol/",
+        "https://www.alberttansinhon.com/ibol/slides.html",
+        "https://www.alberttansinhon.com/ibol/lessons/01.html",
+        "https://www.alberttansinhon.com/ibol/lessons/02.html",
+        "https://www.alberttansinhon.com/ibol/lessons/03.html",
+        "https://www.alberttansinhon.com/ibol/lessons/04.html",
+        "https://www.alberttansinhon.com/ibol/lessons/05.html",
+        "https://www.alberttansinhon.com/ibol/lessons/06.html",
+        "https://www.alberttansinhon.com/ibol/lessons/07.html",
+        "https://www.alberttansinhon.com/ibol/lessons/08.html"
+      ]
+    },
+    "github": {
+      "host": "albertito-ai.github.io",
+      "key": "e91a01a659084fc8855aa6b973624151",
+      "keyLocation": "https://albertito-ai.github.io/Albertito-AI/e91a01a659084fc8855aa6b973624151.txt",
+      "urlList": [
+        "https://albertito-ai.github.io/Albertito-AI/ibol/",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/slides.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/01.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/02.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/03.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/04.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/05.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/06.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/07.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/08.html"
+      ]
+    }
+  }
+}

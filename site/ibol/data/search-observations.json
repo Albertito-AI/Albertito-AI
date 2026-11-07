@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-07T10:02:21.438735+00:00",
+  "display_timezone": "Asia/Singapore",
+  "book": {
+    "title": "Insurance-Backed Offshore Liquidity",
+    "doi": "10.21827/6ac3948159a9e",
+    "isbn_epdf": "9789403431925",
+    "isbn_print": "9789403431918",
+    "author": "Albert Tan Sin Hon"
+  },
+  "purpose": "A bounded, read-only check of additional discovery routes after the companion release. No records, messages or accounts were created.",
+  "prior_verified_records": {
+    "source_record": "distribution-status.json",
+    "services": [
+      "University of Groningen Press",
+      "DOI resolution",
+      "Crossref",
+      "ORCID",
+      "Website and GitHub companion"
+    ],
+    "method": "Carried forward from the existing dated verification record; those successful calls were not repeated in this pass.",
+    "already_limited_routes": [
+      "DOAB",
+      "OAPEN",
+      "Thoth downstream distribution",
+      "University of Groningen research portal"
+    ]
+  },
+  "observations": [
+    {
+      "service": "OpenAlex DOI",
+      "request_url": "https://api.openalex.org/works/https://doi.org/10.21827/6ac3948159a9e",
+      "observed_at": "2026-11-07T10:00:31.010576+00:00",
+      "http_status": 404,
+      "status": "not_returned_by_lookup",
+      "finding": "No record was returned at this exact identifier lookup URL.",
+      "limitation": "This single identifier lookup does not establish absence under other identifiers or from the complete catalogue."
+    },
+    {
+      "service": "OpenAlex exact DOI filter",
+      "request_url": "https://api.openalex.org/works?filter=doi:10.21827%2F6ac3948159a9e",
+      "observed_at": "2026-11-07T10:00:31.011394+00:00",
+      "http_status": 429,
+      "status": "unconfirmed",
+      "finding": "The request was rate-limited. Catalogue inclusion was not assessed from this response.",
+      "limitation": "Quota or shared-budget exhaustion does not establish absence from the service."
+    },
+    {
+      "service": "Google Books ePDF ISBN",
+      "request_url": "https://www.googleapis.com/books/v1/volumes?q=isbn:9789403431925",
+      "observed_at": "2026-11-07T10:00:31.012024+00:00",
+      "http_status": 429,
+      "status": "unconfirmed",
+      "finding": "The request was rate-limited. Catalogue inclusion was not assessed from this response.",
+      "limitation": "Quota or shared-budget exhaustion does not establish absence from the service."
+    },
+    {
+      "service": "Google Books print ISBN",
+      "request_url": "https://www.googleapis.com/books/v1/volumes?q=isbn:9789403431918",
+      "observed_at": "2026-11-07T10:00:31.012488+00:00",
+      "http_status": 429,
+      "status": "unconfirmed",
+      "finding": "The request was rate-limited. Catalogue inclusion was not assessed from this response.",
+      "limitation": "Quota or shared-budget exhaustion does not establish absence from the service."
+    },
+    {
+      "service": "OpenLibrary ePDF ISBN",
+      "request_url": "https://openlibrary.org/isbn/9789403431925.json",
+      "observed_at": "2026-11-07T10:00:37.926356+00:00",
+      "http_status": 404,
+      "status": "not_returned_by_lookup",
+      "finding": "No record was returned at this exact identifier lookup URL.",
+      "limitation": "This single identifier lookup does not establish absence under other identifiers or from the complete catalogue."
+    },
+    {
+      "service": "OpenLibrary print ISBN",
+      "request_url": "https://openlibrary.org/isbn/9789403431918.json",
+      "observed_at": "2026-11-07T10:00:38.011345+00:00",
+      "http_status": 404,
+      "status": "not_returned_by_lookup",
+      "finding": "No record was returned at this exact identifier lookup URL.",
+      "limitation": "This single identifier lookup does not establish absence under other identifiers or from the complete catalogue."
+    },
+    {
+      "service": "Open Library title",
+      "request_url": "https://openlibrary.org/search.json?title=Insurance-Backed%20Offshore%20Liquidity&limit=5",
+      "observed_at": "2026-11-07T10:01:20.320075+00:00",
+      "http_status": 200,
+      "final_url": "https://openlibrary.org/search.json?title=Insurance-Backed%20Offshore%20Liquidity&limit=5",
+      "status": "no_match_for_query",
+      "result_count": 0,
+      "result_count_reported_exact": true,
+      "finding": "The specified title query returned no matching records.",
+      "limitation": "This is one title query. Author variants and alternate titles still require review before creating a record."
+    },
+    {
+      "service": "WorldCat title",
+      "request_url": "https://search.worldcat.org/search?q=ti%3AInsurance-Backed%20Offshore%20Liquidity",
+      "observed_at": "2026-11-07T10:01:20.320778+00:00",
+      "http_status": 403,
+      "status": "unconfirmed",
+      "finding": "The command-line request was rejected with HTTP 403 and response body error code 1010.",
+      "limitation": "No catalogue record or holding could be assessed from this response. No attempt was made to evade the restriction."
+    },
+    {
+      "service": "University SmartCat ISBN",
+      "request_url": "https://rug.on.worldcat.org/search?queryString=9789403431925",
+      "observed_at": "2026-11-07T10:01:20.321236+00:00",
+      "http_status": 403,
+      "status": "unconfirmed",
+      "finding": "The command-line request was rejected with HTTP 403 and response body error code 1010.",
+      "limitation": "No catalogue record or holding could be assessed from this response. No attempt was made to evade the restriction."
+    }
+  ],
+  "web_search_batches": [
+    {
+      "engine": "system2",
+      "queries": [
+        "\"Insurance-Backed Offshore Liquidity\"",
+        "\"10.21827/6ac3948159a9e\"",
+        "\"9789403431925\" OR \"9789403431918\""
+      ],
+      "result": "No matching book record was established from the returned results. Results included the separate SSRN essay, related commentary and irrelevant items."
+    },
+    {
+      "engine": "system1",
+      "queries": [
+        "\"Insurance-Backed Offshore Liquidity\" \"Groningen\"",
+        "\"9789403431925\"",
+        "\"9789403431918\"",
+        "\"10.21827/6ac3948159a9e\""
+      ],
+      "result": "No matching book record was established from the returned results."
+    },
+    {
+      "engine": "system1",
+      "queries": [
+        "\"Insurance-Backed Offshore Liquidity\" site:search.worldcat.org",
+        "\"Insurance-Backed Offshore Liquidity\" site:books.google.com",
+        "\"Insurance-Backed Offshore Liquidity\" site:openalex.org",
+        "\"Insurance-Backed Offshore Liquidity\" site:research.rug.nl"
+      ],
+      "result": "The returned results did not establish a title record on the requested services; several were outside those domains."
+    },
+    {
+      "engine": "system2",
+      "queries": [
+        {
+          "q": "Insurance-Backed Offshore Liquidity",
+          "domains": [
+            "search.worldcat.org",
+            "research.rug.nl",
+            "books.google.com",
+            "openalex.org"
+          ]
+        }
+      ],
+      "result": "Returned results did not establish an exact book match."
+    }
+  ],
+  "false_positive_to_exclude": {
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7245681",
+    "title": "After the Offshore Trust Turn - How China's 2026 Legal Changes Will Affect Insurance-Backed Offshore Liquidity",
+    "doi": "10.2139/ssrn.7245681",
+    "reason": "A separate 11-page essay, not the University of Groningen Press book. Its indexing, mentions and statistics must not be counted as book indexing, citations or readership."
+  },
+  "additional_legitimate_routes": [
+    {
+      "service": "Open Library",
+      "status": "proposed_only",
+      "documentation_url": "https://openlibrary.org/tour/books",
+      "action": "Review author variants and existing editions, then use the standard Add a Book workflow if no record exists. Enter edition-specific metadata from the publisher.",
+      "access_required": "A suitable existing Open Library account for an actual edit.",
+      "scope": "Catalogue metadata only; this does not require mirroring or relicensing the book."
+    },
+    {
+      "service": "OpenAlex",
+      "status": "proposed_only",
+      "documentation_url": "https://help.openalex.org/how-to/fixing-data-errors/",
+      "action": "If a missing work is confirmed after an adequate check, submit one evidence-backed ticket with DOI and publisher URL. Correct publisher metadata at Crossref through the depositor.",
+      "submission_url": "https://openalex.org/contact",
+      "scope": "The support route is documented; no ticket was submitted and no ingestion is promised."
+    },
+    {
+      "service": "Google Books",
+      "status": "proposed_only",
+      "documentation_url": "https://support.google.com/books/partner/answer/3289675?hl=en",
+      "action": "Ask the publisher whether its Partner Center distribution already covers this title before considering a separate authorised upload.",
+      "access_required": "An authorised Partner Center account and an adequate rights basis.",
+      "scope": "The documented submission route is not evidence this book has been submitted or indexed."
+    }
+  ],
+  "external_actions": {
+    "messages_sent": 0,
+    "catalogue_records_created": 0,
+    "tickets_submitted": 0,
+    "accounts_created": 0
+  },
+  "limits": [
+    "General web search results are incomplete and volatile.",
+    "A failed request, unmatched query or identifier lookup does not establish complete absence from a service.",
+    "A catalogue record would establish metadata availability, not a local holding, reading, citation or course adoption.",
+    "This record contains no claim that queries improve rankings or insert the book into a search algorithm."
+  ]
+}

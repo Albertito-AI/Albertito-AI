@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This project sitemap lists the Research Lab at its preferred public URL.
+     The root page redirects there. The IBOL mirror points to the author's
+     official-domain canonical, which belongs in that domain's own sitemap. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://albertito-ai.github.io/Albertito-AI/lab/</loc>
+  </url>
+</urlset>

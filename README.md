@@ -21,7 +21,7 @@ My open-access book, *Insurance-Backed Offshore Liquidity: Financial Law, Trust 
 
 [**Explore the open learning companion**](https://www.alberttansinhon.com/ibol/) · [Eight seminar plans](site/ibol/teaching-guide.md) · [Lecture and evidence games](https://www.alberttansinhon.com/ibol/#play) · [Library packet](site/ibol/library-kit.md) · [Connect an agent](site/ibol/agents.md)
 
-The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
+The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). [Share the book](site/ibol/share.md) · [Project discovery links](https://albertito-ai.github.io/Albertito-AI/llms.txt) · [Sitemap](https://albertito-ai.github.io/Albertito-AI/sitemap.xml). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
 
 ## Help an agent reach a verified outcome
 

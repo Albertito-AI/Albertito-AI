@@ -1,0 +1,66 @@
+{
+  "manifest_version": "0.4",
+  "name": "ibol-open-learning",
+  "display_name": "IBOL Open Learning: Albert Tan Sin Hon",
+  "version": "1.0.0",
+  "description": "Read-only citation, lesson and question tools for Insurance-Backed Offshore Liquidity.",
+  "long_description": "An author-commissioned companion to the University of Groningen Press open-access book. Guide search covers original teaching materials. Full-book search requires a separately downloaded, checksum-verified local publisher-PDF cache. The book legal cut-off is 1 August 2026. No account or API key is required. Uses the UV runtime to install locked Python dependencies; no universal desktop-host compatibility is claimed.",
+  "author": {
+    "name": "Albert Tan Sin Hon",
+    "url": "https://www.alberttansinhon.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Albertito-AI/Albertito-AI"
+  },
+  "homepage": "https://www.alberttansinhon.com/ibol/",
+  "documentation": "https://github.com/Albertito-AI/Albertito-AI/blob/main/site/ibol/agents.md",
+  "server": {
+    "type": "uv",
+    "entry_point": "scripts/mcp_server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--frozen",
+        "--directory",
+        "${__dirname}",
+        "scripts/mcp_server.py"
+      ]
+    }
+  },
+  "compatibility": {
+    "runtimes": {
+      "python": ">=3.12 <3.13"
+    }
+  },
+  "keywords": [
+    "law",
+    "legal-education",
+    "insurance",
+    "trusts",
+    "Hong-Kong",
+    "open-access"
+  ],
+  "license": "MIT AND CC-BY-4.0",
+  "tools": [
+    {
+      "name": "get_book_metadata"
+    },
+    {
+      "name": "get_citation"
+    },
+    {
+      "name": "search_guides"
+    },
+    {
+      "name": "get_lesson"
+    },
+    {
+      "name": "get_practice_questions"
+    },
+    {
+      "name": "search_book_text"
+    }
+  ]
+}
