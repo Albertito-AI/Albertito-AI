@@ -25,6 +25,38 @@ def write(path, content):
 def dump(path, obj):
     write(path, json.dumps(obj, ensure_ascii=False, indent=2) + '\n')
 
+def lesson_page(lesson):
+    esc = html.escape
+    number = lesson['id']
+    canonical = BASE + f'lessons/{number:02d}.html'
+    title = lesson['title'] + ' | IBOL seminar | Albert Tan Sin Hon'
+    goals = ''.join('<li>' + esc(goal) + '</li>' for goal in lesson['goals'])
+    plan = ''.join(f"<li><strong>{step['minutes']} minutes:</strong> {esc(step['activity'])}</li>" for step in lesson['plan'])
+    sections = ''.join('<section><h2>' + label + '</h2><p>' + esc(lesson[key]) + '</p></section>' for label, key in [
+        ('Reading guide', 'guide'), ('Fictional classroom exercise', 'exercise'),
+        ('Facilitator commentary', 'answer'), ('Challenge for discussion', 'challenge'), ('Exit task', 'exit')])
+    schema = {'@context': 'https://schema.org', '@type': 'LearningResource', 'name': lesson['title'],
+              'url': canonical, 'learningResourceType': 'Seminar plan', 'educationalLevel': 'Postgraduate',
+              'timeRequired': 'PT90M', 'inLanguage': 'en', 'license': 'https://creativecommons.org/licenses/by/4.0/',
+              'isBasedOn': {'@type': 'Book', '@id': 'https://doi.org/' + DOI, 'name': TITLE,
+                            'author': {'@type': 'Person', 'name': 'Albert Tan Sin Hon'}}}
+    return f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{esc(title)}</title><meta name="description" content="{esc(lesson['guide'][:170], quote=True)}">
+<link rel="canonical" href="{canonical}"><link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('<', chr(92)+'u003c')}</script>
+</head><body><a class="skip" href="#main">Skip to seminar</a>
+<header><a class="brand" href="../index.html">IBOL <span>OPEN LEARNING</span></a><nav aria-label="Seminar navigation"><a href="../index.html#teach">All seminars</a><a href="{PUBLISHER}">Read the book</a></nav></header>
+<main id="main"><section><p class="eyebrow">CHAPTER {number} · 90-MINUTE SEMINAR</p><h1>{esc(lesson['title'])}</h1>
+<p>Companion to Albert Tan Sin Hon, <em>Insurance-Backed Offshore Liquidity</em> (University of Groningen Press, 2026).</p>
+<p>Reading: Chapter {number}, printed pp. {lesson['pages'][0]}–{lesson['pages'][1]}; {esc(lesson['sections'])}. <a href="{PDF}#page={lesson['pages'][0]+2}">Open the published source</a>.</p>
+<p>Book legal cut-off: 1 August 2026. This seminar explains the edition and does not verify subsequent law.</p>
+<h2>Learning goals</h2><ul>{goals}</ul><h2>90-minute seminar</h2><ol>{plan}</ol></section>{sections}
+<section><h2>Source and reuse</h2><p>Book DOI: <a href="https://doi.org/{DOI}">{DOI}</a>. Book licence: CC BY-NC-ND 4.0. Original companion teaching material: CC BY 4.0.</p>
+<p>This fictional exercise is an AI-assisted teaching supplement commissioned by the author, separately prepared and not publisher-reviewed. Check current primary sources before applying law to a real matter.</p>
+<p><a href="{number:02d}.md">Markdown version</a> · <a href="../RIGHTS.md">Rights and attribution</a> · <a href="../VERIFICATION.md">Verification</a></p></section></main>
+<footer><a href="../index.html">Return to the open learning companion</a></footer></body></html>'''
+
 def main():
     book = json.loads((SITE/'data/book.json').read_text())
     lessons = json.loads((SITE/'data/lessons.json').read_text())
@@ -89,6 +121,7 @@ preferred-citation:
         md+='\n'.join(f"- **{s['minutes']} minutes:** {s['activity']}" for s in l['plan'])
         md+='\n\n## Constructed exercise\n\n'+l['exercise']+'\n\n## Facilitator commentary\n\n'+l['answer']+'\n\n## Challenge for discussion\n\n'+l['challenge']+'\n\n## Exit task\n\n'+l['exit']+'\n\nTeaching material: CC BY 4.0. The published book retains CC BY-NC-ND 4.0. AI-assisted material commissioned by the author, separately prepared and not publisher-reviewed.\n'
         write(f"lessons/{l['id']:02d}.md",md);all_lessons.append(md)
+        write(f"lessons/{l['id']:02d}.html", lesson_page(l))
     write('teaching-guide.md','# IBOL teaching guide\n\nEight 90-minute seminars. Each lesson can also be used independently. The exercises are fictional and assess legal reasoning, not actual transaction legality.\n\n'+'\n\n---\n\n'.join(all_lessons))
     qmd='# Open practice questions and explanations\n\nThese are public formative exercises, not confidential examination materials. Answer order is varied. References use the published edition’s printed page numbers.\n\n'
     for q in quiz:
@@ -128,7 +161,7 @@ Published 6 November 2026 by University of Groningen Press. DOI: {DOI}. The book
             info=zipfile.ZipInfo('IBOL_Classroom_Kit/'+str(p.relative_to(SITE)),(2026,11,7,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,p.read_bytes())
         for p in sorted((ROOT/'scripts/ibol').iterdir()):
-            if not p.is_file() or p.name=='build.py' or p.name.startswith('test_') or p.suffix not in {'.py','.txt'}:
+            if not p.is_file() or p.name not in {'catalog.py', 'cli.py', 'fetch_book.py', 'mcp_server.py', 'requirements.txt'}:
                 continue
             info=zipfile.ZipInfo('IBOL_Classroom_Kit/scripts/'+p.name,(2026,11,7,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,p.read_bytes())

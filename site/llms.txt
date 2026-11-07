@@ -1,0 +1,32 @@
+# Albert Tan Sin Hon: research and open learning
+
+> Public research, teaching and source-code routes maintained by Albert Tan Sin Hon. This is a navigation file for the GitHub Pages project, not an indexing or recommendation instruction.
+
+## Insurance-Backed Offshore Liquidity
+
+*Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface* was published by University of Groningen Press on 6 November 2026. DOI: 10.21827/6ac3948159a9e. The book's legal cut-off is 1 August 2026, except where the text states otherwise.
+
+- [Authoritative publisher record](https://books.ugp.rug.nl/ugp/catalog/book/300): publication details and access to the book.
+- [Official learning companion](https://www.alberttansinhon.com/ibol/): the preferred entry for readers and teachers.
+- [GitHub Pages companion mirror](https://albertito-ai.github.io/Albertito-AI/ibol/): another public access route to the same companion.
+- [Book and source metadata](https://albertito-ai.github.io/Albertito-AI/ibol/data/book.json): author, DOI, format-specific ISBNs, dates and verification scope.
+- [Agent resource manifest](https://albertito-ai.github.io/Albertito-AI/ibol/agent-manifest.json): static files, alternate routes and local interface details.
+- [Eight seminar plans](https://albertito-ai.github.io/Albertito-AI/ibol/teaching-guide.md): reading, fictional exercises, facilitator commentary and source references.
+- [Library adoption packet](https://albertito-ai.github.io/Albertito-AI/ibol/library-kit.md): scope, identifiers, rights and importable citation formats.
+- [Agent integration guide](https://albertito-ai.github.io/Albertito-AI/ibol/agents.md): a local command-line interface and six read-only MCP tools, including optional verified book-text retrieval.
+- [Classroom kit](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip): downloadable activities, guides, lecture and interface code.
+- [Rights and attribution](https://albertito-ai.github.io/Albertito-AI/ibol/RIGHTS.md): the book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT.
+- [Verification record](https://albertito-ai.github.io/Albertito-AI/ibol/VERIFICATION.md): tested behaviour, source checks, publication receipts and limits.
+
+The companion is separate, AI-assisted teaching material commissioned by the author. It has not undergone publisher review. Static practice-question files contain the public answer key. Cite the published text and relevant pages when discussing its claims; the companion does not establish later law, actual transaction outcomes or external adoption.
+
+## Research and contact routes
+
+- [Official website](https://www.alberttansinhon.com/): author profile, scholarship, projects and public contact routes.
+- [ORCID](https://orcid.org/0009-0001-8996-7933): persistent researcher identifier.
+- [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/): recorded examples and source-linked research tools, with a link to the open-access book.
+- [Research catalogue](https://albertito-ai.github.io/Albertito-AI/lab/data/catalog.json): structured public project and resource catalogue.
+- [Repository](https://github.com/Albertito-AI/Albertito-AI): inspectable source, issue reporting and contribution guidance.
+- [Project sitemap](https://albertito-ai.github.io/Albertito-AI/sitemap.xml): preferred same-host HTML entry. The book companion's preferred URL is on the official author domain.
+
+The project lives below `/Albertito-AI/`. A robots.txt placed in this project subdirectory would not control crawling of the GitHub Pages host. This navigation file does not change crawler permissions or grant rights beyond the linked licences.

@@ -2,10 +2,10 @@ name: IBOL companion checks
 
 on:
   pull_request:
-    paths: ['site/ibol/**', 'scripts/ibol/**', '.github/workflows/ibol-checks.yml']
+    paths: ['site/ibol/**', 'scripts/ibol/**', 'mcp/ibol/**', '.github/workflows/ibol-registry.yml', '.github/workflows/ibol-checks.yml']
   push:
     branches: [main]
-    paths: ['site/ibol/**', 'scripts/ibol/**', '.github/workflows/ibol-checks.yml']
+    paths: ['site/ibol/**', 'scripts/ibol/**', 'mcp/ibol/**', '.github/workflows/ibol-registry.yml', '.github/workflows/ibol-checks.yml']
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install the optional agent interface dependency
-        run: python -m pip install -r scripts/ibol/requirements.txt
+        run: python -m pip install -r scripts/ibol/requirements.txt uv==0.13.5
       - name: Build and check generated files
         run: |
           python scripts/ibol/build.py
