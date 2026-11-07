@@ -15,6 +15,14 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
+## Help an agent reach a verified outcome
+
+**[Atlas Upstream 0.2.0](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
+
+[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.0.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record](https://www.alberttansinhon.com/atlas-upstream/verification.md)
+
+Public evaluation alpha. **44 tests passed**, including a real file-repair task using the official MCP client with a scripted host, process restart and an Opsbook import. Live language-model trials and physical field trials remain pending.
+
 ## Teach an agent to write its own operations manual
 
 **[Atlas Opsbook](https://github.com/Albertito-AI/atlas-opsbook)** lets a coding agent turn a mistake into a project instruction, test the proposed rule against separate cases, and pass the accepted procedure to its next session. Try the packaging case to see why an initially plausible rule fails. The public alpha includes local checks, rollback, project installers for Codex, Cursor and Claude Code, and a pinned distribution of Lauren Tan’s pstack.
@@ -405,4 +413,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **5 November 2026**.
+Last substantive profile update: **7 November 2026**.
+
