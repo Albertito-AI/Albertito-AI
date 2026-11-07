@@ -22,6 +22,9 @@
     "agent_guide": "https://www.alberttansinhon.com/ibol/agents.md"
   },
   "mcp": {
+    "registry_record": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+    "release": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0",
+    "bundle_requires": "MCPB 0.4 with UV runtime; desktop GUI installation untested",
     "transport": "stdio",
     "protocolVersion": "2025-11-25",
     "source": "https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol",

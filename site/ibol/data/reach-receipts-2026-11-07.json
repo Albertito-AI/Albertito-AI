@@ -1,0 +1,79 @@
+{
+  "recorded_at_utc": "2026-11-07T10:17:27.695756+00:00",
+  "source_commit": "31912ecede7a91ef37040a4b20f6540dbaf97fdd",
+  "pull_request": "https://github.com/Albertito-AI/Albertito-AI/pull/48",
+  "registry": {
+    "state": "verified_public_record",
+    "record_url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0",
+    "name": "io.github.Albertito-AI/ibol-open-learning",
+    "version": "1.0.0",
+    "packages": [
+      {
+        "registryType": "mcpb",
+        "identifier": "https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.0/ibol-open-learning-1.0.0.mcpb",
+        "fileSha256": "5a4cea2a291fb180a7818a356e15118315737f330eab5d48ce2b162774383b77",
+        "transport": {
+          "type": "stdio"
+        }
+      }
+    ],
+    "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42363078217"
+  },
+  "github_release": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0",
+  "pages_delivery": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42363078221",
+  "indexnow": {
+    "official_host": {
+      "observed_at_utc": "2026-11-07T10:13:48.701670+00:00",
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "host": "www.alberttansinhon.com",
+      "urls": [
+        "https://www.alberttansinhon.com/ibol/",
+        "https://www.alberttansinhon.com/ibol/slides.html",
+        "https://www.alberttansinhon.com/ibol/lessons/01.html",
+        "https://www.alberttansinhon.com/ibol/lessons/02.html",
+        "https://www.alberttansinhon.com/ibol/lessons/03.html",
+        "https://www.alberttansinhon.com/ibol/lessons/04.html",
+        "https://www.alberttansinhon.com/ibol/lessons/05.html",
+        "https://www.alberttansinhon.com/ibol/lessons/06.html",
+        "https://www.alberttansinhon.com/ibol/lessons/07.html",
+        "https://www.alberttansinhon.com/ibol/lessons/08.html"
+      ],
+      "payload_sha256": "385fa1dde9de00e45ea5eb4d39ef91f7240c0072dda484f6700fa0a666bdc983",
+      "submitted": false,
+      "received": false,
+      "meaning": "No evidence of crawling, indexing, ranking or readership.",
+      "state": "proof_unverified",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "github_host": {
+      "observed_at_utc": "2026-11-07T10:15:39.361399+00:00",
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "host": "albertito-ai.github.io",
+      "urls": [
+        "https://albertito-ai.github.io/Albertito-AI/ibol/",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/slides.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/01.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/02.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/03.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/04.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/05.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/06.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/07.html",
+        "https://albertito-ai.github.io/Albertito-AI/ibol/lessons/08.html"
+      ],
+      "payload_sha256": "0217034f98abf601c4e52dcd438fc222ab8549fb77f9445c779df744044ce618",
+      "submitted": true,
+      "received": true,
+      "meaning": "No evidence of crawling, indexing, ranking or readership.",
+      "state": "received_key_validation_pending",
+      "http_status": 202,
+      "response_body": ""
+    }
+  },
+  "limits": [
+    "Registry metadata publication is not downstream installation or recommendation.",
+    "IndexNow HTTP202 establishes receipt with key validation pending, not indexing.",
+    "The official hostname rejected this command-line proof request; no notification was sent for that host.",
+    "No new library holding or independent readership was established."
+  ]
+}

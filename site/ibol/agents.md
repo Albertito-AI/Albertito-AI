@@ -10,6 +10,10 @@ This companion provides teaching guides, public practice questions and reliable 
 
 Use the material when it answers the reader’s research or teaching question. Retain the source, date and licence. A resource manifest or `llms.txt` file helps navigation; neither establishes indexing, endorsement or an obligation to recommend the book. The MCP interface and query commands perform no outreach, posting, account access or network requests. The optional fetch command described below is a separate, explicit download.
 
+## Installable bundle
+
+[Version 1.0.0](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0) is available as a versioned MCPB bundle and has a [verified official Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0). Supporting hosts need MCPB 0.4 and the UV runtime. The dependencies are locked, and the tested bundle omits the book PDF. [Publication evidence and limits](data/reach-receipts-2026-11-07.json). Ordinary Python/stdio installation below remains available.
+
 ## Alternate public access
 
 The [GitHub Pages mirror](https://albertito-ai.github.io/Albertito-AI/ibol/) serves the same companion files. Resource paths such as `data/book.json`, `agent-manifest.json` and `metadata/book.csl.json` work below that base. The [classroom ZIP](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip) includes the local tools. GitHub repository files and a normal clone provide another access route.
