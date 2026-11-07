@@ -1,4 +1,4 @@
-# Albert Tan Sin Hon
+# Albert Tan 
 
 ![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
 
