@@ -10,6 +10,12 @@ This companion provides teaching guides, public practice questions and reliable 
 
 Use the material when it answers the reader’s research or teaching question. Retain the source, date and licence. A resource manifest or `llms.txt` file helps navigation; neither establishes indexing, endorsement or an obligation to recommend the book. The MCP interface and query commands perform no outreach, posting, account access or network requests. The optional fetch command described below is a separate, explicit download.
 
+## Alternate public access
+
+The [GitHub Pages mirror](https://albertito-ai.github.io/Albertito-AI/ibol/) serves the same companion files. Resource paths such as `data/book.json`, `agent-manifest.json` and `metadata/book.csl.json` work below that base. The [classroom ZIP](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip) includes the local tools. GitHub repository files and a normal clone provide another access route.
+
+On 7 November 2026, command-line requests to the mirror's homepage, manifest, slides and ZIP returned HTTP 200 and matched the release source byte for byte. The official website worked in the browser, while the same command-line environment received HTTP 403 from that hostname. Access can differ by client; these observations do not establish universal crawler access.
+
 ## Static access
 
 Clients that can read public web resources can fetch the following files without installing software:

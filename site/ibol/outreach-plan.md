@@ -15,7 +15,7 @@ The official website gives readers a clear entry point. GitHub supplies inspecta
 | OAPEN | Title-level inclusion unconfirmed | Ask UGP whether this title is deposited through its publishing arrangements | A matching full-text repository record |
 | Thoth | Publisher page exposes a Thoth component; downstream delivery unconfirmed | Ask UGP which metadata exports and delivery routes are enabled for this title | Matching work record and actual delivery receipt |
 | Groningen Pure | Book record unconfirmed | Check for an existing record; register as a book through the institutional workflow if absent | Public research-portal record linked to DOI |
-| Official website and GitHub | Companion prepared in this project; delivery requires its own verification | Publish the completed hub, links, metadata and source | Accessible live pages and merged source revision |
+| Official website and GitHub | Initial official Site and GitHub Pages publication verified; see VERIFICATION.md | Maintain the live hub, links, metadata and source | Accessible live pages and merged source revision |
 | Course and library adoption | No independent adoption evidence collected | Offer a relevant lesson and the library packet through appropriate, authorised channels | A catalogue record, reading-list entry or an institution’s confirmation |
 
 The [machine-readable status record](data/distribution-status.json) records what was actually observed. A planned action is not a deposit or an adoption.

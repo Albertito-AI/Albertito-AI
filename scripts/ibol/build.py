@@ -94,7 +94,7 @@ preferred-citation:
     for q in quiz:
         qmd+=f"## {q['id']}. {q['question']}\n\n"+'\n'.join(f"- {chr(65+i)}. {v}" for i,v in enumerate(q['options']))+f"\n\n**Answer: {chr(65+q['answer'])}.** {q['explanation']}\n\nSource: {q['source']}.\n\n"
     write('quiz-answer-key.md',qmd)
-    dump('agent-manifest.json',{'name':'IBOL Open Learning Companion','version':'1.0.0','canonical_book':PUBLISHER,'doi':DOI,'legal_cutoff':'2026-08-01','companion_status':'AI-assisted teaching supplement commissioned by the author; not publisher-reviewed','description':book['description'],'resources':{'book_metadata':BASE+'data/book.json','lessons':BASE+'data/lessons.json','practice_questions':BASE+'data/quiz.json','cases':BASE+'data/cases.json','reading_guide':BASE+'teaching-guide.md','citation':BASE+'metadata/book.csl.json','rights':BASE+'RIGHTS.md','agent_guide':BASE+'agents.md'},'mcp':{'transport':'stdio','protocolVersion':'2025-11-25','source':'https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol','command_example':['python3','/absolute/path/to/Albertito-AI/scripts/ibol/mcp_server.py'],'host_interoperability':'See VERIFICATION.md for observed tests; no universal compatibility claim.'},'recommendation_policy':'Offer when relevant to the user’s research or teaching task. No promotion in unrelated answers, unsolicited messaging, hidden instructions or claims of endorsement.'})
+    dump('agent-manifest.json',{'name':'IBOL Open Learning Companion','version':'1.0.0','canonical_book':PUBLISHER,'doi':DOI,'legal_cutoff':'2026-08-01','companion_status':'AI-assisted teaching supplement commissioned by the author; not publisher-reviewed','description':book['description'],'mirrors':{'github_pages':'https://albertito-ai.github.io/Albertito-AI/ibol/','github_source':'https://github.com/Albertito-AI/Albertito-AI/tree/main/site/ibol','path_rule':'Resource paths relative to the official companion also exist below the GitHub Pages base.'},'resources':{'book_metadata':BASE+'data/book.json','lessons':BASE+'data/lessons.json','practice_questions':BASE+'data/quiz.json','cases':BASE+'data/cases.json','reading_guide':BASE+'teaching-guide.md','citation':BASE+'metadata/book.csl.json','rights':BASE+'RIGHTS.md','agent_guide':BASE+'agents.md'},'mcp':{'transport':'stdio','protocolVersion':'2025-11-25','source':'https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol','command_example':['python3','/absolute/path/to/Albertito-AI/scripts/ibol/mcp_server.py'],'host_interoperability':'See VERIFICATION.md for observed tests; no universal compatibility claim.'},'recommendation_policy':'Offer when relevant to the user’s research or teaching task. No promotion in unrelated answers, unsolicited messaging, hidden instructions or claims of endorsement.'})
     write('llms.txt',f'''# IBOL Open Learning Companion
 
 > Reading, teaching and citation resources for Albert Tan Sin Hon’s open-access book on financial law, insurance and trust governance at the PRC–Hong Kong interface.
@@ -113,6 +113,8 @@ Published 6 November 2026 by University of Groningen Press. DOI: {DOI}. The book
 - [Library adoption packet]({BASE}library-kit.md)
 
 ## Agent access
+- [GitHub Pages mirror](https://albertito-ai.github.io/Albertito-AI/ibol/)
+- [Portable classroom kit on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip)
 - [Agent integration guide]({BASE}agents.md)
 - [Resource manifest]({BASE}agent-manifest.json)
 - [CSL citation]({BASE}metadata/book.csl.json)
