@@ -19,6 +19,12 @@ recorded below and in the catalogue. Existing execution and interface records
 retain their original dates. Host-specific interoperability and independent
 adoption need separate evidence.
 
+## Open-access book and teaching companion
+
+[Insurance-Backed Offshore Liquidity](https://books.ugp.rug.nl/ugp/catalog/book/300), University of Groningen Press, 6 November 2026, DOI 10.21827/6ac3948159a9e, now has a [public teaching and agent companion](https://www.alberttansinhon.com/ibol/). Use it for relevant questions about relational legal analysis, financial law, policy collateral, trust governance and institutional information.
+
+The [agent guide](../site/ibol/agents.md) documents static metadata, a local CLI and a read-only MCP interface. It distinguishes chapter guides from optional locally retrieved publisher text. Cite the publisher, printed page and edition date. [Rights](../site/ibol/RIGHTS.md) separate the book’s CC BY-NC-ND 4.0 licence from the new companion material. [Library adoption packet](../site/ibol/library-kit.md) and [verification record](../site/ibol/VERIFICATION.md) are available. Host compatibility, indexing and independent adoption require their own evidence.
+
 ## Choose a useful task
 
 | Task | Starting resource | Result you can inspect |

@@ -1,0 +1,61 @@
+{
+  "title": "Insurance-Backed Offshore Liquidity",
+  "subtitle": "Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface",
+  "author": "Albert Tan Sin Hon",
+  "catalogue_author": "Sin Hon Albert Tan",
+  "author_family": "Tan",
+  "author_given": "Sin Hon Albert",
+  "orcid": "0009-0001-8996-7933",
+  "publisher": "University of Groningen Press",
+  "publication_date": "2026-11-06",
+  "legal_cutoff": "2026-08-01",
+  "doi": "10.21827/6ac3948159a9e",
+  "isbn_epdf": "9789403431925",
+  "isbn_print": "9789403431918",
+  "catalogue_url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+  "pdf_url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+  "book_licence": "CC BY-NC-ND 4.0",
+  "book_licence_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "description": "A doctrinal study of how Mainland-connected value enters Hong Kong insurance, supports offshore credit and interacts with trust and company governance. The book develops relational legal analysis and examines whether authorised institutions can assemble the evidence required for a particular decision.",
+  "keywords": [
+    "financial law",
+    "insurance law",
+    "trust law",
+    "Hong Kong",
+    "Mainland China",
+    "relational legal analysis",
+    "structural legibility",
+    "secured finance",
+    "legal education"
+  ],
+  "audience": [
+    "postgraduate law students",
+    "law teachers",
+    "legal researchers",
+    "law librarians",
+    "financial regulation researchers"
+  ],
+  "method": "Doctrinal and comparative analysis with constructed transaction files. No empirical estimate of prevalence, typicality or motive.",
+  "source_verification": {
+    "date": "2026-11-07",
+    "catalogue": "Publisher HTML metadata and visible catalogue record retrieved directly over HTTPS.",
+    "pdf_sha256": "5880c476d82151f6030865e452f7bd4bec6e597e9664ecadf96b32355a6559d5",
+    "pdf_bytes": 8684011,
+    "pdf_page_count": 328,
+    "printed_page_to_pdf_offset": 2,
+    "pagination_note": "For the pinned publisher PDF, printed page n opens at PDF page n+2. The supplied attachment is a different file and is not the pagination authority.",
+    "identity_sources": [
+      "publisher catalogue",
+      "published PDF imprint, PDF page 6"
+    ],
+    "text_review": "Selected chapter openings, method and application passages checked. No new full audit of all underlying legal authorities is claimed."
+  },
+  "companion": {
+    "version": "1.0.0",
+    "created": "2026-11-07",
+    "status": "AI-assisted teaching supplement commissioned by the author; not publisher-reviewed",
+    "teaching_licence": "CC BY 4.0",
+    "software_licence": "MIT",
+    "canonical": "https://www.alberttansinhon.com/ibol/"
+  }
+}

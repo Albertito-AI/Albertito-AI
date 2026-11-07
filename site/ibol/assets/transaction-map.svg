@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">The legal object changes across the transaction</title>
+<desc id="desc">Four distinct inquiries follow source funds, policy rights, security and company credit. Source records establish the payment route. Policy terms identify contractual rights. A security instrument determines rights granted to a lender. A facility and account mandate identify debt, account assets and authority. The connecting events do not themselves establish a transaction-wide legal consequence.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L9 5L0 9" fill="none" stroke="#aa472b" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="440" fill="#f6f3eb"/>
+<g font-family="Arial, sans-serif">
+<text x="36" y="39" font-size="12" font-weight="700" letter-spacing="2" fill="#aa472b">FOLLOW THE EVENTS. IDENTIFY THE RIGHTS.</text>
+<text x="36" y="82" font-family="Georgia, serif" font-size="30" fill="#244e46">The legal object changes across the transaction</text>
+<g fill="#fffdf7" stroke="#cdd4c9"><rect x="36" y="125" width="255" height="240" rx="2"/><rect x="327" y="125" width="255" height="240" rx="2"/><rect x="618" y="125" width="255" height="240" rx="2"/><rect x="909" y="125" width="255" height="240" rx="2"/></g>
+<g stroke="#aa472b" stroke-width="1.5" marker-end="url(#arrow)"><path d="M297 246H320"/><path d="M588 246H611"/><path d="M879 246H902"/></g>
+<g fill="#aa472b" font-size="12" font-weight="700" letter-spacing="1.5"><text x="56" y="154">01 / SOURCE</text><text x="347" y="154">02 / CONTRACT</text><text x="638" y="154">03 / SECURITY</text><text x="929" y="154">04 / CREDIT</text></g>
+<g fill="#244e46" font-family="Georgia, serif" font-size="25"><text x="56" y="191">Source funds</text><text x="347" y="191">Policy rights</text><text x="638" y="191">Rights granted</text><text x="929" y="191">Company credit</text></g>
+<g fill="#52625f" font-size="16">
+<text x="56" y="225"><tspan x="56">How was the premium</tspan><tspan x="56" dy="23">acquired and remitted?</tspan></text>
+<text x="347" y="225"><tspan x="347">What does the insurer</tspan><tspan x="347" dy="23">promise, and to whom?</tspan></text>
+<text x="638" y="225"><tspan x="638">What may the lender</tspan><tspan x="638" dy="23">claim or realise?</tspan></text>
+<text x="929" y="225"><tspan x="929">Who owes the debt and</tspan><tspan x="929" dy="23">may operate the account?</tspan></text>
+</g>
+<g stroke="#d5d9ce"><path d="M56 271H271"/><path d="M347 271H562"/><path d="M638 271H853"/><path d="M929 271H1144"/></g>
+<g fill="#244e46" font-size="14"><text x="56" y="297"><tspan x="56">Account history, declarations,</tspan><tspan x="56" dy="21">purchase and remittance records</tspan></text><text x="347" y="297"><tspan x="347">Policy, application and</tspan><tspan x="347" dy="21">relevant private-law rights</tspan></text><text x="638" y="297"><tspan x="638">Security instrument, notice,</tspan><tspan x="638" dy="21">registration and priority</tspan></text><text x="929" y="297"><tspan x="929">Facility, drawdown record</tspan><tspan x="929" dy="21">and account mandate</tspan></text></g>
+<text x="36" y="397" fill="#52625f" font-size="13">Each connection requires its own evidence and legal basis. Collateral support alone does not establish access to loan proceeds.</text>
+<text x="36" y="421" fill="#52625f" font-size="11">Original companion diagram · Albert Tan Sin Hon, Insurance-Backed Offshore Liquidity (2026), Chapters 1–5 · CC BY 4.0</text>
+</g></svg>

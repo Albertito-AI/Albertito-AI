@@ -15,6 +15,14 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
+## Read and teach Insurance-Backed Offshore Liquidity
+
+My open-access book, *Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC–Hong Kong Interface*, was published by University of Groningen Press on **6 November 2026**. [Read the free publisher edition](https://books.ugp.rug.nl/ugp/catalog/book/300), DOI [10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e).
+
+[**Explore the open learning companion**](https://www.alberttansinhon.com/ibol/) · [Eight seminar plans](site/ibol/teaching-guide.md) · [Lecture and evidence games](https://www.alberttansinhon.com/ibol/#play) · [Library packet](site/ibol/library-kit.md) · [Connect an agent](site/ibol/agents.md)
+
+The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
+
 ## Help an agent reach a verified outcome
 
 **[Atlas Upstream 0.2.0](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.

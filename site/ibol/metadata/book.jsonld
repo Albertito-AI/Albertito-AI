@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "@id": "https://doi.org/10.21827/6ac3948159a9e",
+  "name": "Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface",
+  "author": {
+    "@type": "Person",
+    "name": "Albert Tan Sin Hon",
+    "familyName": "Tan",
+    "givenName": "Sin Hon Albert",
+    "sameAs": "https://orcid.org/0009-0001-8996-7933"
+  },
+  "datePublished": "2026-11-06",
+  "publisher": {
+    "@type": "Organization",
+    "name": "University of Groningen Press"
+  },
+  "isbn": "9789403431925",
+  "inLanguage": "en",
+  "bookFormat": "https://schema.org/EBook",
+  "url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875",
+    "encodingFormat": "application/pdf"
+  },
+  "description": "A doctrinal study of how Mainland-connected value enters Hong Kong insurance, supports offshore credit and interacts with trust and company governance. The book develops relational legal analysis and examines whether authorised institutions can assemble the evidence required for a particular decision.",
+  "keywords": [
+    "financial law",
+    "insurance law",
+    "trust law",
+    "Hong Kong",
+    "Mainland China",
+    "relational legal analysis",
+    "structural legibility",
+    "secured finance",
+    "legal education"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-07",
+  "title": "Insurance-Backed Offshore Liquidity",
+  "doi": "10.21827/6ac3948159a9e",
+  "isbn_epdf": "9789403431925",
+  "isbn_print": "9789403431918",
+  "official_companion_url": "https://www.alberttansinhon.com/ibol/",
+  "status_definitions": {
+    "confirmed": "A title-specific primary record or successful response was inspected.",
+    "unconfirmed": "No sufficient title-specific record was retrieved; this is not a finding of absence.",
+    "prepared": "Work exists for review or publication; publication has not been established by this record.",
+    "proposed": "An action is recommended and has not been performed by this review."
+  },
+  "observations": [
+    {
+      "service": "University of Groningen Press",
+      "status": "confirmed",
+      "record_url": "https://books.ugp.rug.nl/ugp/catalog/book/300",
+      "observed": "Catalogue and publisher PDF available. Publication date 2026-11-06. Licence CC BY-NC-ND 4.0. ePDF ISBN 9789403431925; print ISBN 9789403431918.",
+      "method": "Publisher HTML retrieved directly by HTTPS; DOI resolver redirected to this page.",
+      "next_action": null
+    },
+    {
+      "service": "DOI resolution",
+      "status": "confirmed",
+      "record_url": "https://doi.org/10.21827/6ac3948159a9e",
+      "observed": "HTTP request resolved to publisher catalogue and returned 200.",
+      "method": "Direct HTTPS GET with redirect handling.",
+      "next_action": null
+    },
+    {
+      "service": "Crossref",
+      "status": "confirmed",
+      "record_url": "https://api.crossref.org/works/10.21827/6ac3948159a9e",
+      "observed": "Public monograph record returned 200 and contains the title, publisher, DOI and author ORCID.",
+      "method": "Direct HTTPS API GET; message-type work.",
+      "metadata_review": {
+        "isbn_type_observed": [
+          {
+            "value": "9789403431925",
+            "type": "print"
+          }
+        ],
+        "isbn_expected_from_publisher": {
+          "epdf": "9789403431925",
+          "print": "9789403431918"
+        },
+        "date_parts_observed": {
+          "published-online": [
+            [
+              2026
+            ]
+          ],
+          "published-print": [
+            [
+              2026
+            ]
+          ],
+          "issued": [
+            [
+              2026
+            ]
+          ]
+        },
+        "catalogue_date": "2026-11-06",
+        "licence_field_returned": false
+      },
+      "next_action": "Publisher review of ISBN format classification, separate print ISBN, precise dates and licence metadata.",
+      "action_status": "proposed"
+    },
+    {
+      "service": "ORCID",
+      "status": "confirmed",
+      "record_url": "https://pub.orcid.org/v3.0/0009-0001-8996-7933/work/232473738",
+      "profile_url": "https://orcid.org/0009-0001-8996-7933",
+      "observed": "Public works response includes the exact book DOI, work type book, put-code 232473738 and source Crossref.",
+      "method": "Direct public API works retrieval, matched by exact DOI.",
+      "next_action": "Retain existing entry and review after publisher metadata corrections; avoid creating a duplicate.",
+      "action_status": "proposed"
+    },
+    {
+      "service": "DOAB",
+      "status": "unconfirmed",
+      "checked_url": "https://directory.doabooks.org/discover?query=10.21827%2F6ac3948159a9e",
+      "observed": "Title query returned HTTP 403. General web searches did not provide a sufficient title-specific record.",
+      "method": "Direct title query and web retrieval.",
+      "documentation_url": "https://doabooks.org/en/librarians/doab-metadata",
+      "next_action": "Ask publisher to confirm deposit or provide the existing DOI/ISBN-matched record.",
+      "action_status": "proposed",
+      "additional_check": {
+        "url": "https://widget.doabooks.org/prism/rest/title?doi=10.21827%2F6ac3948159a9e",
+        "http_status": 200,
+        "response_code": 404,
+        "message": "No entries were found for: 10.21827/6ac3948159a9e",
+        "interpretation": "No title peer-review metadata was returned by this PRISM query. This is not a complete DOAB catalogue search and does not establish absence of the book."
+      }
+    },
+    {
+      "service": "OAPEN",
+      "status": "unconfirmed",
+      "checked_url": "https://library.oapen.org/discover?query=10.21827%2F6ac3948159a9e",
+      "observed": "Title query returned HTTP 403. No sufficient title-specific record was retrieved.",
+      "method": "Direct title query and web retrieval.",
+      "documentation_url": "https://oapen.org/publishers/services-publishers",
+      "next_action": "Ask publisher to confirm this title’s full-text deposit and supply its repository link.",
+      "action_status": "proposed"
+    },
+    {
+      "service": "Thoth downstream distribution",
+      "status": "unconfirmed",
+      "checked_url": "https://books.ugp.rug.nl/ugp/thoth/catalogFiles?submissionId=300&publicationId=290",
+      "observed": "Publisher page includes a Thoth component. Its catalogue-files response returned empty monograph and chapter arrays. This response does not establish whether a Thoth metadata record or distribution agreement exists.",
+      "method": "Publisher HTML and component endpoint retrieved directly.",
+      "documentation_url": "https://thoth.pub/",
+      "next_action": "Ask publisher which work record, export formats and actual downstream delivery routes apply.",
+      "action_status": "proposed"
+    },
+    {
+      "service": "University of Groningen research portal",
+      "status": "unconfirmed",
+      "checked_url": "https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/publications/",
+      "observed": "Public profile publications retrieval returned HTTP 403. Title-level record not confirmed.",
+      "method": "Direct profile publications retrieval and web search.",
+      "documentation_url": "https://www.rug.nl/library/education-and-research/support/pure/using-pure/add-content-to-pure/submission-guide-3.0/book?lang=en",
+      "next_action": "Check existing Pure record; register through Research output > Book/report > Book if absent, preserving publisher evidence.",
+      "action_status": "proposed"
+    },
+    {
+      "service": "Website and GitHub companion",
+      "status": "prepared",
+      "record_url": "https://www.alberttansinhon.com/ibol/",
+      "source_url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/site/ibol",
+      "observed": "Prepared as part of this project. This distribution review does not itself verify deployment.",
+      "next_action": "Use the project’s separate delivery verification to confirm live URLs and source revision.",
+      "action_status": "proposed"
+    }
+  ],
+  "adoption_evidence": {
+    "library_holdings": "Not measured in this review.",
+    "course_adoptions": "Not measured in this review.",
+    "independent_agent_integrations": "Not measured in this review.",
+    "human_readership": "Not measured in this review."
+  },
+  "external_actions": {
+    "messages_sent": 0,
+    "records_submitted": 0,
+    "statement": "This review performed read-only checks and prepared materials. No outreach message or repository submission was sent by it."
+  },
+  "limitations": [
+    "HTTP 403 or an empty search result does not establish absence from a service.",
+    "Metadata availability does not establish local library activation, a holding, human readership or course adoption.",
+    "The existing ORCID book record must not be confused with the separate SSRN essay After the Offshore Trust Turn."
+  ]
+}
