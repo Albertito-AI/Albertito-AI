@@ -21,7 +21,7 @@ I am **President and Editor-in-Chief of The Human Question: A Journal of Humanis
 
 [**Visit the journal**](https://thehumanquestionjournal.com/) · [Author instructions](https://thehumanquestionjournal.com/#authors) · [Approved house style](https://thehumanquestionjournal.com/#style) · [Editorial policies](https://thehumanquestionjournal.com/#policies) · [Open-source website](https://github.com/Albertito-AI/open-humanities-journal)
 
-The first issue is in preparation. There are no author fees. Research articles and scholarly essays undergo independent double-anonymous peer review under the published policy. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
+The first issue is in preparation. There are no author fees. Research articles and scholarly review or critical essays require two independent external reports, normally under double-anonymous review. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
 
 [**Explore my connected work**](https://www.alberttansinhon.com/explore/): the journal, book, learning materials, research tools and routes for collaboration.
 
