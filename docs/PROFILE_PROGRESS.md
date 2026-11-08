@@ -1,9 +1,22 @@
 # Profile change record
 
+## 8 November 2026: keep achievement display in GitHub's sidebar
+
+Removed the duplicate README achievement display and its standalone recognition
+page following the owner's clarification. The useful Atlas Quant introduction
+and runnable guides remain. GitHub's native sidebar is the place to view earned
+achievements; future work should improve the projects and pursue actual
+qualifying contributions rather than add further award presentation.
+
+Acceptance: the README contains the Atlas Quant entry and no duplicate badge
+display, with local links and applicable hosted checks passing. The PR records
+the exact correction and delivery. The preceding entry below is historical.
+
 ## 8 November 2026: connect earned recognition to inspectable work
 
 Added the actually displayed Pull Shark ×2 bronze artwork and Developer Program
-Member status to the profile, with a dated [evidence record](GITHUB_RECOGNITION.md).
+Member status to the profile, with a dated evidence record, subsequently removed
+at the owner's request as recorded above.
 The achievement panel was inspected directly and showed the second and
 sixteenth merged-PR milestones. No additional award or tier is asserted.
 

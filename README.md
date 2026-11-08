@@ -15,18 +15,7 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
-## GitHub recognition and work you can inspect
-
-<a href="https://github.com/Albertito-AI?tab=achievements&amp;achievement=pull-shark"><img src="https://github.githubassets.com/assets/pull-shark-bronze-a37accb528d1.png" width="88" height="88" alt="GitHub Pull Shark ×2, bronze achievement, verified 8 November 2026"></a>
-
-**Pull Shark ×2, bronze** · **Developer Program Member**
-
-Verified on the GitHub profile on **8 November 2026**.
-[View the achievement](https://github.com/Albertito-AI?tab=achievements&achievement=pull-shark)
-· [Recognition and evidence](docs/GITHUB_RECOGNITION.md)
-· [Contributions submitted to other projects](docs/OPEN_SOURCE_CONTRIBUTIONS.md).
-These recognise GitHub activity and programme membership; the linked code,
-tests and review records describe what each project demonstrates.
+## Inspect financial models with Atlas Quant
 
 **[Atlas Quant](https://github.com/Albertito-AI/atlas-quant)** now includes
 reproducible financial charts and a five-stage probabilistic agent lab. Inspect
