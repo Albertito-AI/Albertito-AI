@@ -25,11 +25,11 @@ The companion includes 32 explained questions, six fictional cases, a record-sor
 
 ## Help an agent reach a verified outcome
 
-**[Atlas Upstream 0.2.0](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
+**[Atlas Upstream 0.2.1](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
 
-[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.0.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record](https://www.alberttansinhon.com/atlas-upstream/verification.md)
+[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.1.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record](https://www.alberttansinhon.com/atlas-upstream/verification.md)
 
-Public evaluation alpha. **44 tests passed**, including a real file-repair task using the official MCP client with a scripted host, process restart and an Opsbook import. Live language-model trials and physical field trials remain pending.
+Public evaluation alpha. **45 tests passed with no skips**. Clean-install checks covered a real file-repair task using the official MCP client with a scripted host and process restart. Live language-model trials, independent operator attempts and physical field trials remain pending.
 
 ## Teach an agent to write its own operations manual
 
@@ -348,12 +348,12 @@ citation or predetermined conclusion.
 Publication details follow the linked institutional records. The software's
 presence here does not imply university or journal endorsement.
 
-## Books in progress
+## Books
 
 - **Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and
   Regulatory Visibility at the PRC–Hong Kong Interface.** Albert Tan Sin Hon,
-  University of Groningen Press. **Forthcoming.** A study of policy rights,
-  trust governance and regulatory visibility. [Book overview](https://www.alberttansinhon.com/#book).
+  University of Groningen Press. **Published 6 November 2026.** A study of policy rights,
+  trust governance and regulatory visibility. [Read the publisher edition](https://books.ugp.rug.nl/ugp/catalog/book/300).
 - **ANSWERABLE: Teaching Law When the Machine Can Write.** Albert Tan and Panupong
   Chalermsin, PSU Press. **Forthcoming.** Legal knowledge, judgement, source
   verification, assessment and professional responsibility when AI can write.
@@ -421,5 +421,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **7 November 2026**.
+Last substantive profile update: **8 November 2026**.
 
