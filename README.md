@@ -31,13 +31,13 @@ My open-access book, *Insurance-Backed Offshore Liquidity: Financial Law, Trust 
 
 [**Explore the open learning companion**](https://www.alberttansinhon.com/ibol/) · [Eight seminar plans](site/ibol/teaching-guide.md) · [Lecture and evidence games](https://www.alberttansinhon.com/ibol/#play) · [Library packet](site/ibol/library-kit.md) · [Connect an agent](site/ibol/agents.md)
 
-The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). [Share the book](site/ibol/share.md) · [Project discovery links](https://albertito-ai.github.io/Albertito-AI/llms.txt) · [Sitemap](https://albertito-ai.github.io/Albertito-AI/sitemap.xml). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
+The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). [Share the book](site/ibol/share.md) · [Project discovery guide (text)](https://albertito-ai.github.io/Albertito-AI/llms.txt) · [Sitemap (XML)](https://albertito-ai.github.io/Albertito-AI/sitemap.xml). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
 
 ## Help an agent reach a verified outcome
 
 **[Atlas Upstream 0.2.1](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
 
-[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.1.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record](https://www.alberttansinhon.com/atlas-upstream/verification.md)
+[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.1.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record (Markdown)](https://www.alberttansinhon.com/atlas-upstream/verification.md)
 
 Public evaluation alpha. **45 tests passed with no skips**. Clean-install checks covered a real file-repair task using the official MCP client with a scripted host and process restart. Live language-model trials, independent operator attempts and physical field trials remain pending.
 
@@ -45,7 +45,7 @@ Public evaluation alpha. **45 tests passed with no skips**. Clean-install checks
 
 **[Atlas Opsbook](https://github.com/Albertito-AI/atlas-opsbook)** lets a coding agent turn a mistake into a project instruction, test the proposed rule against separate cases, and pass the accepted procedure to its next session. Try the packaging case to see why an initially plausible rule fails. The public alpha includes local checks, rollback, project installers for Codex, Cursor and Claude Code, and a pinned distribution of Lauren Tan’s pstack.
 
-[**Try the interactive casebook**](https://www.alberttansinhon.com/atlas-opsbook/) · [Download the public alpha](https://github.com/Albertito-AI/atlas-opsbook/releases/tag/v0.1.1) · [Inspect the verification record](https://github.com/Albertito-AI/atlas-opsbook/blob/main/docs/VERIFICATION.md)
+[**Try the interactive casebook**](https://www.alberttansinhon.com/atlas-opsbook/) · [Public alpha release and downloads](https://github.com/Albertito-AI/atlas-opsbook/releases/tag/v0.1.1) · [Inspect the verification record](https://github.com/Albertito-AI/atlas-opsbook/blob/main/docs/VERIFICATION.md)
 
 ## Build with IMIKWON
 
