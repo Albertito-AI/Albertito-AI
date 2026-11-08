@@ -1,5 +1,22 @@
 # Profile change record
 
+## 8 November 2026: clarify voluntary contribution terms
+
+The public Build with us section still implied that paid contributor assignments
+might be offered. That wording conflicted with the 4 November owner decision
+that contributions are voluntary and unpaid. Replaced the ambiguous invitation
+with a precise unpaid-contribution boundary while retaining accurate attribution,
+existing issue routes and separately agreed customer-service possibilities.
+No fees, bounties, stipends, reimbursements or automatic revenue shares are offered.
+This text correction does not alter existing third-party obligations or any
+repository's licence or rights. Intended outcome: prevent applicants from
+mistaking an invitation to contribute for a paid assignment.
+
+Acceptance: inspect a two-file diff and the actual README after merge, with
+applicable profile checks on the exact PR head. Any external understanding,
+contributor response or economic outcome remains NOT_VERIFIED. The correction
+is AI-assisted and is not evidence of a new paying customer.
+
 ## 8 November 2026: align publication and release status
 
 The profile's lower books section still described *Insurance-Backed Offshore
