@@ -1,8 +1,86 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T06:16:19Z",
+  "generated_at": "2026-11-08T06:22:12Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-d24fc649f40a9e40e556",
+      "title": "A governance model for the application of AI in health care",
+      "doi": "10.1093/jamia/ocz192",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1093%2Fjamia%2Focz192",
+      "publication_date": "2019-11-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-84f5a3767a62f7cb0722",
+      "title": "Corporate governance perspective on environmental reporting: Literature review and future research agenda",
+      "doi": "10.1002/csr.2643",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fcsr.2643",
+      "publication_date": "2023-10-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-2bbd554fbadeed1bf6e1",
+      "title": "Real earnings management and ESG disclosure in emerging markets: The moderating effect of managerial ownership from a social norm perspective",
+      "doi": "10.1016/j.heliyon.2023.e22832",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.heliyon.2023.e22832",
+      "publication_date": "2023-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-16457c7174c16ede2b49",
+      "title": "Digital Intelligence Technology, ESG Information Disclosure Quality, and Enterprise Immunity in SRDI Enterprises",
+      "doi": "10.54097/gyswhq05",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.54097%2Fgyswhq05",
+      "publication_date": "2026-10-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-161540c09d7a61ea7563",
+      "title": "A Systematic Review and Evaluation of Sustainable AI Algorithms and Techniques in Healthcare",
+      "doi": "10.1109/access.2025.3596189",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1109%2Faccess.2025.3596189",
+      "publication_date": "2025",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-058323de5fb0716ca82c",
+      "title": "ETHICS AND GOVERNANCE OF AI IN HEALTHCARE: CASE INDONESIA, EU, AND THE US",
+      "doi": "10.33701/jiapd.v17i2.5683",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.33701%2Fjiapd.v17i2.5683",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-f66ef1b88d4b18a578d0",
       "title": "AI as an External Brain: Forecast Intelligence, Option Signals, and In-Advance-of-Time Exposure Governance for the Self-Managed Enterprise",
@@ -966,32 +1044,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-16457c7174c16ede2b49",
-      "title": "Digital Intelligence Technology, ESG Information Disclosure Quality, and Enterprise Immunity in SRDI Enterprises",
-      "doi": "10.54097/gyswhq05",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.54097%2Fgyswhq05",
-      "publication_date": "2026-10-28",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-2bbd554fbadeed1bf6e1",
-      "title": "Real earnings management and ESG disclosure in emerging markets: The moderating effect of managerial ownership from a social norm perspective",
-      "doi": "10.1016/j.heliyon.2023.e22832",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.heliyon.2023.e22832",
-      "publication_date": "2023-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-3db549236eb4d0cb18d6",
       "title": "Environmental, social and governance (ESG) disclosure and firm performance: does national culture matter?",
       "doi": "10.1108/medar-06-2021-1356",
@@ -1015,19 +1067,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.2139%2Fssrn.2878777",
       "publication_date": "2016",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-84f5a3767a62f7cb0722",
-      "title": "Corporate governance perspective on environmental reporting: Literature review and future research agenda",
-      "doi": "10.1002/csr.2643",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1002%2Fcsr.2643",
-      "publication_date": "2023-10-27",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -1161,19 +1200,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-161540c09d7a61ea7563",
-      "title": "A Systematic Review and Evaluation of Sustainable AI Algorithms and Techniques in Healthcare",
-      "doi": "10.1109/access.2025.3596189",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1109%2Faccess.2025.3596189",
-      "publication_date": "2025",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-2785d420eb01ebf46f86",
       "title": "Value-based principles in sustainability reporting",
       "doi": "10.3389/frsus.2026.1922920",
@@ -1291,19 +1317,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-d24fc649f40a9e40e556",
-      "title": "A governance model for the application of AI in health care",
-      "doi": "10.1093/jamia/ocz192",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1093%2Fjamia%2Focz192",
-      "publication_date": "2019-11-04",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-ef9b3a91eeb67f67f79f",
       "title": "Sustainability Reporting and Corporate Performance of Quoted Companies in Nigeria",
       "doi": "10.56201/ijssmr.v10.no5.2024.pg91.106",
@@ -1327,19 +1340,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1108%2Fbjm-11-2025-0930",
       "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-058323de5fb0716ca82c",
-      "title": "ETHICS AND GOVERNANCE OF AI IN HEALTHCARE: CASE INDONESIA, EU, AND THE US",
-      "doi": "10.33701/jiapd.v17i2.5683",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.33701%2Fjiapd.v17i2.5683",
-      "publication_date": "2025-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -2783,6 +2783,162 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.3390%2Fsu18052312",
       "publication_date": "2026-02-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-00d25f716665719272f8",
+      "title": "Impact of Sustainability Reporting on Financial Performance: Evidence from an Emerging Economy",
+      "doi": "10.54560/jracr.v14i4.559",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.54560%2Fjracr.v14i4.559",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-173000147b0059675089",
+      "title": "Reporte de sostenibilidad de universidades: Una revisión bibliométrica y literaria de la base de SCOPUS",
+      "doi": "10.33595/2226-1478.15.4.1234",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.33595%2F2226-1478.15.4.1234",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1f386757ba72bf2b8cf5",
+      "title": "FROM REPORTS TO RETURNS: A BIBLIOMETRIC ANALYSIS OF THE INVESTOR’S ROLE IN SHAPING SUSTAINABILITY DISCLOSURES",
+      "doi": "10.56249/ijbr.03.01.58",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.56249%2Fijbr.03.01.58",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-46a1a1896378e2580a79",
+      "title": "BLUE ACCOUNTING DISCLOSURE FOR RIVER CONSERVATION AND CLIMATE CHANGE MITIGATION",
+      "doi": "10.21776/ub.jamal.2024.15.3.34",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.21776%2Fub.jamal.2024.15.3.34",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6466421fde4933bb0ce3",
+      "title": "Sustainability Disclosure, Institutional Ownership and Value of Listed Companies in Nigeria",
+      "doi": "10.22452/ajap.vol17no2.1",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.22452%2Fajap.vol17no2.1",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-91161a59956c6adf68fc",
+      "title": "Effect of Firm ESG Disclosure on Corporate Financial Performance and Firm Value",
+      "doi": "10.29279/jitr.k.2024.29.4.165",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.29279%2Fjitr.k.2024.29.4.165",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9d1ca6a0d53897b290ca",
+      "title": "Measuring environmental performance of banks: Evidence from Carbon Disclosure Project (CDP) reporting banks",
+      "doi": "10.4102/jef.v10i1.3",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4102%2Fjef.v10i1.3",
+      "publication_date": "2017-06-06",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9d46afe2ff7299f475d4",
+      "title": "Corporate Sustainability Reporting: Regulations of the International Sustainability Standards Board and the European Union",
+      "doi": "10.14746/ppuam.2024.16.15",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.14746%2Fppuam.2024.16.15",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9e1ac2510ae2e40837d7",
+      "title": "Assessing sustainability reporting practice in accordance with the global reporting initiative (G4) towards achieving sustainable development goals using artificial intelligence",
+      "doi": "10.63817/jmagp.05.2024.002",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.63817%2Fjmagp.05.2024.002",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a05526c02b1d73754248",
+      "title": "Web-based Environmental Reporting: Evidence from Listed Manufacturing Companies in Bangladesh",
+      "doi": "10.22452/ajap.vol17no1.2",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.22452%2Fajap.vol17no1.2",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-ab77dc1fbfba888b56ea",
+      "title": "Promoting Transparency and Accountability in the Oil and Gas Extractive Industry Sector for Sustainable Development in Bojonegoro Regency",
+      "doi": "10.31113/jia.v21i2.1187",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.31113%2Fjia.v21i2.1187",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-af89b4e4622fdaeb1a42",
+      "title": "Moving from Social and Sustainability Reporting to Integrated Reporting: Exploring the Potential of Italian Public-Funded Universities’ Reports",
+      "doi": "10.3390/su12083172",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu12083172",
+      "publication_date": "2020-04-15",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
