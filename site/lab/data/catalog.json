@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T14:38:54Z",
+  "updated_at": "2026-11-08T00:00:00Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -15,7 +15,10 @@
     "agent_start": "https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/AGENT_START_HERE.md",
     "youtube_channel": "https://www.youtube.com/@chanxinghong",
     "listen_and_learn": "https://www.alberttansinhon.com/listen-and-learn/",
-    "whitepapers": "https://github.com/Albertito-AI/Albertito-AI/blob/main/wiki/PORTFOLIO.md"
+    "whitepapers": "https://github.com/Albertito-AI/Albertito-AI/blob/main/wiki/PORTFOLIO.md",
+    "journal": "https://thehumanquestionjournal.com/",
+    "resource_guide": "https://www.alberttansinhon.com/explore/",
+    "resource_map": "https://www.alberttansinhon.com/resource-map.json"
   },
   "items": [
     {

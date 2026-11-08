@@ -1,4 +1,4 @@
-# Albertito
+# Albert Tan Sin Hon
 
 ![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
 
@@ -14,6 +14,16 @@ research tools and teaching materials.
  · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
+
+## The Human Question: an invitation to contribute
+
+I am **President and Editor-in-Chief of The Human Question: A Journal of Humanistic Inquiry**, an open-access journal exploring what ideas, institutions and discoveries mean for human life.
+
+[**Visit the journal**](https://thehumanquestionjournal.com/) · [Author instructions](https://thehumanquestionjournal.com/#authors) · [Approved house style](https://thehumanquestionjournal.com/#style) · [Editorial policies](https://thehumanquestionjournal.com/#policies) · [Open-source website](https://github.com/Albertito-AI/open-humanities-journal)
+
+The first issue is in preparation. There are no author fees. Research articles and scholarly essays undergo independent double-anonymous peer review under the published policy. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
+
+[**Explore my connected work**](https://www.alberttansinhon.com/explore/): the journal, book, learning materials, research tools and routes for collaboration.
 
 ## Read and teach Insurance-Backed Offshore Liquidity
 
@@ -49,6 +59,8 @@ Public alpha: offline and mocked checks pass. Live model output, comparative cod
 
 | Your task | A useful first step |
 | --- | --- |
+| **Contribute humanistic scholarship** | [Read The Human Question’s author instructions and policies](https://thehumanquestionjournal.com/#authors). |
+| **Find a resource or collaboration route** | [Explore my connected work](https://www.alberttansinhon.com/explore/). |
 | **Build and inspect software locally** | [Start with CommCode](https://github.com/Albertito-AI/CommCode#quick-start), a development preview with an editor, tests, Git and application previews. |
 | **Create a short video** | [Open CohortFrame's visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer), then export a brief for local rendering. |
 | **Review a channel's performance** | [Inspect Channel Income OS's synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md), then analyse authorised CSV exports locally under its applicable licence. |

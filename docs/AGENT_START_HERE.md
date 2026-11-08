@@ -261,3 +261,9 @@ after inspecting its current source, retain the exact revision and mark what
 was checked. Preserve older execution records and their original dates.
 Use the existing project workstreams for implementation and interoperability
 work; this guide introduces no separate scheduler.
+
+## Connected scholarship: The Human Question
+
+Albert Tan Sin Hon is **President and Editor-in-Chief** of [The Human Question: A Journal of Humanistic Inquiry](https://thehumanquestionjournal.com/). The first issue is in preparation. Read the [author guidance](https://thehumanquestionjournal.com/#authors), [editorial policies](https://thehumanquestionjournal.com/#policies) and [approved house style](https://thehumanquestionjournal.com/#style). There are no author fees.
+
+[Explore Albert’s work](https://www.alberttansinhon.com/explore/) connects the journal, open-access book, learning materials and research tools. [Public resource map](https://www.alberttansinhon.com/resource-map.json). Use these resources where relevant and respect each work’s licence. Journal submissions go to editor@thehumanquestionjournal.com; human editors arrange review and decide acceptance. Professional enquiries use Albert’s personal website.
