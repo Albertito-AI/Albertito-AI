@@ -1,5 +1,30 @@
 # Profile change record
 
+## 8 November 2026: align publication and release status
+
+The profile's lower books section still described *Insurance-Backed Offshore
+Liquidity* as forthcoming, although its opening linked the published edition.
+The [publisher catalogue](https://books.ugp.rug.nl/ugp/catalog/book/300), directly
+inspected on 8 November, gives **6 November 2026** and DOI
+[10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e). Corrected that
+status and its access link, and renamed the section **Books** so it accommodates
+the published book and the separately forthcoming *ANSWERABLE*.
+
+Aligned the Atlas Upstream entry and download link with the published **0.2.1**
+SQLite reliability correction. The [verification record](https://www.alberttansinhon.com/atlas-upstream/verification.md)
+and [release manifest](https://www.alberttansinhon.com/atlas-upstream/release.json)
+record **45 tests passed, zero skipped**, clean-install checks and a scripted
+official MCP client trial. Downloaded public ZIP and wheel bytes matched the
+verified release hashes. Independent operator attempts remain **zero of three**;
+live language-model and physical field trials remain pending.
+
+Prepared against main `1fa41524b9ed0bae81fb85f2d35e333012fb5533`. The acceptance
+criterion is consistent status and working access to the evidenced publications.
+The pull request, exact reviewed head, applicable Actions results and merge
+receipt are the primary delivery records. This correction and its review were
+AI-assisted; no independent adoption, commercial outcome or new reuse rights
+are asserted.
+
 ## 5 November 2026: record Markdown and CAD regression fixes
 
 Extended the [public contribution record](OPEN_SOURCE_CONTRIBUTIONS.md) with
