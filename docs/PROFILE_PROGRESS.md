@@ -1,5 +1,23 @@
 # Profile change record
 
+## 8 November 2026: connect earned recognition to inspectable work
+
+Added the actually displayed Pull Shark ×2 bronze artwork and Developer Program
+Member status to the profile, with a dated [evidence record](GITHUB_RECOGNITION.md).
+The achievement panel was inspected directly and showed the second and
+sixteenth merged-PR milestones. No additional award or tier is asserted.
+
+The same section introduces Atlas Quant's newly merged visual guide and
+probabilistic agent lab, giving readers a direct route from profile recognition
+to runnable, documented work. Synthetic data, model limitations and the
+difference between submitted contributions and external acceptance remain explicit.
+
+Prepared against main `ccc23dc78886fd56cec323cd0463c83e241e84ea`. Acceptance:
+the official bronze artwork renders, its link opens the observed achievement,
+the Atlas Quant guides resolve, and applicable profile checks pass. The PR and
+Actions records retain exact revisions and delivery evidence. Drafting and
+review are AI-assisted; no new independent endorsement is claimed.
+
 ## 8 November 2026: clarify voluntary contribution terms
 
 The public Build with us section still implied that paid contributor assignments
