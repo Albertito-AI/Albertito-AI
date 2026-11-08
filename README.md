@@ -265,9 +265,10 @@ confusing step, or propose a carefully specified example that exposes a problem.
   [contribution guide](https://github.com/Albertito-AI/regnav-source-watch/blob/main/CONTRIBUTING.md).
 
 Open an issue in the relevant project before a substantial change. Accepted work
-receives accurate attribution. When a funded assignment is available, contributors
-can agree roles, deliverables, IP and payment terms before starting. Voluntary
-participation carries no automatic payment entitlement or revenue share.
+receives accurate attribution. Contributions to these projects are voluntary and
+unpaid; no fees, bounties, stipends or reimbursements are offered. Please do not
+undertake work expecting payment or a revenue share. Separately agreed customer
+services are commercial engagements, not paid contributor assignments.
 
 ## Contributions to other projects
 
