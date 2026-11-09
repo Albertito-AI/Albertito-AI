@@ -823,6 +823,60 @@
         "editorial_action": "2026-W45:lab-library-editorial",
         "inspection_kind": "AI source inspection, not independent human approval"
       }
+    },
+    {
+      "id": "discovery-d24fc649f40a9e40e556",
+      "title": "A governance model for the application of AI in health care",
+      "type": "reference",
+      "description": "A perspective proposing how health services can assign oversight of clinical AI from initial review through ongoing monitoring.",
+      "maturity": "Journal perspective, online November 2019; March 2020 issue",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "limitation": "A proposed governance model for health care. The inspected sections do not establish clinical effectiveness, general applicability or current regulatory requirements.",
+      "links": [
+        {
+          "label": "PubMed record and full-text links",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31682262/",
+          "kind": "start"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T00:59:51Z",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/31682262/",
+        "scope": "Publisher identity, article type, dates and rights checked against Oxford Academic, PubMed and the PMC record. Inspected the advance article PDF, pp. 5–6, Deployment stage and Integration, including the monitoring and reporting passages, for monitoring and reporting roles only. No audit of referenced studies, clinical outcomes or law."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "text": "Sandeep Reddy, Sonia Allan, Simon Coghlan and Paul Cooper, ‘A governance model for the application of AI in health care’ (2020) 27(3) Journal of the American Medical Informatics Association 491–497. Published online 4 November 2019. doi:10.1093/jamia/ocz192.",
+        "url": "https://doi.org/10.1093/jamia/ocz192"
+      },
+      "rights": {
+        "summary": "All rights reserved under the publisher’s standard publication model. This entry links to the record and provides an original description; it reproduces no article text or figures.",
+        "url": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+      },
+      "related_item_ids": [
+        "reference-nist-ai-rmf-1",
+        "reference-nist-genai-profile"
+      ],
+      "origin": "curated_reference",
+      "review_status": "source_inspected",
+      "added_at": "2026-11-08T06:22:12Z",
+      "publication_date": "2019-11-04",
+      "publisher": "Oxford University Press on behalf of the American Medical Informatics Association",
+      "doi": "10.1093/jamia/ocz192",
+      "authors": [
+        "Sandeep Reddy",
+        "Sonia Allan",
+        "Simon Coghlan",
+        "Paul Cooper"
+      ],
+      "use_for": "Separate an initial evaluation from ongoing oversight. For a fictional workflow, name who watches for failures, what evidence they collect and who can pause use.",
+      "editorial_provenance": {
+        "editorial_action": "2026-W46:lab-library-editorial",
+        "inspection_kind": "AI source inspection, not independent human approval"
+      }
     }
   ]
 }
