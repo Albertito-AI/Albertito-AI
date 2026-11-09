@@ -1,24 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T01:02:39Z",
+  "generated_at": "2026-11-09T06:55:20Z",
   "refresh_mode": "network",
   "service_day": "2026-11-09",
-  "last_successful_refresh": "2026-11-09T01:02:39Z",
+  "last_successful_refresh": "2026-11-09T06:55:20Z",
   "status": "ok",
   "scope_note": "Curated source references and automatically indexed publisher metadata have different review levels. Discovery does not verify article contents, legal currency, free access or independent usefulness.",
   "source_runs": [
     {
       "id": "esg-disclosure",
       "label": "ESG disclosure and accountability",
-      "checked_at": "2026-11-09T01:02:39Z",
+      "checked_at": "2026-11-09T06:55:20Z",
       "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
       "status": "ok",
       "discovered": 160,
-      "accepted": 3,
+      "accepted": 0,
       "rejected": {
-        "outside_topic": 133,
-        "unsupported_record_type": 12,
-        "missing_or_invalid_metadata": 9
+        "outside_topic": 128,
+        "unsupported_record_type": 7,
+        "update_notice": 1,
+        "missing_or_invalid_metadata": 7
       },
       "daily_limit": 3,
       "queries": [
@@ -26,44 +27,44 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "e0b1cc3fe0daf7979d704f5c0823011f386b764a673c5ef3bf7c16fbb1007943",
-          "reported_total": 57667
+          "response_sha256": "3af29066e2b962b2a0c00cab200e77a396684dc066236b6481a60bd144b9e6f5",
+          "reported_total": 57789
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "9f25d99609da746603b58b2e4dc1b741fc71f92da316cb6893e4bc52b5f9b93e",
+          "response_sha256": "47699df96ac7787aa78b266aed490840477172b8a487fd817fbb5e914e7968a7",
           "reported_total": 45057,
           "position": {
             "year": 2024,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-09T01:02:39Z",
-      "queued_by_daily_limit": 119,
+      "last_successful_check": "2026-11-09T06:55:20Z",
+      "queued_by_daily_limit": 135,
       "pending_limit": 120,
-      "pending_count": 119,
-      "pending_overflow": 0
+      "pending_count": 120,
+      "pending_overflow": 15
     },
     {
       "id": "ai-agent-governance",
       "label": "AI governance and agent evaluation",
-      "checked_at": "2026-11-09T01:02:39Z",
+      "checked_at": "2026-11-09T06:55:20Z",
       "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
       "status": "ok",
       "discovered": 160,
-      "accepted": 3,
+      "accepted": 0,
       "rejected": {
-        "outside_topic": 148,
-        "missing_or_invalid_metadata": 8,
-        "update_notice": 1,
-        "unsupported_record_type": 1
+        "outside_topic": 144,
+        "unsupported_record_type": 5,
+        "update_notice": 2,
+        "missing_or_invalid_metadata": 7
       },
       "daily_limit": 3,
       "queries": [
@@ -71,43 +72,44 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "226f732a5152be6519e26f4baabe7e459ebf4acc2dbd416bc1054a927022e7cc",
-          "reported_total": 277976
+          "response_sha256": "0185470848d3e1c07ed6c3ba6fa66464e47fb896497a0ece7b88b73dca667a29",
+          "reported_total": 278437
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "ba41d132c788572548179e1d34f05118e35cec110178d2fb74ebeb4482e2e7d6",
+          "response_sha256": "0ac3df5d3ac3429f52250dcfe1de0b578d6b77b35807e21526a9d77807c7b416",
           "reported_total": 228075,
           "position": {
             "year": 2024,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-09T01:02:39Z",
-      "queued_by_daily_limit": 31,
+      "last_successful_check": "2026-11-09T06:55:20Z",
+      "queued_by_daily_limit": 33,
       "pending_limit": 120,
-      "pending_count": 31,
+      "pending_count": 33,
       "pending_overflow": 0
     },
     {
       "id": "legal-evidence-provenance",
       "label": "Legal evidence and provenance",
-      "checked_at": "2026-11-09T01:02:39Z",
+      "checked_at": "2026-11-09T06:55:20Z",
       "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
       "status": "ok",
       "discovered": 160,
-      "accepted": 1,
+      "accepted": 2,
       "rejected": {
-        "outside_topic": 138,
-        "unsupported_record_type": 9,
-        "missing_or_invalid_metadata": 12
+        "outside_topic": 142,
+        "unsupported_record_type": 6,
+        "update_notice": 1,
+        "missing_or_invalid_metadata": 8
       },
       "daily_limit": 3,
       "queries": [
@@ -115,35 +117,36 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-10%2Cuntil-index-date%3A2026-11-09%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-09",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "abb9c9018c74fd34eb388c0dc50e8f439aac5062f8143e9ab6dc89f08fbd10b7",
-          "reported_total": 129862
+          "response_sha256": "6eba3daa1d4ab7145bbeb2bb712c3f851d74f1d997185420ed7604ecabc0c3ff",
+          "reported_total": 130159
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31",
           "status": "ok",
-          "checked_at": "2026-11-09T01:02:39Z",
+          "checked_at": "2026-11-09T06:55:20Z",
           "returned": 80,
-          "response_sha256": "ab9937f179ce97e5c75bae2df54b276a0c8ef8cfb6fb2c6c5d1ddcad1fc4d237",
+          "response_sha256": "bc457d25e8e4814ae970a81eae1a7f4f31f23eaf6457b329ad3d8b0746261f86",
           "reported_total": 93126,
           "position": {
             "year": 2024,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-09T01:02:39Z",
+      "last_successful_check": "2026-11-09T06:55:20Z",
+      "queued_by_daily_limit": 1,
       "pending_limit": 120,
-      "pending_count": 0,
+      "pending_count": 1,
       "pending_overflow": 0
     },
     {
       "id": "known-record-rechecks",
       "label": "Previously indexed records",
       "status": "ok",
-      "checked_at": "2026-11-09T01:02:39Z",
+      "checked_at": "2026-11-09T06:55:20Z",
       "discovered": 6,
       "accepted": 0,
       "failed_checks": 0,
@@ -154,18 +157,18 @@
     "sources": {
       "esg-disclosure": {
         "year": 2024,
-        "offset": 240,
-        "last_advanced_at": "2026-11-09T01:02:39Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-09T06:55:20Z"
       },
       "ai-agent-governance": {
         "year": 2024,
-        "offset": 240,
-        "last_advanced_at": "2026-11-09T01:02:39Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-09T06:55:20Z"
       },
       "legal-evidence-provenance": {
         "year": 2024,
-        "offset": 240,
-        "last_advanced_at": "2026-11-09T01:02:39Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-09T06:55:20Z"
       }
     },
     "mode": "bounded_discovery",
@@ -11174,6 +11177,293 @@
       "related_item_ids": [],
       "metadata_sha256": "4afff5db6b22b19f87dda7655aadb1f17b6e8011e6fc875a8c515f61815a9fb4",
       "discovered_at": "2026-11-09T01:02:39Z"
+    },
+    {
+      "id": "discovery-064995c1846c58a987f4",
+      "title": "The exclusionary rule of illegal evidence in Canadian law",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "authors": [
+        "Mohammed Alzubairii"
+      ],
+      "publisher": "Vision for Scientific Research and Publishing LTD",
+      "venue": "International Journal of Law Research and Studies",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.59992/ijlrs.2024.v3n6p1",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "legal-evidence-provenance",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for legal evidence and provenance. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "evidence"
+          ],
+          [
+            "law"
+          ]
+        ],
+        "source_id": "legal-evidence-provenance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.59992/ijlrs.2024.v3n6p1",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.59992%2Fijlrs.2024.v3n6p1",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.59992%2Fijlrs.2024.v3n6p1",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.59992/ijlrs.2024.v3n6p1",
+        "text": "Mohammed Alzubairii (2024). The exclusionary rule of illegal evidence in Canadian law. International Journal of Law Research and Studies. https://doi.org/10.59992/ijlrs.2024.v3n6p1",
+        "doi": "10.59992/ijlrs.2024.v3n6p1"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "99775bf6490f079505d3f06a4a0189bd9e278e348e2b259b7a1ac17a4108aacd",
+      "discovered_at": "2026-11-09T06:55:20Z"
+    },
+    {
+      "id": "discovery-1dc059370b3a46830ea7",
+      "title": "GREEN ACCOUNTING STUDY IN RETAIL COMPANIES: A REVIEW OF ENVIRONMENTAL ETHICS IN SYMBOLIC DISCLOSURE",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Naili Saadah Saadah"
+      ],
+      "publisher": "Universitas Islam Negeri Sayyid Ali Rahmatullah Tulungagung",
+      "venue": "BALANCE: JOURNAL OF ISLAMIC ACCOUNTING",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.21274/balance.v5i2.9753",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "environmental"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.21274/balance.v5i2.9753",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.21274%2Fbalance.v5i2.9753",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.21274%2Fbalance.v5i2.9753",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.21274/balance.v5i2.9753",
+        "text": "Naili Saadah Saadah (2024). GREEN ACCOUNTING STUDY IN RETAIL COMPANIES: A REVIEW OF ENVIRONMENTAL ETHICS IN SYMBOLIC DISCLOSURE. BALANCE: JOURNAL OF ISLAMIC ACCOUNTING. https://doi.org/10.21274/balance.v5i2.9753",
+        "doi": "10.21274/balance.v5i2.9753"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "ed999dd8bbbf286d8a77b9b53820d3b8f4cb9dc05d18b84f55b544410e7a91b9",
+      "discovered_at": "2026-11-09T06:55:20Z"
+    },
+    {
+      "id": "discovery-7ae69cab8fb6d5540b0e",
+      "title": "Evaluation of Emotional Imitation and Fusion Capabilities of Image-Generative AI for Textile Design",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Yu Dam Hwang",
+        "Han Sang Man"
+      ],
+      "publisher": "Institute of Science Culture Exhibition and Design",
+      "venue": "The Korean Society of Science & Art",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.17548/ksaf.2024.12.30.585",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.17548/ksaf.2024.12.30.585",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.17548%2Fksaf.2024.12.30.585",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.17548%2Fksaf.2024.12.30.585",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.17548/ksaf.2024.12.30.585",
+        "text": "Yu Dam Hwang; Han Sang Man (2024). Evaluation of Emotional Imitation and Fusion Capabilities of Image-Generative AI for Textile Design. The Korean Society of Science & Art. https://doi.org/10.17548/ksaf.2024.12.30.585",
+        "doi": "10.17548/ksaf.2024.12.30.585"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "7fade6c2902abb1480b02401c42172bf481078f66d0d8b413433f6bf023b36be",
+      "discovered_at": "2026-11-09T06:55:20Z"
+    },
+    {
+      "id": "discovery-84ee6b638957bee96283",
+      "title": "Analysis of user-centered usage status of ICT-based artificial intelligence care service for estabilishing a safety net for the vulnerable and suggestion of policy measures to improve service",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Korea Safety Culture Society",
+        "Chi Yang Yoon",
+        "Mi Yang Jeon"
+      ],
+      "publisher": "Forum of Public Safety and Culture",
+      "venue": "Forum of Public Safety and Culture",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.52902/kjsc.2024.37.205",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "artificial intelligence"
+          ],
+          [
+            "safety"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.52902/kjsc.2024.37.205",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.52902%2Fkjsc.2024.37.205",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.52902%2Fkjsc.2024.37.205",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.52902/kjsc.2024.37.205",
+        "text": "Korea Safety Culture Society; Chi Yang Yoon; Mi Yang Jeon (2024). Analysis of user-centered usage status of ICT-based artificial intelligence care service for estabilishing a safety net for the vulnerable and suggestion of policy measures to improve service. Forum of Public Safety and Culture. https://doi.org/10.52902/kjsc.2024.37.205",
+        "doi": "10.52902/kjsc.2024.37.205"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "826541c67d797092d87b7021fab6293b480a9dca43067102fe0fb35343a3c6d6",
+      "discovered_at": "2026-11-09T06:55:20Z"
     }
   ],
   "superseded_records": [
@@ -11336,6 +11626,148 @@
     }
   ],
   "items": [
+    {
+      "id": "discovery-a2406c4116eb803ba9a6",
+      "title": "A Study on Legal Issues of International Regulations on Evidence-Based Training (EBT) and Legislative Measures to Improve Domestic Pilot Training",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "authors": [
+        "Sang-Yong Park"
+      ],
+      "publisher": "Korea Society Of Air Space Law And Policy",
+      "venue": "The Korean Journal of Air & Space Law and Policy",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.31691/kasl39.3.3",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "legal-evidence-provenance",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for legal evidence and provenance. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "evidence"
+          ],
+          [
+            "legal"
+          ]
+        ],
+        "source_id": "legal-evidence-provenance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.31691/kasl39.3.3",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.31691%2Fkasl39.3.3",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.31691%2Fkasl39.3.3",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.31691/kasl39.3.3",
+        "text": "Sang-Yong Park (2024). A Study on Legal Issues of International Regulations on Evidence-Based Training (EBT) and Legislative Measures to Improve Domestic Pilot Training. The Korean Journal of Air & Space Law and Policy. https://doi.org/10.31691/kasl39.3.3",
+        "doi": "10.31691/kasl39.3.3"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "e8d4b47afc778bd2889931f2d001d1750a9e6f35e1701d186d5381a12f2445fa",
+      "discovered_at": "2026-11-09T06:55:20Z"
+    },
+    {
+      "id": "discovery-0753e9ec5991ab2d0e29",
+      "title": "Community Policing, Vigilantism, and the Rule of Law: Evidence from Liberia",
+      "type": "research",
+      "work_type": "book-chapter",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "authors": [
+        "Benjamin S. Morse"
+      ],
+      "publisher": "Cambridge University Press",
+      "venue": "Crime, Insecurity, and Community Policing",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1017/9781009235914.011",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "legal-evidence-provenance",
+      "added_at": "2026-11-09T06:55:20Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
+      "use_for": "Locate and assess this publication for legal evidence and provenance. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "evidence"
+          ],
+          [
+            "law"
+          ]
+        ],
+        "source_id": "legal-evidence-provenance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1017/9781009235914.011",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1017%2F9781009235914.011",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-09T06:55:20Z",
+        "source_url": "https://api.crossref.org/works/10.1017%2F9781009235914.011",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1017/9781009235914.011",
+        "text": "Benjamin S. Morse (2024). Community Policing, Vigilantism, and the Rule of Law: Evidence from Liberia. Crime, Insecurity, and Community Policing. https://doi.org/10.1017/9781009235914.011",
+        "doi": "10.1017/9781009235914.011"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "45ec50e174a396fff45023ab67a6bf97df9acc255657eaaa01bffbd0910f1c85",
+      "discovered_at": "2026-11-09T06:55:20Z"
+    },
     {
       "id": "discovery-d0b7a5cf2c9deeddf45b",
       "title": "Evolution of Research on AI Data Governance and IP Protection: A Bibliometric–Normative Study",
@@ -11585,7 +12017,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-09T01:02:39Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -11613,7 +12045,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.1108%2Fs1569-373220220000021006",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -11630,6 +12062,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "4e6fb6b97d5a8b01ee95cb63ea552b151f68592694309040189969c208bac5bf",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -11658,7 +12091,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-09T01:02:39Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -11686,7 +12119,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.35631%2Faijbaf.514001",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -11703,6 +12136,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "38ef3ebe99e6b9deb8183e4f200c1e09d1d5a7f8650230adb1b45c4118179b7a",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -11807,7 +12241,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-09T01:02:39Z",
-      "last_metadata_check": "2026-10-30T06:04:10Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -11835,7 +12269,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-30T06:04:10Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.1002%2Fbse.3281",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -11852,6 +12286,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "1b59bda7af099576ac7059428d65c17e992f2c3414aa6d627dee3373043b616d",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -12806,7 +13241,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-07T06:16:19Z",
-      "last_metadata_check": "2026-11-08T06:22:12Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12834,7 +13269,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-08T06:22:12Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.56578%2Fcis140512",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12851,7 +13286,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "585690c4ed24f29b296f49c129ece0ef47f94a6d26464cccd8f35c5b7e502a2f",
-      "last_metadata_attempt": "2026-11-08T06:22:12Z",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-29T01:00:03Z"
     },
     {
@@ -16826,7 +17261,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-10-30T06:04:10Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -16854,7 +17289,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.1108%2Fsampj-05-2025-0648",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -16871,7 +17306,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "9a1eee83006d2ec85460a97bd14b454dd8df640647675408547aaf428284c591",
-      "last_metadata_attempt": "2026-10-31T05:58:34Z",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-29T00:13:11Z"
     },
     {
@@ -16907,7 +17342,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-10-30T06:04:10Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -16935,7 +17370,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.1016%2Fj.neuroimage.2020.117221",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -16952,7 +17387,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "0f21b2c1e94f20804c52700902ca7299dfbcad6172158a1c223163bf08870646",
-      "last_metadata_attempt": "2026-10-31T05:58:34Z",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-29T00:13:11Z"
     },
     {
@@ -17278,7 +17713,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-10-29T00:13:11Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "last_metadata_check": "2026-11-09T06:55:20Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -17306,7 +17741,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
+        "checked_at": "2026-11-09T06:55:20Z",
         "source_url": "https://api.crossref.org/works/10.1108%2Flodj-12-2025-1096",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -17323,7 +17758,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "850628e34f6f42963e26626017344dff8b2f87d379d8bebad8e0bf8bf316b021",
-      "last_metadata_attempt": "2026-10-31T05:58:34Z",
+      "last_metadata_attempt": "2026-11-09T06:55:20Z",
       "discovered_at": "2026-10-29T00:13:11Z"
     },
     {
@@ -18435,38 +18870,29 @@
   ],
   "changes": {
     "added": [
-      "discovery-0f5c9374790b7f493f10",
-      "discovery-727ef01e57e1e37dbad6",
-      "discovery-893d465a40e52845b69c",
-      "discovery-8e181efe507fb8e31bdb",
-      "discovery-90190fc52b70187758c6",
-      "discovery-b017fa1f5022d8214c09",
-      "discovery-d0b7a5cf2c9deeddf45b"
+      "discovery-0753e9ec5991ab2d0e29",
+      "discovery-a2406c4116eb803ba9a6"
     ],
-    "updated": [
-      "discovery-d24fc649f40a9e40e556"
-    ],
+    "updated": [],
     "flagged": [],
-    "superseded": [
-      "discovery-d24fc649f40a9e40e556"
-    ],
+    "superseded": [],
     "rejected": {
-      "outside_topic": 419,
-      "unsupported_record_type": 22,
-      "missing_or_invalid_metadata": 29,
-      "update_notice": 1
+      "outside_topic": 414,
+      "unsupported_record_type": 18,
+      "update_notice": 4,
+      "missing_or_invalid_metadata": 22
     }
   },
   "stats": {
-    "total": 97,
+    "total": 99,
     "curated_references": 13,
-    "metadata_records": 84,
+    "metadata_records": 86,
     "needs_review": 0,
-    "added_this_run": 7,
-    "new_metadata_today": 7,
-    "pending": 150,
-    "pending_overflow_this_run": 0,
+    "added_this_run": 2,
+    "new_metadata_today": 9,
+    "pending": 154,
+    "pending_overflow_this_run": 15,
     "superseded_records": 2
   },
-  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42543398446"
+  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/42576022769"
 }

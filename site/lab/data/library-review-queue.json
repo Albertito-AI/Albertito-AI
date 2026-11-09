@@ -1,8 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T01:02:39Z",
+  "generated_at": "2026-11-09T06:55:20Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-a2406c4116eb803ba9a6",
+      "title": "A Study on Legal Issues of International Regulations on Evidence-Based Training (EBT) and Legislative Measures to Improve Domestic Pilot Training",
+      "doi": "10.31691/kasl39.3.3",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.31691%2Fkasl39.3.3",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0753e9ec5991ab2d0e29",
+      "title": "Community Policing, Vigilantism, and the Rule of Law: Evidence from Liberia",
+      "doi": "10.1017/9781009235914.011",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1017%2F9781009235914.011",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-d0b7a5cf2c9deeddf45b",
       "title": "Evolution of Research on AI Data Governance and IP Protection: A Bibliometric–Normative Study",
@@ -3042,6 +3068,58 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.21002%2Fjaki.2024.11",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-064995c1846c58a987f4",
+      "title": "The exclusionary rule of illegal evidence in Canadian law",
+      "doi": "10.59992/ijlrs.2024.v3n6p1",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.59992%2Fijlrs.2024.v3n6p1",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1dc059370b3a46830ea7",
+      "title": "GREEN ACCOUNTING STUDY IN RETAIL COMPANIES: A REVIEW OF ENVIRONMENTAL ETHICS IN SYMBOLIC DISCLOSURE",
+      "doi": "10.21274/balance.v5i2.9753",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.21274%2Fbalance.v5i2.9753",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7ae69cab8fb6d5540b0e",
+      "title": "Evaluation of Emotional Imitation and Fusion Capabilities of Image-Generative AI for Textile Design",
+      "doi": "10.17548/ksaf.2024.12.30.585",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.17548%2Fksaf.2024.12.30.585",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-84ee6b638957bee96283",
+      "title": "Analysis of user-centered usage status of ICT-based artificial intelligence care service for estabilishing a safety net for the vulnerable and suggestion of policy measures to improve service",
+      "doi": "10.52902/kjsc.2024.37.205",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.52902%2Fkjsc.2024.37.205",
       "publication_date": "2024-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
