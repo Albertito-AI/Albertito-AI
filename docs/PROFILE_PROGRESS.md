@@ -1,5 +1,16 @@
 # Profile change record
 
+## 9 November 2026: foreground expertise and professional enquiries
+
+Removed the public QR images, payment payload, PayPal appeal and direct-payment
+instructions. Retired machine-readable payment routes now return no destination
+or transfer details. The profile invites a focused discussion of research,
+workshops and commissioned projects, with commercial arrangements handled
+privately. The current maintenance direction records this owner decision.
+
+Historical Git commits and third-party cached copies are not rewritten.
+Scholarship, project evidence, evaluation status and licence terms are retained.
+
 ## 8 November 2026: keep achievement display in GitHub's sidebar
 
 Removed the duplicate README achievement display and its standalone recognition

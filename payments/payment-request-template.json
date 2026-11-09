@@ -1,18 +1,8 @@
 {
-  "schema_version": "1.0.0",
-  "record_kind": "a2a_payment_request_template",
-  "status": "unfilled_not_payable",
-  "order_id": null,
-  "service_id": null,
-  "scope": null,
-  "amount_minor": null,
-  "currency": "SGD",
-  "reference": null,
-  "terms_agreed": false,
-  "payer_authority_verified": false,
-  "payment_destination": "https://www.alberttansinhon.com/atlas-agent-school/payments/manifest.json",
-  "qr_sha256": "665476215ca7ff9a1b537e5bf602eac77d8b55b85a1d206b8c487e9b84aedbe5",
-  "receipt_status": "not_requested",
-  "instruction": "Populate only for an agreed deliverable service in the authorised exchange. A published QR does not create a debt, invoice, enrolment or authority to pay. Keep customer data and bank evidence private.",
-  "qr_image_revision": "2026-11-02-v2"
+  "schema_version": "2.0.0",
+  "record_kind": "retired_payment_request_template",
+  "updated_on": "2026-11-09",
+  "status": "retired_not_payable",
+  "enquiry_url": "https://www.alberttansinhon.com/#contact",
+  "instruction": "Do not use this retired template to request a transfer. Engagement arrangements are agreed privately."
 }

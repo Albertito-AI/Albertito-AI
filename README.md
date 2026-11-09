@@ -302,56 +302,27 @@ and current maintainer-review status so the work can be inspected directly.
 
 ## Work with me
 
-I welcome scoped enquiries about **comparative legal research, evidence-workflow
-design, research and AI-literacy workshops, and commissioned prototype work**.
-The first conversation should establish the problem, the intended user and the
-evidence needed to judge whether the work helps.
+My commissioned work brings comparative legal research, source verification and
+practical workflow design to questions that require careful judgement. Enquiries
+may concern a research brief, an institutional workshop or a prototype with a
+clear purpose and a result that can be examined.
 
-**A scoped workshop enquiry: Source Verification for Legal Research Teams.**
-A university, research centre or legal-operations team can enquire about one
-90-minute online group session for up to 12 participants. The proposed session
-uses a [public fictional teaching exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching)
-to practise checking quotations, pinpoints, source gaps and review decisions,
-followed by a facilitated debrief. The agreed deliverables would be the single
-live session and an original one-page source-checking checklist. Participants'
-reuse terms would be agreed in writing. The institution supplies its meeting
-platform; no real case files, privileged documents or personal data are
-requested. This is research-method education, not legal advice, a court
-product, bespoke case review or ongoing technical support.
+**Source Verification for Legal Research Teams** is a proposed facilitated
+workshop built around a [public fictional teaching exercise](https://github.com/Albertito-AI/policykit/tree/main/teaching).
+Participants examine quotations, pinpoints, gaps in the source record and review
+decisions. A session can be scoped around the institution's audience and learning
+objectives, with the format and original supporting materials agreed in advance.
+This is research-method education; real case files and privileged material are
+not needed for an initial discussion.
 
-**Fee and next step:** A specific SGD quotation, session date, delivery terms
-and capacity are agreed individually before a booking or payment. No fixed
-price or automatic checkout is offered. For this workshop, email
-**travelingbert@gmail.com** with the subject **Source verification workshop**
-and a non-confidential description of the audience, main learning problem,
-participant count, preferred date and budget range. After written agreement,
-the existing [PayNow service-payment instructions](payments/README.md) may be
-used for an agreed SGD amount; the payer must verify the bank-resolved
-recipient, and the actual incoming bank credit must be matched to the order
-before receipt is confirmed. A QR scan or payment screenshot does not confirm
-a booking or an earned receipt.
+[**Discuss a project or workshop**](https://www.alberttansinhon.com/#contact).
+A short, non-confidential brief should describe the question, intended audience,
+desired outcome, relevant jurisdiction and timing. I will consider the fit with
+my expertise and the scope needed to do the work well.
 
-For an academic collaboration or paid-work enquiry, use the
-[contact section on my website](https://www.alberttansinhon.com/#contact).
-Include a short non-confidential brief: the problem, desired deliverable,
-relevant jurisdiction, available data or materials, timeline and budget range.
-Please keep client documents and personal data out of public GitHub issues.
-
-For commissioned work, scope, permissions, fees, acceptance and support are agreed
-in writing. Project sponsorship can support maintenance, documentation and
-independent testing. The current prototypes' limits and applicable rights remain
-part of that discussion.
-
-**Agreed service payments:** [PayNow QR and payment instructions](payments/README.md).
-The approved PayNow replacement QR v2 is available for agreed SGD payments for commissioned work.
-Confirm the scope, fee, terms and recipient before transferring.
-[Machine-readable instructions](payments/manifest.json) are available for agents.
-
-<a href="payments/README.md"><img src="payments/paynow-20261102-v2.jpeg" width="220" alt="Approved PayNow QR v2 supplied by Albert. Open the payment instructions and verify the recipient in your bank."></a>
-
-**Optional support for independent work:** [PayPal](https://paypal.me/august14).
-Support preserves research and editorial independence; it purchases no authorship,
-citation or predetermined conclusion.
+Scope, deliverables, permissions and commercial terms are settled privately in
+writing before an engagement begins. Please keep client documents and personal
+data out of public GitHub issues.
 
 ## Selected scholarship
 
@@ -445,5 +416,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **8 November 2026**.
+Last substantive profile update: **9 November 2026**.
 

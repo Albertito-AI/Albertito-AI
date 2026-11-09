@@ -1,8 +1,23 @@
 # Keeping the profile useful
 
 The profile connects readers with Albert Tan Sin Hon's research, experimental
-tools, teaching materials, collaborators and scoped paid-work enquiries.
+tools, teaching materials, collaborators and professional enquiries.
 Improve it when evidence or reader needs change.
+
+## Public positioning from 9 November 2026
+
+Lead with the quality, purpose and evidence of the work. Use restrained,
+specific language and an enquiry route for suitable research, teaching and
+commissioned projects. Commercial terms belong in the private scoping process.
+Do not reintroduce public payment QR codes, bank details, donation appeals,
+checkout prompts, price-led offers or requests for a prospect's budget in the
+opening public invitation. This direction supersedes earlier payment-publication
+instructions. Retired machine-readable endpoints must remain non-payable.
+
+Build distinction through inspectable scholarship, demonstrable methods,
+careful presentation and genuine fit. Do not invent scarcity, waiting lists,
+demand, endorsements, client outcomes or superiority. Keep open scholarship and
+existing evaluation rights available under their actual licences.
 
 ## Ownership and rhythm
 
@@ -22,7 +37,7 @@ work before editing so two workflows do not publish competing changes.
    status might have changed.
 2. Identify one evidenced problem: an obsolete claim, broken entry point,
    confusing explanation, missing useful result, or friction in making a
-   relevant collaboration or paid-work enquiry.
+   relevant collaboration or professional enquiry.
 3. Choose the smallest substantive change that addresses it. State the expected
    reader benefit and the evidence that would show whether it helped.
 4. Review the complete diff, check changed links and repository paths, preserve

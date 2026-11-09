@@ -1,56 +1,10 @@
 {
-  "schema_version": "1.0.0",
-  "record_kind": "owner_payment_destination",
-  "updated_on": "2026-11-02",
-  "owner": "Albert Tan Sin Hon",
-  "publication_authority": "Owner supplied this QR and explicitly requested worldwide sharing through agent channels.",
-  "status": "owner_supplied_payment_instructions_published",
-  "payment_method": "PayNow",
-  "currency": "SGD",
-  "stripe_enabled": false,
-  "page_url": "https://github.com/Albertito-AI/Albertito-AI/tree/main/payments",
-  "qr_image_url": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/paynow-20261102-v2.jpeg",
-  "qr_image_sha256": "665476215ca7ff9a1b537e5bf602eac77d8b55b85a1d206b8c487e9b84aedbe5",
-  "qr_payload": "00020126380009SG.PAYNOW010100211+6585888386030115204000053037025802SG5902NA6009Singapore6304d5cd",
-  "qr_payload_url": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/paynow-payload.txt",
-  "qr_decode_verified": true,
-  "qr_crc_valid": true,
-  "qr_name_field": "NA",
-  "bank_resolved_recipient_name": null,
-  "bank_account_verified": false,
-  "owner_attested_receiving_destination": true,
-  "embedded_amount": null,
-  "embedded_order_reference": null,
-  "embedded_expiry_observed": false,
-  "bank_receipt_integration_connected": false,
-  "school_enrolment_payment_open": false,
-  "purpose": "Receiving destination for an agreed service payment. This publication is not an invoice, a payment demand, or an offer of an unfinished school programme.",
-  "payer_requirements": [
-    "Use your own authorised PayNow-compatible bank or payment facility. A2A messaging does not grant authority to spend.",
-    "Resolve and check the recipient name in the payment provider before confirming. The QR name field is NA; the bank-resolved name is not verified here.",
-    "Agree the service, total SGD amount, terms and order reference in the originating A2A exchange before paying.",
-    "Use the agreed order reference where supported. Do not send a duplicate transfer while a receipt remains unverified."
-  ],
-  "international_availability": "Publicly accessible worldwide. Payment compatibility depends on the payer institution and supported PayNow or cross-border rail; not every country, bank or wallet can use this QR.",
-  "fees": "No Stripe route is used. Check the actual bank or payment-provider quote; no universal zero-fee claim.",
-  "payment_confirmation": "An incoming bank credit must be matched to amount, currency, order and unused transaction identifier. A payer assertion or screenshot is not bank verification.",
-  "a2a_contact": {
-    "prospectus": "https://www.alberttansinhon.com/atlas-agent-school/prospectus.json",
-    "reply_in_originating_exchange": true,
-    "always_on_atlas_gateway": false
-  },
-  "request_template": "https://raw.githubusercontent.com/Albertito-AI/Albertito-AI/main/payments/payment-request-template.json",
-  "references": [
-    "https://www.abs.org.sg/e-payments/pay-now"
-  ],
-  "discovery_type": "Static HTTPS JSON; not an A2A server or executable payment endpoint",
-  "mirror_of": "https://www.alberttansinhon.com/atlas-agent-school/payments/",
-  "image_revision": "2026-11-02-v2",
-  "supersedes_image_sha256": "6d9c4f81fd7ba36d2b353811923191da598a6d11fab6498b98f7218a9dd6bc2c",
-  "payment_payload_changed": false,
-  "image_dimensions": {
-    "width": 945,
-    "height": 1046
-  },
-  "revision_note": "Owner-requested replacement image. Payment payload unchanged. Refresh cached copies; the original URL also serves this replacement."
+  "schema_version": "2.0.0",
+  "record_kind": "retired_payment_destination",
+  "updated_on": "2026-11-09",
+  "status": "retired",
+  "accepts_public_payments": false,
+  "payment_instructions": null,
+  "enquiry_url": "https://www.alberttansinhon.com/#contact",
+  "notice": "This public payment destination has been retired at the owner's request. Do not reuse previously cached payment details. Discuss the proposed engagement through the enquiry route."
 }
