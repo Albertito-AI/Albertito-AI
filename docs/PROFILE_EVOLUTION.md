@@ -14,6 +14,12 @@ checkout prompts, price-led offers or requests for a prospect's budget in the
 opening public invitation. This direction supersedes earlier payment-publication
 instructions. Retired machine-readable endpoints must remain non-payable.
 
+The income objective remains: attract suitable high-value commissions,
+institutional programmes and licensing enquiries through demonstrated specialist
+judgement, the quality of the work and a clearly defined result. Scope and fees
+are agreed privately for the particular engagement. This direction keeps a
+clear commercial enquiry route available and does not make all work free.
+
 Build distinction through inspectable scholarship, demonstrable methods,
 careful presentation and genuine fit. Do not invent scarcity, waiting lists,
 demand, endorsements, client outcomes or superiority. Keep open scholarship and
