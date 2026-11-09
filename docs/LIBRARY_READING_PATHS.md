@@ -133,6 +133,23 @@ observations, remaining uncertainty and a justified next decision. This exercise
 is a proposed method. It supplies no completed test results, certification or
 claim of general system safety.
 
+### Optional follow-on: decide who can pause a workflow
+
+Read the **Deployment stage** and **Integration** sections of
+[Reddy, Allan, Coghlan and Cooper](https://pubmed.ncbi.nlm.nih.gov/31682262/)
+(catalogue ID `discovery-d24fc649f40a9e40e556`). They propose ongoing monitoring
+and reporting in clinical settings. For the fictional citation assistant above,
+write three lines: who checks a sample of citations after release, what
+evidence would trigger escalation, and who can pause the workflow. For example,
+a reviewer who repeatedly finds links that open but do not support the cited
+claim can record the failures and route them to the person responsible for
+suspending use.
+
+**Produce:** a short monitoring and escalation note. The exercise adapts one
+oversight idea from a health care perspective; it does not assess a clinical
+system or establish a legal requirement. The scoped source inspection was on
+9 November 2026.
+
 ## Path 3: Separate provenance, credential integrity and trust
 
 **Useful question:** What does a recorded chain or verified credential actually
