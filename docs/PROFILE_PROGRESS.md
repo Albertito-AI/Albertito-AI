@@ -1,5 +1,24 @@
 # Profile change record
 
+## 9 November 2026: connect mathematical research with public teaching
+
+Added Atlas Open Mathematics to the profile's featured work, task routes and
+project table. The entry leads to its first teaching lesson, verification record
+and contribution guide. It describes the exact-arithmetic and elementary Lean
+pilots within their recorded scope, with the Millennium Prize Problems retained
+as long-term research directions.
+
+The journal handoff follows The Human Question's ordinary editorial process.
+Research-library enquiries use the existing website contact route. No private
+repository link, active membership claim, payment prompt or discovery claim is
+introduced. Public source and educational-content licences remain unchanged.
+
+Prepared against main `893b02601e4a061d981bc85eaa3600b552eeadf2` after reading the
+current public mathematics README and linked repository records. Acceptance:
+profile validation, applicable existing checks and direct inspection of the
+published Markdown. The delivery commit records the exact change; external use
+and learning outcomes remain unmeasured.
+
 ## 9 November 2026: foreground expertise and professional enquiries
 
 Removed the public QR images, payment payload, PayPal appeal and direct-payment

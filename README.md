@@ -15,6 +15,24 @@ research tools and teaching materials.
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
+## Investigate mathematics and make it teachable
+
+**[Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics)**
+connects mathematical investigation with reproducible checks, preserved lessons
+and explanations others can use. Start with the exact-arithmetic linear-system
+pilot, inspect a rejected answer, and follow an accepted procedural lesson into
+Atlas Opsbook. A separate Lean pilot checks four elementary statements. The
+Millennium Prize Problems provide long-term research directions; current results
+concern elementary mathematics, with their verification scope recorded.
+
+[**Read the first teaching lesson**](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/001-domain-matters.md)
+· [Inspect the evidence](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/VERIFICATION.md)
+· [Contribute a reproducible result](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/CONTRIBUTING.md).
+Selected accounts of reasoning and human learning may follow
+[The Human Question's ordinary editorial route](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/JOURNAL_HANDOFF.md).
+For Atlas Research Library enquiries, use the
+[website contact route](https://www.alberttansinhon.com/#contact).
+
 ## Inspect financial models with Atlas Quant
 
 **[Atlas Quant](https://github.com/Albertito-AI/atlas-quant)** now includes
@@ -70,6 +88,7 @@ Public alpha: offline and mocked checks pass. Live model output, comparative cod
 
 | Your task | A useful first step |
 | --- | --- |
+| **Investigate and teach mathematics** | [Start with Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics#start-with-a-reproducible-experiment), then inspect its checks and teaching lesson. |
 | **Contribute humanistic scholarship** | [Read The Human Question’s author instructions and policies](https://thehumanquestionjournal.com/#authors). |
 | **Find a resource or collaboration route** | [Explore my connected work](https://www.alberttansinhon.com/explore/). |
 | **Build and inspect software locally** | [Start with CommCode](https://github.com/Albertito-AI/CommCode#quick-start), a development preview with an editor, tests, Git and application previews. |
@@ -211,6 +230,7 @@ Please do not send case files or confidential information with an initial enquir
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
+| **[Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics)** | Reproduce elementary exact-arithmetic and Lean examples, inspect verification records, and turn procedural lessons into public teaching material. | [First teaching lesson](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/001-domain-matters.md) · [Research protocol](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/RESEARCH_PROTOCOL.md) |
 | **[CommCode](https://github.com/Albertito-AI/CommCode)** | Edit, test, run and export ordinary Git projects locally; review bounded AI proposals when a model is configured. Development prerelease 0.1.0-dev.1. | [Installation](https://github.com/Albertito-AI/CommCode/blob/main/docs/INSTALLATION.md) · [Verification and remaining gates](https://github.com/Albertito-AI/CommCode/blob/main/docs/VERIFICATION.md) |
 | **[Channel Income OS](https://github.com/Albertito-AI/channel-income-os)** | Inspect local CSV analysis, rights holds, revenue scenarios and prioritised experiments. Public commercial preview 0.1.0. | [Synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md) · [Export guide](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/EXPORT_GUIDE.md) |
 | **[CohortFrame](https://github.com/Albertito-AI/cohortframe)** | Compose title-card briefs, inspect exact still previews and render local MP4s with retained job records. | [Visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer) · [Installation and downloads](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started) |
