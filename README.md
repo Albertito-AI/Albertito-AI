@@ -26,8 +26,17 @@ Millennium Prize Problems provide long-term research directions; current results
 concern elementary mathematics, with their verification scope recorded.
 
 [**Read the first teaching lesson**](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/001-domain-matters.md)
+· [Work through integer feasibility (Q0001)](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/002-integer-feasibility.md)
 · [Inspect the evidence](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/VERIFICATION.md)
 · [Contribute a reproducible result](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/CONTRIBUTING.md).
+For researchers and educators, Q0001 gives a concrete distinction: the system
+`2x + 3y = p`, `-x + 4y = q` has an integer solution precisely when
+`11` divides `p + 2q`. At `p = 7`, `q = -2`, its rational solution is not
+integral. The [public research record](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/agent-attempts/0002/record.md)
+documents a separate local Lean check and a counterexample to overgeneralising
+one divisibility test. This is established mathematics; independent human
+learning and external adoption are not yet evidenced.
+
 Selected accounts of reasoning and human learning may follow
 [The Human Question's ordinary editorial route](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/JOURNAL_HANDOFF.md).
 For Atlas Research Library enquiries, use the
