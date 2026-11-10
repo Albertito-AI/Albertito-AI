@@ -1,5 +1,29 @@
 # Profile change record
 
+## 10 November 2026: make the second mathematics lesson inspectable (Q0001)
+
+The featured Atlas Open Mathematics entry now links the public Q0001 integer-
+feasibility lesson, its research record and a fully specified failing example.
+For 2x + 3y = p and -x + 4y = q, the integer criterion is 11 dividing
+p + 2q; at p = 7, q = -2 the rational solution is non-integral. The
+lesson proves both directions and gives a counterexample to dropping a
+numerator check for an arbitrary matrix. These are established results,
+not new mathematics or a Millennium Prize result.
+
+Source: atlas-open-mathematics main `e829b52ef6ca89e7409a7b950d829870f19529dd`;
+lesson blob `193b0cf11c09322b223bc013beb39310461d3e3d`;
+research record blob `5534c157b3145cea7be3f5d4a8db3ec46b7b9ebe`.
+The Q0001 theorem module has a separately recorded **local** pinned Lean
+check and agent replay, not the hosted four-statement pilot. Public lessons
+are not confidential evaluation sets; independent human transfer and paid
+adoption remain unverified. AI assistance used in the research and profile edit.
+
+Review criterion: exact published links resolve, text matches the source,
+no rights or payment terms change, and existing profile checks succeed on
+the proposed head. Website second-lesson promotion is a source-versioned
+handoff to Website Care and Daily Website Resource Refresh, not a Site edit.
+Work ID: `ADOPTION-MATH-Q0001-20261110`.
+
 ## 9 November 2026: connect mathematical research with public teaching
 
 Added Atlas Open Mathematics to the profile's featured work, task routes and
