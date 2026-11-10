@@ -1,8 +1,99 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T06:55:20Z",
+  "generated_at": "2026-11-10T07:31:45Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-fd84e0ba70aabadb93e7",
+      "title": "Ethical accountability for artificial intelligence–written manuscripts in dermatology",
+      "doi": "10.1016/j.jaad.2026.01.084",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jaad.2026.01.084",
+      "publication_date": "2026-07",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b5247497a2e31c4f5fa9",
+      "title": "Corporate Governance and Environmental Accounting Reporting in Selected Quoted African Companies",
+      "doi": "10.1177/09721509211010989",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1177%2F09721509211010989",
+      "publication_date": "2021-06-23",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a37ed6cb5c9bd3ae2c79",
+      "title": "A PRIVACY PRESERVING PERSONAL AI ASSISTANT AND THE COST OF CLOUD MODEL INFERENCE: ARCHITECTURE, CAPABILITY TRADEOFFS, AND EVALUATION PROTOCOL",
+      "doi": "10.30574/wjarr.2026.32.1.2606",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.30574%2Fwjarr.2026.32.1.2606",
+      "publication_date": "2026-10-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a2b66d370dca03611623",
+      "title": "From Smell Test to Safety: Operational Guardrails for Clinical Artificial Intelligence Deployment",
+      "doi": "10.1016/j.ijrobp.2026.05.021",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.ijrobp.2026.05.021",
+      "publication_date": "2026-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9f69bae7204648b35f1a",
+      "title": "Determinants of sustainability assurance levels: The case of French firms",
+      "doi": "10.22495/cgsrv4i2p6",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.22495%2Fcgsrv4i2p6",
+      "publication_date": "2020",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3db549236eb4d0cb18d6",
+      "title": "Environmental, social and governance (ESG) disclosure and firm performance: does national culture matter?",
+      "doi": "10.1108/medar-06-2021-1356",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fmedar-06-2021-1356",
+      "publication_date": "2022-06-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-064995c1846c58a987f4",
+      "title": "The exclusionary rule of illegal evidence in Canadian law",
+      "doi": "10.59992/ijlrs.2024.v3n6p1",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.59992%2Fijlrs.2024.v3n6p1",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-a2406c4116eb803ba9a6",
       "title": "A Study on Legal Issues of International Regulations on Evidence-Based Training (EBT) and Legislative Measures to Improve Domestic Pilot Training",
@@ -1135,19 +1226,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-3db549236eb4d0cb18d6",
-      "title": "Environmental, social and governance (ESG) disclosure and firm performance: does national culture matter?",
-      "doi": "10.1108/medar-06-2021-1356",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1108%2Fmedar-06-2021-1356",
-      "publication_date": "2022-06-14",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-7951b2623b4a1660254a",
       "title": "The Role of Sustainability Performance and Accounting Assurors in Sustainability Assurance Engagements",
       "doi": "10.2139/ssrn.2878777",
@@ -1161,19 +1239,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-9f69bae7204648b35f1a",
-      "title": "Determinants of sustainability assurance levels: The case of French firms",
-      "doi": "10.22495/cgsrv4i2p6",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.22495%2Fcgsrv4i2p6",
-      "publication_date": "2020",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-aaf8373ef1a81e47bf92",
       "title": "Influences on Stakeholder Engagement in Sustainability Accounting and Reporting: A Study of Australian Local Councils",
       "doi": "10.1108/s2043-052320160000010010",
@@ -1184,19 +1249,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1108%2Fs2043-052320160000010010",
       "publication_date": "2016-10-28",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-b5247497a2e31c4f5fa9",
-      "title": "Corporate Governance and Environmental Accounting Reporting in Selected Quoted African Companies",
-      "doi": "10.1177/09721509211010989",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1177%2F09721509211010989",
-      "publication_date": "2021-06-23",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -1629,32 +1681,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-a2b66d370dca03611623",
-      "title": "From Smell Test to Safety: Operational Guardrails for Clinical Artificial Intelligence Deployment",
-      "doi": "10.1016/j.ijrobp.2026.05.021",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.ijrobp.2026.05.021",
-      "publication_date": "2026-10",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-a37ed6cb5c9bd3ae2c79",
-      "title": "A PRIVACY PRESERVING PERSONAL AI ASSISTANT AND THE COST OF CLOUD MODEL INFERENCE: ARCHITECTURE, CAPABILITY TRADEOFFS, AND EVALUATION PROTOCOL",
-      "doi": "10.30574/wjarr.2026.32.1.2606",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.30574%2Fwjarr.2026.32.1.2606",
-      "publication_date": "2026-10-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-b8b0f553d6e3b1009561",
       "title": "Guardrails for Artificial General Intelligence: A strategic foresight approach to ethical AI Governance",
       "doi": "10.30574/wjarr.2025.28.1.3505",
@@ -1769,19 +1795,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.62823%2Fijgrit%2F03.04.8374",
       "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-fd84e0ba70aabadb93e7",
-      "title": "Ethical accountability for artificial intelligence–written manuscripts in dermatology",
-      "doi": "10.1016/j.jaad.2026.01.084",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jaad.2026.01.084",
-      "publication_date": "2026-07",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3072,19 +3085,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-064995c1846c58a987f4",
-      "title": "The exclusionary rule of illegal evidence in Canadian law",
-      "doi": "10.59992/ijlrs.2024.v3n6p1",
-      "topics": [
-        "Legal evidence and provenance"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.59992%2Fijlrs.2024.v3n6p1",
-      "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-1dc059370b3a46830ea7",
       "title": "GREEN ACCOUNTING STUDY IN RETAIL COMPANIES: A REVIEW OF ENVIRONMENTAL ETHICS IN SYMBOLIC DISCLOSURE",
       "doi": "10.21274/balance.v5i2.9753",
@@ -3121,6 +3121,162 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.52902%2Fkjsc.2024.37.205",
       "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-084639e05368a0fd45c7",
+      "title": "Mandated ESG Disclosure and Its Effects on Earnings Quality and Cost of Capital: Evidence From European Stock Markets",
+      "doi": "10.1002/csr.70280",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fcsr.70280",
+      "publication_date": "2025-11-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-119216c85f3339999a03",
+      "title": "EXAMINING BOARD CHARACTERISTICS AND INTEGRATED REPORTING QUALITY: INSIGHT FROM ESG-FOCUSED FIRMS IN INDONESIA",
+      "doi": "10.21512/jafa.v11i2.12426",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.21512%2Fjafa.v11i2.12426",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-11f84b3b29c2a592e845",
+      "title": "Impact of Environmental, Social and Governance ( ESG) disclosure on firm risk: A meta‐analytical review",
+      "doi": "10.1002/csr.2725",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fcsr.2725",
+      "publication_date": "2024-03",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-293b993a1fd80d08c952",
+      "title": "Building an Evaluation Harness for Oil & Gas AI Agents",
+      "doi": "10.2118/234002-ms",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.2118%2F234002-ms",
+      "publication_date": "2026-10-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6f4074ca5433cfa21421",
+      "title": "Responsible AI in Construction Safety: Systematic Evaluation of Large Language Models and Prompt Engineering",
+      "doi": "10.1061/jcemd4.coeng-16639",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1061%2Fjcemd4.coeng-16639",
+      "publication_date": "2026-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7627c8af4ae43bb85d23",
+      "title": "Exploring Employees’ Accountability in Knowledge Management Systems Enhanced by Generative Artificial Intelligence",
+      "doi": "10.37055/nsz/203481",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.37055%2Fnsz%2F203481",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7a724864dfe4e26470b7",
+      "title": "Research on Performance Evaluation of Science and Technology Plan Projects Based on Large Language Models",
+      "doi": "10.12677/ssem.2026.156132",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.12677%2Fssem.2026.156132",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-87737a83c0626f592f9f",
+      "title": "From disclosure to epistemic accountability: preserving meaningful human control across the AI-assisted research lifecycle",
+      "doi": "10.3389/frma.2026.1965518",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffrma.2026.1965518",
+      "publication_date": "2026-11-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8f51a0daaf1bc39d3f27",
+      "title": "<b>ĐÁNH GIÁ HIỆU QUẢ ỨNG DỤNG ĐỒ THỊ TRI THỨC Y KHOA KẾT HỢP TRÍ TUỆ NHÂN TẠO ĐA PHƯƠNG THỨC HỖ TRỢ CHẨN ĐOÁN SỚM UNG THƯ VÒM MŨI HỌNG TẠI VIỆT NAM</b>",
+      "doi": "10.52163/yhc.v67icd13.6408",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.52163%2Fyhc.v67icd13.6408",
+      "publication_date": "2026-09-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a2e80deedd8a705b6d45",
+      "title": "Postural evaluation with artificial intelligence tool for room maids in the tourism sector",
+      "doi": "10.56294/hl2024.347",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.56294%2Fhl2024.347",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c703bf54555471bea01d",
+      "title": "A Study on AI Models for Korean Translation Evaluation : Focusing on Multi-layered Automatic Evaluation Metrics (AEMs)",
+      "doi": "10.15652/ink.2024.21.4.183",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.15652%2Fink.2024.21.4.183",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-fa190391e2ff821f1332",
+      "title": "Governance of AI in electoral management bodies",
+      "doi": "10.18356/9789211588958c009",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.18356%2F9789211588958c009",
+      "publication_date": "2026-10-19",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
