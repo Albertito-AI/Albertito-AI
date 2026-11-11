@@ -15,9 +15,11 @@ and reuse terms.
 
 MCP interface documentation was inspected on **29 October 2026**. Additional
 project entry paths were inspected on **2 November 2026**, at the revisions
-recorded below and in the catalogue. Existing execution and interface records
-retain their original dates. Host-specific interoperability and independent
-adoption need separate evidence.
+recorded below and in the catalogue. Atlas Reweave's source, optional interface
+and recorded verification were inspected on **11 November 2026** at the pinned
+revision below. Existing execution and interface records retain their original
+dates. Host-specific interoperability and independent adoption need separate
+evidence.
 
 ## Open-access book and teaching companion
 
@@ -36,6 +38,7 @@ The [agent guide](../site/ibol/agents.md) documents static metadata, a local CLI
 | Identify supplied claims affected by a changed or missing local source | [RegNav gateway exchange](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/sample_exchange.json) | An internal fictional exchange with unchanged, changed and unavailable source states |
 | Add source-change checks to a GitHub workflow | [RegNav Source Watch](https://github.com/Albertito-AI/regnav-source-watch) | A separate Apache-2.0 Action, documented installation and a fictional demonstration |
 | Inspect a local agent tool with synthetic inputs | [Tallystick agent interface](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md) | Read-only checks, illustrative calculations and a settlement preview using invented records |
+| Reuse completed work while rechecking current acceptance | [Atlas Reweave](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md#try-it) | Local stored work, versioned judgements and dependency checks using deterministic fixtures; experimental MIT-licensed source alpha, added 11 November 2026 |
 | Examine acceptance conditions for machine work | [Symbolon demonstration](https://github.com/Albertito-AI/symbolon#see-it-in-action) | A local example with synthetic TEST units and explicit acceptance evidence |
 | Examine procedural treatment of a disputed result | [Piepowder demonstration](https://github.com/Albertito-AI/piepowder#see-it-work) | Fictional cases, findings and unresolved human decisions, subject to its reserved rights |
 | Find scholarship or source-checking teaching materials | [Catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library) | Source links, status, bibliographic records and related resources |
@@ -101,16 +104,54 @@ title-card scenes, 60 seconds and printable ASCII text. Python and FFmpeg are
 required for MP4 rendering. See the [rights notice](https://github.com/Albertito-AI/cohortframe/blob/main/NOTICE.md)
 and [release evidence](https://github.com/Albertito-AI/cohortframe/blob/main/docs/RELEASE_0_2.md).
 
+## Atlas Reweave: reuse work and recheck acceptance
+
+Added on **11 November 2026**, from reviewed source revision
+`c21d9fc513280dcf709e0775a769f0dadab4a689`. Version **0.1.0a1** is an experimental
+source alpha requiring Python 3.11 or later. The core uses the Python standard
+library. Follow the [pinned installation guide](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md#try-it)
+in an isolated environment:
+
+```sh
+git clone https://github.com/Albertito-AI/atlas-reweave.git
+cd atlas-reweave
+git checkout c21d9fc513280dcf709e0775a769f0dadab4a689
+python -m pip install .
+python -m reweave demo --store ./demo.sqlite3
+```
+
+Reweave stores generated work separately from the judgement accepting it. A
+changed checker or policy can recheck that output without regenerating it;
+current parent rejection blocks a cached child. The examples use exact rational
+arithmetic and invented source text. They are deterministic software fixtures
+and need no model account or paid service. This is a local library for a trusted
+operator, with an optional MCP interface described below. The source version
+does not assert a PyPI publication or GitHub tagged release. Its
+[MIT licence](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/LICENSE)
+requires preserving the copyright and permission notice; third-party dependencies
+retain their own terms.
+
+The [public contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5)
+offers three bounded tasks: [reproduce the installed package and benchmark](https://github.com/Albertito-AI/atlas-reweave/issues/2),
+[report a real MCP client integration](https://github.com/Albertito-AI/atlas-reweave/issues/3),
+or [review a cache or recovery boundary](https://github.com/Albertito-AI/atlas-reweave/issues/4).
+Read the [participation guide](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/AGENT_PARTICIPATION.md)
+and [contribution rules](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/CONTRIBUTING.md).
+Bring actual source-pinned results and identify agent assistance accurately.
+An invitation or an internal reproduction does not establish outside adoption.
+
 ## Read the catalogue programmatically
 
-The existing catalogue is ordinary JSON. Retrieve it directly; JavaScript
-rendering is unnecessary. Its project, research, teaching and selected video
-records retain the source, citation and rights information.
+The existing catalogue is ordinary JSON with **19 items**, including **twelve
+project entries**. Retrieve it directly; JavaScript rendering is unnecessary.
+Its project, research, teaching and selected video records retain the source,
+citation and rights information.
 
-The optional **agent_access** object on the RegNav and Tallystick project entries
-adds the documented local interface, protocol revision, tool names, source
-revision, inspection scope and limitations. Other entries retain their existing
-demonstration links. Absence of agent_access makes no interoperability claim.
+The optional **agent_access** object on the RegNav, Tallystick and Atlas Reweave
+project entries adds the documented local interface, protocol revision or
+negotiation mode, tool names, source revision, inspection scope and limitations.
+Other entries retain their existing demonstration links. Absence of agent_access
+makes no interoperability claim.
 
 For each selected item, read:
 
@@ -132,13 +173,16 @@ authorise execution, messages, payment or access to private material.
 | --- | --- | --- | --- |
 | RegNav gateway in policykit | MCP 2025-11-25, local stdio | regnav_capabilities and source_watch_check | [Gateway guide](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/README.md), [implementation](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/experiments/agent_gateway/server.py), [reserved rights](https://github.com/Albertito-AI/policykit/blob/a406dddf51f107867d72532f89d19cc639ebbb74/RIGHTS.md) |
 | Tallystick | MCP 2026-07-28, local stdio | tallystick_market_check, tallystick_pricing_example and tallystick_settlement_preview | [Interface guide](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/docs/agent-interface.md), [implementation](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/src/tallystick/mcp.py), [licensing](https://github.com/Albertito-AI/tallystick/blob/251cb7a6bac7984f94c8eaf91560c775b01fee82/README.md#licensing) |
+| Atlas Reweave, optional adapter | MCP negotiated by SDK 2.3.0 in automatic or legacy mode, local stdio | `list_stages`, `run_registered_stage`, `recheck_work` and `inspect_receipt` | [Interface guide](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/MCP.md), [implementation](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/src/reweave/mcp_server.py), [MIT licence](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/LICENSE) |
 
-These interfaces target different protocol lifecycles. RegNav uses initialize
+RegNav and Tallystick target different protocol lifecycles. RegNav uses initialize
 and notifications/initialized. Tallystick uses per-request protocol metadata and
 server/discover. The official [2026-07-28 changelog](https://modelcontextprotocol.io/specification/2026-07-28/changelog)
-documents this change. Select a client that implements the project's stated
-revision and verify the actual exchange. This source inspection does not establish
-full protocol conformance or compatibility with a particular client.
+documents this change. Reweave delegates negotiation to the official SDK; its
+recorded automatic and legacy exchanges are described below. Select a client
+that implements the project's stated interface and verify the actual exchange.
+These records do not establish full protocol conformance or compatibility with
+every client application.
 
 ### RegNav: inspect first
 
@@ -171,6 +215,31 @@ do not cause a wager, payment, external feed request or live market decision.
 The original code and documentation use Apache-2.0; original schemas and format
 definitions have CC BY 4.0 terms. Third-party material and the separate
 foundational draft retain their own rights.
+
+### Atlas Reweave: registered work and current acceptance
+
+From the pinned source checkout above, install the optional extra and start the
+local stdio server with an operator-selected store and scope:
+
+```sh
+python -m pip install '.[mcp]'
+python -m reweave serve --store ./agent-work.sqlite3 --scope my-agent
+```
+
+The extra pins the official MCP Python SDK to **2.3.0**. `list_stages` returns
+registered stage descriptions, input examples and revisions.
+`run_registered_stage` and `recheck_work` can persist work or judgements; only
+currently accepted receipts include output. `inspect_receipt` returns historical
+metadata without output or revalidation. Tool arguments cannot choose executable
+code, a callback, an import path, a database path or acceptance policy.
+
+The [11 November verification receipt](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/VERIFICATION.md)
+records actual SDK 2.3.0 subprocess exchanges in automatic and legacy modes,
+including discovery, duplicate reuse, restart with changed policy, blocked
+cached descendants and invalid arguments. Those internal checks do not establish
+compatibility with a particular desktop host, live-model quality or independent
+external adoption. Follow the pinned interface guide for request envelopes and
+the operator's trust boundary.
 
 ## Learning with Bert and the YouTube channel
 
@@ -226,7 +295,7 @@ that supports the result. Retain its creator, title, version or exact commit,
 source URL and relevant location. Follow the original publication record for
 scholarly work. Related works remain separately attributable.
 
-RegNav, Source Watch, Symbolon and Tallystick already supply project citation
+RegNav, Source Watch, Symbolon, Tallystick and Atlas Reweave supply project citation
 files. The catalogue links to those files and records gaps where applicable.
 Do not infer authorship of external references from their inclusion in Albert's
 catalogue. Attribution metadata does not create a reuse licence.

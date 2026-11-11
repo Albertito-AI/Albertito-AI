@@ -20,6 +20,7 @@ the Research Lab at `/lab/`. The retired mascot experiment is retained in
 | Search the growing reference and research collection | [Living catalogue](https://albertito-ai.github.io/Albertito-AI/lab/#library) |
 | Work through a source-based research task | [Reading paths](LIBRARY_READING_PATHS.md) |
 | Inspect software demonstrations and reuse terms | [Projects](https://albertito-ai.github.io/Albertito-AI/lab/#projects) |
+| Recheck stored work under changed acceptance conditions | [Atlas Reweave source alpha](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md#try-it), added 11 November 2026 |
 | Find source-checking materials | [Teaching](https://albertito-ai.github.io/Albertito-AI/lab/#teaching) |
 | Follow a short set of maintained starting points | [Research guide](https://albertito-ai.github.io/Albertito-AI/lab/#guide) |
 | Report a reproducible difficulty or unclear explanation | [Feedback form](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=lab-feedback.yml) |
@@ -86,22 +87,26 @@ assertions pass. Review the resulting diff before publishing it.
 
 ## What the catalog records
 
-The [catalogue source](../site/lab/data/catalog.json) contains eleven project entries,
-three published-research entries, two teaching or source-inspection entries and
-two Learning with Bert video metadata records.
-The project entries cover all eleven public software repositories as inspected
-on 2 November 2026. The profile repository provides this index. The
-[twelve public whitepapers](../wiki/PORTFOLIO.md) explain the projects' foundations,
-societal aims and possible development paths; their aspirations are distinct
-from demonstrated capabilities. Private institutional material is excluded.
+The [catalogue source](../site/lab/data/catalog.json) contains **19 items**:
+**twelve project entries**, three published-research entries, two teaching or
+source-inspection entries and two Learning with Bert video metadata records.
+The eleven pre-existing project entries remain the **2 November 2026** catalogue
+snapshot, with their individual inspection and execution dates preserved.
+Atlas Reweave was added and inspected on **11 November 2026**.
+The profile repository provides this index. The
+[twelve public whitepapers](../wiki/PORTFOLIO.md) cover the earlier portfolio's
+foundations, societal aims and possible development paths; their aspirations
+are distinct from demonstrated capabilities. Reweave's own source and
+verification documents are linked in its new entry. Private institutional
+material is excluded.
 Each item includes its status, useful links, an inspection date and the scope
 of that inspection. Repository sources use exact commit URLs. Institutional
 publication records retain their own publication dates and bibliographic fields.
 
-RegNav and Tallystick have additional agent_access records describing their
-documented local MCP interfaces. These keep their own inspection revisions and
-dates. The video entries retain metadata-only labels and unknown transcript
-status; their content has not been assessed for the catalogue. The
+RegNav, Tallystick and Atlas Reweave have additional agent_access records
+describing their documented local MCP interfaces. These keep their own
+inspection revisions and dates. The video entries retain metadata-only labels
+and unknown transcript status; their content has not been assessed for the catalogue. The
 [agent guide](AGENT_START_HERE.md) explains these access and attribution paths.
 
 The additional [reference library](../site/lab/data/library.json) supplies
@@ -126,6 +131,37 @@ The lab's source and engineering records are separate from substantive human
 review. A successful browser test shows that the tested interaction worked.
 A matching hash shows that particular bytes match a recorded value. Neither
 turns an `unreviewed` proposition into a completed legal assessment.
+
+## Atlas Reweave: a new local execution experiment
+
+The **11 November 2026** entry points to reviewed source revision
+`c21d9fc513280dcf709e0775a769f0dadab4a689`. Atlas Reweave **0.1.0a1** is an
+experimental source alpha under the
+[MIT licence](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/LICENSE).
+Install from the [pinned source instructions](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md#try-it)
+with Python 3.11 or later. Its core uses the standard library; the optional
+`.[mcp]` extra installs official MCP Python SDK 2.3.0. This source version does
+not assert a PyPI publication or GitHub tagged release.
+
+Reweave stores generated work separately from versioned acceptance. A policy
+change can recheck a stored output without repeating generation, and current
+parent rejection blocks a cached child. The rational-solver, aggregate and
+literal-source examples are deterministic software fixtures, requiring no model
+account or paid service. The [optional local interface](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/MCP.md)
+exposes exactly `list_stages`, `run_registered_stage`, `recheck_work` and
+`inspect_receipt`. Run and recheck can persist work or judgements; inspection provides
+historical metadata without output or a current-acceptance claim.
+
+The [verification receipt](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/VERIFICATION.md)
+records actual SDK 2.3.0 stdio subprocess checks in automatic and legacy modes.
+They establish those tested exchanges, without establishing a particular desktop
+host's compatibility, live-model quality or independent adoption. The
+[public contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5)
+links tasks for [independent package and benchmark reproduction](https://github.com/Albertito-AI/atlas-reweave/issues/2),
+[real MCP client integration](https://github.com/Albertito-AI/atlas-reweave/issues/3)
+and [cache or recovery boundary review](https://github.com/Albertito-AI/atlas-reweave/issues/4).
+Follow the [participation guide](https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/AGENT_PARTICIPATION.md)
+and retain actual source, commands, outcomes and limits in any report.
 
 ## Research and software relationships
 
@@ -155,8 +191,8 @@ items, with links to the source documentation.
 
 Copy or export the available citation for the actual source you use. For
 software, retain the version and exact repository revision. RegNav, Source
-Watch, Symbolon and Tallystick provide `CITATION.cff` metadata. The catalog links
-to the specific metadata revision and retains a citation to the software
+Watch, Symbolon, Tallystick and Atlas Reweave provide `CITATION.cff` metadata.
+The catalog links to the specific metadata revision and retains a citation to the software
 revision inspected. Where formal author metadata is absent, the citation does
 not infer software authorship from project ownership. No software DOI or
 archival-service connection is asserted.
@@ -174,7 +210,7 @@ Apache-2.0, while its original schemas and format definitions use CC BY 4.0.
 CommCode's platform uses AGPL-3.0-or-later and its starter templates use CC0-1.0.
 Channel Income OS uses PolyForm Noncommercial 1.0.0 with a separate commercial
 licence. CohortFrame and Court Submission Integrity retain reserved rights.
-RIF's original code uses Apache-2.0; EVT-Albert uses MIT.
+RIF's original code uses Apache-2.0; EVT-Albert and Atlas Reweave use MIT.
 Third-party material keeps its own terms. Follow the exact rights link on each
 project entry.
 
