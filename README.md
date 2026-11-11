@@ -73,6 +73,26 @@ My open-access book, *Insurance-Backed Offshore Liquidity: Financial Law, Trust 
 
 The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). [Share the book](site/ibol/share.md) · [Project discovery guide (text)](https://albertito-ai.github.io/Albertito-AI/llms.txt) · [Sitemap (XML)](https://albertito-ai.github.io/Albertito-AI/sitemap.xml). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
 
+## Reuse agent work and recheck its acceptance
+
+**[Atlas Reweave 0.1.0a1](https://github.com/Albertito-AI/atlas-reweave)** is a
+public MIT-licensed Python library for retaining completed computation while
+revisiting the checks that accept it. A policy change can trigger a new check
+without repeating generation. A downstream result remains blocked until its
+supporting dependencies pass their current checks.
+
+[**Try the local examples**](https://github.com/Albertito-AI/atlas-reweave#try-it)
+· [Connect through four MCP tools](https://github.com/Albertito-AI/atlas-reweave/blob/main/docs/MCP.md)
+· [Inspect the benchmark](https://github.com/Albertito-AI/atlas-reweave/blob/main/docs/BENCHMARK.md)
+· [Join the agent contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5)
+
+The experimental source package has recorded Linux, Windows and actual MCP
+subprocess checks. Its deterministic examples need no model account or paid
+service. Agents can reproduce the package, report a real client integration or
+challenge a recovery boundary. Internal agent contributions are recorded;
+outside adoption, model-quality improvements and production savings remain
+unverified. This source version is not a tagged release or a PyPI publication.
+
 ## Help an agent reach a verified outcome
 
 **[Atlas Upstream 0.2.1](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
@@ -99,6 +119,7 @@ Public alpha: offline and mocked checks pass. Live model output, comparative cod
 
 | Your task | A useful first step |
 | --- | --- |
+| **Build reusable, reviewable agent work** | [Try Atlas Reweave](https://github.com/Albertito-AI/atlas-reweave#try-it), then reproduce a benchmark or choose a task from its [agent contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5). |
 | **Investigate and teach mathematics** | [Start with Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics#start-with-a-reproducible-experiment), then inspect its checks and teaching lesson. |
 | **Contribute humanistic scholarship** | [Read The Human Question’s author instructions and policies](https://thehumanquestionjournal.com/#authors). |
 | **Find a resource or collaboration route** | [Explore my connected work](https://www.alberttansinhon.com/explore/). |
@@ -211,8 +232,8 @@ decisions that affect them. The [twelve public project whitepapers](wiki/PORTFOL
 set out first principles, underlying logic, societal aims and ideal development
 paths, alongside risks and evidence needed before claiming benefit. They are
 AI-assisted project statements, not independently validated research findings.
-The versioned papers are available now; publication in GitHub's Wiki tabs remains
-pending initial Wiki setup, as recorded in the index.
+The index links the versioned papers and records their actual GitHub Wiki
+publication state separately from research or adoption evidence.
 
 ## For courts and justice-technology teams
 
@@ -241,6 +262,7 @@ Please do not send case files or confidential information with an initial enquir
 
 | Project | What you can examine | Start here |
 | --- | --- | --- |
+| **[Atlas Reweave](https://github.com/Albertito-AI/atlas-reweave)** | Retain completed work, recheck versioned acceptance and dependencies, and reproduce recovery and bounded-execution checks. Experimental source version 0.1.0a1. | [Examples and installation](https://github.com/Albertito-AI/atlas-reweave#try-it) · [Agent contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5) |
 | **[Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics)** | Reproduce elementary exact-arithmetic and Lean examples, inspect verification records, and turn procedural lessons into public teaching material. | [First teaching lesson](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/001-domain-matters.md) · [Research protocol](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/RESEARCH_PROTOCOL.md) |
 | **[CommCode](https://github.com/Albertito-AI/CommCode)** | Edit, test, run and export ordinary Git projects locally; review bounded AI proposals when a model is configured. Development prerelease 0.1.0-dev.1. | [Installation](https://github.com/Albertito-AI/CommCode/blob/main/docs/INSTALLATION.md) · [Verification and remaining gates](https://github.com/Albertito-AI/CommCode/blob/main/docs/VERIFICATION.md) |
 | **[Channel Income OS](https://github.com/Albertito-AI/channel-income-os)** | Inspect local CSV analysis, rights holds, revenue scenarios and prioritised experiments. Public commercial preview 0.1.0. | [Synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md) · [Export guide](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/EXPORT_GUIDE.md) |
@@ -260,7 +282,8 @@ human review and external use are recorded when they occur.
 
 **Reuse terms:** CommCode uses AGPL-3.0-or-later for its platform and CC0-1.0 for
 its starter templates. Channel Income OS uses PolyForm Noncommercial 1.0.0,
-with a separate written licence required for commercial use. EVT-Albert uses MIT.
+with a separate written licence required for commercial use. EVT-Albert and
+Atlas Reweave use MIT.
 RIF, Symbolon, Tallystick and the separate RegNav Source Watch Action use
 Apache-2.0 for their original code. The Action also licenses its own original
 documentation and fictional fixtures under Apache-2.0; Tallystick's original
@@ -293,6 +316,10 @@ licence or rights file controls reuse. The complete decision rule is recorded in
 A useful first contribution can be small: reproduce a documented run, explain a
 confusing step, or propose a carefully specified example that exposes a problem.
 
+- **Atlas Reweave:** independently reproduce the installed package and benchmark,
+  report an actual MCP client exchange, or supply a minimal failure reproducer.
+  [Agent contribution hub and open tasks](https://github.com/Albertito-AI/atlas-reweave/issues/5).
+  Keep the exact source revision, expected result, observed result and assistance attribution.
 - **CohortFrame:** try a template, reproduce an export or report a specific
   layout or installation problem using [the project issues](https://github.com/Albertito-AI/cohortframe/issues).
   Include the version, platform, a non-confidential brief and the observed result.
@@ -447,5 +474,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **9 November 2026**.
+Last substantive profile update: **11 November 2026**.
 

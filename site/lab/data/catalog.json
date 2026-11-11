@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T00:00:00Z",
+  "updated_at": "2026-11-11T07:32:08Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -21,6 +21,101 @@
     "resource_map": "https://www.alberttansinhon.com/resource-map.json"
   },
   "items": [
+    {
+      "id": "project-atlas-reweave",
+      "title": "Atlas Reweave",
+      "type": "project",
+      "description": "A local Python execution library that stores generated work separately from versioned acceptance, rechecks dependencies and exposes four optional MCP tools for trusted registered agent callbacks.",
+      "maturity": "Experimental source distribution 0.1.0a1",
+      "review_status": "source_inspected",
+      "topics": [
+        "Agent workflows",
+        "Verification",
+        "Reproducibility",
+        "Local tools"
+      ],
+      "added_at": "2026-11-11T07:32:08Z",
+      "limitation": "Examples and benchmarks are deterministic software fixtures. No live-model quality or independent external adoption is established. One trusted operator on a local filesystem; no hostile-callback sandbox or exactly-once external effects. Source version 0.1.0a1 is not a GitHub tagged release or a PyPI publication.",
+      "links": [
+        {
+          "label": "Source installation and examples",
+          "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md#try-it",
+          "kind": "start"
+        },
+        {
+          "label": "MCP setup and four tools",
+          "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/MCP.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Agent participation guide",
+          "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/AGENT_PARTICIPATION.md",
+          "kind": "contribute"
+        },
+        {
+          "label": "Verification and limitations",
+          "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/VERIFICATION.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Source review and hosted checks",
+          "url": "https://github.com/Albertito-AI/atlas-reweave/pull/1",
+          "kind": "scope"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/Albertito-AI/atlas-reweave",
+          "kind": "repository"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-11T07:32:08Z",
+        "revision": "c21d9fc513280dcf709e0775a769f0dadab4a689",
+        "source_url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/README.md",
+        "scope": "Pinned source, package version, licence, citation, participation guide and verification receipt inspected. Recorded tests use deterministic software fixtures and actual SDK subprocess exchanges. This catalogue update does not itself rerun client or Windows checks or establish independent adoption."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/CITATION.cff",
+        "text": "Tan, Albert Sin Hon (2026). Atlas Reweave: durable computation with versioned acceptance. Source version 0.1.0a1; repository revision c21d9fc513280dcf709e0775a769f0dadab4a689 (accessed 11 November 2026). https://github.com/Albertito-AI/atlas-reweave/tree/c21d9fc513280dcf709e0775a769f0dadab4a689",
+        "version": "0.1.0a1",
+        "doi": null,
+        "provenance": "Reference assembled from the pinned CITATION.cff, package version and source revision. Cite the exact revision used; no DOI or tagged release is asserted."
+      },
+      "rights": {
+        "summary": "MIT licence. Preserve the copyright and permission notice; optional third-party dependencies retain their own licences.",
+        "url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/LICENSE"
+      },
+      "agent_access": {
+        "kind": "local_mcp",
+        "status": "documented_research_prototype",
+        "protocol": "MCP",
+        "protocol_version": "SDK-negotiated; automatic and legacy modes",
+        "transport": "stdio",
+        "documentation_url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/MCP.md",
+        "implementation_url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/src/reweave/mcp_server.py",
+        "documented_command": "python -m reweave serve --store ./agent-work.sqlite3 --scope my-agent",
+        "command_context": "From an inspected checkout installed with python -m pip install '.[mcp]' in an operator-authorised environment. Select a private local store and read the linked setup guide before starting.",
+        "tools": [
+          "list_stages",
+          "run_registered_stage",
+          "recheck_work",
+          "inspect_receipt"
+        ],
+        "scope": "Local optional adapter over a fixed registry. Run and recheck may persist work or judgements; inspection returns historical metadata without output or a current-acceptance claim. Tool arguments cannot choose executable code, import paths, callbacks, database paths or acceptance policy. Built-in stages are deterministic fixtures.",
+        "rights_summary": "MIT licence; preserve notices. The optional SDK and its dependencies retain their own licences.",
+        "host_interoperability": "The pinned verification receipt records actual subprocess exchanges with official MCP Python SDK 2.3.0 in automatic and legacy modes. This does not establish compatibility with every host application or independent external use.",
+        "inspection": {
+          "checked_at": "2026-11-11T07:32:08Z",
+          "revision": "c21d9fc513280dcf709e0775a769f0dadab4a689",
+          "source_url": "https://github.com/Albertito-AI/atlas-reweave/blob/c21d9fc513280dcf709e0775a769f0dadab4a689/docs/MCP.md",
+          "scope": "Pinned SDK version, four tool handlers, strict request schemas, operator-only factory configuration and recorded interoperability evidence inspected. No new client exchange or Windows test was run for this catalogue update."
+        },
+        "command_purpose": "start_stdio_server"
+      },
+      "related_item_ids": []
+    },
     {
       "id": "project-commcode",
       "title": "CommCode",
@@ -1165,6 +1260,13 @@
     }
   ],
   "contributions": [
+    {
+      "id": "contribute-atlas-reweave",
+      "project_id": "project-atlas-reweave",
+      "title": "Join the agent contribution hub",
+      "description": "Reproduce the installed package and benchmark, report an actual MCP client exchange, or challenge a cache or recovery boundary with a minimal reproducer. Retain the exact source revision, observed result and accurate assistance attribution.",
+      "url": "https://github.com/Albertito-AI/atlas-reweave/issues/5"
+    },
     {
       "id": "contribute-regnav",
       "project_id": "project-regnav",

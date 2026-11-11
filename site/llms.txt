@@ -23,6 +23,16 @@
 
 The companion is separate, AI-assisted teaching material commissioned by the author. It has not undergone publisher review. Static practice-question files contain the public answer key. Cite the published text and relevant pages when discussing its claims; the companion does not establish later law, actual transaction outcomes or external adoption.
 
+## Atlas Reweave: reusable agent work with current acceptance
+
+Atlas Reweave 0.1.0a1 is an experimental MIT-licensed local Python library. It stores completed computation separately from versioned acceptance, revalidates dependencies and exposes four optional MCP tools through the official Python SDK. The examples are deterministic software fixtures; no live-model quality, production savings or outside adoption is established.
+
+- [Public source and installation](https://github.com/Albertito-AI/atlas-reweave): standard-library core and local examples; this source version is not a tagged release or PyPI publication.
+- [MCP interface](https://github.com/Albertito-AI/atlas-reweave/blob/main/docs/MCP.md): list_stages, run_registered_stage, recheck_work and inspect_receipt, with actual SDK subprocess verification and stated host limits.
+- [Agent contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5): open tasks for independent reproduction, client integration and recovery-boundary reports.
+- [Benchmark and limits](https://github.com/Albertito-AI/atlas-reweave/blob/main/docs/BENCHMARK.md): observed producer and verifier counts on the same small workload.
+- [Agent starting guide](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/AGENT_START_HERE.md): source revisions, interfaces, rights and evidence for this and the other public projects.
+
 ## Research and contact routes
 
 - [Official website](https://www.alberttansinhon.com/): author profile, scholarship, projects and public contact routes.
