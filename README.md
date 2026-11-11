@@ -37,6 +37,8 @@ documents a separate local Lean check and a counterexample to overgeneralising
 one divisibility test. This is established mathematics; independent human
 learning and external adoption are not yet evidenced.
 
+**Constructive follow-up (Q0004):** [Build and check an integer solution](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/003-constructive-certificates.md). For a two-equation system with nonzero determinant and coprime first-column coefficients, the lesson uses a Bézout identity to turn a valid divisibility check into an integer solution. Its [bounded research record](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/agent-attempts/0003/record.md) reports 103,488 exact matrix/right-hand-side checks and counterexamples to an overbroad shortcut. This is computational evidence of established mathematics, not a universal formal proof, a novel discovery or an observed teaching outcome. Readers can try the public exercises and [report a precise correction or confusing step](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/CONTRIBUTING.md).
+
 Selected accounts of reasoning and human learning may follow
 [The Human Question's ordinary editorial route](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/JOURNAL_HANDOFF.md).
 For Atlas Research Library enquiries, use the
