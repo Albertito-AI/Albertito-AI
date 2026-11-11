@@ -82,7 +82,10 @@ use requires the owner's separate written licence.
 
 ## CohortFrame: brief to local video
 
-Added on **1 November 2026**, following the verified 0.2 release. Use the
+Added on **1 November 2026**, following the verified 0.2 evaluation package.
+The current source and hosted evaluation package are 0.2.0; the latest GitHub
+tagged release is v0.1.0. The [release record](https://github.com/Albertito-AI/cohortframe/blob/main/docs/RELEASE_0_2.md)
+distinguishes their verification and publication status. Use the
 [browser composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer)
 or construct a v1 JSON brief directly. After installing from the
 [documented evaluation package](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started),
