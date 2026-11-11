@@ -1,5 +1,24 @@
 # Profile change record
 
+## 11 November 2026: record the accepted Datasette contribution
+
+Corrected the current [public contribution record](OPEN_SOURCE_CONTRIBUTIONS.md)
+after directly rechecking all five upstream pull requests. Datasette #3031 was
+merged on 9 November at 06:13 Singapore time, with merge commit
+`05ece292b29b84fb7d74610630ead633eb571c83`; the four other submissions remain
+open at their previously recorded source revisions. Historical entries below
+retain the statuses observed on their original dates.
+
+This closes the stale-status handover identified by Community Care. Maintainer
+acceptance is now evidenced; payment, customer delivery and independent use of
+Albert's own products remain unverified. Earlier test results retain their
+original execution scope. The status review did not rerun upstream suites.
+
+Work ID: `ATLAS-REPAIR-20261111-CONTRIBUTIONS`. Acceptance: inspect the complete
+two-file diff, validate the existing profile, check the published pull-request
+state, and verify the merged repository content. No outreach or commercial
+commitment is part of this correction.
+
 ## 10 November 2026: make the second mathematics lesson inspectable (Q0001)
 
 The featured Atlas Open Mathematics entry now links the public Q0001 integer-
