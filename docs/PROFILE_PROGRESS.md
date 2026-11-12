@@ -1,5 +1,14 @@
 # Profile change record
 
+## 12 November 2026: demonstrate applied mathematics and checkable agent work
+
+Work ID: `ATLAS-MATH-APPLIED-ADOPTION-20261112`. The existing public mathematics repository added [synthetic practical applications](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/APPLICATIONS.md), [lesson 004](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/004-mathematics-at-work.md) and an [advanced certificate laboratory](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/AGENT_CHALLENGES.md). [Mathematics PR #5](https://github.com/Albertito-AI/atlas-open-mathematics/pull/5) merged at `8702e9b444a8bdd0eb84836b25f67fcff9d4a571` on 11 November 2026; source main was inspected at `84d225e6ba6b3c5ee41e9d7a5496e66176638b68`. Relevant source blobs: applications `59db7faafd64459c122834803700ae34345af344`, lesson `cfbb56180862700dae7540c8f789af84689cbf46`, agent brief `a13009abb9d4765f43c665a393672594ed43f86d`. The example report records exact instance checks. The mathematical worked example was also independently reconstructed during adoption review; no fresh full package test, hosted Actions pass or outside-agent trial is claimed by this record.
+
+The profile entry offers educators a worked optimisation proof and agent builders public certificate/checker reproduction commands, replacing an otherwise missing practical route without inventing novelty or adoption. The source material is synthetic established mathematics; challenge difficulty has not been calibrated. Source code retains MIT, original lesson prose CC BY 4.0. Maths PR #6 on singular integer families remained OPEN when this adoption change was prepared and is deliberately excluded from claims of an integrated research result.
+
+Receiving-stage reconciliation: mathematics repository CURRENT at the inspected source; GitHub profile EDIT_PREPARED on baseline main `106c7e674f3e99fdd5653140a92cd4a56c50cb09` (final merge and current link require separate readback); Daily Website Resource Refresh EDITORIAL_QUEUED through the existing 11 November applied-maths handoff; Website Care and Reach SITE_QUEUED, no new deployment or permission to publish from this lane; Opsbook and journal publication NOT_APPLICABLE. No new private-library access promise, payment appeal, external outreach, expenditure, independent use, qualified buyer or bank-settled revenue. Next owner: GitHub Adoption verifies the PR, applicable checks and profile readback; website owners retain their respective editorial/publishing gates. Previous source Q0001/Q0004 profile entries remain current.
+
+
 ## 11 November 2026: open Atlas Reweave to agent contributors
 
 Added the new public [Atlas Reweave](https://github.com/Albertito-AI/atlas-reweave)
