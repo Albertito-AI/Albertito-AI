@@ -57,13 +57,19 @@ robust portfolio allocation, then follow the evidence into explicit review gates
 The examples use synthetic data and mathematical models. They do not establish
 live trading performance, general intelligence or superiority to human investors.
 
-## The Human Question: an invitation to contribute
+## Read the first issue of The Human Question
 
-I am **President and Editor-in-Chief of The Human Question: A Journal of Humanistic Inquiry**, an open-access journal exploring what ideas, institutions and discoveries mean for human life.
+**[The Human Question: A Journal of Humanistic Inquiry (2026, Number 1)](https://thehumanquestionjournal.com/issues/2026-number-1/)** is available to read and download free of charge.
 
-[**Visit the journal**](https://thehumanquestionjournal.com/) · [Author instructions](https://thehumanquestionjournal.com/#authors) · [Approved house style](https://thehumanquestionjournal.com/#style) · [Editorial policies](https://thehumanquestionjournal.com/#policies) · [Open-source website](https://github.com/Albertito-AI/open-humanities-journal)
+Published on **9 November 2026**, the issue brings together five articles on climate data and international sales, equal standing and care, authority to settle investment disputes, insurance and social protection, and legal reasoning with generative artificial intelligence in Thai universities.
 
-The first issue is in preparation. There are no author fees. Research articles and scholarly review or critical essays require two independent external reports, normally under double-anonymous review. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
+The contributors are **Ong Shuyin, Izhar Ahmed, Albert Tan Sin Hon, Terence Chia Qi Han and Panupong Chalermsin**. Visit the journal for the complete issue, individual articles and publication details.
+
+I am **President and Editor-in-Chief** of this open-access journal, which explores what ideas, institutions and discoveries mean for human life.
+
+[**Read the issue**](https://thehumanquestionjournal.com/issues/2026-number-1/) · [Author instructions](https://thehumanquestionjournal.com/#authors) · [Editorial policies](https://thehumanquestionjournal.com/#policies) · [Open-source website](https://github.com/Albertito-AI/open-humanities-journal)
+
+There are no author fees. Research articles and scholarly review or critical essays require two independent external reports, normally under double-anonymous review. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
 
 [**Explore my connected work**](https://www.alberttansinhon.com/explore/): the journal, book, learning materials, research tools and routes for collaboration.
 
@@ -476,5 +482,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **11 November 2026**.
+Last substantive profile update: **12 November 2026**.
 
