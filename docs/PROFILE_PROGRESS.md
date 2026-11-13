@@ -1,5 +1,33 @@
 # Profile change record
 
+## 13 November 2026: launch Team ATLAS X BERT CHAN's GitHub CCA
+
+Created the single [GitHub CCA scorecard](GITHUB_CCA.md) following Albert's
+instruction to start collecting achievements as a recreational activity. It
+records the verified silver Pull Shark baseline, the six no-payment targets,
+source links, and the distinction between recorded events and awarded badges.
+
+The first useful change is [thesis template PR #1](https://github.com/Albertito-AI/law-phd-thesis-template/pull/1),
+authored and merged by `Albertito-AI` at `7f4d1ca178e3284f8f332642cd8f4281b7062b1d`
+on 13 November 2026 at 09:19:35 Singapore time. It documents PDF and diagnostic-log
+locations and corrects the dependency-check command. The PR was open for 19
+seconds, with zero submitted GitHub reviews. Local checking passed 35 tests,
+the source audit and whitespace checks. The scorecard links the exact head,
+base and hosted verification records. Quickdraw and YOLO awards were not yet
+publicly confirmed at the first post-merge check.
+
+This documentation is AI-assisted and records internal assistant inspection;
+it claims no independent human review or outside adoption. The public profile's
+professional opening, existing maintenance owners and retired Sparks features
+are preserved. Prepared the documentation from main
+`acfac011cd796f101bf916530a784819f1eeb742`. Remaining acceptance steps: validate
+links and profile integrity, wait for applicable hosted checks, merge with the
+reviewed head guard, and read back delivery. The PR and Actions records provide this scorecard's own delivery
+receipt. Next observable step: verify GitHub's achievement records before
+changing either pending award to earned.
+
+Work ID: `ATLAS-BERT-CHAN-CCA-20261113`.
+
 ## 12 November 2026: demonstrate applied mathematics and checkable agent work
 
 Work ID: `ATLAS-MATH-APPLIED-ADOPTION-20261112`. The existing public mathematics repository added [synthetic practical applications](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/APPLICATIONS.md), [lesson 004](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/lessons/004-mathematics-at-work.md) and an [advanced certificate laboratory](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/AGENT_CHALLENGES.md). [Mathematics PR #5](https://github.com/Albertito-AI/atlas-open-mathematics/pull/5) merged at `8702e9b444a8bdd0eb84836b25f67fcff9d4a571` on 11 November 2026; source main was inspected at `84d225e6ba6b3c5ee41e9d7a5496e66176638b68`. Relevant source blobs: applications `59db7faafd64459c122834803700ae34345af344`, lesson `cfbb56180862700dae7540c8f789af84689cbf46`, agent brief `a13009abb9d4765f43c665a393672594ed43f86d`. The example report records exact instance checks. The mathematical worked example was also independently reconstructed during adoption review; no fresh full package test, hosted Actions pass or outside-agent trial is claimed by this record.
