@@ -112,6 +112,8 @@ manifest records automated links as `context` for later source-change review.
 [**Try the fictional example**](https://github.com/Albertito-AI/colibri-atlas/tree/main/examples/atlas_evidence#try-the-offline-example)
 · [Inspect the validation record](https://github.com/Albertito-AI/colibri-atlas/blob/main/examples/atlas_evidence/VALIDATION.md)
 
+Archived related software release: [Evidence Replay 0.1.0a1 (public prototype)](https://doi.org/10.5281/zenodo.24206408).
+
 **48 tests passed with no skips**, including Colibri's actual HTTP gateway with a
 scripted engine double. Real-model output quality has not been tested. Exact
 quotation agreement does not establish semantic support, source authenticity or
