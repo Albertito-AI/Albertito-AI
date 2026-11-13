@@ -101,6 +101,22 @@ challenge a recovery boundary. Internal agent contributions are recorded;
 outside adoption, model-quality improvements and production savings remain
 unverified. This source version is not a tagged release or a PyPI publication.
 
+## Check local candidate quotations and replay review rules
+
+**[Colibri Atlas: Evidence Replay 0.1.0a1](https://github.com/Albertito-AI/colibri-atlas/tree/main/examples/atlas_evidence)** is a public prototype
+that captures a local Colibri response, checks quotation spans against supplied
+source snapshots and creates an offline review page. Optional Atlas Reweave
+integration rechecks saved evidence under changed rules; a RegNav Source Watch
+manifest records automated links as `context` for later source-change review.
+
+[**Try the fictional example**](https://github.com/Albertito-AI/colibri-atlas/tree/main/examples/atlas_evidence#try-the-offline-example)
+· [Inspect the validation record](https://github.com/Albertito-AI/colibri-atlas/blob/main/examples/atlas_evidence/VALIDATION.md)
+
+**48 tests passed with no skips**, including Colibri's actual HTTP gateway with a
+scripted engine double. Real-model output quality has not been tested. Exact
+quotation agreement does not establish semantic support, source authenticity or
+legal accuracy.
+
 ## Help an agent reach a verified outcome
 
 **[Atlas Upstream 0.2.1](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
@@ -482,5 +498,5 @@ explains how to retain source attribution and review status.
 work are reviewed against current evidence. Read the
 [profile maintenance approach](docs/PROFILE_EVOLUTION.md) and
 [change record](docs/PROFILE_PROGRESS.md).
-Last substantive profile update: **12 November 2026**.
+Last substantive profile update: **13 November 2026**.
 
