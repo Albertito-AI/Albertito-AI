@@ -1,141 +1,141 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T06:58:17Z",
+  "generated_at": "2026-11-14T06:46:26Z",
   "refresh_mode": "network",
-  "service_day": "2026-11-13",
-  "last_successful_refresh": "2026-11-13T06:58:17Z",
+  "service_day": "2026-11-14",
+  "last_successful_refresh": "2026-11-14T06:46:26Z",
   "status": "ok",
   "scope_note": "Curated source references and automatically indexed publisher metadata have different review levels. Discovery does not verify article contents, legal currency, free access or independent usefulness.",
   "source_runs": [
     {
       "id": "esg-disclosure",
       "label": "ESG disclosure and accountability",
-      "checked_at": "2026-11-13T06:58:17Z",
-      "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+      "checked_at": "2026-11-14T06:46:26Z",
+      "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
       "status": "ok",
       "discovered": 160,
       "accepted": 3,
       "rejected": {
-        "outside_topic": 125,
-        "missing_or_invalid_metadata": 16,
-        "unsupported_record_type": 4,
-        "update_notice": 3
+        "outside_topic": 129,
+        "unsupported_record_type": 10,
+        "missing_or_invalid_metadata": 9,
+        "update_notice": 1
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "02707db524fb3ca621d2564022decdb7c0fcf608e22bcb23d16e4d3f3de35c7f",
-          "reported_total": 62203
+          "response_sha256": "ffb0cc71561635fb2d625db467d5d27150d0b955ce1e870ab164595d1c053a3e",
+          "reported_total": 70552
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=80&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "37dc734e7a63cb272fa4b58074494fdd8ca2f01dcdf999bc06d91aff90e1876b",
+          "response_sha256": "e738899ed989c641cf9f7af1a1f1381ff8b2dffab6c08002ef38b84af9dad075",
           "reported_total": 35180,
           "position": {
             "year": 2023,
-            "offset": 80
+            "offset": 160
           }
         }
       ],
-      "last_successful_check": "2026-11-13T06:58:17Z",
-      "queued_by_daily_limit": 129,
+      "last_successful_check": "2026-11-14T06:46:26Z",
+      "queued_by_daily_limit": 128,
       "pending_limit": 120,
       "pending_count": 120,
-      "pending_overflow": 9
+      "pending_overflow": 8
     },
     {
       "id": "ai-agent-governance",
       "label": "AI governance and agent evaluation",
-      "checked_at": "2026-11-13T06:58:17Z",
-      "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+      "checked_at": "2026-11-14T06:46:26Z",
+      "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
       "status": "ok",
       "discovered": 160,
       "accepted": 3,
       "rejected": {
-        "outside_topic": 141,
-        "unsupported_record_type": 1,
-        "update_notice": 2,
-        "missing_or_invalid_metadata": 14
+        "missing_or_invalid_metadata": 16,
+        "unsupported_record_type": 12,
+        "outside_topic": 132
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "56647bb7117633abf3ff6b94a6c134a9d05d820da6dc350ce99e091194bad0f7",
-          "reported_total": 300394
+          "response_sha256": "032fb46a123e04fd11229e2597807be29a7f4e2dda0faee070b957773ef96ce6",
+          "reported_total": 329078
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=80&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "9f2d127d1a5930ea69b7c0d6d2a72f2be19a91d540a2a3a4170c4a9e2a25ffe1",
+          "response_sha256": "468e5895204df80a9e55c91d0624301e220f3e70bdbd974342e5ec552d6e8762",
           "reported_total": 194373,
           "position": {
             "year": 2023,
-            "offset": 80
+            "offset": 160
           }
         }
       ],
-      "last_successful_check": "2026-11-13T06:58:17Z",
-      "queued_by_daily_limit": 36,
+      "last_successful_check": "2026-11-14T06:46:26Z",
+      "queued_by_daily_limit": 33,
       "pending_limit": 120,
-      "pending_count": 36,
+      "pending_count": 33,
       "pending_overflow": 0
     },
     {
       "id": "legal-evidence-provenance",
       "label": "Legal evidence and provenance",
-      "checked_at": "2026-11-13T06:58:17Z",
-      "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+      "checked_at": "2026-11-14T06:46:26Z",
+      "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
       "status": "ok",
       "discovered": 160,
-      "accepted": 2,
+      "accepted": 0,
       "rejected": {
-        "outside_topic": 141,
+        "outside_topic": 137,
         "unsupported_record_type": 5,
-        "missing_or_invalid_metadata": 12
+        "missing_or_invalid_metadata": 17,
+        "update_notice": 1
       },
       "daily_limit": 3,
       "queries": [
         {
           "mode": "recent",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-14%2Cuntil-index-date%3A2026-11-13%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-13",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-15%2Cuntil-index-date%3A2026-11-14%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-14",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "d0a1c2ab29b3b969f9746751b47067552cf6d470ed59c314458015304f0af1b1",
-          "reported_total": 139705
+          "response_sha256": "4394c33d38647cc3c76160c073e5481972f888530220663230c269b06b84c263",
+          "reported_total": 153297
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=80&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2023-01-01%2Cuntil-pub-date%3A2023-12-31",
           "status": "ok",
-          "checked_at": "2026-11-13T06:58:17Z",
+          "checked_at": "2026-11-14T06:46:26Z",
           "returned": 80,
-          "response_sha256": "defa5bb56308368c6806070bc5a407d5aa9cf29988846f64f1915c2a764f0b88",
+          "response_sha256": "be5132aab4ea91159b02714aa0e0ce3acf801aedd8f866825e394327d7777420",
           "reported_total": 84757,
           "position": {
             "year": 2023,
-            "offset": 80
+            "offset": 160
           }
         }
       ],
-      "last_successful_check": "2026-11-13T06:58:17Z",
+      "last_successful_check": "2026-11-14T06:46:26Z",
       "pending_limit": 120,
       "pending_count": 0,
       "pending_overflow": 0
@@ -144,7 +144,7 @@
       "id": "known-record-rechecks",
       "label": "Previously indexed records",
       "status": "ok",
-      "checked_at": "2026-11-13T06:58:17Z",
+      "checked_at": "2026-11-14T06:46:26Z",
       "discovered": 6,
       "accepted": 0,
       "failed_checks": 0,
@@ -155,18 +155,18 @@
     "sources": {
       "esg-disclosure": {
         "year": 2023,
-        "offset": 160,
-        "last_advanced_at": "2026-11-13T06:58:17Z"
+        "offset": 240,
+        "last_advanced_at": "2026-11-14T06:46:26Z"
       },
       "ai-agent-governance": {
         "year": 2023,
-        "offset": 160,
-        "last_advanced_at": "2026-11-13T06:58:17Z"
+        "offset": 240,
+        "last_advanced_at": "2026-11-14T06:46:26Z"
       },
       "legal-evidence-provenance": {
         "year": 2023,
-        "offset": 160,
-        "last_advanced_at": "2026-11-13T06:58:17Z"
+        "offset": 240,
+        "last_advanced_at": "2026-11-14T06:46:26Z"
       }
     },
     "mode": "bounded_discovery",
@@ -402,85 +402,6 @@
       "discovered_at": "2026-11-01T06:28:05Z"
     },
     {
-      "id": "discovery-6432e7a85562454e6393",
-      "title": "Reporting quality of systematic review protocols in environmental and occupational toxicology: a meta-epidemiology study",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Milica D. Pavlovic",
-        "Malgorzata Lagisz",
-        "Natália B. Videira",
-        "Julia M. L. Menon",
-        "Gunn E. Vist",
-        "Elma Omeragic",
-        "Rebecca L. Morgan",
-        "Sebastian Hoffmann",
-        "Evidence-Based Toxicology Collaboration"
-      ],
-      "publisher": "Informa UK Limited",
-      "venue": "Evidence-Based Toxicology",
-      "year": 2026,
-      "publication_date": "2026-10-30",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1080/2833373x.2026.2752667",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-11-01T06:28:05Z",
-      "last_metadata_check": "2026-11-01T06:28:05Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "environmental"
-          ],
-          [
-            "reporting"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1080/2833373x.2026.2752667",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1080%2F2833373x.2026.2752667",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-01T06:28:05Z",
-        "source_url": "https://api.crossref.org/works/10.1080%2F2833373x.2026.2752667",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1080/2833373x.2026.2752667",
-        "text": "Milica D. Pavlovic; Malgorzata Lagisz; Natália B. Videira; Julia M. L. Menon; Gunn E. Vist; Elma Omeragic; Rebecca L. Morgan; Sebastian Hoffmann; Evidence-Based Toxicology Collaboration (2026). Reporting quality of systematic review protocols in environmental and occupational toxicology: a meta-epidemiology study. Evidence-Based Toxicology. https://doi.org/10.1080/2833373x.2026.2752667",
-        "doi": "10.1080/2833373x.2026.2752667"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "7b50bf5f5072a1ad26aec827384a4c16a86c4ce0f436fb278c1665b0773eb0ea",
-      "discovered_at": "2026-11-01T06:28:05Z"
-    },
-    {
       "id": "discovery-7607bcb8b587b256c74e",
       "title": "ENTERPRISE RISK MANAGEMENT, SUSTAINABILITY REPORTING, AND FIRM VALUE: THE MODERATING ROLE OF FINANCIAL PERFORMANCE",
       "type": "research",
@@ -551,78 +472,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "52d4f09265212aa3f0f2e4eea3a561b09687ef07ece1ff320dbcac85960f842b",
-      "discovered_at": "2026-11-01T06:28:05Z"
-    },
-    {
-      "id": "discovery-7a90bd2e04ad9cef90c8",
-      "title": "Governance moderators on the nexus between FinTech and ESG disclosure in Saudi banks",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Syed Quaid Ali Shah",
-        "Samirah Saleh Amutairi"
-      ],
-      "publisher": "Springer Science and Business Media LLC",
-      "venue": "Discover Sustainability",
-      "year": 2026,
-      "publication_date": "2026-10-30",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1007/s43621-026-05186-2",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-11-01T06:28:05Z",
-      "last_metadata_check": "2026-11-01T06:28:05Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "esg"
-          ],
-          [
-            "disclosure"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1007/s43621-026-05186-2",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1007%2Fs43621-026-05186-2",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-01T06:28:05Z",
-        "source_url": "https://api.crossref.org/works/10.1007%2Fs43621-026-05186-2",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1007/s43621-026-05186-2",
-        "text": "Syed Quaid Ali Shah; Samirah Saleh Amutairi (2026). Governance moderators on the nexus between FinTech and ESG disclosure in Saudi banks. Discover Sustainability. https://doi.org/10.1007/s43621-026-05186-2",
-        "doi": "10.1007/s43621-026-05186-2"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "e09fef6eb09292f903560564c3a3138d68fc715ff879d8a18bae04a3bbaa6000",
       "discovered_at": "2026-11-01T06:28:05Z"
     },
     {
@@ -839,78 +688,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "69c185e07c576e6d2e4751f15237ce7bae6162829ff9c2e0929b3d8838098929",
-      "discovered_at": "2026-11-01T06:28:05Z"
-    },
-    {
-      "id": "discovery-f81c14ef00e2f29ab8b1",
-      "title": "Top management attributes and market valuation across economic regimes: an ESG accountability signalling perspective from an emerging EU capital market",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "authors": [
-        "Wiktoria Pindel",
-        "Natalia Nehrebecka"
-      ],
-      "publisher": "Emerald",
-      "venue": "Baltic Journal of Management",
-      "year": 2026,
-      "publication_date": "2026-10-30",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.1108/bjm-11-2025-0930",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "esg-disclosure",
-      "added_at": "2026-11-01T06:28:05Z",
-      "last_metadata_check": "2026-11-01T06:28:05Z",
-      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "esg"
-          ],
-          [
-            "accountability"
-          ]
-        ],
-        "source_id": "esg-disclosure"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1108/bjm-11-2025-0930",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1108%2Fbjm-11-2025-0930",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-01T06:28:05Z",
-        "source_url": "https://api.crossref.org/works/10.1108%2Fbjm-11-2025-0930",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1108/bjm-11-2025-0930",
-        "text": "Wiktoria Pindel; Natalia Nehrebecka (2026). Top management attributes and market valuation across economic regimes: an ESG accountability signalling perspective from an emerging EU capital market. Baltic Journal of Management. https://doi.org/10.1108/bjm-11-2025-0930",
-        "doi": "10.1108/bjm-11-2025-0930"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "80c0b69b1ec20185492da3f9b72d2b3555dda5ced1098a1adbbecbdf2f2bcbd2",
       "discovered_at": "2026-11-01T06:28:05Z"
     },
     {
@@ -2593,78 +2370,6 @@
       "discovered_at": "2026-11-03T07:00:40Z"
     },
     {
-      "id": "discovery-450df274e8ab39106da2",
-      "title": "UK AI Governance at a Crossroads: Charting the Path Ahead",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "Mehmet Bilal Unver",
-        "Sandra Odusola-Stevenson"
-      ],
-      "publisher": "Lifescience Global",
-      "venue": "International Journal of Mass Communication",
-      "year": 2025,
-      "publication_date": "2025-12-31",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.6000/2818-3401.2025.03.12",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-11-03T07:00:40Z",
-      "last_metadata_check": "2026-11-03T07:00:40Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "ai"
-          ],
-          [
-            "governance"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.6000/2818-3401.2025.03.12",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.6000%2F2818-3401.2025.03.12",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-03T07:00:40Z",
-        "source_url": "https://api.crossref.org/works/10.6000%2F2818-3401.2025.03.12",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.6000/2818-3401.2025.03.12",
-        "text": "Mehmet Bilal Unver; Sandra Odusola-Stevenson (2025). UK AI Governance at a Crossroads: Charting the Path Ahead. International Journal of Mass Communication. https://doi.org/10.6000/2818-3401.2025.03.12",
-        "doi": "10.6000/2818-3401.2025.03.12"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "96132dd0344d7127bd8e29b79db2cca5db26226aa428fb9002f85ff03d1b5fc6",
-      "discovered_at": "2026-11-03T07:00:40Z"
-    },
-    {
       "id": "discovery-51f2f5a9ab26a850ac3b",
       "title": "Structural ownership and ESG disclosure: Unveiling their impact on corporate financial performance",
       "type": "research",
@@ -3104,80 +2809,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "9698af44aa1f3af72f812dd2b1d31be9d68318b5230905d2a6dcbc1708c0ff86",
-      "discovered_at": "2026-11-03T07:00:40Z"
-    },
-    {
-      "id": "discovery-bf74f26b0d79d3a289c6",
-      "title": "A framework for evaluation and requirement extraction for fine-tuning of Large Language Models in multimodal medical diagnosis",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "Dimitrios P. Panagoulias",
-        "Anastasios Palamidas",
-        "Maria Virvou",
-        "George A. Tsihrintzis"
-      ],
-      "publisher": "Elsevier BV",
-      "venue": "Knowledge-Based Systems",
-      "year": 2025,
-      "publication_date": "2025-09",
-      "publication_date_precision": "month",
-      "publication_date_source": "issued",
-      "doi": "10.1016/j.knosys.2025.113975",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-11-03T07:00:40Z",
-      "last_metadata_check": "2026-11-03T07:00:40Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "large language models"
-          ],
-          [
-            "evaluation"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.1016/j.knosys.2025.113975",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.1016%2Fj.knosys.2025.113975",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-03T07:00:40Z",
-        "source_url": "https://api.crossref.org/works/10.1016%2Fj.knosys.2025.113975",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.1016/j.knosys.2025.113975",
-        "text": "Dimitrios P. Panagoulias; Anastasios Palamidas; Maria Virvou; George A. Tsihrintzis (2025). A framework for evaluation and requirement extraction for fine-tuning of Large Language Models in multimodal medical diagnosis. Knowledge-Based Systems. https://doi.org/10.1016/j.knosys.2025.113975",
-        "doi": "10.1016/j.knosys.2025.113975"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "146c621660b544564f49c17a97bcd4eb0a960514199966ad66364e2a8c0a2551",
       "discovered_at": "2026-11-03T07:00:40Z"
     },
     {
@@ -3917,79 +3548,6 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "2c152809f4e9f20bad08884169f058204d8fc8b589dc13ea328fbd85341ac255",
-      "discovered_at": "2026-11-04T06:44:21Z"
-    },
-    {
-      "id": "discovery-562ede478e28b7c700e8",
-      "title": "Artificial Intelligence, ESG Governance, and Green Innovation Efficiency in Emerging Economies",
-      "type": "research",
-      "work_type": "journal-article",
-      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
-      "maturity": "Bibliographic record; content review pending",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "authors": [
-        "Marwan Mansour",
-        "Mo’taz Al Zobi",
-        "Mohammed Alomair"
-      ],
-      "publisher": "MDPI AG",
-      "venue": "Economies",
-      "year": 2025,
-      "publication_date": "2025-12-31",
-      "publication_date_precision": "day",
-      "publication_date_source": "issued",
-      "doi": "10.3390/economies14010011",
-      "origin": "crossref",
-      "review_status": "metadata_only",
-      "discovery_source_id": "ai-agent-governance",
-      "added_at": "2026-11-04T06:44:21Z",
-      "last_metadata_check": "2026-11-04T06:44:21Z",
-      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
-      "relevance": {
-        "basis": "Title and publisher-supplied subject terms",
-        "matched_groups": [
-          [
-            "artificial intelligence"
-          ],
-          [
-            "governance"
-          ]
-        ],
-        "source_id": "ai-agent-governance"
-      },
-      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
-      "links": [
-        {
-          "label": "Open publication via DOI",
-          "url": "https://doi.org/10.3390/economies14010011",
-          "kind": "publication"
-        },
-        {
-          "label": "Inspect registry metadata",
-          "url": "https://api.crossref.org/works/10.3390%2Feconomies14010011",
-          "kind": "source"
-        }
-      ],
-      "verification": {
-        "checked_at": "2026-11-04T06:44:21Z",
-        "source_url": "https://api.crossref.org/works/10.3390%2Feconomies14010011",
-        "revision": null,
-        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
-      },
-      "citation": {
-        "available": true,
-        "format": "text",
-        "url": "https://doi.org/10.3390/economies14010011",
-        "text": "Marwan Mansour; Mo’taz Al Zobi; Mohammed Alomair (2025). Artificial Intelligence, ESG Governance, and Green Innovation Efficiency in Emerging Economies. Economies. https://doi.org/10.3390/economies14010011",
-        "doi": "10.3390/economies14010011"
-      },
-      "rights": {
-        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
-      },
-      "related_item_ids": [],
-      "metadata_sha256": "1f1ed514c8c46f8849cc82b26580793523f494112adc86acb30a14b59c1daf2a",
       "discovered_at": "2026-11-04T06:44:21Z"
     },
     {
@@ -11649,6 +11207,223 @@
       "related_item_ids": [],
       "metadata_sha256": "417ec02ac1a1b17ec5283e74446528b2a78219e4d642c17aa760c044c2ba2355",
       "discovered_at": "2026-11-13T06:58:17Z"
+    },
+    {
+      "id": "discovery-2bef4d3b08cc5c87fd33",
+      "title": "HOW DOES THE CONCEPT OF MATERIALITY APPLY TO SUSTAINABILITY REPORTING AND RELATED ASSURANCE ENGAGEMENTS?",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Jozefina Beke-Trivunac",
+        "Jelena Krpić",
+        "Bojan Stojiljković"
+      ],
+      "publisher": "University Library in Kragujevac",
+      "venue": "REVIZOR",
+      "year": 2023,
+      "publication_date": "2023-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.56362/rev23104111b",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting",
+            "assurance"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.56362/rev23104111b",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.56362%2Frev23104111b",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-14T06:46:26Z",
+        "source_url": "https://api.crossref.org/works/10.56362%2Frev23104111b",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.56362/rev23104111b",
+        "text": "Jozefina Beke-Trivunac; Jelena Krpić; Bojan Stojiljković (2023). HOW DOES THE CONCEPT OF MATERIALITY APPLY TO SUSTAINABILITY REPORTING AND RELATED ASSURANCE ENGAGEMENTS?. REVIZOR. https://doi.org/10.56362/rev23104111b",
+        "doi": "10.56362/rev23104111b"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "6caf118d949000f66ebdfeb54e62138b0c87afe37255f7340eb80c76cb35a0b1",
+      "discovered_at": "2026-11-14T06:46:26Z"
+    },
+    {
+      "id": "discovery-2e892753b6714b3a7467",
+      "title": "Sustainability reporting from a capital market perspective",
+      "type": "research",
+      "work_type": "book-chapter",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Susanne Arvidsson"
+      ],
+      "publisher": "Routledge",
+      "venue": "Accounting for Sustainability",
+      "year": 2020,
+      "publication_date": "2020-08-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.4324/9781003037200-15",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.4324/9781003037200-15",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.4324%2F9781003037200-15",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-14T06:46:26Z",
+        "source_url": "https://api.crossref.org/works/10.4324%2F9781003037200-15",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.4324/9781003037200-15",
+        "text": "Susanne Arvidsson (2020). Sustainability reporting from a capital market perspective. Accounting for Sustainability. https://doi.org/10.4324/9781003037200-15",
+        "doi": "10.4324/9781003037200-15"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "fc125e96ab7ab8864ef3947184d5ab0f31d8e66fc7a906a1ec14c6eaae28de14",
+      "discovered_at": "2026-11-14T06:46:26Z"
+    },
+    {
+      "id": "discovery-30072df623440be01aae",
+      "title": "Reaksi Pasar atas Pengumuman Asia Sustainability Reporting Rating Periode 2020-2021",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Ni Made Nendra Rosiana Ningrum",
+        "Putu Riesty Masdiantini"
+      ],
+      "publisher": "Universitas Pendidikan Ganesha",
+      "venue": "Jurnal Akuntansi Profesi",
+      "year": 2023,
+      "publication_date": "2023-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.23887/jap.v14i03.50330",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "sustainability"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.23887/jap.v14i03.50330",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.23887%2Fjap.v14i03.50330",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-14T06:46:26Z",
+        "source_url": "https://api.crossref.org/works/10.23887%2Fjap.v14i03.50330",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.23887/jap.v14i03.50330",
+        "text": "Ni Made Nendra Rosiana Ningrum; Putu Riesty Masdiantini (2023). Reaksi Pasar atas Pengumuman Asia Sustainability Reporting Rating Periode 2020-2021. Jurnal Akuntansi Profesi. https://doi.org/10.23887/jap.v14i03.50330",
+        "doi": "10.23887/jap.v14i03.50330"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "eca64c6de5b34f2580fed6fe9a11f205bc51c53dad5c061f76135f12d4c312f5",
+      "discovered_at": "2026-11-14T06:46:26Z"
     }
   ],
   "superseded_records": [
@@ -11812,6 +11587,448 @@
   ],
   "items": [
     {
+      "id": "discovery-f81c14ef00e2f29ab8b1",
+      "title": "Top management attributes and market valuation across economic regimes: an ESG accountability signalling perspective from an emerging EU capital market",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Wiktoria Pindel",
+        "Natalia Nehrebecka"
+      ],
+      "publisher": "Emerald",
+      "venue": "Baltic Journal of Management",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1108/bjm-11-2025-0930",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-01T06:28:05Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "accountability"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1108/bjm-11-2025-0930",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1108%2Fbjm-11-2025-0930",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-01T06:28:05Z",
+        "source_url": "https://api.crossref.org/works/10.1108%2Fbjm-11-2025-0930",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1108/bjm-11-2025-0930",
+        "text": "Wiktoria Pindel; Natalia Nehrebecka (2026). Top management attributes and market valuation across economic regimes: an ESG accountability signalling perspective from an emerging EU capital market. Baltic Journal of Management. https://doi.org/10.1108/bjm-11-2025-0930",
+        "doi": "10.1108/bjm-11-2025-0930"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "80c0b69b1ec20185492da3f9b72d2b3555dda5ced1098a1adbbecbdf2f2bcbd2",
+      "discovered_at": "2026-11-01T06:28:05Z"
+    },
+    {
+      "id": "discovery-bf74f26b0d79d3a289c6",
+      "title": "A framework for evaluation and requirement extraction for fine-tuning of Large Language Models in multimodal medical diagnosis",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Dimitrios P. Panagoulias",
+        "Anastasios Palamidas",
+        "Maria Virvou",
+        "George A. Tsihrintzis"
+      ],
+      "publisher": "Elsevier BV",
+      "venue": "Knowledge-Based Systems",
+      "year": 2025,
+      "publication_date": "2025-09",
+      "publication_date_precision": "month",
+      "publication_date_source": "issued",
+      "doi": "10.1016/j.knosys.2025.113975",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-03T07:00:40Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "large language models"
+          ],
+          [
+            "evaluation"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1016/j.knosys.2025.113975",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.knosys.2025.113975",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-03T07:00:40Z",
+        "source_url": "https://api.crossref.org/works/10.1016%2Fj.knosys.2025.113975",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1016/j.knosys.2025.113975",
+        "text": "Dimitrios P. Panagoulias; Anastasios Palamidas; Maria Virvou; George A. Tsihrintzis (2025). A framework for evaluation and requirement extraction for fine-tuning of Large Language Models in multimodal medical diagnosis. Knowledge-Based Systems. https://doi.org/10.1016/j.knosys.2025.113975",
+        "doi": "10.1016/j.knosys.2025.113975"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "146c621660b544564f49c17a97bcd4eb0a960514199966ad66364e2a8c0a2551",
+      "discovered_at": "2026-11-03T07:00:40Z"
+    },
+    {
+      "id": "discovery-7a90bd2e04ad9cef90c8",
+      "title": "Governance moderators on the nexus between FinTech and ESG disclosure in Saudi banks",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Syed Quaid Ali Shah",
+        "Samirah Saleh Amutairi"
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "venue": "Discover Sustainability",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1007/s43621-026-05186-2",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-01T06:28:05Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "esg"
+          ],
+          [
+            "disclosure"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1007/s43621-026-05186-2",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1007%2Fs43621-026-05186-2",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-01T06:28:05Z",
+        "source_url": "https://api.crossref.org/works/10.1007%2Fs43621-026-05186-2",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1007/s43621-026-05186-2",
+        "text": "Syed Quaid Ali Shah; Samirah Saleh Amutairi (2026). Governance moderators on the nexus between FinTech and ESG disclosure in Saudi banks. Discover Sustainability. https://doi.org/10.1007/s43621-026-05186-2",
+        "doi": "10.1007/s43621-026-05186-2"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "e09fef6eb09292f903560564c3a3138d68fc715ff879d8a18bae04a3bbaa6000",
+      "discovered_at": "2026-11-01T06:28:05Z"
+    },
+    {
+      "id": "discovery-6432e7a85562454e6393",
+      "title": "Reporting quality of systematic review protocols in environmental and occupational toxicology: a meta-epidemiology study",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "authors": [
+        "Milica D. Pavlovic",
+        "Malgorzata Lagisz",
+        "Natália B. Videira",
+        "Julia M. L. Menon",
+        "Gunn E. Vist",
+        "Elma Omeragic",
+        "Rebecca L. Morgan",
+        "Sebastian Hoffmann",
+        "Evidence-Based Toxicology Collaboration"
+      ],
+      "publisher": "Informa UK Limited",
+      "venue": "Evidence-Based Toxicology",
+      "year": 2026,
+      "publication_date": "2026-10-30",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.1080/2833373x.2026.2752667",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "esg-disclosure",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-01T06:28:05Z",
+      "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "environmental"
+          ],
+          [
+            "reporting"
+          ]
+        ],
+        "source_id": "esg-disclosure"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.1080/2833373x.2026.2752667",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.1080%2F2833373x.2026.2752667",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-01T06:28:05Z",
+        "source_url": "https://api.crossref.org/works/10.1080%2F2833373x.2026.2752667",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.1080/2833373x.2026.2752667",
+        "text": "Milica D. Pavlovic; Malgorzata Lagisz; Natália B. Videira; Julia M. L. Menon; Gunn E. Vist; Elma Omeragic; Rebecca L. Morgan; Sebastian Hoffmann; Evidence-Based Toxicology Collaboration (2026). Reporting quality of systematic review protocols in environmental and occupational toxicology: a meta-epidemiology study. Evidence-Based Toxicology. https://doi.org/10.1080/2833373x.2026.2752667",
+        "doi": "10.1080/2833373x.2026.2752667"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "7b50bf5f5072a1ad26aec827384a4c16a86c4ce0f436fb278c1665b0773eb0ea",
+      "discovered_at": "2026-11-01T06:28:05Z"
+    },
+    {
+      "id": "discovery-562ede478e28b7c700e8",
+      "title": "Artificial Intelligence, ESG Governance, and Green Innovation Efficiency in Emerging Economies",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Marwan Mansour",
+        "Mo’taz Al Zobi",
+        "Mohammed Alomair"
+      ],
+      "publisher": "MDPI AG",
+      "venue": "Economies",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.3390/economies14010011",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-04T06:44:21Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "artificial intelligence"
+          ],
+          [
+            "governance"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.3390/economies14010011",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.3390%2Feconomies14010011",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-04T06:44:21Z",
+        "source_url": "https://api.crossref.org/works/10.3390%2Feconomies14010011",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.3390/economies14010011",
+        "text": "Marwan Mansour; Mo’taz Al Zobi; Mohammed Alomair (2025). Artificial Intelligence, ESG Governance, and Green Innovation Efficiency in Emerging Economies. Economies. https://doi.org/10.3390/economies14010011",
+        "doi": "10.3390/economies14010011"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "1f1ed514c8c46f8849cc82b26580793523f494112adc86acb30a14b59c1daf2a",
+      "discovered_at": "2026-11-04T06:44:21Z"
+    },
+    {
+      "id": "discovery-450df274e8ab39106da2",
+      "title": "UK AI Governance at a Crossroads: Charting the Path Ahead",
+      "type": "research",
+      "work_type": "journal-article",
+      "description": "Publisher-deposited bibliographic record discovered through Crossref. Its title or subject terms match this collection; the article's contents have not been reviewed here.",
+      "maturity": "Bibliographic record; content review pending",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "authors": [
+        "Mehmet Bilal Unver",
+        "Sandra Odusola-Stevenson"
+      ],
+      "publisher": "Lifescience Global",
+      "venue": "International Journal of Mass Communication",
+      "year": 2025,
+      "publication_date": "2025-12-31",
+      "publication_date_precision": "day",
+      "publication_date_source": "issued",
+      "doi": "10.6000/2818-3401.2025.03.12",
+      "origin": "crossref",
+      "review_status": "metadata_only",
+      "discovery_source_id": "ai-agent-governance",
+      "added_at": "2026-11-14T06:46:26Z",
+      "last_metadata_check": "2026-11-03T07:00:40Z",
+      "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
+      "relevance": {
+        "basis": "Title and publisher-supplied subject terms",
+        "matched_groups": [
+          [
+            "ai"
+          ],
+          [
+            "governance"
+          ]
+        ],
+        "source_id": "ai-agent-governance"
+      },
+      "limitation": "Registry metadata is not a full-text review, peer-review certification, legal conclusion or confirmation of free access. Check the publisher's current record before relying on the work.",
+      "links": [
+        {
+          "label": "Open publication via DOI",
+          "url": "https://doi.org/10.6000/2818-3401.2025.03.12",
+          "kind": "publication"
+        },
+        {
+          "label": "Inspect registry metadata",
+          "url": "https://api.crossref.org/works/10.6000%2F2818-3401.2025.03.12",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-03T07:00:40Z",
+        "source_url": "https://api.crossref.org/works/10.6000%2F2818-3401.2025.03.12",
+        "revision": null,
+        "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
+      },
+      "citation": {
+        "available": true,
+        "format": "text",
+        "url": "https://doi.org/10.6000/2818-3401.2025.03.12",
+        "text": "Mehmet Bilal Unver; Sandra Odusola-Stevenson (2025). UK AI Governance at a Crossroads: Charting the Path Ahead. International Journal of Mass Communication. https://doi.org/10.6000/2818-3401.2025.03.12",
+        "doi": "10.6000/2818-3401.2025.03.12"
+      },
+      "rights": {
+        "summary": "This entry contains bibliographic metadata and a source link. Full text and third-party materials retain their own access and reuse terms."
+      },
+      "related_item_ids": [],
+      "metadata_sha256": "96132dd0344d7127bd8e29b79db2cca5db26226aa428fb9002f85ff03d1b5fc6",
+      "discovered_at": "2026-11-03T07:00:40Z"
+    },
+    {
       "id": "discovery-bff71bef104220bad22f",
       "title": "Mandatory sustainability reporting and corporate hiring: the impact of CSRD introduction in Germany",
       "type": "research",
@@ -11835,7 +12052,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-13T06:58:17Z",
-      "last_metadata_check": "2026-10-31T05:58:34Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -11863,7 +12080,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-10-31T05:58:34Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.1007%2Fs11573-026-01279-6",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -11880,6 +12097,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "fc510bfee2ebffd27c9fc3e2099a77258ae8c70b55a0a3543402da32e565f317",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-10-31T05:58:34Z"
     },
     {
@@ -12125,7 +12343,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-13T06:58:17Z",
-      "last_metadata_check": "2026-11-01T06:28:05Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12153,7 +12371,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-01T06:28:05Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.1002%2Fcsr.71142",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12170,6 +12388,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "c11f9a16c9aef0d6eaf46a047104e3a24bf87bfe8e0ca93a610ae3f4b7c9c5ed",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-11-01T06:28:05Z"
     },
     {
@@ -12197,7 +12416,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-13T06:58:17Z",
-      "last_metadata_check": "2026-11-01T06:28:05Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12225,7 +12444,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-01T06:28:05Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.32479%2Firmm.24941",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12242,6 +12461,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "4863af7ed5941eb87068714158392b405b2025f6bed3858c687ff1903277abbd",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-11-01T06:28:05Z"
     },
     {
@@ -14238,7 +14458,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-09T01:02:39Z",
-      "last_metadata_check": "2026-11-02T01:08:29Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -14266,7 +14486,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-02T01:08:29Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.53889%2Fcitj.v3i2.671",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -14283,6 +14503,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "c431278b57962b91dbd916c10840f9585b7086066fc72290ca2577f15b103f26",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-11-02T01:08:29Z"
     },
     {
@@ -14319,7 +14540,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-09T01:02:39Z",
-      "last_metadata_check": "2026-11-02T01:08:29Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -14347,7 +14568,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-02T01:08:29Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.3390%2Fmedicina59050860",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -14364,6 +14585,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "35d73417d6120de1db1d6401c8fbb35375a313d5063406ea6d7ca6b8c4b16522",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-11-02T01:08:29Z"
     },
     {
@@ -18752,7 +18974,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-01T06:28:05Z",
-      "last_metadata_check": "2026-11-02T01:08:29Z",
+      "last_metadata_check": "2026-11-14T06:46:26Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -18780,7 +19002,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-02T01:08:29Z",
+        "checked_at": "2026-11-14T06:46:26Z",
         "source_url": "https://api.crossref.org/works/10.3390%2Fbuildings16132686",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -18797,7 +19019,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "c2757ff3d83ff922bd1e912e363081b5cfdfd0f4d72fdb2dd052b5c483ab76b3",
-      "last_metadata_attempt": "2026-11-02T01:08:29Z",
+      "last_metadata_attempt": "2026-11-14T06:46:26Z",
       "discovered_at": "2026-10-29T00:51:53Z"
     },
     {
@@ -21251,35 +21473,33 @@
   ],
   "changes": {
     "added": [
-      "discovery-11a3e0ff4dc3429c931f",
-      "discovery-1dcb7cbaf3716962b1a6",
-      "discovery-35017376f35fc32b0d62",
-      "discovery-3dd610425a93aa8b49fa",
-      "discovery-4836fe60f914371b2735",
-      "discovery-7a71f56d333c13d729c8",
-      "discovery-8517470a7b30b0de86ea",
-      "discovery-bff71bef104220bad22f"
+      "discovery-450df274e8ab39106da2",
+      "discovery-562ede478e28b7c700e8",
+      "discovery-6432e7a85562454e6393",
+      "discovery-7a90bd2e04ad9cef90c8",
+      "discovery-bf74f26b0d79d3a289c6",
+      "discovery-f81c14ef00e2f29ab8b1"
     ],
     "updated": [],
     "flagged": [],
     "superseded": [],
     "rejected": {
-      "outside_topic": 407,
+      "outside_topic": 398,
+      "unsupported_record_type": 27,
       "missing_or_invalid_metadata": 42,
-      "unsupported_record_type": 10,
-      "update_notice": 5
+      "update_notice": 2
     }
   },
   "stats": {
-    "total": 129,
+    "total": 135,
     "curated_references": 13,
-    "metadata_records": 116,
+    "metadata_records": 122,
     "needs_review": 0,
-    "added_this_run": 8,
-    "new_metadata_today": 8,
-    "pending": 156,
-    "pending_overflow_this_run": 9,
+    "added_this_run": 6,
+    "new_metadata_today": 6,
+    "pending": 153,
+    "pending_overflow_this_run": 8,
     "superseded_records": 2
   },
-  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/43382357775"
+  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/43567953894"
 }
