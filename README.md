@@ -1,6 +1,6 @@
-# Albert Tan Sin Hon
+![Animated black-and-white curiosity vortex, an eight-second seamless loop.](assets/profile-vortex.gif)
 
-![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
+# Albert Tan Sin Hon
 
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher at the
@@ -581,3 +581,5 @@ explains how to retain source attribution and review status.
 [Website](https://www.alberttansinhon.com/) · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) · [ORCID](https://orcid.org/0009-0001-8996-7933) · [Profile maintenance](docs/PROFILE_EVOLUTION.md) · [Change record](docs/PROFILE_PROGRESS.md)
 
 Last substantive profile update: **15 November 2026**.
+
+![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
