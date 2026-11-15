@@ -1,6 +1,6 @@
 ![Animated black-and-white curiosity vortex, an eight-second seamless loop.](assets/profile-vortex.gif)
 
-#Let's Go!
+Let's Go!
 
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher at the
