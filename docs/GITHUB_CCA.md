@@ -12,21 +12,26 @@ it does not award badges or establish external adoption of a project.
 
 ## Verified scorecard
 
-Latest achievement check: **13 November 2026, 09:19 Singapore time**
-(`2026-11-13T01:19:42Z`). Public visibility is the observation boundary. A hidden
+Latest achievement check: **15 November 2026, 08:53 Singapore time**
+(`2026-11-15T00:53:48Z`). Public visibility is the observation boundary. A hidden
 badge or unavailable response must not be treated as proof that a badge is unearned.
 
 | Achievement | Observed state | Evidence or next milestone |
 | --- | --- | --- |
-| Pull Shark | **Verified: silver, x3** | [GitHub milestone record](https://github.com/users/Albertito-AI/achievements/pull-shark/detail?hovercard=1) records the 128th merged pull request. Gold threshold: 1,024. The exact current qualifying count is unknown. |
-| Quickdraw | **Event recorded; award unconfirmed** | [Thesis template PR #1](https://github.com/Albertito-AI/law-phd-thesis-template/pull/1) was opened and merged 19 seconds apart. |
-| YOLO | **Event recorded; award unconfirmed** | The same PR was authored and merged by `Albertito-AI`, with zero submitted GitHub reviews observed before and after merge. |
+| Pull Shark | **Verified: silver, x3** | [GitHub milestone record](https://github.com/Albertito-AI?achievement=pull-shark&tab=achievements) records the 128th merged pull request. Gold threshold: 1,024. The exact current qualifying count is unknown. |
+| Quickdraw | **Verified: unlocked** | [GitHub award history](https://github.com/Albertito-AI?achievement=quickdraw&tab=achievements) identifies [Opsbook issue #4](https://github.com/Albertito-AI/atlas-opsbook/issues/4), closed within five minutes. Unlocked 14 November 2026 at 14:25:32 Singapore time (`2026-11-14T06:25:32Z`). |
+| YOLO | **Verified: unlocked** | [GitHub award history](https://github.com/Albertito-AI?achievement=yolo&tab=achievements) identifies [Colibri Atlas PR #1](https://github.com/Albertito-AI/colibri-atlas/pull/1), merged without a submitted GitHub review. Unlocked 14 November 2026 at 06:09:18 Singapore time (`2026-11-13T22:09:18Z`). |
 | Pair Extraordinaire | Not publicly observed | One qualifying merged pull request containing accurately attributed co-authored work. |
 | Galaxy Brain | Not publicly observed | Two accepted answers in participating repository Discussions. |
 | Starstruck | Not publicly observed | First target: 16 stars on one qualifying repository created by the account. |
 
-The first post-merge public checks for Quickdraw and YOLO returned no accessible
-achievement detail. No award is claimed from the timing or merge event alone.
+The initial 13 November observation recorded silver Pull Shark and left
+Quickdraw and YOLO unconfirmed. The 15 November recheck confirms those two
+awards already earned on 14 November Singapore time; it does not count them as
+new awards earned today. GitHub's histories identify the actual award events
+above, rather than the earlier thesis-template candidate. The achievement cards
+display Quickdraw, YOLO and silver Pull Shark; the other three targets were not
+displayed at this check. This does not establish their private eligibility.
 The earlier [profile inspection](https://github.com/Albertito-AI) also showed
 **Developer Program Member**, a separate profile highlight.
 
@@ -50,15 +55,16 @@ before log creation, and supplies the runnable dependency-check command.
 | Local validation | 35 tests passed; source audit: zero errors and 29 existing demonstration warnings; `git diff --check` passed |
 | Review type | AI-assisted source inspection and internal assistant cross-check; zero submitted GitHub PR reviews; no independent human review claimed |
 | Hosted verification | [PR run](https://github.com/Albertito-AI/law-phd-thesis-template/actions/runs/43344027863) and [main run](https://github.com/Albertito-AI/law-phd-thesis-template/actions/runs/43344063757): audit jobs passed; PDF build jobs were still running at the initial follow-up |
-| Delivery | Merged state, merge SHA and timestamps read back from GitHub. Achievement awards remain separately unconfirmed. |
+| Delivery | Merged state, merge SHA and timestamps read back from GitHub. At this initial 13 November check, achievement awards were separately unconfirmed; later award histories are recorded above. |
 
 All preparation and local checking preceded the timed pull-request window.
 Repository protections, review settings and workflows were preserved.
 
 ## Next quests
 
-1. **Confirm the first awards.** Re-read the public profile and achievement
-   details, preserving the distinction between a recorded event and an award.
+1. **Keep confirmed awards accurate.** Quickdraw and YOLO are confirmed. Check
+   pending candidates through actual award histories and relevant acceptance
+   records; do not repeat completed events just to prompt an award.
 2. **Find a real collaboration.** Credit actual co-authors using their agreed,
    GitHub-associated email addresses, and preserve attribution through merge.
    Internal agent names alone do not establish distinct GitHub contributors.
@@ -97,7 +103,7 @@ repositories, not an account-wide sum of stars.
 | Achievement | Position in this campaign |
 | --- | --- |
 | Public Sponsor | Ordinary earning route exists through a public GitHub sponsorship; outside the current no-payment campaign. |
-| Finishing Touch | Verified award for improving GitHub's interface quality; an external contributor route is unconfirmed. Known milestones: 1, 4, 16 and 32 qualifying pull requests. |
+| Finishing Touch | Community-reported award associated with GitHub interface quality. No verified public earning route was found; keep it on the watchlist rather than promise an obtainable quest. |
 | Heart On Your Sleeve | Disabled experiment; no confirmed public launch date. |
 | Open Sourcerer | Disabled experiment; no confirmed public launch date. |
 | Arctic Code Vault Contributor | Historical award tied to the 2 February 2020 archive snapshot. |
@@ -108,6 +114,26 @@ repositories, not an account-wide sum of stars.
 
 This gives 15 currently known identities, including the six opening targets.
 GitHub describes achievements as a public preview; availability can change.
+
+## Unusual free badge routes
+
+Issuer pages checked on 15 November 2026. These opportunities extend the CCA
+beyond native GitHub achievements. None is recorded as earned by this search.
+
+| Target | Issuer and actual route | Fit and next step |
+| --- | --- | --- |
+| [Understanding the EU Cyber Resilience Act, LFEL1001](https://training.linuxfoundation.org/express-learning/understanding-the-eu-cyber-resilience-act-cra-lfel1001/) | Linux Foundation course completion badge; listed at $0 with 60–90 minutes of material, quizzes and 30 days of access. | A focused law-and-software learning quest. Complete the personal course requirements, then verify the issued credential. |
+| [Secure AI/ML-Driven Software Development, LFEL1012](https://training.linuxfoundation.org/express-learning/secure-ai-ml-driven-software-development-lfel1012/) | Linux Foundation course completion badge; listed at $0 with 60–90 minutes of material, quizzes and 30 days of access. | Directly relevant to reviewing agent-produced software. Personal completion is required before displaying an earned badge. |
+| [Securing Projects with OpenSSF Scorecard, LFEL1006](https://training.linuxfoundation.org/express-learning/securing-projects-with-openssf-scorecard-lfel1006/) | Linux Foundation course completion badge; listed at $0 with 60–90 minutes of material, quizzes and 30 days of access. | Learn the security checks, then apply justified improvements to an eligible repository. The course badge is separate from a project's Scorecard result. |
+| [Security advisory credit](https://docs.github.com/en/account-and-profile/reference/profile-reference) | GitHub profile highlight for a security advisory accepted into the GitHub Advisory Database. | A longer research quest requiring a genuine security finding or qualifying advisory contribution and acceptance. Ordinary test defects do not establish eligibility. |
+| [Security Bug Bounty Hunter](https://bounty.github.com/rules) | GitHub profile highlight associated with qualifying vulnerability research through its security programme. | A specialist quest governed by the programme's permitted targets and reporting rules. A valid finding and GitHub's recognition are required; a scan or submission alone is not an award. |
+| [OpenSSF Best Practices](https://www.bestpractices.dev/en) | No-cost project self-certification for free/libre and open-source software, with evidence for the applicable criteria. | Assess a licensed project such as Symbolon against each criterion. Passing, silver, gold and Baseline badges are project claims, not personal GitHub achievements or independent security audits. |
+
+The course estimates are material lengths, not guaranteed completion or issuing
+times. These personal learning credentials require the learner's own completion;
+assistant research does not earn them. Project self-certification similarly
+requires evidence for every claimed criterion. Finding a programme creates no
+enrolment, paid subscription or certification claim.
 
 ## Sources and upkeep
 
