@@ -1,8 +1,86 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T06:46:26Z",
+  "generated_at": "2026-11-15T06:51:17Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-ef9b3a91eeb67f67f79f",
+      "title": "Sustainability Reporting and Corporate Performance of Quoted Companies in Nigeria",
+      "doi": "10.56201/ijssmr.v10.no5.2024.pg91.106",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.56201%2Fijssmr.v10.no5.2024.pg91.106",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e2f8b01688c748ad615a",
+      "title": "Experimenting with algorithmic governance: Artificial intelligence between innovation and democratic responsibility",
+      "doi": "10.29379/jedem.v17i4.1177",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.29379%2Fjedem.v17i4.1177",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-75a0b4af4ad94bdb4405",
+      "title": "Evaluation of an artificial intelligence-based medical device for diagnosis of autism spectrum disorder",
+      "doi": "10.1038/s41746-022-00598-6",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41746-022-00598-6",
+      "publication_date": "2022-05-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-72493246a9d605d8e3d0",
+      "title": "AI Governance in East Asia",
+      "doi": "10.1017/9781009580632.017",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1017%2F9781009580632.017",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3d16b8a2d95d700a8b42",
+      "title": "Mapping sustainability reporting using indicator attributes",
+      "doi": "10.1108/jaoc-12-2025-0565",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fjaoc-12-2025-0565",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-2785d420eb01ebf46f86",
+      "title": "Value-based principles in sustainability reporting",
+      "doi": "10.3389/frsus.2026.1922920",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffrsus.2026.1922920",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-f81c14ef00e2f29ab8b1",
       "title": "Top management attributes and market valuation across economic regimes: an ESG accountability signalling perspective from an emerging EU capital market",
@@ -1603,32 +1681,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-2785d420eb01ebf46f86",
-      "title": "Value-based principles in sustainability reporting",
-      "doi": "10.3389/frsus.2026.1922920",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3389%2Ffrsus.2026.1922920",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-3d16b8a2d95d700a8b42",
-      "title": "Mapping sustainability reporting using indicator attributes",
-      "doi": "10.1108/jaoc-12-2025-0565",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1108%2Fjaoc-12-2025-0565",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-7607bcb8b587b256c74e",
       "title": "ENTERPRISE RISK MANAGEMENT, SUSTAINABILITY REPORTING, AND FIRM VALUE: THE MODERATING ROLE OF FINANCIAL PERFORMANCE",
       "doi": "10.61990/ijamesc.v4i5.850",
@@ -1664,19 +1716,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.56557%2Fjgembr%2F2026%2Fv18i311290",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-ef9b3a91eeb67f67f79f",
-      "title": "Sustainability Reporting and Corporate Performance of Quoted Companies in Nigeria",
-      "doi": "10.56201/ijssmr.v10.no5.2024.pg91.106",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.56201%2Fijssmr.v10.no5.2024.pg91.106",
       "publication_date": "2026-10-30",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -2188,19 +2227,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-75a0b4af4ad94bdb4405",
-      "title": "Evaluation of an artificial intelligence-based medical device for diagnosis of autism spectrum disorder",
-      "doi": "10.1038/s41746-022-00598-6",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1038%2Fs41746-022-00598-6",
-      "publication_date": "2022-05-05",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-8aa46a6a1daa9295ff53",
       "title": "Can ESG Performance Mitigate Information Asymmetry? Moderating Effect of Assurance Services",
       "doi": "10.1080/00036846.2022.2107991",
@@ -2435,19 +2461,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-72493246a9d605d8e3d0",
-      "title": "AI Governance in East Asia",
-      "doi": "10.1017/9781009580632.017",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1017%2F9781009580632.017",
-      "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-a5c9e8fabbf12eb1b42a",
       "title": "Using secure artificial intelligence agents integrated within the electronic medical record for the evaluation of blood culture appropriateness—Northern California, 2025",
       "doi": "10.1017/ice.2025.10349",
@@ -2483,19 +2496,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.62823%2Fexre%2F2025%2F02%2F04.136",
-      "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-e2f8b01688c748ad615a",
-      "title": "Experimenting with algorithmic governance: Artificial intelligence between innovation and democratic responsibility",
-      "doi": "10.29379/jedem.v17i4.1177",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.29379%2Fjedem.v17i4.1177",
       "publication_date": "2025-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -3575,6 +3575,71 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.23887%2Fjap.v14i03.50330",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0d2f0be8364771def256",
+      "title": "Analysis and Evaluation of Interactions in Artificial Intelligence-based English Learning Platforms",
+      "doi": "10.5392/jkca.2023.23.12.767",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.5392%2Fjkca.2023.23.12.767",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-14ebf887c9156206a9c7",
+      "title": "Nonfinancial reporting regulation and challenges in sustainability disclosure and corporate governance practices",
+      "doi": "10.1002/bse.2509",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.2509",
+      "publication_date": "2020-04-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-32bdd952cd1d391658b0",
+      "title": "PENGARUH ENVIRONMENTAL INFORMATION DISCLOSURE, KEPEMILIKAN INSTITUSIONAL, DEWAN KOMISIARIS INDEPENDEN, KOMITE AUDIT TERHADAP NILAI PERUSAHAAN",
+      "doi": "10.37365/ebid.v1i2.184",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.37365%2Febid.v1i2.184",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-55d1e6d55b9484901433",
+      "title": "DOES FOREIGN OWNERSHIP AND FOREIGN BOARD MEMBER IMPROVE THE QUANTITY AND QUALITY OF SUSTAINABILITY REPORTING AMONG NON-FINANCIAL LISTED FIRMS IN NIGERIA?",
+      "doi": "10.26772/cijds-2023-06-02-06",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.26772%2Fcijds-2023-06-02-06",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e6a9ace7253055ff2de0",
+      "title": "Artificial-intelligence-automated machine learning as a tool for evaluating facial rhytid images",
+      "doi": "10.25056/jcm.2023.7.2.60",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.25056%2Fjcm.2023.7.2.60",
       "publication_date": "2023-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
