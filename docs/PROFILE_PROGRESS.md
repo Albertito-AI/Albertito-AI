@@ -1,5 +1,35 @@
 # Profile change record
 
+## 15 November 2026: verify CCA awards and add unusual free badge routes
+
+Rechecked the public profile and GitHub's achievement histories at 08:53
+Singapore time. The [CCA scorecard](GITHUB_CCA.md) now confirms Quickdraw and
+YOLO alongside silver Pull Shark. GitHub attributes Quickdraw to Opsbook issue
+#4 and YOLO to Colibri Atlas PR #1. Both unlock times fall on 14 November in
+Singapore; this correction does not count them as awards earned today or
+attribute them to the earlier thesis-template candidate. The initial 13 November
+observation remains preserved as history. Reader links now open the ordinary
+achievement pages rather than request-only hovercard fragments.
+
+Added three Linux Foundation learning-badge routes checked against their issuer
+pages: the EU Cyber Resilience Act, secure AI-assisted software development and
+OpenSSF Scorecard. Each currently lists a free course, 60–90 minutes of material,
+quizzes and a digital badge. Personal completion and an issued credential remain
+required. GitHub security advisory and bug-bounty highlights, and OpenSSF project
+self-certification, are separate longer-term possibilities, with their acceptance and
+evidence requirements. Finishing Touch remains a watchlist item because a
+public earning route could not be verified.
+
+This is an evidence correction and expansion of the existing CCA, with no
+enrolment, certification, new badge award, outreach or new monitoring workflow
+claimed. Prepared from profile main `cd5c4f93463a500321831e42b05b6284bdb8165c`;
+the profile validator and whitespace check passed. The delivery pull request
+and its Actions records provide the exact reviewed revision, applicable hosted
+checks and merge receipt. Research, editing and cross-review are AI-assisted;
+no independent human review is claimed.
+
+Work ID: `ATLAS-BERT-CHAN-CCA-20261113`.
+
 ## 13 November 2026: launch Team ATLAS X BERT CHAN's GitHub CCA
 
 Created the single [GitHub CCA scorecard](GITHUB_CCA.md) following Albert's
