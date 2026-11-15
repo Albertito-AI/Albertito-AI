@@ -1,5 +1,19 @@
 # Profile change record
 
+## 15 November 2026: make the profile easier to explore
+
+Reorganised the profile around research, tools and collaboration, with a compact
+six-project directory near the top. Grouped detailed project records, publishing
+notes and learning collections into expandable sections. Preserved all existing
+Markdown link targets, project descriptions, verification limits and reuse terms.
+Selected scholarship and professional enquiries remain directly visible.
+
+Checked the README's local paths against the current repository tree, confirmed
+balanced disclosure elements and retained every existing section. This is a
+presentation change; existing publication and project claims were not independently
+re-audited. Prepared against main `605fa54b24bbf29175418698ce6727a4c926d6e9`.
+The commit containing this entry records the exact revision.
+
 ## 15 November 2026: verify CCA awards and add unusual free badge routes
 
 Rechecked the public profile and GitHub's achievement histories at 08:53
