@@ -1,8 +1,99 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T06:51:17Z",
+  "generated_at": "2026-11-16T06:51:06Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-f46b5e99cdbb40960b3f",
+      "title": "Responsible AI in Financial Risk Systems the Transparent Equity Framework (TEF): An Auditable Governance Methodology for Equitable Financial Decision-Making",
+      "doi": "10.47191/jefms/v8-i12-63",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.47191%2Fjefms%2Fv8-i12-63",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b85c00aaad767ae8fd15",
+      "title": "Effect of Environmental, Social and Governance (ESG) Reporting on Firm Value of Listed Non-financial Companies in Nigeria",
+      "doi": "10.56557/jgembr/2026/v18i311290",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.56557%2Fjgembr%2F2026%2Fv18i311290",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a5c9e8fabbf12eb1b42a",
+      "title": "Using secure artificial intelligence agents integrated within the electronic medical record for the evaluation of blood culture appropriateness—Northern California, 2025",
+      "doi": "10.1017/ice.2025.10349",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1017%2Fice.2025.10349",
+      "publication_date": "2025-11-11",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-98f2c4f4b8e786bd48eb",
+      "title": "Greenwashing, Sustainability Reporting, and Artificial Intelligence: A Systematic Literature Review",
+      "doi": "10.3390/su15021481",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu15021481",
+      "publication_date": "2023-01-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7607bcb8b587b256c74e",
+      "title": "ENTERPRISE RISK MANAGEMENT, SUSTAINABILITY REPORTING, AND FIRM VALUE: THE MODERATING ROLE OF FINANCIAL PERFORMANCE",
+      "doi": "10.61990/ijamesc.v4i5.850",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.61990%2Fijamesc.v4i5.850",
+      "publication_date": "2026-10-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-72f695b7533a12e3331c",
+      "title": "Ensuring participation rights in the execution process after voluntary submission of information storage media and admissibility of evidence - Supreme Court sentenced on September 18, 2023, 2022도 7453 an en banc decision -",
+      "doi": "10.34222/kdps.2023.15.4.71",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.34222%2Fkdps.2023.15.4.71",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4641e045434cb0d96e8f",
+      "title": "Applications for Generative AI in Banking and Finance: Opportunities, Risks, and Governance",
+      "doi": "10.52131/jof.2025.0401.0016",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.52131%2Fjof.2025.0401.0016",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-ef9b3a91eeb67f67f79f",
       "title": "Sustainability Reporting and Corporate Performance of Quoted Companies in Nigeria",
@@ -1681,45 +1772,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-7607bcb8b587b256c74e",
-      "title": "ENTERPRISE RISK MANAGEMENT, SUSTAINABILITY REPORTING, AND FIRM VALUE: THE MODERATING ROLE OF FINANCIAL PERFORMANCE",
-      "doi": "10.61990/ijamesc.v4i5.850",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.61990%2Fijamesc.v4i5.850",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-98f2c4f4b8e786bd48eb",
-      "title": "Greenwashing, Sustainability Reporting, and Artificial Intelligence: A Systematic Literature Review",
-      "doi": "10.3390/su15021481",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fsu15021481",
-      "publication_date": "2023-01-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-b85c00aaad767ae8fd15",
-      "title": "Effect of Environmental, Social and Governance (ESG) Reporting on Firm Value of Listed Non-financial Companies in Nigeria",
-      "doi": "10.56557/jgembr/2026/v18i311290",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.56557%2Fjgembr%2F2026%2Fv18i311290",
-      "publication_date": "2026-10-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-11a535d2d463f17f0bb1",
       "title": "Ownership Structure And Leverage On Esg Disclosure: The Perspective Of Stakeholder And Signaling Theory",
       "doi": "10.33373/mja.v19i2.8832",
@@ -2461,19 +2513,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-a5c9e8fabbf12eb1b42a",
-      "title": "Using secure artificial intelligence agents integrated within the electronic medical record for the evaluation of blood culture appropriateness—Northern California, 2025",
-      "doi": "10.1017/ice.2025.10349",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1017%2Fice.2025.10349",
-      "publication_date": "2025-11-11",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-b451e3ca9561c3521ed8",
       "title": "Does Sustainability Disclosure Improve Investment Efficiency? Applied Study",
       "doi": "10.21608/atasu.2025.513367",
@@ -2578,19 +2617,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-4641e045434cb0d96e8f",
-      "title": "Applications for Generative AI in Banking and Finance: Opportunities, Risks, and Governance",
-      "doi": "10.52131/jof.2025.0401.0016",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.52131%2Fjof.2025.0401.0016",
-      "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-8518522d414b169728bd",
       "title": "Strategic governance and Sustainable Development Goals (SDG) reporting in Malaysia",
       "doi": "10.1080/23311975.2025.2607200",
@@ -2678,19 +2704,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.58812%2Fesiscs.v3i02.1247",
-      "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-f46b5e99cdbb40960b3f",
-      "title": "Responsible AI in Financial Risk Systems the Transparent Equity Framework (TEF): An Auditable Governance Methodology for Equitable Financial Decision-Making",
-      "doi": "10.47191/jefms/v8-i12-63",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.47191%2Fjefms%2Fv8-i12-63",
       "publication_date": "2025-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -3641,6 +3654,123 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.25056%2Fjcm.2023.7.2.60",
       "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0b99db67720552e5ff76",
+      "title": "Transition to the Corporate Sustainability Reporting Directive",
+      "doi": "10.4324/9781003582366-11",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4324%2F9781003582366-11",
+      "publication_date": "2025-06-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0c8bee10daae6ec2d584",
+      "title": "Sustainability Disclosure based on Materiality and Stock Price Informativeness",
+      "doi": "10.29189/kaiaair.41.4.1",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.29189%2Fkaiaair.41.4.1",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4117f8def728ca3c170b",
+      "title": "DETERMINANTS OF ENVIRONMENTAL SUSTAINABILITY DISCLOSURE",
+      "doi": "10.26772/cijds-2023-06-02-03",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.26772%2Fcijds-2023-06-02-03",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-68e40af0fd74fbf8a06b",
+      "title": "Dealing With Semantic Inconsistencies in AI Governance",
+      "doi": "10.4018/979-8-3693-9576-9.ch007",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch007",
+      "publication_date": "2025-06-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7bc1022cd6d645ae8b66",
+      "title": "Legal Entropy in AI Governance",
+      "doi": "10.4018/979-8-3693-9576-9.ch010",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch010",
+      "publication_date": "2025-06-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8cc8c34db089eb63c1d8",
+      "title": "Development and Verification of Artificial Intelligence-based Piping Detection System using 3D GPR Data",
+      "doi": "10.7848/ksgpc.2023.41.6.511",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.7848%2Fksgpc.2023.41.6.511",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d841cf1f781bcccc3f10",
+      "title": "Artificial Intelligence and Governance: Legal Frameworks for Managing Global Diversity",
+      "doi": "10.2991/978-2-38476-426-6_22",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.2991%2F978-2-38476-426-6_22",
+      "publication_date": "2025",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-ecafced898222293d57c",
+      "title": "The Cost of Late Governance: A Blast-Radius Model for Pre-Promotion vs. Post-Hoc Policy Enforcement in Autonomous Multi-Agent Data Consumption",
+      "doi": "10.58812/esiscs.v1i02.1244",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.58812%2Fesiscs.v1i02.1244",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-f046c1988bc97e981b89",
+      "title": "Global AI Governance and Collaboration",
+      "doi": "10.4018/979-8-3373-1210-1.ch009",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3373-1210-1.ch009",
+      "publication_date": "2025-06-04",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
