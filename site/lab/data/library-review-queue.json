@@ -1,8 +1,99 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T08:10:35Z",
+  "generated_at": "2026-11-18T07:44:25Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-f3bb391ced57bbd535a2",
+      "title": "Role of Country- and Firm-Level Determinants in Environmental, Social, and Governance Disclosure",
+      "doi": "10.1007/s10551-016-3139-1",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10551-016-3139-1",
+      "publication_date": "2016-04-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e5f747dc0b8bbb165fb8",
+      "title": "The Architecture of Intelligent Governance (AIG): A Conceptual Framework for Integration AI, Quantum Computing, and Global Resource Resilience",
+      "doi": "10.3390/su18052312",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu18052312",
+      "publication_date": "2026-02-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e219e6e85b7578b8141a",
+      "title": "Resilient evaluation of fairness and biases in AI algorithms: managing sustainable data quality for intercontinental medical travel and tourism",
+      "doi": "10.1108/jhtt-04-2025-0311",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fjhtt-04-2025-0311",
+      "publication_date": "2025-12-18",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b9001c99773d8bcd8d66",
+      "title": "Ethical AI in Healthcare: Integrating Zero-Knowledge Proofs and Smart Contracts for Transparent Data Governance",
+      "doi": "10.3390/bioengineering12111236",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fbioengineering12111236",
+      "publication_date": "2025-11-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6e64d5124510bbe12e0c",
+      "title": "From disclosure to discrepancy: How open government data alters ESG rating divergence",
+      "doi": "10.1016/j.giq.2025.102085",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.giq.2025.102085",
+      "publication_date": "2025-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-679c690a14586d71d52a",
+      "title": "MEDENÎ USÛL HUKUKUNDA DELİL TESPİTİNDE GÖREVLİ VE YETKİLİ MAHKEME",
+      "doi": "10.52273/sduhfd..1190494",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.52273%2Fsduhfd..1190494",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-65b24f47c3fe7f9a5091",
+      "title": "GLOBAL REPORTING INITIATIVE (GRI) AND INTEGRATED SUSTAINABILITY REPORTS",
+      "doi": "10.58532/nbennursosgarb2",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.58532%2Fnbennursosgarb2",
+      "publication_date": "2025-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-ec2604bd876490beca98",
       "title": "Architecting Responsible AI Governance on SAP BTP for Intelligent Enterprise Transformation through Explainable Systems, Adaptive Compliance Controls, and Trusted Automation Engineering",
@@ -1850,45 +1941,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-65b24f47c3fe7f9a5091",
-      "title": "GLOBAL REPORTING INITIATIVE (GRI) AND INTEGRATED SUSTAINABILITY REPORTS",
-      "doi": "10.58532/nbennursosgarb2",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.58532%2Fnbennursosgarb2",
-      "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-6e64d5124510bbe12e0c",
-      "title": "From disclosure to discrepancy: How open government data alters ESG rating divergence",
-      "doi": "10.1016/j.giq.2025.102085",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.giq.2025.102085",
-      "publication_date": "2025-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-f3bb391ced57bbd535a2",
-      "title": "Role of Country- and Firm-Level Determinants in Environmental, Social, and Governance Disclosure",
-      "doi": "10.1007/s10551-016-3139-1",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1007%2Fs10551-016-3139-1",
-      "publication_date": "2016-04-05",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-070eba6629d8c3aeb6b9",
       "title": "Environmental disclosure in Indonesia: a study of manufacturing and mining companies",
       "doi": "10.1108/ajar-11-2023-0367",
@@ -2838,19 +2890,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-b9001c99773d8bcd8d66",
-      "title": "Ethical AI in Healthcare: Integrating Zero-Knowledge Proofs and Smart Contracts for Transparent Data Governance",
-      "doi": "10.3390/bioengineering12111236",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fbioengineering12111236",
-      "publication_date": "2025-11-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-c2807f5789dc56fa93b4",
       "title": "A Study on ESG Disclosure of SMEs",
       "doi": "10.15539/khlj.59.4.8",
@@ -2887,32 +2926,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.33423%2Fjaf.v24i5.7438",
       "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-e219e6e85b7578b8141a",
-      "title": "Resilient evaluation of fairness and biases in AI algorithms: managing sustainable data quality for intercontinental medical travel and tourism",
-      "doi": "10.1108/jhtt-04-2025-0311",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1108%2Fjhtt-04-2025-0311",
-      "publication_date": "2025-12-18",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-e5f747dc0b8bbb165fb8",
-      "title": "The Architecture of Intelligent Governance (AIG): A Conceptual Framework for Integration AI, Quantum Computing, and Global Resource Resilience",
-      "doi": "10.3390/su18052312",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fsu18052312",
-      "publication_date": "2026-02-27",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3849,6 +3862,58 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.2196%2F63631",
       "publication_date": "2025-03-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-023627be98c615f0cfa2",
+      "title": "Digital Misinformation in Aesthetic Dermatology: The Role of Social Media and Generative Artificial Intelligence in Shaping Patient Safety, Trust, and Evidence-Based Practice",
+      "doi": "10.12775/qs.2026.53.70151",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.12775%2Fqs.2026.53.70151",
+      "publication_date": "2026-04-03",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1e8724feda3d2145182b",
+      "title": "Are Dual Governance Pressures Associated with Reduced Quantitative Environmental Disclosure?—Evidence from Environmental Penalties and Environmental Rating Disagreement",
+      "doi": "10.12677/mm.2026.1611264",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.12677%2Fmm.2026.1611264",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6bf3376af76e87ebcf9f",
+      "title": "Environmental performance, Islamic corporate governance, and liquidity's impact on financial performance with sustainability reporting as a mediating factor",
+      "doi": "10.53088/jadfi.v2i3.456",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.53088%2Fjadfi.v2i3.456",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e001ceea90953457ce05",
+      "title": "Advances in artificial intelligence for the evaluation of mitral regurgitation",
+      "doi": "10.1097/hco.0000000000001317",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1097%2Fhco.0000000000001317",
+      "publication_date": "2026-06-15",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
