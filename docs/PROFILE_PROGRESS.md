@@ -1,5 +1,20 @@
 # Profile change record
 
+## 20 November 2026: state current academic affiliations
+
+The opening now identifies Albert as a PhD researcher in law at the University
+of Groningen and a Visiting Professor in the Faculty of Law at Prince of Songkla
+University, Thailand, following Albert's confirmation of the appointment.
+The profile continues to describe the doctorate as ongoing research.
+
+Preserved every existing link target, the animated GIF at the top, the banner at
+the bottom, project descriptions and reuse terms. Internal AI-assisted review
+checked the complete text change, local README targets against the repository
+tree, balanced disclosure elements and whitespace. The delivery pull request
+and applicable Actions records provide the exact checked revision and merge
+receipt; no independent human review or institutional endorsement is claimed.
+Prepared from main `da5b0d0979a3074fa8fd43510c055598098a651d`.
+
 ## 15 November 2026: make the profile easier to explore
 
 Reorganised the profile around research, tools and collaboration, with a compact
