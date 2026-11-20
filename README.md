@@ -3,10 +3,11 @@
 Let's Go!
 
 I study how institutions turn evidence into decisions, and how those decisions
-become answerable to the people affected by them. I am a PhD researcher at the
-University of Groningen, working on sustainability reporting, legal accountability
-and regulatory coordination in Asia. Alongside my scholarship, I develop practical
-research tools and teaching materials.
+become answerable to the people affected by them. I am a PhD researcher in law at
+the University of Groningen and a Visiting Professor in the Faculty of Law at
+Prince of Songkla University, Thailand. My research examines sustainability
+reporting, legal accountability and regulatory coordination in Asia. Alongside my
+scholarship, I develop practical research tools and teaching materials.
 
 [Website](https://www.alberttansinhon.com/)
  · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
@@ -580,6 +581,6 @@ explains how to retain source attribution and review status.
 
 [Website](https://www.alberttansinhon.com/) · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) · [ORCID](https://orcid.org/0009-0001-8996-7933) · [Profile maintenance](docs/PROFILE_EVOLUTION.md) · [Change record](docs/PROFILE_PROGRESS.md)
 
-Last substantive profile update: **15 November 2026**.
+Last substantive profile update: **20 November 2026**.
 
 ![Law, institutions and human capability. Research you can inspect. Tools you can try.](assets/profile-overview.svg)
