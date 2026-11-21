@@ -1,8 +1,86 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T07:31:33Z",
+  "generated_at": "2026-11-21T07:27:17Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-fa190391e2ff821f1332",
+      "title": "Governance of AI in electoral management bodies",
+      "doi": "10.18356/9789211588958c009",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.18356%2F9789211588958c009",
+      "publication_date": "2026-10-19",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-df0c95c1b3d490d32cf6",
+      "title": "ESG Disclosure and Firm Value: Do Audit Committee Characteristics and Sustainability Committee Matter?",
+      "doi": "10.3390/ijfs13040188",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fijfs13040188",
+      "publication_date": "2025-10-06",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-87737a83c0626f592f9f",
+      "title": "From disclosure to epistemic accountability: preserving meaningful human control across the AI-assisted research lifecycle",
+      "doi": "10.3389/frma.2026.1965518",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffrma.2026.1965518",
+      "publication_date": "2026-11-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-853324d881edbaaea0ef",
+      "title": "The Impact of Environmental, Social, and Governance Disclosure on Firm Value with Profitability as a Moderating Variable",
+      "doi": "10.35129/t3xk6s74",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.35129%2Ft3xk6s74",
+      "publication_date": "2025-08-18",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-71ebbeb6e342bd7f3afd",
+      "title": "The Influence of Green accounting, Sustainability Report Disclosure and Environmental Performance on Firm Value",
+      "doi": "10.35912/gaar.v4i1.5386",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.35912%2Fgaar.v4i1.5386",
+      "publication_date": "2025-11-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-293b993a1fd80d08c952",
+      "title": "Building an Evaluation Harness for Oil & Gas AI Agents",
+      "doi": "10.2118/234002-ms",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.2118%2F234002-ms",
+      "publication_date": "2026-10-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-fd8c01ffe74311b5d881",
       "title": "7 Combatting Stereotyping and Facilitating Justice: Chief Justice McLachlin’s Vision for the Law of Evidence",
@@ -2136,32 +2214,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-71ebbeb6e342bd7f3afd",
-      "title": "The Influence of Green accounting, Sustainability Report Disclosure and Environmental Performance on Firm Value",
-      "doi": "10.35912/gaar.v4i1.5386",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.35912%2Fgaar.v4i1.5386",
-      "publication_date": "2025-11-10",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-853324d881edbaaea0ef",
-      "title": "The Impact of Environmental, Social, and Governance Disclosure on Firm Value with Profitability as a Moderating Variable",
-      "doi": "10.35129/t3xk6s74",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.35129%2Ft3xk6s74",
-      "publication_date": "2025-08-18",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-871af3baa7bfba3a2fb8",
       "title": "Assessing the Role of Sustainability Disclosure on Firms’ Financial Performance: Evidence from the Energy Sector of Belt and Road Initiative Countries",
       "doi": "10.3390/su16020930",
@@ -2198,19 +2250,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.21776%2Ftiara.2025.3.1.174",
       "publication_date": "2025-03-01",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-df0c95c1b3d490d32cf6",
-      "title": "ESG Disclosure and Firm Value: Do Audit Committee Characteristics and Sustainability Committee Matter?",
-      "doi": "10.3390/ijfs13040188",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fijfs13040188",
-      "publication_date": "2025-10-06",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3293,19 +3332,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-293b993a1fd80d08c952",
-      "title": "Building an Evaluation Harness for Oil & Gas AI Agents",
-      "doi": "10.2118/234002-ms",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.2118%2F234002-ms",
-      "publication_date": "2026-10-14",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-6f4074ca5433cfa21421",
       "title": "Responsible AI in Construction Safety: Systematic Evaluation of Large Language Models and Prompt Engineering",
       "doi": "10.1061/jcemd4.coeng-16639",
@@ -3345,19 +3371,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-87737a83c0626f592f9f",
-      "title": "From disclosure to epistemic accountability: preserving meaningful human control across the AI-assisted research lifecycle",
-      "doi": "10.3389/frma.2026.1965518",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3389%2Ffrma.2026.1965518",
-      "publication_date": "2026-11-10",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-8f51a0daaf1bc39d3f27",
       "title": "<b>ĐÁNH GIÁ HIỆU QUẢ ỨNG DỤNG ĐỒ THỊ TRI THỨC Y KHOA KẾT HỢP TRÍ TUỆ NHÂN TẠO ĐA PHƯƠNG THỨC HỖ TRỢ CHẨN ĐOÁN SỚM UNG THƯ VÒM MŨI HỌNG TẠI VIỆT NAM</b>",
       "doi": "10.52163/yhc.v67icd13.6408",
@@ -3394,19 +3407,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.15652%2Fink.2024.21.4.183",
       "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-fa190391e2ff821f1332",
-      "title": "Governance of AI in electoral management bodies",
-      "doi": "10.18356/9789211588958c009",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.18356%2F9789211588958c009",
-      "publication_date": "2026-10-19",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -4135,6 +4135,71 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.71465%2Fcsb97",
       "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-22f03fcbc93b9168f2df",
+      "title": "Formal ESRS Compliance Does Not Fully Eliminate Information Asymmetry in ESG Reporting: Evidence from a Screening – Based Case Study",
+      "doi": "10.2478/ers-2026-0031",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.2478%2Fers-2026-0031",
+      "publication_date": "2026-09-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3aa188083b9feeefa422",
+      "title": "PENGARUH BOARD INDEPENDENCE, AUDIT COMMITTEE, DAN MANAGERIAL OWNERSHIP TERHADAP SUSTAINABILITY REPORTING PADA ASEAN CORPORATE GOVERNANCE SCORECARD",
+      "doi": "10.31937/akuntansi.v14i2.2879",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.31937%2Fakuntansi.v14i2.2879",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6511c0eb37df65d3d917",
+      "title": "Artificial Intelligence and Public Sector Auditing: Challenges and Opportunities for Supreme Audit Institutions",
+      "doi": "10.3390/world6020078",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fworld6020078",
+      "publication_date": "2025-06-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-811d749e3952ba5a8c51",
+      "title": "The Influence of Sustainable Reporting and Corporate Governance on Value of Mining Companies Listed on the ASEAN Stock Exchange",
+      "doi": "10.24191/apmaj.v17i3-05",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.24191%2Fapmaj.v17i3-05",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-85fac1a0ee846add4d69",
+      "title": "REDECA: A Novel Framework to Review Artificial Intelligence and Its Applications in Occupational Safety and Health",
+      "doi": "10.3390/ijerph18136705",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fijerph18136705",
+      "publication_date": "2021-06-22",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
