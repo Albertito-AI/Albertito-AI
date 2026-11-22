@@ -1,8 +1,112 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T07:27:17Z",
+  "generated_at": "2026-11-22T07:08:43Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-d97bc537c281e7853ac9",
+      "title": "Admissions and Confessions in the Digital Era: Emerging Issues in Electronic Evidence and Judicial Trends in India",
+      "doi": "10.36948/ijfmr.2026.v08i06.92267",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.36948%2Fijfmr.2026.v08i06.92267",
+      "publication_date": "2026-11-19",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d3bd590c0daf1faabed8",
+      "title": "Compliance Of Disclosure Of Material Topics In Sustainability Report Gri Standard: Content Study",
+      "doi": "10.21776/tiara.2025.3.1.174",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.21776%2Ftiara.2025.3.1.174",
+      "publication_date": "2025-03-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-91302bec5551a48ccce2",
+      "title": "Preserving File Provenance Using Principles of Blockchain to Ensure Scientific Reproducibility",
+      "doi": "10.1109/e-science58273.2023.10254665",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1109%2Fe-science58273.2023.10254665",
+      "publication_date": "2023-10-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8f51a0daaf1bc39d3f27",
+      "title": "<b>ĐÁNH GIÁ HIỆU QUẢ ỨNG DỤNG ĐỒ THỊ TRI THỨC Y KHOA KẾT HỢP TRÍ TUỆ NHÂN TẠO ĐA PHƯƠNG THỨC HỖ TRỢ CHẨN ĐOÁN SỚM UNG THƯ VÒM MŨI HỌNG TẠI VIỆT NAM</b>",
+      "doi": "10.52163/yhc.v67icd13.6408",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.52163%2Fyhc.v67icd13.6408",
+      "publication_date": "2026-09-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-871af3baa7bfba3a2fb8",
+      "title": "Assessing the Role of Sustainability Disclosure on Firms’ Financial Performance: Evidence from the Energy Sector of Belt and Road Initiative Countries",
+      "doi": "10.3390/su16020930",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu16020930",
+      "publication_date": "2024-01-22",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7a724864dfe4e26470b7",
+      "title": "Research on Performance Evaluation of Science and Technology Plan Projects Based on Large Language Models",
+      "doi": "10.12677/ssem.2026.156132",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.12677%2Fssem.2026.156132",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-6f4074ca5433cfa21421",
+      "title": "Responsible AI in Construction Safety: Systematic Evaluation of Large Language Models and Prompt Engineering",
+      "doi": "10.1061/jcemd4.coeng-16639",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1061%2Fjcemd4.coeng-16639",
+      "publication_date": "2026-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-61b0fb086b14e0df5841",
+      "title": "THE RELATIONSHIP BETWEEN CORPORATE GOVERNANCE AND ENVIRONMENTAL SUSTAINABILITY REPORTING GLOBAL REPORTING INITIATIVE",
+      "doi": "10.59188/eduvest.v5i6.51343",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.59188%2Feduvest.v5i6.51343",
+      "publication_date": "2025-06-21",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-fa190391e2ff821f1332",
       "title": "Governance of AI in electoral management bodies",
@@ -2201,32 +2305,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-61b0fb086b14e0df5841",
-      "title": "THE RELATIONSHIP BETWEEN CORPORATE GOVERNANCE AND ENVIRONMENTAL SUSTAINABILITY REPORTING GLOBAL REPORTING INITIATIVE",
-      "doi": "10.59188/eduvest.v5i6.51343",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.59188%2Feduvest.v5i6.51343",
-      "publication_date": "2025-06-21",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-871af3baa7bfba3a2fb8",
-      "title": "Assessing the Role of Sustainability Disclosure on Firms’ Financial Performance: Evidence from the Energy Sector of Belt and Road Initiative Countries",
-      "doi": "10.3390/su16020930",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fsu16020930",
-      "publication_date": "2024-01-22",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-c0ca6e70442d231eae7c",
       "title": "ANALYSIS OF SUSTAINABILITY PERFORMANCE, GREEN ACCOUNTING AND ESG DISCLOSURE ON FIRM VALUATION",
       "doi": "10.25105/ijca.v5i2.17745",
@@ -2237,19 +2315,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.25105%2Fijca.v5i2.17745",
       "publication_date": "2023-12-19",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-d3bd590c0daf1faabed8",
-      "title": "Compliance Of Disclosure Of Material Topics In Sustainability Report Gri Standard: Content Study",
-      "doi": "10.21776/tiara.2025.3.1.174",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.21776%2Ftiara.2025.3.1.174",
-      "publication_date": "2025-03-01",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3332,19 +3397,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-6f4074ca5433cfa21421",
-      "title": "Responsible AI in Construction Safety: Systematic Evaluation of Large Language Models and Prompt Engineering",
-      "doi": "10.1061/jcemd4.coeng-16639",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1061%2Fjcemd4.coeng-16639",
-      "publication_date": "2026-01",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-7627c8af4ae43bb85d23",
       "title": "Exploring Employees’ Accountability in Knowledge Management Systems Enhanced by Generative Artificial Intelligence",
       "doi": "10.37055/nsz/203481",
@@ -3355,32 +3407,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.37055%2Fnsz%2F203481",
       "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-7a724864dfe4e26470b7",
-      "title": "Research on Performance Evaluation of Science and Technology Plan Projects Based on Large Language Models",
-      "doi": "10.12677/ssem.2026.156132",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.12677%2Fssem.2026.156132",
-      "publication_date": "2026",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-8f51a0daaf1bc39d3f27",
-      "title": "<b>ĐÁNH GIÁ HIỆU QUẢ ỨNG DỤNG ĐỒ THỊ TRI THỨC Y KHOA KẾT HỢP TRÍ TUỆ NHÂN TẠO ĐA PHƯƠNG THỨC HỖ TRỢ CHẨN ĐOÁN SỚM UNG THƯ VÒM MŨI HỌNG TẠI VIỆT NAM</b>",
-      "doi": "10.52163/yhc.v67icd13.6408",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.52163%2Fyhc.v67icd13.6408",
-      "publication_date": "2026-09-10",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -4200,6 +4226,71 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.3390%2Fijerph18136705",
       "publication_date": "2021-06-22",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-002f401c86483c41f76a",
+      "title": "Sustainability Reporting and Firm Financial Performance in Nigeria: A Review of Variables",
+      "doi": "10.61143/umyu-jafr.4(1)2022.010",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.61143%2Fumyu-jafr.4%281%292022.010",
+      "publication_date": "2022-12-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-2d5d71ef6f6372abbf8f",
+      "title": "Is voluntary external assurance relevant for the valuation of environmental reporting by firms in environmentally sensitive industries?",
+      "doi": "10.1108/sampj-06-2018-0158",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fsampj-06-2018-0158",
+      "publication_date": "2020-01-06",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-38fc62bd07d3557d26c3",
+      "title": "Context Orchestration in Large Language Model-Assisted Systematic Reviews and Meta-Analyses: Proof-of-Concept Process Evaluation (Preprint)",
+      "doi": "10.2196/87065",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.2196%2F87065",
+      "publication_date": "2025-11-21",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9a91eeda9f58faab1bbe",
+      "title": "Evaluation metrics in medical imaging AI: fundamentals, pitfalls, misapplications, and recommendations",
+      "doi": "10.1016/j.ejrai.2025.100030",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.ejrai.2025.100030",
+      "publication_date": "2025-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-ac21d293ab66543b8009",
+      "title": "Non-Financial Reporting Berbasis Gri Dalam Konteks Sustainability",
+      "doi": "10.62379/jakbs.v3i4.4062",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.62379%2Fjakbs.v3i4.4062",
+      "publication_date": "2026-01-21",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
