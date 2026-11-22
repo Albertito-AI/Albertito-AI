@@ -4,5 +4,5 @@ docling-slim[convert-core,format-pdf-docling]==2.144.0
 docling-core==2.105.0
 docling-parse==7.24.1
 pdfplumber==0.11.9
-pypdf==6.10.0
+pypdf==7.1.1
 lxml==6.1.1

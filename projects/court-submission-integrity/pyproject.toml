@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = []
 
 [project.optional-dependencies]
-pdf = ["pypdf>=5.9,<7"]
+pdf = ["pypdf>=7.1.1,<8"]
 
 [project.scripts]
 court-integrity = "court_integrity.__main__:main"
