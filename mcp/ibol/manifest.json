@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "ibol-open-learning",
   "display_name": "IBOL Open Learning: Albert Tan Sin Hon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read-only citation, lesson and question tools for Insurance-Backed Offshore Liquidity.",
   "long_description": "An author-commissioned companion to the University of Groningen Press open-access book. Guide search covers original teaching materials. Full-book search requires a separately downloaded, checksum-verified local publisher-PDF cache. The book legal cut-off is 1 August 2026. No account or API key is required. Uses the UV runtime to install locked Python dependencies; no universal desktop-host compatibility is claimed.",
   "author": {
