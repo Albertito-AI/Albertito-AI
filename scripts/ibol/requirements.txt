@@ -1,2 +1,2 @@
 # Official Python SDK. The CLI does not require this dependency.
-mcp==1.29.0
+mcp==1.30.0

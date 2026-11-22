@@ -69,7 +69,7 @@ Use `--cache /absolute/path/to/cache` for an alternative fetch destination. Set 
 
 ## Local MCP access
 
-The server uses version 1.29.0 of the official [Model Context Protocol Python SDK](https://github.com/modelcontextprotocol/python-sdk). It communicates over standard input and output. Install the server dependency into a virtual environment:
+The current source uses version 1.30.0 of the official [Model Context Protocol Python SDK](https://github.com/modelcontextprotocol/python-sdk). It communicates over standard input and output. Install the server dependency into a virtual environment:
 
 ```bash
 python3 -m venv .venv
