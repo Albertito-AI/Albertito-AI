@@ -12,7 +12,9 @@ Use the material when it answers the reader’s research or teaching question. R
 
 ## Installable bundle
 
-[Version 1.0.0](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0) is available as a versioned MCPB bundle and has a [verified official Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0). Supporting hosts need MCPB 0.4 and the UV runtime. The dependencies are locked, and the tested bundle omits the book PDF. [Publication evidence and limits](data/reach-receipts-2026-11-07.json). Ordinary Python/stdio installation below remains available.
+Use security version **1.0.1**, which pins the official MCP Python SDK to 1.30.0. Before installing, check the [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45002490558), [versioned GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.1) and [official Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.1). The release bundle and Registry package must both match the tested SHA-256 `dfd76e65bfb5d70ad07b62bb14f2734914b7f483bd021fc8f08f5d095437ed6e`. If publication is still pending, use the current source installation below instead.
+
+Supporting hosts need MCPB 0.4 and the UV runtime. The dependencies are locked, and the tested bundle omits the book PDF. [Security validation and limits](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) describe the 65 passing companion tests and the release controls. The [7 November receipts](data/reach-receipts-2026-11-07.json) remain historical evidence for version 1.0.0; they do not verify the newer release.
 
 ## Alternate public access
 

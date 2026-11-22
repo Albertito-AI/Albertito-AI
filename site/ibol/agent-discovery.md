@@ -1,10 +1,12 @@
 # Find and use IBOL with an AI assistant
 
-**Routes checked on 7 November 2026.** Albert Tan Sin Hon’s *Insurance-Backed Offshore Liquidity* is available from [University of Groningen Press](https://books.ugp.rug.nl/ugp/catalog/book/300). Its DOI is [10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e). The companion supplies structured teaching resources and a local, read-only Model Context Protocol interface.
+**Resource routes checked on 7 November 2026; security installation guidance updated on 22 November 2026.** Albert Tan Sin Hon’s *Insurance-Backed Offshore Liquidity* is available from [University of Groningen Press](https://books.ugp.rug.nl/ugp/catalog/book/300). Its DOI is [10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e). The companion supplies structured teaching resources and a local, read-only Model Context Protocol interface.
 
-## Published package and registry record
+## Security maintenance package
 
-Version **1.0.0** is published as a [GitHub Release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.0) and recorded in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.0). The returned name, version, package URL and SHA-256 were checked against the tested build on 7 November 2026. The [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/42363078217) passed. See the [dated delivery receipts](data/reach-receipts-2026-11-07.json).
+Security version **1.0.1** updates the official MCP Python SDK to 1.30.0. Check its [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45002490558), [GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.1) and [official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.1) before installation. Confirm that the release bundle and Registry package identify SHA-256 `dfd76e65bfb5d70ad07b62bb14f2734914b7f483bd021fc8f08f5d095437ed6e`. The [security assessment](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) records the source review and 65 passing companion tests. A queued workflow does not establish completed publication; the current source installation is available while publication is pending.
+
+The original version 1.0.0 publication is retained in the [7 November delivery receipts](data/reach-receipts-2026-11-07.json). Those historical results remain unchanged. Current installation instructions use the security maintenance version.
 
 The bundle requires a host supporting **MCPB 0.4 and the UV runtime**. Its exact launch command and SDK calls were tested; desktop GUI installation remains untested. The source and ordinary stdio configuration remain available for other hosts. Registry publication does not establish inclusion in every downstream directory or use by an independent assistant.
 
@@ -23,8 +25,8 @@ Keep the book’s legal cut-off of 1 August 2026, provenance and separate reuse 
 
 ## Client setup and discovery evidence
 
-The [client guide](discovery/ai-clients.md) gives documentation-verified setup routes for Claude Desktop, VS Code, Cursor, Goose and Gemini CLI. It records exact runtime checks separately from untested application installation. The existing Registry listing points to the checksum-pinned version 1.0.0 release; GitHub's separate immutable-release setting was reported as disabled on 7 November 2026.
+The [client guide](discovery/ai-clients.md) gives documentation-verified setup routes for Claude Desktop, VS Code, Cursor, Goose and Gemini CLI. It records exact runtime checks separately from untested application installation. The client guide uses checksum-pinned version 1.0.1. GitHub's separate immutable-release setting was reported as disabled on 7 November 2026; that historical observation is not a current settings check.
 
 The [search guide](discovery/search-discovery.md) explains ordinary search and AI retrieval requirements. The [catalogue guide](discovery/catalogues.md) and [library routes](discovery/library-routes.md) identify eligible academic discovery paths. The [campaign ledger](discovery/campaign.html) records the work and its limits.
 
-The Registry stores metadata for downstream discovery. Its [package documentation](https://modelcontextprotocol.io/registry/package-types) explains MCPB distribution, and its [authentication guide](https://modelcontextprotocol.io/registry/authentication) explains namespace ownership. The live IBOL record and publication receipt above establish this specific registration. Other directory listings and independent use require their own evidence.
+The Registry stores metadata for downstream discovery. Its [package documentation](https://modelcontextprotocol.io/registry/package-types) explains MCPB distribution, and its [authentication guide](https://modelcontextprotocol.io/registry/authentication) explains namespace ownership. Confirm the exact IBOL version and package fields using the linked Registry record. Other directory listings and independent use require their own evidence.
