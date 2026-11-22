@@ -11,10 +11,14 @@ from copy import deepcopy
 import hashlib
 from io import BytesIO
 import json
+import os
 from pathlib import Path
 import re
+import signal
 import stat
+import subprocess
 import sys
+import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
 from typing import Any
@@ -26,6 +30,9 @@ MAX_TEXT = 2_000_000
 MAX_PAGES = 200
 MAX_XML = 5 * 1024 * 1024
 MAX_ZIP_MEMBERS = 1000
+PDF_WALL_SECONDS = 45
+MAX_PDF_RESULT = 16 * 1024 * 1024
+_PDF_WORKER = Path(__file__).with_name('_pdf_worker.py').resolve()
 W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 # Recognition is deliberately narrow. It is not exhaustive across any jurisdiction.
 CITATION = re.compile(
@@ -139,31 +146,106 @@ def _docx(data: bytes) -> tuple[list, list, dict]:
     return segments, notes, {'name': 'Python bounded ZIP/WordprocessingML reader', 'version': '0.1'}
 
 
-def _pdf(data: bytes) -> tuple[list, list, dict]:
+def _stop_pdf_worker(process: subprocess.Popen) -> None:
+    """Stop the worker's private process group and reap the direct child."""
     try:
-        import pypdf
-    except ImportError as exc:
-        raise InputError('PDF intake requires the optional pypdf package; no automatic installation is attempted') from exc
+        os.killpg(process.pid, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    except OSError as exc:
+        if process.poll() is None:
+            process.kill()
+        process.wait(timeout=5)
+        raise InputError('PDF worker process group could not be terminated') from exc
+    try:
+        process.wait(timeout=5)
+    except (OSError, subprocess.SubprocessError) as exc:
+        raise InputError('PDF worker could not be reaped after termination') from exc
+
+
+def _pdf_result(data: bytes) -> dict:
+    """Accept only a bounded result from a worker with mandatory Linux limits."""
+    if sys.platform != 'linux':
+        raise InputError('PDF intake requires Linux resource isolation; this platform is unsupported. '
+                         'Use a separately reviewed TXT or DOCX copy instead')
+    if len(data) > MAX_BYTES:
+        raise InputError('Document exceeds 5 MiB input limit')
+    process = None
+    try:
+        # A regular temporary file provides an OS-enforced output-size boundary;
+        # communicate() never accumulates unbounded child output in the parent.
+        with tempfile.TemporaryFile() as output:
+            process = subprocess.Popen(
+                [sys.executable, '-I', '-B', str(_PDF_WORKER)],
+                stdin=subprocess.PIPE, stdout=output, stderr=subprocess.DEVNULL,
+                env={'LANG': 'C.UTF-8', 'LC_ALL': 'C.UTF-8'},
+                close_fds=True, start_new_session=True,
+            )
+            try:
+                process.communicate(input=data, timeout=PDF_WALL_SECONDS)
+            except subprocess.TimeoutExpired as exc:
+                raise InputError('PDF extraction exceeded the 45-second time limit; no partial result is accepted') from exc
+            finally:
+                # Also stop descendants whose leader has already exited. Do this
+                # before accepting output that another group member could alter.
+                _stop_pdf_worker(process)
+            if process.returncode != 0:
+                raise InputError('PDF worker failed or reached a resource limit; no partial result is accepted')
+            output.seek(0)
+            raw = output.read(MAX_PDF_RESULT + 1)
+    except InputError:
+        raise
+    except (OSError, subprocess.SubprocessError) as exc:
+        raise InputError('PDF isolation could not complete; no inline parsing is attempted') from exc
+    finally:
+        if process is not None:
+            if process.stdin is not None:
+                process.stdin.close()
+    if len(raw) > MAX_PDF_RESULT:
+        raise InputError('PDF worker output exceeds the result limit')
+    try:
+        result = json.loads(raw)
+    except (ValueError, UnicodeError, RecursionError) as exc:
+        raise InputError('PDF worker returned an invalid result; no partial result is accepted') from exc
+    errors = {
+        'isolation_unavailable': 'PDF resource limits could not be installed and verified; no inline parsing is attempted',
+        'parser_unavailable': 'PDF intake requires pypdf in this Python interpreter or virtual environment; no automatic installation is attempted',
+        'decoder_policy_unavailable': 'PDF external-decoder suppression could not be verified; parsing is refused',
+        'input_limit': 'Document exceeds 5 MiB input limit',
+        'encrypted': 'Encrypted PDFs are not supported; supply a permitted readable copy',
+        'page_limit': 'PDF exceeds 200-page local prototype limit',
+        'block_limit': 'One extracted block exceeds 100,000 characters; use a smaller reviewed document',
+        'text_limit': 'Extracted text exceeds 2,000,000 characters',
+        'memory_limit': 'PDF processing exceeded its memory limit; no partial result is accepted',
+        'parse_failed': 'PDF extraction failed; no clean-document conclusion may be drawn',
+    }
+    if isinstance(result, dict) and set(result) == {'error'} and isinstance(result['error'], str):
+        raise InputError(errors.get(result['error'], 'PDF worker returned an unsupported error'))
+    if (not isinstance(result, dict) or set(result) != {'pages', 'version'}
+            or not isinstance(result['version'], str) or not 1 <= len(result['version']) <= 80
+            or not isinstance(result['pages'], list) or len(result['pages']) > MAX_PAGES):
+        raise InputError('PDF worker returned an invalid result structure')
+    total = 0
+    for text in result['pages']:
+        if not isinstance(text, str) or len(text) > 100_000:
+            raise InputError('PDF worker returned an invalid or oversized page')
+        total += len(text)
+        if total > MAX_TEXT:
+            raise InputError('PDF worker returned too much extracted text')
+    return result
+
+
+def _pdf(data: bytes) -> tuple[list, list, dict]:
+    result = _pdf_result(data)
     segments: list[dict] = []
     notes = ['PDF extraction is unverified. Physical page numbers are not printed-page or paragraph numbers.',
              'No OCR, image understanding, attachment extraction or layout verification is performed.']
-    try:
-        reader = pypdf.PdfReader(BytesIO(data), strict=True)
-        if reader.is_encrypted:
-            raise InputError('Encrypted PDFs are not supported; supply a permitted readable copy')
-        if len(reader.pages) > MAX_PAGES:
-            raise InputError('PDF exceeds 200-page local prototype limit')
-        for page_number, page in enumerate(reader.pages, 1):
-            text = page.extract_text() or ''
-            if not text.strip():
-                notes.append(f'Physical PDF page {page_number} is empty or unextractable; it has not been checked.')
-                continue
-            _add_segment(segments, text, {'kind': 'physical-pdf-page', 'page': page_number})
-    except InputError:
-        raise
-    except Exception as exc:
-        raise InputError('PDF extraction failed; no clean-document conclusion may be drawn') from exc
-    return segments, notes, {'name': 'pypdf', 'version': pypdf.__version__}
+    for page_number, text in enumerate(result['pages'], 1):
+        if not text.strip():
+            notes.append(f'Physical PDF page {page_number} is empty or unextractable; it has not been checked.')
+            continue
+        _add_segment(segments, text, {'kind': 'physical-pdf-page', 'page': page_number})
+    return segments, notes, {'name': 'pypdf', 'version': result['version']}
 
 
 def extract_document(path: Path) -> dict[str, Any]:

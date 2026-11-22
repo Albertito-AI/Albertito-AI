@@ -5,6 +5,7 @@ from io import BytesIO
 import json
 from pathlib import Path
 import tempfile
+import sys
 import unittest
 from unittest.mock import patch
 import zipfile
@@ -214,6 +215,7 @@ class DocumentIntakeTests(unittest.TestCase):
             with self.assertRaises(InputError):
                 extract_document(path)
 
+    @unittest.skipUnless(sys.platform == 'linux', 'PDF resource isolation requires Linux')
     def test_pdf_empty_page_warns(self):
         try:
             from pypdf import PdfWriter
@@ -227,6 +229,7 @@ class DocumentIntakeTests(unittest.TestCase):
         self.assertEqual(segments, [])
         self.assertTrue(any('page 1' in n and 'unextractable' in n for n in warnings))
 
+    @unittest.skipUnless(sys.platform == 'linux', 'PDF resource isolation requires Linux')
     def test_encrypted_pdf_rejected(self):
         try:
             from pypdf import PdfWriter
