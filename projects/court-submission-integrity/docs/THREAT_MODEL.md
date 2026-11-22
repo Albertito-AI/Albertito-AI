@@ -4,9 +4,31 @@
 
 Local, single trusted operator, fictional material, bounded JSON and document input,
 standard-library core/TXT/DOCX intake, optional pypdf PDF parser, no network calls
-and no model provider. Binary parsers are not isolated in a hostile-input sandbox.
-PDF runtime/memory cannot be guaranteed from a compressed-file size limit alone.
-Do not process untrusted real-case files before parser isolation and security review. The HTML report
+and no model provider. PDF parsing uses a separate Linux worker with mandatory,
+verified address-space, CPU and output-file limits plus a parent wall deadline.
+Unsupported platforms and unavailable limits fail closed; parsing never falls
+back into the parent. The worker uses the same interpreter in isolated mode, so
+the optional parser must be installed in that interpreter or its virtual
+environment, not supplied through `PYTHONPATH` or user-site packages.
+
+The PDF limits are 1 GiB address space, 35 CPU seconds, 45 wall seconds and a
+16 MiB result file, with stricter inherited soft and hard limits preserved. Input remains
+limited to 5 MiB, 200 pages, 100,000 characters per nonblank block and 2,000,000
+extracted characters. The parent validates the complete bounded result, retains
+the original-byte hash and physical-page locations, and rejects worker failure
+or timeout without producing a partial report. The private process group is
+terminated before output is accepted, including descendants left after a worker
+leader exits. The direct child is reaped. The deadline covers the running
+worker; OS process creation and termination scheduling are not hard real-time
+guarantees. Core dumps are disabled in the child. The optional external `jbig2dec`
+helper is disabled and that setting is verified before parsing. A text stream
+requiring that decoder, or failure to establish its suppression, stops intake.
+
+This is resource isolation, not a filesystem, network or native-code-execution
+sandbox. The worker still runs as the local user. DOCX parsing remains in the
+parent under its existing archive/XML limits. A compressed-file size limit alone
+does not establish parser safety. Do not process untrusted real-case files before
+a suitable hostile-input isolation design and independent security review. The HTML report
 has escaped content, no scripts or active source URLs, and a restrictive content
 security policy. JSON does not name files to read, invoke commands or define code.
 This is not a secure multi-tenant or production judicial processing environment.

@@ -40,8 +40,28 @@ written, **not** that a submission is accurate, admissible or fit to file.
 The core and text/Markdown/DOCX intake use Python's standard library. No API key,
 model call, network connection or paid service is needed. Python 3.10+ is the
 compatibility target; the actual local tests used **CPython 3.13.5 on Linux**.
-PDF input needs an already installed optional `pypdf` parser. No installation is
-performed by the program. Without it, the two PDF tests are explicitly skipped.
+**Security update, 22 November 2026: PDF intake now requires Linux and `pypdf`
+installed in the same Python interpreter or virtual environment. Windows, macOS
+and other unsupported platforms reject PDF input instead of parsing it without
+verified resource limits.** Core, TXT/Markdown and DOCX behaviour is retained.
+The PDF worker ignores `PYTHONPATH` and user-site packages; use a virtual
+environment and install `.[pdf]` there. The program installs nothing itself.
+
+PDF parsing has a 1 GiB address-space cap, 35 CPU seconds, a 45-second parent
+deadline and a 16 MiB result-file cap, with stricter existing soft and hard OS
+limits retained. The optional external `jbig2dec` helper is disabled; text streams
+requiring it are refused.
+Unavailable limits, worker failure or partial output stop the operation. These
+are resource controls, not filesystem/network containment or permission to use
+real case files. Tests specifically requiring Linux or the optional parser skip
+when those prerequisites are absent; platform-rejection tests still run.
+
+This mirror receives the bounded PDF security change from the now-established
+[dedicated project](https://github.com/Albertito-AI/court-submission-integrity).
+The original publication account above and historical validation records remain
+as provenance; continuing feature development is in the dedicated repository.
+See the [new validation record](docs/VALIDATION_2026-11-22_PDF.md) and
+[threat model](docs/THREAT_MODEL.md) for scope and limits.
 
 Other fictional checks:
 
