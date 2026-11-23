@@ -1,8 +1,112 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T07:08:43Z",
+  "generated_at": "2026-11-23T07:55:00Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-fcc8131dbedd4b0b8b36",
+      "title": "SUSTAINABILITY REPORTING, INDUSTRY SENSITIVITY AND MARKET VALUE OF LISTED COMPANIES IN NIGERIA",
+      "doi": "10.63452/ijafssr.2026.4403",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.63452%2Fijafssr.2026.4403",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c703bf54555471bea01d",
+      "title": "A Study on AI Models for Korean Translation Evaluation : Focusing on Multi-layered Automatic Evaluation Metrics (AEMs)",
+      "doi": "10.15652/ink.2024.21.4.183",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.15652%2Fink.2024.21.4.183",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c232ac7838f855bde33c",
+      "title": "Analisis Yuridis Sistem Pembuktian, Beban Pembuktian, Alat Bukti dalam Undang-Undang Nomor 15 Tahun 2003 Tentang Tindak Pidana Terorisme",
+      "doi": "10.37010/hmr.v1i01.5",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.37010%2Fhmr.v1i01.5",
+      "publication_date": "2023-01-15",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c0ca6e70442d231eae7c",
+      "title": "ANALYSIS OF SUSTAINABILITY PERFORMANCE, GREEN ACCOUNTING AND ESG DISCLOSURE ON FIRM VALUATION",
+      "doi": "10.25105/ijca.v5i2.17745",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.25105%2Fijca.v5i2.17745",
+      "publication_date": "2023-12-19",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a2e80deedd8a705b6d45",
+      "title": "Postural evaluation with artificial intelligence tool for room maids in the tourism sector",
+      "doi": "10.56294/hl2024.347",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.56294%2Fhl2024.347",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8cc7bb9f47f07d660331",
+      "title": "Green disclosure policies and market dynamics: evidence from agent-based ESG models",
+      "doi": "10.1007/s10458-026-09734-y",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10458-026-09734-y",
+      "publication_date": "2026-02-07",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7627c8af4ae43bb85d23",
+      "title": "Exploring Employees’ Accountability in Knowledge Management Systems Enhanced by Generative Artificial Intelligence",
+      "doi": "10.37055/nsz/203481",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.37055%2Fnsz%2F203481",
+      "publication_date": "2024-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7572604f6531ea4d4bba",
+      "title": "Chapter 7 Soviet Footage of War Crimes, 1941–46 Between Propaganda and Judicial Evidence",
+      "doi": "10.1515/9781800732629-012",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1515%2F9781800732629-012",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-d97bc537c281e7853ac9",
       "title": "Admissions and Confessions in the Digital Era: Emerging Issues in Electronic Evidence and Judicial Trends in India",
@@ -2305,19 +2409,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-c0ca6e70442d231eae7c",
-      "title": "ANALYSIS OF SUSTAINABILITY PERFORMANCE, GREEN ACCOUNTING AND ESG DISCLOSURE ON FIRM VALUATION",
-      "doi": "10.25105/ijca.v5i2.17745",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.25105%2Fijca.v5i2.17745",
-      "publication_date": "2023-12-19",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-05593643db2b964114ac",
       "title": "Impact of Corporate and Sustainability Reporting Quality on Firm's Performance: Pakistan’s Perspective",
       "doi": "10.22555/pbr.v27i3.1389",
@@ -2422,19 +2513,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-8cc7bb9f47f07d660331",
-      "title": "Green disclosure policies and market dynamics: evidence from agent-based ESG models",
-      "doi": "10.1007/s10458-026-09734-y",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1007%2Fs10458-026-09734-y",
-      "publication_date": "2026-02-07",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-a8ed6e71e8028e30edd3",
       "title": "The effectiveness of environmental accounting in supporting ESG (Environmental, Social, Governance) disclosure",
       "doi": "10.60036/tjf3cf27",
@@ -2497,19 +2575,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.3390%2Fsu17135936",
       "publication_date": "2025-06-27",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-fcc8131dbedd4b0b8b36",
-      "title": "SUSTAINABILITY REPORTING, INDUSTRY SENSITIVITY AND MARKET VALUE OF LISTED COMPANIES IN NIGERIA",
-      "doi": "10.63452/ijafssr.2026.4403",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.63452%2Fijafssr.2026.4403",
-      "publication_date": "2026",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3397,45 +3462,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-7627c8af4ae43bb85d23",
-      "title": "Exploring Employees’ Accountability in Knowledge Management Systems Enhanced by Generative Artificial Intelligence",
-      "doi": "10.37055/nsz/203481",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.37055%2Fnsz%2F203481",
-      "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-a2e80deedd8a705b6d45",
-      "title": "Postural evaluation with artificial intelligence tool for room maids in the tourism sector",
-      "doi": "10.56294/hl2024.347",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.56294%2Fhl2024.347",
-      "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-c703bf54555471bea01d",
-      "title": "A Study on AI Models for Korean Translation Evaluation : Focusing on Multi-layered Automatic Evaluation Metrics (AEMs)",
-      "doi": "10.15652/ink.2024.21.4.183",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.15652%2Fink.2024.21.4.183",
-      "publication_date": "2024-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-0e972f1664d687f68c2c",
       "title": "Does industry type matter?. Sustainability reporting disclosure gaps between manufacturing and non-manufacturing firms",
       "doi": "10.32493/keberlanjutan.v9i2.y2024.p140-150",
@@ -4291,6 +4317,84 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.62379%2Fjakbs.v3i4.4062",
       "publication_date": "2026-01-21",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0fe85d7ddd2a5339524e",
+      "title": "Verifiable Journalism in the Generative AI Era<br>—A Provenance-by-Design Architecture for News Authenticity, AI Disclosure, and Editorial Accountability",
+      "doi": "10.4236/jss.2026.1411020",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.4236%2Fjss.2026.1411020",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4829f6f487946a6ccbb8",
+      "title": "Development of AI-Based Water Pipe Aging Condition Evaluation Algorithm",
+      "doi": "10.5392/ijoc.2022.18.4.109",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.5392%2Fijoc.2022.18.4.109",
+      "publication_date": "2022-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4c1c5365ca72ab8e31b4",
+      "title": "The Main Issues and Improvements Related to Sustainability Report Assurance",
+      "doi": "10.35850/kjta.23.6.07",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.35850%2Fkjta.23.6.07",
+      "publication_date": "2022-12-30",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-a9fd963af675e592f091",
+      "title": "Research on Collaborative Governance Optimization of the AI-Enabled “Time Bank” Mutual-Aid Elderly Care Model",
+      "doi": "10.12677/ar.2026.1311851",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.12677%2Far.2026.1311851",
+      "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-eeeb34fd92df4ea3ebfa",
+      "title": "Algorithmic Environmental Governance: Legitimacy Construction in AI‐Driven Sustainability",
+      "doi": "10.1002/bse.71926",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fbse.71926",
+      "publication_date": "2026-11-22",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-fea6f9a4507bf4ea661e",
+      "title": "Corporate Sustainability Reporting in Europe: A Scoping Review",
+      "doi": "10.1080/17449480.2022.2149345",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1080%2F17449480.2022.2149345",
+      "publication_date": "2022-12-30",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
