@@ -4,6 +4,10 @@
 
 Published 6 November 2026 by University of Groningen Press. DOI: 10.21827/6ac3948159a9e. The book’s legal cut-off is 1 August 2026. Companion summaries and exercises are separate, AI-assisted teaching materials commissioned by the author. The published book is CC BY-NC-ND 4.0; original companion teaching materials are CC BY 4.0 and code is MIT. This file is a navigation convention, not a guarantee of indexing or recommendation.
 
+## Author contact
+- [Albert Tan Sin Hon](https://alberttansinhon.com/)
+- [Research and teaching enquiries](mailto:info@alberttansinhon.com)
+
 ## Book and provenance
 - [Published book](https://books.ugp.rug.nl/ugp/catalog/book/300)
 - [Bibliographic and source record](https://alberttansinhon.com/ibol/data/book.json)

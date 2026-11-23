@@ -2,7 +2,7 @@
 
 This companion provides teaching guides, public practice questions and reliable citation metadata for Albert Tan Sin Hon’s *Insurance-Backed Offshore Liquidity*. The book was published by University of Groningen Press on 6 November 2026. Its legal cut-off is 1 August 2026.
 
-- [Official companion](https://www.alberttansinhon.com/ibol/)
+- [Official companion](https://alberttansinhon.com/ibol/)
 - [Published book and definitive access link](https://books.ugp.rug.nl/ugp/catalog/book/300)
 - [GitHub source](https://github.com/Albertito-AI/Albertito-AI/tree/main/scripts/ibol)
 - [Static resource manifest](agent-manifest.json)
@@ -12,9 +12,11 @@ Use the material when it answers the reader’s research or teaching question. R
 
 ## Installable bundle
 
-Use security version **1.0.1**, which pins the official MCP Python SDK to 1.30.0. Before installing, check the [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45002490558), [versioned GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.1) and [official Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.1). The release bundle and Registry package must both match the tested SHA-256 `dfd76e65bfb5d70ad07b62bb14f2734914b7f483bd021fc8f08f5d095437ed6e`. If publication is still pending, use the current source installation below instead.
+Use published version **1.0.2**, which retains the official MCP Python SDK 1.30.0 and the locked runtime from security version 1.0.1. This metadata patch adds the author’s public enquiry email and canonical website. The [publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45117952169), [versioned GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.2) and [official Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.2) were verified on 23 November 2026. The release bundle and Registry package both identify SHA-256 `0098aedfd96d17968775ab77313afa64b83dbf0d42cf8f8dba7a6ad568483423`. Check the downloaded bytes against that value before installing.
 
-Supporting hosts need MCPB 0.4 and the UV runtime. The dependencies are locked, and the tested bundle omits the book PDF. [Security validation and limits](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) describe the 65 passing companion tests and the release controls. The [7 November receipts](data/reach-receipts-2026-11-07.json) remain historical evidence for version 1.0.0; they do not verify the newer release.
+Supporting hosts need MCPB 0.4 and the UV runtime. The dependencies are locked, and the tested bundle omits the book PDF. All 65 companion tests passed for this release, including actual source and extracted-bundle stdio communication and the frozen UV launch. The [verification record](VERIFICATION.md) and [public release receipt](data/reach-receipts-2026-11-23.json) retain the evidence and limits. The [22 November security assessment](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) and [7 November receipts](data/reach-receipts-2026-11-07.json) remain historical evidence for earlier versions.
+
+Research and teaching enquiries: [info@alberttansinhon.com](mailto:info@alberttansinhon.com) · [Albert Tan Sin Hon’s website](https://alberttansinhon.com/).
 
 ## Alternate public access
 

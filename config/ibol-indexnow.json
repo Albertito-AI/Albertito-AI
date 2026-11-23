@@ -1,20 +1,20 @@
 {
   "targets": {
     "official": {
-      "host": "www.alberttansinhon.com",
+      "host": "alberttansinhon.com",
       "key": "8244236dbe83400f8514827d5ad213e6",
-      "keyLocation": "https://www.alberttansinhon.com/8244236dbe83400f8514827d5ad213e6.txt",
+      "keyLocation": "https://alberttansinhon.com/8244236dbe83400f8514827d5ad213e6.txt",
       "urlList": [
-        "https://www.alberttansinhon.com/ibol/",
-        "https://www.alberttansinhon.com/ibol/slides.html",
-        "https://www.alberttansinhon.com/ibol/lessons/01.html",
-        "https://www.alberttansinhon.com/ibol/lessons/02.html",
-        "https://www.alberttansinhon.com/ibol/lessons/03.html",
-        "https://www.alberttansinhon.com/ibol/lessons/04.html",
-        "https://www.alberttansinhon.com/ibol/lessons/05.html",
-        "https://www.alberttansinhon.com/ibol/lessons/06.html",
-        "https://www.alberttansinhon.com/ibol/lessons/07.html",
-        "https://www.alberttansinhon.com/ibol/lessons/08.html"
+        "https://alberttansinhon.com/ibol/",
+        "https://alberttansinhon.com/ibol/slides",
+        "https://alberttansinhon.com/ibol/lessons/01",
+        "https://alberttansinhon.com/ibol/lessons/02",
+        "https://alberttansinhon.com/ibol/lessons/03",
+        "https://alberttansinhon.com/ibol/lessons/04",
+        "https://alberttansinhon.com/ibol/lessons/05",
+        "https://alberttansinhon.com/ibol/lessons/06",
+        "https://alberttansinhon.com/ibol/lessons/07",
+        "https://alberttansinhon.com/ibol/lessons/08"
       ]
     },
     "github": {

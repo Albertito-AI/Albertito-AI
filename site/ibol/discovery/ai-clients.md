@@ -14,21 +14,21 @@ The IBOL companion provides six read-only Model Context Protocol tools for Alber
 
 The shared frozen server command was exercised through the MCP Python SDK. Client and model-provider access requirements remain separate from the companion server, which needs no account or API key. Configuration examples are templates: replace the absolute folder path and merge entries without overwriting existing settings.
 
-## Security version and publication checks
+## Current version and publication checks
 
-The 22 November 2026 security maintenance candidate is **1.0.1**, with the official MCP Python SDK pinned to **1.30.0**. Its source and extracted-bundle tests passed. Check publication before installing:
+Version **1.0.2** was published on 23 November 2026. It adds the author’s public enquiry email and canonical website while retaining the official MCP Python SDK **1.30.0**, the locked dependencies and the six read-only tools from the 1.0.1 security release. Its source, extracted-bundle and frozen-runtime tests passed.
 
-- [Publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45002490558): its prepare and publish jobs must complete successfully.
-- [Official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.1): verify `io.github.Albertito-AI/ibol-open-learning`, version `1.0.1`, and the package URL and SHA-256 below.
-- [GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.1): use the published 1.0.1 release, excluding drafts or prereleases.
-- [Download the MCPB bundle](https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.1/ibol-open-learning-1.0.1.mcpb): the tested candidate is 47,843 bytes, with SHA-256 `dfd76e65bfb5d70ad07b62bb14f2734914b7f483bd021fc8f08f5d095437ed6e`.
-- [Published checksum file](https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.1/SHA256SUMS): compare it with the downloaded bytes and Registry digest.
+- [Publication workflow](https://github.com/Albertito-AI/Albertito-AI/actions/runs/45117952169): the prepare and publish jobs completed successfully, including all 65 companion tests.
+- [Official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.2): verify `io.github.Albertito-AI/ibol-open-learning`, version `1.0.2`, and the package URL and SHA-256 below.
+- [GitHub release](https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.2): use the published 1.0.2 release, excluding drafts or prereleases.
+- [Download the MCPB bundle](https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.2/ibol-open-learning-1.0.2.mcpb): the published bundle is 48,041 bytes, with SHA-256 `0098aedfd96d17968775ab77313afa64b83dbf0d42cf8f8dba7a6ad568483423`.
+- [Published checksum file](https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.2/SHA256SUMS): compare it with the downloaded bytes and Registry digest.
 
-If publication is still pending or those values differ, use the [current source installation](../agents.md#local-mcp-access) and its pinned requirements. Do not substitute an unverified download. The [security assessment](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) records the exact changes and validation. The [7 November receipts](../data/reach-receipts-2026-11-07.json) describe the earlier 1.0.0 release and remain historical evidence.
+If those values differ, use the [current source installation](../agents.md#local-mcp-access) and its pinned requirements. Do not substitute an unverified download. The [23 November receipt](../data/reach-receipts-2026-11-23.json) records publication and readback. The [security assessment](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) and [7 November receipts](../data/reach-receipts-2026-11-07.json) remain historical evidence for earlier releases.
 
-The bundle uses MCPB manifest version 0.4 and the UV runtime, with Python 3.12 and locked dependencies. A host must support that runtime. The release workflow rejects replacement of existing assets. GitHub's separate immutable-release setting was reported as `false` on 7 November 2026; that earlier observation is not a new settings check. The expected checksum above is the integrity reference for this security version.
+The bundle uses MCPB manifest version 0.4 and the UV runtime, with Python 3.12 and locked dependencies. A host must support that runtime. The release workflow rejects replacement of existing assets. GitHub’s separate immutable-release setting was reported as `false` in the 23 November release readback; the workflow’s no-overwrite checks and pinned checksum provide the described release controls.
 
-Registry publication establishes that the package is discoverable through the Registry API. It does not establish installation, recommendation or use by any particular AI provider or reader.
+Registry publication establishes that the package is discoverable through the Registry API. It does not establish installation, recommendation or use by any particular AI provider or reader. Research and teaching enquiries: [info@alberttansinhon.com](mailto:info@alberttansinhon.com) · [Albert Tan Sin Hon’s website](https://alberttansinhon.com/).
 
 ## Source and rights
 
@@ -38,7 +38,7 @@ Registry publication establishes that the package is discoverable through the Re
 
 **Documentation-verified instructions; this particular bundle has not been installed in Claude Desktop during this check.** The [official UV example](https://github.com/modelcontextprotocol/mcpb/blob/main/examples/hello-world-uv/README.md) documents host-managed Python dependencies. IBOL requires MCPB 0.4 UV support; a successful download alone does not establish host compatibility.
 
-1. After completing the publication checks above, download version 1.0.1 and compare its SHA-256 with the pinned value. On Windows PowerShell, run `Get-FileHash .\ibol-open-learning-1.0.1.mcpb -Algorithm SHA256`; on macOS, run `shasum -a 256 ibol-open-learning-1.0.1.mcpb`.
+1. After completing the publication checks above, download version 1.0.2 and compare its SHA-256 with the pinned value. On Windows PowerShell, run `Get-FileHash .\ibol-open-learning-1.0.2.mcpb -Algorithm SHA256`; on macOS, run `shasum -a 256 ibol-open-learning-1.0.2.mcpb`.
 2. In Claude Desktop, open Settings, Desktop app, then Manage beside Extensions. Older layouts use Settings, Extensions. Under Advanced settings, choose Install Extension and select the `.mcpb` file. Organisational policy may restrict custom extensions.
 3. Inspect the installed server's connection status and tools. Ask it to call `get_book_metadata`, then `get_citation` with `style` set to `csl`. The returned DOI should be `10.21827/6ac3948159a9e`.
 4. If installation fails, inspect the local MCP logs and check runtime support. Do not treat an installed entry without a successful tool response as a working connection.
@@ -54,7 +54,7 @@ The following examples use the same versioned bundle, extracted into a local fol
 Install [UV from its official documentation](https://docs.astral.sh/uv/getting-started/installation/). Verify the bundle checksum above, then extract it as a ZIP archive. For example, with Python installed:
 
 ```sh
-python -m zipfile -e ibol-open-learning-1.0.1.mcpb ibol-bundle
+python -m zipfile -e ibol-open-learning-1.0.2.mcpb ibol-bundle
 ```
 
 Replace `/ABSOLUTE/PATH/ibol-bundle` in each example with that folder's absolute path. On Windows, JSON paths may use forward slashes, for example `C:/Users/YourName/ibol-bundle`. If the client cannot find `uv`, replace the command with UV's absolute executable path.
@@ -65,7 +65,7 @@ The launch command is:
 uv run --frozen --directory "/ABSOLUTE/PATH/ibol-bundle" scripts/mcp_server.py
 ```
 
-During the 1.0.1 security validation on 22 November 2026, tests exercised the manifest's frozen UV launch and a separate extracted-bundle stdio session through the official MCP Python SDK. The tests verified initialisation, discovery of six tools, citation identity and default answer omission. No client graphical interface was exercised. UV creates a local environment and may download Python or dependencies at first launch.
+During the 1.0.2 release validation on 23 November 2026, tests exercised the manifest's frozen UV launch and a separate extracted-bundle stdio session through the official MCP Python SDK. The tests verified initialisation, discovery of six tools, citation identity and default answer omission. No client graphical interface was exercised. UV creates a local environment and may download Python or dependencies at first launch.
 
 ## VS Code
 

@@ -1,6 +1,11 @@
 {
   "name": "IBOL Open Learning Companion",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "author": {
+    "name": "Albert Tan Sin Hon",
+    "email": "info@alberttansinhon.com",
+    "url": "https://alberttansinhon.com/"
+  },
   "canonical_book": "https://books.ugp.rug.nl/ugp/catalog/book/300",
   "doi": "10.21827/6ac3948159a9e",
   "legal_cutoff": "2026-08-01",
@@ -28,8 +33,8 @@
     "campaign_evidence": "https://alberttansinhon.com/ibol/data/campaign-66.json"
   },
   "mcp": {
-    "registry_record": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.1",
-    "release": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.1",
+    "registry_record": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.2",
+    "release": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.2",
     "bundle_requires": "MCPB 0.4 with UV runtime; desktop GUI installation untested",
     "transport": "stdio",
     "protocolVersion": "2025-11-25",

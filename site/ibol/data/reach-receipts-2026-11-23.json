@@ -1,0 +1,71 @@
+{
+  "recorded_at_utc": "2026-11-23T05:32:40.249408+00:00",
+  "source_commit": "479c5fde69de7fe25258f44fc2969d6b78e819aa",
+  "registry": {
+    "state": "verified_public_record",
+    "record_url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Albertito-AI%2Fibol-open-learning/versions/1.0.2",
+    "name": "io.github.Albertito-AI/ibol-open-learning",
+    "version": "1.0.2",
+    "title": "IBOL Open Learning: Albert Tan Sin Hon",
+    "description": "Citation and teaching tools for Insurance-Backed Offshore Liquidity by Albert Tan Sin Hon.",
+    "websiteUrl": "https://alberttansinhon.com/ibol/",
+    "repository": {
+      "url": "https://github.com/Albertito-AI/Albertito-AI",
+      "source": "github",
+      "subfolder": "scripts/ibol"
+    },
+    "packages": [
+      {
+        "registryType": "mcpb",
+        "identifier": "https://github.com/Albertito-AI/Albertito-AI/releases/download/ibol-mcp-v1.0.2/ibol-open-learning-1.0.2.mcpb",
+        "fileSha256": "0098aedfd96d17968775ab77313afa64b83dbf0d42cf8f8dba7a6ad568483423",
+        "transport": {
+          "type": "stdio"
+        }
+      }
+    ],
+    "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45117952169"
+  },
+  "github_release": {
+    "url": "https://github.com/Albertito-AI/Albertito-AI/releases/tag/ibol-mcp-v1.0.2",
+    "draft": false,
+    "prerelease": false,
+    "github_immutable_setting": false,
+    "bundle_size_bytes": 48041,
+    "bundle_sha256": "0098aedfd96d17968775ab77313afa64b83dbf0d42cf8f8dba7a6ad568483423",
+    "downloaded_bytes_match_registry_sha256": true,
+    "bundle_manifest_author": {
+      "name": "Albert Tan Sin Hon",
+      "url": "https://alberttansinhon.com/",
+      "email": "info@alberttansinhon.com"
+    }
+  },
+  "previous_release": {
+    "version": "1.0.1",
+    "downloaded_sha256": "dfd76e65bfb5d70ad07b62bb14f2734914b7f483bd021fc8f08f5d095437ed6e",
+    "matches_previous_record": true
+  },
+  "validation": {
+    "companion_tests": 65,
+    "result": "passed",
+    "includes": [
+      "Actual source MCP stdio communication",
+      "Extracted-bundle MCP stdio communication",
+      "Manifest frozen UV runtime launch",
+      "Deterministic bundle generation",
+      "Release no-overwrite checks",
+      "Official MCPB manifest validation",
+      "Official Registry schema validation",
+      "Registry field readback"
+    ],
+    "companion_checks": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45117952174",
+    "profile_integrity": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45117953628"
+  },
+  "limits": [
+    "Registry metadata publication does not establish downstream installation, recommendation or readership.",
+    "Creator email was checked in the downloaded bundle manifest; it is not a Registry author field.",
+    "No desktop client graphical interface was exercised.",
+    "GitHub immutable releases are not enabled; the publishing workflow refuses to overwrite existing release assets.",
+    "This release receipt makes no indexing claim."
+  ]
+}

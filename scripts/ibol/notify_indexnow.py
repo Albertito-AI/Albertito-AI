@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 
 ENDPOINT = 'https://api.indexnow.org/indexnow'
 CONFIG = Path(__file__).resolve().parents[2] / 'config/ibol-indexnow.json'
-SCOPES = {'www.alberttansinhon.com': '/', 'albertito-ai.github.io': '/Albertito-AI/'}
+SCOPES = {'alberttansinhon.com': '/', 'albertito-ai.github.io': '/Albertito-AI/'}
 
 
 def validate(payload: dict) -> dict:
@@ -28,13 +28,16 @@ def validate(payload: dict) -> dict:
     expected_key = 'https://' + host + prefix + key + '.txt'
     if payload.get('keyLocation') != expected_key:
         raise ValueError('Proof file must be at the configured ownership boundary')
+    suffix = '' if host == 'alberttansinhon.com' else '.html'
+    allowed_paths = {prefix + 'ibol/', prefix + 'ibol/slides' + suffix,
+                     *[prefix + f'ibol/lessons/{n:02d}' + suffix for n in range(1, 9)]}
     urls = payload.get('urlList')
     if not isinstance(urls, list) or not 1 <= len(urls) <= 10 or len(set(urls)) != len(urls):
         raise ValueError('Submit one to ten unique reviewed URLs')
     for url in urls:
         p = urlsplit(url)
         if (p.scheme != 'https' or p.netloc != host or p.query or p.fragment
-                or p.path not in {prefix + 'ibol/', prefix + 'ibol/slides.html', *[prefix + f'ibol/lessons/{n:02d}.html' for n in range(1, 9)]}):
+                or p.path not in allowed_paths):
             raise ValueError('Only the published book hub, lecture and eight seminar routes are authorised')
     return payload
 
