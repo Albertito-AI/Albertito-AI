@@ -22,3 +22,9 @@ starts the existing publication workflow for a new `ibol-mcp-v1.0.1` release and
 an official Registry version. Version 1.0.0, its tag, assets and historical
 verification records remain unchanged. Read the dated
 [security assessment](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/IBOL_SECURITY_2026-11-22.md) before release.
+
+## Version 1.0.2 contact and canonical website update
+
+This metadata patch gives the bundle Albert’s public contact address, [info@alberttansinhon.com](mailto:info@alberttansinhon.com), and the canonical [alberttansinhon.com](https://alberttansinhon.com/) website. The companion’s public record and Registry website use the same domain.
+
+The six read-only tools, runtime contract and dependency versions remain unchanged. The package version and reviewed source-input digest advance together. Versions 1.0.0 and 1.0.1, their release tags, assets and historical evidence remain intact.

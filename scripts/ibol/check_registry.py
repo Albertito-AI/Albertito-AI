@@ -17,12 +17,15 @@ def check(path):
         if error.code==404:return 2
         raise
     server=actual.get('server',actual)
-    for field in ('name','version'):
+    for field in ('name','version','title','description','websiteUrl'):
         if server.get(field)!=expected[field]:raise ValueError('Registry '+field+' differs from tested release')
+    repository=server.get('repository',{})
+    if not isinstance(repository,dict) or any(repository.get(key)!=value for key,value in expected['repository'].items()):
+        raise ValueError('Registry repository differs from tested release')
     packages=server.get('packages',[])
     if len(packages)!=1 or any(packages[0].get(key)!=value for key,value in expected['packages'][0].items()):
         raise ValueError('Registry packages differs from tested release')
-    print(json.dumps({'url':url,'name':server['name'],'version':server['version'],'packages':server['packages']},indent=2))
+    print(json.dumps({'url':url,**{field:server[field] for field in ('name','version','title','description','websiteUrl')},'repository':repository,'packages':server['packages']},indent=2))
     return 0
 
 

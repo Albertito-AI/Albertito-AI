@@ -47,6 +47,7 @@ def validate_request(root: Path = ROOT) -> dict:
 
 def build(output: Path, root: Path = ROOT) -> dict:
     request = validate_request(root)
+    manifest = json.loads((root/'mcp/ibol/manifest.json').read_text())
     output.mkdir(parents=True, exist_ok=True)
     version = request['version']; tag = 'ibol-mcp-v' + version
     filename = 'ibol-open-learning-' + version + '.mcpb'
@@ -64,12 +65,13 @@ def build(output: Path, root: Path = ROOT) -> dict:
         'name':NAME, 'title':'IBOL Open Learning: Albert Tan Sin Hon',
         'description':'Citation and teaching tools for Insurance-Backed Offshore Liquidity by Albert Tan Sin Hon.',
         'repository':{'url':f'https://github.com/{REPOSITORY}', 'source':'github', 'subfolder':'scripts/ibol'},
-        'version':version, 'websiteUrl':'https://www.alberttansinhon.com/ibol/',
+        'version':version, 'websiteUrl':'https://alberttansinhon.com/ibol/',
         'packages':[{'registryType':'mcpb','identifier':url,'fileSha256':digest,'transport':{'type':'stdio'}}],
     }
     (output/'server.json').write_text(json.dumps(server, indent=2)+'\n')
     receipt = {'version':version,'registry_name':NAME,'tag':tag,'filename':filename,
                'bundle_sha256':digest,'source_sha256':request['source_sha256'],
+               'author':manifest['author'],'website':server['websiteUrl'],
                'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()}
     (output/'build-receipt.json').write_text(json.dumps(receipt, indent=2)+'\n')
     (output/'SHA256SUMS').write_text(f'{digest}  {filename}\n')
