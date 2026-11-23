@@ -37,7 +37,7 @@ class EmbeddedArtworkPolicyTests(unittest.TestCase):
             path.write_text("", encoding="utf-8")
         (self.root / "README.md").write_text(
             "\n".join(sorted(profile.REQUIRED_REPOSITORY_LINKS))
-            + "\nhttps://www.alberttansinhon.com/\n[Policy](docs/PORTFOLIO_VISIBILITY_POLICY.md)\n",
+            + "\nhttps://alberttansinhon.com/\n[Policy](docs/PORTFOLIO_VISIBILITY_POLICY.md)\n",
             encoding="utf-8",
         )
         self.png = tiny_png()
