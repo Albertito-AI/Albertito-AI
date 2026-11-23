@@ -132,7 +132,7 @@ def validate() -> list[str]:
         for url in sorted(REQUIRED_REPOSITORY_LINKS):
             if url not in readme:
                 errors.append(f"README omits portfolio repository: {url}")
-        if "https://www.alberttansinhon.com/" not in readme:
+        if "https://alberttansinhon.com/" not in readme:
             errors.append("README omits the canonical website URL")
         if "docs/PORTFOLIO_VISIBILITY_POLICY.md" not in readme:
             errors.append("README does not reference the portfolio visibility policy")

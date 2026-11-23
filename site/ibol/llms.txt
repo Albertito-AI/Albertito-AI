@@ -6,21 +6,21 @@ Published 6 November 2026 by University of Groningen Press. DOI: 10.21827/6ac394
 
 ## Book and provenance
 - [Published book](https://books.ugp.rug.nl/ugp/catalog/book/300)
-- [Bibliographic and source record](https://www.alberttansinhon.com/ibol/data/book.json)
-- [Rights and attribution](https://www.alberttansinhon.com/ibol/RIGHTS.md)
+- [Bibliographic and source record](https://alberttansinhon.com/ibol/data/book.json)
+- [Rights and attribution](https://alberttansinhon.com/ibol/RIGHTS.md)
 
 ## Teaching and research
-- [Eight seminar plans](https://www.alberttansinhon.com/ibol/teaching-guide.md)
-- [Practice question bank](https://www.alberttansinhon.com/ibol/data/quiz.json)
-- [Fictional evidence cases](https://www.alberttansinhon.com/ibol/data/cases.json)
-- [Library adoption packet](https://www.alberttansinhon.com/ibol/library-kit.md)
-- [Course pathways and adoption](https://www.alberttansinhon.com/ibol/adoption/)
-- [Offline study lab](https://www.alberttansinhon.com/ibol/activities/study-lab.html)
-- [Library and AI discovery guides](https://www.alberttansinhon.com/ibol/discovery/)
+- [Eight seminar plans](https://alberttansinhon.com/ibol/teaching-guide.md)
+- [Practice question bank](https://alberttansinhon.com/ibol/data/quiz.json)
+- [Fictional evidence cases](https://alberttansinhon.com/ibol/data/cases.json)
+- [Library adoption packet](https://alberttansinhon.com/ibol/library-kit.md)
+- [Course pathways and adoption](https://alberttansinhon.com/ibol/adoption/)
+- [Offline study lab](https://alberttansinhon.com/ibol/activities/study-lab.html)
+- [Library and AI discovery guides](https://alberttansinhon.com/ibol/discovery/)
 
 ## Agent access
 - [GitHub Pages mirror](https://albertito-ai.github.io/Albertito-AI/ibol/)
 - [Portable classroom kit on GitHub Pages](https://albertito-ai.github.io/Albertito-AI/ibol/downloads/IBOL_Classroom_Kit.zip)
-- [Agent integration guide](https://www.alberttansinhon.com/ibol/agents.md)
-- [Resource manifest](https://www.alberttansinhon.com/ibol/agent-manifest.json)
-- [CSL citation](https://www.alberttansinhon.com/ibol/metadata/book.csl.json)
+- [Agent integration guide](https://alberttansinhon.com/ibol/agents.md)
+- [Resource manifest](https://alberttansinhon.com/ibol/agent-manifest.json)
+- [CSL citation](https://alberttansinhon.com/ibol/metadata/book.csl.json)

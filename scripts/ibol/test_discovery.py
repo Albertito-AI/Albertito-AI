@@ -40,7 +40,7 @@ class PublicDiscoveryTests(unittest.TestCase):
             path = SITE / 'ibol/lessons' / f"{lesson['id']:02d}.html"
             source = path.read_text()
             canonical = CanonicalParser(); canonical.feed(source)
-            self.assertEqual(canonical.urls, [f"https://www.alberttansinhon.com/ibol/lessons/{lesson['id']:02d}"])
+            self.assertEqual(canonical.urls, [f"https://alberttansinhon.com/ibol/lessons/{lesson['id']:02d}"])
             for key in ['title', 'guide', 'exercise', 'answer', 'challenge', 'exit']:
                 self.assertIn(html.escape(lesson[key]), source)
             self.assertNotIn('<script src=', source)
@@ -79,7 +79,7 @@ class PublicDiscoveryTests(unittest.TestCase):
                 with self.subTest(url=url):
                     self.assertTrue(local_file(url).is_file(), url)
         self.assertIn("https://books.ugp.rug.nl/ugp/catalog/book/300", urls)
-        self.assertIn("https://www.alberttansinhon.com/ibol/", urls)
+        self.assertIn("https://alberttansinhon.com/ibol/", urls)
 
 
 if __name__ == "__main__":
