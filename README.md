@@ -9,10 +9,11 @@ Prince of Songkla University, Thailand. My research examines sustainability
 reporting, legal accountability and regulatory coordination in Asia. Alongside my
 scholarship, I develop practical research tools and teaching materials.
 
-[Website](https://www.alberttansinhon.com/)
+[Website](https://alberttansinhon.com/)
+ · [info@alberttansinhon.com](mailto:info@alberttansinhon.com)
  · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
- · [Listen & Learn](https://www.alberttansinhon.com/listen-and-learn/)
+ · [Listen & Learn](https://alberttansinhon.com/listen-and-learn/)
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
@@ -22,7 +23,7 @@ scholarship, I develop practical research tools and teaching materials.
 | --- | --- | --- |
 | [Selected scholarship](#selected-scholarship) | [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) | [Research and workshops](#work-with-me) |
 | [The Human Question](https://thehumanquestionjournal.com/issues/2026-number-1/) | [Project whitepapers](wiki/PORTFOLIO.md) | [Contribution guide](CONTRIBUTING.md) |
-| [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://www.alberttansinhon.com/#contact) |
+| [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://alberttansinhon.com/#contact) |
 
 ## Featured projects
 
@@ -70,7 +71,7 @@ learning and external adoption are not yet evidenced.
 Selected accounts of reasoning and human learning may follow
 [The Human Question's ordinary editorial route](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/JOURNAL_HANDOFF.md).
 For Atlas Research Library enquiries, use the
-[website contact route](https://www.alberttansinhon.com/#contact).
+[website contact route](https://alberttansinhon.com/#contact).
 
 
 ## Inspect financial models with Atlas Quant
@@ -127,9 +128,9 @@ legal accuracy.
 
 ## Help an agent reach a verified outcome
 
-**[Atlas Upstream 0.2.1](https://www.alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
+**[Atlas Upstream 0.2.1](https://alberttansinhon.com/atlas-upstream/)** gives agents seven discoverable MCP tools for defining a mission, deciding from current evidence, recovering after interruption and exporting a verified result to Atlas Opsbook. It retains source authority, disagreements and unfinished actions across sessions.
 
-[**Explore the recorded decisions**](https://www.alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://www.alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.1.zip) · [Connect an agent](https://www.alberttansinhon.com/atlas-upstream/#connect) · [Verification record (Markdown)](https://www.alberttansinhon.com/atlas-upstream/verification.md)
+[**Explore the recorded decisions**](https://alberttansinhon.com/atlas-upstream/) · [Download the source and installable wheel](https://alberttansinhon.com/atlas-upstream/Atlas-Upstream-0.2.1.zip) · [Connect an agent](https://alberttansinhon.com/atlas-upstream/#connect) · [Verification record (Markdown)](https://alberttansinhon.com/atlas-upstream/verification.md)
 
 Public evaluation alpha. **45 tests passed with no skips**. Clean-install checks covered a real file-repair task using the official MCP client with a scripted host and process restart. Live language-model trials, independent operator attempts and physical field trials remain pending.
 
@@ -138,14 +139,14 @@ Public evaluation alpha. **45 tests passed with no skips**. Clean-install checks
 
 **[Atlas Opsbook](https://github.com/Albertito-AI/atlas-opsbook)** lets a coding agent turn a mistake into a project instruction, test the proposed rule against separate cases, and pass the accepted procedure to its next session. Try the packaging case to see why an initially plausible rule fails. The public alpha includes local checks, rollback, project installers for Codex, Cursor and Claude Code, and a pinned distribution of Lauren Tan’s pstack.
 
-[**Try the interactive casebook**](https://www.alberttansinhon.com/atlas-opsbook/) · [Public alpha release and downloads](https://github.com/Albertito-AI/atlas-opsbook/releases/tag/v0.1.1) · [Inspect the verification record](https://github.com/Albertito-AI/atlas-opsbook/blob/main/docs/VERIFICATION.md)
+[**Try the interactive casebook**](https://alberttansinhon.com/atlas-opsbook/) · [Public alpha release and downloads](https://github.com/Albertito-AI/atlas-opsbook/releases/tag/v0.1.1) · [Inspect the verification record](https://github.com/Albertito-AI/atlas-opsbook/blob/main/docs/VERIFICATION.md)
 
 
 ## Build with IMIKWON
 
 **[IMIKWON 0.1.0a1](https://github.com/Albertito-AI/IMIKWON)** is a new, free MIT-licensed coding assistant for Kimi K3.1 Pro. Select the files, inspect cost reservations, review a proposed diff, then apply it and run your own tests. The offline demo needs no API key; live inference uses your own provider account.
 
-[**Try IMIKWON**](https://www.alberttansinhon.com/imikwon/) · [Source and quickstart](https://github.com/Albertito-AI/IMIKWON#try-it-in-one-minute-without-an-api-key) · [Verification record](https://github.com/Albertito-AI/IMIKWON/blob/main/docs/VERIFICATION.md)
+[**Try IMIKWON**](https://alberttansinhon.com/imikwon/) · [Source and quickstart](https://github.com/Albertito-AI/IMIKWON#try-it-in-one-minute-without-an-api-key) · [Verification record](https://github.com/Albertito-AI/IMIKWON/blob/main/docs/VERIFICATION.md)
 
 Public alpha: offline and mocked checks pass. Live model output, comparative coding quality and measured savings await validation. IMIKWON adds no subscription or API markup. Kimi's model terms and provider charges remain separate.
 
@@ -175,7 +176,7 @@ PNG previews and renders an MP4 with an optional WAV soundtrack.
 [**Try the composer**](https://cohortframe-studio.travelingbert.chatgpt.site/#composer)
  · [Download and get started](https://cohortframe-studio.travelingbert.chatgpt.site/#get-started)
  · [Public source and release checks](https://github.com/Albertito-AI/cohortframe)
- · [CohortFrame on my website](https://www.alberttansinhon.com/#cohortframe)
+ · [CohortFrame on my website](https://alberttansinhon.com/#cohortframe)
 
 The browser composer needs no account or provider key. MP4 rendering runs locally
 with Python and FFmpeg. This evaluation alpha supports up to 12 title-card scenes
@@ -195,15 +196,15 @@ with AI. Public source availability does not grant an open-source licence.
 | **Build reusable, reviewable agent work** | [Try Atlas Reweave](https://github.com/Albertito-AI/atlas-reweave#try-it), then reproduce a benchmark or choose a task from its [agent contribution hub](https://github.com/Albertito-AI/atlas-reweave/issues/5). |
 | **Investigate and teach mathematics** | [Start with Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics#start-with-a-reproducible-experiment), then inspect its checks and teaching lesson. |
 | **Contribute humanistic scholarship** | [Read The Human Question’s author instructions and policies](https://thehumanquestionjournal.com/#authors). |
-| **Find a resource or collaboration route** | [Explore my connected work](https://www.alberttansinhon.com/explore/). |
+| **Find a resource or collaboration route** | [Explore my connected work](https://alberttansinhon.com/explore/). |
 | **Build and inspect software locally** | [Start with CommCode](https://github.com/Albertito-AI/CommCode#quick-start), a development preview with an editor, tests, Git and application previews. |
 | **Create a short video** | [Open CohortFrame's visual composer](https://cohortframe-studio.travelingbert.chatgpt.site/#composer), then export a brief for local rendering. |
 | **Review a channel's performance** | [Inspect Channel Income OS's synthetic report](https://github.com/Albertito-AI/channel-income-os/blob/main/docs/demo/report.md), then analyse authorised CSV exports locally under its applicable licence. |
 | **Explore court-submission checks** | [Inspect the fictional Court Submission Integrity demo](https://github.com/Albertito-AI/court-submission-integrity/blob/main/docs/DEMO.md). |
 | **Trace a claim to its sources** | [Try the recorded RegNav exercise](https://albertito-ai.github.io/Albertito-AI/lab/#replay). |
 | **Read the research** | [Selected scholarship](#selected-scholarship), with institutional records and access links. |
-| **Discuss a project or workshop** | [Contact me through my website](https://www.alberttansinhon.com/#contact) with a short, non-confidential brief. |
-| **Listen and learn** | [Explore music and learning collections](https://www.alberttansinhon.com/listen-and-learn/). |
+| **Discuss a project or workshop** | [Contact me through my website](https://alberttansinhon.com/#contact) with a short, non-confidential brief. |
+| **Listen and learn** | [Explore music and learning collections](https://alberttansinhon.com/listen-and-learn/). |
 
 
 ## Projects you can explore
@@ -354,14 +355,14 @@ I am **President and Editor-in-Chief** of this open-access journal, which explor
 
 There are no author fees. Research articles and scholarly review or critical essays require two independent external reports, normally under double-anonymous review. Submissions and reviewer enquiries: [editor@thehumanquestionjournal.com](mailto:editor@thehumanquestionjournal.com).
 
-[**Explore my connected work**](https://www.alberttansinhon.com/explore/): the journal, book, learning materials, research tools and routes for collaboration.
+[**Explore my connected work**](https://alberttansinhon.com/explore/): the journal, book, learning materials, research tools and routes for collaboration.
 
 
 ## Read and teach Insurance-Backed Offshore Liquidity
 
 My open-access book, *Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC–Hong Kong Interface*, was published by University of Groningen Press on **6 November 2026**. [Read the free publisher edition](https://books.ugp.rug.nl/ugp/catalog/book/300), DOI [10.21827/6ac3948159a9e](https://doi.org/10.21827/6ac3948159a9e).
 
-[**Explore the open learning companion**](https://www.alberttansinhon.com/ibol/) · [Eight seminar plans](site/ibol/teaching-guide.md) · [Lecture and evidence games](https://www.alberttansinhon.com/ibol/#play) · [Library packet](site/ibol/library-kit.md) · [Connect an agent](site/ibol/agents.md)
+[**Explore the open learning companion**](https://alberttansinhon.com/ibol/) · [Eight seminar plans](site/ibol/teaching-guide.md) · [Lecture and evidence games](https://alberttansinhon.com/ibol/#play) · [Library packet](site/ibol/library-kit.md) · [Connect an agent](site/ibol/agents.md)
 
 The companion includes 32 explained questions, six fictional cases, a record-sorting game, citation exports and a local read-only MCP interface. The book retains CC BY-NC-ND 4.0; original companion teaching material is CC BY 4.0 and companion code is MIT. [Rights and source boundaries](site/ibol/RIGHTS.md). [Share the book](site/ibol/share.md) · [Project discovery guide (text)](https://albertito-ai.github.io/Albertito-AI/llms.txt) · [Sitemap (XML)](https://albertito-ai.github.io/Albertito-AI/sitemap.xml). The supplement is AI-assisted work commissioned by the author, not a publisher-reviewed edition. Legal cut-off: 1 August 2026.
 
@@ -375,7 +376,7 @@ The companion includes 32 explained questions, six fictional cases, a record-sor
 - **ANSWERABLE: Teaching Law When the Machine Can Write.** Albert Tan and Panupong
   Chalermsin, PSU Press. **Forthcoming.** Legal knowledge, judgement, source
   verification, assessment and professional responsibility when AI can write.
-  [Book overview](https://www.alberttansinhon.com/#answerable).
+  [Book overview](https://alberttansinhon.com/#answerable).
 
 
 ## Teaching and further exploration
@@ -519,7 +520,8 @@ objectives, with the format and original supporting materials agreed in advance.
 This is research-method education; real case files and privileged material are
 not needed for an initial discussion.
 
-[**Discuss a project or workshop**](https://www.alberttansinhon.com/#contact).
+[**Email info@alberttansinhon.com about a project or workshop**](mailto:info@alberttansinhon.com)
+· [Explore my work](https://alberttansinhon.com/).
 A short, non-confidential brief should describe the question, intended audience,
 desired outcome, relevant jurisdiction and timing. I will consider the fit with
 my expertise and the scope needed to do the work well.
@@ -533,7 +535,7 @@ data out of public GitHub issues.
 
 I make music as **Bert Chan (陳信宏)** and share learning collections through **Learning with Bert**.
 
-[**Listen & Learn**](https://www.alberttansinhon.com/listen-and-learn/) · [**YouTube**](https://www.youtube.com/@chanxinghong)
+[**Listen & Learn**](https://alberttansinhon.com/listen-and-learn/) · [**YouTube**](https://www.youtube.com/@chanxinghong)
 
 <details>
 <summary><strong>Music playlists and learning collections</strong></summary>
@@ -548,7 +550,7 @@ ideas and learning collections through **Learning with Bert** on the same
 learning videos. If you enjoy what you find, subscribe on YouTube to follow
 new uploads.
 
-The [Listen & Learn hub](https://www.alberttansinhon.com/listen-and-learn/)
+The [Listen & Learn hub](https://alberttansinhon.com/listen-and-learn/)
 brings these collections together. Choose a collection below to listen or
 explore directly on YouTube.
 
@@ -579,7 +581,7 @@ explains how to retain source attribution and review status.
 
 **Be like water. Think critically. Act purposefully. Improve continuously.**
 
-[Website](https://www.alberttansinhon.com/) · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) · [ORCID](https://orcid.org/0009-0001-8996-7933) · [Profile maintenance](docs/PROFILE_EVOLUTION.md) · [Change record](docs/PROFILE_PROGRESS.md)
+[Website](https://alberttansinhon.com/) · [info@alberttansinhon.com](mailto:info@alberttansinhon.com) · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) · [ORCID](https://orcid.org/0009-0001-8996-7933) · [Profile maintenance](docs/PROFILE_EVOLUTION.md) · [Change record](docs/PROFILE_PROGRESS.md)
 
 Last substantive profile update: **20 November 2026**.
 

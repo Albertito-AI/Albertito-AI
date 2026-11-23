@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
 SITE = ROOT / 'site/ibol'
-BASE = 'https://www.alberttansinhon.com/ibol/'
+BASE = 'https://alberttansinhon.com/ibol/'
 PUBLISHER = 'https://books.ugp.rug.nl/ugp/catalog/book/300'
 PDF = 'https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875'
 DOI = '10.21827/6ac3948159a9e'
@@ -55,7 +55,7 @@ def lesson_page(lesson):
 <section><h2>Source and reuse</h2><p>Book DOI: <a href="https://doi.org/{DOI}">{DOI}</a>. Book licence: CC BY-NC-ND 4.0. Original companion teaching material: CC BY 4.0.</p>
 <p>This fictional exercise is an AI-assisted teaching supplement commissioned by the author, separately prepared and not publisher-reviewed. Check current primary sources before applying law to a real matter.</p>
 <p><a href="{number:02d}.md">Markdown version</a> · <a href="../RIGHTS.md">Rights and attribution</a> · <a href="../VERIFICATION.md">Verification</a></p></section></main>
-<footer><a href="../index.html">Return to the open learning companion</a></footer></body></html>'''
+<footer><a href="../index.html">Return to the open learning companion</a><p class="author-contact">Research and teaching enquiries: <a href="mailto:info@alberttansinhon.com">info@alberttansinhon.com</a> · <a href="https://alberttansinhon.com/">Albert Tan’s website</a></p></footer></body></html>'''
 
 def main():
     book = json.loads((SITE/'data/book.json').read_text())
@@ -84,7 +84,7 @@ message: "For the book, use the preferred citation. This companion is a separate
 title: "IBOL Open Learning Companion"
 version: 1.0.0
 date-released: 2026-11-07
-url: "https://www.alberttansinhon.com/ibol/"
+url: "https://alberttansinhon.com/ibol/"
 authors:
   - family-names: "Tan"
     given-names: "Sin Hon Albert"
