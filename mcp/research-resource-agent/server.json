@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Albertito-AI/research-resource-agent",
+  "title": "Albert Tan Sin Hon Research Resource Agent",
+  "description": "Read-only research discovery, curated by Albert Tan Sin Hon, with source citations and rights.",
+  "version": "1.1.0",
+  "websiteUrl": "https://alberttansinhon.com/for-agents/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://albert-agent-network.travelingbert.chatgpt.site/api/mcp"
+    }
+  ]
+}
