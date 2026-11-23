@@ -13,7 +13,7 @@ import httpx2
 from mcp import Client
 from mcp.client.streamable_http import streamable_http_client
 
-from check_registry import reviewed_metadata
+from check_registry import reviewed_release
 
 TOOLS = {"search_resources", "get_resource", "get_ibol_lesson"}
 MODERN = "2026-07-28"
@@ -31,6 +31,15 @@ def verify_info(info, expected_version):
     require(isinstance(info, dict), "Missing server identity")
     require(info.get("name") == SERVER_NAME, "Unexpected live MCP server name")
     require(info.get("version") == expected_version, "Live service version differs from reviewed Registry version")
+
+
+def verify_health(data, expected_version, expected_snapshot):
+    require(isinstance(data, dict), "Health check is not an object")
+    require(data.get("status") == "ok" and data.get("version") == expected_version,
+            "Health check did not confirm the reviewed service version")
+    for field, expected_count in expected_snapshot.items():
+        require(type(data.get(field)) is int and data[field] == expected_count,
+                f"Public snapshot {field} differs from the reviewed count {expected_count}")
 
 
 def verify_tools(tools):
@@ -59,7 +68,7 @@ async def legacy_probe(http, endpoint, version):
     headers = {"Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
     init = {"jsonrpc": "2.0", "id": "legacy-initialize", "method": "initialize",
             "params": {"protocolVersion": LEGACY, "capabilities": {},
-                       "clientInfo": {"name": "albert-registry-preflight", "version": "1.1.0"}}}
+                       "clientInfo": {"name": "albert-registry-preflight", "version": version}}}
     response = await http.post(endpoint, json=init, headers=headers)
     response.raise_for_status()
     body = response.json()
@@ -80,7 +89,7 @@ async def legacy_probe(http, endpoint, version):
     return {"protocol_version": LEGACY, "initialize": "passed", "tools_list": "passed"}
 
 
-async def inspect(expected, report):
+async def inspect(expected, expected_snapshot, report):
     require(importlib.metadata.version("mcp") == "2.3.0", "Use the frozen MCP 2.3.0 verification environment")
     endpoint = expected["remotes"][0]["url"]
     origin = endpoint.removesuffix("/api/mcp")
@@ -100,11 +109,8 @@ async def inspect(expected, report):
         health = await http.get(origin + "/healthz")
         health.raise_for_status()
         data = health.json()
-        require(data.get("status") == "ok" and data.get("version") == expected["version"],
-                "Health check did not confirm the reviewed service version")
-        require(data.get("catalogue_records", 0) > 0 and data.get("ibol_lessons", 0) > 0,
-                "Public resource snapshot is empty")
         report["health"] = data
+        verify_health(data, expected["version"], expected_snapshot)
         transport = streamable_http_client(endpoint, http_client=http)
         async with Client(transport, mode=MODERN, read_timeout_seconds=30) as client:
             discover = await client.session.send_discover(MODERN)
@@ -130,11 +136,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    expected = reviewed_metadata()
+    expected, release_request = reviewed_release()
+    expected_snapshot = release_request["expected_snapshot"]
     report = {"started_at_unix": time.time(), "endpoint": expected["remotes"][0]["url"],
-              "expected_version": expected["version"], "sdk": "mcp 2.3.0", "requests": []}
+              "expected_version": expected["version"], "expected_snapshot": expected_snapshot,
+              "sdk": "mcp 2.3.0", "requests": []}
     try:
-        asyncio.run(inspect(expected, report))
+        asyncio.run(inspect(expected, expected_snapshot, report))
         report["passed"] = True
     except Exception as error:
         report.update({"passed": False, "error_type": type(error).__name__, "error": str(error)})

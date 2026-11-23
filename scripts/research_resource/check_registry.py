@@ -24,11 +24,11 @@ class NoRedirect(HTTPRedirectHandler):
         return None
 
 
-def reviewed_metadata(server_path=DEFAULT_SERVER, request_path=DEFAULT_REQUEST):
+def reviewed_release(server_path=DEFAULT_SERVER, request_path=DEFAULT_REQUEST):
     raw = server_path.read_bytes()
     server = json.loads(raw)
     request = json.loads(request_path.read_text())
-    if set(request) != {"name", "version", "server_sha256", "required_protocols"}:
+    if set(request) != {"name", "version", "server_sha256", "required_protocols", "expected_snapshot"}:
         raise ValueError("Release request must contain the reviewed fields only")
     if request["server_sha256"] != hashlib.sha256(raw).hexdigest():
         raise ValueError("server.json differs from the reviewed release-request hash")
@@ -38,15 +38,26 @@ def reviewed_metadata(server_path=DEFAULT_SERVER, request_path=DEFAULT_REQUEST):
         raise ValueError("Release request and server version differ")
     if request["required_protocols"] != ["2026-07-28", "2025-11-25"]:
         raise ValueError("Both reviewed MCP protocol gates must remain enabled")
-    if set(server) != {"$schema", "name", "title", "description", "version", "websiteUrl", "remotes"}:
+    snapshot = request["expected_snapshot"]
+    if (not isinstance(snapshot, dict)
+            or set(snapshot) != {"catalogue_records", "ibol_lessons"}
+            or any(type(value) is not int or value <= 0 for value in snapshot.values())):
+        raise ValueError("Reviewed snapshot must specify positive integer catalogue and lesson counts")
+    if set(server) != {"$schema", "name", "title", "description", "version", "websiteUrl", "icons", "remotes"}:
         raise ValueError("Unexpected fields in this remote-only metadata record")
     if server["$schema"] != SCHEMA:
         raise ValueError("Unexpected Registry schema")
     if server["websiteUrl"] != "https://alberttansinhon.com/for-agents/":
         raise ValueError("Unexpected public guide URL")
+    if server["icons"] != [{"src": "https://alberttansinhon.com/favicon.png", "mimeType": "image/png"}]:
+        raise ValueError("Unexpected public service icon")
     if server["remotes"] != [{"type": "streamable-http", "url": ENDPOINT}]:
         raise ValueError("Remote must be the reviewed public Streamable HTTP endpoint")
-    return server
+    return server, request
+
+
+def reviewed_metadata(server_path=DEFAULT_SERVER, request_path=DEFAULT_REQUEST):
+    return reviewed_release(server_path, request_path)[0]
 
 
 def registry_url(expected):
@@ -58,7 +69,7 @@ def compare_record(expected, actual):
     if not isinstance(actual, dict) or not isinstance(actual.get("server"), dict):
         raise ValueError("Registry response lacks the server object")
     server = actual["server"]
-    for field in ("name", "version", "title", "description", "websiteUrl"):
+    for field in ("name", "version", "title", "description", "websiteUrl", "icons"):
         if server.get(field) != expected[field]:
             raise ValueError("Existing Registry " + field + " differs from the reviewed record")
     if server.get("repository") not in (None, {}):

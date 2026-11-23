@@ -10,12 +10,12 @@ from urllib.error import HTTPError
 from urllib.response import addinfourl
 
 import check_registry as registry
-from check_remote import verify_book, verify_info, verify_legacy_notification, verify_tools
+from check_remote import verify_book, verify_health, verify_info, verify_legacy_notification, verify_tools
 
 
 class PublicationGuardTests(unittest.TestCase):
     def setUp(self):
-        self.expected = registry.reviewed_metadata()
+        self.expected, self.release_request = registry.reviewed_release()
         self.actual = {"server": copy.deepcopy(self.expected), "_meta": {
             "io.modelcontextprotocol.registry/official": {"status": "active"}}}
 
@@ -24,12 +24,13 @@ class PublicationGuardTests(unittest.TestCase):
         self.assertEqual(receipt["state"], "matching_active_version")
 
     def test_conflicting_or_inactive_record_stops_publication(self):
-        for change in ("endpoint", "version", "repository", "auth", "deprecated"):
+        for change in ("endpoint", "version", "icon", "repository", "auth", "deprecated"):
             with self.subTest(change=change):
                 record = copy.deepcopy(self.actual)
                 server = record["server"]
                 if change == "endpoint": server["remotes"][0]["url"] += "/wrong"
                 elif change == "version": server["version"] = "0.0.0"
+                elif change == "icon": server["icons"][0]["src"] = "https://example.com/unreviewed.png"
                 elif change == "repository": server["repository"] = {"url": "https://github.com/example/source"}
                 elif change == "auth": server["remotes"][0]["headers"] = [{"name": "Authorization", "isRequired": True}]
                 else: record["_meta"]["io.modelcontextprotocol.registry/official"]["status"] = "deprecated"
@@ -69,14 +70,51 @@ class PublicationGuardTests(unittest.TestCase):
             request = Path(temp) / "release-request.json"
             raw = json.dumps(self.expected).encode()
             server.write_bytes(raw + b"\n")
-            request.write_text(json.dumps({"name": self.expected["name"], "version": self.expected["version"],
-                                           "server_sha256": hashlib.sha256(raw).hexdigest(),
-                                           "required_protocols": ["2026-07-28", "2025-11-25"]}))
-            with self.assertRaises(ValueError): registry.reviewed_metadata(server, request)
+            reviewed = copy.deepcopy(self.release_request)
+            reviewed["server_sha256"] = hashlib.sha256(raw).hexdigest()
+            request.write_text(json.dumps(reviewed))
+            with self.assertRaisesRegex(ValueError, "reviewed release-request hash"):
+                registry.reviewed_metadata(server, request)
+
+    def test_reviewed_snapshot_counts_must_be_explicit_positive_integers(self):
+        invalid_snapshots = [None, {}, {"catalogue_records": 32},
+                             {"catalogue_records": 32, "ibol_lessons": 8, "extra": 1}]
+        for field in ("catalogue_records", "ibol_lessons"):
+            for value in (0, -1, True, 32.0, "32", None):
+                snapshot = copy.deepcopy(self.release_request["expected_snapshot"])
+                snapshot[field] = value
+                invalid_snapshots.append(snapshot)
+        with tempfile.TemporaryDirectory() as temp:
+            server = Path(temp) / "server.json"
+            request = Path(temp) / "release-request.json"
+            server.write_bytes(registry.DEFAULT_SERVER.read_bytes())
+            for snapshot in invalid_snapshots:
+                reviewed = copy.deepcopy(self.release_request)
+                reviewed["expected_snapshot"] = snapshot
+                request.write_text(json.dumps(reviewed))
+                with self.subTest(snapshot=snapshot), self.assertRaisesRegex(ValueError, "Reviewed snapshot"):
+                    registry.reviewed_release(server, request)
+            reviewed = copy.deepcopy(self.release_request)
+            del reviewed["expected_snapshot"]
+            request.write_text(json.dumps(reviewed))
+            with self.assertRaisesRegex(ValueError, "reviewed fields"):
+                registry.reviewed_release(server, request)
+
+    def test_live_snapshot_must_match_both_reviewed_counts(self):
+        snapshot = self.release_request["expected_snapshot"]
+        health = {"status": "ok", "version": self.expected["version"], **snapshot}
+        verify_health(health, self.expected["version"], snapshot)
+        for field in snapshot:
+            for value in (snapshot[field] - 1, snapshot[field] + 1, None, str(snapshot[field]), True):
+                bad = {**health, field: value}
+                with self.subTest(field=field, value=value), self.assertRaisesRegex(ValueError, field):
+                    verify_health(bad, self.expected["version"], snapshot)
+        with self.assertRaisesRegex(ValueError, "reviewed service version"):
+            verify_health({**health, "version": "1.1.0"}, self.expected["version"], snapshot)
 
     def test_wrong_live_version_or_write_capability_fails(self):
         with self.assertRaises(ValueError):
-            verify_info({"name": "albert-research-resource-agent", "version": "1.0.0"}, "1.1.0")
+            verify_info({"name": "albert-research-resource-agent", "version": "1.0.0"}, self.expected["version"])
         with self.assertRaises(ValueError):
             verify_tools([{"name": name, "annotations": {"readOnlyHint": False}}
                           for name in ("search_resources", "get_resource", "get_ibol_lesson")])

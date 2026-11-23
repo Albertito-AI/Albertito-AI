@@ -1,4 +1,4 @@
-# Albert Research Resource Agent: Registry publication
+# Albert Tan Sin Hon Research Resource Agent: Registry publication
 
 This directory describes a remotely hosted, read-only research resource service
 provided by Albert Tan Sin Hon. Its public MCP endpoint is:
@@ -11,6 +11,13 @@ links, rights and available limitations. It performs deterministic retrieval; it
 does not provide general legal advice or execute arbitrary tasks. Read the
 [public connection guide](https://alberttansinhon.com/for-agents/) for scope and
 current access information. Enquiries: <info@alberttansinhon.com>.
+
+Version 1.1.1 describes the service's financial law, insurance, trust governance
+and teaching scope and declares the existing public PNG icon. Its reviewed
+snapshot contains 32 catalogue records and eight IBOL companion lessons.
+Individual tool arguments explain their inputs, and the resource-record tool
+distinguishes a lesson summary from the full companion teaching guide. The
+service does not retrieve or search the published book's full text.
 
 ## Metadata scope
 
@@ -29,7 +36,9 @@ source location or credentials are published here.
 The GitHub Actions workflow runs only for this repository's `main` branch when
 the reviewed `release-request.json` changes, or when manually dispatched on
 `main`. That file binds the exact metadata bytes by SHA-256 and requires both
-MCP 2026-07-28 and the legacy 2025-11-25 compatibility check.
+MCP 2026-07-28 and the legacy 2025-11-25 compatibility check. Its
+`expected_snapshot` also records the exact reviewed catalogue and lesson counts;
+the live check rejects a different, missing or invalid count.
 
 Before publication, the workflow:
 
@@ -37,7 +46,8 @@ Before publication, the workflow:
 2. Downloads official `mcp-publisher` 1.8.8 and verifies its pinned SHA-256 before
    running the publisher's schema validation.
 3. Requires the deployed health response and MCP identity to report the exact
-   Registry version. The official MCP 2.3.0 client discovers and exercises all
+   Registry version, and the health response to match both reviewed snapshot
+   counts. The official MCP 2.3.0 client discovers and exercises all
    three tools, including the IBOL author's credit, DOI and book licence.
 4. Checks legacy `initialize`, its HTTP 202 empty notification response, and
    tool discovery, which some directory health checks still use.
