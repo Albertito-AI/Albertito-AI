@@ -12,12 +12,18 @@ does not provide general legal advice or execute arbitrary tasks. Read the
 [public connection guide](https://alberttansinhon.com/for-agents/) for scope and
 current access information. Enquiries: <info@alberttansinhon.com>.
 
-Version 1.1.1 describes the service's financial law, insurance, trust governance
-and teaching scope and declares the existing public PNG icon. Its reviewed
-snapshot contains 32 catalogue records and eight IBOL companion lessons.
+Version 1.1.2 expands the reviewed snapshot to 91 catalogue records and eight
+IBOL companion lessons. It covers legal scholarship, manuscripts, software and
+teaching, including the source-linked ORCID corpus and its SSRN identifiers.
+Source assertions about work types, dates and contributors retain their
+provenance. Inclusion does not establish journal publication, peer review or a
+complete SSRN author-profile inventory. The corpus expansion leaves the three
+read-only tools and their input contracts unchanged.
+
 Individual tool arguments explain their inputs, and the resource-record tool
 distinguishes a lesson summary from the full companion teaching guide. The
-service does not retrieve or search the published book's full text.
+service does not retrieve or search the published book's full text. The public
+PNG icon and source-specific rights remain in place.
 
 ## Metadata scope
 

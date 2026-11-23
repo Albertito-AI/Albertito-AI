@@ -1,6 +1,6 @@
 [project]
 name = "research-resource-registry-checks"
-version = "1.1.1"
+version = "1.1.2"
 description = "Public protocol checks for the Albert Research Resource Agent registry entry"
 requires-python = ">=3.12,<3.13"
 dependencies = ["mcp==2.3.0"]

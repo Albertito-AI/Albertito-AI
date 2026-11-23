@@ -1,13 +1,13 @@
 {
   "name": "io.github.Albertito-AI/research-resource-agent",
-  "version": "1.1.1",
-  "server_sha256": "0536b763741e2df14020d83e69eb82df6e60ed0d81891f0dbd6da4bfeaa8bf01",
+  "version": "1.1.2",
+  "server_sha256": "00cc024cb158b5861c5fc9ee2f7ccf720d6938a28fcc6da7525158342f563500",
   "required_protocols": [
     "2026-07-28",
     "2025-11-25"
   ],
   "expected_snapshot": {
-    "catalogue_records": 32,
+    "catalogue_records": 91,
     "ibol_lessons": 8
   }
 }
