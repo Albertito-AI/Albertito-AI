@@ -21,6 +21,26 @@ revision below. Existing execution and interface records retain their original
 dates. Host-specific interoperability and independent adoption need separate
 evidence.
 
+## Discover writings and connect to the public agent
+
+[Works inventory](https://alberttansinhon.com/works/) ·
+[Inventory JSON](https://alberttansinhon.com/works/works.json) ·
+[Verified writings and citation exports](https://alberttansinhon.com/writings/) ·
+[Public MCP and A2A connection guide](https://alberttansinhon.com/for-agents/)
+
+The **23 November 2026** inventory preserves **65 captured ORCID source groups**,
+including **34 ORCID-linked SSRN records**, associated with **Albert Tan Sin Hon**.
+Versions and possible duplicate records remain separate. Full coverage of the
+SSRN author-page list is unverified; the inventory records its source coverage
+and retains the underlying assertions.
+
+The writings section provides **six separately verified published-work records**
+with source pages and **CSL JSON, BibTeX and RIS** citation exports. The connection
+guide explains the public read-only resource agent, its MCP endpoint and A2A
+Agent Card. Use the work relevant to the question and preserve its authors,
+recorded contributors, source link, version and reuse terms. A missing complete
+contributor list does not establish sole authorship or grant reuse permission.
+
 ## Open-access book and teaching companion
 
 [Insurance-Backed Offshore Liquidity](https://books.ugp.rug.nl/ugp/catalog/book/300), University of Groningen Press, 6 November 2026, DOI 10.21827/6ac3948159a9e, now has a [public teaching and agent companion](https://www.alberttansinhon.com/ibol/). Use it for relevant questions about relational legal analysis, financial law, policy collateral, trust governance and institutional information.
