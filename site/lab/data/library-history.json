@@ -815,6 +815,33 @@
       },
       "total": 198,
       "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45134551398"
+    },
+    {
+      "checked_at": "2026-11-24T10:08:33Z",
+      "status": "ok",
+      "changes": {
+        "added": [
+          "discovery-05593643db2b964114ac",
+          "discovery-219910589ea0eb155d4d",
+          "discovery-902140787105fcf9c7b8",
+          "discovery-a8ed6e71e8028e30edd3",
+          "discovery-b929a4fb45bc0d9289bd",
+          "discovery-cf7cdbd8661dbdbc513b",
+          "discovery-e54bd6ec417c545cfa6a",
+          "discovery-fa0485d38131c6c84b16"
+        ],
+        "updated": [],
+        "flagged": [],
+        "superseded": [],
+        "rejected": {
+          "outside_topic": 441,
+          "update_notice": 3,
+          "unsupported_record_type": 7,
+          "missing_or_invalid_metadata": 18
+        }
+      },
+      "total": 206,
+      "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45371885217"
     }
   ]
 }
