@@ -26,6 +26,8 @@ scholarship, I develop practical research tools and teaching materials.
 | [The Human Question](https://thehumanquestionjournal.com/issues/2026-number-1/) | [Project whitepapers](wiki/PORTFOLIO.md) | [Contribution guide](CONTRIBUTING.md) |
 | [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://alberttansinhon.com/#contact) |
 
+Teaching from a collection or checking a research claim? Use the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) to run a session, then [leave a field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) with the source and what you observed. You can follow the review and any resulting revision in the same issue.
+
 ## Featured projects
 
 | Project | Explore |

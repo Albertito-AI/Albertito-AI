@@ -59,3 +59,8 @@ Albert Tan Sin Hon is **President and Editor-in-Chief** of [The Human Question: 
 - [Comparative law and governance](https://zenodo.org/communities/comparative-law-governance/)
 - [Atlas research methods](https://zenodo.org/communities/atlas-research-methods/)
 - [The Human Question journal](https://zenodo.org/communities/the-human-question-journal/)
+
+## Community observations and corrections
+
+- [Facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) for classroom or research sessions using a collection.
+- [Public field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) for a source-linked observation, proposed correction, attribution choice and follow-up.

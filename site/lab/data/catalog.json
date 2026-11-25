@@ -18,7 +18,9 @@
     "whitepapers": "https://github.com/Albertito-AI/Albertito-AI/blob/main/wiki/PORTFOLIO.md",
     "journal": "https://thehumanquestionjournal.com/",
     "resource_guide": "https://www.alberttansinhon.com/explore/",
-    "resource_map": "https://www.alberttansinhon.com/resource-map.json"
+    "resource_map": "https://www.alberttansinhon.com/resource-map.json",
+    "facilitator_guide": "https://alberttansinhon.com/explore/facilitator-guide/",
+    "community_field_note": "https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml"
   },
   "zenodo_communities": [
     {
