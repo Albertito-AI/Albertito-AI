@@ -2,18 +2,18 @@
   "schema_version": 1,
   "agent": "Sparks",
   "created_at": "2026-10-28T07:46:43Z",
-  "updated_at": "2026-11-24T06:57:54Z",
-  "last_observed_date": "2026-11-24",
-  "last_workflow_run_id": 45344329509,
+  "updated_at": "2026-11-25T05:26:47Z",
+  "last_observed_date": "2026-11-25",
+  "last_workflow_run_id": 45553608081,
   "catalog_sha256": "0004c67f38a8695b14cab9c386c06efe26d397dde2371c1c6679b314c878ed91",
   "repositories": {
     "Albertito-AI/policykit": {
       "status": "current",
-      "attempted_at": "2026-11-24T06:57:54Z",
+      "attempted_at": "2026-11-25T05:26:47Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-24T06:57:54Z",
+        "observed_at": "2026-11-25T05:26:47Z",
         "commit_sha": "dd2b25dc14a63ff033b0100cba53c73fa760680a",
         "tree_sha": "a164388e9b7eb01a0f45c7bed3645e6d23750bec",
         "files": {
@@ -35,13 +35,13 @@
     },
     "Albertito-AI/regnav-source-watch": {
       "status": "current",
-      "attempted_at": "2026-11-24T06:57:54Z",
+      "attempted_at": "2026-11-25T05:26:47Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-24T06:57:54Z",
-        "commit_sha": "14d6ef8db3df550dd2f1f87c5a8b626e0da65c33",
-        "tree_sha": "6a6433fff7f34cc4ce783a879ccdeaf2cf4d0502",
+        "observed_at": "2026-11-25T05:26:47Z",
+        "commit_sha": "70d02653417a4423ca9a7fff9d94e0e9f1a55740",
+        "tree_sha": "d19dd1c892ec9e438abf37dfa92b6f6563c49b3c",
         "files": {
           "CONTRIBUTING.md": {
             "status": "present",
@@ -49,7 +49,7 @@
           },
           "README.md": {
             "status": "present",
-            "blob_sha": "9943b2cea70f21fad303287998c74c3a91ca0a76"
+            "blob_sha": "cda43721e68e2f5c34d8b6877c3288a1a155e8a7"
           }
         },
         "release": {
@@ -61,11 +61,11 @@
     },
     "Albertito-AI/symbolon": {
       "status": "current",
-      "attempted_at": "2026-11-24T06:57:54Z",
+      "attempted_at": "2026-11-25T05:26:47Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-24T06:57:54Z",
+        "observed_at": "2026-11-25T05:26:47Z",
         "commit_sha": "b50c1e811301e35d97c641619e9d580ced8c23b8",
         "tree_sha": "7e7e8618f2afb433d1e085081646d11918603d0d",
         "files": {
@@ -87,13 +87,13 @@
     },
     "Albertito-AI/piepowder": {
       "status": "current",
-      "attempted_at": "2026-11-24T06:57:54Z",
+      "attempted_at": "2026-11-25T05:26:47Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-24T06:57:54Z",
-        "commit_sha": "6297393c611218c215c7efaefbf964032b548640",
-        "tree_sha": "19d4f16a1b937b01ae85f4a1f642eb3be020b1f0",
+        "observed_at": "2026-11-25T05:26:47Z",
+        "commit_sha": "9838afdf238e61ace0994d7091bb53741421ba8f",
+        "tree_sha": "e91b93fc4a0ad3490c11fb1545a9a8021741a0e9",
         "files": {
           "CONTRIBUTING.md": {
             "status": "present",
@@ -101,7 +101,7 @@
           },
           "README.md": {
             "status": "present",
-            "blob_sha": "4e01c0844771b4c7ddc691c336802765e733bfc5"
+            "blob_sha": "f06b5cb6c36410b551df818139b58b91b171016a"
           }
         },
         "release": {
@@ -113,13 +113,13 @@
     },
     "Albertito-AI/tallystick": {
       "status": "current",
-      "attempted_at": "2026-11-24T06:57:54Z",
+      "attempted_at": "2026-11-25T05:26:47Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-24T06:57:54Z",
-        "commit_sha": "074d07a5847853413388ec749401a756e6478996",
-        "tree_sha": "030aec71de83c18a76ba010236a95b3ff3865487",
+        "observed_at": "2026-11-25T05:26:47Z",
+        "commit_sha": "145aa15726b750ca739a97366f42c10e411d6814",
+        "tree_sha": "47253467d7a8bd788cdc23edba1396e5ccdf9ad2",
         "files": {
           "CONTRIBUTING.md": {
             "status": "present",
@@ -127,7 +127,7 @@
           },
           "README.md": {
             "status": "present",
-            "blob_sha": "23768165afbc2f53b671638456b5dbc101c1df28"
+            "blob_sha": "a148a2008bfa82e60e38f01923bb6ef2fcceab68"
           }
         },
         "release": {
@@ -447,6 +447,75 @@
           "id": 443992029,
           "tag": "archive-2026-11-13",
           "published_at": "2026-11-13T08:36:08Z"
+        }
+      }
+    },
+    {
+      "repo": "Albertito-AI/regnav-source-watch",
+      "observed_at": "2026-11-25T05:26:47Z",
+      "previous_observed_at": "2026-11-24T06:57:54Z",
+      "before": {
+        "commit_sha": "14d6ef8db3df550dd2f1f87c5a8b626e0da65c33",
+        "readme_sha": "9943b2cea70f21fad303287998c74c3a91ca0a76",
+        "release": {
+          "id": 425459073,
+          "tag": "v0.1.0",
+          "published_at": "2026-10-27T12:55:19Z"
+        }
+      },
+      "after": {
+        "commit_sha": "70d02653417a4423ca9a7fff9d94e0e9f1a55740",
+        "readme_sha": "cda43721e68e2f5c34d8b6877c3288a1a155e8a7",
+        "release": {
+          "id": 425459073,
+          "tag": "v0.1.0",
+          "published_at": "2026-10-27T12:55:19Z"
+        }
+      }
+    },
+    {
+      "repo": "Albertito-AI/piepowder",
+      "observed_at": "2026-11-25T05:26:47Z",
+      "previous_observed_at": "2026-11-24T06:57:54Z",
+      "before": {
+        "commit_sha": "6297393c611218c215c7efaefbf964032b548640",
+        "readme_sha": "4e01c0844771b4c7ddc691c336802765e733bfc5",
+        "release": {
+          "id": 443994887,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:39:13Z"
+        }
+      },
+      "after": {
+        "commit_sha": "9838afdf238e61ace0994d7091bb53741421ba8f",
+        "readme_sha": "f06b5cb6c36410b551df818139b58b91b171016a",
+        "release": {
+          "id": 443994887,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:39:13Z"
+        }
+      }
+    },
+    {
+      "repo": "Albertito-AI/tallystick",
+      "observed_at": "2026-11-25T05:26:47Z",
+      "previous_observed_at": "2026-11-24T06:57:54Z",
+      "before": {
+        "commit_sha": "074d07a5847853413388ec749401a756e6478996",
+        "readme_sha": "23768165afbc2f53b671638456b5dbc101c1df28",
+        "release": {
+          "id": 443992059,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:36:10Z"
+        }
+      },
+      "after": {
+        "commit_sha": "145aa15726b750ca739a97366f42c10e411d6814",
+        "readme_sha": "a148a2008bfa82e60e38f01923bb6ef2fcceab68",
+        "release": {
+          "id": 443992059,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:36:10Z"
         }
       }
     }
