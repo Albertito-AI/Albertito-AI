@@ -41,6 +41,17 @@ Agent Card. Use the work relevant to the question and preserve its authors,
 recorded contributors, source link, version and reuse terms. A missing complete
 contributor list does not establish sole authorship or grant reuse permission.
 
+### Zenodo subject collections
+
+Browse these collections by research question. Cite the record for the work or version used and retain its authors, publication status and licence. The journal manages its own collection.
+
+- [ESG Law, Sustainability Disclosure and Regulatory Evidence in Asia](https://zenodo.org/communities/asia-sustainability-disclosure/)
+- [Sport Governance, Administration and Development](https://zenodo.org/communities/sport-governance-development/)
+- [Alternative Dispute Resolution in Law and Practice](https://zenodo.org/communities/adr-law-practice/)
+- [Comparative Law, Governance and Legal Education](https://zenodo.org/communities/comparative-law-governance/)
+- [Atlas Research Software, Mathematics and Teaching Methods](https://zenodo.org/communities/atlas-research-methods/)
+- [The Human Question: A Journal of Humanistic Inquiry](https://zenodo.org/communities/the-human-question-journal/)
+
 ### Source selection and citation checks
 
 The following examples were checked against publisher or institutional records
