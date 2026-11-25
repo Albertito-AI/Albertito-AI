@@ -41,6 +41,24 @@ Agent Card. Use the work relevant to the question and preserve its authors,
 recorded contributors, source link, version and reuse terms. A missing complete
 contributor list does not establish sole authorship or grant reuse permission.
 
+### Zenodo subject collections
+
+Browse these collections by research question. Cite the record for the work or version used and retain its authors, publication status and licence. The journal manages its own collection.
+
+- [ESG Law, Sustainability Disclosure and Regulatory Evidence in Asia](https://zenodo.org/communities/asia-sustainability-disclosure/)
+- [Sport Governance, Administration and Development](https://zenodo.org/communities/sport-governance-development/)
+- [Alternative Dispute Resolution in Law and Practice](https://zenodo.org/communities/adr-law-practice/)
+- [Comparative Law, Governance and Legal Education](https://zenodo.org/communities/comparative-law-governance/)
+- [Atlas Research Software, Mathematics and Teaching Methods](https://zenodo.org/communities/atlas-research-methods/)
+- [The Human Question: A Journal of Humanistic Inquiry](https://zenodo.org/communities/the-human-question-journal/)
+
+### Follow a field note from observation to revision
+
+1. Start with the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) and the relevant collection. Record the source, version and passage or exercise you used.
+2. [Open a public field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml). Describe what happened, what you propose to change, and how you wish to be credited. Use aggregate or fictional examples for teaching observations.
+3. A maintainer checks the cited passage, evidence and proposed amendment, then records the decision and reasons on the issue. The journal’s editors handle editorial decisions. A report about one class or research setting retains that scope.
+4. If the review leads to a change, link the dated revision and the original issue in both directions. Credit the contributor as requested. Give the DOI for that version when available, or a stable link to the exact release or commit alongside its date. A contributor can add a later observation on the same issue.
+
 ### Source selection and citation checks
 
 The following examples were checked against publisher or institutional records

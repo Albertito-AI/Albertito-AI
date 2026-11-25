@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T07:32:08Z",
+  "updated_at": "2026-11-25T12:01:13Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -18,8 +18,42 @@
     "whitepapers": "https://github.com/Albertito-AI/Albertito-AI/blob/main/wiki/PORTFOLIO.md",
     "journal": "https://thehumanquestionjournal.com/",
     "resource_guide": "https://www.alberttansinhon.com/explore/",
-    "resource_map": "https://www.alberttansinhon.com/resource-map.json"
+    "resource_map": "https://www.alberttansinhon.com/resource-map.json",
+    "facilitator_guide": "https://alberttansinhon.com/explore/facilitator-guide/",
+    "community_field_note": "https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml"
   },
+  "zenodo_communities": [
+    {
+      "title": "ESG Law, Sustainability Disclosure and Regulatory Evidence in Asia",
+      "subject": "ESG law and sustainability disclosure",
+      "url": "https://zenodo.org/communities/asia-sustainability-disclosure/"
+    },
+    {
+      "title": "Sport Governance, Administration and Development",
+      "subject": "Sport governance and development",
+      "url": "https://zenodo.org/communities/sport-governance-development/"
+    },
+    {
+      "title": "Alternative Dispute Resolution in Law and Practice",
+      "subject": "Alternative dispute resolution",
+      "url": "https://zenodo.org/communities/adr-law-practice/"
+    },
+    {
+      "title": "Comparative Law, Governance and Legal Education",
+      "subject": "Comparative law and governance",
+      "url": "https://zenodo.org/communities/comparative-law-governance/"
+    },
+    {
+      "title": "Atlas Research Software, Mathematics and Teaching Methods",
+      "subject": "Atlas research methods",
+      "url": "https://zenodo.org/communities/atlas-research-methods/"
+    },
+    {
+      "title": "The Human Question: A Journal of Humanistic Inquiry",
+      "subject": "The Human Question journal",
+      "url": "https://zenodo.org/communities/the-human-question-journal/"
+    }
+  ],
   "items": [
     {
       "id": "project-atlas-reweave",
@@ -66,6 +100,11 @@
           "label": "Repository",
           "url": "https://github.com/Albertito-AI/atlas-reweave",
           "kind": "repository"
+        },
+        {
+          "label": "Related collection: Atlas research methods",
+          "url": "https://zenodo.org/communities/atlas-research-methods/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -337,6 +376,11 @@
           "label": "Repository",
           "url": "https://github.com/Albertito-AI/court-submission-integrity",
           "kind": "repository"
+        },
+        {
+          "label": "Related collection: Comparative law and governance",
+          "url": "https://zenodo.org/communities/comparative-law-governance/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -449,6 +493,11 @@
           "label": "Repository",
           "url": "https://github.com/Albertito-AI/evtalbert",
           "kind": "repository"
+        },
+        {
+          "label": "Related collection: Sport governance and development",
+          "url": "https://zenodo.org/communities/sport-governance-development/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -508,6 +557,11 @@
         {
           "label": "Project whitepaper",
           "url": "https://github.com/Albertito-AI/policykit/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Related collection: ESG law and sustainability disclosure",
+          "url": "https://zenodo.org/communities/asia-sustainability-disclosure/",
           "kind": "scope"
         }
       ],
@@ -602,6 +656,11 @@
         {
           "label": "Project whitepaper",
           "url": "https://github.com/Albertito-AI/regnav-source-watch/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Related collection: ESG law and sustainability disclosure",
+          "url": "https://zenodo.org/communities/asia-sustainability-disclosure/",
           "kind": "scope"
         }
       ],
@@ -739,6 +798,11 @@
           "label": "Project whitepaper",
           "url": "https://github.com/Albertito-AI/piepowder/blob/main/wiki/Whitepaper.md",
           "kind": "scope"
+        },
+        {
+          "label": "Related collection: Alternative dispute resolution",
+          "url": "https://zenodo.org/communities/adr-law-practice/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -804,6 +868,11 @@
         {
           "label": "Project whitepaper",
           "url": "https://github.com/Albertito-AI/tallystick/blob/main/wiki/Whitepaper.md",
+          "kind": "scope"
+        },
+        {
+          "label": "Related collection: Sport governance and development",
+          "url": "https://zenodo.org/communities/sport-governance-development/",
           "kind": "scope"
         }
       ],
@@ -895,6 +964,11 @@
           "label": "Related source-inspection case",
           "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/README.md",
           "kind": "related"
+        },
+        {
+          "label": "Related collection: ESG law and sustainability disclosure",
+          "url": "https://zenodo.org/communities/asia-sustainability-disclosure/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -943,6 +1017,11 @@
           "label": "Institutional record and access",
           "url": "https://research.rug.nl/en/publications/when-does-a-sustainability-report-count-as-securities-disclosure-/",
           "kind": "publication"
+        },
+        {
+          "label": "Related collection: ESG law and sustainability disclosure",
+          "url": "https://zenodo.org/communities/asia-sustainability-disclosure/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -989,6 +1068,11 @@
           "label": "Institutional record and access",
           "url": "https://research.rug.nl/en/publications/constraint-without-succession-external-legal-review-and-retained-/",
           "kind": "publication"
+        },
+        {
+          "label": "Related collection: Sport governance and development",
+          "url": "https://zenodo.org/communities/sport-governance-development/",
+          "kind": "scope"
         }
       ],
       "verification": {
@@ -1092,6 +1176,11 @@
           "label": "Authority map and its limits",
           "url": "https://github.com/Albertito-AI/policykit/blob/130cf41b0d59e1f72a238b0cf3c145c6ca337265/cases/singapore-sustainability-reporting/common-law-authorities.md",
           "kind": "source"
+        },
+        {
+          "label": "Related collection: ESG law and sustainability disclosure",
+          "url": "https://zenodo.org/communities/asia-sustainability-disclosure/",
+          "kind": "scope"
         }
       ],
       "verification": {

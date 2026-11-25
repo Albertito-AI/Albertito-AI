@@ -14,6 +14,7 @@ scholarship, I develop practical research tools and teaching materials.
  · [Research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
  · [ORCID](https://orcid.org/0009-0001-8996-7933)
  · [Listen & Learn](https://alberttansinhon.com/listen-and-learn/)
+ · [Zenodo subject collections](https://albertito-ai.github.io/Albertito-AI/lab/#zenodo-collections)
 
 **[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
@@ -24,6 +25,8 @@ scholarship, I develop practical research tools and teaching materials.
 | [Selected scholarship](#selected-scholarship) | [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) | [Research and workshops](#work-with-me) |
 | [The Human Question](https://thehumanquestionjournal.com/issues/2026-number-1/) | [Project whitepapers](wiki/PORTFOLIO.md) | [Contribution guide](CONTRIBUTING.md) |
 | [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://alberttansinhon.com/#contact) |
+
+Teaching from a collection or checking a research claim? Use the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) to run a session, then [leave a field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) with the source and what you observed. You can follow the review and any resulting revision in the same issue.
 
 ## Featured projects
 

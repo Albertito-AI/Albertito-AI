@@ -1,0 +1,66 @@
+name: Community field note
+description: Report an observation, suggest a correction or share a follow-up from teaching or research.
+title: "[Field note] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a finding that another reader can check. This issue and your GitHub username will be public. Use aggregate or fictional examples. Omit learner names, individual results, client or case details, confidential material and unpublished manuscripts.
+
+        The [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/#reply) explains how to record a field note. [Browse the six subject collections](https://albertito-ai.github.io/Albertito-AI/lab/#zenodo-collections) to find the work you used.
+  - type: dropdown
+    id: collection
+    attributes:
+      label: Which collection does the note concern?
+      description: Choose the closest subject. Mention a second collection in your note if relevant.
+      options:
+        - ESG Law, Sustainability Disclosure and Regulatory Evidence in Asia
+        - Sport Governance, Administration and Development
+        - Alternative Dispute Resolution in Law and Practice
+        - Comparative Law, Governance and Legal Education
+        - Atlas Research Software, Mathematics and Teaching Methods
+        - "The Human Question: A Journal of Humanistic Inquiry"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source or DOI
+      description: Link to the public work or record. Add a page, section, exercise or software version if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What question arose or what changed?
+      description: Identify the claim, example, instruction or finding at issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What did you observe?
+      description: Describe the research or classroom setting, what you tried and the evidence you saw. Give the limits of your observation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What correction, lesson or test do you propose?
+      description: Suggest an amendment or a next test. Explain what evidence would help resolve an open question.
+    validations:
+      required: true
+  - type: dropdown
+    id: attribution
+    attributes:
+      label: How should a published revision acknowledge your contribution?
+      options:
+        - Credit my GitHub username
+        - Cite the issue without naming me separately
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Follow-up outcome (optional)
+      description: If you tried the change, describe what happened and when. You can return later and add a comment.
