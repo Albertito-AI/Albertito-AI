@@ -1,6 +1,6 @@
 # Sport Governance and Administration
 
-The book now has a [dedicated GitHub repository](https://github.com/Albertito-AI/sport-governance-and-administration) with 22 documented case exercises, the 16 editable instruments and a runnable AI agent laboratory. [Read the published book](https://doi.org/10.5281/zenodo.24519213) or use [Albert Tan’s teaching page](https://alberttansinhon.com/sport-governance/).
+The book now has a [dedicated GitHub repository](https://github.com/Albertito-AI/sport-governance-and-administration) with 22 documented case exercises, the 16 editable instruments and a runnable AI agent laboratory. [Read the published book](https://doi.org/10.5281/zenodo.24519212) or use [Albert Tan’s teaching page](https://alberttansinhon.com/sport-governance/).
 
 ## Practitioner companion
 
