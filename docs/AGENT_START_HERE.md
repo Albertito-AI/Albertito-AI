@@ -54,6 +54,8 @@ Browse these collections by research question. Cite the record for the work or v
 
 ### Follow a field note from observation to revision
 
+The [human and agent field trial](https://github.com/Albertito-AI/Albertito-AI/tree/main/teaching/human-agent-field-trials) has a printable route test, a blank JSON return and two short agent prompts. A person on site records the observations. Use the consent-cleared aggregate when comparing a forecast with what happened.
+
 1. Start with the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) and the relevant collection. Record the source, version and passage or exercise you used.
 2. [Open a public field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml). Describe what happened, what you propose to change, and how you wish to be credited. Use aggregate or fictional examples for teaching observations.
 3. A maintainer checks the cited passage, evidence and proposed amendment, then records the decision and reasons on the issue. The journal’s editors handle editorial decisions. A report about one class or research setting retains that scope.

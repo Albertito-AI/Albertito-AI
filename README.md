@@ -28,6 +28,8 @@ scholarship, I develop practical research tools and teaching materials.
 
 Teaching from a collection or checking a research claim? Use the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) to run a session, then [leave a field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) with the source and what you observed. You can follow the review and any resulting revision in the same issue.
 
+Working with a club or a class? [Run a human and agent field trial](https://github.com/Albertito-AI/Albertito-AI/tree/main/teaching/human-agent-field-trials). The first printable protocol tests whether a new visitor can find registration. A host records what happened on the ground and a second site can test a different explanation.
+
 ## Featured projects
 
 | Project | Explore |
