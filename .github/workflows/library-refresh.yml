@@ -76,6 +76,7 @@ jobs:
     with:
       source_ref: ${{ needs.refresh.outputs.commit_sha }}
     permissions:
+      actions: read
       contents: read
       pages: write
       id-token: write
