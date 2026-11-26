@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T08:11:11Z",
+  "generated_at": "2026-11-26T08:44:04Z",
   "refresh_mode": "network",
   "service_day": "2026-11-26",
-  "last_successful_refresh": "2026-11-26T08:11:11Z",
+  "last_successful_refresh": "2026-11-26T08:44:04Z",
   "status": "ok",
   "scope_note": "Curated source references and automatically indexed publisher metadata have different review levels. Discovery does not verify article contents, legal currency, free access or independent usefulness.",
   "source_runs": [
     {
       "id": "esg-disclosure",
       "label": "ESG disclosure and accountability",
-      "checked_at": "2026-11-26T08:11:11Z",
+      "checked_at": "2026-11-26T08:44:04Z",
       "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
       "status": "ok",
       "discovered": 160,
-      "accepted": 3,
+      "accepted": 0,
       "rejected": {
-        "unsupported_record_type": 3,
-        "outside_topic": 126,
-        "update_notice": 1,
-        "duplicate": 1,
-        "missing_or_invalid_metadata": 8
+        "outside_topic": 137,
+        "missing_or_invalid_metadata": 7,
+        "update_notice": 2,
+        "unsupported_record_type": 2
       },
       "daily_limit": 3,
       "queries": [
@@ -28,43 +27,43 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "dd97e485b38fac40275f0dc5cc56b70ffd6dc3b24a11b2e0c74238d00d863e4d",
-          "reported_total": 104745
+          "response_sha256": "25556ee4f0b819e67746428cfbeb748957c657ffdc5bf3d2053b90a90e846071",
+          "reported_total": 104791
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
+          "url": "https://api.crossref.org/works?query.title=sustainability+ESG+disclosure+reporting+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "c688dd7ba18bfefc15816e72c3924e591e3fac88ab3853a1c4d6360122bc60bb",
+          "response_sha256": "f71e34e2d1c505f48f72acd4721e0ed10f3e8de3ace509a55ed40ebcacd851e7",
           "reported_total": 24213,
           "position": {
             "year": 2021,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-26T08:11:11Z",
-      "queued_by_daily_limit": 137,
+      "last_successful_check": "2026-11-26T08:44:04Z",
+      "queued_by_daily_limit": 132,
       "pending_limit": 120,
       "pending_count": 120,
-      "pending_overflow": 17
+      "pending_overflow": 12
     },
     {
       "id": "ai-agent-governance",
       "label": "AI governance and agent evaluation",
-      "checked_at": "2026-11-26T08:11:11Z",
+      "checked_at": "2026-11-26T08:44:04Z",
       "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
       "status": "ok",
       "discovered": 160,
-      "accepted": 3,
+      "accepted": 0,
       "rejected": {
-        "outside_topic": 147,
-        "update_notice": 3,
-        "missing_or_invalid_metadata": 5
+        "outside_topic": 151,
+        "missing_or_invalid_metadata": 8,
+        "update_notice": 1
       },
       "daily_limit": 3,
       "queries": [
@@ -72,26 +71,26 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "367ac0b308ec410223c2fb1478e13cda47ec09c195e7a4573d2f2ed8c524b66c",
-          "reported_total": 445211
+          "response_sha256": "146c72e6c9bc1abcb54c389f51a73a82a85be83095bfe29ded05654417540039",
+          "reported_total": 445470
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
+          "url": "https://api.crossref.org/works?query.title=artificial+intelligence+agent+governance+evaluation+accountability&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "82c2c478b36e342caacd7cd7fb0498547d057ed2c1b1dae93327cd4358cabfea",
+          "response_sha256": "5e81a8f407066d5d60503bc292c8078ec56152dcd39cf0553e1bc1cda07afc70",
           "reported_total": 155863,
           "position": {
             "year": 2021,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-26T08:11:11Z",
+      "last_successful_check": "2026-11-26T08:44:04Z",
       "queued_by_daily_limit": 43,
       "pending_limit": 120,
       "pending_count": 43,
@@ -100,16 +99,16 @@
     {
       "id": "legal-evidence-provenance",
       "label": "Legal evidence and provenance",
-      "checked_at": "2026-11-26T08:11:11Z",
+      "checked_at": "2026-11-26T08:44:04Z",
       "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
       "status": "ok",
       "discovered": 160,
       "accepted": 0,
       "rejected": {
-        "outside_topic": 142,
-        "unsupported_record_type": 6,
-        "duplicate": 1,
-        "missing_or_invalid_metadata": 11
+        "outside_topic": 147,
+        "update_notice": 1,
+        "unsupported_record_type": 2,
+        "missing_or_invalid_metadata": 10
       },
       "daily_limit": 3,
       "queries": [
@@ -117,26 +116,26 @@
           "mode": "recent",
           "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=indexed&filter=from-index-date%3A2026-10-27%2Cuntil-index-date%3A2026-11-26%2Cfrom-pub-date%3A2015-01-01%2Cuntil-pub-date%3A2026-11-26",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "403186da0040dd143da6720df6c5d31dbff5b2012d96fbc3d54b1b77eb7ce153",
-          "reported_total": 192994
+          "response_sha256": "2fae1103aa2b793c7f76b6a53c8bd37b0b406f15fab5cefbb48e2e6cdd43dcc3",
+          "reported_total": 193090
         },
         {
           "mode": "historical",
-          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=160&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
+          "url": "https://api.crossref.org/works?query.title=legal+evidence+provenance+verification&rows=80&order=desc&select=DOI%2Ctitle%2Cauthor%2Cpublisher%2Ccontainer-title%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cupdate-to%2Cupdated-by%2Crelation%2Csubject%2CURL&sort=published&offset=240&filter=from-pub-date%3A2021-01-01%2Cuntil-pub-date%3A2021-12-31",
           "status": "ok",
-          "checked_at": "2026-11-26T08:11:11Z",
+          "checked_at": "2026-11-26T08:44:04Z",
           "returned": 80,
-          "response_sha256": "835cd5fe9d788624b5c6509ee5466a29baf948bcbcbc31bbc5ff71bcac942ed0",
+          "response_sha256": "a662dafbb46057f7eedf344bffe3791d4ac4df961efa4f01a2107d34fc777850",
           "reported_total": 72610,
           "position": {
             "year": 2021,
-            "offset": 160
+            "offset": 240
           }
         }
       ],
-      "last_successful_check": "2026-11-26T08:11:11Z",
+      "last_successful_check": "2026-11-26T08:44:04Z",
       "pending_limit": 120,
       "pending_count": 0,
       "pending_overflow": 0
@@ -145,7 +144,7 @@
       "id": "known-record-rechecks",
       "label": "Previously indexed records",
       "status": "ok",
-      "checked_at": "2026-11-26T08:11:11Z",
+      "checked_at": "2026-11-26T08:44:04Z",
       "discovered": 6,
       "accepted": 0,
       "failed_checks": 0,
@@ -156,18 +155,18 @@
     "sources": {
       "esg-disclosure": {
         "year": 2021,
-        "offset": 240,
-        "last_advanced_at": "2026-11-26T08:11:11Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-26T08:44:04Z"
       },
       "ai-agent-governance": {
         "year": 2021,
-        "offset": 240,
-        "last_advanced_at": "2026-11-26T08:11:11Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-26T08:44:04Z"
       },
       "legal-evidence-provenance": {
         "year": 2021,
-        "offset": 240,
-        "last_advanced_at": "2026-11-26T08:11:11Z"
+        "offset": 320,
+        "last_advanced_at": "2026-11-26T08:44:04Z"
       }
     },
     "mode": "bounded_discovery",
@@ -12368,7 +12367,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-26T08:11:11Z",
-      "last_metadata_check": "2026-11-03T07:00:40Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12397,7 +12396,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-03T07:00:40Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.62754%2Fjoe.v4i1.6342",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12414,6 +12413,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "de83012b78c809b7da9e14510501d6cfaf1df2f0b5857f85a51f75f235096858",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-11-03T07:00:40Z"
     },
     {
@@ -12511,7 +12511,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-26T08:11:11Z",
-      "last_metadata_check": "2026-11-03T07:00:40Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12539,7 +12539,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-03T07:00:40Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.58691%2Fman%2F196152",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12556,6 +12556,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "4146cea6712c4bbf963398b9edd355b7b5072ac5e518dda77724b20a71a16be1",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-11-03T07:00:40Z"
     },
     {
@@ -12656,7 +12657,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-26T08:11:11Z",
-      "last_metadata_check": "2026-11-03T07:00:40Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -12684,7 +12685,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-03T07:00:40Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.18196%2Fjai.v26i1.24193",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -12701,6 +12702,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "8577d3a25f99090ca75236c587cc63621226b4424d243e561f625c14ed9e8eed",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-11-03T07:00:40Z"
     },
     {
@@ -24292,7 +24294,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "legal-evidence-provenance",
       "added_at": "2026-11-04T06:44:21Z",
-      "last_metadata_check": "2026-11-04T06:44:21Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for legal evidence and provenance. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -24320,7 +24322,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-04T06:44:21Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.1016%2Fj.jbankfin.2018.05.011",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -24337,6 +24339,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "b9fb3d9b19b2daeebdcf4bb91a95c14991a4377dd962756d9e259d1bf2f3736e",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-11-04T06:44:21Z"
     },
     {
@@ -24521,7 +24524,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "ai-agent-governance",
       "added_at": "2026-11-03T07:00:40Z",
-      "last_metadata_check": "2026-11-04T06:44:21Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for ai governance and agent evaluation. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -24549,7 +24552,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-04T06:44:21Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.1093%2Fcid%2Fciag560",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -24566,7 +24569,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "9f02058c5c21e4e60d6eb3f9eabf922bc71c4e2aa235d1bd3d100c9b9c98c190",
-      "last_metadata_attempt": "2026-11-04T06:44:21Z",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-10-30T06:04:10Z"
     },
     {
@@ -24594,7 +24597,7 @@
       "review_status": "metadata_only",
       "discovery_source_id": "esg-disclosure",
       "added_at": "2026-11-03T07:00:40Z",
-      "last_metadata_check": "2026-11-04T06:44:21Z",
+      "last_metadata_check": "2026-11-26T08:44:04Z",
       "use_for": "Locate and assess this publication for esg disclosure and accountability. The relevance match is available in the exported record.",
       "relevance": {
         "basis": "Title and publisher-supplied subject terms",
@@ -24622,7 +24625,7 @@
         }
       ],
       "verification": {
-        "checked_at": "2026-11-04T06:44:21Z",
+        "checked_at": "2026-11-26T08:44:04Z",
         "source_url": "https://api.crossref.org/works/10.1016%2Fj.iref.2025.104284",
         "revision": null,
         "scope": "Bibliographic fields retrieved from Crossref and checked for required fields, topic fit and duplicates. DOI landing page and full text were not fetched; substantive review remains pending."
@@ -24639,7 +24642,7 @@
       },
       "related_item_ids": [],
       "metadata_sha256": "71922e1ab15ef77e15a015036457238379ec7589b17f447d66c01238c57b5c12",
-      "last_metadata_attempt": "2026-11-04T06:44:21Z",
+      "last_metadata_attempt": "2026-11-26T08:44:04Z",
       "discovered_at": "2026-10-29T00:51:53Z"
     },
     {
@@ -28363,23 +28366,15 @@
     }
   ],
   "changes": {
-    "added": [
-      "discovery-0d2f0be8364771def256",
-      "discovery-51f2f5a9ab26a850ac3b",
-      "discovery-68e40af0fd74fbf8a06b",
-      "discovery-c87e045e77af5e3c86a4",
-      "discovery-e6a9ace7253055ff2de0",
-      "discovery-fcec66c88f0b1675c2f6"
-    ],
+    "added": [],
     "updated": [],
     "flagged": [],
     "superseded": [],
     "rejected": {
-      "unsupported_record_type": 9,
-      "outside_topic": 415,
+      "outside_topic": 435,
+      "missing_or_invalid_metadata": 25,
       "update_notice": 4,
-      "duplicate": 2,
-      "missing_or_invalid_metadata": 24
+      "unsupported_record_type": 4
     }
   },
   "stats": {
@@ -28387,11 +28382,11 @@
     "curated_references": 13,
     "metadata_records": 205,
     "needs_review": 0,
-    "added_this_run": 6,
+    "added_this_run": 0,
     "new_metadata_today": 6,
     "pending": 163,
-    "pending_overflow_this_run": 17,
+    "pending_overflow_this_run": 12,
     "superseded_records": 2
   },
-  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45781021753"
+  "workflow_url": "https://github.com/Albertito-AI/Albertito-AI/actions/runs/45784978772"
 }
