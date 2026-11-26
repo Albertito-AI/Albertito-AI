@@ -353,7 +353,7 @@ use are separate observations. Report only the state actually evidenced.
 Use the citation metadata for the specific software, article, video or dataset
 that supports the result. Retain its creator, title, version or exact commit,
 source URL and relevant location. Follow the original publication record for
-scholarly work. Related works remain separately attributable.
+scholarly work. Related works remain separately attributable. The [release citation index](CITING_PROJECT_RELEASES.md) pairs public GitHub releases with their version DOIs.
 
 RegNav, Source Watch, Symbolon, Tallystick and Atlas Reweave supply project citation
 files. The catalogue links to those files and records gaps where applicable.

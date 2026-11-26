@@ -16,7 +16,7 @@ scholarship, I develop practical research tools and teaching materials.
  · [Listen & Learn](https://alberttansinhon.com/listen-and-learn/)
  · [Zenodo subject collections](https://albertito-ai.github.io/Albertito-AI/lab/#zenodo-collections)
 
-**[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
+**[Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) · [Project whitepapers](wiki/PORTFOLIO.md) · [Cite a project release](docs/CITING_PROJECT_RELEASES.md) · [For agents and builders](docs/AGENT_START_HERE.md) · [Work with me](#work-with-me)**
 
 ## Start here
 
