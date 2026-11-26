@@ -8,6 +8,7 @@ body:
         Share a finding that another reader can check. This issue and your GitHub username will be public. Use aggregate or fictional examples. Omit learner names, individual results, client or case details, confidential material and unpublished manuscripts.
 
         The [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/#reply) explains how to record a field note. [Browse the six subject collections](https://albertito-ai.github.io/Albertito-AI/lab/#zenodo-collections) to find the work you used.
+        For a physical field trial, use the [host’s card and data template](https://github.com/Albertito-AI/Albertito-AI/tree/main/teaching/human-agent-field-trials). Keep individual walk records and consent details with the host. Share the permitted counts, their denominator and any rival explanation here.
   - type: dropdown
     id: collection
     attributes:

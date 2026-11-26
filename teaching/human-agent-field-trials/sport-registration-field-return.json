@@ -1,0 +1,130 @@
+{
+  "protocol": {
+    "title": "Finding the registration desk",
+    "version": "1.0",
+    "resource_type": "Blank field protocol and return template",
+    "facilitator": {
+      "name": "Albert Tan Sin Hon",
+      "orcid": "https://orcid.org/0009-0001-8996-7933"
+    },
+    "facilitator_guide": "https://alberttansinhon.com/explore/facilitator-guide/",
+    "public_return_form": "https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml"
+  },
+  "completion_notes": [
+    "Use one template per site. Null means unrecorded or withheld. Use true or false for permissions. Ask separately for consent to take part and for permission to include the walk in public aggregate counts and a non-identifying summary. A blank or unused row has no outcome.",
+    "Round A consists of two distinct consenting adult first-time route users walking separately. Round B uses two new consenting first-time adults after one host-authorised change. Keep the public directions, exact starting point and exact registration desk constant apart from the change. Complete forecasts on the same brief independently before the first walk.",
+    "Stop at the first event. U = reaches the desk unaided. H = asks for directions. S = stops, withdraws, or an interruption ends the observation. Stop if unsolicited advice or safety requires it. Record the reason and offer help.",
+    "Only a person at the site records an observed walk. A volunteer may stop at any point. A later agent critique of redacted notes is interpretation. Keep participant names and identifying details off the template.",
+    "The completed template stays with the host. Never attach it to the public issue. Keep all individual rows, walk codes, individual outcomes and consent records with the host, even when aggregate inclusion was agreed.",
+    "For the public issue, copy only cleared fields from public_aggregate_return. Each round’s authorised denominator is the number of observed walks cleared for aggregate publication in that round. Count each included walk once. Unaided + help_requested + stopped equals the authorised denominator. Exclude unused rows and walks without current permission. Withhold any count or description that could identify someone, including by subtraction. Share only non-identifying descriptions cleared for publication.",
+    "Keep original observations on their own record. Attribute all work by role or the contributor’s chosen public credit with permission. A second site uses a new template, four new first-time adults and a local host-authorised change. Link separate site returns.",
+    "For return_status use draft, published or corrected. For a correction identify the previous version and what changed. A GitHub issue is public."
+  ],
+  "site_session": {
+    "site_or_event_code": null,
+    "session_or_local_date": null,
+    "public_directions_url_dated_copy_or_reference": null,
+    "exact_start": null,
+    "exact_registration_desk": null,
+    "proposed_change_and_location": null,
+    "authorising_host_role": null,
+    "local_authorisation_reference": null
+  },
+  "predictions_before_first_walk": {
+    "human": {
+      "human_role_or_code": null,
+      "separate_original_time_or_reference": null,
+      "round_A_predicted_unaided_of_two": null,
+      "round_B_predicted_unaided_of_two": null,
+      "reason": null
+    },
+    "agent": {
+      "model_and_version": null,
+      "separate_original_time_or_reference": null,
+      "round_A_predicted_unaided_of_two": null,
+      "round_B_predicted_unaided_of_two": null,
+      "reason": null
+    }
+  },
+  "observations": {
+    "physical_observer_role_or_code": null,
+    "round_A_before": [
+      {
+        "walk_code": "A1",
+        "taking_part_agreed": null,
+        "inclusion_in_public_aggregate_and_non_identifying_summary_agreed": null,
+        "outcome_code": null,
+        "what_physical_observer_saw_or_heard": null
+      },
+      {
+        "walk_code": "A2",
+        "taking_part_agreed": null,
+        "inclusion_in_public_aggregate_and_non_identifying_summary_agreed": null,
+        "outcome_code": null,
+        "what_physical_observer_saw_or_heard": null
+      }
+    ],
+    "single_change_actually_made_and_departures": null,
+    "round_B_after": [
+      {
+        "walk_code": "B1",
+        "taking_part_agreed": null,
+        "inclusion_in_public_aggregate_and_non_identifying_summary_agreed": null,
+        "outcome_code": null,
+        "what_physical_observer_saw_or_heard": null
+      },
+      {
+        "walk_code": "B2",
+        "taking_part_agreed": null,
+        "inclusion_in_public_aggregate_and_non_identifying_summary_agreed": null,
+        "outcome_code": null,
+        "what_physical_observer_saw_or_heard": null
+      }
+    ]
+  },
+  "comparison": {
+    "round_A": {
+      "unaided": null,
+      "observed_walks_included": null
+    },
+    "round_B": {
+      "unaided": null,
+      "observed_walks_included": null
+    },
+    "forecast_comparison_with_observation": null,
+    "rival_explanation": null
+  },
+  "public_aggregate_return": {
+    "round_A_before": {
+      "unaided": null,
+      "help_requested": null,
+      "stopped": null,
+      "authorised_denominator": null
+    },
+    "round_B_after": {
+      "unaided": null,
+      "help_requested": null,
+      "stopped": null,
+      "authorised_denominator": null
+    },
+    "cleared_non_identifying_description": null
+  },
+  "replication": {
+    "other_site_code_or_return": null,
+    "local_difference": null
+  },
+  "contributor_credit": [
+    {
+      "role": null,
+      "chosen_public_credit_or_anonymous": null,
+      "permission_for_this_credit": null
+    }
+  ],
+  "version_record": {
+    "return_status": null,
+    "version": null,
+    "public_record_link": null,
+    "earlier_version_or_link": null,
+    "what_changed_and_why": null
+  }
+}
