@@ -1,8 +1,86 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T08:53:42Z",
+  "generated_at": "2026-11-26T08:11:11Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-fcec66c88f0b1675c2f6",
+      "title": "The Impact of ESG Factors on Investment Decisions: Exploring the Interplay between Sustainability Reporting, Corporate Governance, and Financial Performance",
+      "doi": "10.62754/joe.v4i1.6342",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.62754%2Fjoe.v4i1.6342",
+      "publication_date": "2025-02-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-e6a9ace7253055ff2de0",
+      "title": "Artificial-intelligence-automated machine learning as a tool for evaluating facial rhytid images",
+      "doi": "10.25056/jcm.2023.7.2.60",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.25056%2Fjcm.2023.7.2.60",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c87e045e77af5e3c86a4",
+      "title": "ESG Reporting: Assessing Compliance of Polish Public Companies with EU Taxonomy Guidelines",
+      "doi": "10.58691/man/196152",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.58691%2Fman%2F196152",
+      "publication_date": "2025-01-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-68e40af0fd74fbf8a06b",
+      "title": "Dealing With Semantic Inconsistencies in AI Governance",
+      "doi": "10.4018/979-8-3693-9576-9.ch007",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch007",
+      "publication_date": "2025-06-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-51f2f5a9ab26a850ac3b",
+      "title": "Structural ownership and ESG disclosure: Unveiling their impact on corporate financial performance",
+      "doi": "10.18196/jai.v26i1.24193",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.18196%2Fjai.v26i1.24193",
+      "publication_date": "2025-01-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0d2f0be8364771def256",
+      "title": "Analysis and Evaluation of Interactions in Artificial Intelligence-based English Learning Platforms",
+      "doi": "10.5392/jkca.2023.23.12.767",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.5392%2Fjkca.2023.23.12.767",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-eddbf1d5d8afc467b636",
       "title": "Artificial Intelligence–Enabled Pharmacovigilance: A New Paradigm in Drug Safety Surveillance",
@@ -2617,19 +2695,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-51f2f5a9ab26a850ac3b",
-      "title": "Structural ownership and ESG disclosure: Unveiling their impact on corporate financial performance",
-      "doi": "10.18196/jai.v26i1.24193",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.18196%2Fjai.v26i1.24193",
-      "publication_date": "2025-01-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-7e8d5d9c413059cdaa42",
       "title": "The relationship between ESG, financial performance, and cost of debt: the role of independent assurance",
       "doi": "10.1080/23311975.2024.2437137",
@@ -2666,32 +2731,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.15388%2Fekon.2021.100.2.9",
       "publication_date": "2021-11-25",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-c87e045e77af5e3c86a4",
-      "title": "ESG Reporting: Assessing Compliance of Polish Public Companies with EU Taxonomy Guidelines",
-      "doi": "10.58691/man/196152",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.58691%2Fman%2F196152",
-      "publication_date": "2025-01-10",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-fcec66c88f0b1675c2f6",
-      "title": "The Impact of ESG Factors on Investment Decisions: Exploring the Interplay between Sustainability Reporting, Corporate Governance, and Financial Performance",
-      "doi": "10.62754/joe.v4i1.6342",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.62754%2Fjoe.v4i1.6342",
-      "publication_date": "2025-02-09",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3722,19 +3761,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-0d2f0be8364771def256",
-      "title": "Analysis and Evaluation of Interactions in Artificial Intelligence-based English Learning Platforms",
-      "doi": "10.5392/jkca.2023.23.12.767",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.5392%2Fjkca.2023.23.12.767",
-      "publication_date": "2023-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-14ebf887c9156206a9c7",
       "title": "Nonfinancial reporting regulation and challenges in sustainability disclosure and corporate governance practices",
       "doi": "10.1002/bse.2509",
@@ -3770,19 +3796,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.26772%2Fcijds-2023-06-02-06",
-      "publication_date": "2023-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-e6a9ace7253055ff2de0",
-      "title": "Artificial-intelligence-automated machine learning as a tool for evaluating facial rhytid images",
-      "doi": "10.25056/jcm.2023.7.2.60",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.25056%2Fjcm.2023.7.2.60",
       "publication_date": "2023-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -3823,19 +3836,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.26772%2Fcijds-2023-06-02-03",
       "publication_date": "2023-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-68e40af0fd74fbf8a06b",
-      "title": "Dealing With Semantic Inconsistencies in AI Governance",
-      "doi": "10.4018/979-8-3693-9576-9.ch007",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch007",
-      "publication_date": "2025-06-05",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -4681,6 +4681,110 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1057%2Fs41299-021-00130-8",
       "publication_date": "2021-12-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-008e52bec575026e5962",
+      "title": "Structural key factors of participatory sustainability reporting for universities",
+      "doi": "10.1108/ijshe-08-2018-0139",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fijshe-08-2018-0139",
+      "publication_date": "2019-10-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-0399bc4c6006d9713862",
+      "title": "Investigating Web-Based Sustainability Reporting in Italian Public Universities in the Era of Covid-19",
+      "doi": "10.3390/su13063468",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu13063468",
+      "publication_date": "2021-03-21",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-09d687c9d55cfd727199",
+      "title": "Virtue signaling vs. authenticity: ESG reporting for stakeholder engagement",
+      "doi": "10.1016/j.jbusres.2026.116139",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jbusres.2026.116139",
+      "publication_date": "2026-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-26cff0311c242706f4ae",
+      "title": "Ankya AI - ICR-Driven Intelligent Framework for Handwritten Scripts Evaluation",
+      "doi": "10.1109/mrie72192.2026.11795277",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1109%2Fmrie72192.2026.11795277",
+      "publication_date": "2026-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c80a1f74a555cc53c575",
+      "title": "LiveNews-MCQ: Continuous, Source-Agnostic Evaluation of Large Language Models with Cross-Generated Multiple-Choice Questions from Live News",
+      "doi": "10.1109/smc63593.2026.11788761",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1109%2Fsmc63593.2026.11788761",
+      "publication_date": "2026-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d31f8b5150ee089f1eb6",
+      "title": "Artificial Intelligence in Legal Practice: Empirical Evidence on Adoption, Governance Gaps, and Regulatory Preferences among Indian Legal Professionals",
+      "doi": "10.1109/mrie72192.2026.11795466",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1109%2Fmrie72192.2026.11795466",
+      "publication_date": "2026-09",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d5e6595b0bb8a80e2c70",
+      "title": "Multicenter evaluation of the diagnostic performance of an artificial intelligence-based system for skeletal maturity indicator staging",
+      "doi": "10.1186/s12903-026-10499-9",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1186%2Fs12903-026-10499-9",
+      "publication_date": "2026-11-26",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-f165f7be011b773e1e5a",
+      "title": "CAT-UX: Design Rationale and Formative Prototype Evaluation for AI-Assisted Schema Authoring in a Low-Code Platform",
+      "doi": "10.1109/access.2026.3751440",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1109%2Faccess.2026.3751440",
+      "publication_date": "2026",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
