@@ -1,5 +1,7 @@
 ![Animated black-and-white curiosity vortex, an eight-second seamless loop.](assets/profile-vortex.gif)
 
+# Albert Tan Sin Hon
+
 Let's Go!
 
 I study how institutions turn evidence into decisions, and how those decisions
@@ -8,6 +10,13 @@ the University of Groningen and a Visiting Professor in the Faculty of Law at
 Prince of Songkla University, Thailand. My research examines sustainability
 reporting, legal accountability and regulatory coordination in Asia. Alongside my
 scholarship, I develop practical research tools and teaching materials.
+
+I publish software as [Albertito-AI](https://github.com/Albertito-AI) and make
+music and educational videos as [Bert Chan (陳信宏)](https://www.youtube.com/@chanxinghong).
+My [University of Groningen research profile](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/)
+lists my LLM in Dispute Resolution (University of Aberdeen) and my LLM in Law
+and Technology (Singapore Management University). My publications can be
+identified by [ORCID 0009-0001-8996-7933](https://orcid.org/0009-0001-8996-7933).
 
 [Website](https://alberttansinhon.com/)
  · [info@alberttansinhon.com](mailto:info@alberttansinhon.com)

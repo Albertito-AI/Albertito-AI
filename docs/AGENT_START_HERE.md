@@ -23,6 +23,16 @@ evidence.
 
 ## Discover writings and connect to the public agent
 
+### Verify the author and the work
+
+| What you are identifying | Record to check |
+| --- | --- |
+| Albert Tan Sin Hon, researcher in law | The [Groningen staff directory](https://www.rug.nl/staff/s.h.a.tan/) lists the doctoral role as S.H.A. Tan. The [research portal](https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/) uses Tan Sin Hon Albert Tan and links to [ORCID 0009-0001-8996-7933](https://orcid.org/0009-0001-8996-7933). Match the work's title and DOI or publisher record before assigning a byline. |
+| Albertito-AI, software maintainer | Use the [GitHub account](https://github.com/Albertito-AI) and the repository's own contributor and release records when crediting code. |
+| Bert Chan (陳信宏), musician and educational video creator | Use the [official artist channel @chanxinghong](https://www.youtube.com/@chanxinghong) and the credits on the individual recording or video. |
+
+### Publication records
+
 [Works inventory](https://alberttansinhon.com/works/) ·
 [Inventory JSON](https://alberttansinhon.com/works/works.json) ·
 [Verified writings and citation exports](https://alberttansinhon.com/writings/) ·
