@@ -1,8 +1,112 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T08:44:04Z",
+  "generated_at": "2026-11-27T08:50:16Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-ecafced898222293d57c",
+      "title": "The Cost of Late Governance: A Blast-Radius Model for Pre-Promotion vs. Post-Hoc Policy Enforcement in Autonomous Multi-Agent Data Consumption",
+      "doi": "10.58812/esiscs.v1i02.1244",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.58812%2Fesiscs.v1i02.1244",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d841cf1f781bcccc3f10",
+      "title": "Artificial Intelligence and Governance: Legal Frameworks for Managing Global Diversity",
+      "doi": "10.2991/978-2-38476-426-6_22",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.2991%2F978-2-38476-426-6_22",
+      "publication_date": "2025",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c2f3860431c4b4717065",
+      "title": "Judicial control in ensuring fair and admissible evidence in the criminal procedure of Ukraine",
+      "doi": "10.24144/2788-6018.2025.04.3.40",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.24144%2F2788-6018.2025.04.3.40",
+      "publication_date": "2025-09-14",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7e8d5d9c413059cdaa42",
+      "title": "The relationship between ESG, financial performance, and cost of debt: the role of independent assurance",
+      "doi": "10.1080/23311975.2024.2437137",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1080%2F23311975.2024.2437137",
+      "publication_date": "2024-12-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-7bc1022cd6d645ae8b66",
+      "title": "Legal Entropy in AI Governance",
+      "doi": "10.4018/979-8-3693-9576-9.ch010",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch010",
+      "publication_date": "2025-06-05",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-3c5592c83e492bdb0d6d",
+      "title": "Supply chains (Scope 3) toward sustainable food systems: An analysis of food & beverage processing corporate greenhouse gas emissions disclosure",
+      "doi": "10.1016/j.clpl.2021.100002",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.clpl.2021.100002",
+      "publication_date": "2021-12",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-36fc9b06b368d850f253",
+      "title": "Admissibility of Evidence in Criminal Procedure and Procedural Integrity: Doctrines and Practice (A Comparative Legal Study)",
+      "doi": "10.17721/2413-5372.2025.1-2/22-59",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.17721%2F2413-5372.2025.1-2%2F22-59",
+      "publication_date": "2025",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-21cff8ea20f2036a2ae5",
+      "title": "Determinants of climate change disclosure practices of global hotel companies: Application of institutional and stakeholder theories",
+      "doi": "10.1016/j.tourman.2021.104404",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.tourman.2021.104404",
+      "publication_date": "2022-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-fcec66c88f0b1675c2f6",
       "title": "The Impact of ESG Factors on Investment Decisions: Exploring the Interplay between Sustainability Reporting, Corporate Governance, and Financial Performance",
@@ -2669,45 +2773,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-21cff8ea20f2036a2ae5",
-      "title": "Determinants of climate change disclosure practices of global hotel companies: Application of institutional and stakeholder theories",
-      "doi": "10.1016/j.tourman.2021.104404",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.tourman.2021.104404",
-      "publication_date": "2022-02",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-3c5592c83e492bdb0d6d",
-      "title": "Supply chains (Scope 3) toward sustainable food systems: An analysis of food & beverage processing corporate greenhouse gas emissions disclosure",
-      "doi": "10.1016/j.clpl.2021.100002",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1016%2Fj.clpl.2021.100002",
-      "publication_date": "2021-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-7e8d5d9c413059cdaa42",
-      "title": "The relationship between ESG, financial performance, and cost of debt: the role of independent assurance",
-      "doi": "10.1080/23311975.2024.2437137",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1080%2F23311975.2024.2437137",
-      "publication_date": "2024-12-12",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-b8fdf4114a4f63bbb04b",
       "title": "Exploring the impact of sustainability (ESG) disclosure on firm value and financial performance (FP) in airline industry: the moderating role of size and age",
       "doi": "10.1007/s10668-021-01649-w",
@@ -3839,19 +3904,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-7bc1022cd6d645ae8b66",
-      "title": "Legal Entropy in AI Governance",
-      "doi": "10.4018/979-8-3693-9576-9.ch010",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3693-9576-9.ch010",
-      "publication_date": "2025-06-05",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-8cc8c34db089eb63c1d8",
       "title": "Development and Verification of Artificial Intelligence-based Piping Detection System using 3D GPR Data",
       "doi": "10.7848/ksgpc.2023.41.6.511",
@@ -3861,32 +3913,6 @@
       "review_status": "metadata_only",
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.7848%2Fksgpc.2023.41.6.511",
-      "publication_date": "2023-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-d841cf1f781bcccc3f10",
-      "title": "Artificial Intelligence and Governance: Legal Frameworks for Managing Global Diversity",
-      "doi": "10.2991/978-2-38476-426-6_22",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.2991%2F978-2-38476-426-6_22",
-      "publication_date": "2025",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-ecafced898222293d57c",
-      "title": "The Cost of Late Governance: A Blast-Radius Model for Pre-Promotion vs. Post-Hoc Policy Enforcement in Autonomous Multi-Agent Data Consumption",
-      "doi": "10.58812/esiscs.v1i02.1244",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.58812%2Fesiscs.v1i02.1244",
       "publication_date": "2023-12-31",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
@@ -4785,6 +4811,84 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1109%2Faccess.2026.3751440",
       "publication_date": "2026",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1dfa25d19b8bf048e1c7",
+      "title": "Environmental, Social, and Governance ( ESG ) Reporting and Missing (M) Scores in the Industry 5.0 Era: Broadening Firms' and Investors' Decisions to Achieve Sustainable Development Goals",
+      "doi": "10.1002/sd.3306",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1002%2Fsd.3306",
+      "publication_date": "2024-12-06",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-253673c8fc805362d030",
+      "title": "Advances in artificial intelligence for climate science methods applications and evaluation challenges",
+      "doi": "10.1007/s44163-026-01262-8",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs44163-026-01262-8",
+      "publication_date": "2026-05-13",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-4a17d812c3e870475be5",
+      "title": "Current Use And Evaluation Of Artificial Intelligence And Predictive Models In US Hospitals",
+      "doi": "10.1377/hlthaff.2024.00842",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1377%2Fhlthaff.2024.00842",
+      "publication_date": "2025-01-01",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-9918919082c7accbad5c",
+      "title": "Disclosure de Sustentabilidade e Governança Corporativa: Análise das Publicações em Periódicos Nacionais / Sustainability Disclosure and Corporate Governance: An Analysis of Publications in Brazilian Journals",
+      "doi": "10.34117/bjdv7n12-291",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.34117%2Fbjdv7n12-291",
+      "publication_date": "2021-12-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-abc2c5093ba7bb42673e",
+      "title": "Intellectual capital and sustainability reporting practices in Uganda",
+      "doi": "10.1108/jic-01-2021-0019",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1108%2Fjic-01-2021-0019",
+      "publication_date": "2021-12-29",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-adf556a53a193d29ab82",
+      "title": "Importance of model governance in clinical AI models: case study on the relevance of data drift detection",
+      "doi": "10.1136/bmjdhai-2025-000046",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1136%2Fbmjdhai-2025-000046",
+      "publication_date": "2025-07",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
