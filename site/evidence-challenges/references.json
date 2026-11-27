@@ -1,0 +1,62 @@
+[
+  {
+    "case": "ferry-emissions",
+    "type": "Journal article",
+    "title": "Converging Standards, Divergent Accountability: Sustainability Reporting in Singapore and Thailand",
+    "reference": "Albert Tan Sin Hon, ‘Converging Standards, Divergent Accountability: Sustainability Reporting in Singapore and Thailand’ (2026) European Journal of Comparative Law and Governance, 1–38 (Advance online publication). https://doi.org/10.1163/22134514-bja10122",
+    "source": "https://doi.org/10.1163/22134514-bja10122",
+    "sourceLabel": "Article DOI",
+    "locator": "Abstract, on the distinction between reporting requirements and legal accountability.",
+    "locatorUrl": "https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/",
+    "bibtex": "https://alberttansinhon.com/writings/sustainability-reporting-singapore-thailand/citation.bib",
+    "ris": "https://alberttansinhon.com/writings/sustainability-reporting-singapore-thailand/citation.ris"
+  },
+  {
+    "case": "policy-numbers",
+    "type": "Book",
+    "title": "Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface",
+    "reference": "Albert Tan Sin Hon, Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface (University of Groningen Press 2026). https://doi.org/10.21827/6ac3948159a9e",
+    "source": "https://doi.org/10.21827/6ac3948159a9e",
+    "sourceLabel": "Book DOI",
+    "locator": "Chapter 3, §§3.8.1 and 3.8.5, printed pp. 111–112 and 114–115, on the deed, notice and insurer’s acknowledgement.",
+    "locatorUrl": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=113",
+    "bibtex": "https://alberttansinhon.com/writings/insurance-backed-offshore-liquidity/citation.bib",
+    "ris": "https://alberttansinhon.com/writings/insurance-backed-offshore-liquidity/citation.ris"
+  },
+  {
+    "case": "policy-numbers",
+    "type": "Working paper",
+    "title": "The Shadow Price of Convertibility",
+    "reference": "Albert Tan, ‘The Shadow Price of Convertibility’ (SSRN working paper, written 16 August 2026, posted 5 September 2026). https://doi.org/10.2139/ssrn.7395342",
+    "source": "https://doi.org/10.2139/ssrn.7395342",
+    "sourceLabel": "Paper DOI",
+    "locator": "SSRN abstract, on access to liquidity while the policy remains in force.",
+    "locatorUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7395342",
+    "bibtex": "./references/shadow-price.bib",
+    "ris": "./references/shadow-price.ris"
+  },
+  {
+    "case": "record-book",
+    "type": "Journal article",
+    "title": "Constraint without Succession: External Legal Review and Retained Regulatory Authority in International Sport",
+    "reference": "Albert Tan Sin Hon, ‘Constraint without Succession: External Legal Review and Retained Regulatory Authority in International Sport’ (2026) Sports Law, Policy & Diplomacy Journal 4(1), 45–60. https://doi.org/10.30925/slpdj.4.1.4",
+    "source": "https://doi.org/10.30925/slpdj.4.1.4",
+    "sourceLabel": "Article DOI",
+    "locator": "Printed pp. 46–47, on the distinction between external review and the authority to make the next decision.",
+    "locatorUrl": "https://hrcak.srce.hr/file/505626#page=4",
+    "bibtex": "https://alberttansinhon.com/writings/constraint-without-succession/citation.bib",
+    "ris": "https://alberttansinhon.com/writings/constraint-without-succession/citation.ris"
+  },
+  {
+    "case": "record-book",
+    "type": "Book",
+    "title": "Sport Governance and Administration",
+    "reference": "Albert Tan Sin Hon, Sport Governance and Administration (Tan Sin Hon Albert, corrected digital edition 1.1, 2026). https://doi.org/10.5281/zenodo.24531222",
+    "source": "https://doi.org/10.5281/zenodo.24531222",
+    "sourceLabel": "Edition DOI",
+    "locator": "Companion instrument T01, Scheme of Delegation, for recording who decides and who implements the decision.",
+    "locatorUrl": "https://github.com/Albertito-AI/sport-governance-and-administration/blob/main/tools/T01_scheme_of_delegation.xlsx",
+    "bibtex": "https://alberttansinhon.com/writings/sport-governance-and-administration/citation.bib",
+    "ris": "https://alberttansinhon.com/writings/sport-governance-and-administration/citation.ris"
+  }
+]

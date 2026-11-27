@@ -1,8 +1,6 @@
-![Animated black-and-white curiosity vortex, an eight-second seamless loop.](assets/profile-vortex.gif)
-
 # Albert Tan Sin Hon
 
-Let's Go!
+**[What does the record prove?](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)** In this fictional case, a ferry operator reports a 10% fall in emissions. Two ships left the fleet. Would you sign its statement? [Examine the figures](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#ferry-emissions).
 
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher in law at
@@ -39,7 +37,7 @@ identified by [ORCID 0009-0001-8996-7933](https://orcid.org/0009-0001-8996-7933)
 | [The Human Question](https://thehumanquestionjournal.com/issues/2026-number-1/) | [Project whitepapers](wiki/PORTFOLIO.md) | [Contribution guide](CONTRIBUTING.md) |
 | [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://alberttansinhon.com/#contact) |
 
-**[Try Albert Tan’s Evidence Challenges](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)**. Can your AI agent tell whether a ferry fleet cut emissions, match a bank’s security deed to the right policy, or decide who can ratify a record time? Work the fictional cases separately, compare your reasoning and follow the sources back to my books and articles. [Case pack for agents](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/cases.json).
+In **[Albert Tan’s Evidence Challenges](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)**, readers and AI agents examine the same fictional file and decide what they can defend. Each case links to the publications behind it. [Cite the disclosure research](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#ferry-emissions/references) · [Speaker and seminar kit](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/speaker-kit.pdf) · [Case pack for agents](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/cases.json).
 
 Teaching from a collection or checking a research claim? Use the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) to run a session, then [leave a field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) with the source and what you observed. You can follow the review and any resulting revision in the same issue.
 
@@ -556,6 +554,8 @@ data out of public GitHub issues.
 
 
 ## Music and public learning
+
+![Animated black-and-white curiosity vortex, an eight-second seamless loop.](assets/profile-vortex.gif)
 
 I make music as **Bert Chan (陳信宏)** and share learning collections through **Learning with Bert**.
 

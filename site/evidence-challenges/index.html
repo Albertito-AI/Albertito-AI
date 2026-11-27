@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ed">
-  <meta name="description" content="Work through evidence challenges with a colleague or an AI agent. Inspect each exhibit, test a changed fact and trace the reasoning to Albert Tan Sin Hon’s books and research.">
+  <meta name="description" content="What does the record prove? Work through fictional cases with Albert Tan Sin Hon, find the scholarly sources behind each decision and take a case into your seminar.">
   <meta name="author" content="Albert Tan Sin Hon">
   <link rel="alternate" type="application/json" href="./cases.json" title="Machine-readable case pack">
+  <link rel="describedby" type="application/json" href="./references.json" title="Bibliography for the three cases">
   <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Albert Tan’s Evidence Challenges">
-  <meta property="og:description" content="Can you and your AI agent defend the same answer? Try three cases from Albert Tan Sin Hon’s research.">
+  <meta property="og:description" content="What does the record prove? Albert Tan Sin Hon gives you a file, a decision to make and a chance to change your mind.">
   <meta property="og:url" content="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/">
-  <meta property="og:image" content="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/share.png">
-  <meta property="og:image:alt" content="Albert Tan Sin Hon’s Evidence Challenges: three fictional cases for humans and AI agents.">
+  <meta property="og:image" content="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/record-question.png">
+  <meta property="og:image:alt" content="Albert Tan Sin Hon asks what the record proves when reported ferry emissions fall after two ships leave the fleet.">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Albert Tan’s Evidence Challenges", "url": "https://albertito-ai.github.io/Albertito-AI/evidence-challenges/", "author": {"@type": "Person", "name": "Albert Tan Sin Hon", "url": "https://alberttansinhon.com/", "sameAs": ["https://orcid.org/0009-0001-8996-7933", "https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/"]}, "inLanguage": "en-GB", "datePublished": "2026-11-27", "learningResourceType": "Case exercise", "citation": ["https://doi.org/10.1163/22134514-bja10122", "https://doi.org/10.21827/6ac3948159a9e", "https://doi.org/10.30925/slpdj.4.1.4", "https://doi.org/10.5281/zenodo.24531222"]}</script>
   <title>Albert Tan’s Evidence Challenges</title>
@@ -41,7 +42,9 @@
     h1,h2 { font-family: var(--serif); font-weight: 500; line-height: 1.08; }
     h1 { letter-spacing: -.055em; font-size: clamp(2.75rem, 5.9vw, 5.1rem); }
     h1 em { display: block; font: italic .62em/1.14 var(--serif); letter-spacing: -.04em; color: var(--accent); }
-    .intro { max-width: 32ch; font-size: clamp(1rem, 1.6vw, 1.18rem); line-height: 1.5; }
+    .intro { max-width: 36ch; font-size: clamp(1rem, 1.6vw, 1.18rem); line-height: 1.5; }
+    .intro strong { display: block; margin-bottom: .45rem; color: var(--deep); font: 600 clamp(1.35rem, 2.2vw, 1.75rem)/1.17 var(--serif); }
+    .host-links { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; margin-top: .7rem; font-size: .9rem; }
     main { padding: 2rem 0 3rem; }
     .layout { display: grid; grid-template-columns: minmax(12rem, .78fr) minmax(0, 2.05fr); align-items: start; gap: clamp(1.5rem,4vw,4rem); }
     .side-title, .label { font: 720 .72rem/1.35 var(--sans); text-transform: uppercase; letter-spacing: .13em; }
@@ -91,6 +94,10 @@
       .case-links a { padding: .55rem .55rem .55rem .65rem; }
       .nav-title { font-size: 1rem; }
     }
+    .reference { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+    .reference .label { margin-bottom: .35rem; }
+    .reference .locator { margin-top: .45rem; font-size: .93rem; }
+    .reference .tools { margin-top: .6rem; }
     @media print {
       body,article { background: white; color: black; }
       .wrap, article { padding: 0; }
@@ -114,7 +121,10 @@
       </div>
       <div class="hero">
         <h1><em>Albert Tan’s</em> Evidence Challenges</h1>
-        <p class="intro">Read the exhibits with a colleague or an AI agent. Decide what they establish, then see whether your answer survives a change of fact.</p>
+        <div class="intro">
+          <p><strong>What does the record prove?</strong> Read the exhibits with a colleague or an AI agent. Decide which claim you can defend. Then ask who has the authority to act on it.</p>
+          <div class="host-links"><a href="./speaker-kit.pdf">Speaker and seminar kit</a><a href="./opening-slide.pdf">Opening slide</a></div>
+        </div>
       </div>
     </header>
     <main>
@@ -122,7 +132,7 @@
         <nav aria-labelledby="choose"><p id="choose" class="side-title">Choose a challenge</p><ul id="case-list" class="case-links"></ul></nav>
         <article id="reader" tabindex="-1" aria-label="Challenge">
           <p id="loading" role="status">Loading challenges. You can also <a href="./cases.json">read the case data</a>.</p>
-          <noscript><p>JavaScript displays the interactive reader. The complete cases and sources are available in the <a href="./cases.json">case data</a>.</p></noscript>
+          <noscript><p>Read the <a href="./cases.json">full case data</a>, <a href="./references.json">case bibliography</a> or <a href="https://alberttansinhon.com/writings/">publication records and citation exports</a>.</p></noscript>
         </article>
       </div>
     </main>
@@ -153,12 +163,88 @@
     a.href = url.href;
     return a;
   }
+  let references = [];
+  function addCopyControl(tools, container, options) {
+    const button = el('button', options.button);
+    button.type = 'button';
+    if (options.description) button.setAttribute('aria-label', options.description);
+    const status = el('span', '', 'status');
+    status.setAttribute('role', 'status');
+    const manual = el('div', undefined, 'manual');
+    manual.hidden = true;
+    const field = el('textarea');
+    field.id = options.id;
+    field.rows = options.rows;
+    field.readOnly = true;
+    const label = el('label', options.fallback);
+    label.htmlFor = field.id;
+    manual.append(label, field);
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(options.text);
+        status.textContent = options.done;
+        manual.hidden = true;
+      } catch {
+        field.value = options.text;
+        manual.hidden = false;
+        field.focus();
+        field.select();
+        status.textContent = options.fallback;
+      }
+    });
+    tools.append(button, status);
+    container.append(manual);
+  }
+  function scholarlySources(c) {
+    const works = references.filter(work => work.case === c.id);
+    const block = section(works.length ? 'Cite the scholarship' : 'Books, papers and resources');
+    block.className = 'sources';
+    block.id = c.id + '/references';
+    block.tabIndex = -1;
+    const cited = new Set();
+    if (works.length) block.append(el('p', 'These publications inform the exercise. The exhibits are fictional.'));
+    for (const [index, work] of works.entries()) {
+      const entry = el('div', undefined, 'reference');
+      entry.append(el('p', work.type, 'label'), el('p', work.reference));
+      const locator = el('p', undefined, 'locator');
+      locator.append(sourceLink({title: work.locator, url: work.locatorUrl}));
+      const tools = el('div', undefined, 'tools');
+      entry.append(locator, tools);
+      addCopyControl(tools, entry, {
+        button: 'Copy reference', description: 'Copy reference for ' + work.title,
+        text: work.reference, id: 'reference-' + index, rows: 3,
+        done: 'Reference copied.', fallback: 'Select and copy this reference'
+      });
+      for (const [title, url] of [[work.sourceLabel, work.source], ['BibTeX', work.bibtex], ['RIS', work.ris]]) {
+        const link = sourceLink({title, url});
+        link.setAttribute('aria-label', title + ' for ' + work.title);
+        if (url.startsWith('./references/')) link.download = '';
+        tools.append(link);
+      }
+      cited.add(work.source);
+      cited.add(work.locatorUrl);
+      block.append(entry);
+    }
+    const related = c.sources.filter(source => !cited.has(source.url));
+    if (related.length) {
+      const links = el('ul');
+      for (const source of related) {
+        const item = el('li');
+        item.append(sourceLink(source));
+        links.append(item);
+      }
+      if (works.length) block.append(el('h4', 'Related resources'));
+      block.append(links);
+    }
+    return block;
+  }
   function asBrief(c) {
     return [c.title + ' | Albert Tan’s Evidence Challenges', '',
       'Use the exhibits to answer the questions. Identify the evidence for each conclusion and what remains uncertain. Then reconsider under the changed fact.', '',
       c.scenario, '', ...c.exhibits.map(e => e.label + ': ' + e.text), '',
       ...c.questions.map((q,i) => (i+1) + '. ' + q), '', 'Changed fact: ' + c.changed_fact, '',
       'Books, papers and resources:', ...c.sources.map(s => s.title + ' | ' + s.url), '',
+      'References and citation exports: ' + new URL('#' + encodeURIComponent(c.id) + '/references', location.href).href, '',
       'Albert Tan Sin Hon · https://alberttansinhon.com/', new URL('#' + encodeURIComponent(c.id), location.href).href].join('\n');
   }
   function show(c) {
@@ -173,24 +259,16 @@
     reader.setAttribute('aria-labelledby',title.id);
     header.append(el('p',c.topic,'label'),title,el('p',c.scenario));
     const tools = el('div',undefined,'tools');
-    const copy = el('button','Copy agent brief'); copy.type='button';
     const permalink = el('a','Link to this case','permalink');
     permalink.href = '#' + encodeURIComponent(c.id);
-    const status = el('span','','status'); status.setAttribute('role','status');
-    const manual = el('div',undefined,'manual'); manual.hidden=true;
-    const prompt = el('textarea'); prompt.id='copy-text'; prompt.rows=7; prompt.readOnly=true;
-    const label=el('label','Select and copy this brief'); label.htmlFor=prompt.id; manual.append(label,prompt);
-    copy.addEventListener('click',async () => {
-      const brief = asBrief(c);
-      try {
-        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error();
-        await navigator.clipboard.writeText(brief);
-        status.textContent='Brief copied.'; manual.hidden=true;
-      } catch {
-        prompt.value=brief; manual.hidden=false; prompt.focus(); prompt.select(); status.textContent='Brief ready to copy.';
-      }
+    const bibliography = el('a', 'Sources and citations', 'permalink');
+    bibliography.href = permalink.href + '/references';
+    header.append(tools);
+    addCopyControl(tools, header, {
+      button: 'Copy agent brief', text: asBrief(c), id: 'copy-text', rows: 7,
+      done: 'Brief copied.', fallback: 'Select and copy this brief'
     });
-    tools.append(copy,permalink,status); header.append(tools,manual);
+    tools.append(bibliography, permalink);
     const exhibits=section('Exhibits'); const dl=el('dl');
     c.exhibits.forEach(e=>{const group=el('div',undefined,'exhibit'); group.append(el('dt',e.label),el('dd',e.text)); dl.append(group);});
     exhibits.append(dl);
@@ -199,25 +277,29 @@
     const change=section('Change one fact'); change.append(el('p',c.changed_fact));
     const answer=el('details'); answer.append(el('summary','Compare your reasoning'));
     c.answer.forEach(a=>answer.append(el('p',a)));
-    const sources=section('Books, papers and resources'); sources.className='sources'; const links=el('ul');
-    c.sources.forEach(s=>{const item=el('li'); item.append(sourceLink(s)); links.append(item);});
-    sources.append(links);
-    reader.replaceChildren(header,exhibits,questions,change,answer,sources);
+    reader.replaceChildren(header,exhibits,questions,change,answer,scholarlySources(c));
+    reader.dataset.caseId = c.id;
   }
   function select() {
     const key=location.hash.slice(1);
     if (key === 'reader') return;
-    const c=cases.find(c=>encodeURIComponent(c.id)===key)||cases[0];
+    const citationSuffix = '/references';
+    const caseKey = key.endsWith(citationSuffix) ? key.slice(0, -citationSuffix.length) : key;
+    const c=cases.find(c=>encodeURIComponent(c.id)===caseKey)||cases[0];
     if (c) {
-      show(c);
-      if (focusSelection) { reader.focus(); focusSelection=false; }
+      if (reader.dataset.caseId !== c.id) show(c);
+      if (key === c.id + citationSuffix) document.getElementById(c.id + citationSuffix).focus();
+      else if (focusSelection) reader.focus();
+      focusSelection=false;
     }
   }
   async function initialise() {
     try {
-      const response=await fetch('./cases.json');
-      if (!response.ok) throw new Error();
-      const data=await response.json(); cases=data.cases;
+      const [data, works] = await Promise.all([
+        readJson('./cases.json'), readJson('./references.json').catch(() => [])
+      ]);
+      cases = data.cases;
+      references = Array.isArray(works) ? works : [];
       if (!Array.isArray(cases) || !cases.length) throw new Error();
       for (const c of cases) {
         const li=el('li'); const a=el('a'); a.href='#'+encodeURIComponent(c.id); a.dataset.id=c.id;
@@ -235,6 +317,11 @@
       reader.replaceChildren(el('p','The interactive cases could not be loaded.'));
       const a=el('a','Open the case data'); a.href='./cases.json'; reader.append(a);
     }
+  }
+  async function readJson(path) {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error('Unable to load ' + path);
+    return response.json();
   }
   initialise();
   </script>
