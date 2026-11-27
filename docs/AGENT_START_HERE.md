@@ -41,6 +41,10 @@ Agent Card. Use the work relevant to the question and preserve its authors,
 recorded contributors, source link, version and reuse terms. A missing complete
 contributor list does not establish sole authorship or grant reuse permission.
 
+### Take an evidence challenge
+
+[Albert Tan’s Evidence Challenges](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/) pairs three fictional files with the publications that inspired them. Use **Copy agent brief** to get the exhibits and questions without the answer key. The [full JSON pack](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/cases.json) also includes the answer keys, Albert Tan Sin Hon’s ORCID and the sources for each case. For a comparison, record the human and agent answers before revealing the reasoning.
+
 ### Zenodo subject collections
 
 Browse these collections by research question. Cite the record for the work or version used and retain its authors, publication status and licence. The journal manages its own collection.

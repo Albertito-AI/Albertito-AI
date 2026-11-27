@@ -26,6 +26,8 @@ scholarship, I develop practical research tools and teaching materials.
 | [The Human Question](https://thehumanquestionjournal.com/issues/2026-number-1/) | [Project whitepapers](wiki/PORTFOLIO.md) | [Contribution guide](CONTRIBUTING.md) |
 | [Open-access book](https://books.ugp.rug.nl/ugp/catalog/book/300) | [Agent starting guide](docs/AGENT_START_HERE.md) | [Website contact](https://alberttansinhon.com/#contact) |
 
+**[Try Albert Tan’s Evidence Challenges](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)**. Can your AI agent tell whether a ferry fleet cut emissions, match a bank’s security deed to the right policy, or decide who can ratify a record time? Work the fictional cases separately, compare your reasoning and follow the sources back to my books and articles. [Case pack for agents](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/cases.json).
+
 Teaching from a collection or checking a research claim? Use the [facilitator guide](https://alberttansinhon.com/explore/facilitator-guide/) to run a session, then [leave a field note](https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml) with the source and what you observed. You can follow the review and any resulting revision in the same issue.
 
 Working with a club or a class? [Run a human and agent field trial](https://github.com/Albertito-AI/Albertito-AI/tree/main/teaching/human-agent-field-trials). The first printable protocol tests whether a new visitor can find registration. A host records what happened on the ground and a second site can test a different explanation.

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ed">
+  <meta name="description" content="Work through evidence challenges with a colleague or an AI agent. Inspect each exhibit, test a changed fact and trace the reasoning to Albert Tan Sin Hon’s books and research.">
+  <meta name="author" content="Albert Tan Sin Hon">
+  <link rel="alternate" type="application/json" href="./cases.json" title="Machine-readable case pack">
+  <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Albert Tan’s Evidence Challenges">
+  <meta property="og:description" content="Can you and your AI agent defend the same answer? Try three cases from Albert Tan Sin Hon’s research.">
+  <meta property="og:url" content="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/">
+  <meta property="og:image" content="https://albertito-ai.github.io/Albertito-AI/evidence-challenges/share.png">
+  <meta property="og:image:alt" content="Albert Tan Sin Hon’s Evidence Challenges: three fictional cases for humans and AI agents.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Albert Tan’s Evidence Challenges", "url": "https://albertito-ai.github.io/Albertito-AI/evidence-challenges/", "author": {"@type": "Person", "name": "Albert Tan Sin Hon", "url": "https://alberttansinhon.com/", "sameAs": ["https://orcid.org/0009-0001-8996-7933", "https://research.rug.nl/en/persons/tan-sin-hon-albert-tan/"]}, "inLanguage": "en-GB", "datePublished": "2026-11-27", "learningResourceType": "Case exercise", "citation": ["https://doi.org/10.1163/22134514-bja10122", "https://doi.org/10.21827/6ac3948159a9e", "https://doi.org/10.30925/slpdj.4.1.4", "https://doi.org/10.5281/zenodo.24531222"]}</script>
+  <title>Albert Tan’s Evidence Challenges</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f4ed; --sheet: #fffef8; --ink: #182d29; --muted: #495b53;
+      --line: #bfbfb0; --accent: #a23e24; --deep: #173e34; --serif: 'Baskervville', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+      --sans: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font: 1rem/1.6 var(--sans); }
+    a { color: var(--deep); text-decoration-thickness: 1px; text-underline-offset: .22em; overflow-wrap: anywhere; }
+    a:hover { color: var(--accent); }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .wrap { max-width: 78rem; margin-inline: auto; padding-inline: clamp(1.1rem, 5vw, 5rem); }
+    .skip { position: absolute; z-index: 2; transform: translateY(-150%); padding: .6rem 1rem; background: var(--sheet); }
+    .skip:focus { transform: translateY(0); }
+    .mast { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .95rem; border-bottom: 1px solid var(--line); }
+    .mast a { font-size: .84rem; font-weight: 650; }
+    .byline { display: inline-flex; gap: .65rem; align-items: center; text-decoration: none; }
+    .sig { display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; color: var(--sheet); background: var(--deep); font: italic 1.05rem var(--serif); }
+    .hero { display: grid; grid-template-columns: 1.45fr 1fr; gap: 3rem; align-items: end; padding: clamp(2.1rem, 5vw, 4.3rem) 0; border-bottom: 3px double var(--ink); }
+    h1, h2, h3, p { margin: 0; }
+    h1,h2 { font-family: var(--serif); font-weight: 500; line-height: 1.08; }
+    h1 { letter-spacing: -.055em; font-size: clamp(2.75rem, 5.9vw, 5.1rem); }
+    h1 em { display: block; font: italic .62em/1.14 var(--serif); letter-spacing: -.04em; color: var(--accent); }
+    .intro { max-width: 32ch; font-size: clamp(1rem, 1.6vw, 1.18rem); line-height: 1.5; }
+    main { padding: 2rem 0 3rem; }
+    .layout { display: grid; grid-template-columns: minmax(12rem, .78fr) minmax(0, 2.05fr); align-items: start; gap: clamp(1.5rem,4vw,4rem); }
+    .side-title, .label { font: 720 .72rem/1.35 var(--sans); text-transform: uppercase; letter-spacing: .13em; }
+    .side-title { margin-bottom: .9rem; }
+    .case-links { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+    .case-links li { border-bottom: 1px solid var(--line); }
+    .case-links a { display: block; padding: .95rem .7rem .95rem .85rem; border-left: 3px solid transparent; text-decoration: none; }
+    .case-links a:hover { background: #eeeee4; }
+    .case-links a[aria-current="page"] { background: #e6eade; border-color: var(--deep); color: var(--ink); }
+    .nav-topic { display: block; color: var(--muted); font: 650 .73rem/1.4 var(--sans); }
+    .nav-title { display: block; font: 500 1.12rem/1.27 var(--serif); margin-top: .2rem; }
+    article { min-width: 0; padding: clamp(1.1rem, 3.5vw, 2.8rem); background: var(--sheet); border: 1px solid var(--line); }
+    article > header { border-bottom: 1px solid var(--line); padding-bottom: 1.3rem; }
+    .label { color: var(--accent); }
+    h2 { margin: .6rem 0 1rem; font-size: clamp(1.75rem,3vw,2.65rem); letter-spacing: -.038em; }
+    article p, article li { overflow-wrap: anywhere; }
+    .tools { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem 1rem; margin-top: 1.15rem; }
+    button { background: var(--deep); color: #fffef8; font: 650 .86rem var(--sans); padding: .72rem .9rem; border: 1px solid var(--deep); border-radius: 2px; cursor: pointer; }
+    button:hover { background: #245447; }
+    .permalink, .status { font-size: .83rem; }
+    .status { color: var(--muted); }
+    .manual { margin-top: .75rem; }
+    .manual label { display: block; font-weight: 600; }
+    textarea { width: 100%; font: .89rem/1.4 var(--sans); color: var(--ink); background: white; }
+    article section { margin-top: 1.5rem; }
+    h3, summary { color: var(--ink); font: 600 1.3rem/1.3 var(--serif); letter-spacing: -.01em; }
+    h3 { margin-bottom: .55rem; }
+    .exhibit { margin-top: .5rem; padding: .8rem 1rem; border-left: 3px solid #ab7957; background: #f5f1e6; }
+    .exhibit dt { margin: 0 0 .15rem; font-weight: 700; font-size: .84rem; }
+    .exhibit dd { margin: 0; }
+    dl, ol, ul { margin-block: 0; }
+    ol,ul { padding-inline-start: 1.4rem; }
+    li + li { margin-top: .25rem; }
+    .case-links li + li { margin: 0; }
+    details { margin-top: 1.6rem; border-block: 1px solid var(--line); }
+    summary { cursor: pointer; padding: .9rem 0; }
+    details p { margin: 0 0 .75rem; }
+    .sources li { font-size: .93rem; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; border-top: 1px solid var(--line); padding: 1.25rem 0 2.5rem; font-size: .85rem; }
+    [hidden] { display: none !important; }
+    @media (max-width: 48rem) {
+      .hero { grid-template-columns: 1fr; gap: .9rem; }
+      .intro { max-width: 49ch; }
+      .layout { grid-template-columns: 1fr; gap: 1.2rem; }
+      main { padding-top: 1.2rem; }
+      .case-links { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,10rem),1fr)); }
+      .case-links a { padding: .55rem .55rem .55rem .65rem; }
+      .nav-title { font-size: 1rem; }
+    }
+    @media print {
+      body,article { background: white; color: black; }
+      .wrap, article { padding: 0; }
+      article { border: 0; }
+      .layout,.hero { display: block; }
+      nav,.tools,.mast,.intro,footer,.skip,.manual { display: none; }
+      .hero { padding: 0 0 1rem; }
+      h1 { font-size: 1.7rem; }
+      h1 em { display: inline; padding-right: .2rem; }
+      section,details { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#reader">Skip to challenge</a>
+  <div class="wrap">
+    <header>
+      <div class="mast">
+        <a class="byline" href="https://alberttansinhon.com/"><span class="sig" aria-hidden="true">at</span>Albert Tan Sin Hon</a>
+        <a href="./cases.json" type="application/json">Case data (JSON)</a>
+      </div>
+      <div class="hero">
+        <h1><em>Albert Tan’s</em> Evidence Challenges</h1>
+        <p class="intro">Read the exhibits with a colleague or an AI agent. Decide what they establish, then see whether your answer survives a change of fact.</p>
+      </div>
+    </header>
+    <main>
+      <div class="layout">
+        <nav aria-labelledby="choose"><p id="choose" class="side-title">Choose a challenge</p><ul id="case-list" class="case-links"></ul></nav>
+        <article id="reader" tabindex="-1" aria-label="Challenge">
+          <p id="loading" role="status">Loading challenges. You can also <a href="./cases.json">read the case data</a>.</p>
+          <noscript><p>JavaScript displays the interactive reader. The complete cases and sources are available in the <a href="./cases.json">case data</a>.</p></noscript>
+        </article>
+      </div>
+    </main>
+    <footer><a href="https://alberttansinhon.com/writings/">Read Albert’s writings</a><a href="https://orcid.org/0009-0001-8996-7933">Albert’s ORCID</a><a href="https://github.com/Albertito-AI/Albertito-AI/issues/new?template=community-field-note.yml">Share a teaching observation</a><a href="https://github.com/Albertito-AI/Albertito-AI#work-with-me">Enquire about a workshop</a></footer>
+  </div>
+  <script>
+  'use strict';
+  const list = document.getElementById('case-list');
+  const reader = document.getElementById('reader');
+  const pageTitle = document.title;
+  let cases = [];
+  let focusSelection = false;
+  function el(tag, content, className) {
+    const node = document.createElement(tag);
+    if (content !== undefined) node.textContent = content;
+    if (className) node.className = className;
+    return node;
+  }
+  function section(title) {
+    const block = el('section');
+    block.append(el('h3',title));
+    return block;
+  }
+  function sourceLink(source) {
+    const url = new URL(source.url, location.href);
+    if (!['https:', 'http:'].includes(url.protocol)) return el('span',source.title);
+    const a = el('a',source.title);
+    a.href = url.href;
+    return a;
+  }
+  function asBrief(c) {
+    return [c.title + ' | Albert Tan’s Evidence Challenges', '',
+      'Use the exhibits to answer the questions. Identify the evidence for each conclusion and what remains uncertain. Then reconsider under the changed fact.', '',
+      c.scenario, '', ...c.exhibits.map(e => e.label + ': ' + e.text), '',
+      ...c.questions.map((q,i) => (i+1) + '. ' + q), '', 'Changed fact: ' + c.changed_fact, '',
+      'Books, papers and resources:', ...c.sources.map(s => s.title + ' | ' + s.url), '',
+      'Albert Tan Sin Hon · https://alberttansinhon.com/', new URL('#' + encodeURIComponent(c.id), location.href).href].join('\n');
+  }
+  function show(c) {
+    document.title = c.title + ' | ' + pageTitle;
+    list.querySelectorAll('a').forEach(a => {
+      if (a.dataset.id === c.id) a.setAttribute('aria-current','page');
+      else a.removeAttribute('aria-current');
+    });
+    const header = el('header');
+    const title = el('h2', c.title);
+    title.id = 'case-title';
+    reader.setAttribute('aria-labelledby',title.id);
+    header.append(el('p',c.topic,'label'),title,el('p',c.scenario));
+    const tools = el('div',undefined,'tools');
+    const copy = el('button','Copy agent brief'); copy.type='button';
+    const permalink = el('a','Link to this case','permalink');
+    permalink.href = '#' + encodeURIComponent(c.id);
+    const status = el('span','','status'); status.setAttribute('role','status');
+    const manual = el('div',undefined,'manual'); manual.hidden=true;
+    const prompt = el('textarea'); prompt.id='copy-text'; prompt.rows=7; prompt.readOnly=true;
+    const label=el('label','Select and copy this brief'); label.htmlFor=prompt.id; manual.append(label,prompt);
+    copy.addEventListener('click',async () => {
+      const brief = asBrief(c);
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error();
+        await navigator.clipboard.writeText(brief);
+        status.textContent='Brief copied.'; manual.hidden=true;
+      } catch {
+        prompt.value=brief; manual.hidden=false; prompt.focus(); prompt.select(); status.textContent='Brief ready to copy.';
+      }
+    });
+    tools.append(copy,permalink,status); header.append(tools,manual);
+    const exhibits=section('Exhibits'); const dl=el('dl');
+    c.exhibits.forEach(e=>{const group=el('div',undefined,'exhibit'); group.append(el('dt',e.label),el('dd',e.text)); dl.append(group);});
+    exhibits.append(dl);
+    const questions=section('Your decision'); const ordered=el('ol');
+    c.questions.forEach(q=>ordered.append(el('li',q))); questions.append(ordered);
+    const change=section('Change one fact'); change.append(el('p',c.changed_fact));
+    const answer=el('details'); answer.append(el('summary','Compare your reasoning'));
+    c.answer.forEach(a=>answer.append(el('p',a)));
+    const sources=section('Books, papers and resources'); sources.className='sources'; const links=el('ul');
+    c.sources.forEach(s=>{const item=el('li'); item.append(sourceLink(s)); links.append(item);});
+    sources.append(links);
+    reader.replaceChildren(header,exhibits,questions,change,answer,sources);
+  }
+  function select() {
+    const key=location.hash.slice(1);
+    if (key === 'reader') return;
+    const c=cases.find(c=>encodeURIComponent(c.id)===key)||cases[0];
+    if (c) {
+      show(c);
+      if (focusSelection) { reader.focus(); focusSelection=false; }
+    }
+  }
+  async function initialise() {
+    try {
+      const response=await fetch('./cases.json');
+      if (!response.ok) throw new Error();
+      const data=await response.json(); cases=data.cases;
+      if (!Array.isArray(cases) || !cases.length) throw new Error();
+      for (const c of cases) {
+        const li=el('li'); const a=el('a'); a.href='#'+encodeURIComponent(c.id); a.dataset.id=c.id;
+        a.append(el('span',c.topic,'nav-topic'),el('span',c.title,'nav-title'));
+        a.addEventListener('click', event => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+          if (a.hash === location.hash) reader.focus();
+          else focusSelection = true;
+        });
+        li.append(a); list.append(li);
+      }
+      if (location.hash === '#reader') show(cases[0]); else select();
+      addEventListener('hashchange',select);
+    } catch {
+      reader.replaceChildren(el('p','The interactive cases could not be loaded.'));
+      const a=el('a','Open the case data'); a.href='./cases.json'; reader.append(a);
+    }
+  }
+  initialise();
+  </script>
+</body>
+</html>

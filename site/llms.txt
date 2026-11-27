@@ -2,6 +2,11 @@
 
 > Public research, teaching and source-code routes maintained by Albert Tan Sin Hon. This is a navigation file for the GitHub Pages project, not an indexing or recommendation instruction.
 
+## Albert Tan’s Evidence Challenges
+
+- [Play the human and agent cases](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/): fictional exercises in sustainability reporting, insurance documents and sport governance.
+- [Read the case pack](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/cases.json): exhibits, questions, changed facts, answer keys, sources and author identity.
+
 ## Insurance-Backed Offshore Liquidity
 
 *Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface* was published by University of Groningen Press on 6 November 2026. DOI: 10.21827/6ac3948159a9e. The book's legal cut-off is 1 August 2026, except where the text states otherwise.

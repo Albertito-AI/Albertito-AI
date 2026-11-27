@@ -1,0 +1,157 @@
+{
+  "title": "Albert Tan’s Evidence Challenges",
+  "description": "Fictional cases for people and AI agents to decide what a record establishes, compare their reasoning and trace the method to the underlying publication.",
+  "author": {
+    "name": "Albert Tan Sin Hon",
+    "url": "https://alberttansinhon.com/",
+    "orcid": "https://orcid.org/0009-0001-8996-7933"
+  },
+  "datePublished": "2026-11-27",
+  "url": "https://albertito-ai.github.io/Albertito-AI/evidence-challenges/",
+  "cases": [
+    {
+      "id": "ferry-emissions",
+      "title": "Did the ferry fleet cut emissions?",
+      "topic": "Sustainability reporting",
+      "scenario": "The finance director of fictional Harbour Lantern Ferries proposes telling lenders, “We cut ferry emissions by 10%, independently verified.” Which words would you sign off?",
+      "exhibits": [
+        {
+          "label": "A. 2025 fleet report, p. 4",
+          "text": "Harbour Lantern’s ten ferries emitted 800 tonnes of carbon dioxide in 2025."
+        },
+        {
+          "label": "B. 2026 fleet report, p. 4",
+          "text": "Harbour Lantern’s eight ferries emitted 720 tonnes in 2026. It transferred two vessels to another operator before the year began."
+        },
+        {
+          "label": "C. Vessel reconciliation, schedule 2",
+          "text": "The eight retained ferries accounted for 640 of the 800 tonnes in 2025. Both years use the same calculation method."
+        },
+        {
+          "label": "D. Practitioner’s report, para. 6",
+          "text": "Limited assurance covered the eight ferries’ 2026 fuel quantities. The engagement excluded emissions conversions and comparative figures."
+        }
+      ],
+      "questions": [
+        "Calculate the change across the fleets as reported and the change for the same eight vessels. Give both denominators.",
+        "What can the finance director say to lenders? In 50 words or fewer, distinguish what the company reported from what the practitioner examined."
+      ],
+      "changed_fact": "The practitioner extends limited assurance to the 720-tonne emissions figure. What can the finance director now say about the year-on-year change?",
+      "answer": [
+        "Across the reported fleets the total fell 10%: (720 − 800) ÷ 800. On a like-for-like basis it rose 12.5%: (720 − 640) ÷ 640. The exhibits explain which vessels left the boundary. They do not establish the cause of the increase for the retained vessels.",
+        "Suggested wording: “Reported emissions fell from 800 to 720 tonnes after two ferries transferred (A, B). Emissions from the eight retained vessels rose from 640 to 720 tonnes (B, C). Independent limited assurance covered their 2026 fuel quantities (D).”",
+        "The revised engagement supports a statement about limited assurance of the current 720-tonne figure. Its extension leaves the comparison itself and the prior-year figure outside the evidenced assurance scope."
+      ],
+      "sources": [
+        {
+          "title": "Albert Tan Sin Hon, Converging Standards, Divergent Accountability. European Journal of Comparative Law and Governance",
+          "url": "https://doi.org/10.1163/22134514-bja10122"
+        },
+        {
+          "title": "Groningen publication record and abstract",
+          "url": "https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/"
+        },
+        {
+          "title": "RegNav’s fictional report and restated comparative",
+          "url": "https://github.com/Albertito-AI/policykit#see-the-evidence-in-a-fictional-report"
+        }
+      ]
+    },
+    {
+      "id": "policy-numbers",
+      "title": "The two policy numbers",
+      "topic": "Insurance and trust governance",
+      "scenario": "Three fictional records arrive in a lender’s file. A colleague says the insurer has recorded Elm Bank against the correct policy and the bank ranks first. Which parts of that statement can the file support?",
+      "exhibits": [
+        {
+          "label": "A. Signed deed, 3 June",
+          "text": "North Quay grants Elm Bank security over its interest in policy P-4078."
+        },
+        {
+          "label": "B. Copy of an email sent, 4 June",
+          "text": "North Quay asks the insurer to record Elm Bank against P-4078. The file contains the sent copy."
+        },
+        {
+          "label": "C. Insurer’s reply, 6 June",
+          "text": "The insurer says it entered Elm Bank in its administration system against P-4708."
+        }
+      ],
+      "questions": [
+        "Write a two-sentence file note as at 6 June. What does each document establish about P-4078?",
+        "Specify the first record you would request. Would that record alone establish first priority?"
+      ],
+      "changed_fact": "The insurer supplies a dated entry showing Elm Bank against P-4078 on 8 June. How would your file note differ as at 9 June? What can you say about 6 June?",
+      "answer": [
+        "A identifies P-4078 in the signed deed. B shows a request concerning that policy. In C the insurer reports an entry against P-4708. The record does not show where the discrepancy arose.",
+        "Ask for a dated entry from the insurer’s history for P-4078 identifying Elm Bank and the date of recordation. Priority would require further examination of the rights granted, competing interests and the applicable rules.",
+        "On 9 June the file supports an entry against P-4078 on 8 June. That entry cannot by itself establish what the insurer had recorded on 6 June. The evidence still leaves the priority question open."
+      ],
+      "sources": [
+        {
+          "title": "Albert Tan Sin Hon, Insurance-Backed Offshore Liquidity, ch. 3, §§3.8.1 and 3.8.5, printed pp. 111–112 and 114–115",
+          "url": "https://books.ugp.rug.nl/ugp/catalog/download/300/584/1875#page=113"
+        },
+        {
+          "title": "University of Groningen Press book edition and DOI",
+          "url": "https://doi.org/10.21827/6ac3948159a9e"
+        },
+        {
+          "title": "Open learning companion",
+          "url": "https://alberttansinhon.com/ibol/"
+        },
+        {
+          "title": "Albert Tan, The Shadow Price of Convertibility (working paper)",
+          "url": "https://ssrn.com/abstract=7395342"
+        }
+      ]
+    },
+    {
+      "id": "record-book",
+      "title": "Who can put 42.09 in the record book?",
+      "topic": "Sport governance",
+      "scenario": "A race organiser wants to announce a national record before this evening’s awards. The standing mark is 42.18 seconds. You are the registrar. The federation, rules and court order in this exercise are fictional.",
+      "exhibits": [
+        {
+          "label": "A. Court order",
+          "text": "The court sets aside the refusal to recognise the result. The Records Panel must reconsider it without using the timing supplier’s country of incorporation as a ground for refusal."
+        },
+        {
+          "label": "B. Federation rule 8",
+          "text": "The panel must ratify a faster time when the event result and a calibration certificate valid on race day identify the same timing unit. The registrar may publish a new mark only after the panel signs its decision."
+        },
+        {
+          "label": "C. Event packet",
+          "text": "The signed result records 42.09 seconds using unit L17. The enclosed certificate was valid on race day for unit L71. These are the only records supplied."
+        }
+      ],
+      "questions": [
+        "Draft a two-sentence reply to the organiser. What can be announced today? Cite the exhibit that prevents a premature announcement.",
+        "Who takes the next decision and who publishes the mark?"
+      ],
+      "changed_fact": "Replace the L71 certificate with an authenticated certificate for L17 valid on race day. What is now compulsory? Who still has to act?",
+      "answer": [
+        "The organiser can announce that 42.09 was recorded and that the claim is under reconsideration. The order sets aside the previous refusal. It contains no ratification of the time (A).",
+        "The Records Panel needs to reconcile L17 with L71 (B, C). No exhibit proves a timing error or misconduct. The registrar needs the signed panel decision before publishing a new national mark.",
+        "The matching certificate satisfies rule 8 on these facts. The panel must now ratify and sign. The registrar then publishes. The change fixes the outcome while leaving the panel responsible for making the operative decision."
+      ],
+      "sources": [
+        {
+          "title": "Albert Tan Sin Hon, Constraint without Succession, pp. 46–47",
+          "url": "https://hrcak.srce.hr/file/505626#page=4"
+        },
+        {
+          "title": "Journal article DOI",
+          "url": "https://doi.org/10.30925/slpdj.4.1.4"
+        },
+        {
+          "title": "Albert Tan, Sport Governance and Administration, corrected edition 1.1",
+          "url": "https://doi.org/10.5281/zenodo.24531222"
+        },
+        {
+          "title": "Book companion: scheme of delegation",
+          "url": "https://github.com/Albertito-AI/sport-governance-and-administration/blob/main/tools/T01_scheme_of_delegation.xlsx"
+        }
+      ]
+    }
+  ]
+}

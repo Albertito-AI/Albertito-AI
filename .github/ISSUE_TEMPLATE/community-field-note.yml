@@ -12,10 +12,11 @@ body:
   - type: dropdown
     id: collection
     attributes:
-      label: Which collection does the note concern?
-      description: Choose the closest subject. Mention a second collection in your note if relevant.
+      label: Which collection or teaching resource does the note concern?
+      description: Choose the closest subject or resource. Include the case name if you used an evidence challenge.
       options:
         - ESG Law, Sustainability Disclosure and Regulatory Evidence in Asia
+        - Insurance-Backed Offshore Liquidity and its teaching resources
         - Sport Governance, Administration and Development
         - Alternative Dispute Resolution in Law and Practice
         - Comparative Law, Governance and Legal Education
