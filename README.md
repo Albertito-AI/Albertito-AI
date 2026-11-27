@@ -359,6 +359,7 @@ presence here does not imply university or journal endorsement.
 
 - My paper [*Metaverse Realities*](https://doi.org/10.2139/ssrn.4393422) appears in two discussions of how virtual worlds are governed. [Frosio and Obafemi, footnote 62](https://pure.qub.ac.uk/en/publications/regulating-data-access-in-the-metaverse/), compare approaches to cross-border data flows. [Mauro and Lemma, note 56](https://openreviewmbf.org/2023/05/02/metaverse-economic-entropy-and-market-regulation-processes/), ask what protections people need when they transact in virtual markets.
 - [*Filling the SME credit gap*](https://tckhtm.tmu.edu.vn/j/jots/articles/1972-filling-the-sme-credit-gap-a-systematic-review-of-blockchain-based-sme-finance-literature?lang=en-US) examines whether blockchain-based finance can help small firms obtain credit. Reference 44 lists my [paper on a digital banking and fintech sandbox for Nepal](https://doi.org/10.2139/ssrn.4398919), which considers access to banking for people without an account.
+- [Fornasier, Silva and Nunes (*Revista Direito Mackenzie*, 2024, p. 7)](https://editorarevistas.mackenzie.br/rmd/article/download/17058/12631/80473#page=7) cite my paper [*To Dox or Not to Dox, That Is the Question*](https://doi.org/10.2139/ssrn.4369643) when discussing how doxing can damage a person’s reputation, employment and family life.
 
 <details>
 <summary><strong>The Human Question, books and open teaching materials</strong></summary>
