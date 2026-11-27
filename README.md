@@ -343,6 +343,7 @@ and current maintainer-review status so the work can be inspected directly.
   (2026, advance online publication).
   [Institutional record and access](https://research.rug.nl/en/publications/converging-standards-divergent-accountability-sustainability-repo/)
   · [DOI](https://doi.org/10.1163/22134514-bja10122)
+  · [Companion dataset and primary sources on targets and stakeholders, 2023 and 2025](https://github.com/Albertito-AI/sg-th-disclosure-data)
 - **When Does a Sustainability Report Count as Securities Disclosure in China?
   Channel Integration and Remedial Consequences.** *The Tsinghua China Law Review*
   18(2) (2026), 3-48.
