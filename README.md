@@ -4,6 +4,8 @@
 
 **[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. Warm up with Sudoku, play Nim or Reversi, or [try today’s challenge](https://alberttansinhon.com/math-arcade/#daily). [Read the Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) for replayable positions, proofs and verification code.
 
+[Teach with the six games](https://alberttansinhon.com/math-arcade/teaching/). Download the [teaching guide with worked solutions (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) or the [six printable player sheets (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf).
+
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher in law at
 the University of Groningen and a Visiting Professor in the Faculty of Law at
