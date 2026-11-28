@@ -1117,6 +1117,11 @@
           "kind": "start"
         },
         {
+          "label": "Cite the teaching pack, version 1.0 (Zenodo)",
+          "url": "https://doi.org/10.5281/zenodo.24617751",
+          "kind": "reference"
+        },
+        {
           "label": "Teaching collection on GitHub Pages",
           "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/",
           "kind": "mirror"
