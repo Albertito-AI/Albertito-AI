@@ -1,0 +1,22 @@
+.opponent-cta { background: var(--lilac); color: var(--bg); border: 1px solid var(--lilac); }
+.opponent-cta:hover, .opponent-cta:focus-visible { background: #dfd0ff; }
+.practice-match { margin: .2rem 0 .65rem; }
+.practice-match a { display: inline-flex; align-items: center; min-height: 44px; color: var(--mint); font-weight: 650; text-decoration: underline; text-underline-offset: 4px; }
+.match-room { min-height: 58vh; }
+.match-room #match-title, .match-room #match-game-title { outline: none; margin: .15em 0; line-height: 1.04; letter-spacing: -.052em; font-size: clamp(2rem, 5vw, 3.5rem); }
+.match-poster { padding: clamp(20px, 4vw, 36px); border-radius: 14px 14px 0 0; border: 1px solid var(--line); background: linear-gradient(115deg, #242237, var(--panel)); }
+.match-poster p:last-child { color: var(--sub); max-width: 61ch; margin: .7rem 0 0; font-size: 1.025rem; }
+.match-form { display: grid; justify-items: start; padding: clamp(20px, 4vw, 36px); gap: .6rem; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 14px 14px; }
+.match-form > label, .match-choices label, .match-form legend { font-weight: 650; }
+.match-form select { padding: .65rem .85rem; max-width: 100%; min-height: 44px; width: 22rem; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background-color: var(--panel); }
+.match-form select:focus-visible { outline: 3px solid #efdc87; }
+#match-description { max-width: 56ch; min-height: 2.8rem; margin: .2rem 0 .6rem; color: var(--sub); }
+.match-form fieldset { margin: 0 0 .65rem; padding: 0; border: 0; min-width: 0; }
+.match-form legend { margin-bottom: .55rem; padding: 0; }
+.match-choices { display: flex; flex-wrap: wrap; gap: .45rem; }
+.match-choices label { display: flex; align-items: center; gap: .35rem; min-height: 44px; padding: .4rem .7rem; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; background: var(--panel); }
+.match-choices input { accent-color: var(--mint); margin: 0; }
+.match-choices label:has(:checked) { color: var(--mint); border-color: var(--mint); }
+.match-choices label:has(:focus-visible) { outline: 3px solid #efdc87; outline-offset: 2px; }
+#match-board { margin-top: 1rem; }
+#match-summary { overflow-wrap: anywhere; }

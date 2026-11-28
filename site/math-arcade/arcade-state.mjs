@@ -160,11 +160,13 @@ export function parseRoute(hash, today = todaySG()) {
     if (dayNumber(requestedDay) === null || dayNumber(today) === null) return fallback;
     return { view: 'play', ...dailyPuzzle(requestedDay > today ? today : requestedDay) };
   }
-  if (page !== 'play' || !Object.hasOwn(games, args[0]) || args.length > 3) return fallback;
+  if (page === 'match' && args.length === 0) return { view: 'match-setup', game: 'reversi' };
+  if (!['play', 'match'].includes(page) || !Object.hasOwn(games, args[0]) || args.length > 3) return fallback;
+  if (page === 'match' && args.length === 1) return { view: 'match-setup', game: args[0] };
   const [game, rawLevel, rawSeed] = args;
   if (rawLevel !== undefined && !/^[0-2]$/.test(rawLevel)) return fallback;
   if (rawSeed !== undefined && (!/^\d{1,10}$/.test(rawSeed) || !isSeed(Number(rawSeed)))) return fallback;
-  return { view: 'play', game, level: Number(rawLevel ?? 0), seed: rawSeed === undefined ? null : Number(rawSeed), day: null };
+  return { view: page, game, level: Number(rawLevel ?? 0), seed: rawSeed === undefined ? null : Number(rawSeed), day: null };
 }
 
 function cleanWin(value) {

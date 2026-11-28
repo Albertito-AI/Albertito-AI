@@ -1,9 +1,10 @@
-import { games, levels, todaySG, dailyPuzzle, parseRoute, readWins, addWin, stats, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128b';
+import { games, levels, todaySG, dailyPuzzle, parseRoute, readWins, addWin, stats, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128m1';
+import { mountMatchRoom, matchLink } from './match-room.mjs';
 
 const loaders = {
-  lattice: () => import('./lattice.mjs'),
+  lattice: () => import('./lattice.mjs?v=20261128m1'),
   forge: () => import('./forge.mjs'),
-  parity: () => import('./parity.mjs'),
+  parity: () => import('./parity.mjs?v=20261128m1'),
   sudoku: () => import('./sudoku.mjs?v=20261128b'),
   nim: () => import('./nim.mjs'),
   reversi: () => import('./reversi.mjs')
@@ -151,7 +152,9 @@ async function render(navigated = true) {
   }
   const playing = route.view === 'play';
   const records = route.view === 'record';
-  byId('lobby').hidden = playing || records;
+  const matching = route.view === 'match' || route.view === 'match-setup';
+  byId('match-room').hidden = !matching;
+  byId('lobby').hidden = playing || records || matching;
   byId('player').hidden = !playing;
   byId('records').hidden = !records;
   for (const [id, selected] of [['nav-games', !records], ['nav-record', records]]) {
@@ -159,6 +162,10 @@ async function render(navigated = true) {
     else byId(id).removeAttribute('aria-current');
   }
   document.title = (playing ? games[route.game].name + ' | ' : records ? 'My record | ' : '') + 'Maths Arcade · Albert Tan Sin Hon';
+  if (matching) {
+    unmount = mountMatchRoom(route, { randomSeed, sharePuzzle, focusPage, navigated });
+    return;
+  }
   if (records) {
     recordScreen();
     focusPage('records-title', navigated);
@@ -173,6 +180,9 @@ async function render(navigated = true) {
     return;
   }
   const game = games[route.game];
+  const matchEntry = byId('practice-match');
+  matchEntry.href = '#match/' + route.game;
+  matchEntry.textContent = route.game === 'reversi' ? 'Play a full Reversi match against the agent' : 'Play ' + game.name.replace(' Lab', '') + ' against the agent';
   byId('play-mode').textContent = (route.day ? 'Daily challenge' : 'Practice') + ' / ' + game.genre;
   byId('player-title').textContent = game.name;
   byId('puzzle-label').textContent = '';
@@ -234,7 +244,8 @@ async function render(navigated = true) {
 function puzzleURL(puzzle) {
   const website = ['alberttansinhon.com', 'www.alberttansinhon.com'].includes(location.hostname);
   const url = new URL(website ? 'https://alberttansinhon.com/math-arcade/' : 'https://albertito-ai.github.io/Albertito-AI/math-arcade/');
-  url.hash = puzzle.day ? '#daily/' + puzzle.day : practiceLink(puzzle.game, puzzle.level, puzzle.seed);
+  if (puzzle.view === 'match') url.hash = matchLink(puzzle.game, puzzle.level, puzzle.seed);
+  else url.hash = puzzle.day ? '#daily/' + puzzle.day : practiceLink(puzzle.game, puzzle.level, puzzle.seed);
   return url.href;
 }
 
@@ -257,10 +268,11 @@ async function sharePuzzle(puzzle, status, useShareSheet) {
   if (!puzzle) return;
   const turn = revision;
   const url = puzzleURL(puzzle);
+  const isMatch = puzzle.view === 'match';
   status.replaceChildren();
   if (useShareSheet && typeof navigator.share === 'function') {
     try {
-      await navigator.share({ title: games[puzzle.game].name + ' | Maths Arcade', text: challengePrompts[puzzle.game], url });
+      await navigator.share({ title: (isMatch ? 'Play against the agent' : games[puzzle.game].name) + ' | Maths Arcade', text: isMatch ? 'Try the same starting position and opponent difficulty.' : challengePrompts[puzzle.game], url });
       return;
     } catch (error) {
       if (turn !== revision) return;
@@ -272,15 +284,15 @@ async function sharePuzzle(puzzle, status, useShareSheet) {
   }
   try {
     await navigator.clipboard.writeText(url);
-    if (turn === revision) status.textContent = 'Link copied. Your friend will get the same starting puzzle.';
+    if (turn === revision) status.textContent = isMatch ? 'Match link copied. It opens the same position and difficulty.' : 'Link copied. Your friend will get the same starting puzzle.';
   } catch {
     if (turn !== revision) return;
     const field = document.createElement('input');
     field.type = 'text';
     field.readOnly = true;
     field.value = url;
-    field.setAttribute('aria-label', 'Puzzle link to copy');
-    status.replaceChildren('Select and copy the link to this starting puzzle.', field);
+    field.setAttribute('aria-label', isMatch ? 'Match link to copy' : 'Puzzle link to copy');
+    status.replaceChildren(isMatch ? 'Select and copy the link to this match.' : 'Select and copy the link to this starting puzzle.', field);
     field.focus();
     field.select();
   }
