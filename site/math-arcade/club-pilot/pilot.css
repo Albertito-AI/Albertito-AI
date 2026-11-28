@@ -1,0 +1,52 @@
+.pilot { padding: 0 0 3rem; }
+.pilot .kicker { margin: 0 0 .7rem; color: var(--mint); font: 650 .8rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: .085em; }
+.pilot h1,.pilot h2,.pilot h3 { margin: 0; color: var(--ink); }
+.pilot h1 { font-size: clamp(3.2rem, 7.3vw, 6.5rem); line-height: .91; letter-spacing: -.064em; font-weight: 760; }
+.pilot h1 em { display: block; color: var(--lilac); font-style: normal; }
+.pilot h2 { font-size: clamp(1.8rem,3.1vw,2.85rem); line-height: 1.08; letter-spacing: -.045em; }
+.pilot h3 { font-size: 1.45rem; line-height: 1.16; letter-spacing: -.025em; }
+.pilot p { color: var(--sub); }
+.opening { display: grid; grid-template-columns: minmax(0,1.18fr) minmax(280px,.8fr); gap: clamp(1.6rem,5vw,5rem); margin-block: clamp(2.2rem,6vw,5rem); align-items: center; }
+.opening-copy { max-width: 680px; }
+.opening-copy .lede { max-width: 45ch; font-size: clamp(1.08rem,1.6vw,1.25rem); }
+.pilot .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.pilot .button { display: inline-flex; min-height: 44px; padding: .68rem 1rem; justify-content: center; align-items: center; border: 1px solid var(--line); border-radius: 8px; font-weight: 670; font-size: 1rem; line-height: 1.25; text-align: center; }
+.pilot .solid { color:#15251a; background: var(--mint); border-color: var(--mint); }
+.pilot .line { color: var(--ink); background: #211e2c; }
+.pilot .solid:hover { background: #d8fce2; }
+.pilot .line:hover { background: #322c40; }
+.pilot .caption, .pilot .email-address { font-size: .95rem; }
+.pilot :is(.caption,.email-address) a, .pilot .text-link, .pilot-footer a { text-decoration: underline; text-underline-offset: .22em; }
+.pilot .text-link { color: var(--mint); font-weight: 600; }
+.plan { border: 1px solid #514661; border-radius: 15px; padding: clamp(1.3rem,2.5vw,2.1rem); background: radial-gradient(ellipse at 92% 0, #342946, transparent 75%),#1b1925; }
+.plan .kicker { color: var(--lilac); }
+.plan ol { list-style: none; padding: 0; margin: 1rem 0 0; }
+.plan li { display: grid; grid-template-columns: 5.8rem 1fr; align-items: baseline; padding: .74rem 0; border-top: 1px solid #4a4155; }
+.plan li:last-child { padding-bottom: 0; }
+.plan :is(span,strong) { display: block; }
+.plan time { color: var(--lilac); font: 620 .88rem/1.4 var(--mono); }
+.plan span { color: var(--sub); font-size: 1rem; }
+.organising, .contact, .after { border-top: 1px solid var(--line); padding-block: clamp(2rem,5vw,3.4rem); scroll-margin-top: 1.2rem; }
+.section-intro { max-width: 70ch; }
+.formats { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 1.35rem; }
+.format { display: flex; flex-direction: column; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: clamp(1.1rem,2.5vw,1.8rem); }
+.format .text-link { margin-top: auto; padding-block: .5rem; }
+.window-notice { border-left: 3px solid var(--mint); padding-left: .8em; }
+.contact,.after { display: grid; grid-template-columns: minmax(0,1fr) minmax(270px,.74fr); align-items: start; gap: clamp(1rem,4vw,4.5rem); }
+.pilot .message-card { margin-top: .15rem; padding: 0 1rem; border: 1px solid var(--line); border-radius: 9px; }
+.message-card summary { cursor: pointer; padding: .85rem 0; color: var(--lilac); font-weight: 650; }
+.message-card summary:focus-visible { outline: 3px solid #efdc87; outline-offset: 2px; }
+.mail-body { white-space: pre-wrap; overflow-wrap: anywhere; }
+.pilot-footer { border-top: 1px solid var(--line); }
+.pilot-footer .frame { display: flex; flex-wrap: wrap; gap: .25rem 1.4rem; padding-block: 1.2rem 2rem; }
+.pilot-footer a { padding-block: .55rem; color: var(--sub); }
+@media (max-width: 730px) {
+ .opening, .contact,.after { grid-template-columns: 1fr; }
+ .opening { margin-block: 2.5rem; }
+ .formats { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+ .pilot .actions { align-items: stretch; flex-direction: column; }
+ .plan li { grid-template-columns: 5rem 1fr; }
+ .plan { padding: 1.1rem .9rem; }
+}

@@ -1,0 +1,47 @@
+.nim-game {
+  --nim-accent: #ffba98;
+  --nim-ink: #f7f0eb;
+  --nim-muted: #d0c6c2;
+  color: var(--nim-ink);
+  max-width: 46rem;
+  margin-inline: auto;
+}
+.nim-rules, .nim-report, .nim-lab p { line-height: 1.55; }
+.nim-rules { margin: 0 0 1rem; color: var(--nim-muted); }
+.nim-table { padding: clamp(.8rem, 3vw, 1.3rem); border: 1px solid #63504d; border-radius: 1rem; background: radial-gradient(ellipse at 20% 5%, #382a31, #211e29 78%); }
+.nim-caption, .nim-controls, .nim-small-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.nim-caption { justify-content: space-between; gap: .2rem .6rem; margin-bottom: .8rem; }
+.nim-caption strong { font-size: 1.15rem; }
+.nim-caption span { color: var(--nim-muted); font-size: .9rem; }
+.nim-heaps { display: grid; gap: .4rem; }
+.nim-game button, .nim-game select, .nim-lab summary { font: inherit; }
+.nim-game button, .nim-game select { min-height: 44px; border: 1px solid #766b71; border-radius: .55rem; background: #22212d; color: var(--nim-ink); }
+.nim-game button:not(:disabled), .nim-game select:not(:disabled), .nim-lab summary { cursor: pointer; }
+.nim-game button:focus-visible, .nim-game select:focus-visible, .nim-lab summary:focus-visible { outline: 3px solid #a8f6da; outline-offset: 2px; }
+.nim-game button:disabled, .nim-game select:disabled { opacity: .58; }
+.nim-game .nim-heap { display: grid; grid-template-columns: 1.5rem minmax(0,1fr) 2rem; align-items: center; gap: .55rem; padding: .6rem .7rem; width: 100%; text-align: left; border-color: #544954; }
+.nim-game .nim-heap[aria-pressed="true"] { border-color: var(--nim-accent); box-shadow: inset 3px 0 var(--nim-accent); background: #3c2f32; }
+.nim-heap strong, .nim-count, .nim-binary { font-family: ui-monospace, monospace; }
+.nim-count { text-align: right; color: var(--nim-muted); }
+.nim-tokens { display: flex; align-items: center; flex-wrap: wrap; gap: .28rem; }
+.nim-tokens i { width: clamp(.67rem, 2vw, 1.12rem); aspect-ratio: 1; flex: 0 0 auto; display: block; border-radius: 50%; border: 1px solid #ffceae; background: radial-gradient(at 35% 32%, #ffe3c8, #eb9670 60%, #a75f50); }
+.nim-tokens .nim-removing { border-style: dashed; background: repeating-linear-gradient(135deg, transparent 0 2px, #d39782 2px 4px); }
+.nim-controls { margin: 1rem 0 .4rem; }
+.nim-controls label, .nim-comparisons label { display: inline-flex; align-items: center; flex-wrap: wrap; gap: .55rem; }
+.nim-game select { padding: .4rem .6rem; }
+.nim-game .nim-take { background: var(--nim-accent); color: #2e1b15; border-color: var(--nim-accent); font-weight: 700; padding: .45rem .9rem; }
+.nim-report { margin: .6rem 0; }
+.nim-small-actions button { padding: .4rem .7rem; }
+.nim-lab { margin: 1.1rem 0 0; padding: .35rem .85rem; background: #22212d; border: 1px solid #544954; border-radius: .65rem; }
+.nim-lab summary { padding: .65rem 0; font-weight: 600; }
+.nim-lab p { margin: .45rem 0 .75rem; }
+.nim-binary { overflow-wrap: anywhere; color: var(--nim-accent); }
+.nim-comparisons { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%, 13rem),1fr)); gap: .6rem; }
+.nim-comparisons > div { border-left: 2px solid #8a6557; background: #2c2731; border-radius: .2rem; padding: .65rem; }
+.nim-comparisons label { font-size: .9rem; }
+.nim-comparisons select { max-width: 100%; }
+.nim-comparisons p { margin-bottom: 0; }
+@media (max-width: 32rem) {
+  .nim-game .nim-heap { gap: .3rem; padding: .45rem; grid-template-columns: 1.2rem minmax(0,1fr) 1.6rem; }
+  .nim-tokens { gap: .2rem; }
+}

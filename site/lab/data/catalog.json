@@ -1117,13 +1117,23 @@
           "kind": "start"
         },
         {
+          "label": "Teaching collection on GitHub Pages",
+          "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/",
+          "kind": "mirror"
+        },
+        {
+          "label": "Offline games and teaching PDFs (ZIP)",
+          "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip",
+          "kind": "download"
+        },
+        {
           "label": "Printable player sheets (PDF)",
-          "url": "https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf",
+          "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf",
           "kind": "handout"
         },
         {
           "label": "Teaching guide and solutions (PDF)",
-          "url": "https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf",
+          "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf",
           "kind": "facilitator"
         },
         {

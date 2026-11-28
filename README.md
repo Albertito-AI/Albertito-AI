@@ -2,7 +2,7 @@
 
 **[What does the record prove?](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)** In this fictional case, a ferry operator reports a 10% fall in emissions. Two ships left the fleet. Would you sign its statement? [Examine the figures](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#ferry-emissions).
 
-**[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. Warm up with Sudoku, play Nim or Reversi, or [try today’s challenge](https://alberttansinhon.com/math-arcade/#daily). [Read the Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) for replayable positions, proofs and verification code.
+**[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. [Play the independent GitHub Pages edition](https://albertito-ai.github.io/Albertito-AI/math-arcade/) or [download the offline games and teaching PDFs](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip). Warm up with Sudoku, play Nim or Reversi, or [try today’s challenge](https://alberttansinhon.com/math-arcade/#daily). [Read the Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) for replayable positions, proofs and verification code.
 
 [Teach with the six games](https://alberttansinhon.com/math-arcade/teaching/). Download the [teaching guide with worked solutions (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) or the [six printable player sheets (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf).
 
