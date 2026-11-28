@@ -6,6 +6,8 @@
 
 - [Problem collection](https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/) with stable links to individual problems and [worked proofs on GitHub](https://github.com/Albertito-AI/atlas-open-mathematics/tree/main/research/olympiad).
 
+- [The Odd Parcel](https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/odd-parcel/) is an interactive balance puzzle about identifying a heavier parcel. Its [worked proof](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/olympiad/labs/odd-parcel.md) gives the minimum number of weighings needed in the worst case.
+
 ## Atlas Maths Arcade teaching resources
 
 - [GitHub Pages arcade](https://albertito-ai.github.io/Albertito-AI/math-arcade/), [independent teaching downloads](https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/) and [offline version](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip) offer the games and both teaching PDFs from this host.

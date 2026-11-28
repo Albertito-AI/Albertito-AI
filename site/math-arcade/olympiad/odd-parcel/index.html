@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Odd Parcel | Atlas Math Olympiad</title>
+  <meta name="description" content="Find one heavier parcel using a two-pan balance. Design inspections, read the evidence and prove when a batch can be cleared.">
+  <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/odd-parcel/">
+  <link rel="alternate" href="https://alberttansinhon.com/math-arcade/olympiad/odd-parcel/">
+  <link rel="stylesheet" href="parcel.css"><script type="module" src="parcel.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the inspection bench</a>
+<header><nav class="frame"><a class="brand" href="../">Atlas <strong>Math Olympiad</strong></a><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/olympiad/labs/odd-parcel.md">Proof and teaching notes</a></nav></header>
+<main id="main" class="frame" tabindex="-1">
+  <div class="intro"><div><p class="kicker">Decision lab · Inspection planning</p><h1>The <em>Odd Parcel</em></h1><p>One parcel is heavier. All the others weigh exactly the same. Can you certify which one to set aside using only a two-pan balance?</p></div></div>
+  <form id="batch-form" class="batch" aria-label="Choose a batch">
+    <label>Batch <select id="batch-size"><option value="8">8 parcels · 2 inspections</option><option value="12">12 parcels · 3 inspections</option><option value="27">27 parcels · 3 inspections</option><option value="free">Free play · choose a size</option></select></label>
+    <label id="custom-label" hidden>Parcels <input id="custom-count" type="number" min="1" max="36" step="1" value="15"></label>
+    <button type="submit" id="new-batch">New batch</button><span class="batch-id">Seed <span id="seed"></span></span>
+  </form>
+  <noscript><p>Enable JavaScript to operate the balance. The linked proof and teaching notes can be read without it.</p></noscript>
+  <section class="bench" aria-label="Inspection bench">
+    <div class="bench-head"><h2>Inspection bench</h2><div class="stats"><span>Possible <b id="possible-count">8</b></span><span>Inspections <b id="used-count">0</b><span id="allowance"></span></span></div></div>
+    <div class="workspace">
+      <div class="tray-panel">
+        <fieldset class="tools"><legend>Place parcels on the balance</legend><div>
+          <label><input type="radio" name="tool" id="left-tool" value="left" checked><span>Left pan</span></label>
+          <label><input type="radio" name="tool" id="right-tool" value="right"><span>Right pan</span></label>
+          <label><input type="radio" name="tool" id="off-tool" value="off"><span>Take off</span></label>
+        </div></fieldset>
+        <p class="help">Choose a pan, then tap a parcel to place it. Tap it again to take it off. Cleared parcels can still balance the count.</p>
+        <div class="quick"><label for="group-size">Possible parcels per pan</label><input id="group-size" type="number" min="1" step="1" required value="1"><button id="fill" type="button">Load groups</button></div>
+        <div id="parcels" class="parcels" role="group" aria-label="Parcels and pan assignments"></div>
+      </div>
+      <div class="instrument"><div class="instrument-head"><h3>Balance</h3><span id="load-counts">Left 0 · Right 0</span></div>
+        <div class="scale" aria-hidden="true"><div class="beam"><b></b><i></i></div><div class="pillar"></div></div>
+        <p id="reading" role="status" aria-live="polite" aria-atomic="true">Ready for inspection.</p>
+        <p id="selection-state" class="help">Load the same number of parcels on each pan.</p>
+        <div class="actions"><button id="weigh" type="button" class="primary">Weigh parcels</button><button id="clear-pans" type="button">Clear pans</button></div>
+        <p id="budget-insight" class="insight" hidden></p>
+      </div>
+    </div>
+    <div class="decision"><form id="guess-form"><label for="guess">Identify the heavier parcel</label><div><select id="guess"></select><button id="identify" type="submit">Identify</button></div></form>
+      <p id="verdict" role="status" aria-live="polite" aria-atomic="true">A valid identification must explain every reading.</p>
+    </div>
+  </section>
+  <section id="investigate" aria-label="Inspection analysis"><div class="secondary"><div><h2>Inspection record</h2><p id="empty-history">Your first weighing will appear here.</p><ol id="history"></ol></div>
+    <div><h2>Stuck on a batch?</h2><button id="hint" type="button">Ask for a hint</button><p id="hint-text" aria-live="polite"></p>
+      <details><summary>How the balance picks a reading</summary><p>Before each inspection, several labels may still fit the evidence. The lab chooses the reading that keeps the most labels possible. The seed settles equal choices. Every reading remains consistent with one fixed heavier parcel. Your job is to make even the least informative reading useful.</p></details>
+      <details><summary>Reveal the inspection bound</summary><p>One weighing has three possible readings. Two weighings can distinguish at most 9 labels, three at most 27. In general, k weighings can distinguish at most 3ᵏ labels. To guarantee identification among N parcels, choose the smallest integer k with 3ᵏ ≥ N.</p><p>The bound is attainable. With m possible parcels, set g to the nearest integer to m/3. Weigh g possible parcels against g others and leave the rest off. Each possible group then has at most ⌈m/3⌉ members. Repeat on the group matching the reading. For one remaining parcel, no more weighing is needed.</p></details>
+      <details><summary>Try the inspection at a table</summary><p>Give eight identical opaque envelopes to a partner. Ask them to put the same number of identical counters in each, then add one extra counter to just one envelope. With a balance sensitive enough to show the difference, record your weighings and your identification. Repeat with the heavier envelope moved. Which inspection plan would you use before accepting a 12-envelope delivery?</p></details>
+    </div></div>
+  </section>
+  <div class="share"><a id="batch-link" href="#">Link to this starting batch</a><button type="button" id="share">Copy batch link</button><span id="share-status" role="status"></span></div>
+</main>
+<footer><nav class="frame"><a href="../">Back to Atlas Math Olympiad</a><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/olympiad/labs/odd-parcel.md">Inspect the proof on GitHub</a></nav></footer>
+</body></html>
