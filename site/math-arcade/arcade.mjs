@@ -128,6 +128,10 @@ async function render(navigated = true) {
   }
   lastPractice = route;
   const game = games[route.game];
+  const friendLink = byId('practice-friend');
+  const friendURL = new URL(friendLink.href);
+  friendURL.search = new URLSearchParams({game: route.game, level: route.level});
+  friendLink.href = friendURL.href;
   const matchEntry = byId('practice-match');
   matchEntry.href = '#match/' + route.game;
   matchEntry.textContent = route.game === 'reversi' ? 'Play a full Reversi match against the agent' : 'Play ' + game.name.replace(' Lab', '') + ' against the agent';
