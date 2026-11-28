@@ -1,0 +1,7 @@
+// Further investigations for edition 1.0.0. These questions are separate from the proved results.
+export default {
+  'last-counter': 'Let the price of a trade vary from bench to bench: on successive benches require 2, 3 and 2 counters to send one onwards. Find weights that stay unchanged at the first two benches. Enumerate small starting positions and look for a reachability test. Which part of your argument still works for an arbitrary cyclic list of integer prices at least two?',
+  'shifted-squares': 'Replace both squaring machines by cubing machines, with outputs P(n³) and P(n³ + c). Begin with monic linear polynomials and prove your complete list for that degree. Which restrictions on the roots survive in higher degree? Separate a proved restriction from a classification you have only tested.',
+  'three-turn-triangle': 'Keep the cyclic labels but replace the anticlockwise 90° turn in every pass by 60°. First test settings 1/2 and 1/6 on a non-equilateral triangle. Can any real third setting restore every labelled triangle up to a real scaling about its centroid? Explain whether a single test triangle can establish or refute your claim.',
+  'two-missing-lamps': 'Remove four points from a four-dimensional binary affine flat. Compare the intact cube counts when the four missing points form a plane and when they are affinely independent. Prove your counts by inclusion and exclusion or exhaustive enumeration, then ask which pattern you would predict for four missing points in higher dimension.'
+};

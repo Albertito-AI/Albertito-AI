@@ -4,6 +4,8 @@
 
 **[Play the Math Arcade](https://albertito-ai.github.io/Albertito-AI/math-arcade/)**. Can the move that makes the board look worse be the one that wins? [Try today’s challenge](https://albertito-ai.github.io/Albertito-AI/math-arcade/#daily) · [Download for offline play](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip) · [Original site](https://alberttansinhon.com/math-arcade/) · [Working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/).
 
+**[Try the Atlas Math Olympiad](https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/)**. Choose a problem, write down an argument, then compare it with the [worked proof](https://github.com/Albertito-AI/atlas-open-mathematics/tree/main/research/olympiad).
+
 [Teach with the six games](https://alberttansinhon.com/math-arcade/teaching/). Download the [teaching guide with worked solutions (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) or the [six printable player sheets (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf).
 
 [Browse the 102-record public resource library](https://albertito-ai.github.io/Albertito-AI/public-library/) for books, articles, games and teaching materials, or [download the directory to read offline](https://albertito-ai.github.io/Albertito-AI/public-library/public-library-offline.zip).
