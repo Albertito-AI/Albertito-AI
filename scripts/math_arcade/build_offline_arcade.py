@@ -38,19 +38,19 @@ Albert Tan Sin Hon and Atlas Open Mathematics
 
 English
 1. Extract the whole ZIP into one folder. Double-click Maths_Arcade.html and open it in a current desktop browser with JavaScript enabled. There is no installation or server to start.
-2. Choose a game, the daily challenge, or a fixed opening under “Practise with the player sheets”. All six games run locally. Teaching guide and player sheets open the two PDF files in this folder. The game interface and PDFs are in English.
+2. Play a solo game, play a match against the local computer opponent, try the daily challenge, or choose a fixed opening under “Practise with the player sheets”. All six games run locally. Teaching guide and player sheets open the two PDF files in this folder. The game interface and PDFs are in English.
 3. On phones or managed devices that cannot open local HTML games, use the two PDFs directly. The printed QR codes and online puzzle links need internet access. For the same task offline, choose its opening or transfer link in the HTML.
 4. Daily challenges use the device clock and the Singapore calendar date. Browser privacy settings and moving the file can affect saved progress. If storage is unavailable the current visit remains playable. The international website and research papers are optional online references.
 
 简体中文
 1. 将整个 ZIP 压缩包解压到同一个文件夹。在电脑上双击 Maths_Arcade.html，用已启用 JavaScript 的新版浏览器打开。无需安装，也无需启动服务器。
-2. 选择六款游戏之一、每日挑战或“Practise with the player sheets”中的指定题目。全部游戏均可离线运行。教学指南和练习单是同一文件夹中的两份 PDF。游戏界面和 PDF 使用英语。
+2. 选择单人游戏、与本机电脑对战、每日挑战或“Practise with the player sheets”中的指定题目。全部游戏均可离线运行。教学指南和练习单是同一文件夹中的两份 PDF。游戏界面和 PDF 使用英语。
 3. 若手机或受管理的设备无法打开本地 HTML 游戏，可直接打开两份 PDF。纸上的二维码和在线题目链接需要联网。离线时，请在 HTML 内选择对应的起始题（Opening）或迁移题（Transfer）。
 4. 每日挑战按设备时钟和新加坡日期更新。浏览器的隐私设置或文件位置变动可能影响进度保存。无法保存时，仍可在本次打开期间继续游戏。
 
 繁體中文
 1. 將整個 ZIP 壓縮檔解壓縮到同一個資料夾。在電腦上按兩下 Maths_Arcade.html，以已啟用 JavaScript 的新版瀏覽器開啟。毋須安裝，亦毋須啟動伺服器。
-2. 選擇六款遊戲之一、每日挑戰，或「Practise with the player sheets」內的指定題目。全部遊戲均可離線運作。教學指南和練習紙是同一個資料夾內的兩份 PDF。遊戲介面和 PDF 使用英文。
+2. 選擇單人遊戲、與本機電腦對戰、每日挑戰，或「Practise with the player sheets」內的指定題目。全部遊戲均可離線運作。教學指南和練習紙是同一個資料夾內的兩份 PDF。遊戲介面和 PDF 使用英文。
 3. 如手機或受管理的裝置無法開啟本機 HTML 遊戲，可直接開啟兩份 PDF。紙上的二維碼和網上題目連結需要連線。離線時，請在 HTML 內選擇對應的起始題（Opening）或遷移題（Transfer）。
 4. 每日挑戰按裝置時間及新加坡日期更新。瀏覽器的私隱設定或檔案位置改變可能影響進度儲存。無法儲存時，仍可在本次開啟期間繼續遊戲。
 
@@ -137,6 +137,12 @@ def build(src, repo, output):
                   lambda _: '<script type="module" src="'+module('arcade.mjs')+'"></script>', text, count=1)
     if 'arcade.mjs' not in modules or not all(slug+'.mjs' in modules for _,slug,_,_ in GAMES):
         raise ValueError('One or more of the six games was absent from the built modules')
+    if 'id="match-room"' in text:
+        expected = {'match-room.mjs', *(f'match-{slug}.mjs' for _, slug, _, _ in GAMES)}
+        if missing := expected.difference(modules):
+            raise ValueError('Missing match modules: ' + ', '.join(sorted(missing)))
+        text = change_once(text, 'href="teaching/">Teaching guide</a>',
+                           'href="' + GUIDE + '">Teaching guide (PDF)</a>')
     text = text.replace('href="/"', 'href="https://alberttansinhon.com/"')
     text = change_once(text, '>Copy puzzle link</button>', '>Copy online puzzle link</button>')
     text = change_once(text, '<title>Maths Arcade |', '<title>Offline Maths Arcade |')

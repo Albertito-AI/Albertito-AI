@@ -109,7 +109,7 @@ function element(tag, cssClass, text) {
   return el;
 }
 
-export function mount(root, { level, seed, onWin }) {
+export function mount(root, { level, seed, onWin, onMove, competitive = false }) {
   const { size, board: opening, par } = generate(level, seed);
   let board = opening;
   let history = [];
@@ -165,7 +165,9 @@ export function mount(root, { level, seed, onWin }) {
   const message = element('p', 'parity-message');
   message.setAttribute('role', 'status');
   message.setAttribute('aria-live', 'polite');
-  panel.append(intro, stage, metrics, actions, message);
+  panel.append(intro, stage, metrics);
+  if (!competitive) panel.append(actions);
+  panel.append(message);
   root.replaceChildren(panel);
 
   function showPreview() {
@@ -200,6 +202,7 @@ export function mount(root, { level, seed, onWin }) {
     message.textContent = '';
     finished = board === 0;
     render();
+    onMove?.(history.length);
     if (finished) {
       const details = history.length + ' moves · shortest solution ' + par;
       message.textContent = 'All lights off. ' + details + '.';

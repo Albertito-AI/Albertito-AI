@@ -13,8 +13,8 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Maths Arcade", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/", "inLanguage": "en-GB", "description": "Six free browser games exploring number placement, geometry, exact arithmetic, parity, Nim strategy and Reversi endgames.", "publisher": {"@type": "Person", "name": "Albert Tan Sin Hon", "url": "https://alberttansinhon.com/"}, "hasPart": [{"@type": "VideoGame", "name": "Sudoku", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/sudoku", "genre": "Mathematical puzzle", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}, {"@type": "VideoGame", "name": "Lattice Dash", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/lattice", "genre": "Mathematical puzzle", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}, {"@type": "VideoGame", "name": "Target Forge", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/forge", "genre": "Mathematical puzzle", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}, {"@type": "VideoGame", "name": "Parity Lights", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/parity", "genre": "Mathematical puzzle", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}, {"@type": "VideoGame", "name": "Nim Lab", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/nim", "genre": "Combinatorial games", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}, {"@type": "VideoGame", "name": "Reversi Endgame Lab", "url": "https://albertito-ai.github.io/Albertito-AI/math-arcade/#play/reversi", "genre": "Board strategy", "gamePlatform": "Web browser", "isAccessibleForFree": true, "inLanguage": "en-GB"}], "relatedLink": "https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/"}</script>
   <meta name="theme-color" content="#12121c">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="arcade.css?v=20261128c"><link rel="stylesheet" href="lattice.css"><link rel="stylesheet" href="forge.css"><link rel="stylesheet" href="parity.css"><link rel="stylesheet" href="sudoku.css"><link rel="stylesheet" href="nim.css"><link rel="stylesheet" href="reversi.css">
-  <script type="module" src="arcade.mjs?v=20261128c"></script>
+  <link rel="stylesheet" href="arcade.css?v=20261128m1"><link rel="stylesheet" href="lattice.css"><link rel="stylesheet" href="forge.css"><link rel="stylesheet" href="parity.css"><link rel="stylesheet" href="sudoku.css"><link rel="stylesheet" href="nim.css"><link rel="stylesheet" href="reversi.css"><link rel="stylesheet" href="match.css"><link rel="stylesheet" href="match-paths.css">
+  <script type="module" src="arcade.mjs?v=20261128m1"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -33,7 +33,7 @@
         <div class="eyebrow"><span class="crosshair" aria-hidden="true"></span> Atlas Open Mathematics</div>
         <h1 id="hero-title">Maths <em>Arcade.</em></h1>
         <p>Warm up with Sudoku, play the last counter in Nim or find your best move in a Reversi endgame. Pick a first move with a friend. Can you explain it in ten words?</p>
-        <div class="hero-actions"><a href="#daily" class="action primary"><span class="play-glyph" aria-hidden="true"></span><span id="daily-cta">Play today’s challenge</span></a><button type="button" id="share-daily" class="action ghost">Challenge a friend</button><a href="#play/sudoku" class="action ghost">Warm up with Sudoku</a></div>
+        <div class="hero-actions"><a href="#daily" class="action primary"><span class="play-glyph" aria-hidden="true"></span><span id="daily-cta">Play today’s challenge</span></a><a href="#match" class="action opponent-cta">Play against the agent</a><button type="button" id="share-daily" class="action ghost">Challenge a friend</button><a href="#play/sudoku" class="action ghost">Warm up with Sudoku</a></div>
         <div id="daily-share-status" class="share-status" role="status"></div>
       </div>
     </section>
@@ -62,7 +62,7 @@
         </a>
         <a href="#play/reversi" class="game-card reversi-card">
           <div class="card-art"><img src="art/reversi.webp" width="520" height="212" alt="" loading="lazy"></div>
-          <div class="card-copy"><span class="genre"><i aria-hidden="true"></i> Board strategy</span><h3>Reversi Endgame Lab</h3><p>Find the move that gives you the best final disc margin, even against perfect replies.</p><span class="card-play"><span class="play-glyph" aria-hidden="true"></span> Play Reversi Endgame Lab</span></div>
+          <div class="card-copy"><span class="genre"><i aria-hidden="true"></i> Board strategy</span><h3>Reversi Endgame Lab</h3><p>Find the best endgame move, or play the agent from the four-disc opening.</p><span class="card-play"><span class="play-glyph" aria-hidden="true"></span> Play Reversi Endgame Lab</span></div>
         </a>
       </div>
       <p class="notes-link"><a href="offline/Maths_Arcade_Offline.zip" download>Get all six games for offline play (ZIP) · <span lang="zh-Hans">下载离线版</span> · <span lang="zh-Hant">下載離線版</span></a> <a href="../public-library/">Browse Albert’s public library</a> <a href="https://alberttansinhon.com/math-arcade/">Original Maths Arcade website ↗</a></p>
@@ -77,12 +77,42 @@
   <section id="player" class="player" hidden aria-labelledby="player-title">
     <a class="back" href="#games">‹ &nbsp;All games</a>
     <div class="play-heading"><div><p id="play-mode" class="eyebrow"></p><h1 id="player-title" tabindex="-1"></h1></div><div class="play-tools"><button id="share-puzzle" type="button" hidden>Share puzzle</button><button id="copy-link" type="button">Copy puzzle link</button><a href="#record">My record</a></div></div>
+    <p class="practice-match"><a id="practice-match" href="#match">Play against the agent</a></p>
     <div id="status" class="share-status" role="status"></div>
     <div class="settings"><div class="levels" id="levels" role="group" aria-label="Difficulty"></div><span id="puzzle-label" class="mono"></span></div>
     <div id="game-board"></div>
     <div id="win-panel" class="win-panel" hidden tabindex="-1"><span class="eyebrow">Solved</span><h2 id="win-heading">Puzzle complete</h2><p id="win-details"></p><p id="win-explanation"></p><div class="win-actions"><button type="button" id="again" class="action primary">Play a fresh puzzle</button><button type="button" id="share-win" class="action ghost">Challenge a friend</button><a href="#record" class="action ghost">View my record</a></div><div id="win-share-status" class="share-status" role="status"></div></div>
     <div class="bottom-actions"><button class="text-button" type="button" id="shuffle">Deal a fresh puzzle</button></div>
     <p class="notes-link"><a href="teaching/">Teach this game</a> <a href="https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/">Explore the mathematics behind the games <span aria-hidden="true">↗</span></a></p>
+  </section>
+  <section id="match-room" class="player match-room" aria-labelledby="match-title" hidden>
+    <a class="back" href="#games">‹ &nbsp;All games</a>
+    <div id="match-setup">
+      <div class="match-poster">
+        <div><p class="eyebrow">Opponent mode</p><h1 id="match-title" tabindex="-1">Play against the agent</h1><p>Take the other side of the board in Reversi or Nim. In the four puzzle games, you and the agent each tackle the same starting position.</p></div>
+      </div>
+      <form id="match-form" class="match-form">
+        <label for="match-game">Game</label>
+        <select id="match-game" name="game">
+          <option value="reversi">Reversi</option><option value="nim">Nim</option><option value="sudoku">Sudoku</option><option value="lattice">Lattice Dash</option><option value="forge">Target Forge</option><option value="parity">Parity Lights</option>
+        </select>
+        <p id="match-description"></p>
+        <fieldset id="match-strength"><legend>Opponent difficulty</legend>
+          <div class="match-choices">
+            <label><input type="radio" name="difficulty" value="0" checked> Easy</label>
+            <label><input type="radio" name="difficulty" value="1"> Medium</label>
+            <label><input type="radio" name="difficulty" value="2"> Hard</label>
+          </div>
+        </fieldset>
+        <button type="submit" id="match-start" class="action primary">Start match</button>
+      </form>
+    </div>
+    <div id="match-play" hidden>
+      <div class="play-heading"><div><p class="eyebrow" id="match-mode"></p><h1 id="match-game-title" tabindex="-1"></h1></div><div class="play-tools"><button type="button" id="match-share">Share match</button><a id="match-change" href="#match">Change opponent</a></div></div>
+      <div class="share-status" id="match-share-status" role="status"></div>
+      <div id="match-board"></div>
+      <section id="match-result" class="win-panel" tabindex="-1" aria-labelledby="match-result-title" hidden><h2 id="match-result-title"></h2><p id="match-summary"></p><div class="win-actions"><button id="match-rematch" type="button" class="action primary">New match</button><a id="match-lesson" class="action ghost" href="teaching/">Teaching guide</a></div></section>
+    </div>
   </section>
   <section id="records" class="records" hidden aria-labelledby="records-title"><a class="back" href="#games">‹ &nbsp;All games</a><p class="eyebrow">On this browser</p><h1 id="records-title" tabindex="-1">My record</h1><p class="record-intro">Track your solved puzzles and daily streak. Playing the same puzzle again counts once.</p>
     <div class="stat-strip"><div><span id="record-total">0</span><p>Puzzles solved</p></div><div><span id="record-streak">0</span><p>Daily streak</p></div><div><span id="record-days">0</span><p>Daily challenges solved</p></div></div>

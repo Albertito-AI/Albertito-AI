@@ -99,7 +99,7 @@ export function makeBoard(level, seed) {
   return { size, start: 0, goal, blocked, vectors: [[1, 0], [0, 1], [-1, 0], [0, -1]], par: goalX + goalY };
 }
 
-export function mount(root, { level, seed, onWin }) {
+export function mount(root, { level, seed, onWin, onMove, competitive = false }) {
   const board = makeBoard(level, seed);
   const history = [board.start];
   const moves = [];
@@ -126,6 +126,7 @@ export function mount(root, { level, seed, onWin }) {
       </div>
     </section>`;
   const section = root.querySelector('.ld-game');
+  if (competitive) root.querySelector('.ld-tools').style.display = 'none';
   const get = name => root.querySelector('[data-ld="' + name + '"]');
   const plot = root.querySelector('.ld-plot');
   const jumpContainer = root.querySelector('.ld-jumps');
@@ -203,6 +204,7 @@ export function mount(root, { level, seed, onWin }) {
     highlighted = -1;
     finished = next === board.goal;
     redraw();
+    onMove?.(moves.length);
     if (finished) {
       const [x0, y0] = point(board.start, board.size);
       const [x1, y1] = point(board.goal, board.size);
