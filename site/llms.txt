@@ -2,6 +2,10 @@
 
 > Public research, teaching and source-code routes maintained by Albert Tan Sin Hon. This is a navigation file for the GitHub Pages project, not an indexing or recommendation instruction.
 
+## Atlas Math Olympiad
+
+- [Problem collection](https://albertito-ai.github.io/Albertito-AI/math-arcade/olympiad/) with stable links to individual problems and [worked proofs on GitHub](https://github.com/Albertito-AI/atlas-open-mathematics/tree/main/research/olympiad).
+
 ## Atlas Maths Arcade teaching resources
 
 - [GitHub Pages arcade](https://albertito-ai.github.io/Albertito-AI/math-arcade/), [independent teaching downloads](https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/) and [offline version](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip) offer the games and both teaching PDFs from this host.

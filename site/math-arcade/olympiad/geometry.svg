@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="375" viewBox="0 0 560 375" role="img" aria-labelledby="g-title g-desc">
+  <title id="g-title">One pass at setting one half</title>
+  <desc id="g-desc">A right triangle with A at (0,0), B at (8,0) and C at (0,4). The geometric midpoint of BC is M at (4,2). A gold arrow on BC points from B to C. A green perpendicular arrow from M ends at A prime at (2,−2).</desc>
+  <defs>
+    <marker id="g-side-tip" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L7 3.5 L0 7Z" fill="#ffd486"/></marker>
+    <marker id="g-turn-tip" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10Z" fill="#96e8cd"/></marker>
+  </defs>
+  <rect x="1" y="1" width="558" height="373" rx="15" fill="#15242b" stroke="#385057"/>
+  <path d="M95 230 L439 230 L95 58 Z" fill="#28423f" stroke="#b4c9c8" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M439 230 L95 58" fill="none" stroke="#ffd486" stroke-width="2.5"/>
+  <path d="M382 201.5 L332 176.5" fill="none" stroke="#ffd486" stroke-width="3.5" marker-end="url(#g-side-tip)"/>
+  <path d="M279 150 L273 162 L261 156" fill="none" stroke="#96e8cd" stroke-width="1.7"/>
+  <path d="M267 144 L183 312" fill="none" stroke="#96e8cd" stroke-width="3" marker-end="url(#g-turn-tip)"/>
+  <g fill="#dce8e6"><circle cx="95" cy="230" r="4"/><circle cx="439" cy="230" r="4"/><circle cx="95" cy="58" r="4"/></g>
+  <circle cx="267" cy="144" r="4.5" fill="#ffd486"/><circle cx="181" cy="316" r="4.5" fill="#96e8cd"/>
+  <g font-family="system-ui, sans-serif" font-size="17" fill="#f4f6ee">
+    <text x="49" y="256">A (0, 0)</text><text x="448" y="243">B (8, 0)</text><text x="64" y="41">C (0, 4)</text>
+    <text x="279" y="134" fill="#ffd486">M (4, 2)</text><text x="157" y="346" fill="#96e8cd">A′ (2, −2)</text>
+  </g>
+</svg>
