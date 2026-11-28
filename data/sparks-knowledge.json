@@ -2,24 +2,24 @@
   "schema_version": 1,
   "agent": "Sparks",
   "created_at": "2026-10-28T07:46:43Z",
-  "updated_at": "2026-11-27T05:03:44Z",
-  "last_observed_date": "2026-11-27",
-  "last_workflow_run_id": 45943509464,
+  "updated_at": "2026-11-28T04:44:29Z",
+  "last_observed_date": "2026-11-28",
+  "last_workflow_run_id": 46108914959,
   "catalog_sha256": "0004c67f38a8695b14cab9c386c06efe26d397dde2371c1c6679b314c878ed91",
   "repositories": {
     "Albertito-AI/policykit": {
       "status": "current",
-      "attempted_at": "2026-11-27T05:03:44Z",
+      "attempted_at": "2026-11-28T04:44:29Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-27T05:03:44Z",
-        "commit_sha": "dd2b25dc14a63ff033b0100cba53c73fa760680a",
-        "tree_sha": "a164388e9b7eb01a0f45c7bed3645e6d23750bec",
+        "observed_at": "2026-11-28T04:44:29Z",
+        "commit_sha": "928f0e3f044b4c0c7d1a4543830d87e5359011c5",
+        "tree_sha": "53f51b4d7f1f65378cca54b24eee14a480d4df5a",
         "files": {
           "README.md": {
             "status": "present",
-            "blob_sha": "1bdb474e691694c40e0e528e69d85d016354fc32"
+            "blob_sha": "78cd9b2f293235244f457cf85fb546fac2bef7dc"
           },
           "docs/quickstart.md": {
             "status": "present",
@@ -35,11 +35,11 @@
     },
     "Albertito-AI/regnav-source-watch": {
       "status": "current",
-      "attempted_at": "2026-11-27T05:03:44Z",
+      "attempted_at": "2026-11-28T04:44:29Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-27T05:03:44Z",
+        "observed_at": "2026-11-28T04:44:29Z",
         "commit_sha": "70d02653417a4423ca9a7fff9d94e0e9f1a55740",
         "tree_sha": "d19dd1c892ec9e438abf37dfa92b6f6563c49b3c",
         "files": {
@@ -61,11 +61,11 @@
     },
     "Albertito-AI/symbolon": {
       "status": "current",
-      "attempted_at": "2026-11-27T05:03:44Z",
+      "attempted_at": "2026-11-28T04:44:29Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-27T05:03:44Z",
+        "observed_at": "2026-11-28T04:44:29Z",
         "commit_sha": "b50c1e811301e35d97c641619e9d580ced8c23b8",
         "tree_sha": "7e7e8618f2afb433d1e085081646d11918603d0d",
         "files": {
@@ -87,11 +87,11 @@
     },
     "Albertito-AI/piepowder": {
       "status": "current",
-      "attempted_at": "2026-11-27T05:03:44Z",
+      "attempted_at": "2026-11-28T04:44:29Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-27T05:03:44Z",
+        "observed_at": "2026-11-28T04:44:29Z",
         "commit_sha": "9838afdf238e61ace0994d7091bb53741421ba8f",
         "tree_sha": "e91b93fc4a0ad3490c11fb1545a9a8021741a0e9",
         "files": {
@@ -113,11 +113,11 @@
     },
     "Albertito-AI/tallystick": {
       "status": "current",
-      "attempted_at": "2026-11-27T05:03:44Z",
+      "attempted_at": "2026-11-28T04:44:29Z",
       "problem": null,
       "has_compared": true,
       "last_good": {
-        "observed_at": "2026-11-27T05:03:44Z",
+        "observed_at": "2026-11-28T04:44:29Z",
         "commit_sha": "145aa15726b750ca739a97366f42c10e411d6814",
         "tree_sha": "47253467d7a8bd788cdc23edba1396e5ccdf9ad2",
         "files": {
@@ -139,21 +139,6 @@
     }
   },
   "changes": [
-    {
-      "repo": "Albertito-AI/policykit",
-      "observed_at": "2026-10-28T11:54:38Z",
-      "previous_observed_at": "2026-10-28T07:59:27Z",
-      "before": {
-        "commit_sha": "b98cafefabe319a65d7298ddd11c80b3566963ab",
-        "readme_sha": "50a9ea1db01dc40ad4c68c745fadb004c4e7667c",
-        "release": null
-      },
-      "after": {
-        "commit_sha": "130cf41b0d59e1f72a238b0cf3c145c6ca337265",
-        "readme_sha": "8e42708da222ff2e2cfc0c29be600456e3b2707d",
-        "release": null
-      }
-    },
     {
       "repo": "Albertito-AI/regnav-source-watch",
       "observed_at": "2026-10-28T11:54:38Z",
@@ -516,6 +501,29 @@
           "id": 443992059,
           "tag": "archive-2026-11-13",
           "published_at": "2026-11-13T08:36:10Z"
+        }
+      }
+    },
+    {
+      "repo": "Albertito-AI/policykit",
+      "observed_at": "2026-11-28T04:44:29Z",
+      "previous_observed_at": "2026-11-27T05:03:44Z",
+      "before": {
+        "commit_sha": "dd2b25dc14a63ff033b0100cba53c73fa760680a",
+        "readme_sha": "1bdb474e691694c40e0e528e69d85d016354fc32",
+        "release": {
+          "id": 443997401,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:41:33Z"
+        }
+      },
+      "after": {
+        "commit_sha": "928f0e3f044b4c0c7d1a4543830d87e5359011c5",
+        "readme_sha": "78cd9b2f293235244f457cf85fb546fac2bef7dc",
+        "release": {
+          "id": 443997401,
+          "tag": "archive-2026-11-13",
+          "published_at": "2026-11-13T08:41:33Z"
         }
       }
     }
