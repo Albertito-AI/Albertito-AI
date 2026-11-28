@@ -23,6 +23,7 @@
 *Insurance-Backed Offshore Liquidity: Financial Law, Trust Governance and Regulatory Visibility at the PRC-Hong Kong Interface* was published by University of Groningen Press on 6 November 2026. DOI: 10.21827/6ac3948159a9e. The book's legal cut-off is 1 August 2026, except where the text states otherwise.
 
 - [Authoritative publisher record](https://books.ugp.rug.nl/ugp/catalog/book/300): publication details and access to the book.
+- [Chinese reading guide to Chapter 3](https://albertito-ai.github.io/Albertito-AI/lab/ibol-zh/). Simplified and Traditional Chinese classroom notes on two different policy numbers, with the publisher's free English edition and the original fictional case.
 - [Official learning companion](https://alberttansinhon.com/ibol/): the preferred entry for readers and teachers.
 - [GitHub Pages companion mirror](https://albertito-ai.github.io/Albertito-AI/ibol/): another public access route to the same companion.
 - [Book and source metadata](https://albertito-ai.github.io/Albertito-AI/ibol/data/book.json): author, DOI, format-specific ISBNs, dates and verification scope.
