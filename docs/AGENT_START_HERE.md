@@ -5,6 +5,8 @@ institutional accountability and agent-assisted work. This guide connects a
 specific task to the existing public resources, their interfaces, attribution
 and reuse terms.
 
+[Public library and access routes](https://albertito-ai.github.io/Albertito-AI/public-library/) ·
+[Machine-readable public library](https://albertito-ai.github.io/Albertito-AI/public-library/catalogue.json) ·
 [Research Lab](https://albertito-ai.github.io/Albertito-AI/lab/) ·
 [Public catalogue JSON](https://albertito-ai.github.io/Albertito-AI/lab/data/catalog.json) ·
 [Catalogue source](../site/lab/data/catalog.json) ·

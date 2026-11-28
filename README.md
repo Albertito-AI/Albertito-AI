@@ -2,9 +2,11 @@
 
 **[What does the record prove?](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)** In this fictional case, a ferry operator reports a 10% fall in emissions. Two ships left the fleet. Would you sign its statement? [Examine the figures](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#ferry-emissions).
 
-**[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. [Play the independent GitHub Pages edition](https://albertito-ai.github.io/Albertito-AI/math-arcade/) or [download the offline games and teaching PDFs](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip). Warm up with Sudoku, play Nim or Reversi, or [try today’s challenge](https://alberttansinhon.com/math-arcade/#daily). [Read the Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) for replayable positions, proofs and verification code.
+**[Play the Math Arcade](https://albertito-ai.github.io/Albertito-AI/math-arcade/)**. Can the move that makes the board look worse be the one that wins? [Try today’s challenge](https://albertito-ai.github.io/Albertito-AI/math-arcade/#daily) · [Download for offline play](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip) · [Original site](https://alberttansinhon.com/math-arcade/) · [Working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/).
 
 [Teach with the six games](https://alberttansinhon.com/math-arcade/teaching/). Download the [teaching guide with worked solutions (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) or the [six printable player sheets (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf).
+
+[Browse the 102-record public resource library](https://albertito-ai.github.io/Albertito-AI/public-library/) for books, articles, games and teaching materials, or [download the directory to read offline](https://albertito-ai.github.io/Albertito-AI/public-library/public-library-offline.zip).
 
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher in law at
