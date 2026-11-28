@@ -1,8 +1,99 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T08:50:16Z",
+  "generated_at": "2026-11-28T08:08:37Z",
   "scope": "Editorial work queue. Inclusion does not imply the full text was accessed or reviewed.",
   "items": [
+    {
+      "id": "discovery-f046c1988bc97e981b89",
+      "title": "Global AI Governance and Collaboration",
+      "doi": "10.4018/979-8-3373-1210-1.ch009",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3373-1210-1.ch009",
+      "publication_date": "2025-06-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-eba12af1b7e856c5b353",
+      "title": "Large Language Models’ Accuracy in Emulating Human Experts’ Evaluation of Public Sentiments about Heated Tobacco Products on Social Media: Evaluation Study",
+      "doi": "10.2196/63631",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.2196%2F63631",
+      "publication_date": "2025-03-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-d215fbebd656ebd8c14a",
+      "title": "Artificial Intelligence and Corporate Sustainability Disclosure: Evidence from Corporate Climate Risk Disclosure in China",
+      "doi": "10.3390/su18147313",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu18147313",
+      "publication_date": "2026-07-17",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-c07672c25d6b2bcd519c",
+      "title": "The Impact of Environmental, Social, and Governance (ESG) Performance on Financial Reporting Quality: International Evidence",
+      "doi": "10.15388/ekon.2021.100.2.9",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.15388%2Fekon.2021.100.2.9",
+      "publication_date": "2021-11-25",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-b8fdf4114a4f63bbb04b",
+      "title": "Exploring the impact of sustainability (ESG) disclosure on firm value and financial performance (FP) in airline industry: the moderating role of size and age",
+      "doi": "10.1007/s10668-021-01649-w",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10668-021-01649-w",
+      "publication_date": "2021-08-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8cc8c34db089eb63c1d8",
+      "title": "Development and Verification of Artificial Intelligence-based Piping Detection System using 3D GPR Data",
+      "doi": "10.7848/ksgpc.2023.41.6.511",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.7848%2Fksgpc.2023.41.6.511",
+      "publication_date": "2023-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-2c3db7e83267aabdee7b",
+      "title": "Legal Aspects of Evidence Collected by Modern Devices: A Case Study",
+      "doi": "10.47205/jdss.2021(2-iv)25",
+      "topics": [
+        "Legal evidence and provenance"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "published_index",
+      "source_url": "https://api.crossref.org/works/10.47205%2Fjdss.2021%282-iv%2925",
+      "publication_date": "2021-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
     {
       "id": "discovery-ecafced898222293d57c",
       "title": "The Cost of Late Governance: A Blast-Radius Model for Pre-Promotion vs. Post-Hoc Policy Enforcement in Autonomous Multi-Agent Data Consumption",
@@ -2773,32 +2864,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-b8fdf4114a4f63bbb04b",
-      "title": "Exploring the impact of sustainability (ESG) disclosure on firm value and financial performance (FP) in airline industry: the moderating role of size and age",
-      "doi": "10.1007/s10668-021-01649-w",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.1007%2Fs10668-021-01649-w",
-      "publication_date": "2021-08-02",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-c07672c25d6b2bcd519c",
-      "title": "The Impact of Environmental, Social, and Governance (ESG) Performance on Financial Reporting Quality: International Evidence",
-      "doi": "10.15388/ekon.2021.100.2.9",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.15388%2Fekon.2021.100.2.9",
-      "publication_date": "2021-11-25",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-0cee458e36c304f7e59f",
       "title": "Sustainability reporting assurance: Knowledge, lags, levels, and providers in leading global companies",
       "doi": "10.1016/j.jik.2025.100899",
@@ -2991,19 +3056,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1515%2F9783111677835-007",
       "publication_date": "2025-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-d215fbebd656ebd8c14a",
-      "title": "Artificial Intelligence and Corporate Sustainability Disclosure: Evidence from Corporate Climate Risk Disclosure in China",
-      "doi": "10.3390/su18147313",
-      "topics": [
-        "ESG disclosure and accountability"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.3390%2Fsu18147313",
-      "publication_date": "2026-07-17",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -3904,32 +3956,6 @@
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
-      "id": "discovery-8cc8c34db089eb63c1d8",
-      "title": "Development and Verification of Artificial Intelligence-based Piping Detection System using 3D GPR Data",
-      "doi": "10.7848/ksgpc.2023.41.6.511",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.7848%2Fksgpc.2023.41.6.511",
-      "publication_date": "2023-12-31",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-f046c1988bc97e981b89",
-      "title": "Global AI Governance and Collaboration",
-      "doi": "10.4018/979-8-3373-1210-1.ch009",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.4018%2F979-8-3373-1210-1.ch009",
-      "publication_date": "2025-06-04",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
       "id": "discovery-0b041e5a94f8153ed8ae",
       "title": "How Profitability Moderates the Impact of Enterprise Risk Management, Intellectual Capital, and Sustainability Reporting on Firm Value?",
       "doi": "10.29259/sijdeb.v7i4.301-320",
@@ -3979,19 +4005,6 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.32535%2Fjicp.v6i7.2795",
       "publication_date": "2023-12-30",
-      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
-    },
-    {
-      "id": "discovery-eba12af1b7e856c5b353",
-      "title": "Large Language Models’ Accuracy in Emulating Human Experts’ Evaluation of Public Sentiments about Heated Tobacco Products on Social Media: Evaluation Study",
-      "doi": "10.2196/63631",
-      "topics": [
-        "AI governance and agent evaluation"
-      ],
-      "review_status": "metadata_only",
-      "publication_state": "pending_admission",
-      "source_url": "https://api.crossref.org/works/10.2196%2F63631",
-      "publication_date": "2025-03-04",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     },
     {
@@ -4889,6 +4902,110 @@
       "publication_state": "pending_admission",
       "source_url": "https://api.crossref.org/works/10.1136%2Fbmjdhai-2025-000046",
       "publication_date": "2025-07",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1b8b7ba2ef2157d81aad",
+      "title": "The impact of digital-real integration on energy productivity under a multi-governance framework: The mediating role of AI and embodied technological progress",
+      "doi": "10.1016/j.eneco.2024.108167",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.eneco.2024.108167",
+      "publication_date": "2025-02",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-1e7fa749dd309537499a",
+      "title": "Does public participation promote environmental efficiency? Evidence from a quasi-natural experiment of environmental information disclosure in China",
+      "doi": "10.1016/j.eneco.2022.105871",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.eneco.2022.105871",
+      "publication_date": "2022-04",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-2c629015a0e162257940",
+      "title": "Determinants of Firm Value: The Role of Profitability, Capital Structure, and ESG Disclosure in Jakarta Islamic Index 70 Companies",
+      "doi": "10.47747/snfmi.v4i1.3849",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.47747%2Fsnfmi.v4i1.3849",
+      "publication_date": "2026-11-28",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-36cd9cdb52ec709819f7",
+      "title": "Sustainability reporting in Vietnam: evolutionary or revolutionary? A case study of five public companies",
+      "doi": "10.38203/jiem.021.2.0032",
+      "topics": [
+        "ESG disclosure and accountability"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.38203%2Fjiem.021.2.0032",
+      "publication_date": "2021-12-27",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-42fafa38591aecc9c447",
+      "title": "Impact of Creator Information on Creativity Evaluation : Comparison between Artificial Intelligence and Human",
+      "doi": "10.17210/jhsk.2021.12.16.4.25",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.17210%2Fjhsk.2021.12.16.4.25",
+      "publication_date": "2021-12-31",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-592613ef578188796ea1",
+      "title": "Characterizing Positional Bias in Large Language Models: A Multi-Model Evaluation of Prompt Order Effects",
+      "doi": "10.18653/v1/2025.findings-emnlp.1124",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.18653%2Fv1%2F2025.findings-emnlp.1124",
+      "publication_date": "2025",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-8f5b27ce2932da2a1f27",
+      "title": "Domain knowledge, just evaluation, and robust data standards are required to advance AI in food science",
+      "doi": "10.1016/j.tifs.2025.105272",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.tifs.2025.105272",
+      "publication_date": "2025-10",
+      "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
+    },
+    {
+      "id": "discovery-90cda90ab2e1e64c564e",
+      "title": "Evaluation of an Ambient Artificial Intelligence Documentation Platform for Clinicians",
+      "doi": "10.1001/jamanetworkopen.2025.8614",
+      "topics": [
+        "AI governance and agent evaluation"
+      ],
+      "review_status": "metadata_only",
+      "publication_state": "pending_admission",
+      "source_url": "https://api.crossref.org/works/10.1001%2Fjamanetworkopen.2025.8614",
+      "publication_date": "2025-05-02",
       "next_action": "Inspect the source and any update notice; record a bounded use case, exact supporting location, limitations and an actual review date before promoting the review level."
     }
   ]
