@@ -1,4 +1,4 @@
-import { games, levels, todaySG, parseRoute, readWins, addWin, stats, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128b';
+import { games, levels, todaySG, dailyPuzzle, parseRoute, readWins, addWin, stats, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128b';
 
 const loaders = {
   lattice: () => import('./lattice.mjs'),
@@ -79,7 +79,7 @@ function recordScreen() {
 }
 
 function updateDailyCTA() {
-  byId('daily-cta').textContent = wins.some(win => win.day === todaySG()) ? 'Replay daily challenge' : 'Play daily challenge';
+  byId('daily-cta').textContent = wins.some(win => win.day === todaySG()) ? 'Replay today’s challenge' : 'Play today’s challenge';
 }
 
 const sudokuResumeKey = 'atlas-sudoku-resume-v1';
@@ -144,8 +144,11 @@ async function render(navigated = true) {
   const board = byId('game-board');
   board.replaceChildren();
   byId('win-panel').hidden = true;
-  byId('status').replaceChildren();
+  for (const status of document.querySelectorAll('.share-status')) status.replaceChildren();
   const route = parseRoute(location.hash, todaySG());
+  if (route.day && location.hash !== '#daily/' + route.day) {
+    history.replaceState(null, '', '#daily/' + route.day);
+  }
   const playing = route.view === 'play';
   const records = route.view === 'record';
   byId('lobby').hidden = playing || records;
@@ -229,7 +232,8 @@ async function render(navigated = true) {
 }
 
 function puzzleURL(puzzle) {
-  const url = new URL(location.href);
+  const website = ['alberttansinhon.com', 'www.alberttansinhon.com'].includes(location.hostname);
+  const url = new URL(website ? 'https://alberttansinhon.com/math-arcade/' : 'https://albertito-ai.github.io/Albertito-AI/math-arcade/');
   url.hash = puzzle.day ? '#daily/' + puzzle.day : practiceLink(puzzle.game, puzzle.level, puzzle.seed);
   return url.href;
 }
@@ -240,25 +244,56 @@ document.querySelector('.skip').addEventListener('click', event => {
   byId('main').focus();
 });
 
-byId('copy-link').addEventListener('click', async () => {
-  if (!current) return;
-  const puzzle = current;
+const challengePrompts = {
+  lattice: 'Which first jump brings the beacon within reach?',
+  forge: 'Which two numbers would you combine first, and why?',
+  parity: 'Pick one square. Which lights would change if you pressed it?',
+  sudoku: 'Find one empty cell and rule out a digit. What clue rules it out?',
+  nim: 'Choose a pile. How many counters would you leave?',
+  reversi: 'Which legal move would you try first? Count the discs it flips.'
+};
+
+async function sharePuzzle(puzzle, status, useShareSheet) {
+  if (!puzzle) return;
+  const turn = revision;
   const url = puzzleURL(puzzle);
+  status.replaceChildren();
+  if (useShareSheet && typeof navigator.share === 'function') {
+    try {
+      await navigator.share({ title: games[puzzle.game].name + ' | Maths Arcade', text: challengePrompts[puzzle.game], url });
+      return;
+    } catch (error) {
+      if (turn !== revision) return;
+      if (error.name === 'AbortError') {
+        status.textContent = 'Sharing cancelled.';
+        return;
+      }
+    }
+  }
   try {
     await navigator.clipboard.writeText(url);
-    if (current === puzzle) byId('status').textContent = 'Puzzle link copied. Everyone who opens it gets the same starting position.';
+    if (turn === revision) status.textContent = 'Link copied. Your friend will get the same starting puzzle.';
   } catch {
-    if (current !== puzzle) return;
+    if (turn !== revision) return;
     const field = document.createElement('input');
     field.type = 'text';
     field.readOnly = true;
     field.value = url;
     field.setAttribute('aria-label', 'Puzzle link to copy');
-    byId('status').replaceChildren('Copy this puzzle link: ', field);
+    status.replaceChildren('Select and copy the link to this starting puzzle.', field);
     field.focus();
     field.select();
   }
-});
+}
+
+byId('share-daily')?.addEventListener('click', () => sharePuzzle(dailyPuzzle(todaySG()), byId('daily-share-status'), true));
+const shareButton = byId('share-puzzle');
+if (shareButton && typeof navigator.share === 'function') {
+  shareButton.hidden = false;
+  shareButton.addEventListener('click', () => sharePuzzle(current, byId('status'), true));
+}
+byId('copy-link').addEventListener('click', () => sharePuzzle(current, byId('status'), false));
+byId('share-win')?.addEventListener('click', () => sharePuzzle(current, byId('win-share-status'), true));
 function fresh() {
   if (current) location.hash = freshLink(current.game, current.level);
 }

@@ -104,7 +104,7 @@ def build(src, repo, output):
             raise ValueError(f'Cyclic import: {name}. Use a full module bundler for this edition.')
         computing.add(name)
         code = src.get(name).decode()
-        if name == 'arcade.mjs':
+        if name == 'arcade.mjs' and 'new URL(location.href)' in code:
             code = change_once(code, 'new URL(location.href)', "new URL('" + SITE + "')")
         # Preserve ES module scopes and the original lazy imports. Repeated references
         # use the identical data URL, so the browser creates one instance per module.
