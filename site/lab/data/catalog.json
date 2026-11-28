@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T12:01:13Z",
+  "updated_at": "2026-11-28T03:14:24Z",
   "title": "Albert Tan Research Lab",
   "introduction": "Explore published scholarship, experimental research software and teaching materials through their sources, demonstrations and stated limits.",
   "scope_note": "This is a curated public index. A source check records what was inspected at a date or revision; it does not certify legal accuracy, professional fitness or independent evaluation.",
@@ -1091,6 +1091,57 @@
       },
       "related_item_ids": [],
       "relationship_note": "Included as separate scholarship on institutional responsibility. No implementation or validation relationship with Tallystick is asserted."
+    },
+    {
+      "id": "teaching-maths-arcade",
+      "title": "Teaching mathematical thinking through play",
+      "type": "teaching",
+      "description": "Six Maths Arcade games with worked solutions for facilitators and a separate set of printable player sheets. Topics include Sudoku, Lattice Dash, Target Forge, Parity Lights, Nim and Reversi.",
+      "maturity": "Teaching materials",
+      "review_status": "source_inspected",
+      "topics": [
+        "Mathematics",
+        "Strategy",
+        "Logical reasoning",
+        "Mathematics education"
+      ],
+      "publisher": "Atlas Open Mathematics",
+      "publication_date": "2026-11-28",
+      "added_at": "2026-11-28T03:14:24Z",
+      "use_for": "Play two fixed positions on each player sheet, then use the teaching guide to compare strategies and justify a result.",
+      "limitation": "The calculations apply to the named positions. Learner outcomes have yet to be measured.",
+      "links": [
+        {
+          "label": "Open the teaching collection",
+          "url": "https://alberttansinhon.com/math-arcade/teaching/",
+          "kind": "start"
+        },
+        {
+          "label": "Printable player sheets (PDF)",
+          "url": "https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf",
+          "kind": "handout"
+        },
+        {
+          "label": "Teaching guide and solutions (PDF)",
+          "url": "https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf",
+          "kind": "facilitator"
+        },
+        {
+          "label": "Research hub",
+          "url": "https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/",
+          "kind": "reference"
+        },
+        {
+          "label": "Source and reproduction instructions",
+          "url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/arcade/README.md",
+          "kind": "source"
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-11-28T03:14:24Z",
+        "source_url": "https://alberttansinhon.com/math-arcade/teaching/",
+        "scope": "Reviewed the two dated PDFs, their six-game coverage, replay links and intended audiences."
+      }
     },
     {
       "id": "teaching-source-checking",

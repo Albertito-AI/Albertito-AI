@@ -21,6 +21,10 @@ revision below. Existing execution and interface records retain their original
 dates. Host-specific interoperability and independent adoption need separate
 evidence.
 
+## Find a Maths Arcade session
+
+For a classroom or maths circle, start at the [six-game teaching collection](https://alberttansinhon.com/math-arcade/teaching/). Give participants the [spoiler-free player sheets](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf) and use the [teaching guide](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) for worked solutions. Both files are PDFs. The [Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) and [source archive](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/arcade/README.md) identify the positions and checks supporting the mathematical arguments. Attribute the materials to Atlas Open Mathematics, directed by Albert Tan Sin Hon.
+
 ## Discover writings and connect to the public agent
 
 ### Verify the author and the work
