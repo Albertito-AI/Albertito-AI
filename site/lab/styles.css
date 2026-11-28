@@ -44,6 +44,10 @@ code{font-size:.88em;overflow-wrap:anywhere}
 .eyebrow.light{color:var(--gold)}
 .hero h1{font-size:clamp(2.4rem,5.5vw,4.15rem);line-height:1.07;letter-spacing:-.045em}
 .hero h1 em{color:var(--gold);font-weight:400}
+.arcade-invitation{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem 1rem;margin-top:1.1rem;color:#f7ebd9;font-size:.94rem}
+.arcade-invitation a{display:inline-flex;align-items:center;min-height:44px;padding:.5rem 1rem;background:#f5c98b;color:#2c1e30;border-radius:6px;font-weight:700;text-decoration:none}
+.arcade-invitation a:hover{text-decoration:underline}
+.arcade-invitation a:focus-visible{outline:3px solid white;outline-offset:3px}
 .hero-lead{color:#f5e8ec;max-width:600px;font-size:1.05rem;margin-top:24px;line-height:1.65}
 .hero-context{color:#cbbdce;font-size:.9rem;max-width:580px}
 .hero-links{display:flex;gap:25px;margin-top:25px}
