@@ -1,4 +1,4 @@
-import { games, levels, todaySG, dailyPuzzle, parseRoute, readWins, addWin, stats, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128m1';
+import { games, levels, todaySG, dailyPuzzle, parseRoute, createGameShuffle, createSudokuDealer, sudokuResumeLink } from './arcade-state.mjs?v=20261128-shuffle';
 import { mountMatchRoom, matchLink } from './match-room.mjs';
 
 const loaders = {
@@ -10,32 +10,11 @@ const loaders = {
   reversi: () => import('./reversi.mjs')
 };
 const byId = id => document.getElementById(id);
-const storageKey = 'atlas-maths-arcade-wins-v1';
-let wins = [];
-let persistent = true;
+const nextGame = createGameShuffle();
+let lastPractice;
 let current;
 let unmount;
 let revision = 0;
-
-function readRecord() {
-  try {
-    const stored = readWins(localStorage.getItem(storageKey));
-    wins = readWins(JSON.stringify([...stored, ...wins]));
-  } catch {
-    persistent = false;
-  }
-}
-
-function saveWin(puzzle) {
-  readRecord();
-  wins = addWin(wins, { ...puzzle, solvedOn: todaySG() });
-  try {
-    localStorage.setItem(storageKey, JSON.stringify(wins));
-    persistent = true;
-  } catch {
-    persistent = false;
-  }
-}
 
 function randomSeed() {
   return crypto.getRandomValues(new Uint32Array(1))[0];
@@ -56,33 +35,6 @@ function prettyDay(day) {
   return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(day + 'T12:00:00Z'));
 }
 
-function recordScreen() {
-  readRecord();
-  const { total, streak, days, byGame } = stats(wins, todaySG());
-  byId('record-total').textContent = total;
-  byId('record-streak').textContent = streak;
-  byId('record-days').textContent = days;
-  byId('record-games').replaceChildren(...Object.entries(games).map(([key, game]) => {
-    const { count, bestLevel } = byGame[key];
-    const row = document.createElement('div');
-    row.className = 'record-row';
-    const link = document.createElement('a');
-    link.href = '#play/' + key;
-    link.textContent = game.name;
-    const score = document.createElement('span');
-    score.textContent = count + ' solved' + (bestLevel === null ? '' : ' · Highest: ' + levels[bestLevel]);
-    row.append(link, score);
-    return row;
-  }));
-  byId('storage-note').textContent = persistent
-    ? 'Your record is saved on this browser. Daily challenges change at midnight in Singapore. Complete one on its date to extend your streak.'
-    : 'This browser cannot save your record. Solves are kept for this visit. Daily challenges change at midnight in Singapore.';
-}
-
-function updateDailyCTA() {
-  byId('daily-cta').textContent = wins.some(win => win.day === todaySG()) ? 'Replay today’s challenge' : 'Play today’s challenge';
-}
-
 const sudokuResumeKey = 'atlas-sudoku-resume-v1';
 function updateSudokuResume() {
   const link = byId('sudoku-resume');
@@ -97,8 +49,7 @@ function updateSudokuResume() {
 }
 
 function gameWin(puzzle, result) {
-  saveWin(puzzle);
-  updateDailyCTA();
+  byId('practice-actions').hidden = true;
   byId('win-heading').textContent = puzzle.day ? 'Daily challenge complete' : 'Puzzle complete';
   byId('win-details').textContent = result.details;
   byId('win-explanation').textContent = result.explanation;
@@ -145,40 +96,37 @@ async function render(navigated = true) {
   const board = byId('game-board');
   board.replaceChildren();
   byId('win-panel').hidden = true;
+  byId('practice-actions').hidden = false;
   for (const status of document.querySelectorAll('.share-status')) status.replaceChildren();
   const route = parseRoute(location.hash, todaySG());
+  if (route.view === 'games' && location.hash !== '#games') {
+    history.replaceState(null, '', '#games');
+  }
   if (route.day && location.hash !== '#daily/' + route.day) {
     history.replaceState(null, '', '#daily/' + route.day);
   }
   const playing = route.view === 'play';
-  const records = route.view === 'record';
   const matching = route.view === 'match' || route.view === 'match-setup';
   byId('match-room').hidden = !matching;
-  byId('lobby').hidden = playing || records || matching;
+  byId('lobby').hidden = playing || matching;
   byId('player').hidden = !playing;
-  byId('records').hidden = !records;
-  for (const [id, selected] of [['nav-games', !records], ['nav-record', records]]) {
+  for (const [id, selected] of [['nav-games', !matching], ['nav-match', matching]]) {
     if (selected) byId(id).setAttribute('aria-current', 'page');
     else byId(id).removeAttribute('aria-current');
   }
-  document.title = (playing ? games[route.game].name + ' | ' : records ? 'My record | ' : '') + 'Maths Arcade · Albert Tan Sin Hon';
+  document.title = (playing ? games[route.game].name + ' | ' : '') + 'Maths Arcade · Albert Tan Sin Hon';
   if (matching) {
     unmount = mountMatchRoom(route, { randomSeed, sharePuzzle, focusPage, navigated });
     return;
   }
-  if (records) {
-    recordScreen();
-    focusPage('records-title', navigated);
-    return;
-  }
   if (!playing) {
-    updateDailyCTA();
     updateSudokuResume();
     if (route.view === 'games') focusPage('games', true);
     else if (location.hash === '#main') byId('main').focus();
     else focusPage('main', navigated);
     return;
   }
+  lastPractice = route;
   const game = games[route.game];
   const matchEntry = byId('practice-match');
   matchEntry.href = '#match/' + route.game;
@@ -309,16 +257,16 @@ byId('share-win')?.addEventListener('click', () => sharePuzzle(current, byId('wi
 function fresh() {
   if (current) location.hash = freshLink(current.game, current.level);
 }
+for (const button of document.querySelectorAll('[data-shuffle-game]')) {
+  button.addEventListener('click', () => {
+    const game = nextGame(lastPractice?.game);
+    location.hash = freshLink(game, lastPractice?.level ?? 0);
+  });
+}
 byId('again').addEventListener('click', fresh);
 byId('shuffle').addEventListener('click', fresh);
 window.addEventListener('hashchange', () => render());
 window.addEventListener('storage', event => {
   if (event.key === sudokuResumeKey || event.key === null) updateSudokuResume();
-  if (event.key === storageKey) {
-    wins = readWins(event.newValue);
-    if (!byId('records').hidden) recordScreen();
-    updateDailyCTA();
-  }
 });
-readRecord();
 render(false);

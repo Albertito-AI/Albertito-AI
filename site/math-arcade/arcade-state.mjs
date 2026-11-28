@@ -17,6 +17,19 @@ const singaporeDate = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'Asia/Singapore', year: 'numeric', month: '2-digit', day: '2-digit'
 });
 
+// Deal every game once per round. A hand-picked game also counts for this round.
+export function createGameShuffle(random = Math.random) {
+  let remaining = new Set(gameKeys);
+  return function nextGame(currentGame) {
+    remaining.delete(currentGame);
+    if (!remaining.size) remaining = new Set(gameKeys);
+    const choices = [...remaining].filter(game => game !== currentGame);
+    const game = choices[Math.floor(random() * choices.length)];
+    remaining.delete(game);
+    return game;
+  };
+}
+
 export function todaySG(now = new Date()) {
   const parts = Object.fromEntries(singaporeDate.formatToParts(now).map(({ type, value }) => [type, value]));
   return `${parts.year}-${parts.month}-${parts.day}`;
@@ -154,7 +167,7 @@ export function parseRoute(hash, today = todaySG()) {
   const fallback = { view: 'home' };
   if (typeof hash !== 'string') return fallback;
   const [page, ...args] = hash.replace(/^#/, '').split('/');
-  if ((page === 'games' || page === 'record') && !args.length) return { view: page };
+  if ((page === 'games' || page === 'record') && !args.length) return { view: 'games' };
   if (page === 'daily' && args.length <= 1) {
     const requestedDay = args.length ? args[0] : today;
     if (dayNumber(requestedDay) === null || dayNumber(today) === null) return fallback;
@@ -167,67 +180,4 @@ export function parseRoute(hash, today = todaySG()) {
   if (rawLevel !== undefined && !/^[0-2]$/.test(rawLevel)) return fallback;
   if (rawSeed !== undefined && (!/^\d{1,10}$/.test(rawSeed) || !isSeed(Number(rawSeed)))) return fallback;
   return { view: page, game, level: Number(rawLevel ?? 0), seed: rawSeed === undefined ? null : Number(rawSeed), day: null };
-}
-
-function cleanWin(value) {
-  if (!value || typeof value !== 'object') return null;
-  const { game, level, seed, day = null, solvedOn } = value;
-  if (typeof game !== 'string' || !Object.hasOwn(games, game) || !Number.isInteger(level) || level < 0 || level >= levels.length || !isSeed(seed)) return null;
-  if (day !== null && dayNumber(day) === null) return null;
-  const win = { game, level, seed, day };
-  if (dayNumber(solvedOn) !== null) win.solvedOn = solvedOn;
-  return win;
-}
-
-function distinctWins(values) {
-  const result = new Map();
-  for (const value of values) {
-    const win = cleanWin(value);
-    if (!win) continue;
-    const key = `${win.game}/${win.level}/${win.seed}`;
-    const previous = result.get(key);
-    // A daily replay can identify a prior practice solve or establish an on-time solve.
-    if (!previous || (win.day && (!previous.day || (previous.solvedOn !== previous.day && win.solvedOn === win.day)))) {
-      result.set(key, win);
-    }
-  }
-  return [...result.values()];
-}
-
-export function readWins(raw) {
-  if (typeof raw !== 'string') return [];
-  try {
-    const values = JSON.parse(raw);
-    return Array.isArray(values) ? distinctWins(values) : [];
-  } catch {
-    return [];
-  }
-}
-
-export function addWin(wins, puzzle) {
-  return distinctWins([...(Array.isArray(wins) ? wins : []), puzzle]);
-}
-
-export function stats(wins, today = todaySG()) {
-  const records = distinctWins(Array.isArray(wins) ? wins : []);
-  const byGame = Object.fromEntries(gameKeys.map(game => [game, { count: 0, bestLevel: null }]));
-  const completed = new Set();
-  const onTime = new Set();
-  for (const win of records) {
-    const game = byGame[win.game];
-    game.count++;
-    game.bestLevel = Math.max(game.bestLevel ?? 0, win.level);
-    if (win.day && win.day <= today) {
-      completed.add(win.day);
-      if (win.solvedOn === win.day) onTime.add(dayNumber(win.day));
-    }
-  }
-  let streak = 0;
-  let cursor = dayNumber(today);
-  if (cursor !== null) {
-    // Yesterday's streak is still active while today's challenge is open.
-    if (!onTime.has(cursor)) cursor--;
-    while (onTime.has(cursor--)) streak++;
-  }
-  return { total: records.length, streak, days: completed.size, byGame };
 }
