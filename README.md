@@ -22,7 +22,8 @@ lists my LLM in Dispute Resolution (University of Aberdeen) and my LLM in Law
 and Technology (Singapore Management University). My publications can be
 identified by [ORCID 0009-0001-8996-7933](https://orcid.org/0009-0001-8996-7933).
 
-[Thoth](https://thoth.pub/books/9d4fe160-bb0b-440d-a4af-987079eb12df) links my book *Insurance-Backed Offshore Liquidity* to my ORCID.
+In my book [*Insurance-Backed Offshore Liquidity* (free from University of Groningen Press)](https://books.ugp.rug.nl/ugp/catalog/book/300), Chapter 3 examines the documents behind a lender’s claim. [Try the three-record case](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#policy-numbers) alongside §§3.8.1 and 3.8.5. [Thoth’s catalogue record](https://thoth.pub/books/9d4fe160-bb0b-440d-a4af-987079eb12df) gives both ISBNs and links the book to my ORCID.
+
 [TaxProf Blog](https://taxprofblog.aals.org/2026/10/01/legal-scholarship-network-publishes-new-issue-of-tax-law-policy-ejournal-34/) lists my paper *After the Offshore Trust Turn* in the September 2026 issue of SSRN’s *eJournal of Tax Law and Policy*.
 [MyPhilo](https://myphilo.org/movements/xuanxue/) credits my video *Xuanxue The Architecture of Nothingness* to Bert Chan (陳信宏).
 
