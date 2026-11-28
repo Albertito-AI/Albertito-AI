@@ -7,6 +7,7 @@
 - [GitHub Pages arcade](https://albertito-ai.github.io/Albertito-AI/math-arcade/), [independent teaching downloads](https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/) and [offline version](https://albertito-ai.github.io/Albertito-AI/math-arcade/offline/Maths_Arcade_Offline.zip) offer the games and both teaching PDFs from this host.
 
 - [Teaching collection](https://alberttansinhon.com/math-arcade/teaching/) for six games from Atlas Open Mathematics, directed by Albert Tan Sin Hon.
+- [Cite version 1.0 of the teaching pack on Zenodo](https://doi.org/10.5281/zenodo.24617751). The deposit contains both teaching PDFs and the offline arcade.
 - [Player sheets, PDF](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf). Six printable sheets with two replayable positions per game.
 - [Teaching mathematical thinking through play, PDF](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf). A 17-page facilitator guide with worked answers, questions and assessment suggestions.
 - [Maths Arcade research hub](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) and [reproduction instructions](https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/research/arcade/README.md) for the source and calculations.

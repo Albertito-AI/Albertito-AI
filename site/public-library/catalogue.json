@@ -2272,6 +2272,10 @@
       "rights": "Original teaching text, lessons and diagrams are licensed under CC BY 4.0. Credit Albert Tan Sin Hon and named contributors, link to the source version and identify adaptations. Third-party works retain their own terms.",
       "links": [
         {
+          "label": "Cite the teaching pack, version 1.0 (Zenodo)",
+          "url": "https://doi.org/10.5281/zenodo.24617751"
+        },
+        {
           "label": "Download PDF from GitHub",
           "url": "https://raw.githubusercontent.com/Albertito-AI/atlas-open-mathematics/main/docs/teaching/Maths_Arcade_Player_Sheets.pdf"
         },
@@ -2310,7 +2314,8 @@
         "Nim Lab",
         "Reversi Endgame Lab"
       ],
-      "source_url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/teaching/PLAYER_SHEETS.md"
+      "source_url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/teaching/PLAYER_SHEETS.md",
+      "citation_url": "https://doi.org/10.5281/zenodo.24617751"
     },
     {
       "id": "maths-arcade-teaching-guide",
@@ -2324,6 +2329,10 @@
       "attribution": "Atlas Open Mathematics, directed by Albert Tan Sin Hon.",
       "rights": "Original teaching text, lessons and diagrams are licensed under CC BY 4.0. Credit Albert Tan Sin Hon and named contributors, link to the source version and identify adaptations. Third-party works retain their own terms.",
       "links": [
+        {
+          "label": "Cite the teaching pack, version 1.0 (Zenodo)",
+          "url": "https://doi.org/10.5281/zenodo.24617751"
+        },
         {
           "label": "Download PDF from GitHub",
           "url": "https://raw.githubusercontent.com/Albertito-AI/atlas-open-mathematics/main/docs/teaching/Maths_Arcade_Teaching_Guide.pdf"
@@ -2363,7 +2372,8 @@
         "Nim Lab",
         "Reversi Endgame Lab"
       ],
-      "source_url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/teaching/TEACHING_GUIDE.md"
+      "source_url": "https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/teaching/TEACHING_GUIDE.md",
+      "citation_url": "https://doi.org/10.5281/zenodo.24617751"
     },
     {
       "id": "maths-arcade-teaching",
@@ -2377,6 +2387,10 @@
       "attribution": "Atlas Open Mathematics, directed by Albert Tan Sin Hon.",
       "rights": "Original teaching text, lessons and diagrams are licensed under CC BY 4.0. Credit Albert Tan Sin Hon and named contributors, link to the source version and identify adaptations. Third-party works retain their own terms.",
       "links": [
+        {
+          "label": "Cite the teaching pack, version 1.0 (Zenodo)",
+          "url": "https://doi.org/10.5281/zenodo.24617751"
+        },
         {
           "label": "Catalogue destination",
           "url": "https://alberttansinhon.com/math-arcade/teaching/"
@@ -2427,7 +2441,8 @@
         "Nim Lab",
         "Reversi Endgame Lab"
       ],
-      "source_url": "https://alberttansinhon.com/math-arcade/teaching/"
+      "source_url": "https://alberttansinhon.com/math-arcade/teaching/",
+      "citation_url": "https://doi.org/10.5281/zenodo.24617751"
     },
     {
       "id": "teaching-sgx-case",
