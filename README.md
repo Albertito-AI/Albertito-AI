@@ -6,6 +6,8 @@
 
 [Teach with the six games](https://alberttansinhon.com/math-arcade/teaching/). Download the [teaching guide with worked solutions (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Teaching_Guide.pdf) or the [six printable player sheets (PDF)](https://alberttansinhon.com/math-arcade/teaching/Maths_Arcade_Player_Sheets.pdf).
 
+[Browse the 102-record public resource library](https://albertito-ai.github.io/Albertito-AI/public-library/) for books, articles, games and teaching materials, or [download the directory to read offline](https://albertito-ai.github.io/Albertito-AI/public-library/public-library-offline.zip).
+
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher in law at
 the University of Groningen and a Visiting Professor in the Faculty of Law at

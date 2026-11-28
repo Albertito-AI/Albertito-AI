@@ -49,6 +49,11 @@ Atlas Reweave 0.1.0a1 is an experimental MIT-licensed local Python library. It s
 - [Benchmark and limits](https://github.com/Albertito-AI/atlas-reweave/blob/main/docs/BENCHMARK.md): observed producer and verifier counts on the same small workload.
 - [Agent starting guide](https://github.com/Albertito-AI/Albertito-AI/blob/main/docs/AGENT_START_HERE.md): source revisions, interfaces, rights and evidence for this and the other public projects.
 
+## Public resource library on GitHub Pages
+
+- [Public directory](https://albertito-ai.github.io/Albertito-AI/public-library/) with 102 records, source links, attribution and rights.
+- [Catalogue JSON](https://albertito-ai.github.io/Albertito-AI/public-library/catalogue.json), [Markdown](https://albertito-ai.github.io/Albertito-AI/public-library/catalogue.md) and [offline directory](https://albertito-ai.github.io/Albertito-AI/public-library/public-library-offline.zip).
+
 ## Research and contact routes
 
 - [Official website](https://alberttansinhon.com/): author profile, scholarship, projects and public contact routes.
