@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#13141c">
+  <title>The Boardroom Bonus | Atlas Maths Arcade</title>
+  <meta name="description" content="Play the manager, the board and the rule designer. Can you devise an emissions bonus that rewards the better decision? A free three-turn mathematics and governance game.">
+  <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/math-arcade/boardroom/">
+  <meta property="og:title" content="The Boardroom Bonus · Atlas Maths Arcade">
+  <meta property="og:description" content="An emissions bonus, two proposals and three decisions. Write a rule and test who gets paid.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="game.css">
+  <script type="module" src="game.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#decision">Skip to the decision</a>
+<header class="mast"><div class="frame nav">
+  <a href="../" class="brand"><span class="symbol" aria-hidden="true"><b></b><b></b><b></b><b></b></span>Atlas <span>Arcade</span></a>
+  <nav aria-label="Arcade links"><a href="../">All games</a><a href="../club-pilot/">Club pilot</a></nav>
+</div></header>
+<main class="frame">
+  <div class="intro">
+    <p class="eyebrow"><span class="signal" aria-hidden="true"></span>Mathematics &amp; governance</p>
+    <h1>The boardroom <em>bonus.</em></h1>
+    <p>Earn the bonus, choose a plan for the board, then write a better rule. You have the same figures in all three roles.</p>
+  </div>
+  <div class="desk">
+    <section id="brief" class="ledger" aria-labelledby="brief-title">
+      <div class="ledger-head"><p class="eyebrow">Company accounts</p><h2 id="brief-title">Emissions ledger</h2>
+      <p>Each option delivers the same output over the same period. Figures are fictional emissions units.</p></div>
+      <div class="legend"><span><i class="own-swatch"></i>Own operations</span><span><i class="supply-swatch"></i>Suppliers</span></div>
+      <div class="chart" role="img" aria-label="Emissions by option. Baseline: own 80, suppliers 20, total 100. A, upgrade: own 68, suppliers 20, total 88. B, outsource: own 50, suppliers 65, total 115.">
+        <div class="data-row" data-proposal="base"><div class="bar-label"><strong>Baseline</strong><span>100 total</span></div><div class="track"><div class="seg own base-own">80</div><div class="seg supply base-supply">20</div></div></div>
+        <div class="data-row" data-proposal="A"><div class="bar-label"><strong>A · Upgrade equipment</strong><span>88 total</span></div><div class="track"><div class="seg own a-own">68</div><div class="seg supply a-supply">20</div></div></div>
+        <div class="data-row" data-proposal="B"><div class="bar-label"><strong>B · Outsource work</strong><span>115 total</span></div><div class="track"><div class="seg own b-own">50</div><div class="seg supply b-supply">65</div></div></div>
+        <div class="axis" aria-hidden="true"><span>0</span><span>60</span><span>120 units</span></div>
+      </div>
+      <div class="contract"><span aria-hidden="true">§</span><div><h3>The current contract</h3><p>Pay the manager a bonus if <strong>own operations</strong> emissions fall by <strong>at least 25%</strong> from baseline.</p></div></div>
+    </section>
+    <section class="decision" id="decision" aria-labelledby="decision-title">
+      <ol class="steps" aria-label="Game progress"><li aria-current="step"><span>1</span> Manager</li><li><span>2</span> Board</li><li><span>3</span> Designer</li></ol>
+      <div id="turn">
+        <h2 id="decision-title" tabindex="-1">Earn the bonus</h2>
+        <p class="instruction">You manage the company. Which proposal earns your bonus under the current contract?</p>
+        <form id="choice">
+          <fieldset><legend class="sr">Choose a proposal</legend>
+            <label class="option"><input type="radio" name="plan" value="A" required><span><b>Upgrade the equipment</b><small>Proposal A</small></span></label>
+            <label class="option"><input type="radio" name="plan" value="B"><span><b>Outsource the work</b><small>Proposal B</small></span></label>
+          </fieldset>
+          <button class="primary" type="submit">Check my choice</button>
+        </form>
+        <form id="designer" hidden>
+          <fieldset><legend class="sr">Choose the terms and evidence for a replacement bonus</legend>
+            <label for="boundary">Count emissions from</label><select id="boundary" required><option value="own">Own operations</option><option value="combined">Own operations and suppliers</option></select>
+            <label for="threshold">Minimum reduction from baseline</label><div class="number-field"><input type="number" id="threshold" min="0.1" max="100" step="any" value="25" required><span>%</span></div>
+            <label for="evidence">Verify the claim using</label><select id="evidence" required><option value="" selected>Choose an evidence set</option><option value="summary">The manager’s own operations summary</option><option value="reconciled">Matched own and supplier records + output</option><option value="bonus">The bonus payment register</option></select>
+          </fieldset>
+          <button class="primary" type="submit">Test my rule</button>
+        </form>
+        <div id="result" class="result" role="status" aria-live="polite" aria-atomic="true"></div>
+        <button id="next" class="primary" type="button" hidden>Take the board’s seat</button>
+      </div>
+      <div id="finished" hidden>
+        <p class="eyebrow">Three turns complete</p><h2 id="finish-title" tabindex="-1">Your rule held up.</h2><p id="final-rule"></p>
+        <p class="limit">This test covers the two proposals in the ledger. A different set of proposals could expose another weakness.</p>
+        <a href="#transfer" class="primary" id="transfer-link">Try the transfer puzzle</a>
+      </div>
+      <div class="tools"><a href="#handout" id="handout-link">Paper version</a><button id="reset" type="button">Start over</button></div>
+      <noscript><p>Use the paper version below to play all three turns with JavaScript turned off.</p></noscript>
+    </section>
+  </div>
+  <section id="transfer" class="transfer" aria-labelledby="transfer-title" hidden>
+    <p class="eyebrow">A fresh case</p><h2 id="transfer-title" tabindex="-1">The missing buses</h2>
+    <p>A route schedules 100 buses in each period. In the first, 90 arrive on time and 10 arrive late. In the second, 88 arrive on time, two arrive late and ten are cancelled. A bonus counts punctuality among buses that ran.</p>
+    <p>Which period earns the higher score? Give the two percentages. Choose a denominator that shows riders what happened, and name the record you would need.</p>
+    <details id="transfer-answer"><summary>Check your reasoning</summary><p>The score rises from 90/100 = 90% to 88/90 ≈ 97.8%. From a rider’s perspective, on-time arrivals per scheduled service fall from 90/100 = 90% to 88/100 = 88%. Compare the original published timetable with arrival and cancellation records for the same routes and dates.</p></details>
+  </section>
+  <details id="handout" class="handout"><summary>Play on paper <span>Three prompts for a group</span></summary><div class="handout-body">
+    <h2>Boardroom bonus worksheet</h2><p>Use the emissions ledger above. Give each player a turn as manager, director and rule designer.</p>
+    <ol><li>Which proposal earns the manager’s bonus? Calculate each change in own emissions.</li>
+    <li>Which proposal should a board seeking lower combined emissions approve? Calculate both totals and compare them with the baseline.</li>
+    <li>Write a new rule specifying whose emissions count, a percentage threshold and the evidence to check. Apply it to both proposals. Aim to reward the upgrade and decline the outsourcing proposal.</li></ol>
+    <p><a href="../club-pilot/">Open the four-week club pilot</a> for organiser materials and a way to report a session.</p>
+    <button type="button" class="print" id="print-handout">Print worksheet</button>
+  </div></details>
+</main>
+<footer class="frame footer"><a href="../">Atlas Maths Arcade</a><a href="../../lab/">Albert Tan Sin Hon</a></footer>
+</body></html>

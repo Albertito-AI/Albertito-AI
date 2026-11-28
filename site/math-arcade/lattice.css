@@ -1,0 +1,58 @@
+.ld-game {
+  --ld-gold: #ffd27a;
+  --ld-grid: #304443;
+  --ld-blue: #a6b5fc;
+  color: var(--ink, #edf4ef);
+  container-type: inline-size;
+}
+.ld-game .ld-instruction { margin: 0 0 1rem; color: var(--sub, #bac8c1); font-size: 1rem; line-height: 1.55; }
+.ld-main { display: grid; grid-template-columns: minmax(0,1.16fr) minmax(175px, .84fr); gap: clamp(16px, 3%, 34px); align-items: center; }
+.ld-plot-wrap { width: 100%; border: 1px solid #334944; border-radius: 16px; background: radial-gradient(ellipse at 50% 45%,#18342d 0%,#10201e 57%,#0b1517 100%); }
+.ld-plot { display: block; width: 100%; height: auto; overflow: visible; padding: 5px; box-sizing: border-box; }
+.ld-plot .ld-label, .ld-plot .ld-axis-name { fill: #acc3b9; text-anchor: middle; font: 12px ui-monospace, monospace; }
+.ld-plot .ld-axis-name { fill: #8cdfb5; font-weight: 700; font-style: italic; }
+.ld-axis-line { fill: none; stroke: var(--ld-grid); stroke-width: 1; }
+.ld-node { fill: #718b7d; }
+.ld-blocked { fill: none; stroke: #ce9c88; stroke-width: 2.5; stroke-linecap: round; }
+.ld-start { fill: none; stroke: var(--ld-blue); stroke-width: 2; }
+.ld-star circle { fill: #71542d; fill-opacity: .32; stroke: #c28e47; stroke-width: 1; }
+.ld-star path { fill: var(--ld-gold); }
+.ld-player circle { fill: #274c3e; stroke: #9afea8; stroke-width: 1.3; }
+.ld-player path { fill: #a8ffb0; }
+.ld-trail { fill: none; stroke: #a2f5b8; stroke-width: 2.5; stroke-linejoin: round; opacity: .85; }
+.ld-reachable { fill: none; stroke: #a1c9af; stroke-width: 1.2; stroke-dasharray: 2.5 3; }
+.ld-hinted { stroke: var(--ld-gold); stroke-width: 3; }
+.ld-hit { fill: transparent; cursor: pointer; }
+.ld-console { min-width: 0; }
+.ld-score, .ld-coords { display:flex; gap: 16px; align-items: center; flex-wrap:wrap; }
+.ld-score { padding-bottom: .7rem; border-bottom: 1px solid var(--line,#38483f); }
+.ld-score > span { display: inline-flex; gap:.45rem; align-items: baseline; color: var(--sub,#bac8c1); font-size:.88rem; }
+.ld-score strong { font: 700 1.45rem/1.15 ui-monospace,monospace; color: var(--ink,#edf4ef); }
+.ld-coords { margin: .8rem 0; gap: .35rem .9rem; font-size:.87rem; color:var(--sub,#bac8c1); }
+.ld-coords > span { display:inline-flex; align-items:center; gap:.28rem; }
+.ld-coords b { font: 600 .84rem/1.25 ui-monospace,monospace; color:var(--ink,#edf4ef); }
+.ld-player-swatch, .ld-goal-swatch { display: inline-block; width:7px; height:7px; transform:rotate(45deg); margin-right:3px; }
+.ld-player-swatch { background: #a8ffb0; }
+.ld-goal-swatch { background:var(--ld-gold); }
+.ld-game .ld-key-label { margin:.85rem 0 .48rem; font-size:.92rem; font-weight:650; }
+.ld-key-label small { color:var(--sub,#bac8c1); font-weight:400; }
+.ld-jumps { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .4rem; }
+.ld-game .ld-jump { box-sizing:border-box; display:flex; justify-content:center; gap:.48rem; align-items:center; background:#23372e; border:1px solid #4e705d; border-radius:7px; color:#d9ffe1; min-height:43px; padding:.35rem .25rem; font:600 clamp(.78rem,2cqi,1rem)/1.2 ui-monospace,monospace; cursor:pointer; }
+.ld-game .ld-jump kbd { display:inline-block; min-width:1.28rem; padding:.14rem .1rem; text-align:center; background:#15251e; border:1px solid #567660; border-bottom-width:2px; border-radius:3px; font:inherit; font-size:.77rem; }
+.ld-game .ld-jump[aria-disabled="true"] { opacity:.5; cursor:default; }
+.ld-game .ld-jump:not([aria-disabled="true"]):hover, .ld-game .ld-jump:not([aria-disabled="true"]):active { border-color:#aaf9ae; background:#304b39; }
+.ld-game .ld-axis-help, .ld-game .ld-message { font-size:.88rem; line-height:1.5; color:var(--sub,#bac8c1); margin:.62rem 0; }
+.ld-game .ld-message { margin-bottom:0; color:var(--ink,#edf4ef); }
+.ld-tools { display:flex; gap:.35rem; flex-wrap:wrap; }
+.ld-game .ld-tools button { border:1px solid var(--line,#45564b); border-radius:6px; padding:.43rem .65rem; min-height:38px; background:transparent; font:inherit; font-size:.875rem; color:var(--ink,#edf4ef); cursor:pointer; }
+.ld-game .ld-tools button:disabled { opacity:.46; cursor:default; }
+.ld-game .ld-tools button:not(:disabled):hover { border-color:#a3bba9; }
+.ld-game button:focus-visible, .ld-game:focus-visible { outline:2px solid var(--ld-gold); outline-offset:3px; }
+@container (max-width: 535px) {
+  .ld-main { grid-template-columns: 1fr; gap: 12px; }
+  .ld-plot-wrap { width:min(100%, 365px); margin:0 auto; }
+  .ld-coords { margin:.47rem 0; }
+  .ld-game .ld-key-label { margin:.55rem 0 .32rem; }
+  .ld-console { width:100%; }
+  .ld-game .ld-jump { font-size:.95rem; }
+}

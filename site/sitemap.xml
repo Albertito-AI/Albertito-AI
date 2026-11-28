@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This project sitemap lists the Research Lab and Evidence Challenges at their preferred public URLs.
+<!-- This project sitemap lists the Research Lab, Maths Arcade and Evidence Challenges at their GitHub Pages URLs.
      The root page redirects there. The IBOL mirror points to the author's
      official-domain canonical, which belongs in that domain's own sitemap. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -13,4 +13,9 @@
     <loc>https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
+  <url><loc>https://albertito-ai.github.io/Albertito-AI/math-arcade/</loc></url>
+  <url><loc>https://albertito-ai.github.io/Albertito-AI/math-arcade/teaching/</loc></url>
+  <url><loc>https://albertito-ai.github.io/Albertito-AI/math-arcade/field-notes/</loc></url>
+  <url><loc>https://albertito-ai.github.io/Albertito-AI/math-arcade/boardroom/</loc></url>
+  <url><loc>https://albertito-ai.github.io/Albertito-AI/math-arcade/club-pilot/</loc></url>
 </urlset>

@@ -1,0 +1,129 @@
+.sdk-game {
+  --sdk-ice: #9ce9f3;
+  --sdk-teal: #a0f6cd;
+  --sdk-muted: #b5c4d0;
+  --sdk-line: #43505f;
+  width: 100%;
+  min-width: 0;
+  color: var(--ink, #f4f2fa);
+}
+.sdk-game *, .sdk-game *::before, .sdk-game *::after { box-sizing: border-box; }
+.sdk-game button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.sdk-intro { margin: 0 0 1rem; font-size: 1rem; line-height: 1.5; color: var(--sub, #c0bed1); }
+.sdk-layout { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(15rem,.85fr); gap: clamp(1.1rem,3.5vw,2.5rem); align-items: start; }
+.sdk-board-wrap, .sdk-tools { min-width: 0; }
+.sdk-grid {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-rows: repeat(9, minmax(0, 1fr));
+  overflow: hidden;
+  border: 2px solid #a2b8c2;
+  border-radius: 7px;
+  background: #17252e;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.sdk-row { min-width: 0; min-height: 0; display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); }
+.sdk-slot { min-width: 0; min-height: 0; border-right: 1px solid var(--sdk-line); border-bottom: 1px solid var(--sdk-line); }
+.sdk-slot:nth-child(3n):not(:last-child) { border-right: 2px solid #94a9b2; }
+.sdk-row:nth-child(3n):not(:last-child) .sdk-slot { border-bottom: 2px solid #94a9b2; }
+.sdk-slot:last-child { border-right: 0; }
+.sdk-row:last-child .sdk-slot { border-bottom: 0; }
+.sdk-game .sdk-cell {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  appearance: none;
+  background: #14202a;
+  color: #a2f7e4;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: clamp(.98rem, 3.4vw, 1.85rem);
+  font-weight: 540;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.sdk-cell.sdk-given { color: #f1f5fc; font-weight: 740; }
+.sdk-cell.sdk-related { background: #20303c; }
+.sdk-cell.sdk-matching { background: #2a4958; }
+.sdk-cell.sdk-selected { background: #a4e5ec; color: #102329; box-shadow: inset 0 0 0 2px #d8fcfd; }
+.sdk-cell.sdk-conflict { color: #ffbdb3; }
+.sdk-cell.sdk-selected.sdk-conflict { color: #75271e; }
+.sdk-cell.sdk-conflict::after {
+  content: '';
+  position: absolute;
+  right: 2px; top: 2px;
+  width: 0; height: 0;
+  border: clamp(2px,.48vw,4px) solid transparent;
+  border-right-color: currentColor; border-top-color: currentColor;
+}
+.sdk-game .sdk-cell:focus-visible { outline: 2px solid #fff0a6; outline-offset: -3px; z-index: 1; }
+.sdk-glyph { display: grid; place-items: center; width: 100%; height: 100%; }
+.sdk-marks {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-rows: repeat(3, minmax(0,1fr));
+  font-size: clamp(.45rem, 1.17vw, .78rem);
+  line-height: 1;
+  padding: 1px;
+  color: #b7ced4;
+  font-weight: 600;
+}
+.sdk-selected .sdk-marks { color: #26424b; }
+.sdk-progress { display: flex; align-items: center; gap: .75rem; margin: .65rem 0 0; color: var(--sdk-muted); }
+.sdk-progress-text { flex: 0 0 auto; font: 570 .8rem/1.5 ui-monospace, monospace; }
+.sdk-bar { display: block; flex: 1; height: 4px; border-radius: 3px; background: #354652; overflow: hidden; }
+.sdk-bar i { display: block; height: 100%; background: var(--sdk-ice); }
+.sdk-location { margin: 0 0 .6rem; color: var(--sdk-ice); font: 650 .88rem/1.5 ui-monospace, monospace; }
+.sdk-pad { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+.sdk-pad button, .sdk-actions button, .sdk-apply {
+  appearance: none; margin: 0; min-width: 0; min-height: 44px;
+  border: 1px solid #4e6874; border-radius: 6px;
+  color: #f1f7fa; background: #20323d;
+  cursor: pointer; font: inherit; font-weight: 650;
+}
+.sdk-pad button { padding: .35rem 0; font: 700 1.3rem/1.2 ui-monospace, monospace; }
+.sdk-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 5px; margin: .8rem 0 0; }
+.sdk-actions button { padding: .4rem .32rem; font-size: .88rem; background: #18262e; }
+.sdk-actions [data-operation="hint"], .sdk-apply { color: #c0fcdf; background: #203c36; border-color: #5d8978; }
+.sdk-actions [aria-pressed="true"] { background: #9de6ef; color: #103039; border-color: #dcfbff; }
+.sdk-actions button:disabled, .sdk-pad button:disabled { opacity: .5; cursor: default; }
+.sdk-game :is(.sdk-pad button,.sdk-actions button,.sdk-apply, summary):focus-visible { outline: 3px solid #fff0a6; outline-offset: 2px; }
+.sdk-help { margin: .85rem 0 0; padding-left: .7rem; border-left: 2px solid #547c7d; }
+.sdk-help:has(.sdk-message:empty):has(.sdk-apply[hidden]) { display: none; }
+.sdk-message { color: #d6e4e9; font-size: .94rem; line-height: 1.5; margin: 0; }
+.sdk-apply { padding: .35rem .65rem; margin: .5rem 0 .1rem; font-size: .88rem; }
+.sdk-apply[hidden] { display: none; }
+.sdk-keys { font-size: .88rem; margin-top: .45rem; color: var(--sdk-muted); }
+.sdk-keys summary { cursor: pointer; padding-block: .65rem; }
+.sdk-keys p { line-height: 1.48; margin: 0; }
+@media (hover:hover) {
+  .sdk-cell:not(.sdk-selected):hover { background: #334a58; }
+  .sdk-pad button:enabled:hover, .sdk-actions button:enabled:hover, .sdk-apply:hover { border-color: #a6dfe6; }
+}
+@media (max-width: 740px) {
+  .sdk-layout { grid-template-columns: minmax(0,1fr); gap: .7rem; max-width: 30rem; margin-inline: auto; }
+  .sdk-pad { grid-template-columns: repeat(9,minmax(0,1fr)); gap: 3px; }
+  .sdk-actions { grid-template-columns: repeat(4,minmax(0,1fr)); margin-top: .42rem; }
+  .sdk-cell .sdk-glyph { font-size: clamp(.98rem, 5.8vw, 1.65rem); }
+  .sdk-cell .sdk-marks { font-size: clamp(.45rem, 1.9vw, .72rem); }
+}
+@media (max-width: 490px) {
+  .sdk-layout { gap: .65rem; }
+  .sdk-pad { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 4px; }
+  .sdk-actions button { font-size: .82rem; }
+  .sdk-actions { grid-template-columns: minmax(0,1.35fr) repeat(3,minmax(0,1fr)); }
+  .sdk-location { margin-bottom: .35rem; }
+}
+@media (prefers-contrast: more) {
+  .sdk-grid, .sdk-slot, .sdk-row:nth-child(3n):not(:last-child) .sdk-slot, .sdk-slot:nth-child(3n):not(:last-child) { border-color: #d0e8ea; }
+  .sdk-cell.sdk-selected { outline: 3px solid #111; outline-offset: -3px; }
+}

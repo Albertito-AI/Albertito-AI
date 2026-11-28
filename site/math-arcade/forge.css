@@ -1,0 +1,154 @@
+.tf-game {
+  --tf-amber: #ffdb86;
+  --tf-purple: #d2c1ff;
+  --tf-muted: #b9bace;
+  width: 100%;
+  min-width: 0;
+  color: var(--ink, #f3f2fa);
+}
+.tf-game *, .tf-game *::before, .tf-game *::after { box-sizing: border-box; }
+.tf-game button {
+  appearance: none;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.tf-game button:focus-visible {
+  outline: 3px solid #fff1bc;
+  outline-offset: 3px;
+}
+.tf-game button:disabled { cursor: default; }
+.tf-display {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 4vw, 34px);
+  padding: 16px clamp(15px, 4vw, 30px);
+  margin-bottom: 14px;
+  background-color: #191625;
+  background-image: radial-gradient(#51415d 0.8px, transparent 1px);
+  background-size: 12px 12px;
+  border: 1px solid #544252;
+  border-radius: 12px;
+  text-align: left;
+}
+.tf-goal {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--tf-amber);
+  padding-right: clamp(15px, 4vw, 30px);
+  border-right: 1px solid #65535b;
+}
+.tf-goal span {
+  font: 650 .8rem/1.15 ui-monospace, monospace;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+.tf-goal strong {
+  font: 700 clamp(2.9rem, 8vw, 4.5rem)/.98 ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.075em;
+}
+.tf-display-copy { min-width: 0; }
+.tf-display-copy b { color: #f7eacb; font-size: 1rem; }
+.tf-display-copy p {
+  margin: 5px 0 0;
+  max-width: 41ch;
+  color: #ded5e3;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+.tf-tiles, .tf-operations { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(6px, 1.65vw, 12px); }
+.tf-tiles { margin-bottom: 10px; }
+.tf-tile, .tf-empty {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: clamp(62px, 12vw, 86px);
+  border: 1px solid #806ca4;
+  border-bottom-width: 3px;
+  border-radius: 10px;
+}
+.tf-game .tf-tile {
+  padding: 8px 2px;
+  font-family: ui-monospace, monospace;
+  font-size: clamp(1.45rem, 4.5vw, 2.45rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #fcf9ff;
+  background: linear-gradient(148deg, #373049, #282436);
+}
+.tf-game .tf-tile:not(:disabled):hover { border-color: #d2b4ff; }
+.tf-game .tf-tile[aria-pressed="true"] {
+  color: #1c112b;
+  background: #d1b2ff;
+  border-color: #e3cfff;
+  box-shadow: 0 0 0 2px #9577bc;
+}
+.tf-empty {
+  background: repeating-linear-gradient(135deg, transparent 0 7px, #322d3d55 7px 8px);
+  border: 1px dashed #514961;
+}
+.tf-fraction { display: grid; font-size: .66em; line-height: 1.08; }
+.tf-fraction > span + span { border-top: 1.5px solid currentColor; margin-top: 2px; }
+.tf-operations button {
+  min-height: 44px;
+  border: 1px solid #796a92;
+  border-radius: 7px;
+  background: #292633;
+  color: var(--tf-purple);
+  padding: 3px 0;
+  font: 650 1.45rem/1.3 ui-monospace, monospace;
+}
+.tf-operations button:not(:disabled):hover,
+.tf-operations button[aria-pressed="true"] {
+  color: #fff;
+  border-color: #ddc4ff;
+  background: #5e4584;
+}
+.tf-operations button:disabled { color: #a39bb0; border-color: #514962; background: #25222d; }
+.tf-message {
+  min-height: 2.9em;
+  margin: 12px 0 6px;
+  color: #f3e4bb;
+  font-weight: 550;
+  line-height: 1.4;
+  text-align: left;
+}
+.tf-bottom {
+  border-top: 1px solid #443d50;
+  padding-top: 10px;
+  display: flex;
+  gap: .5rem 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.tf-actions { display: flex; gap: 7px; flex-wrap: wrap; }
+.tf-actions button {
+  min-height: 42px;
+  padding: 5px 13px;
+  border-radius: 7px;
+  color: #e9dff4;
+  border: 1px solid #65596e;
+  background: #23202d;
+  font-size: .9rem;
+}
+.tf-actions button:not(:disabled):hover { color: #fff; border-color: #c6aadf; }
+.tf-actions button:disabled { color: #9792a1; background: #1d1b23; border-color: #433c4c; }
+.tf-history {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--tf-muted);
+  text-align: left;
+  font: .85rem/1.45 ui-monospace, monospace;
+}
+@media (max-width: 430px) {
+  .tf-display { padding: 12px; gap: 12px; }
+  .tf-goal { padding-right: 12px; }
+  .tf-tiles, .tf-operations { gap: 6px; }
+  .tf-display-copy p { font-size: .9rem; }
+  .tf-message { font-size: .95rem; }
+}

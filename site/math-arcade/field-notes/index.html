@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11241d">
+  <title>Arcade field notes | Atlas Open Mathematics</title>
+  <meta name="description" content="Three pencil-and-paper maths puzzles for clubs, classrooms and curious players. Explore shortest paths, exact fractions and parity, then play Maths Arcade.">
+  <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/math-arcade/field-notes/">
+  <style>
+    @font-face{font-family:Bricolage;src:url('../fonts/bricolage-latin.woff2') format('woff2');font-weight:200 800;font-display:swap}
+    :root{color-scheme:light;--paper:#f5f4eb;--ink:#172b23;--muted:#41574b;--rule:#c7d1c4;--forest:#11241d;--lime:#c9fa80;--display:Bricolage,system-ui,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1.02rem/1.65 system-ui,sans-serif}a{color:#18563c;text-underline-offset:.2em;text-decoration-thickness:.09em}a:hover{text-decoration-thickness:.15em}a:focus-visible{outline:3px solid #ab4c13;outline-offset:4px;border-radius:2px}a.skip{position:absolute;left:1rem;transform:translateY(-150%);background:white;color:black;padding:.45rem}.skip:focus{transform:none;z-index:2}
+    .wrap{max-width:69rem;margin:auto;padding-inline:clamp(1.25rem,5vw,4rem)}header{background:var(--forest);color:var(--paper);border-bottom:5px solid var(--lime)}header a{color:var(--lime)}.mast{padding-block:1.15rem;border-bottom:1px solid #45604e;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.mast span{font-size:.78rem;letter-spacing:.07em;text-transform:uppercase}.lead{padding-block:clamp(2.5rem,6vw,5rem)}h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.04em;text-wrap:balance}h1{font-size:clamp(3rem,8vw,6.6rem);font-weight:750;margin:0}.lead p{font:clamp(1.08rem,2vw,1.35rem)/1.52 system-ui,sans-serif;max-width:44rem;margin:1rem 0 0;color:#deeadc}
+    .contents{padding-block:1rem;display:flex;gap:.45rem 1.6rem;flex-wrap:wrap;border-bottom:1px solid var(--rule);font-size:.93rem}.note{padding-block:clamp(2rem,5vw,3.5rem);border-bottom:1px solid var(--rule);display:grid;grid-template-columns:minmax(10rem, .75fr) minmax(0,1.7fr);gap:1rem 3rem;align-items:start}.note h2,.closing h2{font-size:clamp(1.65rem,3.5vw,2.65rem);margin:0}.tag{font:600 .77rem/1.5 system-ui,sans-serif;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;margin:.55rem 0}.note p{margin:0 0 .85rem}.note h3{font-size:1.16rem;letter-spacing:-.015em;margin:0 0 .55rem}details{margin:.8rem 0 1.1rem;background:#e8ecdf;border:1px solid var(--rule);border-radius:.55rem}summary{padding:.68rem .9rem;cursor:pointer;font-weight:650}summary:focus-visible{outline:3px solid #ab4c13;outline-offset:2px}details>div{padding:0 .9rem .35rem}details p:last-child{margin-bottom:.35rem}.math{font-variant-numeric:tabular-nums;white-space:nowrap}.note ol{padding-left:1.45rem;margin:.2rem 0 .8rem}.closing{margin:2.6rem 0 3.5rem;max-width:47rem}.closing p{margin:.8rem 0}.url{overflow-wrap:anywhere}.play{font-weight:700}footer{background:#e8ecdf;padding-block:1.35rem;font-size:.92rem}
+    @media(max-width:42rem){.note{grid-template-columns:1fr;gap:.65rem}.tag{margin-bottom:0}.contents{gap:.4rem 1rem}}
+    @media print{header,footer{background:white;color:black}header a,.lead p{color:black}.lead,.note{padding-block:1rem}.mast,.contents,.play,.skip{display:none}.note{display:block;break-inside:avoid}details>div{display:block}.closing{margin:1rem 0}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#notes">Skip to the puzzles</a>
+  <header>
+    <div class="wrap">
+      <nav class="mast" aria-label="Site"><a href="../">← Maths Arcade</a><span>Atlas Open Mathematics</span></nav>
+      <div class="lead"><h1>Arcade field notes</h1><p>Can you prove your route is shortest? Can a fraction help you hit a whole number? Try these three puzzles with pencil and paper, then take the same ideas into the arcade.</p></div>
+    </div>
+  </header>
+  <main class="wrap" id="notes">
+    <nav class="contents" aria-label="Jump to a puzzle"><a href="#lattice">Lattice Dash</a><a href="#forge">Target Forge</a><a href="#parity">Parity Lights</a></nav>
+    <article class="note" id="lattice">
+      <div><h2>Lattice Dash</h2><p class="tag">Shortest paths</p></div>
+      <div>
+        <h3>Can you do it in one jump?</h3>
+        <p>Draw a grid with both axes numbered 0, 1, 2. Start at (0, 0) and aim for (2, 1). A jump adds either (1, 0) or (1, 1) to your position, or subtracts one of them. Landings must stay on the grid. What is the fewest jumps you need?</p>
+        <details><summary>Reveal the shortest route</summary><div><p>The only legal first landings are (1, 0) and (1, 1). From (1, 0), adding (1, 1) reaches (2, 1). The target first appears after two jumps, so two is the minimum.</p><p>This is <strong>breadth-first search</strong> in miniature. List new positions reachable in one jump, then two, then three. Each jump costs one move, so the first layer containing the target gives the shortest distance.</p></div></details>
+        <a class="play" href="../#play/lattice">Play Lattice Dash →</a>
+      </div>
+    </article>
+    <article class="note" id="forge">
+      <div><h2>Target Forge</h2><p class="tag">Exact fractions</p></div>
+      <div>
+        <h3>Make 24 from 3, 3, 8 and 8</h3>
+        <p>Use each tile exactly once. At each move, combine two tiles by addition, subtraction, multiplication or division and put their result back. Can you leave 24 as the last tile?</p>
+        <details><summary>Reveal the three moves</summary><div><ol><li>Divide one 8 by one 3 to make <span class="math">8/3</span>.</li><li>Subtract that fraction from the other 3 to make <span class="math">9/3 − 8/3 = 1/3</span>.</li><li>Divide the remaining 8 by <span class="math">1/3</span>. Eight wholes contain 24 thirds.</li></ol><p>The full expression is <strong class="math">8 ÷ (3 − 8/3) = 24</strong>. The denominator of 3 keeps the intermediate value exact, allowing the last division to land precisely on the target.</p></div></details>
+        <a class="play" href="../#play/forge">Play Target Forge →</a>
+      </div>
+    </article>
+    <article class="note" id="parity">
+      <div><h2>Parity Lights</h2><p class="tag">Even and odd</p></div>
+      <div>
+        <h3>Which light gets flipped twice?</h3>
+        <p>Draw a 3 × 3 board with rows A, B, C and columns 1, 2, 3. Light up A1, A3, B1 and B3. Pressing a cell flips it and its neighbours immediately above, below, left and right. Predict the final board after pressing A1 and A3.</p>
+        <details><summary>Reveal what happens</summary><div><p>A1 flips A1, A2 and B1. A3 flips A3, A2 and B3. Each of the four lit cells flips once and goes dark. A2 flips twice and returns to dark. All other cells stay dark.</p><p><strong>Parity</strong> means whether a count is even or odd. A light changes its final state exactly when it is flipped an odd number of times. That is why reversing the order of the two presses gives the same result.</p></div></details>
+        <a class="play" href="../#play/parity">Play Parity Lights →</a>
+      </div>
+    </article>
+    <section class="closing" aria-labelledby="club"><h2 id="club">Try it with a puzzle club</h2><p>Give pairs the same daily challenge. Ask them to exchange solutions and check one claim together. Did an earlier search layer already reach the goal? Does each number appear exactly once? Which cells flipped an odd number of times?</p><p>For six replayable game lessons and separate spoiler-free sheets, use the <a href="../teaching/">Maths Arcade teaching pack</a>. For an applied decision game, try <a href="../boardroom/">the boardroom bonus</a> or <a href="../club-pilot/">use the organiser’s pack</a>.</p><p>For a timed group session, use the <a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/MATHS_ARCADE_CLUB_GUIDE.md">20-minute maths club guide</a>. It includes three starting positions, prompts and a way to check each explanation.</p><p>Share the daily challenge with this link<br><a class="url" href="../#daily">https://albertito-ai.github.io/Albertito-AI/math-arcade/#daily</a></p></section>
+  </main>
+  <footer><div class="wrap">Read the <a href="https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/">Maths Arcade research papers</a> or the <a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/MATHS_ARCADE.md">original three-game technical paper</a>, propose a <a href="https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=problem.yml">new puzzle</a>, or explore the <a href="https://github.com/Albertito-AI/atlas-open-mathematics">Atlas Open Mathematics repository on GitHub</a>.</div></footer>
+</body>
+</html>
