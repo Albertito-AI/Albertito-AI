@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The mathematics of the Maths Arcade | Albert Tan Sin Hon</title>
+  <meta name="description" content="Play a position, follow its proof and check the result. Working papers and reproducible examples from Albert Tan Sin Hon’s Atlas Maths Arcade.">
+  <link rel="canonical" href="https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/">
+  <style>
+    :root { color-scheme: light; --ink: #152d35; --muted: #43565a; --link: #07585a; --line: #c1ccca; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f6ef; color: var(--ink); font: 1.05rem/1.65 "Segoe UI", system-ui, sans-serif; }
+    a { color: var(--link); text-underline-offset: .19em; text-decoration-thickness: .08em; }
+    a:hover { text-decoration-thickness: .15em; }
+    :focus-visible { outline: 3px solid #af4c00; outline-offset: 4px; }
+    .wrap { width: min(100% - 2.5rem, 64rem); margin: auto; }
+    .skip { position: absolute; left: 1rem; top: -15rem; background: white; padding: .5rem 1rem; z-index: 2; }
+    .skip:focus { top: .5rem; }
+    header { background: #133f42; color: #fff9ea; padding: 1.3rem 0 2.8rem; }
+    header nav { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; align-items: center; }
+    header a { color: #e3f4e9; }
+    header nav a:first-child { margin-right: auto; }
+    header .byline { margin-top: 2.6rem; font-size: .93rem; letter-spacing: .015em; color: #c6e4d7; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.12; font-weight: normal; text-wrap: balance; margin: 0; }
+    h1 { font-size: clamp(2.6rem, 8vw, 5rem); max-width: 13em; }
+    h2 { font-size: clamp(1.8rem, 5vw, 2.65rem); }
+    header .lead { font-size: clamp(1.12rem, 2vw, 1.3rem); max-width: 49ch; }
+    .layout { display: grid; grid-template-columns: minmax(10rem, 13rem) minmax(0, 44rem); gap: 3.5rem; padding-block: 2.7rem; }
+    aside nav { position: sticky; top: 1.2rem; }
+    aside strong, caption { font-weight: 650; }
+    aside ul { list-style: none; padding: 0; margin: .6rem 0; }
+    aside li { border-top: 1px solid var(--line); }
+    aside a { padding: .5rem 0; display: block; }
+    section { padding: 2.3rem 0; border-top: 1px solid var(--line); scroll-margin-top: 1em; }
+    section:first-child { border: 0; padding-top: 0; }
+    p { max-width: 69ch; }
+    .worked { border-left: 4px solid #428278; padding: .7rem 1rem; background: #e9efe6; }
+    .refs { display: flex; gap: .4em 1.45em; flex-wrap: wrap; padding: 0; list-style: none; }
+    .refs a { font-weight: 650; }
+    table { width: 100%; border-collapse: collapse; font-size: .98rem; font-variant-numeric: tabular-nums; }
+    caption { text-align: left; margin-bottom: .4rem; color: var(--muted); }
+    th, td { border-bottom: 1px solid var(--line); text-align: right; padding: .45em .35em; }
+    th:first-child { text-align: left; }
+    thead { background: #e5ebe6; }
+    code { font-size: .95em; overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); padding: 1.2rem 0; }
+    @media (max-width: 49rem) { .layout { display: block; padding-top: 1.4rem; } aside { margin-bottom: 2.2rem; } aside nav { position: static; } aside ul { display: flex; flex-wrap: wrap; gap: .1rem 1rem; } aside li { border: 0; } }
+    @media print { body { background: #fff; font-size: 11pt; } header { background: #fff; color: #152d35; padding: 0; } header .byline { color: #152d35; margin: 0; } .layout { display: block; padding: 1rem 0; } aside, header nav, footer { display: none; } section { padding: 1rem 0; } h2, caption { break-after: avoid; } table, .worked { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to research</a>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Site"><a href="../lab/">Albert Tan Sin Hon · Research Lab</a><a href="https://alberttansinhon.com/math-arcade/">Play the Maths Arcade</a></nav>
+      <p class="byline">Atlas Open Mathematics · Project director Albert Tan Sin Hon</p>
+      <h1>The mathematics of the Maths Arcade</h1>
+      <p class="lead">Why is a Sudoku digit forced? When does a bonus reward the worse proposal? These working papers pair playable examples with arguments you can check.</p>
+    </div>
+  </header>
+  <div class="wrap layout">
+    <aside><nav aria-label="On this page"><strong>On this page</strong>
+      <ul><li><a href="#sudoku">Atlas Sudoku</a></li><li><a href="#boardroom">Boardroom Bonus</a></li><li><a href="#nim">Nim Lab</a></li><li><a href="#reversi">Reversi Endgame Lab</a></li><li><a href="#three-games">Three proof puzzles</a></li><li><a href="#verify">Check a result</a></li></ul>
+    </nav></aside>
+    <main id="content">
+      <section id="sudoku">
+        <h2>Atlas Sudoku</h2>
+        <p>Every row, column and three-by-three box must contain each digit from 1 to 9 exactly once. The same rule can force one entry or certify a whole grid.</p>
+        <p class="worked"><strong>Try Warm-up, seed 0.</strong> The first row reads <code>. 8 . 5 . 4 . . 1</code>. Row 1 still needs 2, 3, 6, 7 and 9. Column 3 already contains 3, 6, 7 and 9. The upper-left box permits 2, so row 1, column 3 must be <strong>2</strong>.</p>
+        <p>A naked single is a cell with one possible digit. A hidden single is a digit with one possible location in a row, column or box. Warm-up puzzles yield to naked singles. Tricky puzzles require at least one hidden single under the game's solving order. Every forced move agrees with every possible completion, so a sequence that fills the grid proves uniqueness. For Expert, the generator checks that there is exactly one completion and that the two single techniques stall.</p>
+        <p>The seed in a shared link lets another player inspect the same opening in the documented release. Fresh-play history reduces recent repeats on the device. The set of possible boards is finite.</p>
+        <ul class="refs"><li><a href="https://alberttansinhon.com/math-arcade/#play/sudoku/0/0">Play this Sudoku</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/SUDOKU_WHITE_PAPER.md">Read the Sudoku paper</a></li></ul>
+      </section>
+      <section id="boardroom">
+        <h2>Boardroom Bonus</h2>
+        <p>A board wants to minimise emissions. Its manager earns a bonus for reducing emissions from the firm's own operations. Which investment wins under each rule?</p>
+        <table><caption>Fictional emissions units for the same output and period</caption>
+          <thead><tr><th scope="col">Position</th><th scope="col">Own</th><th scope="col">Supplier</th><th scope="col">Total</th></tr></thead>
+          <tbody><tr><th scope="row">Baseline</th><td>80</td><td>20</td><td>100</td></tr><tr><th scope="row">A · Upgrade</th><td>68</td><td>20</td><td>88</td></tr><tr><th scope="row">B · Outsource</th><td>50</td><td>65</td><td>115</td></tr></tbody>
+        </table>
+        <p>At a 25% reduction threshold for own operations, only B earns the bonus. It reduces that measure by 37.5% while increasing total emissions by 15%. For the combined measure, A reduces the baseline of 100 to 88. A therefore qualifies at a threshold of exactly 12%. B fails, and any threshold above 12% pays neither proposal. A payment record alone cannot verify the underlying emissions.</p>
+        <ul class="refs"><li><a href="https://alberttansinhon.com/math-arcade/boardroom/">Play the boardroom case</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/BOARDROOM_WHITE_PAPER.md">Read the Boardroom paper</a></li></ul>
+      </section>
+      <section id="nim">
+        <h2>Nim Lab</h2>
+        <p>Two players take turns removing one or more counters from a single heap. Taking the last counter wins. Combine the heap sizes with bitwise exclusive OR, written ⊕. The result is called the <em>nim-sum</em>. A player who can leave zero after each move can force a win.</p>
+        <p class="worked"><strong>Compare two moves.</strong> With heaps of 1, 3 and 5, the nim-sum is 7. Reduce 5 to 2 and the result is 1 ⊕ 3 ⊕ 2 = 0. Reduce 5 to 1 instead and the result is 3, giving the other player a winning reply. The proof starts with the highest binary place at which the nim-sum is 1.</p>
+        <ul class="refs"><li><a href="https://alberttansinhon.com/math-arcade/#play/nim">Play Nim Lab</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/NIM_RESEARCH.md">Read the Nim paper</a></li></ul>
+      </section>
+      <section id="reversi">
+        <h2>Reversi Endgame Lab</h2>
+        <p>On an eight-by-eight board, a legal placement brackets at least one uninterrupted line of opposing discs with a friendly disc at the far end. The move flips each bracketed line. In the lab, play begins from reachable late-game positions, where the remaining sequence of moves can be searched to the end.</p>
+        <p>With the score measured as the final disc difference for one side, that side chooses the largest continuation value and its opponent chooses the smallest. If a player has no legal move, that player must pass. If neither player can move, the current disc count settles the score even when squares remain empty. This minimax rule gives the exact value of the position under optimal play. An immediate gain in discs can still give the opponent a better reply.</p>
+        <ul class="refs"><li><a href="https://alberttansinhon.com/math-arcade/#play/reversi">Play Reversi Endgame Lab</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/REVERSI_RESEARCH.md">Read the Reversi paper</a></li></ul>
+      </section>
+      <section id="three-games">
+        <h2>Three proof puzzles</h2>
+        <p><a href="https://alberttansinhon.com/math-arcade/#play/lattice">Lattice Dash</a> asks for a shortest route. Breadth-first search explores all positions at one distance before going farther. In <a href="https://alberttansinhon.com/math-arcade/#play/forge">Target Forge</a>, fractions can unlock an integer answer. Using 7, 7, 8 and 9 exactly once gives 7 × (9 − 8/7) = 55. In <a href="https://alberttansinhon.com/math-arcade/#play/parity">Parity Lights</a>, pressing the same switch twice cancels its effect. That reduces the search to sets of switches.</p>
+        <p><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/docs/MATHS_ARCADE.md">Read the proofs and worked positions for all three games</a></p>
+      </section>
+      <section id="verify">
+        <h2>Check a result</h2>
+        <p>These public working papers document mathematical arguments and software behaviour. Their worked positions can be replayed. Claims about player enjoyment or learning gains would require evidence from players.</p>
+        <p>From a checkout of Atlas Open Mathematics, run <code>python3 tools/verify_arcade_whitepapers.py</code> with Python 3.10 or later. It independently counts completions for two fixed Sudoku openings and checks the fictional Boardroom figures and bonus thresholds. The Nim and Reversi papers give their own verification procedures.</p>
+        <ul class="refs"><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/blob/main/tools/verify_arcade_whitepapers.py">Inspect the verification script</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics">Browse Atlas Open Mathematics</a></li><li><a href="https://github.com/Albertito-AI/atlas-open-mathematics/issues/new?template=correction.yml">Report a correction</a></li></ul>
+      </section>
+    </main>
+  </div>
+  <footer><div class="wrap"><a href="../lab/">Return to the Research Lab</a></div></footer>
+</body>
+</html>

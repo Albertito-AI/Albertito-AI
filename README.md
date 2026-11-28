@@ -2,7 +2,7 @@
 
 **[What does the record prove?](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/)** In this fictional case, a ferry operator reports a 10% fall in emissions. Two ships left the fleet. Would you sign its statement? [Examine the figures](https://albertito-ai.github.io/Albertito-AI/evidence-challenges/#ferry-emissions).
 
-**[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. Find the shortest route across a grid, make a target from four numbers, or switch off a board of lights. [Try today’s challenge](https://alberttansinhon.com/math-arcade/#daily) or explore the [proofs and worked lessons in Atlas Open Mathematics](https://github.com/Albertito-AI/atlas-open-mathematics).
+**[Play the Maths Arcade](https://alberttansinhon.com/math-arcade/)**. Warm up with Sudoku, play Nim or Reversi, or [try today’s challenge](https://alberttansinhon.com/math-arcade/#daily). [Read the Maths Arcade working papers](https://albertito-ai.github.io/Albertito-AI/maths-arcade-research/) for replayable positions, proofs and verification code.
 
 I study how institutions turn evidence into decisions, and how those decisions
 become answerable to the people affected by them. I am a PhD researcher in law at
